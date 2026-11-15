@@ -7,6 +7,7 @@
 const $ = s => document.querySelector(s);
 const fmt = n => (n ?? 0).toLocaleString("es-CL");
 const clamp = (v,a,b) => v < a ? a : v > b ? b : v;
+const FONT = n => (n * (window.__K || 1.35)).toFixed(1) + "px ui-monospace,monospace";
 
 /* ───────────── categorías ───────────── */
 const CAT = [
@@ -274,7 +275,7 @@ function drawDensity(c){
     c.fillStyle = `rgba(52,223,232,${t*.17})`;
     c.fillRect(x*cell, y*cell, cell-1, cell-1);
     if (t > .55){ c.strokeStyle = `rgba(52,223,232,${t*.5})`; c.strokeRect(x*cell+.5, y*cell+.5, cell-2, cell-2);
-      if (t > .78 && cell > 20){ c.fillStyle = "rgba(210,245,250,.75)"; c.font = "8px ui-monospace,monospace";
+      if (t > .78 && cell > 20){ c.fillStyle = "rgba(210,245,250,.75)"; c.font = FONT(8);
         c.fillText(v, x*cell+3, y*cell+11); } }
   }
   c.restore();
@@ -319,8 +320,8 @@ function drawCases(c, t){
     c.beginPath(); c.arc(x, y, 7, 0, 6.284); c.stroke();
     // triángulo de reproducción
     c.beginPath(); c.moveTo(x-2.2,y-3.4); c.lineTo(x+3.6,y); c.lineTo(x-2.2,y+3.4); c.closePath(); c.fill();
-    if (S.view.z > 2.4){
-      c.font = "8px ui-monospace,monospace"; c.fillStyle = col; c.globalAlpha = .85;
+    if (S.view.z > 3.1){
+      c.font = FONT(8); c.fillStyle = col; c.globalAlpha = .85;
       c.fillText(v.titulo.toUpperCase().slice(0,34), x+17, y+3 + (vi%2 ? 11 : -6)); c.globalAlpha = 1;
     }
   });
@@ -338,7 +339,7 @@ function drawCams(c){
     c.moveTo(x,y-9); c.lineTo(x,y-6.5); c.moveTo(x,y+6.5); c.lineTo(x,y+9);
     c.stroke();
     if (S.view.z > 3){
-      c.font = "8px ui-monospace,monospace"; c.fillStyle = "#5ef2a8"; c.globalAlpha = .8;
+      c.font = FONT(8); c.fillStyle = "#5ef2a8"; c.globalAlpha = .8;
       c.fillText(s.n.toUpperCase(), x+13, y+3);
     }
     c.globalAlpha = 1;
@@ -535,16 +536,16 @@ function dossier(i){
       <div class="ds-cell"><span>FORMA</span><b>${(d.shapes[d.shape[i]]||"—").toUpperCase()}</b></div>
       <div class="ds-cell"><span>DURACIÓN</span><b>${durTxt(d.dur[i])}</b></div>
       <div class="ds-cell"><span>COSTA</span><b>${d.dcoast[i] >= 65535 ? "—" : fmt(d.dcoast[i])+" km"}</b></div>
-      <div class="ds-cell"><span>COORDENADA</span><b style="font-size:9.5px">${(d.lat[i]/1e4).toFixed(3)}, ${(d.lon[i]/1e4).toFixed(3)}</b></div>
+      <div class="ds-cell"><span>COORDENADA</span><b style="font-size:calc(9.5px * var(--k))">${(d.lat[i]/1e4).toFixed(3)}, ${(d.lon[i]/1e4).toFixed(3)}</b></div>
     </div>
     ${tags ? `<div class="ds-flags">${tags}</div>` : ""}
     <div class="ds-foot" style="color:var(--txt-dim)">
-      <b style="color:var(--txt-faint);font-size:7.5px;letter-spacing:.2em">SOLIDEZ DEL REPORTE</b>
+      <b style="color:var(--txt-faint);font-size:calc(7.5px * var(--k));letter-spacing:.2em">SOLIDEZ DEL REPORTE</b>
       <div class="solbar">${[1,2,3,4,5].map(k => `<i class="${d.sol[i] >= k ? "on" : ""}"></i>`).join("")}<span>${d.sol[i]} de 5</span></div>
       ${EVN.filter(([b]) => d.ev[i] & b).map(([,n]) => "· " + n).join("<br>")}
     </div>
     ${d.exp[i] ? `<div class="ds-foot" style="color:var(--txt-dim);border-left:2px solid var(--am)">
-      <b style="color:var(--am);font-size:7.5px;letter-spacing:.2em">POSIBLE EXPLICACIÓN CONVENCIONAL</b><br>
+      <b style="color:var(--am);font-size:calc(7.5px * var(--k));letter-spacing:.2em">POSIBLE EXPLICACIÓN CONVENCIONAL</b><br>
       ${EXPL.filter(e => d.exp[i] & e.bit).map(e => e.d).join("<br>")}</div>` : ""}
     <div class="ds-foot">
       Reporte de la base NUFORC, geocodificado a nivel de ciudad: la coordenada marca la
@@ -552,12 +553,12 @@ function dossier(i){
       <br><a href="https://nuforc.org/subndx/?id=${d.year[i]}" target="_blank" rel="noopener">Consultar archivo NUFORC ↗</a>
     </div>`;
   const rightPanel = !$("#panel").hidden && $("#panel").style.right !== "auto";
-  $("#dossier").style.right = rightPanel ? "356px" : "48px";
+  $("#dossier").style.right = rightPanel ? "calc(var(--pw) + var(--side) + 12px)" : "var(--side)";
   $("#dossier").hidden = false;
 }
 function dsOpen(){
   const rightPanel = !$("#panel").hidden && $("#panel").style.right !== "auto";
-  $("#dossier").style.right = rightPanel ? "356px" : "48px";
+  $("#dossier").style.right = rightPanel ? "calc(var(--pw) + var(--side) + 12px)" : "var(--side)";
   $("#dossier").hidden = false;
 }
 function dossierCase(v){
@@ -569,11 +570,11 @@ function dossierCase(v){
       <h3>${v.titulo}</h3>
       <p>${v.fecha.toUpperCase()}</p>
     </div>
-    <div class="ds-cell" style="border-right:0"><span>LUGAR</span><b style="font-size:10px">${v.lugar}${v.aprox?" · posición aproximada":""}</b></div>
-    <div class="ds-cell" style="border-right:0"><span>ORGANISMO</span><b style="font-size:10px">${v.organismo}</b></div>
-    <div class="ds-cell" style="border-right:0"><span>SENSOR</span><b style="font-size:10px">${v.sensor}</b></div>
-    <div class="ds-foot" style="color:var(--txt-dim)"><b style="color:${col};letter-spacing:.2em;font-size:7.5px">QUÉ MUESTRA</b><br>${v.muestra}</div>
-    <div class="ds-foot" style="color:var(--txt-dim)"><b style="color:${col};letter-spacing:.2em;font-size:7.5px">ESTADO OFICIAL</b><br>${v.estado}</div>
+    <div class="ds-cell" style="border-right:0"><span>LUGAR</span><b style="font-size:calc(10px * var(--k))">${v.lugar}${v.aprox?" · posición aproximada":""}</b></div>
+    <div class="ds-cell" style="border-right:0"><span>ORGANISMO</span><b style="font-size:calc(10px * var(--k))">${v.organismo}</b></div>
+    <div class="ds-cell" style="border-right:0"><span>SENSOR</span><b style="font-size:calc(10px * var(--k))">${v.sensor}</b></div>
+    <div class="ds-foot" style="color:var(--txt-dim)"><b style="color:${col};letter-spacing:.2em;font-size:calc(7.5px * var(--k))">QUÉ MUESTRA</b><br>${v.muestra}</div>
+    <div class="ds-foot" style="color:var(--txt-dim)"><b style="color:${col};letter-spacing:.2em;font-size:calc(7.5px * var(--k))">ESTADO OFICIAL</b><br>${v.estado}</div>
     <div class="ds-foot">${v.enlaces.map(([t,u]) => `<a href="${u}" target="_blank" rel="noopener">${t} ↗</a>`).join("<br>")}</div>`;
   dsOpen();
 }
@@ -660,11 +661,11 @@ function openPanel(id){
   $("#panelBody").innerHTML = P.html();
   $("#panel").hidden = false;
   $("#panel").classList.toggle("wide", !!P.wide);
-  $("#panel").style.left = id==="bus"||id==="est"||id==="inf"||id==="met"||id==="key" ? "auto" : "48px";
-  $("#panel").style.right = id==="bus"||id==="est"||id==="inf"||id==="met"||id==="key" ? "48px" : "auto";
+  $("#panel").style.left = id==="bus"||id==="est"||id==="inf"||id==="met"||id==="key" ? "auto" : "var(--side)";
+  $("#panel").style.right = id==="bus"||id==="est"||id==="inf"||id==="met"||id==="key" ? "var(--side)" : "auto";
   P.bind?.();
   if (!$("#dossier").hidden)
-    $("#dossier").style.right = $("#panel").style.right !== "auto" ? "356px" : "48px";
+    $("#dossier").style.right = $("#panel").style.right !== "auto" ? "calc(var(--pw) + var(--side) + 12px)" : "var(--side)";
 }
 
 const rowHTML = (k, name, count, color, on) =>
@@ -772,7 +773,7 @@ const PANELS = {
 
   fil:{ t:"FILTROS", html(){
     const sh = S.d.shapes.map((s,i) => `<button data-sh="${i}" class="${S.F.shapes.has(i)?"on":""}">${s}</button>`).join("");
-    return `<div class="grp"><span>FORMA DECLARADA</span><button id="shClear" style="color:var(--cy);font-size:8px">LIMPIAR</button></div>
+    return `<div class="grp"><span>FORMA DECLARADA</span><button id="shClear" style="color:var(--cy);font-size:calc(8px * var(--k))">LIMPIAR</button></div>
       <div class="chips" id="shapeChips">${sh}</div>
       <div class="grp"><span>FRANJA HORARIA</span></div>
       <div class="chips" id="hourChips">
@@ -937,7 +938,7 @@ const PANELS = {
     return `<div class="stat" style="border:0">
       ${[["R","restablecer vista"],["F","pantalla completa"],["H","ocultar interfaz"],
          ["ESPACIO","reproducir oleadas"],["+ / −","acercar y alejar"],["1 … 6","alternar categorías"],
-         ["ESC","cerrar paneles"],["CLIC","abrir ficha del reporte"],["ARRASTRAR","desplazar el mapa"]]
+         ["A / MAYÚS+A","agrandar / achicar el texto"],["ESC","cerrar paneles"],["CLIC","abrir ficha del reporte"],["ARRASTRAR","desplazar el mapa"]]
         .map(([k,v]) => `<div class="kv"><b style="color:var(--cy)">${k}</b>${v}</div>`).join("")}</div>`;
   }},
 };
@@ -978,7 +979,7 @@ function drawTL(){
     tctx.fillStyle = "rgba(52,223,232,.42)"; tctx.fillRect(x, r.height-h, Math.max(1,w-.5), h);
     tctx.fillStyle = "rgba(255,179,64,.75)"; tctx.fillRect(x, r.height-hm, Math.max(1,w-.5), hm);
   }
-  tctx.fillStyle = "rgba(207,230,238,.4)"; tctx.font = "7px ui-monospace,monospace";
+  tctx.fillStyle = "rgba(207,230,238,.4)"; tctx.font = FONT(7);
   for (let y=1950;y<=Y1;y+=10){ const x=(y-Y0)*w; tctx.fillRect(x,0,.5,4); tctx.fillText(y, x+2, 9); }
 }
 function syncTL(){
@@ -1070,6 +1071,7 @@ window.addEventListener("keydown", e => {
   else if (k === " "){ e.preventDefault(); $("#btnPlay").click(); }
   else if (k === "+" || k === "="){ zoomBy(.6); }
   else if (k === "-"){ zoomBy(-.6); }
+  else if (k === "a"){ tamTexto(e.shiftKey ? -1 : 1); }
   else if (k === "escape"){ closePanel(); $("#dossier").hidden = true; S.sel = -1; }
   else if (k >= "1" && k <= "6"){ const c = CAT[+k-1]; S.L[c.k] = S.L[c.k]?0:1; toast(c.n + (S.L[c.k]?" · ON":" · OFF"));
     mark(); hud(); countSoon(); refreshPanel(); }
@@ -1079,6 +1081,24 @@ $("#btnZoomOut").onclick = () => zoomBy(-.7);
 $("#btnReset").onclick = () => { S.view = {...S.home}; mark(); hud(); };
 
 /* ───────────── arranque ───────────── */
+const TAM = [1.1, 1.35, 1.6, 1.9];
+function setK(k, aviso){
+  window.__K = k;
+  document.documentElement.style.setProperty("--k", k);
+  document.body.classList.toggle("kbig", k >= 1.6);
+  try { localStorage.setItem("nereo-k", String(k)); } catch(e){}
+  mark(); requestAnimationFrame(() => { drawTL(); syncTL(); });
+  if (aviso) toast("TAMAÑO DE TEXTO " + (TAM.indexOf(k) + 1) + " DE " + TAM.length);
+}
+function tamTexto(paso){
+  const i = TAM.indexOf(window.__K || 1.35);
+  setK(TAM[clamp((i < 0 ? 1 : i) + paso, 0, TAM.length - 1)], true);
+}
+$("#tMenos").onclick = () => tamTexto(-1);
+$("#tMas").onclick = () => tamTexto(1);
+(() => { let k = 1.35; try { const v = parseFloat(localStorage.getItem("nereo-k")); if (TAM.includes(v)) k = v; } catch(e){}
+  window.__K = k; document.documentElement.style.setProperty("--k", k); document.body.classList.toggle("kbig", k >= 1.6); })();
+
 function start(){
   Y1 = S.d.y1 || 2023; S.F.y1 = Y1;
   const tr = $("#tagRango"); if (tr) tr.textContent = Y0 + " — " + Y1;
@@ -1224,10 +1244,10 @@ function dossierEnv(e){
       <p>${esc(e.fecha || "sin fecha")}${e.hora ? " · " + esc(e.hora) : ""} · ${esc((e.nombre||"").toUpperCase())}</p>
     </div>
     <div class="ds-grid">
-      <div class="ds-cell"><span>CATEGORÍA</span><b style="font-size:9.5px;color:${col}">${esc(cat.n)}</b></div>
-      <div class="ds-cell"><span>FORMA</span><b style="font-size:9.5px">${esc(e.forma || "—")}</b></div>
-      <div class="ds-cell"><span>COORDENADA</span><b style="font-size:9px">${(+e.lat).toFixed(3)}, ${(+e.lon).toFixed(3)}</b></div>
-      <div class="ds-cell"><span>ORIGEN</span><b style="font-size:9px">${e.autoria === "propio" ? "autor del video" : "terceros"}</b></div>
+      <div class="ds-cell"><span>CATEGORÍA</span><b style="font-size:calc(9.5px * var(--k));color:${col}">${esc(cat.n)}</b></div>
+      <div class="ds-cell"><span>FORMA</span><b style="font-size:calc(9.5px * var(--k))">${esc(e.forma || "—")}</b></div>
+      <div class="ds-cell"><span>COORDENADA</span><b style="font-size:calc(9px * var(--k))">${(+e.lat).toFixed(3)}, ${(+e.lon).toFixed(3)}</b></div>
+      <div class="ds-cell"><span>ORIGEN</span><b style="font-size:calc(9px * var(--k))">${e.autoria === "propio" ? "autor del video" : "terceros"}</b></div>
     </div>
     ${e.desc ? `<div class="ds-foot" style="color:var(--txt-dim)">${esc(e.desc)}</div>` : ""}
     <div class="ds-foot">
@@ -1239,7 +1259,7 @@ function dossierEnv(e){
         <button class="mini warn" data-rev="descartado" data-id="${esc(e.id)}">DESCARTAR</button>
         <button class="mini" data-rev="pendiente" data-id="${esc(e.id)}">PENDIENTE</button>
       </div>` : ""}
-    <div class="ds-foot" style="font-size:7.5px">El video permanece alojado en ${esc(e.nombre || "su plataforma")}: NEREO solo lo enlaza. Antes de usarlo en una pieza propia hace falta licencia del autor.</div>`;
+    <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">El video permanece alojado en ${esc(e.nombre || "su plataforma")}: NEREO solo lo enlaza. Antes de usarlo en una pieza propia hace falta licencia del autor.</div>`;
   $("#dossier").querySelectorAll("[data-rev]").forEach(b => b.onclick = () => marcarRevision(b.dataset.id, b.dataset.rev, e));
   dsOpen();
 }
@@ -1495,7 +1515,7 @@ function drawUltimos(c, t){
     c.moveTo(x-8.5, y); c.lineTo(x-11.5, y); c.moveTo(x+8.5, y); c.lineTo(x+11.5, y);
     c.stroke();
     if (S.view.z > 2.8){
-      c.font = "8px ui-monospace,monospace"; c.fillStyle = col; c.globalAlpha = .85;
+      c.font = FONT(8); c.fillStyle = col; c.globalAlpha = .85;
       c.fillText(String(u.titulo || "").toUpperCase().slice(0, 30), x+14, y+3);
       c.globalAlpha = 1;
     }
@@ -1518,16 +1538,16 @@ function dossierUlt(u){
       <p>${esc(fechaCorta(u.fechaPub))}${u.fechaEvento ? " · EVENTO " + esc(u.fechaEvento) : ""}</p>
     </div>
     <div class="ds-grid">
-      <div class="ds-cell"><span>LUGAR</span><b style="font-size:9.5px">${esc(u.lugar || "no declarado")}</b></div>
-      <div class="ds-cell"><span>ESTADO</span><b style="font-size:9.5px;color:${cl.c}">${esc(u.estado || "sin verificar")}</b></div>
+      <div class="ds-cell"><span>LUGAR</span><b style="font-size:calc(9.5px * var(--k))">${esc(u.lugar || "no declarado")}</b></div>
+      <div class="ds-cell"><span>ESTADO</span><b style="font-size:calc(9.5px * var(--k));color:${cl.c}">${esc(u.estado || "sin verificar")}</b></div>
     </div>
     ${u.resumen ? `<div class="ds-foot" style="color:var(--txt-dim)">${esc(u.resumen)}</div>` : ""}
     <div class="ds-foot">
-      ${u.fuente ? `<b style="color:var(--txt-faint);font-size:7.5px;letter-spacing:.2em">FUENTE</b><br>${esc(u.fuente)}<br>` : ""}
+      ${u.fuente ? `<b style="color:var(--txt-faint);font-size:calc(7.5px * var(--k));letter-spacing:.2em">FUENTE</b><br>${esc(u.fuente)}<br>` : ""}
       ${okUrl(u.url) ? `<a href="${esc(u.url)}" target="_blank" rel="noopener">Abrir el registro ↗</a><br>` : ""}
       ${links}
     </div>
-    <div class="ds-foot" style="font-size:7.5px">Material alojado en su medio de origen; NEREO solo enlaza. Un registro en este feed es un reporte publicado, no un hecho verificado.</div>`;
+    <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">Material alojado en su medio de origen; NEREO solo enlaza. Un registro en este feed es un reporte publicado, no un hecho verificado.</div>`;
   dsOpen();
 }
 
@@ -1671,7 +1691,7 @@ function drawRutas(c){
 }
 function drawNaval(c){
   const M = S.marx; if (!M) return;
-  c.save(); c.setLineDash([4,3]); c.font = "8px ui-monospace,monospace";
+  c.save(); c.setLineDash([4,3]); c.font = FONT(8);
   for (const [n, la, lo, km] of M.naval){
     const x = px(lo), y = py(la), r = km * kmPx(la);
     if (x<-r-40||x>W+r+40||y<-r-40||y>H+r+40) continue;
@@ -1683,7 +1703,7 @@ function drawNaval(c){
 }
 function drawPuertos(c){
   const M = S.marx; if (!M) return;
-  c.font = "8px ui-monospace,monospace";
+  c.font = FONT(8);
   for (const [n, la, lo] of M.puertos){
     const x = px(lo), y = py(la);
     if (x<-30||x>W+30||y<-30||y>H+30) continue;
@@ -1711,7 +1731,7 @@ function subZonas(db){
 }
 function drawZonas(c){
   if (!S.L.ultimos || !S.zonas.length) return;
-  c.save(); c.setLineDash([6,4]); c.font = "8px ui-monospace,monospace";
+  c.save(); c.setLineDash([6,4]); c.font = FONT(8);
   for (const z of S.zonas){
     const x = px(z.lon), y = py(z.lat), r = z.km * kmPx(z.lat);
     if (x<-r-40||x>W+r+40||y<-r-40||y>H+r+40) continue;
