@@ -20,6 +20,7 @@
   --ww:calc(318px * var(--k));
 }
 *{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
 html,body{height:100%;overflow:hidden;background:var(--abyss)}
 body{font-family:var(--mono);color:var(--txt);font-size:calc(12px * var(--k));-webkit-font-smoothing:antialiased}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
