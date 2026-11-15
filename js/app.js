@@ -434,11 +434,13 @@ window.addEventListener("mousemove", e => {
   if (drag){
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
     if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = 1;
+    if (drag.moved){
     const s = sc();
-    S.view.cx = ((drag.cx + 180 - dx/s*360 + 540) % 360) - 180;
+    S.view.cx = ((drag.cx - dx/s*360 + 540) % 360) - 180;
     const y0 = lat2y(drag.cy) - dy;
     S.view.cy = clamp(y2lat(y0), -82, 82);
     mark();
+    }
   }
   if (mx>=0 && my>=0 && mx<=W && my<=H){
     const lo = ((x2lon(mx+ox)+540)%360)-180, la = y2lat(my+oy);
@@ -484,7 +486,7 @@ cv.addEventListener("touchmove", e => {
     if (Math.abs(dx) + Math.abs(dy) > 8) tq.moved = 1;
     if (!tq.moved) return;
     const s = sc();
-    S.view.cx = ((tq.cx + 180 - dx/s*360 + 540) % 360) - 180;
+    S.view.cx = ((tq.cx - dx/s*360 + 540) % 360) - 180;
     S.view.cy = clamp(y2lat(lat2y(tq.cy) - dy), -82, 82);
     mark();
   } else if (p.length >= 2){
