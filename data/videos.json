@@ -1,0 +1,245 @@
+{
+ "nota": "Casos con material audiovisual o documentación liberada o reconocida por organismos oficiales. Las coordenadas marcadas como aproximadas sitúan el área del incidente, no un punto exacto.",
+ "casos": [
+  {
+   "id": "flir1",
+   "titulo": "FLIR1 · «Tic Tac» del Nimitz",
+   "fecha": "14 de noviembre de 2004",
+   "lugar": "Pacífico, frente a San Diego, California",
+   "lat": 31.9,
+   "lon": -118.4,
+   "aprox": true,
+   "organismo": "U.S. Navy / Departamento de Defensa",
+   "sensor": "FLIR de un F/A-18 del portaaviones USS Nimitz",
+   "agua": true,
+   "muestra": "Objeto con forma de cápsula sobre el mar, sin superficies de control ni estela térmica visible.",
+   "estado": "Video liberado oficialmente por el Departamento de Defensa el 27 de abril de 2020. La Armada confirmó la fecha del incidente en 2019.",
+   "enlaces": [
+    [
+     "Nota sobre la liberación oficial (The Black Vault)",
+     "https://www.theblackvault.com/documentarchive/navy-officially-releases-ufo-uap-videos-calls-them-historical/"
+    ],
+    [
+     "Fechas confirmadas por la Armada",
+     "https://www.theblackvault.com/documentarchive/u-s-navy-releases-dates-of-three-officially-acknowledged-encounters-with-phenomena/"
+    ]
+   ]
+  },
+  {
+   "id": "gimbal",
+   "titulo": "GIMBAL",
+   "fecha": "21 de enero de 2015",
+   "lugar": "Océano Atlántico, frente a la costa este de EE.UU.",
+   "lat": 31.3,
+   "lon": -79.2,
+   "aprox": true,
+   "organismo": "U.S. Navy / Departamento de Defensa",
+   "sensor": "FLIR de un F/A-18F",
+   "agua": true,
+   "muestra": "Objeto que gira sobre su eje mientras avanza contra el viento, grabado sobre el Atlántico.",
+   "estado": "Liberado oficialmente el 27 de abril de 2020. Registrado el mismo día que GOFAST, lo que sugiere que ambos pertenecen al mismo episodio.",
+   "enlaces": [
+    [
+     "Nota sobre la liberación oficial (The Black Vault)",
+     "https://www.theblackvault.com/documentarchive/navy-officially-releases-ufo-uap-videos-calls-them-historical/"
+    ]
+   ]
+  },
+  {
+   "id": "gofast",
+   "titulo": "GOFAST",
+   "fecha": "21 de enero de 2015",
+   "lugar": "Atlántico frente a Florida, a unos 13.000 pies",
+   "lat": 29.9,
+   "lon": -79.6,
+   "aprox": true,
+   "organismo": "U.S. Navy · resolución posterior de AARO",
+   "sensor": "FLIR de un F/A-18F",
+   "agua": true,
+   "muestra": "Objeto pequeño que parece desplazarse a gran velocidad sobre el agua; el seguimiento del sensor exagera la sensación de rapidez.",
+   "estado": "Liberado en 2020. AARO publicó después un informe de resolución del caso.",
+   "enlaces": [
+    [
+     "Informes de resolución de casos · AARO",
+     "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports"
+    ]
+   ]
+  },
+  {
+   "id": "aguadilla",
+   "titulo": "Objetos de Puerto Rico · Aguadilla",
+   "fecha": "26 de abril de 2013",
+   "lugar": "Aeropuerto Rafael Hernández, Aguadilla, Puerto Rico",
+   "lat": 18.4949,
+   "lon": -67.1294,
+   "aprox": false,
+   "organismo": "U.S. Customs and Border Protection · análisis de AARO y de la SCU",
+   "sensor": "Sensor infrarrojo a bordo de un DHC-8 de la CBP",
+   "agua": true,
+   "muestra": "Objeto a baja altura que cruza la pista, se divide en dos y parece entrar y salir del agua antes de desaparecer en el océano.",
+   "estado": "EN DISPUTA. AARO concluye con alta confianza que no hubo velocidades ni maniobras anómalas: una reconstrucción indica dos objetos en línea recta a velocidad del viento, sin entrar al agua, probablemente linternas de cielo. Estudios previos de la Scientific Coalition for UAP Studies sostienen lo contrario.",
+   "enlaces": [
+    [
+     "Resolución del caso · AARO",
+     "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports"
+    ],
+    [
+     "Video oficial del caso",
+     "https://www.dover.af.mil/News/Video/videoid/944204/dvpTag/UAP"
+    ],
+    [
+     "Discrepancia entre AARO y la SCU",
+     "https://www.theblackvault.com/documentarchive/dod-report-says-aguadilla-ufo-was-just-sky-lanterns-previous-scientific-studies-claim-otherwise/"
+    ]
+   ]
+  },
+  {
+   "id": "etna",
+   "titulo": "Objeto del Monte Etna",
+   "fecha": "Diciembre de 2018",
+   "lugar": "Mediterráneo al sur de Sicilia, cerca de la base naval de Sigonella",
+   "lat": 37.42,
+   "lon": 14.99,
+   "aprox": true,
+   "organismo": "AARO · Departamento de Defensa",
+   "sensor": "Infrarrojo de onda corta desde un sistema aéreo no tripulado",
+   "agua": false,
+   "muestra": "Doce minutos de grabación de la erupción del Etna; durante unos cuatro minutos y medio un objeto redondo parece atravesar la columna eruptiva a gran velocidad.",
+   "estado": "Publicado por AARO junto a su informe de resolución del caso.",
+   "enlaces": [
+    [
+     "Resolución y video · AARO",
+     "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports"
+    ]
+   ]
+  },
+  {
+   "id": "omaha",
+   "titulo": "USS Omaha · esfera transmedio",
+   "fecha": "15 de julio de 2019",
+   "lugar": "Área de advertencia frente a San Diego, California",
+   "lat": 32.6,
+   "lon": -118.6,
+   "aprox": true,
+   "organismo": "U.S. Navy · confirmado como auténtico por el Pentágono",
+   "sensor": "Visión nocturna y FLIR, grabado en el Centro de Información de Combate del USS Omaha",
+   "agua": true,
+   "muestra": "Objeto esférico que sobrevuela el mar, se detiene y cae al agua. En el audio la tripulación comenta la caída.",
+   "estado": "El comentario del Grupo de Ataque 9 que acompañó a las imágenes consigna que el objeto se evaluó como hundido y que la búsqueda de restos no dio resultado. En abril de 2021 la Armada declaró que los objetos de 2019 seguían sin identificar.",
+   "enlaces": [
+    [
+     "El Pentágono confirma la autenticidad (The Debrief)",
+     "https://thedebrief.org/pentagon-confirms-leaked-video-showing-transmedium-ufo-is-authentic/"
+    ],
+    [
+     "Cobertura del caso (NBC News)",
+     "https://www.nbcnews.com/news/us-news/leaked-navy-video-appears-show-u-f-o-california-coast-n1267688"
+    ]
+   ]
+  },
+  {
+   "id": "chile2014",
+   "titulo": "Armada de Chile · patrullaje costero",
+   "fecha": "11 de noviembre de 2014",
+   "lugar": "Costa central de Chile, entre San Antonio y Viña del Mar",
+   "lat": -33.3,
+   "lon": -71.75,
+   "aprox": true,
+   "organismo": "Armada de Chile · investigado por el CEFAA (DGAC)",
+   "sensor": "Torreta FLIR/EO Wescam MX-15HD de un helicóptero Airbus Cougar AS-532",
+   "agua": true,
+   "muestra": "Objeto volando sobre el océano a la izquierda del helicóptero, a velocidad y altitud similares, durante más de diez minutos; en dos momentos parece expulsar material.",
+   "estado": "Ningún radar de la zona detectó el objeto, aunque sí al helicóptero. Tras dos años de análisis el CEFAA lo catalogó como fenómeno aéreo no identificado; análisis independientes posteriores han propuesto explicaciones convencionales.",
+   "enlaces": [
+    [
+     "Difusión del video y detalles del caso (T13)",
+     "https://www.t13.cl/noticia/nacional/divulgan-video-ovni-grabado-helicoptero-armada-chile"
+    ],
+    [
+     "Ficha técnica del helicóptero y el sensor (TWZ)",
+     "https://www.twz.com/6852/the-chilean-military-has-no-idea-what-this-flying-object-is"
+    ]
+   ],
+   "latam": true
+  },
+  {
+   "id": "campeche2004",
+   "latam": true,
+   "titulo": "Campeche · Fuerza Aérea Mexicana",
+   "fecha": "5 de marzo de 2004",
+   "lugar": "Costa de Campeche, México",
+   "lat": 18.9,
+   "lon": -91.6,
+   "aprox": true,
+   "organismo": "Fuerza Aérea Mexicana · Secretaría de la Defensa Nacional",
+   "sensor": "Cámara infrarroja FLIR de un C-26A Merlin en patrullaje antinarcóticos",
+   "agua": true,
+   "muestra": "Once objetos luminosos captados en infrarrojo a más de 3.500 metros de altura durante un patrullaje de rutina por la costa.",
+   "estado": "EN DISPUTA. La Sedena entregó el video al periodista Jaime Maussan y aclaró que las conclusiones de este no eran las suyas. Científicos de la UNAM propusieron que se trataba de centellas y reclamaron no haber tenido acceso a los datos técnicos del vuelo.",
+   "enlaces": [
+    [
+     "La Sedena explica el video (AP, 2004)",
+     "https://www.elsiglodetorreon.com.mx/noticia/2004/explica-sedena-video-sobre-ovnis.html"
+    ],
+    [
+     "«Son centellas, no ovnis»: científicos (La Jornada)",
+     "https://www.jornada.com.mx/2004/05/13/048n1con.php"
+    ],
+    [
+     "Confirmación vía transparencia (Uno TV)",
+     "https://www.unotv.com/ciencia-y-tecnologia/ovnis-en-mexico-estos-son-algunos-de-los-mas-famosos/"
+    ]
+   ]
+  },
+  {
+   "id": "noite1986",
+   "latam": true,
+   "titulo": "Brasil · Noche Oficial de los OVNIs",
+   "fecha": "19 de mayo de 1986",
+   "lugar": "São José dos Campos y otros estados, Brasil",
+   "lat": -23.18,
+   "lon": -45.89,
+   "aprox": true,
+   "organismo": "Força Aérea Brasileira · Cindacta · Arquivo Nacional",
+   "sensor": "Radares de defensa aérea, radares de a bordo y observación visual de pilotos",
+   "agua": false,
+   "muestra": "Los radares del Cindacta detectaron 21 objetos no identificados; se ordenó el despegue de cinco cazas para interceptarlos y ninguno logró acercarse.",
+   "estado": "Documentado y sin explicación oficial. El informe del Comando de Defensa Aérea y los audios de las comunicaciones de esa noche, bajo reserva durante casi treinta años, están disponibles desde 2015 en el Arquivo Nacional (fondo BR DFANBSB ARX).",
+   "enlaces": [
+    [
+     "A 40 años de la noche (Olhar Digital)",
+     "https://olhardigital.com.br/2026/05/19/ciencia-e-espaco/noite-dos-ovnis-misterio-que-intriga-o-brasil-completa-40-anos/"
+    ],
+    [
+     "Cómo consultar los documentos en el Arquivo Nacional",
+     "https://www.acessa.com/noticias/2026/05/325873-principal-testemunha-lembra-40-anos-depois-da-noite-em-que-ovnis-sobrevoaram-o-brasil.html"
+    ]
+   ]
+  },
+  {
+   "id": "bariloche1995",
+   "latam": true,
+   "titulo": "Argentina · Caso Bariloche",
+   "fecha": "31 de julio de 1995",
+   "lugar": "Aeropuerto de San Carlos de Bariloche, Río Negro",
+   "lat": -41.151,
+   "lon": -71.158,
+   "aprox": false,
+   "organismo": "Fuerza Aérea Argentina · Ministerio de Defensa · Gendarmería Nacional",
+   "sensor": "Testimonio de las tripulaciones de un Boeing 727 de Aerolíneas Argentinas y de un avión de Gendarmería, y de la torre de control",
+   "agua": false,
+   "muestra": "Una luz intensa acompañó durante unos quince minutos al vuelo AR 674 en su aproximación, mientras se cortaba el suministro eléctrico en el aeropuerto y la ciudad.",
+   "estado": "EN DISPUTA. El Ministerio de Defensa desclasificó el expediente en 2020. El informe de la Fuerza Aérea atribuye el episodio a una confusión por un potente proyector apuntado a la base de las nubes; el comandante Jorge Polanco sostiene su relato. El caso reapareció en 2026 en archivos desclasificados por Estados Unidos.",
+   "enlaces": [
+    [
+     "Qué revelan los archivos desclasificados (ANBariloche)",
+     "https://www.anbariloche.com.ar/noticias/2020/09/18/76863-el-gobierno-desclasifico-documentos-sobre-el-avistamiento-de-ovnis-en-bariloche-que-revelan-los-archivos"
+    ],
+    [
+     "El caso en los archivos del Pentágono (Buenos Aires Times)",
+     "https://batimes.com.ar/news/world/bariloche-sighting-cited-in-newly-released-pentagon-files-on-ufos.phtml"
+    ]
+   ]
+  }
+ ]
+}

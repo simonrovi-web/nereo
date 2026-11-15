@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEREO — Registro de fenómenos anómalos aéreos y submarinos</title>
+<meta name="description" content="Visor OSINT de 114.034 avistamientos no identificados geolocalizados, con capa marítima y de objetos submarinos no identificados (USO).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%2334dfe8'/%3E%3Cellipse cx='8' cy='7' rx='4' ry='1.4' fill='none' stroke='%2334dfe8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+
+  <canvas id="map"></canvas>
+  <div class="fx-grain"></div>
+  <div class="fx-scan" id="fxScan"></div>
+  <div class="fx-vignette"></div>
+
+  <!-- ───────────────── HUD SUPERIOR ───────────────── -->
+  <header class="hud-top">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+        <circle cx="20" cy="20" r="9" fill="none" stroke="currentColor" stroke-width=".8" opacity=".35"/>
+        <path d="M5 20h30M20 5v30" stroke="currentColor" stroke-width=".6" opacity=".3"/>
+        <path d="M6 24q7-6 14 0t14 0" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <ellipse cx="20" cy="15.5" rx="8" ry="2.6" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <circle cx="20" cy="15.5" r="1.5" fill="currentColor"/>
+      </svg>
+      <div class="brand-txt">
+        <h1>NEREO</h1>
+        <p>REGISTRO DE FENÓMENOS ANÓMALOS</p>
+      </div>
+    </div>
+
+    <div class="tagline">
+      <span>VIGILANCIA AÉREA</span><i></i><span>INTERFAZ MAR–AIRE</span><i></i>
+      <span>OBJETOS SUMERGIDOS NO IDENTIFICADOS</span><i></i><span id="tagRango">1906 — 2023</span>
+    </div>
+
+    <div class="hud-metrics">
+      <div class="met"><b id="mClock">--:--:--Z</b><span>ZULU</span></div>
+      <div class="met"><b class="live" id="mState">EN VIVO</b><span>ESTADO</span></div>
+      <div class="met"><b id="mLayers">0</b><span>CAPAS</span></div>
+      <div class="met"><b id="mCount">0</b><span>REGISTROS</span></div>
+      <div class="met accent"><b id="mMarine">0</b><span>MARÍTIMOS</span></div>
+      <div class="met warn"><b id="mUso">0</b><span>USO</span></div>
+      <div class="met accent"><b id="mUlt">0</b><span>30 DÍAS</span></div>
+      <div class="met"><b id="mVer">v2.0</b><span>NÚCLEO</span></div>
+    </div>
+  </header>
+
+  <!-- ───────────────── RAÍL IZQUIERDO: CAPAS ───────────────── -->
+  <nav class="rail rail-left" id="railLeft" aria-label="Grupos de capas"></nav>
+
+  <!-- ───────────────── PANEL LATERAL ───────────────── -->
+  <section class="panel" id="panel" hidden>
+    <header class="panel-head">
+      <h2 id="panelTitle">CAPAS</h2>
+      <button class="x" id="panelClose" aria-label="Cerrar panel">✕</button>
+    </header>
+    <div class="panel-body" id="panelBody"></div>
+  </section>
+
+  <!-- ───────────────── RAÍL DERECHO: HERRAMIENTAS ───────────────── -->
+  <nav class="rail rail-right" id="railRight" aria-label="Herramientas"></nav>
+
+  <!-- ───────────────── FICHA DE AVISTAMIENTO ───────────────── -->
+  <aside class="dossier" id="dossier" hidden>
+    <header>
+      <span class="tag" id="dsTag">REGISTRO</span>
+      <button class="x" id="dsClose" aria-label="Cerrar ficha">✕</button>
+    </header>
+    <div id="dsBody"></div>
+  </aside>
+
+  <!-- ───────────────── CONTROLES DE MAPA ───────────────── -->
+  <div class="mapctl">
+    <button id="btnZoomIn" title="Acercar">+</button>
+    <button id="btnZoomOut" title="Alejar">−</button>
+    <button id="btnReset" title="Restablecer vista (R)">⟲</button>
+  </div>
+
+  <div class="legend" id="legend"></div>
+
+  <!-- ───────────────── LÍNEA DE TIEMPO ───────────────── -->
+  <div class="timeline" id="timeline">
+    <button class="play" id="btnPlay" title="Reproducir oleadas">▶</button>
+    <div class="tl-wrap">
+      <div class="tl-head">
+        <span>VENTANA TEMPORAL</span>
+        <b id="tlLabel">1906 — 2023</b>
+      </div>
+      <div class="tl-track" id="tlTrack">
+        <canvas id="tlCanvas"></canvas>
+        <div class="tl-sel" id="tlSel"></div>
+        <div class="tl-knob" id="knobA" tabindex="0" role="slider" aria-label="Año inicial"></div>
+        <div class="tl-knob" id="knobB" tabindex="0" role="slider" aria-label="Año final"></div>
+      </div>
+    </div>
+    <div class="tl-count"><b id="tlCount">0</b><span>EN VENTANA</span></div>
+  </div>
+
+  <!-- ───────────────── BARRA INFERIOR ───────────────── -->
+  <footer class="statusbar">
+    <span class="dot-live"></span><b id="sbMode">RASTREO</b>
+    <i></i><span id="sbCursor">LAT —  LON —</span>
+    <i></i><span id="sbZoom">Z 0.0</span>
+    <i></i><span id="sbScale">— km</span>
+    <i></i><span class="muted">FUENTE: NUFORC · GEOCODIFICACIÓN DE CIUDAD</span>
+    <div class="ticker" id="ticker"><div class="ticker-run" id="tickerRun"></div></div>
+  </footer>
+
+  <!-- ───────────────── ARRANQUE ───────────────── -->
+  <div class="boot" id="boot">
+    <div class="boot-inner">
+      <div class="boot-mark">NEREO</div>
+      <div class="boot-bar"><i id="bootBar"></i></div>
+      <div class="boot-log" id="bootLog">INICIANDO NÚCLEO…</div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

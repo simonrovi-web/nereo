@@ -1,0 +1,17 @@
+{
+  "nota": "Cámaras de cielo completo (allsky) de instituciones y redes públicas. Observan el cielo entero de forma continua para detectar meteoros y bólidos; son el registro visual sistemático más parecido a una red de vigilancia aérea civil. Los enlaces llevan a la página del operador, no a un stream incrustado.",
+  "sitios": [
+    {"n":"La Silla · cámara allsky",     "o":"ESO",            "p":"Chile",        "lat":-29.2543,"lon":-70.7346,"u":"https://www.eso.org/public/outreach/webcams/","d":"Cámara de cielo completo junto al telescopio danés de 1,54 m."},
+    {"n":"Cerro Paranal · VLT",          "o":"ESO",            "p":"Chile",        "lat":-24.6275,"lon":-70.4044,"u":"https://www.eso.org/public/outreach/webcams/","d":"Webcam del sitio del Very Large Telescope, en el desierto de Atacama."},
+    {"n":"Llano de Chajnantor · ALMA",   "o":"ESO y socios",   "p":"Chile",        "lat":-23.0290,"lon":-67.7549,"u":"https://www.eso.org/public/outreach/webcams/","d":"Vista en vivo del conjunto de antenas de ALMA a 5.000 m."},
+    {"n":"Cerro Tololo · allsky",        "o":"CTIO / NOIRLab", "p":"Chile",        "lat":-30.1690,"lon":-70.8060,"u":"https://www.sao.ru/zserv/webcam/asrtro_webcams.html","d":"Cámara de cielo completo del observatorio interamericano."},
+    {"n":"Cerro Pachón · SASCA",         "o":"SOAR",           "p":"Chile",        "lat":-30.2379,"lon":-70.7337,"u":"https://www.sao.ru/zserv/webcam/asrtro_webcams.html","d":"SOAR All-Sky Camera, en la misma cumbre que el Observatorio Rubin."},
+    {"n":"Las Campanas · allsky",        "o":"Carnegie",       "p":"Chile",        "lat":-29.0146,"lon":-70.6926,"u":"https://www.sao.ru/zserv/webcam/asrtro_webcams.html","d":"Cámara de cielo completo del observatorio de Las Campanas."},
+    {"n":"Kitt Peak · allsky",           "o":"KPNO / NOIRLab", "p":"EE.UU.",       "lat":31.9583,"lon":-111.5967,"u":"https://noirlab.edu/science/observing-noirlab/weather-webcams/kitt-peak","d":"Cámara de cielo completo y cámara de la red de bólidos de la NASA."},
+    {"n":"Red de bólidos de la NASA",    "o":"NASA MEO",       "p":"EE.UU.",       "lat":34.6500,"lon":-86.6700,"u":"https://fireballs.ndc.nasa.gov/Site/Welcome.html","d":"Red de cámaras allsky repartidas por el territorio continental; publica cada evento detectado con trayectoria y órbita.","red":true},
+    {"n":"CAMS · vigilancia de meteoros","o":"SETI Institute", "p":"Internacional","lat":36.7600,"lon":-121.5000,"u":"https://cams.seti.org/easyCAMS.html","d":"Redes de cámaras de video coordinadas en varios países para triangular meteoros.","red":true},
+    {"n":"AllSky7 · red de bólidos",     "o":"Consorcio europeo","p":"Europa",     "lat":50.9000,"lon":10.0000,"u":"https://allsky7.net/","d":"Imagen en vivo de cada estación, actualizada cada quince minutos, y archivo de bólidos.","red":true},
+    {"n":"Registro de cámaras allsky",   "o":"American Meteor Society","p":"Internacional","lat":39.8000,"lon":-98.5800,"u":"https://www.amsmeteors.org/cameras/3/","d":"Directorio de cámaras de cielo completo de miembros, con ubicación y radio de cobertura.","red":true},
+    {"n":"AllSkyCam · directorio",       "o":"Comunidad",      "p":"Internacional","lat":25.9400,"lon":-81.7200,"u":"https://www.allskycam.com/","d":"Portal donde operadores particulares publican la imagen en vivo de su cámara de cielo.","red":true}
+  ]
+}
