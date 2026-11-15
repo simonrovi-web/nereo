@@ -1,0 +1,932 @@
+{
+ "nota": "Catálogo curado de registros audiovisuales extraños. Cada ficha enlaza a su fuente y muestra el estado de la explicación. NEREO no aloja ningún video: los enlaces llevan a su origen.",
+ "categorias": {
+  "cielo": {
+   "n": "CIELO Y MAR SIN EXPLICAR",
+   "c": "#7fb2ff"
+  },
+  "mar": {
+   "n": "CRIATURAS Y SONIDOS MARINOS",
+   "c": "#33d6c2"
+  },
+  "natural": {
+   "n": "FENÓMENOS NATURALES EXTRAÑOS",
+   "c": "#b58cff"
+  },
+  "montaje": {
+   "n": "VIRALES Y MONTAJES",
+   "c": "#ff6b6b"
+  }
+ },
+ "veredictos": {
+  "abierto": {
+   "n": "SIN EXPLICACIÓN",
+   "c": "#ffb340",
+   "d": "Nadie ha dado una explicación aceptada."
+  },
+  "debate": {
+   "n": "EN DEBATE",
+   "c": "#ffd166",
+   "d": "Hay explicaciones propuestas, discutidas por otros."
+  },
+  "explicado": {
+   "n": "EXPLICADO",
+   "c": "#5ef2a8",
+   "d": "La causa se identificó con evidencia."
+  },
+  "documentado": {
+   "n": "REAL Y DOCUMENTADO",
+   "c": "#34dfe8",
+   "d": "Es raro, pero es real y está confirmado por la ciencia."
+  },
+  "montaje": {
+   "n": "MONTAJE",
+   "c": "#ff5a52",
+   "d": "Falso: fabricado o presentado con engaño."
+  }
+ },
+ "casos": [
+  {
+   "id": "elbosque2010",
+   "cat": "cielo",
+   "titulo": "Base aérea El Bosque · objeto en el desfile",
+   "fecha": "4 de noviembre de 2010",
+   "anio": 2010,
+   "lugar": "Base aérea El Bosque, Santiago, Chile",
+   "lat": -33.561,
+   "lon": -70.688,
+   "aprox": false,
+   "agua": false,
+   "latam": true,
+   "fuente": "Videos de asistentes revisados por el CEFAA (Fuerza Aérea de Chile / DGAC)",
+   "muestra": "Durante la ceremonia de cambio de mando de la FACh, varios videos de asistentes captaron un punto que cruza muy rápido cerca de la escuadrilla Halcones y de los F-16. Nadie lo vio en el momento.",
+   "veredicto": "debate",
+   "explicacion": "Asesores del CEFAA descartaron meteoro, avión, ave o basura espacial. Análisis posteriores, entre ellos el del físico Bruce Maccabee, concluyeron que lo más probable es un insecto volando cerca de la cámara; otro investigador sostuvo lo contrario. Sigue sin un cierre aceptado por ambas partes.",
+   "enlaces": [
+    [
+     "Presentación del caso (Emol)",
+     "https://www.emol.com/noticias/nacional/2012/03/13/530510/presentan-caso-de-supuesto-ovni-en-base-aerea-el-bosque.html"
+    ],
+    [
+     "La hipótesis del insecto (HuffPost)",
+     "https://www.huffpost.com/entry/update-on-chilean-ufo-vid_b_1424008/amp"
+    ],
+    [
+     "Visión escéptica (NBC News)",
+     "https://www.nbcnews.com/science/cosmic-log/video-chile-stirs-ufo-buzz-flna458180"
+    ]
+   ],
+   "buscar": "ovni El Bosque 2010 CEFAA video",
+   "medio": "video",
+   "video": ""
+  },
+  {
+   "id": "kaikoura1978",
+   "cat": "cielo",
+   "titulo": "Luces de Kaikōura",
+   "fecha": "21 y 31 de diciembre de 1978",
+   "anio": 1978,
+   "lugar": "Costa de Kaikōura, Nueva Zelanda",
+   "lat": -42.45,
+   "lon": 173.85,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Equipo de televisión australiano a bordo de un avión de carga Argosy",
+   "muestra": "Luces brillantes sobre el mar filmadas desde la cabina, que según la tripulación acompañaban al avión y aparecían en el radar de Wellington.",
+   "veredicto": "debate",
+   "explicacion": "El organismo científico neozelandés (DSIR) atribuyó las luces a barcos calamareros iluminados en el mar; el Ministerio de Defensa sumó otras causas posibles como Venus o meteoros. Investigadores como Maccabee rechazaron esa explicación por los ecos de radar.",
+   "enlaces": [
+    [
+     "Resumen del caso (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Kaik%C5%8Dura_lights"
+    ],
+    [
+     "La hipótesis de los calamareros (NZ Skeptics)",
+     "https://articles.skeptics.nz/2000/11/01/ghost-squid-boats-in-the-sky"
+    ],
+    [
+     "Testigos 40 años después (Newshub)",
+     "https://www.newshub.co.nz/home/new-zealand/2018/03/kaikoura-ufo-mystery-still-flummoxing-locals-40-years-on.html"
+    ]
+   ],
+   "buscar": "Kaikoura lights 1978 footage",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "hessdalen",
+   "cat": "cielo",
+   "titulo": "Luces de Hessdalen",
+   "fecha": "Desde 1981 · estación automática desde 1998",
+   "anio": 1998,
+   "lugar": "Valle de Hessdalen, Noruega",
+   "lat": 62.79,
+   "lon": 11.19,
+   "aprox": false,
+   "agua": false,
+   "fuente": "Project Hessdalen (estación de medición automática, cámaras y magnetómetro)",
+   "muestra": "Esferas de luz que flotan sobre el valle durante minutos, a veces captadas por radar. Es el fenómeno luminoso anómalo con monitoreo científico continuo más antiguo.",
+   "veredicto": "abierto",
+   "explicacion": "Se han propuesto plasma, combustión de polvo mineral y efectos piezoeléctricos, sin consenso. Críticos escépticos señalan que parte de las imágenes de la estación coinciden con luces de aviones que siguen un corredor aéreo hacia el valle.",
+   "enlaces": [
+    [
+     "Fotos y videos del proyecto",
+     "https://www.hessdalen.org/videos"
+    ],
+    [
+     "Revisión científica del caso (arXiv)",
+     "https://arxiv.org/pdf/2502.06794"
+    ]
+   ],
+   "buscar": "Hessdalen lights video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "phoenix1997",
+   "cat": "cielo",
+   "titulo": "Luces de Phoenix",
+   "fecha": "13 de marzo de 1997",
+   "anio": 1997,
+   "lugar": "Phoenix, Arizona, EE.UU.",
+   "lat": 33.45,
+   "lon": -112.07,
+   "aprox": false,
+   "agua": false,
+   "fuente": "Videos de miles de vecinos; el más difundido, el de Michael Krzyston a las 22:00",
+   "muestra": "Dos eventos distintos esa noche: hacia las 20:00, una formación en V que cruzó Arizona; hacia las 22:00, una fila de luces que bajaba lentamente sobre la sierra Estrella. Los videos famosos son del segundo.",
+   "veredicto": "debate",
+   "explicacion": "Las luces de las 22:00 fueron bengalas de iluminación lanzadas por aviones A-10 de la Guardia Nacional Aérea de Maryland en un polígono de tiro. La formación en V se atribuye a aviones A-10 en vuelo de entrenamiento, pero muchos testigos la discuten.",
+   "enlaces": [
+    [
+     "Resumen y explicación (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Phoenix_Lights"
+    ],
+    [
+     "Las bengalas (Phoenix New Times)",
+     "https://www.phoenixnewtimes.com/news/the-phoenix-lights-are-no-mystery-6661825"
+    ]
+   ],
+   "buscar": "Phoenix lights 1997 video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "russell2019",
+   "cat": "cielo",
+   "titulo": "USS Russell · «pirámides» sobre el destructor",
+   "fecha": "Julio de 2019",
+   "anio": 2019,
+   "lugar": "Pacífico, frente a San Diego, California",
+   "lat": 32.4,
+   "lon": -118.2,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Personal de la Armada de EE.UU. con cámara de visión nocturna (filtrado en 2021)",
+   "muestra": "Tres luces triangulares que parpadean sobre el buque. Ocurrió en días en que varios destructores registraron supuestos drones en su entorno.",
+   "veredicto": "abierto",
+   "explicacion": "El Pentágono confirmó en 2021 que el video fue grabado por personal de la Armada y que el caso estaba en revisión, sin publicar qué eran los objetos.",
+   "enlaces": [
+    [
+     "El Pentágono confirma la autenticidad (Global News)",
+     "https://globalnews.ca/news/7757069/ufo-pyramid-sphere-leaked-footage-pentagon-uap"
+    ],
+    [
+     "Contexto de los «drones» de 2019 (The Debrief)",
+     "https://thedebrief.org/pentagon-confirms-leaked-ufo-images-are-authentic/"
+    ]
+   ],
+   "buscar": "USS Russell pyramid UAP video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "noruega2009",
+   "cat": "cielo",
+   "titulo": "Espiral de Noruega",
+   "fecha": "9 de diciembre de 2009",
+   "anio": 2009,
+   "lugar": "Vista desde el norte de Noruega (Skjervøy)",
+   "lat": 70.03,
+   "lon": 20.97,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Fotografías y videos de vecinos en todo el norte de Noruega",
+   "muestra": "Una espiral luminosa azul y blanca que giró en el cielo antes del amanecer y desapareció en minutos.",
+   "veredicto": "explicado",
+   "explicacion": "Rusia confirmó al día siguiente el fallo de una prueba del misil Bulava lanzado desde un submarino en el mar Blanco. El misil giró sin control y su escape formó la espiral, que en realidad estaba sobre territorio ruso.",
+   "enlaces": [
+    [
+     "Misterio resuelto (Christian Science Monitor)",
+     "https://features.csmonitor.com/globalnews/2009/12/10/norway-spiral-video-mystery-solved/"
+    ]
+   ],
+   "buscar": "Norway spiral 2009 video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "spacex2025",
+   "cat": "cielo",
+   "titulo": "Espiral azul sobre Europa",
+   "fecha": "24 de marzo de 2025",
+   "anio": 2025,
+   "lugar": "Reino Unido y Europa central",
+   "lat": 52.4,
+   "lon": -1.9,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Miles de fotos y videos en redes; el Met Office británico lo identificó esa misma noche",
+   "muestra": "Un remolino luminoso que se expandió y se desvaneció en pocos minutos, visto desde Reino Unido, Polonia, Croacia y otros países.",
+   "veredicto": "explicado",
+   "explicacion": "Combustible sobrante expulsado por la segunda etapa de un cohete Falcon 9 de SpaceX tras la misión NROL-69. El combustible se congela en cristales que reflejan el sol mientras la etapa gira.",
+   "enlaces": [
+    [
+     "Qué fue (Space.com)",
+     "https://www.space.com/space-exploration/launches-spacecraft/mysterious-blue-spiral-spotted-over-european-skies-what-was-it-photos"
+    ]
+   ],
+   "buscar": "SpaceX spiral Europe March 2025",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "starlink",
+   "cat": "cielo",
+   "titulo": "Destellos de satélites Starlink",
+   "fecha": "Octubre de 2022 · caso de estudio de AARO",
+   "anio": 2022,
+   "lugar": "Cerca de Gallup, Nuevo México, EE.UU.",
+   "lat": 35.53,
+   "lon": -108.74,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Piloto de aerolínea; análisis y video explicativo de AARO (Departamento de Defensa)",
+   "muestra": "Varias luces que se encienden y se mueven en direcciones distintas, reportadas como UAP por un piloto comercial.",
+   "veredicto": "explicado",
+   "explicacion": "AARO las atribuyó a destellos de satélites Starlink al reflejar el sol poco después del atardecer o antes del amanecer. Es hoy una de las causas más comunes de reportes de luces en fila.",
+   "enlaces": [
+    [
+     "Informe y video de AARO (The Black Vault)",
+     "https://www.theblackvault.com/documentarchive/aaro-releases-document-and-video-explaining-satellite-flares-as-a-uap-misidentification-source/"
+    ],
+    [
+     "Casos resueltos de AARO",
+     "https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports"
+    ]
+   ],
+   "buscar": "AARO satellite flaring phenomenon video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "bloop",
+   "cat": "mar",
+   "titulo": "El «Bloop»",
+   "fecha": "1997",
+   "anio": 1997,
+   "medio": "audio",
+   "lugar": "Pacífico Sur, al oeste del extremo sur de Chile",
+   "lat": -50.0,
+   "lon": -100.0,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Red de hidrófonos del PMEL (NOAA)",
+   "muestra": "Un sonido submarino muy grave y potente, captado por sensores a miles de kilómetros de distancia. Por años se especuló con un animal gigante desconocido.",
+   "veredicto": "explicado",
+   "explicacion": "NOAA lo identificó como un sismo de hielo: un iceberg que se agrieta y se desprende de un glaciar antártico. Los hidrófonos instalados cerca de la Antártica registraron sonidos idénticos desde 2005.",
+   "enlaces": [
+    [
+     "Escuchar el Bloop y su explicación (NOAA)",
+     "https://oceanservice.noaa.gov/facts/bloop.html"
+    ]
+   ],
+   "video": "https://oceanservice.noaa.gov/facts/bloop.html",
+   "buscar": "NOAA bloop sound",
+   "latam": false
+  },
+  {
+   "id": "upsweep",
+   "cat": "mar",
+   "titulo": "«Upsweep»",
+   "fecha": "Desde 1991",
+   "anio": 1991,
+   "medio": "audio",
+   "lugar": "Pacífico (posición aproximada)",
+   "lat": -54.0,
+   "lon": -140.0,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Hidrófonos autónomos del PMEL (NOAA)",
+   "muestra": "Una serie de sonidos ascendentes que se repite cada año con variación estacional y que se sigue registrando hoy, aunque más débil.",
+   "veredicto": "abierto",
+   "explicacion": "La explicación principal es actividad volcánica submarina, pero NOAA mantiene oficialmente que el origen del sonido no está resuelto.",
+   "enlaces": [
+    [
+     "Sonidos oceánicos sin explicar (WorldAtlas)",
+     "https://www.worldatlas.com/oceans/the-ocean-sounds-scientists-still-can-t-explain.html"
+    ],
+    [
+     "Ficha del sonido (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Upsweep"
+    ]
+   ],
+   "buscar": "NOAA upsweep sound",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "ballena52",
+   "cat": "mar",
+   "titulo": "La ballena de 52 hercios",
+   "fecha": "Detectada desde 1989",
+   "anio": 1989,
+   "medio": "audio",
+   "lugar": "Pacífico Norte",
+   "lat": 40.0,
+   "lon": -150.0,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Equipo de la Institución Oceanográfica Woods Hole, con hidrófonos SOSUS de la Armada de EE.UU.",
+   "muestra": "El canto de una ballena en una frecuencia mucho más alta que la de cualquier otra ballena conocida, seguido durante años.",
+   "veredicto": "abierto",
+   "explicacion": "Es un animal real que se ha detectado año tras año, pero no se ha identificado con certeza su especie. Se ha propuesto que sea un híbrido, y desde 2010 hay registros que sugieren un segundo individuo.",
+   "enlaces": [
+    [
+     "Ficha del caso (Wikipedia)",
+     "https://en.wikipedia.org/wiki/52-hertz_whale"
+    ]
+   ],
+   "buscar": "52 hertz whale sound",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "calamar2019",
+   "cat": "mar",
+   "titulo": "Calamar gigante en el golfo de México",
+   "fecha": "19 de junio de 2019",
+   "anio": 2019,
+   "lugar": "Golfo de México, unos 160 km al sureste de Nueva Orleans",
+   "lat": 28.6,
+   "lon": -88.4,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Cámara Medusa, expedición «Journey into Midnight» financiada por NOAA",
+   "muestra": "Un calamar gigante de 3 a 3,7 metros sale de la oscuridad a 759 metros de profundidad y ataca el señuelo luminoso de la cámara antes de retirarse.",
+   "veredicto": "documentado",
+   "explicacion": "Primer video de un calamar gigante en aguas de EE.UU. y segundo en su hábitat. Confirmado por el zoólogo de NOAA Michael Vecchione.",
+   "enlaces": [
+    [
+     "Video y ficha (NOAA Ocean Exploration)",
+     "https://oceanexplorer.noaa.gov/video_playlist/best_5_squid.html"
+    ],
+    [
+     "Cómo se logró (National Geographic)",
+     "https://www.nationalgeographic.com/animals/article/giant-squid-us-waters-first-video"
+    ]
+   ],
+   "video": "https://oceanexplorer.noaa.gov/video_playlist/best_5_squid.html",
+   "buscar": "giant squid Gulf of Mexico 2019 Medusa",
+   "medio": "video",
+   "latam": false
+  },
+  {
+   "id": "calamar2012",
+   "cat": "mar",
+   "titulo": "Primer calamar gigante filmado vivo",
+   "fecha": "2012",
+   "anio": 2012,
+   "lugar": "Islas Ogasawara, Japón",
+   "lat": 27.1,
+   "lon": 142.2,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Expedición japonesa con la cámara Medusa de Edith Widder",
+   "muestra": "La primera grabación de un calamar gigante vivo en su hábitat natural, en las profundidades frente a Japón.",
+   "veredicto": "documentado",
+   "explicacion": "Animal real (género Architeuthis), durante siglos asociado a leyendas de monstruos marinos como el kraken.",
+   "enlaces": [
+    [
+     "Contexto (National Geographic)",
+     "https://www.nationalgeographic.com/animals/article/giant-squid-us-waters-first-video"
+    ]
+   ],
+   "buscar": "first giant squid footage 2012 Japan",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "casper2016",
+   "cat": "mar",
+   "titulo": "El pulpo fantasma «Casper»",
+   "fecha": "27 de febrero de 2016",
+   "anio": 2016,
+   "lugar": "Noreste de la isla Necker, Hawái",
+   "lat": 23.7,
+   "lon": -164.5,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Vehículo submarino Deep Discoverer, buque Okeanos Explorer (NOAA)",
+   "muestra": "Un pulpo diminuto, translúcido y sin pigmento, posado en una roca a 4.290 metros de profundidad.",
+   "veredicto": "documentado",
+   "explicacion": "NOAA lo consideró casi con certeza una especie no descrita, y la observación más profunda registrada para ese tipo de pulpo.",
+   "enlaces": [
+    [
+     "Bitácora de la expedición (NOAA)",
+     "https://oceanexplorer.noaa.gov/okeanos/explorations/ex1603/logs/mar2/mar2.html"
+    ]
+   ],
+   "video": "https://oceanexplorer.noaa.gov/okeanos/explorations/ex1903/logs/june28/media/casper.html",
+   "buscar": "NOAA ghost octopus Casper Hawaii",
+   "medio": "video",
+   "latam": false
+  },
+  {
+   "id": "gallina2018",
+   "cat": "mar",
+   "titulo": "El «monstruo pollo sin cabeza»",
+   "fecha": "Octubre de 2018",
+   "anio": 2018,
+   "lugar": "Océano Austral, cerca de las islas Heard y McDonald",
+   "lat": -53.1,
+   "lon": 73.5,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Cámaras submarinas de la División Antártica Australiana instaladas en palangres de pesca",
+   "muestra": "Un pepino de mar púrpura que nada con aletas, del tamaño de un balón de básquetbol, a unos 3 km de profundidad.",
+   "veredicto": "documentado",
+   "explicacion": "Es Enypniastes eximia, una especie conocida desde 1882 que solo había sido filmada en el golfo de México.",
+   "enlaces": [
+    [
+     "La «cucumber-cam» (Australian Antarctic Division)",
+     "https://www.antarctica.gov.au/magazine/issue-35-december-2018/science/cucumber-cam-assists-conservation/"
+    ]
+   ],
+   "buscar": "headless chicken monster Antarctic video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "sifonoforo2020",
+   "cat": "mar",
+   "titulo": "Sifonóforo gigante en espiral",
+   "fecha": "Abril de 2020",
+   "anio": 2020,
+   "lugar": "Cañones de Ningaloo, Australia Occidental",
+   "lat": -22.4,
+   "lon": 113.3,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Vehículo SuBastian, buque Falkor (Schmidt Ocean Institute)",
+   "muestra": "Una colonia de organismos con forma de espiral, de unos 15 metros de diámetro, que los propios científicos describieron con una postura «parecida a un ovni».",
+   "veredicto": "documentado",
+   "explicacion": "Un sifonóforo del género Apolemia, posiblemente el ejemplar más grande registrado: miles de individuos clonados que actúan como un solo cuerpo.",
+   "enlaces": [
+    [
+     "Video oficial (EurekAlert / Schmidt Ocean)",
+     "https://www.eurekalert.org/multimedia/903866"
+    ],
+    [
+     "La expedición (Schmidt Ocean Institute)",
+     "https://schmidtocean.org/cruise/illuminating-biodiversity-of-ningaloo-canyons/"
+    ]
+   ],
+   "video": "https://www.eurekalert.org/multimedia/903866",
+   "buscar": "giant siphonophore Ningaloo Schmidt Ocean",
+   "medio": "video",
+   "latam": false
+  },
+  {
+   "id": "orbe2023",
+   "cat": "mar",
+   "titulo": "El «orbe dorado» de Alaska",
+   "fecha": "30 de agosto de 2023",
+   "anio": 2023,
+   "lugar": "Golfo de Alaska, a 3.250 m de profundidad",
+   "lat": 56.0,
+   "lon": -150.0,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Expedición Seascape Alaska 5, buque Okeanos Explorer (NOAA)",
+   "muestra": "Un domo dorado de unos 10 cm con un agujero, pegado a una roca. Se especuló con un huevo o incluso con un objeto de otro mundo.",
+   "veredicto": "explicado",
+   "explicacion": "En abril de 2026, NOAA y el Smithsonian lo identificaron con ADN como los restos de la base de una anémona gigante de aguas profundas, Relicanthus daphneae.",
+   "enlaces": [
+    [
+     "La identificación (CTV News)",
+     "https://www.ctvnews.ca/sci-tech/article/scientists-identify-mysterious-golden-orb-discovered-deep-in-the-gulf-of-alaska/"
+    ]
+   ],
+   "buscar": "NOAA golden orb Gulf of Alaska",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "pez8336",
+   "cat": "mar",
+   "titulo": "El pez más profundo jamás filmado",
+   "fecha": "Agosto de 2022 · anunciado en abril de 2023",
+   "anio": 2022,
+   "lugar": "Fosa de Izu-Ogasawara, Japón · 8.336 m",
+   "lat": 31.0,
+   "lon": 142.5,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Universidad de Australia Occidental y Universidad de Ciencia y Tecnología Marina de Tokio",
+   "muestra": "Un pequeño pez caracol juvenil nadando junto a una cámara con cebo a más de 8 km bajo la superficie.",
+   "veredicto": "documentado",
+   "explicacion": "Un pez del género Pseudoliparis. Antes se pensaba que ningún pez podía vivir más allá de unos 8.200 metros.",
+   "enlaces": [
+    [
+     "El récord (Natural History Museum)",
+     "https://nhm.ac.uk/discover/news/2023/april/deepest-ever-fish-filmed-depth-8336-metres.html"
+    ]
+   ],
+   "buscar": "deepest fish ever filmed 8336 snailfish",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "rayoglobular",
+   "cat": "natural",
+   "titulo": "Primer espectro de un rayo globular",
+   "fecha": "23 de julio de 2012",
+   "anio": 2012,
+   "lugar": "Meseta de Qinghai, China",
+   "lat": 36.6,
+   "lon": 101.6,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Universidad Normal del Noroeste (Lanzhou), cámaras y espectrógrafos de campo",
+   "muestra": "Una bola de luz de unos 5 metros que nace del impacto de un rayo, se desplaza y cambia de blanco a rojo en 1,6 segundos.",
+   "veredicto": "documentado",
+   "explicacion": "El espectro mostró silicio, hierro y calcio, elementos del suelo. Apoya la teoría de que el rayo globular es tierra vaporizada que se quema en el aire.",
+   "enlaces": [
+    [
+     "El hallazgo y el video (APS Physics)",
+     "https://physics.aps.org/articles/v7/5"
+    ]
+   ],
+   "video": "https://physics.aps.org/articles/v7/5",
+   "buscar": "ball lightning spectrum Qinghai video",
+   "medio": "video",
+   "latam": false
+  },
+  {
+   "id": "steve",
+   "cat": "natural",
+   "titulo": "STEVE, la falsa aurora",
+   "fecha": "Identificado en 2016 · publicado en 2018",
+   "anio": 2016,
+   "lugar": "Alberta, Canadá",
+   "lat": 51.05,
+   "lon": -114.07,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Fotógrafos aficionados del grupo Alberta Aurora Chasers, con NASA y la Universidad de Calgary",
+   "muestra": "Una cinta vertical de luz malva, a veces con una «cerca» verde debajo, que aparece en latitudes más bajas que las auroras normales.",
+   "veredicto": "documentado",
+   "explicacion": "Un fenómeno atmosférico nuevo descubierto por ciudadanos y verificado con satélites. Se asocia a un flujo muy rápido de partículas cargadas, aunque su mecanismo aún se estudia.",
+   "enlaces": [
+    [
+     "Ciudadanos y NASA (NASA)",
+     "https://www.nasa.gov/science-research/heliophysics/aurora-chasing-citizen-scientists-help-discover-a-new-feature-of-steve"
+    ]
+   ],
+   "buscar": "STEVE aurora timelapse",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "sprites",
+   "cat": "natural",
+   "titulo": "Duendes rojos (sprites)",
+   "fecha": "Primer video: 6 de julio de 1989",
+   "anio": 1989,
+   "lugar": "Observatorio O'Brien, Minnesota, EE.UU. (primer registro)",
+   "lat": 45.2,
+   "lon": -92.8,
+   "aprox": true,
+   "agua": false,
+   "fuente": "John R. Winckler y su equipo (Universidad de Minnesota), probando por casualidad una cámara de baja luz; hoy se filman desde tierra, aviones y el espacio",
+   "muestra": "Destellos rojizos con forma de medusa o zanahoria que duran milisegundos por encima de grandes tormentas.",
+   "veredicto": "documentado",
+   "explicacion": "Descargas eléctricas en la alta atmósfera provocadas por rayos intensos. Durante décadas fueron relatos de pilotos difíciles de creer.",
+   "enlaces": [
+    [
+     "El descubrimiento y los videos del transbordador (NASA Earthdata)",
+     "https://www.earthdata.nasa.gov/learn/data-in-action/role-space-shuttle-videotapes-discovery-sprites-jets-elves"
+    ],
+    [
+     "Ficha (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Sprite_(lightning)"
+    ]
+   ],
+   "buscar": "red sprites lightning video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "lucessismo",
+   "cat": "natural",
+   "titulo": "Luces de terremoto",
+   "fecha": "Ejemplo: 7 de septiembre de 2017",
+   "anio": 2017,
+   "latam": true,
+   "lugar": "Ciudad de México, durante el sismo de Chiapas",
+   "lat": 19.43,
+   "lon": -99.13,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Videos de vecinos durante el sismo de magnitud 8,2",
+   "muestra": "Destellos azulados y verdosos en el cielo nocturno mientras la tierra temblaba.",
+   "veredicto": "debate",
+   "explicacion": "Las luces sísmicas son un fenómeno registrado desde hace siglos y sin mecanismo acordado. Muchos destellos filmados en ciudades son en realidad cortocircuitos en transformadores y líneas eléctricas.",
+   "enlaces": [
+    [
+     "Ficha del fenómeno (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Earthquake_light"
+    ]
+   ],
+   "buscar": "luces terremoto México 2017 video",
+   "medio": "video",
+   "video": ""
+  },
+  {
+   "id": "marfa",
+   "cat": "natural",
+   "titulo": "Luces de Marfa",
+   "fecha": "Relatos desde fines del siglo XIX",
+   "anio": 2004,
+   "lugar": "Marfa, Texas, EE.UU.",
+   "lat": 30.25,
+   "lon": -103.88,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Observadores y estudios de campo",
+   "muestra": "Luces que aparecen, flotan y se apagan sobre el desierto al este de Marfa.",
+   "veredicto": "explicado",
+   "explicacion": "En mayo de 2004, estudiantes de física de la Universidad de Texas en Dallas mostraron que las luces observadas coincidían con faros de autos en la carretera 67; un estudio con espectroscopía de 2008 llegó a lo mismo. Quedan casos raros que esos equipos no pudieron explicar.",
+   "enlaces": [
+    [
+     "Ficha y estudios (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Marfa_lights"
+    ],
+    [
+     "El experimento de 2004 (Texas Monthly)",
+     "https://www.texasmonthly.com/travel/the-truth-is-out-there/"
+    ]
+   ],
+   "buscar": "Marfa lights video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "marlechoso",
+   "cat": "natural",
+   "titulo": "Mar lechoso",
+   "fecha": "Julio a septiembre de 2019",
+   "anio": 2019,
+   "lugar": "Al sur de Java, océano Índico",
+   "lat": -10.0,
+   "lon": 109.0,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Satélites de NOAA (banda día-noche) y la tripulación del velero Ganesha, que lo cruzó el 2 de agosto de 2019",
+   "muestra": "Más de 100.000 km² de mar brillando con una luz blanca y continua; la tripulación lo describió como navegar sobre nieve. Se vio desde el espacio y desde la cubierta a la vez.",
+   "veredicto": "documentado",
+   "explicacion": "Bioluminiscencia que se atribuye a bacterias luminosas; su composición y causa exactas siguen siendo inciertas.",
+   "enlaces": [
+    [
+     "El estudio con las fotos del velero (PNAS, vía PMC)",
+     "https://pmc.ncbi.nlm.nih.gov/articles/PMC9303900/"
+    ]
+   ],
+   "buscar": "milky seas bioluminescence",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "brinicle",
+   "cat": "natural",
+   "titulo": "Brinicle, el «dedo de la muerte»",
+   "fecha": "2011",
+   "anio": 2011,
+   "lugar": "Isla Little Razorback, Antártica",
+   "lat": -77.6,
+   "lon": 166.7,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Equipo de la serie Frozen Planet (BBC) en time-lapse submarino",
+   "muestra": "Un tubo de hielo que baja desde la superficie del mar, llega al fondo y congela todo lo que toca, incluidas estrellas de mar.",
+   "veredicto": "documentado",
+   "explicacion": "Salmuera muy fría que se hunde desde el hielo marino y congela el agua a su alrededor.",
+   "enlaces": [
+    [
+     "La filmación (Wetpixel)",
+     "https://wetpixel.com/articles/bbc-frozen-planet-captures-growth-of-brinicle"
+    ],
+    [
+     "Ficha (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Brinicle"
+    ]
+   ],
+   "buscar": "brinicle time lapse",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "naga",
+   "cat": "natural",
+   "titulo": "Bolas de fuego del Naga",
+   "fecha": "Cada año, al final de la Cuaresma budista",
+   "anio": 2002,
+   "lugar": "Río Mekong, Nong Khai, Tailandia",
+   "lat": 17.88,
+   "lon": 102.74,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Videos de peregrinos y reportajes de televisión",
+   "muestra": "Bolas rojizas que parecen salir del río y suben en silencio hasta perderse en el cielo.",
+   "veredicto": "debate",
+   "explicacion": "Se propusieron gases inflamables del lecho del río. En 2002, la cadena tailandesa iTV filmó a soldados laosianos disparando balas trazadoras desde la otra orilla mientras el público celebraba, lo que provocó protestas locales. La discusión sigue.",
+   "enlaces": [
+    [
+     "Ficha (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Naga_fireball"
+    ],
+    [
+     "El reportaje de 2002 (Skeptoid)",
+     "https://skeptoid.com/episodes/183"
+    ]
+   ],
+   "buscar": "Naga fireballs Mekong video",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "jerusalen2011",
+   "cat": "montaje",
+   "titulo": "Ovni sobre la Cúpula de la Roca",
+   "fecha": "28 de enero de 2011",
+   "anio": 2011,
+   "lugar": "Jerusalén",
+   "lat": 31.778,
+   "lon": 35.235,
+   "aprox": false,
+   "agua": false,
+   "fuente": "Videos anónimos subidos a YouTube",
+   "muestra": "Una luz que baja, se detiene sobre la Cúpula de la Roca, destella y sale disparada hacia el cielo. Circularon tres videos «independientes».",
+   "veredicto": "montaje",
+   "explicacion": "Analistas mostraron que la luz se añadió por computadora sobre una toma real, con temblor de cámara simulado. No hubo un solo testigo con nombre en una ciudad de casi un millón de habitantes.",
+   "enlaces": [
+    [
+     "Por qué es falso (Space.com)",
+     "https://space.com/10789-jerusalem-ufo-hoax.html"
+    ],
+    [
+     "Análisis cuadro a cuadro (Metabunk)",
+     "https://www.metabunk.org/threads/jerusalem-temple-mount-ufo-debunked.82/"
+    ]
+   ],
+   "buscar": "Jerusalem UFO 2011 hoax",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "nazca",
+   "cat": "montaje",
+   "titulo": "Las «momias extraterrestres» de Nazca",
+   "fecha": "2017 · presentadas en México en 2023",
+   "anio": 2023,
+   "latam": true,
+   "lugar": "Nazca y Palpa, Perú",
+   "lat": -14.83,
+   "lon": -74.94,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Presentaciones públicas, entre ellas una en el Congreso de México en septiembre de 2023",
+   "muestra": "Cuerpos pequeños de tres dedos presentados como «seres no humanos».",
+   "veredicto": "montaje",
+   "explicacion": "Peritos del Instituto de Medicina Legal de la Fiscalía de Perú concluyeron en enero de 2024 que eran muñecos armados con huesos de animales y pegamento moderno.",
+   "enlaces": [
+    [
+     "La conclusión forense (BioBioChile)",
+     "https://www.biobiochile.cl/noticias/sociedad/curiosidades/2024/01/13/fraude-investigacion-dice-que-momias-extraterrestres-de-mexico-y-peru-son-falsas.shtml"
+    ],
+    [
+     "Materiales hallados (Primicias)",
+     "https://primicias.ec/noticias/internacional/momias-extraterrestres-fraude-peru"
+    ]
+   ],
+   "buscar": "momias Nazca fiscalía Perú muñecos",
+   "medio": "video",
+   "video": ""
+  },
+  {
+   "id": "autopsia1995",
+   "cat": "montaje",
+   "titulo": "La «autopsia extraterrestre»",
+   "fecha": "Difundida en 1995",
+   "anio": 1995,
+   "lugar": "Atribuida falsamente a Roswell, Nuevo México",
+   "lat": 33.39,
+   "lon": -104.52,
+   "aprox": true,
+   "agua": false,
+   "fuente": "Película difundida por el productor británico Ray Santilli",
+   "muestra": "Supuestos médicos militares en trajes aislantes diseccionan un cuerpo alienígena del caso Roswell de 1947.",
+   "veredicto": "montaje",
+   "explicacion": "En 2006, Santilli y su socio admitieron haber filmado ellos mismos la escena con un muñeco. Siguieron diciendo que era una «reconstrucción» de una película original que nunca mostraron.",
+   "enlaces": [
+    [
+     "El montaje (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Alien_Autopsy_(1995_film)"
+    ],
+    [
+     "Archivo de engaños (Museum of Hoaxes)",
+     "https://hoaxes.org/archive/permalink/alien_autopsy"
+    ]
+   ],
+   "buscar": "alien autopsy 1995 Santilli",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "sirenas2012",
+   "cat": "montaje",
+   "titulo": "«Mermaids: The Body Found»",
+   "fecha": "2012",
+   "anio": 2012,
+   "lugar": "Transmitido en televisión por cable",
+   "lat": null,
+   "lon": null,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Falso documental del canal Animal Planet",
+   "muestra": "Un supuesto documental que presenta sirenas reales, con científicos interpretados por actores y el sonido Bloop como «prueba».",
+   "veredicto": "montaje",
+   "explicacion": "Era ficción. NOAA tuvo que publicar un comunicado: nunca se ha encontrado evidencia de humanoides acuáticos.",
+   "enlaces": [
+    [
+     "El comunicado de NOAA (NPR)",
+     "https://www.npr.org/2012/07/07/156416968/noaa-just-to-be-clear-mermaids-do-not-exist"
+    ]
+   ],
+   "buscar": "Mermaids The Body Found NOAA",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  },
+  {
+   "id": "megalodon2013",
+   "cat": "montaje",
+   "titulo": "«Megalodon: The Monster Shark Lives»",
+   "fecha": "Agosto de 2013",
+   "anio": 2013,
+   "lugar": "Transmitido en televisión por cable",
+   "lat": null,
+   "lon": null,
+   "aprox": true,
+   "agua": true,
+   "fuente": "Falso documental de la «Semana del Tiburón» de Discovery Channel",
+   "muestra": "Un supuesto documental que afirma que el megalodón, extinto hace millones de años, sigue vivo.",
+   "veredicto": "montaje",
+   "explicacion": "Usó actores como científicos e imágenes alteradas. Fue duramente criticado por científicos; el megalodón está extinto.",
+   "enlaces": [
+    [
+     "La polémica (National Geographic)",
+     "https://www.nationalgeographic.com/animals/article/130807-discovery-megalodon-shark-week-great-white-sharks-animals"
+    ],
+    [
+     "Ficha (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Megalodon:_The_Monster_Shark_Lives"
+    ]
+   ],
+   "buscar": "Megalodon Monster Shark Lives fake documentary",
+   "medio": "video",
+   "latam": false,
+   "video": ""
+  }
+ ]
+}

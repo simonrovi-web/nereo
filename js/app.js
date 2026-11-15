@@ -27,7 +27,7 @@ const S = {
   L:{aereo:1,costero:1,embarcacion:1,agua:1,entro:1,emergio:1,
      evVideo:0,evFoto:0,evRadar:0,evMulti:0,casos:1,camaras:0,envios:1,ultimos:1,
      xMet:0,xFuego:0,xLanz:0,puertos:0,bati:1,rutas:0,naval:0,
-     iaHot:0,iaHex:0,iaOla:0,iaAno:0,
+     iaHot:0,iaHex:0,iaOla:0,iaAno:0,rarezas:1,
      calor:0,densidad:0,pulso:1,
      tierra:1,lagos:1,fronteras:1,reticula:1,terminador:1,oceano:1,
      scan:1,leyenda:1,ticker:1},
@@ -401,6 +401,7 @@ function renderOverlay(t){
   drawEnvios(ctx);
   drawCams(ctx);
   drawCases(ctx, t);
+  drawRarezas(ctx, t);
   if (S.sel >= 0){
     const i = S.sel, x = px(d.lon[i]/1e4), y = py(d.lat[i]/1e4);
     ctx.strokeStyle = "#eafaff"; ctx.lineWidth = 1;
@@ -486,6 +487,7 @@ function pick(mx, my){
     return;
   }
   if (pickIa(mx, my)){ S.sel = -1; return; }
+  if (pickRarezas(mx, my)){ S.sel = -1; return; }
   if (S.L.ultimos) for (const a of alertasActivas()){
     const x = px(a.lon), y = py(a.lat);
     if ((x-mx)**2 + (y-my)**2 < 400){ S.sel = -1; dossierAlerta(a); return; }
@@ -633,6 +635,7 @@ const ICON = {
   filtro:'<path d="M2 3h12l-4.6 5.4V14L6.6 12V8.4L2 3Z"/>',
   mapa:'<circle cx="8" cy="8" r="6.2"/><path d="M1.8 8h12.4M8 1.8c3 3.4 3 9 0 12.4M8 1.8c-3 3.4-3 9 0 12.4"/>',
   pantalla:'<rect x="1.6" y="3" width="12.8" height="9" rx="1"/><path d="M6 14h4"/>',
+  rz:'<rect x="2" y="3.5" width="12" height="9" rx="1"/><path d="M6.5 6.2l3.3 1.8-3.3 1.8z" fill="currentColor"/><path d="M11.5 1.5l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2-1.2-.5 1.2-.5z" fill="currentColor"/>',
   ia:'<path d="M8 1.5v2.2M8 12.3v2.2M1.5 8h2.2M12.3 8h2.2"/><circle cx="8" cy="8" r="3.6"/><path d="M8 6.2l.6 1.2 1.2.6-1.2.6L8 9.8l-.6-1.2-1.2-.6 1.2-.6z" fill="currentColor"/>',
   escudo:'<path d="M8 1.6 13.4 3.8v4.4c0 3-2.2 5.2-5.4 6.2-3.2-1-5.4-3.2-5.4-6.2V3.8L8 1.6Z"/><path d="m5.6 8 1.8 1.8 3.2-3.6"/>',
   feed:'<circle cx="3.4" cy="12.6" r="1.3" fill="currentColor" stroke="none"/><path d="M3 8.6a4.4 4.4 0 0 1 4.4 4.4M3 4.4A8.6 8.6 0 0 1 11.6 13"/><path d="M12.4 3.2 14.8 5.6"/>',
@@ -650,7 +653,7 @@ const btn = (ic, tip, id) =>
 $("#railLeft").innerHTML =
   btn("capas","AVISTAMIENTOS","cap") + btn("mar","INTERFAZ MAR–AIRE","mar") +
   btn("feed","ÚLTIMOS VIDEOS","ult") + btn("video","REGISTRO VISUAL","vis") +
-  btn("envios","ENVÍOS CIUDADANOS","env") + btn("escudo","EXPLICACIONES Y SOLIDEZ","exp") + btn("ia","INTELIGENCIA","ia") +
+  btn("envios","ENVÍOS CIUDADANOS","env") + btn("escudo","EXPLICACIONES Y SOLIDEZ","exp") + btn("rz","VIDEOS RAROS","rz") + btn("ia","INTELIGENCIA","ia") +
   btn("analisis","ANÁLISIS","ana") + btn("filtro","FILTROS","fil") +
   btn("mapa","CARTOGRAFÍA","geo") + btn("pantalla","PANTALLA","pan");
 $("#railRight").innerHTML =
@@ -1135,6 +1138,7 @@ function start(){
   raf = requestAnimationFrame(loop);
   initCaps();
   cargarIA();
+  cargarRarezas();
 }
 /* ═══════════════════════════════════════════════════════════════
    ENVÍOS CIUDADANOS · enlaces a videos alojados en su plataforma
@@ -2131,6 +2135,140 @@ PANELS.ia = { t:"INTELIGENCIA", wide:true, html(){
     b.querySelectorAll("[data-ano]").forEach(x => x.onclick = () => {
       const a = S.ia.anom.celdas_mes.top[+x.dataset.ano]; S.L.iaAno = 1;
       flyTo(a.lon, a.lat, 6); fichaIa("ano", a); mark(); });
+  }
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   RAREZAS · videos misteriosos y raros (catálogo curado + feed)
+   data/rarezas.json · los videos quedan en su origen
+   ═══════════════════════════════════════════════════════════════ */
+S.rz = null; S.rzCat = new Set(); S.rzVer = new Set();
+async function cargarRarezas(){
+  try {
+    const r = await fetch("data/rarezas.json"); if (!r.ok) return;
+    S.rz = await r.json();
+    mark(); if (S.panel === "rz") refreshPanel();
+  } catch(e){}
+}
+const rzPasa = x => (!S.rzCat.size || S.rzCat.has(x.cat)) && (!S.rzVer.size || S.rzVer.has(x.veredicto));
+const rzFeed = () => (S.ult || []).filter(u => u.rareza && S.rz?.categorias[u.rareza]);
+
+function rzForma(c, cat, x, y, r){
+  c.beginPath();
+  if (cat === "cielo"){ c.arc(x, y, r, 0, 6.284); }
+  else if (cat === "mar"){ c.moveTo(x - r, y); c.quadraticCurveTo(x - r/2, y - r, x, y); c.quadraticCurveTo(x + r/2, y + r, x + r, y); c.moveTo(x, y - r); c.lineTo(x, y + r); c.arc(x, y, r, 0, 6.284); }
+  else if (cat === "natural"){ c.moveTo(x, y - r); c.lineTo(x + r*.35, y - r*.35); c.lineTo(x + r, y); c.lineTo(x + r*.35, y + r*.35); c.lineTo(x, y + r); c.lineTo(x - r*.35, y + r*.35); c.lineTo(x - r, y); c.lineTo(x - r*.35, y - r*.35); c.closePath(); }
+  else { c.rect(x - r*.8, y - r*.8, r*1.6, r*1.6); c.moveTo(x - r*.5, y - r*.5); c.lineTo(x + r*.5, y + r*.5); c.moveTo(x + r*.5, y - r*.5); c.lineTo(x - r*.5, y + r*.5); }
+}
+function drawRarezas(c, t){
+  if (!S.L.rarezas || !S.rz) return;
+  const ph = (Math.sin(t/700) + 1) / 2;
+  S.rz.casos.forEach((x, i) => {
+    if (x.lat == null || !rzPasa(x)) return;
+    const X = px(x.lon), Y = py(x.lat);
+    if (X < -40 || X > W+40 || Y < -40 || Y > H+40) return;
+    const col = S.rz.categorias[x.cat].c, vc = S.rz.veredictos[x.veredicto].c;
+    c.lineWidth = 1.3; c.strokeStyle = col; c.globalAlpha = .95;
+    rzForma(c, x.cat, X, Y, 7); c.stroke();
+    c.strokeStyle = vc; c.globalAlpha = .25 + ph*.35; c.lineWidth = 1;
+    c.beginPath(); c.arc(X, Y, 12 + ph*2, 0, 6.284); c.stroke(); c.globalAlpha = 1;
+    if (S.view.z > 3.2){
+      c.font = FONT(8); c.fillStyle = col; c.globalAlpha = .9;
+      c.fillText(x.titulo.toUpperCase().slice(0, 34), X + 16, Y + 3 + (i % 2 ? 10 : -5)); c.globalAlpha = 1;
+    }
+  });
+  for (const u of rzFeed()){
+    if (u.lat == null || u.lon == null || !rzPasa({cat:u.rareza, veredicto:"abierto"})) continue;
+    const X = px(u.lon), Y = py(u.lat);
+    if (X < -20 || X > W+20 || Y < -20 || Y > H+20) continue;
+    c.strokeStyle = S.rz.categorias[u.rareza].c; c.setLineDash([2, 2]); c.lineWidth = 1.2;
+    rzForma(c, u.rareza, X, Y, 6); c.stroke(); c.setLineDash([]);
+  }
+}
+function pickRarezas(mx, my){
+  if (!S.L.rarezas || !S.rz) return false;
+  for (const x of S.rz.casos){
+    if (x.lat == null || !rzPasa(x)) continue;
+    const dx = px(x.lon) - mx, dy = py(x.lat) - my;
+    if (dx*dx + dy*dy < 200){ fichaRareza(x); return true; }
+  }
+  for (const u of rzFeed()){
+    if (u.lat == null || u.lon == null) continue;
+    const dx = px(u.lon) - mx, dy = py(u.lat) - my;
+    if (dx*dx + dy*dy < 170){ dossierUlt(u); return true; }
+  }
+  return false;
+}
+function buscarYT(q){ return "https://www.youtube.com/results?search_query=" + encodeURIComponent(q); }
+function fichaRareza(x){
+  const cat = S.rz.categorias[x.cat], ver = S.rz.veredictos[x.veredicto];
+  $("#dsTag").textContent = cat.n; $("#dsTag").style.color = cat.c;
+  const pv = parseVideo(x.video || "");
+  const marco = pv ? videoCard(x.video, pv.nombre)
+    : okUrl(x.video) ? `<a class="vcard" href="${esc(x.video)}" target="_blank" rel="noopener"><span class="vplay"></span>
+        <span class="vtxt">${x.medio === "audio" ? "ESCUCHAR EN LA FUENTE" : "VER EN LA FUENTE"} &#8599;</span>
+        <span class="vsub">se abre en el sitio de origen · nada se aloja aquí</span></a>` : "";
+  $("#dsBody").innerHTML = `
+    ${marco}
+    <div class="ds-title"><h3>${esc(x.titulo)}</h3><p>${esc(x.fecha.toUpperCase())}</p></div>
+    <div class="rz-ver" style="border-color:${ver.c};color:${ver.c}"><b>${esc(ver.n)}</b><span>${esc(ver.d)}</span></div>
+    <div class="ds-cell" style="border-right:0"><span>LUGAR</span><b style="font-size:calc(10px * var(--k))">${esc(x.lugar)}${x.aprox && x.lat != null ? " · posición aproximada" : ""}</b></div>
+    <div class="ds-cell" style="border-right:0"><span>QUIÉN LO REGISTRÓ</span><b style="font-size:calc(10px * var(--k))">${esc(x.fuente)}</b></div>
+    <div class="ds-foot" style="color:var(--txt-dim)"><b style="color:${cat.c};letter-spacing:.2em;font-size:calc(7.5px * var(--k))">QUÉ MUESTRA</b><br>${esc(x.muestra)}</div>
+    <div class="ds-foot" style="color:var(--txt-dim)"><b style="color:${ver.c};letter-spacing:.2em;font-size:calc(7.5px * var(--k))">QUÉ SE SABE</b><br>${esc(x.explicacion)}</div>
+    <div class="ds-foot">${x.enlaces.filter(l => okUrl(l[1])).map(([t2, u2]) => `<a href="${esc(u2)}" target="_blank" rel="noopener">${esc(t2)} ↗</a>`).join("<br>")}
+      ${x.buscar ? `<br><a href="${esc(buscarYT(x.buscar))}" target="_blank" rel="noopener" style="color:var(--txt-faint)">Buscar el video en YouTube ↗</a>` : ""}</div>
+    <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">Ficha curada por NEREO con fuentes enlazadas. Los videos permanecen en su sitio de origen.</div>`;
+  dsOpen();
+}
+
+PANELS.rz = { t:"VIDEOS RAROS", wide:true, html(){
+    if (!S.rz) return `<div class="hint" style="padding-top:12px">Cargando el catálogo…</div>`;
+    const R = S.rz, casos = R.casos.filter(rzPasa), feed = rzFeed().filter(u => !S.rzCat.size || S.rzCat.has(u.rareza));
+    const cuenta = k => R.casos.filter(x => x.cat === k).length;
+    const fila = x => {
+      const cat = R.categorias[x.cat], ver = R.veredictos[x.veredicto];
+      return `<button data-rz="${esc(x.id)}" style="border-left-color:${cat.c}">
+        <b style="color:${cat.c}">${esc(x.titulo)}</b>
+        <i>${esc(x.fecha)} · ${esc(x.lugar)}</i>
+        <i class="rz-tag" style="color:${ver.c};border-color:${ver.c}">${esc(ver.n)}</i></button>`;
+    };
+    const grupos = Object.keys(R.categorias).map(k => {
+      const l = casos.filter(x => x.cat === k); if (!l.length) return "";
+      return `<div class="grp"><span style="color:${R.categorias[k].c}">${esc(R.categorias[k].n)}</span><span>${l.length}</span></div><div class="res">${l.map(fila).join("")}</div>`;
+    }).join("");
+    return `<div class="grp"><span>CAPA</span></div>
+      ${rowHTML("rarezas","VIDEOS RAROS EN EL MAPA", R.casos.filter(x => x.lat != null).length, "#b58cff", S.L.rarezas)}
+      <div class="grp"><span>TIPO</span>${S.rzCat.size || S.rzVer.size ? `<button id="rzClear" style="color:var(--cy);font-size:calc(8px * var(--k))">LIMPIAR</button>` : ""}</div>
+      <div class="chips">${Object.entries(R.categorias).map(([k, v]) =>
+        `<button data-rc="${k}" class="${S.rzCat.has(k) ? "on" : ""}" style="${S.rzCat.has(k) ? `border-color:${v.c};color:${v.c}` : ""}">${esc(v.n)} · ${cuenta(k)}</button>`).join("")}</div>
+      <div class="grp"><span>QUÉ SE SABE</span></div>
+      <div class="chips">${Object.entries(R.veredictos).map(([k, v]) =>
+        `<button data-rv="${k}" class="${S.rzVer.has(k) ? "on" : ""}" style="${S.rzVer.has(k) ? `border-color:${v.c};color:${v.c}` : ""}" title="${esc(v.d)}">${esc(v.n)}</button>`).join("")}</div>
+      ${feed.length ? `<div class="grp"><span>NUEVOS DEL FEED</span><span>${feed.length} · SIN REVISAR</span></div>
+        <div class="res">${feed.slice(0, 12).map((u, i) => `<button data-rf="${i}" style="border-left-color:${R.categorias[u.rareza].c}">
+          <b style="color:${R.categorias[u.rareza].c}">${esc(u.titulo || "")}</b><i>${esc(fechaCorta(u.fechaPub))} · ${esc(u.lugar || "lugar no declarado")}</i></button>`).join("")}</div>` : ""}
+      ${grupos || `<div class="hint">Ningún caso coincide con los filtros.</div>`}
+      <div class="hint">${esc(R.nota)} El feed automático suma videos nuevos de estas cuatro categorías cada 6 horas; aparecen como «sin revisar» hasta que se verifican.</div>`;
+  },
+  bind(){
+    bindRows();
+    const b = $("#panelBody");
+    const tog = (set, k) => { set.has(k) ? set.delete(k) : set.add(k); mark(); refreshPanel(); };
+    b.querySelectorAll("[data-rc]").forEach(x => x.onclick = () => tog(S.rzCat, x.dataset.rc));
+    b.querySelectorAll("[data-rv]").forEach(x => x.onclick = () => tog(S.rzVer, x.dataset.rv));
+    const cl = $("#rzClear"); if (cl) cl.onclick = () => { S.rzCat.clear(); S.rzVer.clear(); mark(); refreshPanel(); };
+    b.querySelectorAll("[data-rz]").forEach(x => x.onclick = () => {
+      const c = S.rz.casos.find(y => y.id === x.dataset.rz); S.L.rarezas = 1;
+      if (c.lat != null) flyTo(c.lon, c.lat, 5.6);
+      fichaRareza(c); mark();
+    });
+    const feed = rzFeed().filter(u => !S.rzCat.size || S.rzCat.has(u.rareza));
+    b.querySelectorAll("[data-rf]").forEach(x => x.onclick = () => {
+      const u = feed[+x.dataset.rf]; S.L.rarezas = 1;
+      if (u.lat != null && u.lon != null) flyTo(u.lon, u.lat, 5.6);
+      dossierUlt(u); mark();
+    });
   }
 };
 
