@@ -1194,7 +1194,7 @@ async function initCaps(){
       const snap = await (await fetch("data/recientes.json")).json();
       S.ult = (snap.items || []).sort((a,b) => String(b.fechaPub).localeCompare(String(a.fechaPub)));
       S.zonas = snap.zonas || []; S.ultState = "ok";
-      S.alertas = snap.alertas || []; S.generado = snap.generado || ""; alertaBanner();
+      S.alertas = snap.alertas || []; S.generado = snap.generado || ""; S.vivo = snap.vivo || ""; alertaBanner();
       $("#mUlt").textContent = fmt(S.ult.filter(u => diasDe(u) <= 30).length);
       mark(); buildTicker();
     } catch(e){}
@@ -1568,6 +1568,12 @@ function ultStatus(){
       ? (S.generado ? `ACTUALIZADO ${fechaHora(S.generado)} · ` : "") + `ÚLTIMA ENTRADA · ${fechaCorta(reciente.fechaPub).toUpperCase()} · ${fmt(S.ult.length)} EN CARTERA`
       : "SIN ENTRADAS TODAVÍA · LA TAREA LAS IRÁ SUMANDO CADA 6 HORAS";
     el.className = "envstat ok";
+    if (S.vivo && !S.db && okUrl(S.vivo)){
+      const a = document.createElement("a");
+      a.href = S.vivo; a.target = "_blank"; a.rel = "noopener"; a.className = "vivo";
+      a.textContent = "VER EL FEED EN VIVO · SE ACTUALIZA CADA 6 H ↗";
+      el.appendChild(document.createElement("br")); el.appendChild(a);
+    }
   } else {
     el.textContent = s === "cargando" ? "ABRIENDO EL FEED…"
       : s === "lento" ? "EL FEED NO RESPONDE AÚN"

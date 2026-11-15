@@ -296,3 +296,5 @@ input[type=search]:focus{border-color:var(--cy)}
 .alerta b{color:#ff8a80;letter-spacing:.22em;font-weight:600}
 .alerta em{font-style:normal;color:#ff8a80;border:1px solid rgba(255,90,82,.5);padding:1px 5px}
 .alerta:hover{background:rgba(60,8,10,.96)}
+.envstat a.vivo{display:inline-block;margin-top:6px;color:var(--cy);text-decoration:none;border-bottom:1px solid rgba(52,223,232,.4)}
+.envstat a.vivo:hover{color:#eafaff}
