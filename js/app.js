@@ -393,6 +393,7 @@ function renderOverlay(t){
     ctx.globalAlpha = 1;
   }
   drawZonas(ctx);
+  drawAlertas(ctx, t);
   drawUltimos(ctx, t);
   drawEnvios(ctx);
   drawCams(ctx);
@@ -480,6 +481,10 @@ function pick(mx, my){
     if (a && b){ a.value = S.form.lat; b.value = S.form.lon; }
     toast("COORDENADA FIJADA · " + S.form.lat + ", " + S.form.lon);
     return;
+  }
+  if (S.L.ultimos) for (const a of alertasActivas()){
+    const x = px(a.lon), y = py(a.lat);
+    if ((x-mx)**2 + (y-my)**2 < 400){ S.sel = -1; dossierAlerta(a); return; }
   }
   if (S.L.ultimos) for (const u of S.ult){
     if (typeof u.lat !== "number") continue;
@@ -1189,6 +1194,7 @@ async function initCaps(){
       const snap = await (await fetch("data/recientes.json")).json();
       S.ult = (snap.items || []).sort((a,b) => String(b.fechaPub).localeCompare(String(a.fechaPub)));
       S.zonas = snap.zonas || []; S.ultState = "ok";
+      S.alertas = snap.alertas || []; S.generado = snap.generado || ""; alertaBanner();
       $("#mUlt").textContent = fmt(S.ult.filter(u => diasDe(u) <= 30).length);
       mark(); buildTicker();
     } catch(e){}
@@ -1203,7 +1209,7 @@ async function initCaps(){
                      .filter(e => typeof e.lat === "number" && typeof e.lon === "number");
     S.caps.state = "ok"; mark(); envList(); envStatus();
   }, e => { clearTimeout(t); S.caps.state = "error"; S.caps.err = e.code; envStatus(); });
-  subUltimos(db); subZonas(db);
+  subUltimos(db); subZonas(db); subAlertas(db);
   db.collection("revision").onSnapshot(snap => {
     S.rev = {}; snap.docs.forEach(d => S.rev[d.id] = d.data() || {});
     mark(); envList();
@@ -1542,6 +1548,7 @@ function dossierUlt(u){
       <div class="ds-cell"><span>ESTADO</span><b style="font-size:calc(9.5px * var(--k));color:${cl.c}">${esc(u.estado || "sin verificar")}</b></div>
     </div>
     ${u.resumen ? `<div class="ds-foot" style="color:var(--txt-dim)">${esc(u.resumen)}</div>` : ""}
+    ${descarteHTML(u)}
     <div class="ds-foot">
       ${u.fuente ? `<b style="color:var(--txt-faint);font-size:calc(7.5px * var(--k));letter-spacing:.2em">FUENTE</b><br>${esc(u.fuente)}<br>` : ""}
       ${okUrl(u.url) ? `<a href="${esc(u.url)}" target="_blank" rel="noopener">Abrir el registro ↗</a><br>` : ""}
@@ -1558,8 +1565,8 @@ function ultStatus(){
   if (s === "ok"){
     const reciente = S.ult[0];
     el.textContent = reciente
-      ? `ÚLTIMA ENTRADA · ${fechaCorta(reciente.fechaPub).toUpperCase()} · ${fmt(S.ult.length)} EN CARTERA`
-      : "SIN ENTRADAS TODAVÍA · LA TAREA DIARIA LAS IRÁ SUMANDO";
+      ? (S.generado ? `ACTUALIZADO ${fechaHora(S.generado)} · ` : "") + `ÚLTIMA ENTRADA · ${fechaCorta(reciente.fechaPub).toUpperCase()} · ${fmt(S.ult.length)} EN CARTERA`
+      : "SIN ENTRADAS TODAVÍA · LA TAREA LAS IRÁ SUMANDO CADA 6 HORAS";
     el.className = "envstat ok";
   } else {
     el.textContent = s === "cargando" ? "ABRIENDO EL FEED…"
@@ -1811,6 +1818,85 @@ PANELS.exp = { t:"EXPLICACIONES Y SOLIDEZ", html(){
       $("#solLbl").textContent = S.F.sol ? S.F.sol + " de 5" : "sin filtro"; mark(); countSoon(); };
   }
 };
+
+
+/* ═══════════════════════════════════════════════════════════════
+   ALERTAS DE OLEADA Y DESCARTES
+   ═══════════════════════════════════════════════════════════════ */
+S.alertas = []; S.generado = "";
+const TIPOS_DESC = {lanzamiento:"Lanzamiento o reentrada", starlink:"Tren de satélites Starlink",
+  meteoros:"Lluvia de meteoros activa", bolido:"Bólido registrado", globo:"Globo", dron:"Dron",
+  fuegos:"Fuegos artificiales o farolillos", avion:"Aeronave", otro:"Otra explicación"};
+function fechaHora(s){
+  const d = new Date(s); if (isNaN(d)) return "";
+  return d.toLocaleString("es-CL", {day:"2-digit", month:"short", hour:"2-digit", minute:"2-digit"}).toUpperCase();
+}
+function descarteHTML(u){
+  const ds = (u.descarte || []).filter(x => x && x.tipo);
+  const rev = u.descarteRevisado;
+  if (!ds.length && !rev) return "";
+  if (!ds.length) return `<div class="ds-foot" style="color:var(--txt-dim);border-left:2px solid var(--gr)">
+      <b style="color:var(--gr);font-size:calc(7.5px * var(--k));letter-spacing:.2em">DESCARTE AUTOMÁTICO</b><br>
+      Se revisaron lanzamientos, satélites, meteoros y bólidos de esa fecha y región: ninguna coincidencia encontrada.</div>`;
+  return `<div class="ds-foot" style="color:var(--txt-dim);border-left:2px solid var(--am)">
+      <b style="color:var(--am);font-size:calc(7.5px * var(--k));letter-spacing:.2em">POSIBLES EXPLICACIONES</b><br>
+      ${ds.map(x => `<b style="color:var(--txt)">${esc(TIPOS_DESC[x.tipo] || x.tipo)}</b> · ${esc(x.detalle || "")}` +
+        (okUrl(x.fuente) ? ` <a href="${esc(x.fuente)}" target="_blank" rel="noopener">fuente ↗</a>` : "")).join("<br>")}
+      <br><span style="font-size:calc(7.5px * var(--k))">Coincidir no demuestra la causa: señala por dónde mirar.</span></div>`;
+}
+const alertasActivas = () => S.alertas.filter(a =>
+  typeof a.lat === "number" && typeof a.lon === "number" && (Date.now() - Date.parse(a.creado || 0)) / 864e5 <= 3);
+
+function subAlertas(db){
+  db.collection("alertas").orderBy("creado", "desc").limit(12).onSnapshot(snap => {
+    S.alertas = snap.docs.map(d => Object.assign({id:d.id}, d.data()));
+    alertaBanner(); mark();
+  }, () => {});
+}
+function alertaBanner(){
+  let el = $("#alertaBanner");
+  const act = alertasActivas();
+  if (!act.length){ if (el) el.remove(); return; }
+  if (!el){ el = document.createElement("button"); el.id = "alertaBanner"; el.className = "alerta"; document.getElementById("app").appendChild(el); }
+  const a = act[0];
+  el.innerHTML = `<i></i><b>POSIBLE OLEADA</b><span>${esc(a.lugar || "")} · ${fmt(a.n || 0)} reportes en ${esc(a.ventana || "24 h")}</span>` +
+    (act.length > 1 ? `<em>+${act.length - 1}</em>` : "");
+  el.onclick = () => { S.L.ultimos = 1; flyTo(a.lon, a.lat, 6); dossierAlerta(a); };
+}
+function drawAlertas(c, t){
+  if (!S.L.ultimos) return;
+  const ph = (Math.sin(t/420)+1)/2;
+  for (const a of alertasActivas()){
+    const x = px(a.lon), y = py(a.lat), r = Math.max(14, (a.km || 150) * kmPx(a.lat));
+    if (x<-r-40||x>W+r+40||y<-r-40||y>H+r+40) continue;
+    c.save();
+    c.strokeStyle = "#ff5a52"; c.lineWidth = 1.4; c.setLineDash([5,4]);
+    c.globalAlpha = .55 + ph*.4;
+    c.beginPath(); c.arc(x, y, r, 0, 6.284); c.stroke();
+    c.setLineDash([]); c.globalAlpha = .12 + ph*.08; c.fillStyle = "#ff5a52"; c.fill();
+    c.globalAlpha = .95; c.font = FONT(8.5); c.fillStyle = "#ff8a80";
+    c.fillText("POSIBLE OLEADA · " + String(a.lugar || "").toUpperCase().slice(0, 28), x - Math.min(r, 90), y - r - 6);
+    c.restore();
+  }
+}
+function dossierAlerta(a){
+  const links = (a.enlaces || []).filter(x => Array.isArray(x) && okUrl(x[1]))
+    .map(([t2,u2]) => `<a href="${esc(u2)}" target="_blank" rel="noopener">${esc(t2)} ↗</a>`).join("<br>");
+  $("#dsTag").textContent = "ALERTA · POSIBLE OLEADA";
+  $("#dsTag").style.color = "#ff5a52";
+  $("#dsBody").innerHTML = `
+    <div class="ds-title"><h3>${esc(a.titulo || ("Concentración de reportes en " + (a.lugar || "")))}</h3>
+      <p>${esc(fechaHora(a.creado))} · ${fmt(a.n || 0)} REPORTES · RADIO ${fmt(a.km || 0)} KM</p></div>
+    <div class="ds-grid">
+      <div class="ds-cell"><span>LUGAR</span><b style="font-size:calc(9.5px * var(--k))">${esc(a.lugar || "")}</b></div>
+      <div class="ds-cell"><span>VENTANA</span><b style="font-size:calc(9.5px * var(--k))">${esc(a.ventana || "24 h")}</b></div>
+    </div>
+    ${a.resumen ? `<div class="ds-foot" style="color:var(--txt-dim)">${esc(a.resumen)}</div>` : ""}
+    ${descarteHTML(a)}
+    ${links ? `<div class="ds-foot">${links}</div>` : ""}
+    <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">Una oleada es una concentración inusual de reportes en poco tiempo y espacio. Suele tener una causa común, conocida o no: conviene revisar el descarte antes de difundirla.</div>`;
+  dsOpen();
+}
 
 load();
 })();
