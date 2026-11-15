@@ -319,3 +319,22 @@ input[type=search]:focus{border-color:var(--cy)}
 .rz-ver{margin:0 11px 8px;padding:7px 9px;border:1px solid;display:flex;flex-direction:column;gap:3px}
 .rz-ver b{font-size:calc(8px * var(--k));letter-spacing:.2em}
 .rz-ver span{font-size:calc(8.5px * var(--k));color:var(--txt-dim);letter-spacing:.02em}
+
+/* ─── instalar ─── */
+.qr{display:flex;gap:12px;align-items:center;padding:8px 11px}
+.qr img{width:calc(96px * var(--k));height:auto;background:#fff;padding:4px;flex:none}
+
+/* ─── teléfono ─── */
+@media (max-width:700px){
+  :root{ --sb:0px; --h:calc(30px * var(--k)); }
+  .statusbar,.met,.brand-txt p{display:none}
+  .hud-top{gap:8px;padding-top:env(safe-area-inset-top)}
+  .panel,.panel.wide,.dossier{left:6px!important;right:6px!important;width:auto!important;z-index:40;
+    max-height:calc(100dvh - var(--top) - var(--tl) - 24px)}
+  .rail{gap:4px}
+  .rail button[data-tip]:hover::after{display:none}
+  .timeline{left:6px;right:6px;bottom:calc(6px + env(safe-area-inset-bottom))}
+  .qr-pc{display:none}
+}
+
+#map{touch-action:none}

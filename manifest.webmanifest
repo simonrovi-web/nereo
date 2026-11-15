@@ -1,0 +1,19 @@
+{
+  "name": "NEREO · Registro de fenómenos anómalos",
+  "short_name": "NEREO",
+  "description": "Visor de avistamientos aéreos y submarinos no identificados, videos raros y vigilancia en vivo.",
+  "lang": "es",
+  "start_url": "./?app=1",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#04090f",
+  "theme_color": "#04090f",
+  "categories": ["education", "news", "science"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

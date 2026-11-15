@@ -71,6 +71,7 @@ async function load(){
       day: dec(raw.day, Uint8Array), exp: dec(raw.exp, Uint8Array), sol: dec(raw.sol, Uint8Array), y1: raw.y1,
       places: raw.places, shapes: raw.shapes,
     };
+    S.placesN = raw.places.map(sinTildes);
     log("NÚCLEO EN LÍNEA", 100);
     setTimeout(start, 240);
   }catch(e){
@@ -456,6 +457,53 @@ cv.addEventListener("wheel", e => {
   mark(); hud();
 }, {passive:false});
 
+/* táctil: un dedo arrastra, dos dedos acercan, un toque selecciona */
+let tq = null;
+const tPts = e => [...e.touches].map(t => ({x:t.clientX, y:t.clientY}));
+function zoomEn(mx, my, z){
+  const lo = x2lon(mx+ox), la = y2lat(my+oy);
+  S.view.z = clamp(z, .6, 11); fitOrigin();
+  const lo2 = x2lon(mx+ox), la2 = y2lat(my+oy);
+  S.view.cx = clamp(S.view.cx + (lo-lo2), -180, 180);
+  S.view.cy = clamp(S.view.cy + (la-la2), -82, 82);
+}
+cv.addEventListener("touchstart", e => {
+  e.preventDefault();
+  const p = tPts(e), r = cv.getBoundingClientRect();
+  if (p.length === 1) tq = {modo:"pan", x:p[0].x, y:p[0].y, cx:S.view.cx, cy:S.view.cy, moved:0, t:performance.now()};
+  else if (p.length >= 2){
+    const d = Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y);
+    tq = {modo:"pinch", d, z:S.view.z, mx:(p[0].x+p[1].x)/2 - r.left, my:(p[0].y+p[1].y)/2 - r.top, moved:1};
+  }
+}, {passive:false});
+cv.addEventListener("touchmove", e => {
+  e.preventDefault(); if (!tq) return;
+  const p = tPts(e), r = cv.getBoundingClientRect();
+  if (tq.modo === "pan" && p.length === 1){
+    const dx = p[0].x - tq.x, dy = p[0].y - tq.y;
+    if (Math.abs(dx) + Math.abs(dy) > 8) tq.moved = 1;
+    if (!tq.moved) return;
+    const s = sc();
+    S.view.cx = ((tq.cx + 180 - dx/s*360 + 540) % 360) - 180;
+    S.view.cy = clamp(y2lat(lat2y(tq.cy) - dy), -82, 82);
+    mark();
+  } else if (p.length >= 2){
+    if (tq.modo !== "pinch"){ tq = {modo:"pinch", d:Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y), z:S.view.z, mx:(p[0].x+p[1].x)/2 - r.left, my:(p[0].y+p[1].y)/2 - r.top, moved:1}; return; }
+    const d = Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y);
+    zoomEn(tq.mx, tq.my, tq.z + Math.log2(d / tq.d));
+    mark(); hud();
+  }
+}, {passive:false});
+cv.addEventListener("touchend", e => {
+  e.preventDefault();
+  if (tq && tq.modo === "pan" && !tq.moved && e.touches.length === 0){
+    const r = cv.getBoundingClientRect();
+    pick(tq.x - r.left, tq.y - r.top);
+  }
+  if (e.touches.length === 0) tq = null;
+  else if (e.touches.length === 1){ const p = tPts(e); tq = {modo:"pan", x:p[0].x, y:p[0].y, cx:S.view.cx, cy:S.view.cy, moved:1}; }
+}, {passive:false});
+
 function zoomBy(d){ S.view.z = clamp(S.view.z + d, .6, 11); mark(); hud(); }
 function flyTo(lon, lat, z){
   const from = {...S.view}, to = {cx:lon, cy:clamp(lat,-82,82), z: z ?? Math.max(S.view.z, 6)};
@@ -635,6 +683,7 @@ const ICON = {
   filtro:'<path d="M2 3h12l-4.6 5.4V14L6.6 12V8.4L2 3Z"/>',
   mapa:'<circle cx="8" cy="8" r="6.2"/><path d="M1.8 8h12.4M8 1.8c3 3.4 3 9 0 12.4M8 1.8c-3 3.4-3 9 0 12.4"/>',
   pantalla:'<rect x="1.6" y="3" width="12.8" height="9" rx="1"/><path d="M6 14h4"/>',
+  movil:'<rect x="4.5" y="1.5" width="7" height="13" rx="1.2"/><path d="M7 12.3h2"/><path d="M8 4.5v4.2M6.3 7l1.7 1.7L9.7 7"/>',
   rz:'<rect x="2" y="3.5" width="12" height="9" rx="1"/><path d="M6.5 6.2l3.3 1.8-3.3 1.8z" fill="currentColor"/><path d="M11.5 1.5l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2-1.2-.5 1.2-.5z" fill="currentColor"/>',
   ia:'<path d="M8 1.5v2.2M8 12.3v2.2M1.5 8h2.2M12.3 8h2.2"/><circle cx="8" cy="8" r="3.6"/><path d="M8 6.2l.6 1.2 1.2.6-1.2.6L8 9.8l-.6-1.2-1.2-.6 1.2-.6z" fill="currentColor"/>',
   escudo:'<path d="M8 1.6 13.4 3.8v4.4c0 3-2.2 5.2-5.4 6.2-3.2-1-5.4-3.2-5.4-6.2V3.8L8 1.6Z"/><path d="m5.6 8 1.8 1.8 3.2-3.6"/>',
@@ -653,7 +702,7 @@ const btn = (ic, tip, id) =>
 $("#railLeft").innerHTML =
   btn("capas","AVISTAMIENTOS","cap") + btn("mar","INTERFAZ MAR–AIRE","mar") +
   btn("feed","ÚLTIMOS VIDEOS","ult") + btn("video","REGISTRO VISUAL","vis") +
-  btn("envios","ENVÍOS CIUDADANOS","env") + btn("escudo","EXPLICACIONES Y SOLIDEZ","exp") + btn("rz","VIDEOS RAROS","rz") + btn("ia","INTELIGENCIA","ia") +
+  btn("envios","ENVÍOS CIUDADANOS","env") + btn("escudo","EXPLICACIONES Y SOLIDEZ","exp") + btn("rz","VIDEOS RAROS","rz") + btn("movil","INSTALAR EN EL TELÉFONO","app") + btn("ia","INTELIGENCIA","ia") +
   btn("analisis","ANÁLISIS","ana") + btn("filtro","FILTROS","fil") +
   btn("mapa","CARTOGRAFÍA","geo") + btn("pantalla","PANTALLA","pan");
 $("#railRight").innerHTML =
@@ -848,28 +897,49 @@ const PANELS = {
   }, bind: bindRows },
 
   bus:{ t:"BUSCAR LUGAR", html(){
-    return `<div class="fld"><input type="search" id="q" placeholder="CIUDAD, ESTADO O PAÍS…" autocomplete="off"></div>
-            <div class="res" id="res"><div class="hint">Escribe al menos tres letras. Busca entre ${fmt(S.d.places.length)} localidades con reportes.</div></div>`;
+    return `<div class="fld"><input type="search" id="q" placeholder="CUALQUIER LUGAR DEL MUNDO…" autocomplete="off" enterkeyhint="search"></div>
+            <div class="res" id="res"><div class="hint">Escribe un lugar de cualquier país: una ciudad, una costa, una isla, un volcán. Primero aparecen las ${fmt(S.d.places.length)} localidades del archivo y luego los lugares del mundo según OpenStreetMap.</div></div>`;
   }, bind(){
     const q = $("#q"); q.focus();
-    q.oninput = () => {
-      const t = q.value.trim().toLowerCase();
-      if (t.length < 3){ $("#res").innerHTML = `<div class="hint">Escribe al menos tres letras.</div>`; return; }
-      const hits = [];
-      for (let p = 0; p < S.d.places.length && hits.length < 60; p++)
-        if (S.d.places[p].toLowerCase().includes(t)) hits.push(p);
-      if (!hits.length){ $("#res").innerHTML = `<div class="hint">Sin coincidencias.</div>`; return; }
-      $("#res").innerHTML = hits.map(p => {
-        let n = 0, first = -1;
-        for (let i=0;i<S.N;i++) if (S.d.place[i] === p){ n++; if (first<0) first = i; }
-        return `<button data-i="${first}"><b>${S.d.places[p]}</b><i>${fmt(n)} reporte${n>1?"s":""}</i></button>`;
-      }).join("");
+    let tGeo = 0, nGeo = 0;
+    const pintar = (archivo, mundo, estado) => {
+      const a = archivo.map(p => `<button data-i="${p.first}"><b>${esc(S.d.places[p.p])}</b><i>${fmt(p.n)} reporte${p.n>1?"s":""} en el archivo</i></button>`).join("");
+      const m = (mundo || []).map((g, k) => `<button data-g="${k}" style="border-left-color:#7fb2ff"><b>${esc(g.nombre)}</b><i>${esc(g.detalle)}</i></button>`).join("");
+      $("#res").innerHTML =
+        (a ? `<div class="grp"><span>EN EL ARCHIVO</span><span>${archivo.length}</span></div>${a}` : "") +
+        `<div class="grp"><span>EN EL MUNDO</span><span>OPENSTREETMAP</span></div>` +
+        (m || `<div class="hint">${esc(estado)}</div>`);
       $("#res").querySelectorAll("[data-i]").forEach(b => b.onclick = () => {
         const i = +b.dataset.i;
         flyTo(S.d.lon[i]/1e4, S.d.lat[i]/1e4, 8);
         S.sel = i; dossier(i);
       });
+      $("#res").querySelectorAll("[data-g]").forEach(b => b.onclick = () => {
+        const g = mundo[+b.dataset.g];
+        flyTo(g.lon, g.lat, g.zoom); S.sel = -1; fichaLugar(g);
+      });
     };
+    q.oninput = () => {
+      const t = sinTildes(q.value.trim());
+      clearTimeout(tGeo);
+      if (t.length < 3){ $("#res").innerHTML = `<div class="hint">Escribe al menos tres letras.</div>`; return; }
+      const hits = [];
+      for (let p = 0; p < S.d.places.length && hits.length < 25; p++)
+        if (S.placesN[p].includes(t)) hits.push(p);
+      const archivo = hits.map(p => {
+        let n = 0, first = -1;
+        for (let i=0;i<S.N;i++) if (S.d.place[i] === p){ n++; if (first<0) first = i; }
+        return {p, n, first};
+      }).sort((x, y) => y.n - x.n);
+      pintar(archivo, null, "Buscando en el mapa mundial…");
+      const id = ++nGeo;
+      tGeo = setTimeout(async () => {
+        const mundo = await geocodificar(q.value.trim());
+        if (id !== nGeo) return;
+        pintar(archivo, mundo, mundo === null ? "No se pudo consultar el mapa mundial: revisa la conexión. Dentro de Claude esta búsqueda puede estar bloqueada; en la app instalada o en simonrovi-web.github.io/nereo funciona." : "Sin lugares con ese nombre.");
+      }, 650);
+    };
+    q.onkeydown = e => { if (e.key === "Enter") q.oninput(); };
   }},
 
   est:{ t:"ESTADÍSTICAS", html(){
@@ -1109,7 +1179,7 @@ function tamTexto(paso){
 }
 $("#tMenos").onclick = () => tamTexto(-1);
 $("#tMas").onclick = () => tamTexto(1);
-(() => { let k = 1.35; try { const v = parseFloat(localStorage.getItem("nereo-k")); if (TAM.includes(v)) k = v; } catch(e){}
+(() => { let k = matchMedia("(max-width:700px)").matches ? 1.1 : 1.35; try { const v = parseFloat(localStorage.getItem("nereo-k")); if (TAM.includes(v)) k = v; } catch(e){}
   window.__K = k; document.documentElement.style.setProperty("--k", k); document.body.classList.toggle("kbig", k >= 1.6); })();
 
 function start(){
@@ -1134,7 +1204,7 @@ function start(){
   window.addEventListener("resize", () => { resize(); drawTL(); syncTL(); });
   boot.classList.add("off");
   setTimeout(() => boot.remove(), 600);
-  openPanel("mar");
+  if (!matchMedia("(max-width:700px)").matches) openPanel("mar");
   raf = requestAnimationFrame(loop);
   initCaps();
   cargarIA();
@@ -2269,6 +2339,98 @@ PANELS.rz = { t:"VIDEOS RAROS", wide:true, html(){
       if (u.lat != null && u.lon != null) flyTo(u.lon, u.lat, 5.6);
       dossierUlt(u); mark();
     });
+  }
+};
+
+
+/* ─── búsqueda mundial ─── */
+const sinTildes = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+async function geocodificar(texto){
+  try {
+    const u = "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&addressdetails=0&accept-language=es&q=" + encodeURIComponent(texto);
+    const r = await fetch(u, {headers:{"Accept":"application/json"}});
+    if (!r.ok) return null;
+    const d = await r.json();
+    return d.map(g => {
+      const partes = String(g.display_name || "").split(", ");
+      const bb = (g.boundingbox || []).map(Number);
+      const ancho = bb.length === 4 ? Math.max(Math.abs(bb[1]-bb[0]), Math.abs(bb[3]-bb[2])) : 1;
+      const zoom = ancho > 20 ? 3.2 : ancho > 6 ? 4.6 : ancho > 1.5 ? 6 : ancho > .3 ? 7.5 : 9;
+      return {nombre: partes[0], detalle: partes.slice(1).join(", ") || g.type || "", lat: +g.lat, lon: +g.lon, zoom, ancho};
+    }).filter(g => isFinite(g.lat) && isFinite(g.lon));
+  } catch(e){ return null; }
+}
+function kmEntre(a1, o1, a2, o2){
+  const r = Math.PI/180, dA = (a2-a1)*r, dO = (o2-o1)*r;
+  const h = Math.sin(dA/2)**2 + Math.cos(a1*r)*Math.cos(a2*r)*Math.sin(dO/2)**2;
+  return 12742 * Math.asin(Math.min(1, Math.sqrt(h)));
+}
+function fichaLugar(g){
+  const R1 = 50, R2 = 250, d = S.d, cerca = new Map();
+  let n1 = 0, n2 = 0, mar = 0, ult = 0;
+  const cosA = Math.cos(g.lat*Math.PI/180);
+  for (let i = 0; i < S.N; i++){
+    const la = d.lat[i]/1e4, lo = d.lon[i]/1e4;
+    if (Math.abs(la - g.lat) > 2.4 || Math.abs(lo - g.lon)*cosA > 2.4) continue;
+    const k = kmEntre(g.lat, g.lon, la, lo);
+    if (k <= R2){ n2++; if (k <= R1){ n1++; if (d.mar[i]) mar++; } cerca.set(d.place[i], (cerca.get(d.place[i]) || 0) + 1); }
+    if (d.year[i] > ult && k <= R2) ult = d.year[i];
+  }
+  const top = [...cerca.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const casos = [
+    ...(S.vids || []).map(v => ({t:v.titulo, la:v.lat, lo:v.lon, k:"oficial", go:() => dossierCase(v)})),
+    ...((S.rz && S.rz.casos) || []).filter(x => x.lat != null).map(x => ({t:x.titulo, la:x.lat, lo:x.lon, k:"raro", go:() => fichaRareza(x)})),
+    ...(S.ult || []).filter(u => u.lat != null && u.lon != null).map(u => ({t:u.titulo, la:u.lat, lo:u.lon, k:"reciente", go:() => dossierUlt(u)})),
+  ].map(c => Object.assign(c, {km: kmEntre(g.lat, g.lon, c.la, c.lo)})).filter(c => c.km <= 1500).sort((a, b) => a.km - b.km).slice(0, 6);
+  S.lugarCasos = casos;
+  $("#dsTag").textContent = "LUGAR · OPENSTREETMAP"; $("#dsTag").style.color = "#7fb2ff";
+  $("#dsBody").innerHTML = `
+    <div class="ds-title"><h3>${esc(g.nombre)}</h3><p>${esc(g.detalle)}</p></div>
+    <div class="ds-grid">
+      <div class="ds-cell"><span>REPORTES A ${R1} KM</span><b>${fmt(n1)}</b></div>
+      <div class="ds-cell"><span>REPORTES A ${R2} KM</span><b>${fmt(n2)}</b></div>
+      <div class="ds-cell"><span>MARÍTIMOS A ${R1} KM</span><b>${fmt(mar)}</b></div>
+      <div class="ds-cell"><span>ÚLTIMO AÑO CON REPORTES</span><b>${ult || "—"}</b></div>
+    </div>
+    ${top.length ? `<div class="ds-foot" style="color:var(--txt-dim)"><b style="color:var(--txt-faint);letter-spacing:.2em;font-size:calc(7.5px * var(--k))">LOCALIDADES DEL ARCHIVO CERCANAS</b><br>${top.map(([p, n]) => `${esc(S.d.places[p])} (${fmt(n)})`).join("<br>")}</div>` : ""}
+    ${casos.length ? `<div class="ds-foot"><b style="color:var(--txt-faint);letter-spacing:.2em;font-size:calc(7.5px * var(--k))">CASOS CON VIDEO MÁS CERCANOS</b><br>${casos.map((c, i) => `<a href="#" data-lc="${i}">${esc(c.t)}</a> <span style="color:var(--txt-faint)">· ${c.k} · ${fmt(Math.round(c.km))} km</span>`).join("<br>")}</div>` : ""}
+    <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">${n2 ? "" : "El archivo histórico (NUFORC) está concentrado en Norteamérica; que no haya reportes aquí no significa que no haya avistamientos. "}Ubicación de © OpenStreetMap.</div>`;
+  $("#dsBody").querySelectorAll("[data-lc]").forEach(a => a.onclick = e => {
+    e.preventDefault(); const c = S.lugarCasos[+a.dataset.lc];
+    if (c.k === "raro") S.L.rarezas = 1; if (c.k === "oficial") S.L.casos = 1; if (c.k === "reciente") S.L.ultimos = 1;
+    flyTo(c.lo, c.la, 6); c.go(); mark();
+  });
+  dsOpen();
+}
+
+
+/* ═══════════ APP INSTALABLE (PWA) ═══════════ */
+S.instalar = null;
+const URL_APP = "https://simonrovi-web.github.io/nereo/";
+const enApp = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const esIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); S.instalar = e; if (S.panel === "app") refreshPanel(); });
+addEventListener("appinstalled", () => { S.instalar = null; toast("NEREO QUEDÓ INSTALADO"); if (S.panel === "app") refreshPanel(); });
+if ("serviceWorker" in navigator && !window.claude && (location.protocol === "https:" || location.hostname === "localhost")){
+  addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+PANELS.app = { t:"INSTALAR EN EL TELÉFONO", html(){
+    const aqui = !window.claude && location.protocol === "https:" && location.hostname.endsWith("github.io");
+    if (enApp()) return `<div class="envstat ok">YA ESTÁS USANDO LA APP INSTALADA</div>
+      <div class="hint">Se actualiza sola cada vez que la abres con conexión. Sin señal, muestra la última versión que guardó: el mapa, el archivo histórico y el catálogo de videos raros funcionan sin internet.</div>`;
+    return `
+      ${S.instalar ? `<div style="padding:10px 11px 2px"><button class="send" id="btnInstalar">INSTALAR NEREO</button></div>` : ""}
+      <div class="grp"><span>ANDROID · CHROME</span></div>
+      <div class="hint" style="padding-top:2px">${aqui ? (S.instalar ? "Pulsa el botón de arriba." : "Abre el menú ⋮ de Chrome y elige «Instalar app» o «Agregar a la pantalla principal».") : `Abre <b>${URL_APP}</b> en Chrome, luego el menú ⋮ y «Instalar app».`}</div>
+      <div class="grp"><span>IPHONE · SAFARI</span></div>
+      <div class="hint" style="padding-top:2px">${aqui ? "" : `Abre <b>${URL_APP}</b> en Safari. `}Pulsa el botón Compartir (el cuadrado con la flecha hacia arriba), baja y elige «Agregar a inicio».</div>
+      <div class="qr-pc"><div class="grp"><span>DESDE EL COMPUTADOR</span></div>
+      <div class="qr"><img src="icons/qr.svg" alt="Código QR de NEREO"><div class="hint" style="padding:0">Escanea con la cámara del teléfono para abrir NEREO y luego instálalo con los pasos de arriba.<br><a href="${URL_APP}" target="_blank" rel="noopener" style="color:var(--cy)">${URL_APP} ↗</a></div></div></div>
+      <div class="hint">La app instalada abre a pantalla completa, sin barra del navegador, y guarda una copia para usarla sin conexión. El envío de videos y la base en vivo siguen funcionando dentro de Claude.</div>`;
+  },
+  bind(){
+    const b = $("#btnInstalar");
+    if (b) b.onclick = async () => { const p = S.instalar; if (!p) return; p.prompt(); await p.userChoice.catch(() => {}); S.instalar = null; refreshPanel(); };
   }
 };
 
