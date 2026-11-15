@@ -27,6 +27,7 @@ const S = {
   L:{aereo:1,costero:1,embarcacion:1,agua:1,entro:1,emergio:1,
      evVideo:0,evFoto:0,evRadar:0,evMulti:0,casos:1,camaras:0,envios:1,ultimos:1,
      xMet:0,xFuego:0,xLanz:0,puertos:0,bati:1,rutas:0,naval:0,
+     iaHot:0,iaHex:0,iaOla:0,iaAno:0,
      calor:0,densidad:0,pulso:1,
      tierra:1,lagos:1,fronteras:1,reticula:1,terminador:1,oceano:1,
      scan:1,leyenda:1,ticker:1},
@@ -363,6 +364,7 @@ function renderBase(){
   if (S.L.terminador) drawTerminator(bctx);
   if (S.L.calor) drawHeat(bctx);
   if (S.L.densidad) drawDensity(bctx);
+  drawIaHex(bctx);
   drawPoints(bctx);
   drawEvidence(bctx);
   drawExpl(bctx);
@@ -392,6 +394,7 @@ function renderOverlay(t){
     }
     ctx.globalAlpha = 1;
   }
+  drawIa(ctx);
   drawZonas(ctx);
   drawAlertas(ctx, t);
   drawUltimos(ctx, t);
@@ -482,6 +485,7 @@ function pick(mx, my){
     toast("COORDENADA FIJADA · " + S.form.lat + ", " + S.form.lon);
     return;
   }
+  if (pickIa(mx, my)){ S.sel = -1; return; }
   if (S.L.ultimos) for (const a of alertasActivas()){
     const x = px(a.lon), y = py(a.lat);
     if ((x-mx)**2 + (y-my)**2 < 400){ S.sel = -1; dossierAlerta(a); return; }
@@ -629,6 +633,7 @@ const ICON = {
   filtro:'<path d="M2 3h12l-4.6 5.4V14L6.6 12V8.4L2 3Z"/>',
   mapa:'<circle cx="8" cy="8" r="6.2"/><path d="M1.8 8h12.4M8 1.8c3 3.4 3 9 0 12.4M8 1.8c-3 3.4-3 9 0 12.4"/>',
   pantalla:'<rect x="1.6" y="3" width="12.8" height="9" rx="1"/><path d="M6 14h4"/>',
+  ia:'<path d="M8 1.5v2.2M8 12.3v2.2M1.5 8h2.2M12.3 8h2.2"/><circle cx="8" cy="8" r="3.6"/><path d="M8 6.2l.6 1.2 1.2.6-1.2.6L8 9.8l-.6-1.2-1.2-.6 1.2-.6z" fill="currentColor"/>',
   escudo:'<path d="M8 1.6 13.4 3.8v4.4c0 3-2.2 5.2-5.4 6.2-3.2-1-5.4-3.2-5.4-6.2V3.8L8 1.6Z"/><path d="m5.6 8 1.8 1.8 3.2-3.6"/>',
   feed:'<circle cx="3.4" cy="12.6" r="1.3" fill="currentColor" stroke="none"/><path d="M3 8.6a4.4 4.4 0 0 1 4.4 4.4M3 4.4A8.6 8.6 0 0 1 11.6 13"/><path d="M12.4 3.2 14.8 5.6"/>',
   envios:'<path d="M2 4.5h12v8H2v-8Z"/><path d="m2 5 6 4.2L14 5"/><circle cx="12.6" cy="3.6" r="2.2" fill="currentColor" stroke="none"/>',
@@ -645,7 +650,7 @@ const btn = (ic, tip, id) =>
 $("#railLeft").innerHTML =
   btn("capas","AVISTAMIENTOS","cap") + btn("mar","INTERFAZ MAR–AIRE","mar") +
   btn("feed","ÚLTIMOS VIDEOS","ult") + btn("video","REGISTRO VISUAL","vis") +
-  btn("envios","ENVÍOS CIUDADANOS","env") + btn("escudo","EXPLICACIONES Y SOLIDEZ","exp") +
+  btn("envios","ENVÍOS CIUDADANOS","env") + btn("escudo","EXPLICACIONES Y SOLIDEZ","exp") + btn("ia","INTELIGENCIA","ia") +
   btn("analisis","ANÁLISIS","ana") + btn("filtro","FILTROS","fil") +
   btn("mapa","CARTOGRAFÍA","geo") + btn("pantalla","PANTALLA","pan");
 $("#railRight").innerHTML =
@@ -1129,6 +1134,7 @@ function start(){
   openPanel("mar");
   raf = requestAnimationFrame(loop);
   initCaps();
+  cargarIA();
 }
 /* ═══════════════════════════════════════════════════════════════
    ENVÍOS CIUDADANOS · enlaces a videos alojados en su plataforma
@@ -1903,6 +1909,230 @@ function dossierAlerta(a){
     <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">Una oleada es una concentración inusual de reportes en poco tiempo y espacio. Suele tener una causa común, conocida o no: conviene revisar el descarte antes de difundirla.</div>`;
   dsOpen();
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   INTELIGENCIA · resultados del módulo ia/ (GitHub Actions)
+   Lee data/ia/*.json. Nada se calcula en el navegador.
+   ═══════════════════════════════════════════════════════════════ */
+S.ia = null; S.iaVista = "volumen";
+async function cargarIA(){
+  const leer = n => fetch("data/ia/" + n + ".json").then(r => r.ok ? r.json() : null).catch(() => null);
+  const [resumen, hot, hex, anom, temp, temas, recs, meta] = await Promise.all(
+    ["resumen","hotspots","hexagonos","anomalias","temporal","temas","recomendaciones","meta"].map(leer));
+  if (!hot) return;
+  S.ia = {resumen, hot, hex, anom, temp, temas, recs, meta};
+  const nt = {}; (resumen?.nombres_temas || []).forEach(x => nt[x.id] = x.nombre); S.ia.nombresTemas = nt;
+  mark(); if (S.panel === "ia") refreshPanel();
+}
+
+const IA_COL = {hot:"#ffb340", ola:"#ff5ad1", ano:"#ff5a52"};
+function drawIaHex(c){
+  if (!S.L.iaHex || !S.ia?.hex) return;
+  const cel = S.ia.hex.celdas, max = Math.log1p(cel[0]?.n || 1);
+  c.save(); c.lineWidth = .5;
+  for (const h of cel){
+    const b = h.b; let fuera = true;
+    for (const [lo, la] of b){ const x = px(lo), y = py(la); if (x > -40 && x < W+40 && y > -40 && y < H+40){ fuera = false; break; } }
+    if (fuera) continue;
+    const t = Math.log1p(h.n) / max;
+    c.beginPath();
+    b.forEach(([lo, la], i) => { const x = px(lo), y = py(la); i ? c.lineTo(x, y) : c.moveTo(x, y); });
+    c.closePath();
+    c.fillStyle = `rgba(${Math.round(52 + 203*t*t)},${Math.round(223 - 44*t)},${Math.round(232 - 168*t)},${.1 + .5*t})`;
+    c.fill();
+    if (S.view.z > 4){ c.strokeStyle = "rgba(207,230,238,.18)"; c.stroke(); }
+  }
+  c.restore();
+}
+function drawIa(c){
+  if (!S.ia) return;
+  const hot = S.ia.hot;
+  if (S.L.iaHot){
+    const lista = S.iaVista === "intensidad"
+      ? hot.por_intensidad.map(i => hot.por_volumen.find(h => h.id === i)).filter(Boolean)
+      : hot.por_volumen.slice(0, 25);
+    lista.forEach((h, k) => {
+      const x = px(h.lon), y = py(h.lat), r = Math.max(6, h.radio_km * kmPx(h.lat));
+      if (x < -r-40 || x > W+r+40 || y < -r-40 || y > H+r+40) return;
+      c.strokeStyle = IA_COL.hot; c.lineWidth = 1.2; c.globalAlpha = .85;
+      c.beginPath(); c.arc(x, y, r, 0, 6.284); c.stroke();
+      c.globalAlpha = .1; c.fillStyle = IA_COL.hot; c.fill(); c.globalAlpha = 1;
+      c.font = FONT(8.5); c.fillStyle = IA_COL.hot;
+      c.fillText(String(k + 1), x - 3, y + 3);
+      if (S.view.z > 3.2) c.fillText(h.lugar.toUpperCase(), x + r + 4, y + 3);
+    });
+  }
+  if (S.L.iaOla){
+    for (const o of hot.oleadas.sin_fecha_festiva){
+      const x = px(o.lon), y = py(o.lat);
+      if (x < -20 || x > W+20 || y < -20 || y > H+20) continue;
+      c.strokeStyle = IA_COL.ola; c.fillStyle = IA_COL.ola; c.lineWidth = 1.2;
+      c.beginPath(); c.moveTo(x, y-7); c.lineTo(x+7, y); c.lineTo(x, y+7); c.lineTo(x-7, y); c.closePath();
+      c.globalAlpha = .25; c.fill(); c.globalAlpha = 1; c.stroke();
+    }
+  }
+  if (S.L.iaAno && S.ia.anom){
+    for (const a of S.ia.anom.celdas_mes.top){
+      const x = px(a.lon), y = py(a.lat);
+      if (x < -20 || x > W+20 || y < -20 || y > H+20) continue;
+      c.strokeStyle = IA_COL.ano; c.lineWidth = 1.3;
+      c.beginPath(); c.moveTo(x, y-8); c.lineTo(x+7, y+5); c.lineTo(x-7, y+5); c.closePath(); c.stroke();
+      c.font = FONT(7); c.fillStyle = IA_COL.ano; c.fillText("!", x - 1.5, y + 3);
+    }
+  }
+}
+function pickIa(mx, my){
+  if (!S.ia) return false;
+  const cerca = (lat, lon, r) => { const x = px(lon) - mx, y = py(lat) - my; return x*x + y*y < r*r; };
+  if (S.L.iaAno) for (const a of S.ia.anom?.celdas_mes.top || []) if (cerca(a.lat, a.lon, 12)){ fichaIa("ano", a); return true; }
+  if (S.L.iaOla) for (const o of S.ia.hot.oleadas.sin_fecha_festiva) if (cerca(o.lat, o.lon, 12)){ fichaIa("ola", o); return true; }
+  if (S.L.iaHot) for (const h of S.ia.hot.por_volumen.slice(0, 40))
+    if (cerca(h.lat, h.lon, Math.max(12, h.radio_km * kmPx(h.lat)))){ fichaIa("hot", h); return true; }
+  return false;
+}
+const pctTxt = v => v == null ? "—" : String(v).replace(".", ",") + " %";
+const decTxt = v => v == null ? "—" : String(v).replace(".", ",");
+function fichaIa(tipo, o){
+  const t = {hot:["HOTSPOT · DBSCAN", IA_COL.hot], ola:["OLEADA · HDBSCAN", IA_COL.ola], ano:["ANOMALÍA · ISOLATION FOREST", IA_COL.ano]}[tipo];
+  $("#dsTag").textContent = t[0]; $("#dsTag").style.color = t[1];
+  const formas = (o.formas || []).map(([f, n]) => `${esc(f)} (${fmt(n)})`).join(", ");
+  let celdas = "", extra = "";
+  if (tipo === "hot"){
+    celdas = `<div class="ds-cell"><span>REPORTES</span><b>${fmt(o.n)}</b></div>
+      <div class="ds-cell"><span>POR 100.000 HAB.</span><b>${decTxt(o.por_100k)}</b></div>
+      <div class="ds-cell"><span>RADIO</span><b>${decTxt(o.radio_km)} km</b></div>
+      <div class="ds-cell"><span>TENDENCIA RELATIVA</span><b>${o.tendencia_rel_pct == null ? "—" : (o.tendencia_rel_pct > 0 ? "+" : "") + pctTxt(o.tendencia_rel_pct)}</b></div>`;
+    extra = `${fmt(o.localidades)} localidades entre ${o.desde} y ${o.hasta}. Hora pico ${o.hora_pico ?? "—"}:00. La tendencia compara los últimos cinco años con los cinco anteriores, descontada la caída general del archivo.`;
+  } else if (tipo === "ola"){
+    celdas = `<div class="ds-cell"><span>REPORTES</span><b>${fmt(o.n)}</b></div>
+      <div class="ds-cell"><span>LOCALIDADES</span><b>${fmt(o.localidades)}</b></div>
+      <div class="ds-cell"><span>DURACIÓN</span><b>${decTxt(o.dias)} días</b></div>
+      <div class="ds-cell"><span>RADIO</span><b>${decTxt(o.radio_km)} km</b></div>`;
+    extra = `Del ${esc(o.inicio)} al ${esc(o.fin)}. Concentración inusual de reportes en un lugar y un momento a la vez.`;
+  } else {
+    celdas = `<div class="ds-cell"><span>REPORTES</span><b>${fmt(o.n)}</b></div>
+      <div class="ds-cell"><span>ESPERADOS</span><b>${decTxt(o.esperado)}</b></div>
+      <div class="ds-cell"><span>VECES LO NORMAL</span><b>${decTxt(o.veces)}</b></div>
+      <div class="ds-cell"><span>MES</span><b>${esc(o.mes)}</b></div>`;
+    extra = "Rasgos que más se apartan de lo normal: " + (o.factores || []).map(([f, z]) => `${esc(f)} (${z > 0 ? "+" : ""}${decTxt(z)} σ)`).join(", ") + ".";
+  }
+  $("#dsBody").innerHTML = `
+    <div class="ds-title"><h3>${esc(o.lugar)}</h3><p>${tipo === "hot" ? "Rango " + o.rango + " por volumen" : tipo === "ola" ? esc(o.inicio) : esc(o.mes)}</p></div>
+    <div class="ds-grid">${celdas}</div>
+    <div class="ds-foot" style="color:var(--txt-dim)">${extra}</div>
+    <div class="ds-foot" style="color:var(--txt-dim)">
+      Marítimo ${pctTxt(o.maritimo_pct)} · con explicación probable ${pctTxt(o.explicable_pct)}${o.solidez_media != null ? " · solidez media " + decTxt(o.solidez_media) : ""}
+      ${formas ? "<br>Formas más citadas: " + formas : ""}</div>
+    <div class="ds-foot" style="font-size:calc(7.5px * var(--k))">Resultado estadístico del módulo de inteligencia de NEREO. Describe reportes, no fenómenos confirmados.</div>`;
+  dsOpen();
+}
+
+/* ─── gráficos del panel ─── */
+function barrasIa(lista, pico){
+  const max = Math.max(...lista.map(x => x.indice), 1);
+  return `<div class="bars" style="height:calc(46px * var(--k))">${lista.map(x =>
+    `<div class="${x.k === pico ? "hot" : ""}" style="height:${Math.max(2, x.indice / max * 100)}%" title="${esc(x.k)} · índice ${decTxt(x.indice)}"></div>`).join("")}</div>`;
+}
+function curvaIa(t){
+  const h = t.historico.slice(-96), f = t.pronostico;
+  const todos = [...h.map(x => x[1]), ...f.map(x => x[3])], max = Math.max(...todos, 1);
+  const n = h.length + f.length, Wc = 300, Hc = 90;
+  const X = i => (i / (n - 1)) * Wc, Y = v => Hc - (v / max) * (Hc - 6);
+  const linea = pts => pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+  const hp = h.map((x, i) => [X(i), Y(x[1])]);
+  const fp = f.map((x, i) => [X(h.length + i), Y(x[1])]);
+  const banda = f.map((x, i) => [X(h.length + i), Y(x[3])]).concat(f.map((x, i) => [X(h.length + i), Y(x[2])]).reverse());
+  const xc = X(h.length - 0.5);
+  return `<svg viewBox="0 0 ${Wc} ${Hc}" preserveAspectRatio="none" style="width:100%;height:calc(70px * var(--k));display:block">
+    <path d="${linea(banda)} Z" fill="rgba(255,179,64,.16)"/>
+    <path d="${linea(hp)}" fill="none" stroke="#34dfe8" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+    <path d="${linea(fp)}" fill="none" stroke="#ffb340" stroke-width="1.2" stroke-dasharray="3 2" vector-effect="non-scaling-stroke"/>
+    <line x1="${xc}" x2="${xc}" y1="0" y2="${Hc}" stroke="rgba(207,230,238,.35)" stroke-dasharray="2 3" vector-effect="non-scaling-stroke"/>
+  </svg>
+  <div class="axis"><span>${esc(h[0][0])}</span><span>corte ${esc(t.corte_archivo.slice(0,7))}</span><span>${esc(f[f.length-1][0])}</span></div>`;
+}
+
+PANELS.ia = { t:"INTELIGENCIA", wide:true, html(){
+    const ia = S.ia;
+    if (!ia) return `<div class="hint" style="padding-top:12px">Los resultados del módulo de inteligencia aún no están disponibles. Se generan una vez por semana en GitHub Actions y se publican en <b>data/ia/</b>.</div>`;
+    const r = ia.resumen || {}, v = r.verificacion || {}, hot = ia.hot, t = ia.temp, est = t?.estacionalidad;
+    const fecha = (r.generado || ia.meta?.generado || "").slice(0, 10);
+    const motor = r.motor === "ollama" ? `${esc(r.modelo || "")} local · open source` : "plantilla determinística (Ollama no disponible)";
+    const lista = S.iaVista === "intensidad"
+      ? hot.por_intensidad.map(i => hot.por_volumen.find(h => h.id === i)).filter(Boolean)
+      : hot.por_volumen.slice(0, 12);
+    const temas = ia.temas?.disponible ? ia.temas.temas : [];
+    return `
+      <div class="envstat ok">ANÁLISIS DEL ${esc(fecha)} · ${fmt(ia.meta?.archivo?.n || 0)} REPORTES</div>
+      ${r.titular ? `<div class="ia-titular">${esc(r.titular)}</div>
+        <div class="hint" style="color:var(--txt-dim)">${esc(r.resumen || "")}</div>
+        <div class="ia-motor">Redactado por ${motor} · cifras verificadas ${fmt(v.verificadas || 0)} de ${fmt(v.cifras || 0)}
+          ${(v.no_verificadas || []).length ? `<br><span style="color:var(--am)">No verificadas: ${v.no_verificadas.map(esc).join(", ")}</span>` : ""}</div>` : ""}
+
+      <div class="grp"><span>CAPAS</span></div>
+      ${rowHTML("iaHot","HOTSPOTS",hot.total_clusteres,IA_COL.hot,S.L.iaHot)}
+      ${rowHTML("iaHex","DENSIDAD H3",ia.hex?.total,"#34dfe8",S.L.iaHex)}
+      ${rowHTML("iaOla","OLEADAS",hot.oleadas.sin_fecha_festiva.length,IA_COL.ola,S.L.iaOla)}
+      ${rowHTML("iaAno","ANOMALÍAS",ia.anom?.celdas_mes.top.length,IA_COL.ano,S.L.iaAno)}
+
+      ${(r.hallazgos || []).length ? `<div class="grp"><span>HALLAZGOS</span></div>
+        ${r.hallazgos.map(h => `<div class="ia-item"><b>${esc(h.titulo)}</b><p>${esc(h.explicacion)}</p></div>`).join("")}` : ""}
+
+      ${(r.recomendaciones || []).length ? `<div class="grp"><span>RECOMENDACIONES</span></div>
+        ${r.recomendaciones.map((x, i) => `<div class="ia-item rec"><b><i class="pri ${esc((ia.recs?.items[i]?.prioridad) || "")}">${esc((ia.recs?.items[i]?.prioridad || "").toUpperCase())}</i>${esc(x.accion)}</b>
+          <p>${esc(x.por_que)}</p>${x.como ? `<p class="como">→ ${esc(x.como)}</p>` : ""}</div>`).join("")}` : ""}
+
+      <div class="grp"><span>HOTSPOTS</span>
+        <span class="tabs"><button data-v="volumen" class="${S.iaVista==="volumen"?"on":""}">VOLUMEN</button><button data-v="intensidad" class="${S.iaVista==="intensidad"?"on":""}">POR HABITANTE</button></span></div>
+      <div class="res">${lista.map((h, k) => `<button data-hot="${h.id}" style="border-left-color:${IA_COL.hot}">
+        <b>${k + 1}. ${esc(h.lugar)}</b><i>${fmt(h.n)} reportes${h.por_100k != null ? " · " + decTxt(h.por_100k) + " por 100.000 hab." : ""}${h.tendencia_rel_pct != null ? " · tendencia " + (h.tendencia_rel_pct > 0 ? "+" : "") + pctTxt(h.tendencia_rel_pct) : ""}</i></button>`).join("")}</div>
+      <div class="hint">${esc(hot.metodo)}. «Por habitante» corrige el sesgo de población: muestra dónde se reporta más de lo esperable.</div>
+
+      <div class="grp"><span>OLEADAS</span><span>${fmt(hot.oleadas.en_fechas_festivas)} EN FECHAS FESTIVAS</span></div>
+      <div class="res">${hot.oleadas.sin_fecha_festiva.slice(0, 10).map((o, k) => `<button data-ola="${k}" style="border-left-color:${IA_COL.ola}">
+        <b>${esc(o.lugar)} · ${esc(o.inicio)}</b><i>${fmt(o.n)} reportes en ${fmt(o.localidades)} localidades · ${decTxt(o.dias)} días · explicable ${pctTxt(o.explicable_pct)}</i></button>`).join("")}</div>
+
+      ${ia.anom ? `<div class="grp"><span>ANOMALÍAS</span><span>${fmt(ia.anom.celdas_mes.evaluadas)} CELDAS-MES</span></div>
+      <div class="res">${ia.anom.celdas_mes.top.slice(0, 10).map((a, k) => `<button data-ano="${k}" style="border-left-color:${IA_COL.ano}">
+        <b>${esc(a.lugar)} · ${esc(a.mes)}</b><i>${fmt(a.n)} reportes, ${decTxt(a.veces)} veces lo normal · explicable ${pctTxt(a.explicable_pct)}</i></button>`).join("")}</div>` : ""}
+
+      ${est ? `<div class="grp"><span>ESTACIONALIDAD</span></div>
+      <div class="stat" style="border:0;padding-top:0">
+        <h3>HORA DEL DÍA · PICO ${est.hora_pico}:00</h3>${barrasIa(est.hora, String(est.hora_pico).padStart(2,"0"))}
+        <h3 style="margin-top:12px">DÍA DE LA SEMANA · PICO ${esc(est.dia_pico.toUpperCase())}</h3>${barrasIa(est.dia_semana, est.dia_pico)}
+        <h3 style="margin-top:12px">MES · PICO ${esc(est.mes_pico.toUpperCase())}</h3>${barrasIa(est.mes, est.mes_pico)}
+        ${est.dias_mas_cargados.slice(0, 3).map(d => `<div class="kv">${esc(d.etiqueta)}<b>${decTxt(d.veces_promedio)} × un día promedio</b></div>`).join("")}
+      </div>` : ""}
+
+      ${t ? `<div class="grp"><span>SERIE Y PRONÓSTICO</span></div>
+      <div class="stat" style="border:0;padding-top:0">${curvaIa(t)}
+        <div class="kv">${esc(t.contraste.periodo)} · esperado<b>${fmt(t.contraste.esperado)}</b></div>
+        <div class="kv">${esc(t.contraste.periodo)} · publicado<b>${fmt(t.contraste.reportes)}</b></div>
+        <div class="hint" style="padding:6px 0 0">${esc(t.metodo)}. ${esc(t.advertencia)} Fuente del contraste: ${esc(t.contraste.fuente)}.</div>
+      </div>` : ""}
+
+      ${temas.length ? `<div class="grp"><span>TEMAS EN LOS RELATOS</span><span>${fmt(ia.temas.muestra)} RELATOS</span></div>
+        ${temas.slice(0, 10).map(x => `<div class="ia-item"><b>${esc(S.ia.nombresTemas[x.id] || x.palabras.slice(0, 3).join(" · "))} <span style="color:var(--txt-faint);font-weight:400">· ${decTxt(x.pct)} %</span></b>
+          <p>${x.palabras.map(esc).join(", ")}</p></div>`).join("")}
+        <div class="hint">${esc(ia.temas.motor)}. ${esc(ia.temas.nota)}</div>` : ""}
+
+      <div class="hint">${esc(r.advertencia || "")} Código y método: <a href="https://github.com/simonrovi-web/nereo/tree/main/ia" target="_blank" rel="noopener" style="color:var(--cy)">ia/ en GitHub ↗</a></div>`;
+  },
+  bind(){
+    bindRows();
+    const b = $("#panelBody");
+    b.querySelectorAll(".tabs [data-v]").forEach(x => x.onclick = () => { S.iaVista = x.dataset.v; S.L.iaHot = 1; mark(); refreshPanel(); });
+    b.querySelectorAll("[data-hot]").forEach(x => x.onclick = () => {
+      const h = S.ia.hot.por_volumen.find(y => y.id === +x.dataset.hot); S.L.iaHot = 1;
+      flyTo(h.lon, h.lat, 7); fichaIa("hot", h); mark(); });
+    b.querySelectorAll("[data-ola]").forEach(x => x.onclick = () => {
+      const o = S.ia.hot.oleadas.sin_fecha_festiva[+x.dataset.ola]; S.L.iaOla = 1;
+      flyTo(o.lon, o.lat, 6.5); fichaIa("ola", o); mark(); });
+    b.querySelectorAll("[data-ano]").forEach(x => x.onclick = () => {
+      const a = S.ia.anom.celdas_mes.top[+x.dataset.ano]; S.L.iaAno = 1;
+      flyTo(a.lon, a.lat, 6); fichaIa("ano", a); mark(); });
+  }
+};
 
 load();
 })();

@@ -1,0 +1,4 @@
+# Temas de texto con sentence-transformers.
+# Instalar torch en su versión CPU antes, para no descargar CUDA:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers>=3.0

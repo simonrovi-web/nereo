@@ -299,3 +299,17 @@ input[type=search]:focus{border-color:var(--cy)}
 .alerta:hover{background:rgba(60,8,10,.96)}
 .envstat a.vivo{display:inline-block;margin-top:6px;color:var(--cy);text-decoration:none;border-bottom:1px solid rgba(52,223,232,.4)}
 .envstat a.vivo:hover{color:#eafaff}
+
+/* ─── inteligencia ─── */
+.ia-titular{padding:4px 11px 2px;font-size:calc(11px * var(--k));line-height:1.45;color:#eafaff;font-weight:600;letter-spacing:.02em}
+.ia-motor{margin:2px 11px 8px;padding:6px 8px;border:1px solid var(--line);font-size:calc(7.5px * var(--k));letter-spacing:.06em;color:var(--txt-faint);line-height:1.6}
+.ia-item{padding:6px 11px;border-left:2px solid var(--line-2);margin:4px 11px 4px 9px}
+.ia-item b{display:block;font-size:calc(9px * var(--k));color:var(--txt);letter-spacing:.03em;font-weight:600;line-height:1.45}
+.ia-item p{font-size:calc(8.5px * var(--k));color:var(--txt-dim);line-height:1.6;margin-top:3px}
+.ia-item p.como{color:var(--cy-soft)}
+.ia-item.rec{border-left-color:var(--am)}
+.pri{font-style:normal;font-size:calc(7px * var(--k));letter-spacing:.16em;padding:1px 5px;margin-right:6px;border:1px solid var(--line-2);color:var(--txt-faint)}
+.pri.alta{border-color:rgba(255,90,82,.6);color:#ff8a80}.pri.media{border-color:rgba(255,179,64,.6);color:var(--am)}
+.tabs{display:flex;gap:3px}
+.tabs button{font-size:calc(7px * var(--k));letter-spacing:.14em;padding:2px 6px;border:1px solid var(--line);color:var(--txt-faint)}
+.tabs button.on{border-color:var(--am);color:var(--am)}

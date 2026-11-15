@@ -1,0 +1,19 @@
+# NEREO · módulo de inteligencia (100 % open source)
+# Python 3.11+
+
+# ── Núcleo analítico ──
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4        # DBSCAN, HDBSCAN, IsolationForest, KMeans, TF-IDF
+h3>=4.1                  # indexación hexagonal de Uber
+prophet>=1.1.5           # series temporales (estacionalidad y pronóstico)
+
+# ── Capa interpretativa ──
+requests>=2.31           # cliente HTTP para la API local de Ollama
+
+# ── Servicio HTTP opcional (uso local) ──
+fastapi>=0.110
+uvicorn>=0.29
+
+# ── Temas de texto (opcional; en CI se instala torch CPU aparte) ──
+# Ver requirements-texto.txt
