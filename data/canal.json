@@ -1,0 +1,18 @@
+{
+  "nota": "Configuración del canal de NEREO. El reproductor incrusta material alojado en YouTube: NEREO no rehospeda ningún video, solo enlaza y muestra la ficha del caso debajo. Los embeds son subidas de terceros y pueden desaparecer sin aviso; el canal detecta el fallo y avanza al siguiente.",
+  "segundosFicha": 14,
+  "playlist": null,
+  "playlistNota": "Para que el canal recorra material de las redes de forma continua, crea una lista de reproducción en YouTube con los videos que quieras vigilar y pega su ID aquí (el valor que sigue a list= en la URL). Mientras 'playlist' sea null, el canal recorre los videos declarados en 'videos' más las fichas sin registro incrustable.",
+  "videos": [
+    {
+      "ref": "compilacion-20261114",
+      "yt": "Atn0kp16cdc",
+      "origen": "URL presente en el feed de vigilancia (colección recientes)"
+    },
+    {
+      "ref": "iss-20261108",
+      "yt": "hsoNKuvWL5A",
+      "origen": "URL presente en el feed de vigilancia (colección recientes)"
+    }
+  ]
+}

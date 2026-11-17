@@ -1,15 +1,317 @@
-{"nota":"Instantánea del feed de NEREO. La versión en vivo, actualizada cada 6 horas, está en el visor de Claude.","generado":"2026-11-15T14:50:00Z","vivo":"https://claude.ai/artifact/7pzU8xosYstqoa2bjHQNDV","zonas":[{"n":"Chile central y sur","km":700,"lat":-36,"lon":-72}],"alertas":[],
-"items":[
-{"id":"latam-starship-20261113","agua":false,"clase":"prensa","creado":"2026-11-15T10:50:00Z","enlaces":[["Protección Civil de Chiapas atribuye las luces a Starship (TV Azteca)","https://www.tvazteca.com/aztecanoticias/es-un-ovni-proteccion-civil-rompe-el-silencio-tras-avistamiento-de-extranas-luces-en-mexico-todo-quedo-grabado/"],["Luces en CDMX, Puebla y Oaxaca (Diario Puntual)","https://diariopuntual.com/cooltura/2026/11/14/12940/luces-en-el-cielo-de-cdmx-puebla-y-chiapas-que-eran"],["Tren de satélites Starlink V3 (SDP Noticias)","https://www.sdpnoticias.com/sorprendente/viste-luces-extranas-en-el-cielo-no-eran-ovnis-sino-restos-de-starlink/"]],"estado":"explicado como el vuelo 15 de Starship; atribución oficial de Protección Civil de Chiapas y de la presidencia de El Salvador","fechaEvento":"2026-11-13","fechaPub":"2026-11-15T01:08:00Z","fuente":"RT · TV Azteca · Diario Puntual · Protección Civil de Chiapas","lat":null,"lon":null,"lugar":"México, Guatemala, El Salvador, Puerto Rico y sur de Texas","por":"tarea","resumen":"La noche del viernes 13 de noviembre se difundieron grabaciones desde Ciudad de México, Puebla, Oaxaca, la costa de Chiapas, Guatemala, El Salvador, Puerto Rico y el sur de Texas que muestran un punto brillante con un abanico de luz detrás. La Secretaría de Protección Civil de Chiapas y la presidencia de El Salvador atribuyeron el fenómeno al vuelo de prueba 15 de Starship, lanzado ese día desde Starbase, Texas, que puso en órbita 26 satélites Starlink V3. El abanico luminoso se explica como gas de los motores iluminado por el sol a gran altura, el llamado «efecto medusa». Al abarcar varios países no se asigna una coordenada única.","titulo":"Luces del vuelo 15 de Starship vistas en México y Centroamérica","url":"https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises"},
-{"id":"compilacion-20261114","agua":false,"clase":"redes","creado":"2026-11-15T02:22:00Z","enlaces":[],"estado":"sin verificar","fechaEvento":"","fechaPub":"2026-11-14T13:30:00Z","fuente":"YouTube","lat":null,"lon":null,"lugar":"Varios países","por":"siembra","resumen":"Recopilación publicada el 14 de noviembre que reúne registros atribuidos a un objeto discoidal sobre la isla de Sado (Japón), un objeto negro filmado por un piloto comercial sobre Michoacán y otros casos. Sin verificación independiente de ninguno de ellos.","titulo":"Compilación de registros recientes: Japón, México y otros","url":"https://www.youtube.com/watch?v=Atn0kp16cdc"},
-{"id":"cl-bolido-20261113","agua":false,"clase":"prensa","creado":"2026-11-15T02:22:00Z","descarte":[{"detalle":"Según el calendario de la IMO, la noche del 13 de noviembre había actividad de Táuridas del Norte (máximo 11-12 nov), Táuridas del Sur (activas hasta el 20 nov) y Leónidas (activas del 6 al 30 nov, máximo 16-17 nov)","fuente":"https://www.imo.net/resources/calendar/","tipo":"meteoros"},{"detalle":"El vuelo 15 de Starship se lanzó ese mismo 13 de noviembre desde Texas y provocó avistamientos en Centroamérica; la astronomía chilena descartó relación con el destello sobre Chile, y rocketlaunch.live no lista ningún lanzamiento Starlink entre el 11 y el 15 de noviembre","fuente":"https://rocketlaunch.live/","tipo":"lanzamiento"}],"descarteRevisado":true,"enlaces":[["Qué se sabe del destello (T13)","https://www.t13.cl/noticia/nacional/fue-meteorito-se-sabe-destello-ilumino-cielo-genero-reportes-varias-regiones-14-11-2026"],["Videos del paso sobre Biobío y Ñuble","https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/13/video-paso-de-meteorito-ilumino-cielo-de-regiones-del-bio-bio-y-nuble.shtml"]],"estado":"explicado como bólido","fechaEvento":"2026-11-13","fechaPub":"2026-11-14T12:00:00Z","fuente":"BioBioChile · T13 · Red Geocientífica de Chile","lat":-36,"lon":-72.2,"lugar":"De Coquimbo a Los Ríos, Chile","por":"siembra","resumen":"Un intenso destello cruzó el cielo cerca de las 21:32 del viernes 13 y quedó registrado por cámaras de seguridad y teléfonos. Testigos en Ñuble y Biobío reportaron un fuerte estruendo segundos después. La Red Geocientífica de Chile recopiló reportes desde Coquimbo hasta Los Ríos; la astrónoma Francisca Contreras señaló que se trataría de un objeto quemándose al ingresar a la atmósfera, de origen natural o artificial, y descartó relación con un lanzamiento de SpaceX.","titulo":"Bólido sobre Chile central y sur","url":"https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/astronomia/2026/11/14/cientificos-explican-bola-de-fuego-que-cruzo-cielos-de-chile-y-el-fuerte-estruendo-que-se-escucho.shtml"},
-{"id":"uy-cridovni-starlink-20261105","agua":false,"clase":"prensa","creado":"2026-11-15T10:50:00Z","enlaces":[["Detalle de la conclusión de Cridovni (Aire de Santa Fe)","https://www.airedesantafe.com.ar/actualidad/en-menos-diez-dias-aparecieron-luces-extranas-los-cielos-la-patagonia-y-uruguay-que-dicen-los-expertos-n676720"]],"estado":"explicado como satélites Starlink por Cridovni, de la Fuerza Aérea Uruguaya","fechaEvento":"2026-11-05","fechaPub":"2026-11-14T08:47:00Z","fuente":"El Norte Hoy · Cridovni (Fuerza Aérea Uruguaya)","lat":-34.95,"lon":-54.95,"lugar":"Punta del Este, Maldonado, Uruguay (también Montevideo y Colonia del Sacramento)","por":"tarea","resumen":"Durante varios días de noviembre, vecinos de Maldonado, Montevideo y Colonia del Sacramento filmaron filas de puntos luminosos que cruzaban el cielo nocturno; en uno de los videos aparecen dos luces y luego una tercera. La comisión Cridovni, de la Fuerza Aérea Uruguaya, concluyó oficialmente que corresponden a satélites Starlink de SpaceX, y su titular, el coronel Víctor Molina, señaló que los videos no mostraban nada fuera de lo ordinario. La comisión aclaró que la conclusión aplica solo a los videos analizados y que siguen llegando reportes. Las coordenadas corresponden a Punta del Este.","titulo":"La Fuerza Aérea Uruguaya concluye que las luces de Punta del Este eran satélites Starlink","url":"https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites"},
-{"id":"us-florida-cierre-20261113","agua":false,"clase":"prensa","creado":"2026-11-15T10:50:00Z","descarte":[{"detalle":"El vuelo 15 de Starship se lanzó el 13 de noviembre desde Texas y usuarios atribuyeron el video de Tampa a un lanzamiento de SpaceX, sin confirmación; rocketlaunch.live no lista ningún lanzamiento desde Cabo Cañaveral ese día (el siguiente previsto era Vulcan con Amazon Leo, el 15 de noviembre)","fuente":"https://rocketlaunch.live/","tipo":"lanzamiento"}],"descarteRevisado":true,"enlaces":[["Starship provocó avistamientos ese mismo día (RT)","https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises"],["Video del testigo en Tampa y explicación oficial del cierre (ViveUSA, 14 nov)","https://www.viveusa.mx/en/noticias/misterio-en-estados-unidos-mientras-cerraron-el-espacio-aereo-ciudadanos-reportaron-avistamientos-de-ovnis/"]],"estado":"sin verificar; la FAA atribuyó el cierre a una falla técnica y descartó un ataque","fechaEvento":"2026-11-13","fechaPub":"2026-11-14T02:35:00Z","fuente":"TV Azteca","lat":27.95,"lon":-82.46,"lugar":"Tampa y Miami, Florida, Estados Unidos","por":"tarea","resumen":"La tarde del viernes 13 de noviembre la FAA ordenó detener temporalmente los despegues en Estados Unidos por una falla en las comunicaciones del sistema de control aéreo, y horas después levantó la medida. En paralelo circularon videos de luces no explicadas, sobre todo cerca de Tampa y con una publicación referida a Miami. Las autoridades atribuyeron el cierre a una falla técnica de telecomunicaciones y descartaron un ataque deliberado, y no vincularon el episodio con los avistamientos. Entre las explicaciones que circulan para las luces está el lanzamiento de Starship ese mismo día, sin confirmación. Las coordenadas corresponden a Tampa, donde se concentraron los reportes.","titulo":"Luces sobre Florida durante el cierre del tráfico aéreo en EE. UU.","url":"https://tvazteca.com/amastv/paranormal/fueron-los-ovnis-la-razon-por-la-que-ordenaron-cierre-trafico-aereo-estados-unidos"},
-{"id":"ak-medusa-jber","agua":false,"clase":"prensa","creado":"2026-11-15T02:22:00Z","enlaces":[["Kirkpatrick plantea una cometa con serpentinas (Fox News, 14 nov)","https://www.foxnews.com/us/pentagons-former-ufo-investigator-offers-simple-theory-mysterious-jellyfish-shaped-object-video"]],"estado":"en discusión; el exdirector de AARO plantea una cometa con serpentinas","fechaEvento":"2026-06-15","fechaPub":"2026-11-13T19:41:00Z","fuente":"Fox News Digital vía Yahoo News","lat":61.25,"lon":-149.8,"lugar":"Joint Base Elmendorf-Richardson, Anchorage, Alaska","por":"siembra","resumen":"Sara Jane Osborn grabó el objeto la noche del 15 de junio, cerca de las 22:15, y lo publicó en Facebook al día siguiente; la grabación volvió a circular en noviembre. La oficina de asuntos públicos del 673d Air Base Wing dijo estar al tanto del material sin aportar más información, y no precisó si el objeto fue detectado por personal o equipos militares ni si entró en espacio aéreo restringido. El exdirector de AARO, Sean Kirkpatrick, sostiene que el movimiento ondulante se parece al de una cometa con serpentinas y pide revisar celebraciones locales, patrones de viento y grabaciones desde otro ángulo; añade que el video comprimido no permite determinar tamaño, altitud, distancia ni movimiento real, y advierte lo fácil que resulta hoy fabricar imágenes. AARO no se ha pronunciado sobre este caso.","titulo":"Objeto «medusa» cerca de la base Elmendorf-Richardson","url":"https://www.yahoo.com/news/science/articles/pentagons-former-ufo-investigator-offers-140038063.html"},
-{"id":"ar-patagonia-reentrada-20261102","agua":false,"clase":"prensa","creado":"2026-11-15T10:50:00Z","enlaces":[["Luces en el cielo: un festival, un cohete y satélites (El Norte Hoy)","https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites"]],"estado":"hipótesis de reentrada de restos del cohete chino CZ-2C, sin confirmación oficial","fechaEvento":"2026-11-02","fechaPub":"2026-11-13T17:45:00Z","fuente":"Aire de Santa Fe · MDZ · ADN Sur","lat":null,"lon":null,"lugar":"Santa Cruz y Chubut, Argentina","por":"tarea","resumen":"La noche del 2 de noviembre se vio una intensa luz naranja con una larga estela, de desplazamiento aparentemente lento, desde El Calafate, Pico Truncado, Fitz Roy y Las Heras, en Santa Cruz, y desde Río Mayo y Esquel, en Chubut. Medios regionales publicaron testimonios e imágenes del rastro luminoso. RS Astroturismo planteó ante ADN Sur que se trataría de la reentrada de restos de un cohete chino CZ-2C, hipótesis que no ha sido confirmada oficialmente. Al abarcar localidades muy distantes entre sí no se asigna una coordenada única.","titulo":"Luz naranja con estela sobre la Patagonia argentina","url":"https://www.airedesantafe.com.ar/actualidad/en-menos-diez-dias-aparecieron-luces-extranas-los-cielos-la-patagonia-y-uruguay-que-dicen-los-expertos-n676720"},
-{"id":"iss-20261108","agua":false,"clase":"redes","creado":"2026-11-15T02:22:00Z","enlaces":[],"estado":"sin verificar","fechaEvento":"2026-11-08","fechaPub":"2026-11-11T12:00:00Z","fuente":"YouTube","lat":null,"lon":null,"lugar":"No declarado","por":"siembra","resumen":"Video difundido en YouTube atribuido a la transmisión de la Estación Espacial Internacional del 8 de noviembre. El propio canal indica que la ubicación de filmación no está verificada. Se incluye como ejemplo de lo que circula en redes, no como evidencia.","titulo":"Supuesto objeto registrado desde la Estación Espacial","url":"https://www.youtube.com/watch?v=hsoNKuvWL5A"},
-{"id":"mx-popocatepetl-20261102","agua":false,"clase":"redes","creado":"2026-11-15T02:22:00Z","enlaces":[],"estado":"sin verificar · hipótesis de satélites","fechaEvento":"2026-11-02","fechaPub":"2026-11-04T12:00:00Z","fuente":"Radio Imagina · Webcams de México","lat":19.0225,"lon":-98.6275,"lugar":"Estación Tlamacas, volcán Popocatépetl, México","por":"siembra","resumen":"Una cámara de Webcams de México instalada en la estación Tlamacas registró varias siluetas luminosas que avanzan de forma ordenada y ascienden cerca del macizo, durante la noche del 2 de noviembre. Entre las hipótesis planteadas está el paso de satélites de órbita baja como los de Starlink.","titulo":"Luces sobre el Popocatépetl captadas por cámara de monitoreo","url":"https://www.radioimagina.cl/2026/11/camara-de-monitoreo-graba-gigantesco-ovni-sobrevolando-volcan-video-causa-inquietud"},
-{"id":"cl-masivo-oct2026","agua":false,"clase":"redes","creado":"2026-11-15T02:22:00Z","enlaces":[],"estado":"sin verificar","fechaEvento":"2026-10-24","fechaPub":"2026-10-28T12:00:00Z","fuente":"Radio Imagina","lat":-33.45,"lon":-70.66,"lugar":"Varias regiones, Chile","por":"siembra","resumen":"Durante la noche del 24 al 25 de octubre, testigos de distintas regiones grabaron una formación luminosa que duró unos minutos. Los registros fueron reunidos por la cuenta Tío OVNI Chile en una recopilación de unos diez minutos. El origen no está establecido: se mencionó la coincidencia con un lanzamiento espacial, sin confirmación.","titulo":"Formación luminosa vista en varias regiones de Chile","url":"https://www.radioimagina.cl/2026/10/avistamiento-masivo-de-ovni-en-chile-causa-terror-viralizan-videos-de-una-extrana-luz-captada-en-distintas-regiones/"},
-{"id":"pursue-release-07","agua":false,"clase":"oficial","creado":"2026-11-15T14:30:00Z","descarte":[],"descarteRevisado":false,"enlaces":[["Página oficial de la séptima entrega (war.gov, enlace citado por Starlust)","https://www.war.gov/UFO/release/07/"],["Comunicado del Departamento de Guerra (enlace citado por Starlust)","https://www.war.gov/News/Releases/Release/Article/4632058/department-of-war-publishes-seventh-release-of-unidentified-anomalous-phenomena/"],["Cobertura en español (Gizmodo / Xataka)","https://es.gizmodo.com/estados-unidos-desclasifica-nuevos-archivos-ovni-revelan-platillos-voladores-de-los-anos-50-y-un-misterioso-objeto-triangular-2000272045"],["Pentagon Releases Seventh Batch of UFO Files (Coast to Coast AM)","https://www.coasttocoastam.com/article/pentagon-releases-seventh-batch-of-ufo-files/"]],"estado":"material oficial publicado; los documentos no ofrecen conclusiones","fechaEvento":"","fechaPub":"2026-10-23T18:15:00Z","fuente":"Department of War (PURSUE) · Starlust · Gizmodo/Xataka · Coast to Coast AM","lat":null,"lon":null,"lugar":"Oeste de Estados Unidos (sitio no revelado)","por":"tarea","resumen":"El Departamento de Guerra publicó el 23 de octubre la séptima entrega de archivos desclasificados del programa PURSUE: 28 registros nuevos que elevan el archivo a 478 documentos en siete entregas. El caso más citado es el expediente FBI-UAP-D043, una entrevista de 2026 con dos agentes federales que describen un objeto triangular negro de unos 2,7 a 4,6 metros de ancho, sin luces de aeronave ni sonido, a unas tres millas de un sitio de seguridad nacional en el oeste de Estados Unidos; según el documento ascendió unos 60 metros, se desplazó de lado y volvió a bajar, y el equipo térmico no detectó firma de calor. La entrega incluye además registros de los años cuarenta y cincuenta, reportes de Skinwalker Ranch y un informe mensual de BAASS de 2009. No contiene video ni fotografías de los avistamientos: lo difundido es documentación, más una representación gráfica del triángulo.","titulo":"Séptima entrega de archivos UAP: triángulo negro ante agentes federales","url":"https://starlust.org/pentagon-just-released-the-7th-batch-of-declassified-ufo-files-get-the-direct-link-here/"},
-{"id":"pursue-fbi-2026","agua":false,"clase":"oficial","creado":"2026-11-15T02:22:00Z","enlaces":[],"estado":"material oficial publicado","fechaEvento":"","fechaPub":"2026-08-07T12:00:00Z","fuente":"Newsweek · Department of War","lat":null,"lon":null,"lugar":"Oeste de Estados Unidos","por":"siembra","resumen":"Quinta entrega de archivos desclasificados del programa PURSUE. Incluye imágenes térmicas con dos zonas de contraste «black-hot» de movimiento lento y registros del FBI sobre un incidente de 2026 en el oeste de Estados Unidos, donde testigos describieron luces rojas que parecían sincronizarse y desplazarse juntas.","titulo":"Nuevo lote PURSUE con video térmico del FBI","url":"https://www.newsweek.com/new-ufo-files-details-fbi-records-of-2026-sightings-12296595"}
-]}
+{
+  "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
+  "generado": "2026-11-15T14:20:25Z",
+  "zonas": [
+    {
+      "n": "Chile central y sur",
+      "km": 700,
+      "lat": -36,
+      "lon": -72
+    }
+  ],
+  "alertas": [],
+  "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T10:50:00Z",
+      "enlaces": [
+        [
+          "Protección Civil de Chiapas atribuye las luces a Starship (TV Azteca)",
+          "https://www.tvazteca.com/aztecanoticias/es-un-ovni-proteccion-civil-rompe-el-silencio-tras-avistamiento-de-extranas-luces-en-mexico-todo-quedo-grabado/"
+        ],
+        [
+          "Luces en CDMX, Puebla y Oaxaca (Diario Puntual)",
+          "https://diariopuntual.com/cooltura/2026/11/14/12940/luces-en-el-cielo-de-cdmx-puebla-y-chiapas-que-eran"
+        ],
+        [
+          "Tren de satélites Starlink V3 (SDP Noticias)",
+          "https://www.sdpnoticias.com/sorprendente/viste-luces-extranas-en-el-cielo-no-eran-ovnis-sino-restos-de-starlink/"
+        ]
+      ],
+      "estado": "explicado como el vuelo 15 de Starship; atribución oficial de Protección Civil de Chiapas y de la presidencia de El Salvador",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-15T01:08:00Z",
+      "fuente": "RT · TV Azteca · Diario Puntual · Protección Civil de Chiapas",
+      "lat": null,
+      "lon": null,
+      "lugar": "México, Guatemala, El Salvador, Puerto Rico y sur de Texas",
+      "por": "tarea",
+      "resumen": "La noche del viernes 13 de noviembre se difundieron grabaciones desde Ciudad de México, Puebla, Oaxaca, la costa de Chiapas, Guatemala, El Salvador, Puerto Rico y el sur de Texas que muestran un punto brillante con un abanico de luz detrás. La Secretaría de Protección Civil de Chiapas y la presidencia de El Salvador atribuyeron el fenómeno al vuelo de prueba 15 de Starship, lanzado ese día desde Starbase, Texas, que puso en órbita 26 satélites Starlink V3. El abanico luminoso se explica como gas de los motores iluminado por el sol a gran altura, el llamado «efecto medusa». Al abarcar varios países no se asigna una coordenada única.",
+      "titulo": "Luces del vuelo 15 de Starship vistas en México y Centroamérica",
+      "url": "https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises",
+      "id": "latam-starship-20261113"
+    },
+    {
+      "agua": false,
+      "clase": "redes",
+      "creado": "2026-11-15T02:22:00Z",
+      "enlaces": [],
+      "estado": "sin verificar",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-14T13:30:00Z",
+      "fuente": "YouTube",
+      "lat": null,
+      "lon": null,
+      "lugar": "Varios países",
+      "por": "siembra",
+      "resumen": "Recopilación publicada el 14 de noviembre que reúne registros atribuidos a un objeto discoidal sobre la isla de Sado (Japón), un objeto negro filmado por un piloto comercial sobre Michoacán y otros casos. Sin verificación independiente de ninguno de ellos.",
+      "titulo": "Compilación de registros recientes: Japón, México y otros",
+      "url": "https://www.youtube.com/watch?v=Atn0kp16cdc",
+      "id": "compilacion-20261114"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T02:22:00Z",
+      "descarte": [
+        {
+          "detalle": "Según el calendario de la IMO, la noche del 13 de noviembre había actividad de Táuridas del Norte (máximo 11-12 nov), Táuridas del Sur (activas hasta el 20 nov) y Leónidas (activas del 6 al 30 nov, máximo 16-17 nov)",
+          "fuente": "https://www.imo.net/resources/calendar/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "El vuelo 15 de Starship se lanzó ese mismo 13 de noviembre desde Texas y provocó avistamientos en Centroamérica; la astronomía chilena descartó relación con el destello sobre Chile, y rocketlaunch.live no lista ningún lanzamiento Starlink entre el 11 y el 15 de noviembre",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Qué se sabe del destello (T13)",
+          "https://www.t13.cl/noticia/nacional/fue-meteorito-se-sabe-destello-ilumino-cielo-genero-reportes-varias-regiones-14-11-2026"
+        ],
+        [
+          "Videos del paso sobre Biobío y Ñuble",
+          "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/13/video-paso-de-meteorito-ilumino-cielo-de-regiones-del-bio-bio-y-nuble.shtml"
+        ]
+      ],
+      "estado": "explicado como bólido",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-14T12:00:00Z",
+      "fuente": "BioBioChile · T13 · Red Geocientífica de Chile",
+      "lat": -36,
+      "lon": -72.2,
+      "lugar": "De Coquimbo a Los Ríos, Chile",
+      "por": "siembra",
+      "resumen": "Un intenso destello cruzó el cielo cerca de las 21:32 del viernes 13 y quedó registrado por cámaras de seguridad y teléfonos. Testigos en Ñuble y Biobío reportaron un fuerte estruendo segundos después. La Red Geocientífica de Chile recopiló reportes desde Coquimbo hasta Los Ríos; la astrónoma Francisca Contreras señaló que se trataría de un objeto quemándose al ingresar a la atmósfera, de origen natural o artificial, y descartó relación con un lanzamiento de SpaceX.",
+      "titulo": "Bólido sobre Chile central y sur",
+      "url": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/astronomia/2026/11/14/cientificos-explican-bola-de-fuego-que-cruzo-cielos-de-chile-y-el-fuerte-estruendo-que-se-escucho.shtml",
+      "id": "cl-bolido-20261113"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T10:50:00Z",
+      "enlaces": [
+        [
+          "Detalle de la conclusión de Cridovni (Aire de Santa Fe)",
+          "https://www.airedesantafe.com.ar/actualidad/en-menos-diez-dias-aparecieron-luces-extranas-los-cielos-la-patagonia-y-uruguay-que-dicen-los-expertos-n676720"
+        ]
+      ],
+      "estado": "explicado como satélites Starlink por Cridovni, de la Fuerza Aérea Uruguaya",
+      "fechaEvento": "2026-11-05",
+      "fechaPub": "2026-11-14T08:47:00Z",
+      "fuente": "El Norte Hoy · Cridovni (Fuerza Aérea Uruguaya)",
+      "lat": -34.95,
+      "lon": -54.95,
+      "lugar": "Punta del Este, Maldonado, Uruguay (también Montevideo y Colonia del Sacramento)",
+      "por": "tarea",
+      "resumen": "Durante varios días de noviembre, vecinos de Maldonado, Montevideo y Colonia del Sacramento filmaron filas de puntos luminosos que cruzaban el cielo nocturno; en uno de los videos aparecen dos luces y luego una tercera. La comisión Cridovni, de la Fuerza Aérea Uruguaya, concluyó oficialmente que corresponden a satélites Starlink de SpaceX, y su titular, el coronel Víctor Molina, señaló que los videos no mostraban nada fuera de lo ordinario. La comisión aclaró que la conclusión aplica solo a los videos analizados y que siguen llegando reportes. Las coordenadas corresponden a Punta del Este.",
+      "titulo": "La Fuerza Aérea Uruguaya concluye que las luces de Punta del Este eran satélites Starlink",
+      "url": "https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites",
+      "id": "uy-cridovni-starlink-20261105"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T10:50:00Z",
+      "descarte": [
+        {
+          "detalle": "El vuelo 15 de Starship se lanzó el 13 de noviembre desde Texas y usuarios atribuyeron el video de Tampa a un lanzamiento de SpaceX, sin confirmación; rocketlaunch.live no lista ningún lanzamiento desde Cabo Cañaveral ese día (el siguiente previsto era Vulcan con Amazon Leo, el 15 de noviembre)",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Starship provocó avistamientos ese mismo día (RT)",
+          "https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises"
+        ],
+        [
+          "Video del testigo en Tampa y explicación oficial del cierre (ViveUSA, 14 nov)",
+          "https://www.viveusa.mx/en/noticias/misterio-en-estados-unidos-mientras-cerraron-el-espacio-aereo-ciudadanos-reportaron-avistamientos-de-ovnis/"
+        ]
+      ],
+      "estado": "sin verificar; la FAA atribuyó el cierre a una falla técnica y descartó un ataque",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-14T02:35:00Z",
+      "fuente": "TV Azteca",
+      "lat": 27.95,
+      "lon": -82.46,
+      "lugar": "Tampa y Miami, Florida, Estados Unidos",
+      "por": "tarea",
+      "resumen": "La tarde del viernes 13 de noviembre la FAA ordenó detener temporalmente los despegues en Estados Unidos por una falla en las comunicaciones del sistema de control aéreo, y horas después levantó la medida. En paralelo circularon videos de luces no explicadas, sobre todo cerca de Tampa y con una publicación referida a Miami. Las autoridades atribuyeron el cierre a una falla técnica de telecomunicaciones y descartaron un ataque deliberado, y no vincularon el episodio con los avistamientos. Entre las explicaciones que circulan para las luces está el lanzamiento de Starship ese mismo día, sin confirmación. Las coordenadas corresponden a Tampa, donde se concentraron los reportes.",
+      "titulo": "Luces sobre Florida durante el cierre del tráfico aéreo en EE. UU.",
+      "url": "https://tvazteca.com/amastv/paranormal/fueron-los-ovnis-la-razon-por-la-que-ordenaron-cierre-trafico-aereo-estados-unidos",
+      "id": "us-florida-cierre-20261113"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T02:22:00Z",
+      "enlaces": [
+        [
+          "Kirkpatrick plantea una cometa con serpentinas (Fox News, 14 nov)",
+          "https://www.foxnews.com/us/pentagons-former-ufo-investigator-offers-simple-theory-mysterious-jellyfish-shaped-object-video"
+        ]
+      ],
+      "estado": "en discusión; el exdirector de AARO plantea una cometa con serpentinas",
+      "fechaEvento": "2026-06-15",
+      "fechaPub": "2026-11-13T19:41:00Z",
+      "fuente": "Fox News Digital vía Yahoo News",
+      "lat": 61.25,
+      "lon": -149.8,
+      "lugar": "Joint Base Elmendorf-Richardson, Anchorage, Alaska",
+      "por": "siembra",
+      "resumen": "Sara Jane Osborn grabó el objeto la noche del 15 de junio, cerca de las 22:15, y lo publicó en Facebook al día siguiente; la grabación volvió a circular en noviembre. La oficina de asuntos públicos del 673d Air Base Wing dijo estar al tanto del material sin aportar más información, y no precisó si el objeto fue detectado por personal o equipos militares ni si entró en espacio aéreo restringido. El exdirector de AARO, Sean Kirkpatrick, sostiene que el movimiento ondulante se parece al de una cometa con serpentinas y pide revisar celebraciones locales, patrones de viento y grabaciones desde otro ángulo; añade que el video comprimido no permite determinar tamaño, altitud, distancia ni movimiento real, y advierte lo fácil que resulta hoy fabricar imágenes. AARO no se ha pronunciado sobre este caso.",
+      "titulo": "Objeto «medusa» cerca de la base Elmendorf-Richardson",
+      "url": "https://www.yahoo.com/news/science/articles/pentagons-former-ufo-investigator-offers-140038063.html",
+      "id": "ak-medusa-jber"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T10:50:00Z",
+      "enlaces": [
+        [
+          "Luces en el cielo: un festival, un cohete y satélites (El Norte Hoy)",
+          "https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites"
+        ]
+      ],
+      "estado": "hipótesis de reentrada de restos del cohete chino CZ-2C, sin confirmación oficial",
+      "fechaEvento": "2026-11-02",
+      "fechaPub": "2026-11-13T17:45:00Z",
+      "fuente": "Aire de Santa Fe · MDZ · ADN Sur",
+      "lat": null,
+      "lon": null,
+      "lugar": "Santa Cruz y Chubut, Argentina",
+      "por": "tarea",
+      "resumen": "La noche del 2 de noviembre se vio una intensa luz naranja con una larga estela, de desplazamiento aparentemente lento, desde El Calafate, Pico Truncado, Fitz Roy y Las Heras, en Santa Cruz, y desde Río Mayo y Esquel, en Chubut. Medios regionales publicaron testimonios e imágenes del rastro luminoso. RS Astroturismo planteó ante ADN Sur que se trataría de la reentrada de restos de un cohete chino CZ-2C, hipótesis que no ha sido confirmada oficialmente. Al abarcar localidades muy distantes entre sí no se asigna una coordenada única.",
+      "titulo": "Luz naranja con estela sobre la Patagonia argentina",
+      "url": "https://www.airedesantafe.com.ar/actualidad/en-menos-diez-dias-aparecieron-luces-extranas-los-cielos-la-patagonia-y-uruguay-que-dicen-los-expertos-n676720",
+      "id": "ar-patagonia-reentrada-20261102"
+    },
+    {
+      "agua": false,
+      "clase": "redes",
+      "creado": "2026-11-15T02:22:00Z",
+      "enlaces": [],
+      "estado": "sin verificar",
+      "fechaEvento": "2026-11-08",
+      "fechaPub": "2026-11-11T12:00:00Z",
+      "fuente": "YouTube",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado",
+      "por": "siembra",
+      "resumen": "Video difundido en YouTube atribuido a la transmisión de la Estación Espacial Internacional del 8 de noviembre. El propio canal indica que la ubicación de filmación no está verificada. Se incluye como ejemplo de lo que circula en redes, no como evidencia.",
+      "titulo": "Supuesto objeto registrado desde la Estación Espacial",
+      "url": "https://www.youtube.com/watch?v=hsoNKuvWL5A",
+      "id": "iss-20261108"
+    },
+    {
+      "agua": false,
+      "clase": "redes",
+      "creado": "2026-11-15T02:22:00Z",
+      "enlaces": [],
+      "estado": "sin verificar · hipótesis de satélites",
+      "fechaEvento": "2026-11-02",
+      "fechaPub": "2026-11-04T12:00:00Z",
+      "fuente": "Radio Imagina · Webcams de México",
+      "lat": 19.0225,
+      "lon": -98.6275,
+      "lugar": "Estación Tlamacas, volcán Popocatépetl, México",
+      "por": "siembra",
+      "resumen": "Una cámara de Webcams de México instalada en la estación Tlamacas registró varias siluetas luminosas que avanzan de forma ordenada y ascienden cerca del macizo, durante la noche del 2 de noviembre. Entre las hipótesis planteadas está el paso de satélites de órbita baja como los de Starlink.",
+      "titulo": "Luces sobre el Popocatépetl captadas por cámara de monitoreo",
+      "url": "https://www.radioimagina.cl/2026/11/camara-de-monitoreo-graba-gigantesco-ovni-sobrevolando-volcan-video-causa-inquietud",
+      "id": "mx-popocatepetl-20261102"
+    },
+    {
+      "agua": false,
+      "clase": "redes",
+      "creado": "2026-11-15T02:22:00Z",
+      "enlaces": [],
+      "estado": "sin verificar",
+      "fechaEvento": "2026-10-24",
+      "fechaPub": "2026-10-28T12:00:00Z",
+      "fuente": "Radio Imagina",
+      "lat": -33.45,
+      "lon": -70.66,
+      "lugar": "Varias regiones, Chile",
+      "por": "siembra",
+      "resumen": "Durante la noche del 24 al 25 de octubre, testigos de distintas regiones grabaron una formación luminosa que duró unos minutos. Los registros fueron reunidos por la cuenta Tío OVNI Chile en una recopilación de unos diez minutos. El origen no está establecido: se mencionó la coincidencia con un lanzamiento espacial, sin confirmación.",
+      "titulo": "Formación luminosa vista en varias regiones de Chile",
+      "url": "https://www.radioimagina.cl/2026/10/avistamiento-masivo-de-ovni-en-chile-causa-terror-viralizan-videos-de-una-extrana-luz-captada-en-distintas-regiones/",
+      "id": "cl-masivo-oct2026"
+    },
+    {
+      "agua": false,
+      "clase": "oficial",
+      "creado": "2026-11-15T14:30:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Página oficial de la séptima entrega (war.gov, enlace citado por Starlust)",
+          "https://www.war.gov/UFO/release/07/"
+        ],
+        [
+          "Comunicado del Departamento de Guerra (enlace citado por Starlust)",
+          "https://www.war.gov/News/Releases/Release/Article/4632058/department-of-war-publishes-seventh-release-of-unidentified-anomalous-phenomena/"
+        ],
+        [
+          "Cobertura en español (Gizmodo / Xataka)",
+          "https://es.gizmodo.com/estados-unidos-desclasifica-nuevos-archivos-ovni-revelan-platillos-voladores-de-los-anos-50-y-un-misterioso-objeto-triangular-2000272045"
+        ],
+        [
+          "Pentagon Releases Seventh Batch of UFO Files (Coast to Coast AM)",
+          "https://www.coasttocoastam.com/article/pentagon-releases-seventh-batch-of-ufo-files/"
+        ]
+      ],
+      "estado": "material oficial publicado; los documentos no ofrecen conclusiones",
+      "fechaEvento": "",
+      "fechaPub": "2026-10-23T18:15:00Z",
+      "fuente": "Department of War (PURSUE) · Starlust · Gizmodo/Xataka · Coast to Coast AM",
+      "lat": null,
+      "lon": null,
+      "lugar": "Oeste de Estados Unidos (sitio no revelado)",
+      "por": "tarea",
+      "resumen": "El Departamento de Guerra publicó el 23 de octubre la séptima entrega de archivos desclasificados del programa PURSUE: 28 registros nuevos que elevan el archivo a 478 documentos en siete entregas. El caso más citado es el expediente FBI-UAP-D043, una entrevista de 2026 con dos agentes federales que describen un objeto triangular negro de unos 2,7 a 4,6 metros de ancho, sin luces de aeronave ni sonido, a unas tres millas de un sitio de seguridad nacional en el oeste de Estados Unidos; según el documento ascendió unos 60 metros, se desplazó de lado y volvió a bajar, y el equipo térmico no detectó firma de calor. La entrega incluye además registros de los años cuarenta y cincuenta, reportes de Skinwalker Ranch y un informe mensual de BAASS de 2009. No contiene video ni fotografías de los avistamientos: lo difundido es documentación, más una representación gráfica del triángulo.",
+      "titulo": "Séptima entrega de archivos UAP: triángulo negro ante agentes federales",
+      "url": "https://starlust.org/pentagon-just-released-the-7th-batch-of-declassified-ufo-files-get-the-direct-link-here/",
+      "id": "pursue-release-07"
+    },
+    {
+      "agua": false,
+      "clase": "oficial",
+      "creado": "2026-11-15T02:22:00Z",
+      "enlaces": [],
+      "estado": "material oficial publicado",
+      "fechaEvento": "",
+      "fechaPub": "2026-08-07T12:00:00Z",
+      "fuente": "Newsweek · Department of War",
+      "lat": null,
+      "lon": null,
+      "lugar": "Oeste de Estados Unidos",
+      "por": "siembra",
+      "resumen": "Quinta entrega de archivos desclasificados del programa PURSUE. Incluye imágenes térmicas con dos zonas de contraste «black-hot» de movimiento lento y registros del FBI sobre un incidente de 2026 en el oeste de Estados Unidos, donde testigos describieron luces rojas que parecían sincronizarse y desplazarse juntas.",
+      "titulo": "Nuevo lote PURSUE con video térmico del FBI",
+      "url": "https://www.newsweek.com/new-ufo-files-details-fbi-records-of-2026-sightings-12296595",
+      "id": "pursue-fbi-2026"
+    }
+  ]
+}
