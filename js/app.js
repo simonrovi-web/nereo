@@ -27,6 +27,7 @@ const S = {
   L:{aereo:1,costero:1,embarcacion:1,agua:1,entro:1,emergio:1,
      evVideo:0,evFoto:0,evRadar:0,evMulti:0,casos:1,camaras:0,envios:1,ultimos:1,
      xMet:0,xFuego:0,xLanz:0,puertos:0,bati:1,rutas:0,naval:0,
+     magF:0,magAas:0,magEc:0,magDec:0,magPol:0,magAur:0,
      iaHot:0,iaHex:0,iaOla:0,iaAno:0,rarezas:1,
      calor:0,densidad:0,pulso:1,
      tierra:1,lagos:1,fronteras:1,reticula:1,terminador:1,oceano:1,
@@ -59,6 +60,7 @@ async function load(){
     S.vids = vids.casos; S.vidNota = vids.nota;
     S.cams = cams.sitios; S.camNota = cams.nota;
     try { S.marx = await (await fetch("data/mar.json")).json(); } catch(e){ S.marx = null; }
+    try { S.geo = await (await fetch("data/geomag.json")).json(); } catch(e){ S.geo = null; }
 
     S.world = world; S.st = st; S.N = raw.n;
     S.d = {
@@ -362,6 +364,7 @@ function renderBase(){
   if (S.L.tierra) drawRings(bctx, S.world.land, "#0e1c29", "rgba(80,205,225,.42)", .85);
   if (S.L.lagos)  drawRings(bctx, S.world.lakes, "#061019", "rgba(70,190,210,.26)", .5);
   if (S.L.fronteras) drawLines(bctx, S.world.borders, "rgba(120,190,210,.13)", .5);
+  drawMag(bctx);
   if (S.L.terminador) drawTerminator(bctx);
   if (S.L.calor) drawHeat(bctx);
   if (S.L.densidad) drawDensity(bctx);
@@ -884,6 +887,14 @@ const PANELS = {
       rowHTML("rutas","RUTAS NAVIERAS",null,"#ffb340",S.L.rutas) +
       rowHTML("naval","ZONAS DE ENTRENAMIENTO NAVAL",null,"#ff5a52",S.L.naval) +
       `<div class="hint">Batimetría a 200, 1.000, 3.000 y 5.000 m (Natural Earth). Rutas navieras principales. Las zonas navales son áreas de ejercicio conocidas públicamente, dibujadas de forma aproximada: varios de los expedientes oficiales ocurrieron dentro de ellas.</div>
+       <div class="grp"><span>CAMPO GEOMAGNÉTICO</span></div>` +
+      rowHTML("magAas","ANOMALÍA DEL ATLÁNTICO SUR",null,"#ffb340",S.L.magAas) +
+      rowHTML("magAur","FRANJA AURORAL",null,"#5ef2a8",S.L.magAur) +
+      rowHTML("magEc","ECUADOR MAGNÉTICO",null,"#34dfe8",S.L.magEc) +
+      rowHTML("magF","INTENSIDAD TOTAL",null,"#78bed2",S.L.magF) +
+      rowHTML("magDec","DECLINACIÓN",null,"#9d7bff",S.L.magDec) +
+      rowHTML("magPol","POLOS MAGNÉTICOS Y DERIVA",null,"#34dfe8",S.L.magPol) +
+      `<div class="hint">Modelo IGRF-14, época 2026,0, a nivel del mar; todo precalculado. La <b>AAS</b> es el contorno de 32.000 nT: la región donde el campo es más débil respecto de un dipolo ideal centrado, no el punto más débil del planeta. Afecta de verdad a los satélites que la cruzan. La <b>franja auroral</b>, latitud geomagnética 65°–70°, es la única capa con valor de descarte: las auroras se confunden con luces anómalas, y durante las tormentas el óvalo baja de latitud. Los <b>polos</b> son de inclinación, con su deriva por décadas desde 1900. El campo magnético no explica ni causa los avistamientos: está aquí como contexto geofísico.</div>
        <div class="grp"><span>REFERENCIAS</span></div>` +
       rowHTML("reticula","RETÍCULA Y ECUADOR",null,null,S.L.reticula) +
       rowHTML("terminador","TERMINADOR DÍA/NOCHE",null,"#ffb340",S.L.terminador) +
@@ -1758,6 +1769,104 @@ function drawExpl(c){
 
 /* ─── contexto marítimo ─── */
 const kmPx = lat => sc() / (40075 * Math.max(.2, Math.cos(lat*Math.PI/180)));
+/* ───────────── campo geomagnético ─────────────
+   data/geomag.json · IGRF-14, época 2026.0, a nivel del mar.
+   Todo viene precalculado: el navegador no resuelve el modelo.
+   Es contexto geofísico, no una explicación de los avistamientos;
+   la única capa con valor de descarte es la franja auroral.
+   ──────────────────────────────────────────── */
+function magTrazo(c, grupos, stroke, lw, dash){
+  c.save();
+  if (dash) c.setLineDash(dash);
+  c.beginPath();
+  for (const g of grupos)
+    for (const l of g.lineas)
+      for (let i=0;i<l.length;i++){
+        const x = px(l[i][0]), y = py(l[i][1]);
+        i ? c.lineTo(x,y) : c.moveTo(x,y);
+      }
+  c.strokeStyle = stroke; c.lineWidth = lw || .6; c.stroke();
+  c.restore();
+}
+
+function magRotulo(c, grupos, texto, color){
+  if (S.view.z < 2.4) return;
+  c.save(); c.font = FONT(8); c.fillStyle = color;
+  for (const g of grupos)
+    for (const l of g.lineas){
+      if (l.length < 12) continue;
+      const q = l[Math.floor(l.length/2)];
+      const x = px(q[0]), y = py(q[1]);
+      if (x < 4 || x > W-70 || y < 12 || y > H-8) continue;
+      c.fillText(texto(g.v), x + 4, y - 3);
+      break;
+    }
+  c.restore();
+}
+
+function drawMag(c){
+  const G = S.geo; if (!G) return;
+
+  if (S.L.magF){
+    magTrazo(c, G.intensidad, "rgba(120,190,210,.22)", .6);
+    magRotulo(c, G.intensidad, v => (v/1000) + " µT", "rgba(120,190,210,.55)");
+  }
+
+  if (S.L.magDec){
+    magTrazo(c, G.declinacion, "rgba(157,123,255,.30)", .6, [3,4]);
+    magRotulo(c, G.declinacion, v => (v > 0 ? "+" : "") + v + "°", "rgba(157,123,255,.6)");
+  }
+
+  if (S.L.magAur){
+    c.save();
+    c.shadowColor = "rgba(94,242,168,.55)"; c.shadowBlur = 7;
+    magTrazo(c, G.auroral, "rgba(94,242,168,.5)", 1);
+    c.restore();
+    magRotulo(c, G.auroral, v => (v > 0 ? "N " : "S ") + Math.abs(v) + "° GM", "rgba(94,242,168,.7)");
+  }
+
+  if (S.L.magEc){
+    magTrazo(c, G.ecuador, "rgba(52,223,232,.62)", 1.1);
+    magRotulo(c, G.ecuador, () => "ECUADOR MAGNÉTICO", "rgba(52,223,232,.75)");
+  }
+
+  if (S.L.magAas){
+    c.save();
+    c.shadowColor = "rgba(255,179,64,.5)"; c.shadowBlur = 9;
+    magTrazo(c, G.aas, "rgba(255,179,64,.78)", 1.3);
+    c.restore();
+    magRotulo(c, G.aas, () => "AAS · 32.000 nT", "rgba(255,179,64,.85)");
+  }
+
+  if (S.L.magPol){
+    c.save();
+    for (const [k, col] of [["derivaN","rgba(52,223,232,"],["derivaS","rgba(157,123,255,"]]){
+      const d = G.polos[k]; if (!d) continue;
+      c.beginPath();
+      d.forEach((q,i) => { const x = px(q[1]), y = py(q[2]); i ? c.lineTo(x,y) : c.moveTo(x,y); });
+      c.strokeStyle = col + ".45)"; c.lineWidth = .9; c.setLineDash([2,3]); c.stroke();
+      c.setLineDash([]);
+      c.fillStyle = col + ".7)";
+      for (const q of d){ const x = px(q[1]), y = py(q[2]); c.fillRect(x-1.1, y-1.1, 2.2, 2.2); }
+      if (S.view.z > 2){
+        c.font = FONT(8); c.fillStyle = col + ".75)";
+        c.fillText(String(d[0][0]), px(d[0][1]) + 4, py(d[0][2]) - 3);
+      }
+    }
+    for (const [k, col] of [["n","#34dfe8"],["s","#9d7bff"]]){
+      const q = G.polos[k]; if (!q) continue;
+      const x = px(q[0]), y = py(q[1]);
+      c.strokeStyle = col; c.lineWidth = 1.1;
+      c.beginPath(); c.arc(x, y, 4.5, 0, 6.284); c.stroke();
+      c.beginPath();
+      c.moveTo(x-8,y); c.lineTo(x-5.5,y); c.moveTo(x+5.5,y); c.lineTo(x+8,y);
+      c.moveTo(x,y-8); c.lineTo(x,y-5.5); c.moveTo(x,y+5.5); c.lineTo(x,y+8);
+      c.stroke();
+    }
+    c.restore();
+  }
+}
+
 function drawBati(c){
   const M = S.marx; if (!M) return;
   c.fillStyle = "#0a1a29"; c.fillRect(0,0,W,H);
