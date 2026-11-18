@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-17T02:37:13Z",
+  "generado": "2026-11-18T18:53:28Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,245 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T18:53:28Z",
+      "descarte": [
+        {
+          "detalle": "EarthSky, citando a la American Meteor Society, indica que la Tierra atraviesa el flujo de las Leónidas entre el 28 de octubre y el 7 de diciembre de 2026, con el máximo a las 0:00 UTC del 18 de noviembre y 10 a 15 meteoros por hora. Cualquier domingo previo a la publicación cae dentro de esa ventana, aunque varias luces sostenidas durante unos cuarenta minutos no corresponden al perfil de un meteoro. Al no indicar la nota la fecha exacta, no fue posible cruzar el caso con lanzamientos ni reentradas concretas.",
+          "fuente": "https://earthsky.org/astronomy-essentials/everything-you-need-to-know-leonid-meteor-shower",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; sin registro audiovisual del fenómeno ni pronunciamiento de autoridades o especialistas",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-18T16:05:00Z",
+      "fuente": "The Avondhu (Ronin Scuffins)",
+      "lat": 52.09,
+      "lon": -8.1,
+      "lugar": "Tallow Road, cerca de Conna, condado de Cork, Irlanda",
+      "por": "tarea",
+      "resumen": "El semanario local The Avondhu publicó el 18 de noviembre que Ger Harris, vecino de la zona de Tallow Road, cerca de Conna (condado de Cork), observó «numerosas luces brillantes extendidas por el cielo nocturno» durante un domingo por la tarde, entre las 20:00 y las 20:40 aproximadamente, mirando en dirección a Fermoy; el propio testigo advierte que la referencia a Fermoy es orientativa porque las luces estaban muy altas. El caso es débil en evidencia: la nota no publica video ni fotografía del fenómeno, solo una imagen diurna aportada por el testigo con puntos blancos que señalan las posiciones aproximadas donde las vio, y precisa que la observación ocurrió en completa oscuridad. No se recoge pronunciamiento de la Autoridad de Aviación de Irlanda, del Cuerpo Aéreo, de la Garda ni de ningún especialista, y la versión web es un adelanto de la edición impresa. La nota no da la fecha del domingo, por lo que no se registra fechaEvento; las coordenadas corresponden a Conna de manera aproximada.",
+      "titulo": "Un vecino de Conna, condado de Cork, pide explicaciones por numerosas luces en el cielo",
+      "url": "https://avondhupress.ie/mystery-airborne-lights-prompt-appeal-for-answers/",
+      "id": "ie-conna-cork-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T18:53:28Z",
+      "descarte": [
+        {
+          "detalle": "EarthSky, citando a la American Meteor Society, sitúa el máximo de las Leónidas de 2026 a las 0:00 UTC del 18 de noviembre, con una tasa esperada de 10 a 15 meteoros por hora y la Tierra atravesando el flujo del cometa 55P/Tempel-Tuttle entre el 28 de octubre y el 7 de diciembre. El destello se registró a las 05:54 del 18 de noviembre, pocas horas después de ese máximo, de modo que la coincidencia de calendario es real y concuerda con la atribución del propio medio.",
+          "fuente": "https://earthsky.org/astronomy-essentials/everything-you-need-to-know-leonid-meteor-shower",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "explicado como leónida; el astrofísico del CSIC Josep Trigo la describe como «quizás la más luminosa captada sobre Canarias en la historia», sin datos técnicos publicados",
+      "fechaEvento": "2026-11-18",
+      "fechaPub": "2026-11-18T14:27:37Z",
+      "fuente": "La Voz de Lanzarote · Ramón López (@stargazerLzt) · Josep Trigo (CSIC)",
+      "lat": 28.86,
+      "lon": -13.83,
+      "lugar": "Playa Blanca, Lanzarote, Islas Canarias, España",
+      "por": "tarea",
+      "resumen": "La madrugada del miércoles 18 de noviembre, a las 05:54, la estación del astrónomo aficionado Ramón López, en Playa Blanca (Lanzarote), registró en video una leónida de tamaño considerable que produjo un gran destello perfectamente visible. El astrofísico y profesor del CSIC Josep Trigo comentó en redes que «quizás es la más luminosa captada sobre Canarias en la historia», una valoración que publicó sin acompañarla de datos técnicos: la nota no aporta magnitud, velocidad, altura ni código de bólido. Según el medio, el destello se vio también desde el resto de Canarias, Marruecos, Mauritania y el Sáhara Occidental. Las Leónidas proceden del cometa 55P/Tempel-Tuttle; las coordenadas corresponden a Playa Blanca de manera aproximada, ya que la fuente no precisa la posición del meteoro.",
+      "titulo": "Una estación de Lanzarote capta una gran leónida, «quizás la más luminosa» registrada sobre Canarias",
+      "url": "https://www.lavozdelanzarote.com/actualidad/mas-noticias/video-estacion-lanzarote-capta-enorme-leonida-cruzando-cielo_247425_102.html",
+      "id": "es-lanzarote-leonida-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T12:50:30Z",
+      "descarte": [
+        {
+          "detalle": "Las Leónidas estaban activas (6 al 30 de noviembre de 2026) y habían alcanzado su máximo la noche del 16 al 17, con una ZHR de 10; las Táuridas del Norte siguen activas hasta el 10 de diciembre y las del Sur hasta el 20 de noviembre. La coincidencia de calendario es real, aunque un punto de luz visto por la mañana no corresponde al perfil de un meteoro.",
+          "fuente": "https://www.imo.net/resources/calendar/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "Revisado el listado de lanzamientos: no hay misiones Starlink entre el 14 y el 18 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado. El único lanzamiento ruso en la ventana es un Soyuz-2 con KOEN/Kinosputnik el 14 de noviembre, cuatro días antes del avistamiento.",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; sin explicación oficial ni de astrónomos, el medio solo recoge hipótesis de comentaristas (Venus o un satélite)",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-18T07:43:00Z",
+      "fuente": "Tolk News (tolknews.ru), Altái",
+      "lat": 53.35,
+      "lon": 83.78,
+      "lugar": "Barnaul y carretera Barnaul–Biysk, krai de Altái, Rusia",
+      "por": "tarea",
+      "resumen": "El diario regional Tolk publicó el 18 de noviembre, a las 14:43 de Barnaul, videos y una fotografía de un objeto luminoso en el cielo del krai de Altái. El material fue difundido por la comunidad de VK «Barnaul 22» y corresponde a dos ángulos distintos: uno tomado desde la carretera que une Barnaul con Biysk y otro desde la propia ciudad de Barnaul. El registro es pobre en datos: el medio solo señala que el objeto se vio «por la mañana», sin precisar fecha, hora, tamaño ni movimiento, y no identifica a quienes grabaron. No hay pronunciamiento de autoridades ni de astrónomos; el propio diario se limita a recoger las hipótesis de los comentaristas, que apuntan sobre todo a Venus como «estrella de la mañana» y, en segundo lugar, a un satélite entrando o saliendo de órbita. Como la nota no da fecha del avistamiento, no se registra fechaEvento. Las coordenadas corresponden a Barnaul de manera aproximada.",
+      "titulo": "Objeto luminoso filmado desde Barnaul y la carretera a Biysk, Altái, Rusia",
+      "url": "https://tolknews.ru/obsestvo/229791-zhiteli-altayskogo-kraya-zasnyali-neobichniy-svetyashchiysya-objekt-v-nebe",
+      "id": "ru-altai-barnaul-20261118"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-17T18:58:00Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "explicado como trombas marinas asociadas a un temporal; NOAA no tiene registro de trombas dentro de la bahía en 28 años de base de datos",
+      "fechaEvento": "2026-11-16",
+      "fechaPub": "2026-11-17T15:46:00Z",
+      "fuente": "ABC7 San Francisco · NOAA",
+      "lat": 37.63,
+      "lon": -122.38,
+      "lugar": "Bahía de San Francisco, California, Estados Unidos",
+      "por": "tarea",
+      "rareza": "natural",
+      "resumen": "La tarde del lunes 16 de noviembre se formaron dos trombas marinas sobre la bahía de San Francisco, cerca del aeropuerto internacional y de Candlestick Point, durante un temporal que llevaba cuatro días golpeando la costa. Los testigos dijeron que ambas se disiparon en pocos minutos; Erin Wikle grabó el episodio en video. ABC7 revisó la base de datos de eventos meteorológicos de NOAA, que cubre 28 años, y no encontró ninguna tromba registrada antes dentro de la bahía: las pocas documentadas en el área ocurrieron mar adentro. El mismo temporal dejó olas de hasta 15 metros en Mavericks, cerca de Half Moon Bay, y NOAA advierte que las trombas pueden desplazarse rápido y resultar peligrosas. Las coordenadas son aproximadas, en el sector de la bahía frente al aeropuerto.",
+      "titulo": "Dos trombas marinas sobre la bahía de San Francisco, sin registro previo en 28 años",
+      "url": "https://abc7news.com/post/bay-area-residents-witness-stunned-rare-waterspouts-san-francisco/20046828/",
+      "id": "us-sf-trombas-20261116"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-17T18:58:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "desmentido por Snopes: video generado con inteligencia artificial",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-17T14:00:00Z",
+      "fuente": "Snopes (Emery Winter), vía Yahoo News",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Un YouTube Short publicado en noviembre por el canal «UNIQUE SARANG» muestra una ola enorme que pasa por encima de un portacontenedores cargado y golpea la ventana del puente de mando; acumuló cerca de 32 millones de reproducciones en su primera semana y se replicó en X y Reddit presentado como una ola gigante real. Snopes lo calificó de falso y concluyó que fue generado con inteligencia artificial. Entre las señales que cita: una taza que cae y se endereza sola, contenedores que parecen colgar del costado del buque, una nave que no reacciona al oleaje y un estado final que no coincide con las grabaciones reales de olas gigantes, donde los objetos quedan desordenados. La verificación, firmada por Emery Winter, se publicó el 17 de noviembre y fue reproducida por Yahoo News.",
+      "titulo": "Desmienten el video viral de una ola gigante barriendo un portacontenedores: es material hecho con IA",
+      "url": "https://www.yahoo.com/news/science/articles/fact-check-alleged-video-massive-140000769.html",
+      "id": "montaje-ola-portacontenedores-20261117"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-17T18:58:00Z",
+      "descarte": [
+        {
+          "detalle": "Las Leónidas alcanzaron su máximo las noches del 16 y 17 de noviembre de 2026; la propia red SPMN atribuye el bólido a esa lluvia, originada en el cometa 55P/Tempel-Tuttle.",
+          "fuente": "https://www.cadizdirecto.com/cadiz/una-brillante-bola-de-fuego-cruza-el-cielo-de-espana-en-plena-lluvia-de-las-leonidas-se-pudo-ver-desde-cadiz",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "explicado como bólido de las Leónidas por la red SPMN del CSIC, con el código SPMN161126M",
+      "fechaEvento": "2026-11-16",
+      "fechaPub": "2026-11-17T10:20:00Z",
+      "fuente": "Cádiz Directo · Red de Investigación sobre Bólidos y Meteoritos (SPMN, CSIC)",
+      "lat": null,
+      "lon": null,
+      "lugar": "Este de España (Aragón, Castilla-La Mancha, Comunidad Valenciana, Baleares y Región de Murcia)",
+      "por": "tarea",
+      "resumen": "La madrugada del lunes 16 de noviembre, a las 06:05:33 UTC (07:05:33 en la península), un bólido cruzó el cielo del este de España. La Red de Investigación sobre Bólidos y Meteoritos (SPMN), vinculada al CSIC, lo documentó con el código SPMN161126M a partir del registro de cuatro estaciones: Esparreguera y Gavà (Barcelona), Morata de Jalón (Zaragoza) y Sant Mateu (Castellón). La red lo atribuye a las Leónidas, originadas en el cometa 55P/Tempel-Tuttle, y le estima una magnitud absoluta de -8 con una incertidumbre de una magnitud. El rango de observación comunicado abarca Aragón, Castilla-La Mancha, la Comunidad Valenciana, Baleares y la Región de Murcia; la fuente destaca una grabación de Carles Pineda desde Gavà y no registra observaciones confirmadas desde Cádiz. No se asigna coordenada porque la fuente no precisa la posición del bólido, solo las estaciones que lo detectaron.",
+      "titulo": "Bólido de las Leónidas sobre el este de España, registrado por la red SPMN",
+      "url": "https://www.cadizdirecto.com/cadiz/una-brillante-bola-de-fuego-cruza-el-cielo-de-espana-en-plena-lluvia-de-las-leonidas-se-pudo-ver-desde-cadiz",
+      "id": "es-bolido-spmn-20261116"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T00:55:00Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "explicado como instalación de luz del proyecto artístico «Hay Luz Dentro», según su autor; sin confirmación municipal",
+      "fechaEvento": "2026-11-16",
+      "fechaPub": "2026-11-17T07:09:00Z",
+      "fuente": "El Español · El Digital de Castilla-La Mancha",
+      "lat": 39.8628,
+      "lon": -4.0273,
+      "lugar": "Toledo, Castilla-La Mancha, España",
+      "por": "tarea",
+      "rareza": "cielo",
+      "resumen": "A las 23:40 del lunes 16 de noviembre, nueve haces de luz proyectados desde uno de los puntos más altos de Toledo dibujaron la forma de una semilla sobre la ciudad. No se trata de un avistamiento anómalo: es la segunda y última fase de «Hay Luz Dentro», un proyecto sin ánimo de lucro del creativo Samuel García, de 34 años y natural de Mora, vinculado a la Escuela de Arte de Toledo. La primera fase había sido la aparición, el 28 de octubre, de 500 macetas blancas y vacías en el Casco Histórico, con un código QR y el mensaje «Tú eres la semilla más importante del mundo». La fecha se eligió para marcar los 40 años de Toledo como Ciudad Patrimonio de la Humanidad. El autor es la única fuente del origen: la nota no recoge confirmación de ninguna autoridad municipal ni verificación independiente.",
+      "titulo": "Nueve focos dibujan una semilla en el cielo de Toledo",
+      "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/toledo/20261117/misteriosa-luz-dibuja-semilla-cielo-toledo-curioso-mensaje-detras/1003744459588_0.html",
+      "id": "es-toledo-semilla-20261116"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T00:55:00Z",
+      "descarte": [
+        {
+          "detalle": "Las Leónidas alcanzaron su máximo precisamente la noche del 16 al 17 de noviembre de 2026 (activas del 6 al 30 de noviembre), con unos 10 meteoros por hora; las Táuridas del Sur seguían activas hasta el 20 de noviembre. La coincidencia de fecha es real, aunque un punto de luz sostenido no corresponde al perfil de un meteoro.",
+          "fuente": "https://www.imo.net/resources/calendar/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "Revisado el listado de lanzamientos: no hay misiones Starlink entre el 14 y el 18 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado; sí quedan en órbita satélites visibles de misiones anteriores, hipótesis que recoge la prensa brasileña.",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Diário do Pará sitúa el registro de Belém entre varios casos recientes y recoge que un investigador del Observatorio Heller & Jung atribuye muchos reportes a satélites Starlink",
+          "https://diariodopara.com.br/cotidiano/bruna-lombardi-compartilha-videos-de-supostos-ovnis-e-questiona-o-que-esta-acontecendo-nos-ceus/"
+        ]
+      ],
+      "estado": "sin verificar; el propio medio advierte que no hay elementos para identificar la luz",
+      "fechaEvento": "2026-11-16",
+      "fechaPub": "2026-11-17T03:40:00Z",
+      "fuente": "Diário Online (DOL)",
+      "lat": -1.47,
+      "lon": -48.49,
+      "lugar": "Barrio del Jurunas, Belém, Pará, Brasil",
+      "por": "tarea",
+      "resumen": "La noche del lunes 16 de noviembre, un vecino del barrio del Jurunas, en Belém (Pará), grabó con su teléfono un punto de luz redondeado en el cielo; el video se difundió en redes y el diario local lo publicó en la madrugada del 17. El registro es pobre en datos: la nota no informa posición, tamaño, movimiento ni duración de la luz, y el testigo no está identificado. El propio medio advierte que un punto luminoso puede corresponder a aeronaves, satélites, drones o fenómenos astronómicos y que, sin más información, no es posible determinar qué aparece en las imágenes; no hay declaración de especialistas ni de autoridades. Las coordenadas corresponden al barrio del Jurunas de manera aproximada.",
+      "titulo": "Punto de luz filmado por un vecino del Jurunas, en Belém, Brasil",
+      "url": "https://dol.com.br/tuedoide/bizarro/968604/ovni-no-jurunas--luz-misteriosa-no-ceu-intriga-morador-veja",
+      "id": "br-belem-jurunas-20261116"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-17T12:47:16Z",
+      "descarte": [
+        {
+          "detalle": "El vuelo 15 de Starship despegó el 13 de noviembre de 2026, un día antes de la publicación del video en X; ese vuelo ya había provocado avistamientos de «efecto medusa» en México y Centroamérica. El mismo listado no registra ningún lanzamiento Starlink entre el 12 y el 17 de noviembre, por lo que se descarta un tren de satélites.",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        },
+        {
+          "detalle": "Las Leónidas alcanzaron su máximo la noche del 16 al 17 de noviembre de 2026, con actividad apreciable en los días previos y posteriores; no explica un objeto de forma sostenida, pero queda registrado por fecha.",
+          "fuente": "https://weather.com/2026/11/15/science/space/leonid-meteor-shower-peaks-how-to-watch-fireballs",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; sin autor, fecha de grabación ni pronunciamiento oficial sobre el video mexicano",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-16T19:31:00Z",
+      "fuente": "TV Azteca (Ama TV)",
+      "lat": 31.74,
+      "lon": -106.49,
+      "lugar": "Ciudad Juárez, Chihuahua, México",
+      "por": "tarea",
+      "resumen": "TV Azteca publicó el 16 de noviembre una nota sobre un video difundido en X el 14 de noviembre que muestra un objeto con apéndices colgantes, descrito como «ovni medusa», atribuido al cielo de Ciudad Juárez, Chihuahua. La nota presenta el caso como una secuela del objeto filmado en Anchorage, Alaska, el 15 de junio, sobre el que el exdirector de la oficina del Pentágono que investiga fenómenos anómalos, Sean Kirkpatrick, planteó una cometa con serpentinas, un globo de gran altitud u otro artefacto aéreo. La procedencia del material mexicano es débil: la fuente no identifica quién lo grabó, no precisa fecha ni hora de grabación y no recoge pronunciamiento de ninguna autoridad mexicana; el propio medio señala que no hay evidencia de que ambos objetos estén relacionados ni de que sean de origen extraterrestre. Conviene añadir que Ciudad Juárez es la misma localidad del video del supuesto pterodáctilo difundido días antes y desmentido como material generado con inteligencia artificial.",
+      "titulo": "Objeto tipo «medusa» atribuido a Ciudad Juárez, México",
+      "url": "https://www.tvazteca.com/amastv/paranormal/captan-supuesto-ovni-medusa-en-mexico-tras-avistamiento-en-alaska-esto-se-sabe/",
+      "id": "mx-juarez-medusa-20261114"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -46,6 +285,37 @@
       "titulo": "Luz con estela sobre varios municipios de Puebla, México",
       "url": "https://www.aztecaguerrero.com/noticias/no-estamos-solos-captan-extrano-ovni-arrastrando-un-objeto-desconocido-sobre-puebla/",
       "id": "mx-puebla-estela-20261116"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T00:55:00Z",
+      "descarte": [
+        {
+          "detalle": "Desde el 13 de noviembre de 2026, fecha del avistamiento, hay videomapping e iluminaciones de las ATP Finals en la plaza San Carlo y en la fachada del Palazzo Reale de Turín; la coincidencia temporal es real, aunque la fuente no confirma que explique todas las luces.",
+          "fuente": "https://www.libero.it/magazine/news/strane-luci-cielo-torino-decine-cittadini-filmano-fenomeno-cosa-succede-ufo-atp-finals-231536",
+          "tipo": "otro"
+        },
+        {
+          "detalle": "Las Leónidas estaban activas (6 al 30 de noviembre de 2026) y las Táuridas del Norte habían alcanzado su máximo la noche del 11 al 12 de noviembre; ninguna explica haces fijos proyectados sobre las nubes, pero la coincidencia de calendario queda registrada.",
+          "fuente": "https://www.imo.net/resources/calendar/",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; la prensa local propone focos móviles de espectáculos o el videomapping de las ATP Finals, sin confirmación",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-16T12:00:00Z",
+      "fuente": "Libero Magazine",
+      "lat": 45.07,
+      "lon": 7.69,
+      "lugar": "Turín y municipios del cinturón norte, Piamonte, Italia",
+      "por": "tarea",
+      "resumen": "La noche del viernes 13 de noviembre, vecinos de Caselle Torinese, Mappano, Volpiano, Settimo Torinese, Robassomero y los barrios turineses de Barriera di Milano y Falchera filmaron varios haces o destellos de luz que atravesaban nubes espesas y parecían desplazarse con regularidad sobre las casas; los primeros registros los compartieron residentes de Caselle Torinese y el fenómeno se difundió por redes. La prensa local plantea dos explicaciones no confirmadas: focos móviles del tipo que se usa en locales y espectáculos al aire libre, cuyos haces se vuelven visibles a distancia al proyectarse contra las nubes, y las iluminaciones de las ATP Finals, que desde el 13 de noviembre incluyen videomapping en la plaza San Carlo y en la fachada del Palazzo Reale. No hay pronunciamiento de autoridades ni análisis de especialistas, y la propia nota concluye que no existe confirmación definitiva. Las coordenadas corresponden a Turín de manera aproximada, ya que los reportes se reparten por varios municipios del cinturón norte.",
+      "titulo": "Haces de luz sobre Turín y su cinturón norte, filmados por vecinos",
+      "url": "https://www.libero.it/magazine/news/strane-luci-cielo-torino-decine-cittadini-filmano-fenomeno-cosa-succede-ufo-atp-finals-231536",
+      "id": "it-torino-luces-20261113"
     },
     {
       "agua": false,
@@ -523,6 +793,71 @@
       "titulo": "Objeto brillante con estela cruza el cielo de Fortaleza, Brasil",
       "url": "https://diariodonordeste.verdesmares.com.br/opiniao/colunistas/ednardo-rodrigues/objeto-brilhante-cruza-o-ceu-de-fortaleza-e-tem-perfil-de-lixo-espacial-veja-video-1.3804335",
       "id": "br-fortaleza-20261108"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-18T12:50:30Z",
+      "descarte": [
+        {
+          "detalle": "Las Táuridas del Sur alcanzaron su máximo precisamente la noche del 4 al 5 de noviembre de 2026 (activas del 20 de septiembre al 20 de noviembre, ZHR 5). La coincidencia de fecha es real, pero el registro es una fotografía diurna tomada a las 14:36, hora en que no se observan meteoros de esa lluvia.",
+          "fuente": "https://www.imo.net/resources/calendar/",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "La prensa japonesa retoma el caso y cita al gobernador provincial (Tocana, 17 nov)",
+          "https://tocana.jp/2026/11/post_301545_entry.html"
+        ],
+        [
+          "Flying Saucer Photographed in Chile (Coast to Coast AM)",
+          "https://www.coasttocoastam.com/article/flying-saucer-photographed-in-chile/"
+        ],
+        [
+          "Tokyo Sports detalla que el alcalde de Paihuano, Hernán Ahumada, difundió la imagen el 9 de noviembre (18 nov)",
+          "https://www.tokyo-sports.co.jp/articles/-/410285"
+        ]
+      ],
+      "estado": "sin verificar; solo una fotografía, sin análisis técnico ni pronunciamiento de autoridades",
+      "fechaEvento": "2026-11-05",
+      "fechaPub": "2026-11-08T16:07:00Z",
+      "fuente": "Radio Guayacán (Coquimbo, Chile)",
+      "lat": -30.13,
+      "lon": -70.49,
+      "lugar": "Cochiguaz, comuna de Paihuano, Valle del Elqui, Región de Coquimbo, Chile",
+      "por": "tarea",
+      "resumen": "Huéspedes de las cabañas «Luna de Cuarzo», en Cochiguaz (Valle del Elqui, Región de Coquimbo), fotografiaron el 5 de noviembre a las 14:36 un objeto con forma de disco que, según el relato, se elevaba desde el cerro Cancana. El dueño de las cabañas, Marcelo Andunce, dijo a Radio Guayacán que estaba junto al grupo cuando se tomó la imagen, mientras revisaban el caudal de agua de los deshielos y de una quebrada cercana. El caso es débil en evidencia: se trata de una sola fotografía, sin video, y la nota no incluye análisis del material ni pronunciamiento de ninguna autoridad policial, aeronáutica o científica; tampoco descarta un dron, un globo ni un reflejo. La imagen volvió a circular por prensa internacional —Coast to Coast AM en Estados Unidos el 17 de noviembre, y Tocana y Tokyo Sports en Japón el 17 y el 18—. La cobertura japonesa precisa quién la difundió: el alcalde de Paihuano, Hernán Ahumada, la publicó el 9 de noviembre en su cuenta de Instagram, algo que la fuente chilena no registra; también atribuye la primera nota al sitio chileno Central Noticia y recoge que los escépticos hablan de edición de imagen o reflejos de lente. Ninguna autoridad aeronáutica ni astrónomo se ha pronunciado. Las coordenadas corresponden a Cochiguaz de manera aproximada. El punto cae dentro de la zona de vigilancia «Chile central y sur», a unos 670 km de su centro.",
+      "titulo": "Fotografían un objeto discoidal sobre el cerro Cancana, en Cochiguaz, Valle del Elqui",
+      "url": "https://radioguayacan.cl/impactante-avistamiento-de-ovni-en-el-valle-de-elqui/",
+      "id": "cl-cochiguaz-elqui-20261105"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-17T12:47:16Z",
+      "descarte": [
+        {
+          "detalle": "La propia fuente recoge la hipótesis de tráfico aéreo: estela de condensación de avión o nube de condensación de Prandtl-Glauert, coherente con un objeto blanco y alargado visto de día con cielo despejado.",
+          "fuente": "https://www.ctdsb.net/c1476_202611/2897573.html",
+          "tipo": "avion"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; la oficina meteorológica local no tenía reportes y un divulgador científico lo atribuye a una estela de condensación o a una nube de Prandtl-Glauert",
+      "fechaEvento": "2026-11-05",
+      "fechaPub": "2026-11-06T03:37:00Z",
+      "fuente": "Jimu News (极目新闻) vía ctdsb.net",
+      "lat": 40.77,
+      "lon": 114.74,
+      "lugar": "Distrito de Wanquan, Zhangjiakou, Hebei, China",
+      "por": "tarea",
+      "resumen": "La mañana del 5 de noviembre, una vecina apellidada Gao filmó hacia el este un objeto blanco aparentemente inmóvil sobre la zona urbana del distrito de Wanquan, en Zhangjiakou, provincia de Hebei, con el cielo despejado; lo describió con forma de «tren volador» y dijo no poder estimar su altura. Otros usuarios de Hebei publicaron registros parecidos. La oficina meteorológica local respondió que no había recibido reportes y que consultaría a especialistas. El divulgador científico Gou Sheng, cuyo nombre real es Liang Yichen, planteó dos explicaciones atmosféricas: una estela de condensación de avión, o una nube de condensación de Prandtl-Glauert, que se forma cuando el aire comprimido alrededor de un avión se expande y se enfría lo suficiente para que el vapor de agua condense. La nota recuerda avistamientos similares sobre Zhangjiakou dos años antes y en Zibo, provincia de Shandong. Las coordenadas corresponden al distrito de Wanquan de manera aproximada.",
+      "titulo": "Objeto blanco inmóvil filmado sobre Zhangjiakou, China",
+      "url": "https://www.ctdsb.net/c1476_202611/2897573.html",
+      "id": "cn-zhangjiakou-20261105"
     },
     {
       "agua": false,
