@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-19T06:56:29Z",
+  "generado": "2026-11-19T12:47:28Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,42 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "id": "uk-lakenheath-avionetas-20261119",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [
+        {
+          "detalle": "El piloto Sam Rutherford declaro a la BBC que su formacion de tres Cirrus SR20 en vuelo de entrega cruzo Norfolk a unos 1.800 m el 13 de noviembre; solo uno de los tres aviones tenia el transpondedor encendido.",
+          "fuente": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
+          "tipo": "avion"
+        },
+        {
+          "detalle": "La Autoridad de Aviacion Civil de Moldavia confirmo que tres aviones SR20 procedentes de Brno, confundidos con drones sobre Chisinau el 15 de noviembre, aterrizaron sin incidentes; atribuyo la confusion a problemas de senal GPS.",
+          "fuente": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
+          "tipo": "avion"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Full Fact: el video de luces rojas es anterior al incidente de Lakenheath",
+          "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/"
+        ]
+      ],
+      "estado": "explicado como una formación de tres avionetas Cirrus SR20 según el piloto; la Fuerza Aérea de EE. UU. no lo confirma",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-19T09:51:00Z",
+      "fuente": "DroneXL",
+      "lat": 52.409,
+      "lon": 0.561,
+      "lugar": "RAF Lakenheath, Suffolk, Inglaterra, Reino Unido (video grabado en Gayton, Norfolk)",
+      "por": "tarea",
+      "resumen": "El 13 de noviembre de 2026 la base aérea estadounidense de RAF Lakenheath, en Suffolk, activó sirenas y pidió refugiarse al personal por una supuesta actividad de drones no autorizada. Seis días después, el piloto británico Sam Rutherford declaró a la BBC que la alarma la causó su formación de tres avionetas Cirrus SR20 que cruzaba Norfolk a unos 1.800 metros en un vuelo de entrega, y de las que solo una llevaba el transpondedor encendido. Circula además un video grabado en Gayton, Norfolk, a unos 37 kilómetros al norte de la base, con tres luces intermitentes en triángulo que se desplazan hacia el sur; la BBC validó la ubicación pero no la fecha ni la hora de grabación. La Fuerza Aérea de Estados Unidos confirmó que respondió a una sospecha de drones y que no hubo daños, pero no ha dicho qué detectó ni ha comentado la versión del piloto.",
+      "titulo": "Un piloto afirma que tres avionetas provocaron la alarma de drones en la base de Lakenheath, Reino Unido",
+      "url": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+    },
     {
       "id": "us-aquinnah-defensa-20261118",
       "agua": true,
@@ -170,6 +206,32 @@
       "resumen": "El programa «Reality Check with Ross Coulthart», de NewsNation, emitió el 17 de noviembre un experimento del grupo Whitehawk Psionics en Barwon Heads, estado de Victoria, Australia, cerca del estrecho de Bass donde desapareció el piloto Frederick Valentich en 1978. Los participantes intentaron «hacer de faro» mediante una práctica que llaman señalización neuromeditativa, descrita en el medio como un contacto de quinto tipo (CE5). Según el International Business Times, la emisión no produjo ningún avistamiento confirmado de orbes y no aportó una demostración científica; el parapsicólogo Jack Westacott señaló que las expectativas podrían explicar las reacciones corporales de los participantes. Los Archivos Nacionales de Australia recogen para el caso Valentich una posible explicación convencional con objetos celestes brillantes, que el propio medio indica que no está establecida de forma concluyente. Las coordenadas corresponden a Barwon Heads, lugar de la filmación y no un sitio confirmado de la desaparición.",
       "titulo": "Un experimento televisado para «llamar» orbes en Victoria, Australia, no registra nada",
       "url": "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156"
+    },
+    {
+      "id": "montaje-luces-rojas-lakenheath-20261118",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
+          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+        ]
+      ],
+      "estado": "desmentido por Full Fact",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Full Fact",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
+      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/"
     },
     {
       "id": "ru-altai-barnaul-20261118",
@@ -993,6 +1055,26 @@
       "url": "https://www.ctdsb.net/c1476_202611/2897573.html"
     },
     {
+      "id": "be-piloto-bruselas-oct2026",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T18:45:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin verificar",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-05T12:00:00Z",
+      "fuente": "SWNS",
+      "lat": 50.85,
+      "lon": 4.35,
+      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
+      "por": "tarea",
+      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
+      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
+      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/"
+    },
+    {
       "id": "us-gillette-wy-20261105",
       "agua": false,
       "clase": "prensa",
@@ -1016,26 +1098,6 @@
       "resumen": "Sommer Chase filmó tres luces que rotaban formando un triángulo sobre el cielo nocturno de Gillette, Wyoming, cerca de la escuela Sunflower; dice haberlas visto repetidamente en caminatas vespertinas desde que la familia se mudó allí en junio. Su esposo las había notado antes mientras trabajaba en turno de noche en una mina de carbón de Montana, y hubo reportes previos en Colstrip (Montana) y zonas rurales de Dakota del Norte entre la 1:00 y las 3:00. Richard Beckwith, director estatal de la Mutual UFO Network en Wyoming, revisó el material y declaró que no tiene explicación por ahora, clasificando el caso como no identificado y dentro del 5% a 10% de avistamientos que nunca se explican.",
       "titulo": "MUFON sin explicación para tres luces rotatorias filmadas en Gillette, Wyoming",
       "url": "https://cowboystatedaily.com/2026/11/05/ufo-investigator-stumped-by-gillette-womans-new-footage-of-three-rotating-lights/"
-    },
-    {
-      "id": "be-piloto-bruselas-oct2026",
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T18:45:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-05T12:00:00Z",
-      "fuente": "SWNS",
-      "lat": 50.85,
-      "lon": 4.35,
-      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
-      "por": "tarea",
-      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
-      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
-      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/"
     },
     {
       "id": "mx-popocatepetl-20261102",
