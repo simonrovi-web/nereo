@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-19T00:58:00Z",
+  "generado": "2026-11-19T06:56:29Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -31,6 +31,37 @@
       "resumen": "El capitán de puerto de Aquinnah, Isaac Taylor, detectó el 29 de octubre un objeto cilíndrico varado en la playa, a unos diez minutos a pie de la entrada de Moshup Beach, cerca de los acantilados de Martha's Vineyard. Mide cerca de 2,1 metros de alto por 4,3 de largo, está relleno de espuma, cubierto de plástico o caucho negro duro y conserva restos de una cadena por el centro: corresponde a una defensa marina flotante del tipo Yokohama, usada entre buques y en puertos y terminales para evitar colisiones. Lo que no se ha podido establecer es de dónde salió. Taylor consultó a Vineyard Wind, que no la reconoció como suya, y un representante de Ørsted, operador del parque eólico Revolution Wind a unas 19 millas de Aquinnah, declaró que no procede de sus parques ni de sus buques; ambos proyectos terminaron su construcción este año. El objeto desapareció el 6 de noviembre y reapareció el 7 más al oeste de la misma playa. El medio publica fotografías de Ella Munnelly y un video del propio capitán de puerto. Taylor sostiene que no es contaminante y que no está filtrando nada; si nadie la reclama, podría retirarse con una manipuladora telescópica o llevarse a un vertedero. Las coordenadas corresponden a Aquinnah de manera aproximada.",
       "titulo": "Una gran defensa marina de origen desconocido aparece en una playa de Aquinnah, Massachusetts",
       "url": "https://www.mvtimes.com/2026/11/18/large-fender-of-unknown-origins-washes-up-in-aquinnah/"
+    },
+    {
+      "id": "us-springfield-bolido-20261113",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T06:55:48Z",
+      "descarte": [
+        {
+          "detalle": "Las Táuridas del Norte tuvieron su máximo el 11 y 12 de noviembre de 2026, dos días antes del registro",
+          "fuente": "https://www.pulzo.com/vivir-bien/lluvias-de-meteoros-tauridas-y-leonidas-en-noviembre-2026-fechas-y-mejores-momentos-para-verlas-PP5347286A",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Security cameras captured a bright fireball over Springfield, Missouri (KTVI/Yahoo, 18 nov)",
+          "https://www.yahoo.com/news/science/articles/security-cameras-captured-bright-fireball-175247972.html"
+        ]
+      ],
+      "estado": "atribuido a las Táuridas por funcionarios del condado de Greene",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T17:52:00Z",
+      "fuente": "KTVI FOX 2 St. Louis (vía Yahoo News)",
+      "lat": 37.2089,
+      "lon": -93.2923,
+      "lugar": "Springfield, condado de Greene, Misuri, Estados Unidos",
+      "por": "tarea",
+      "resumen": "Dos cámaras de seguridad del Departamento de Carreteras del condado de Greene registraron una estela brillante cruzando el cielo de Springfield, Misuri, el viernes 13 de noviembre hacia las 20:40. El condado publicó las grabaciones el martes 17 de noviembre y la nota de KTVI FOX 2 apareció el 18. Según funcionarios del condado de Greene, el destello correspondería probablemente a la lluvia de meteoros de las Táuridas; no interviene ninguna institución astronómica en la atribución. Las coordenadas corresponden a Springfield.",
+      "titulo": "Dos cámaras de seguridad graban un bólido sobre Springfield, Misuri",
+      "url": "https://www.yahoo.com/news/science/articles/security-cameras-captured-bright-fireball-175247972.html"
     },
     {
       "id": "ie-conna-cork-20261118",
@@ -83,6 +114,62 @@
       "resumen": "La madrugada del miércoles 18 de noviembre, a las 05:54, la estación del astrónomo aficionado Ramón López, en Playa Blanca (Lanzarote), registró en video una leónida de tamaño considerable que produjo un gran destello perfectamente visible. El astrofísico y profesor del CSIC Josep Trigo comentó en redes que «quizás es la más luminosa captada sobre Canarias en la historia», una valoración que publicó sin acompañarla de datos técnicos: la nota no aporta magnitud, velocidad, altura ni código de bólido. Según el medio, el destello se vio también desde el resto de Canarias, Marruecos, Mauritania y el Sáhara Occidental. Las Leónidas proceden del cometa 55P/Tempel-Tuttle; las coordenadas corresponden a Playa Blanca de manera aproximada, ya que la fuente no precisa la posición del meteoro.",
       "titulo": "Una estación de Lanzarote capta una gran leónida, «quizás la más luminosa» registrada sobre Canarias",
       "url": "https://www.lavozdelanzarote.com/actualidad/mas-noticias/video-estacion-lanzarote-capta-enorme-leonida-cruzando-cielo_247425_102.html"
+    },
+    {
+      "id": "pl-varsovia-mithras-20261118",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T06:55:48Z",
+      "descarte": [
+        {
+          "detalle": "Pruebas anunciadas de cohetes iluminantes MITHRAS 1000 en el WITU de Zielonka, 16:00-18:30 del 18 de noviembre de 2026, comunicadas por el Ministerio de Defensa polaco",
+          "fuente": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a",
+          "tipo": "otro"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Tajemnicze światła nad Warszawą. MON wydało komunikat (WP, 18 nov)",
+          "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a"
+        ]
+      ],
+      "estado": "explicado de antemano por el Ministerio de Defensa de Polonia: pruebas de cohetes iluminantes MITHRAS 1000",
+      "fechaEvento": "2026-11-18",
+      "fechaPub": "2026-11-18T13:31:32Z",
+      "fuente": "Wirtualna Polska (wiadomosci.wp.pl)",
+      "lat": 52.3042,
+      "lon": 21.1556,
+      "lugar": "Zielonka y área metropolitana de Varsovia, Polonia",
+      "por": "tarea",
+      "resumen": "El Ministerio de Defensa de Polonia (MON) anunció por redes sociales que el miércoles 18 de noviembre, entre las 16:00 y las 18:30, realizaría pruebas de cohetes iluminantes MITHRAS 1000 en el Instituto Técnico Militar de Armamento (WITU) de Zielonka, en las afueras de Varsovia. Según el aviso recogido por Wirtualna Polska, se verían puntos brillantes descendiendo lentamente, posiblemente con paracaídas, desde Varsovia, Marki, Kobyłka, Wołomin y Legionowo, y el propio comunicado advirtió de que podrían confundirse con un avión, un dron grande o un objeto no identificado. El MON indicó que no había riesgo para la población. Las coordenadas corresponden a Zielonka, donde se hicieron las pruebas.",
+      "titulo": "Defensa de Polonia avisa de luces sobre Varsovia: eran pruebas de bengalas",
+      "url": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a"
+    },
+    {
+      "id": "au-barwon-heads-ce5-20261118",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T06:55:48Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "UAP Experts Attempt To 'Make a Beacon' and Summon Orbs Near Site of Infamous Bass Strait Mystery (IBTimes UK, 18 nov)",
+          "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156"
+        ]
+      ],
+      "estado": "sin resultado: la emisión no registró ningún orbe",
+      "fechaEvento": "2026-11-17",
+      "fechaPub": "2026-11-18T12:41:37Z",
+      "fuente": "International Business Times UK",
+      "lat": -38.2747,
+      "lon": 144.4875,
+      "lugar": "Barwon Heads, Victoria, Australia",
+      "por": "tarea",
+      "resumen": "El programa «Reality Check with Ross Coulthart», de NewsNation, emitió el 17 de noviembre un experimento del grupo Whitehawk Psionics en Barwon Heads, estado de Victoria, Australia, cerca del estrecho de Bass donde desapareció el piloto Frederick Valentich en 1978. Los participantes intentaron «hacer de faro» mediante una práctica que llaman señalización neuromeditativa, descrita en el medio como un contacto de quinto tipo (CE5). Según el International Business Times, la emisión no produjo ningún avistamiento confirmado de orbes y no aportó una demostración científica; el parapsicólogo Jack Westacott señaló que las expectativas podrían explicar las reacciones corporales de los participantes. Los Archivos Nacionales de Australia recogen para el caso Valentich una posible explicación convencional con objetos celestes brillantes, que el propio medio indica que no está establecida de forma concluyente. Las coordenadas corresponden a Barwon Heads, lugar de la filmación y no un sitio confirmado de la desaparición.",
+      "titulo": "Un experimento televisado para «llamar» orbes en Victoria, Australia, no registra nada",
+      "url": "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156"
     },
     {
       "id": "ru-altai-barnaul-20261118",
@@ -565,10 +652,14 @@
         [
           "Cobertura del caso (El Informador, 15 nov)",
           "https://www.informador.mx/mexico/captan-presunto-pterodactilo-en-ciudad-juarez-20261115-0038.html"
+        ],
+        [
+          "Un paleontólogo analiza el aleteo y lo considera falso (IBTimes UK, 18 nov)",
+          "https://www.ibtimes.co.uk/mexico-pterodactyl-videos-bird-ai-footage-1833046"
         ]
       ],
       "estado": "desmentido por Protección Civil de Ciudad Juárez; una verificación del 14 de noviembre lo califica de falso y la silueta fue identificada como una garza azulada",
-      "fechaEvento": "",
+      "fechaEvento": "2026-10-29",
       "fechaPub": "2026-11-14T12:00:00Z",
       "fuente": "What the Fact · Protección Civil de Ciudad Juárez · Infobae · 860 Líder Informativo",
       "lat": 31.74,
@@ -902,26 +993,6 @@
       "url": "https://www.ctdsb.net/c1476_202611/2897573.html"
     },
     {
-      "id": "be-piloto-bruselas-oct2026",
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T18:45:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-05T12:00:00Z",
-      "fuente": "SWNS",
-      "lat": 50.85,
-      "lon": 4.35,
-      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
-      "por": "tarea",
-      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
-      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
-      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/"
-    },
-    {
       "id": "us-gillette-wy-20261105",
       "agua": false,
       "clase": "prensa",
@@ -945,6 +1016,26 @@
       "resumen": "Sommer Chase filmó tres luces que rotaban formando un triángulo sobre el cielo nocturno de Gillette, Wyoming, cerca de la escuela Sunflower; dice haberlas visto repetidamente en caminatas vespertinas desde que la familia se mudó allí en junio. Su esposo las había notado antes mientras trabajaba en turno de noche en una mina de carbón de Montana, y hubo reportes previos en Colstrip (Montana) y zonas rurales de Dakota del Norte entre la 1:00 y las 3:00. Richard Beckwith, director estatal de la Mutual UFO Network en Wyoming, revisó el material y declaró que no tiene explicación por ahora, clasificando el caso como no identificado y dentro del 5% a 10% de avistamientos que nunca se explican.",
       "titulo": "MUFON sin explicación para tres luces rotatorias filmadas en Gillette, Wyoming",
       "url": "https://cowboystatedaily.com/2026/11/05/ufo-investigator-stumped-by-gillette-womans-new-footage-of-three-rotating-lights/"
+    },
+    {
+      "id": "be-piloto-bruselas-oct2026",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T18:45:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin verificar",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-05T12:00:00Z",
+      "fuente": "SWNS",
+      "lat": 50.85,
+      "lon": 4.35,
+      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
+      "por": "tarea",
+      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
+      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
+      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/"
     },
     {
       "id": "mx-popocatepetl-20261102",
