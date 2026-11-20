@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-19T18:53:00Z",
+  "generado": "2026-11-20T06:58:00Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,71 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T00:53:43Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "TASS: dos drones vistos por la torre y cierre entre las 19:00 y las 23:00 locales",
+          "https://tass.com/society/2222125"
+        ],
+        [
+          "UA.NEWS, reescritura de RMF24: controladores vieron drones no identificados cerca de la pista",
+          "https://ua.news/en/world/aeroport-genuyi-timchasovo-zakrili-cherez-droni-bilia-zlitnoyi-smugi-rmf24"
+        ]
+      ],
+      "estado": "sin identificar; los drones desaparecieron del radar y, según TASS, la policía y la ENAC investigan su origen; sin registro audiovisual publicado",
+      "fechaEvento": "2026-11-19",
+      "fechaPub": "2026-11-19T22:57:25Z",
+      "fuente": "Liguria Notizie · TASS (citando Il Messaggero)",
+      "lat": 44.413,
+      "lon": 8.8375,
+      "lugar": "Aeropuerto Cristóbal Colón, Génova, Liguria, Italia",
+      "por": "tarea",
+      "resumen": "La torre de control del aeropuerto Cristóbal Colón de Génova reportó la noche del jueves 19 de noviembre la presencia de drones no identificados junto a la pista, al este y al oeste, y se emitió una interdicción del espacio aéreo que detuvo arribos y despegues. El vuelo AZ1392 de ITA Airways a Roma Fiumicino ya estaba en la pista: fue detenido y sus pasajeros desembarcados, y partió después de que la ENAV autorizara reabrir el espacio aéreo tras los controles de seguridad. Liguria Notizie sitúa la alarma hacia las 20:00 y la interdicción hasta las 22:00, con reapertura unas dos horas después; TASS, citando Il Messaggero, habla de dos drones vistos por la torre y de un cierre entre las 19:00 y las 23:00 locales, y añade que los aparatos desaparecieron del radar y que la policía y la autoridad de aviación civil (ENAC) investigan su origen. Intervino la policía de fronteras y se notificó a la autoridad judicial de Génova; no se ha publicado ningún video ni fotografía de los objetos y la prensa local lo describe como el primer cierre de este tipo en Italia. Las coordenadas corresponden al aeropuerto de Génova de manera aproximada.",
+      "titulo": "Dos drones no identificados obligan a cerrar el aeropuerto de Génova, Italia",
+      "url": "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/",
+      "id": "it-genova-drones-20261119"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T06:55:43Z",
+      "descarte": [
+        {
+          "detalle": "La propia American Meteor Society, citada por CBS News Detroit, atribuye el bólido a las Leónidas, activas y visibles hasta el 30 de noviembre de 2026, con el máximo el 16 y 17 de noviembre. La coincidencia de calendario es real y concuerda con la atribución de la fuente.",
+          "fuente": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "Revisado el listado de lanzamientos: no figura ninguna misión Starlink entre el 15 y el 19 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado.",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "starlink"
+        },
+        {
+          "detalle": "El 18 de noviembre de 2026 figura un lanzamiento de Long March 2D con el satélite Shijian 24; el listado no indica hora ni sitio, y el 15 de noviembre despegó un Vulcan con Amazon Leo-15. Ninguno se vincula con el avistamiento en la fuente periodística.",
+          "fuente": "https://rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "explicado como meteoro de las Leónidas por la American Meteor Society",
+      "fechaEvento": "2026-11-18",
+      "fechaPub": "2026-11-19T18:02:00Z",
+      "fuente": "CBS News Detroit (Paula Wethington) · American Meteor Society",
+      "lat": null,
+      "lon": null,
+      "lugar": "Comunidades de la costa del lago Erie: Michigan y Ohio (Estados Unidos) y Ontario (Canadá)",
+      "por": "tarea",
+      "resumen": "La American Meteor Society recibió una serie de reportes de una bola de fuego vista la noche del miércoles desde comunidades de la costa del lago Erie, en Michigan, Ohio y la provincia canadiense de Ontario. CBS News Detroit publicó la nota el 19 de noviembre a las 13:02 hora del este y precisa que la mayoría de los avistamientos en Michigan se concentraron entre las 19:00 y las 20:00, con otro grupo entre las 21:00 y las 22:00; se nombran Luna Pier, Monroe, Royal Oak y St. Clair Shores, y los testigos describieron tonos azules, verdes y blancos. La AMS atribuye el fenómeno a las Leónidas, activas hasta el 30 de noviembre, y aclara que lo que se ve no es material fresco del cometa sino restos de pasos anteriores que en este momento están más concentrados. El registro es débil en un punto: la nota no publica video ni fotografías, no da un número total de reportes y no indica la fecha exacta del avistamiento, solo «miércoles por la noche»; la fecha del 18 de noviembre se deduce del día de publicación. No se asignan coordenadas porque los reportes se reparten entre dos países.",
+      "titulo": "Bólido sobre la región del lago Erie visto desde Michigan, Ohio y Ontario",
+      "url": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
+      "id": "us-lago-erie-bolido-20261118"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -227,6 +292,47 @@
       "titulo": "Un experimento televisado para «llamar» orbes en Victoria, Australia, no registra nada",
       "url": "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156",
       "id": "au-barwon-heads-ce5-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T06:55:43Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin identificar; el Departamento de Defensa Nacional de Canadá declinó dar detalles y no se identificó a los operadores",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Philippine Canadian Inquirer (Abi Sarabia M.), sobre registros de la Real Fuerza Aérea Canadiense obtenidos por acceso a la información",
+      "lat": null,
+      "lon": null,
+      "lugar": "CFB Trenton (Ontario) y CFB Cold Lake (Alberta), Canadá",
+      "por": "tarea",
+      "resumen": "Informes de la Real Fuerza Aérea Canadiense obtenidos mediante una solicitud de acceso a la información registran siete sobrevuelos de drones no identificados en dos bases: tres en CFB Trenton (Ontario) y cuatro en CFB Cold Lake (Alberta), la base que concentra buena parte de la flota de CF-18. El caso mejor fechado es el del 17 de septiembre de 2025, cuando un dron con cámara sobrevoló la pista de Trenton mientras el sistema de detección estaba apagado por un corte de energía planificado; cinco días después otro aparato cruzó la misma base y el sistema, operativo desde marzo de 2025, no lo registró. En Cold Lake se describe un dron pequeño y blanco con un tubo negro visto dos veces en cuatro días, y otro con forma de caja de unos 60 centímetros que se desplazaba entre 60 y 100 km/h con una luz amarillenta y sin ruido; según los registros, la base no disponía entonces del equipo para rastrear aparatos pequeños. El Departamento de Defensa Nacional declinó dar detalles alegando razones operativas y de seguridad, no hubo intentos de interceptación y no se identificó a ningún operador; la nota añade que no hay pruebas confirmadas de vínculos con gobiernos extranjeros. No se publican video ni fotografías de los aparatos y los incidentes carecen de fecha precisa en la mayoría de los casos, por lo que no fue posible cruzarlos con calendarios de lanzamientos o de lluvias de meteoros. No se asignan coordenadas porque las dos bases están a miles de kilómetros entre sí.",
+      "titulo": "Registros militares canadienses documentan siete sobrevuelos de drones no identificados en dos bases",
+      "url": "https://canadianinquirer.net/2026/11/18/unidentified-drones-spotted-over-canadian-military-bases-exposing-security-gaps/",
+      "id": "ca-bases-drones-20261118"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-20T06:55:43Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin verificar en su fecha y origen; ningún servicio meteorológico italiano se ha pronunciado sobre este episodio",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "My Modern Met (Regina Sienra) · video atribuido a Massimo Aprea",
+      "lat": 40.545,
+      "lon": 14.249,
+      "lugar": "Faraglioni de Capri, Campania, Italia",
+      "por": "tarea",
+      "rareza": "natural",
+      "resumen": "Un video difundido el 18 de noviembre muestra dos trombas marinas girando casi entrelazadas sobre el mar junto a los Faraglioni, las formaciones rocosas emblemáticas de Capri, bajo un cielo de tormenta. La grabación se atribuye a Massimo Aprea y el medio la describe como un fenómeno de tipo tornádico, con dos columnas de agua y bruma que descienden de la nube hasta tocar la superficie. El registro es débil en datos: la nota no indica la fecha ni la hora del fenómeno, no cita a ningún servicio meteorológico italiano ni a un especialista sobre este caso concreto, y la única fuente institucional que incorpora es la página general de la NOAA sobre trombas marinas, con recomendaciones de seguridad —alejarse en ángulo recto respecto a su desplazamiento aparente y no acercarse nunca a observarlas—. No se reportan daños, víctimas ni alertas oficiales. Las coordenadas corresponden a los Faraglioni de Capri de manera aproximada.",
+      "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
+      "url": "https://mymodernmet.com/capri-double-watersprout/",
+      "id": "it-capri-trombas-20261118"
     },
     {
       "agua": false,
