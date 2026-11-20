@@ -1,16 +1,80 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-20T12:57:18Z",
+  "generado": "2026-11-20T18:49:32Z",
   "zonas": [
     {
       "n": "Chile central y sur",
       "km": 700,
-      "lat": -36.0,
-      "lon": -72.0
+      "lat": -36,
+      "lon": -72
     }
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T18:49:32Z",
+      "descarte": [
+        {
+          "detalle": "Según el panorama de actividad de la IMO para el 14 al 20 de noviembre de 2026, en esas fechas seguían activas las Leónidas (27 de octubre al 7 de diciembre, con el máximo el 17 o el 18 de noviembre según la propia página, clase I y unos 3 meteoros por hora a 45°N), las Táuridas del Norte y del Sur, las Oriónidas de noviembre (13 de noviembre al 12 de diciembre) y las alfa Monocerótidas (13 al 27 de noviembre, con máximo el 22 de noviembre). La coincidencia de calendario es real y concuerda con la sospecha que recoge la fuente.",
+          "fuente": "https://www.imo.net/2026/11/meteor-activity-outlook-for-14-20-november-2026/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "El listado de lanzamientos recientes consultado el 20 de noviembre a las 15:08 UTC registra un Long March 8A desde China el 20 de noviembre, sin hora ni misión declaradas, y un Long March 2D con Shijian 24 el 18 de noviembre. Ninguna fuente vincula esos lanzamientos con el destello, y el listado no muestra ningún lanzamiento Starlink con fecha confirmada entre el 17 y el 20 de noviembre, aunque figura una entrada Starlink desde Vandenberg fechada solo como «noviembre de 2026», sin día, que por tanto no puede confirmarse ni descartarse.",
+          "fuente": "https://www.rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; se sospecha un meteoro, pero el propio medio advierte que ni las autoridades ni los astrónomos lo han confirmado",
+      "fechaEvento": "2026-11-20",
+      "fechaPub": "2026-11-20T16:55:00Z",
+      "fuente": "102.9 Rewind Radio (Simone Joseph) · American Meteor Society · video de Kim Johnston",
+      "lat": 49.51,
+      "lon": -115.77,
+      "lugar": "Cranbrook y Kimberley, Columbia Británica, Canadá",
+      "por": "tarea",
+      "resumen": "Un destello brillante iluminó el cielo sobre Cranbrook, en la Columbia Británica (Canadá), en la madrugada del viernes 20 de noviembre. La emisora local 102.9 Rewind Radio, que publicó la nota a las 9:55 de la mañana, informa que la American Meteor Society recibió siete reportes de una presunta bola de fuego en los cielos cercanos a Cranbrook y Kimberley, y que decenas de vecinos dijeron haber visto una estela brillante cruzar el cielo. Una oyente, Kim Johnston, envió a la redacción la grabación de su cámara de seguridad doméstica, y el medio menciona además numerosos videos y testimonios circulando en grupos locales de redes sociales. El propio medio es prudente: dice que se sospecha que fue un meteoro, pero advierte que ni las autoridades ni los especialistas en astronomía han confirmado si se trató de un meteoro, de basura espacial o de otro fenómeno atmosférico, y aclara que el material y los testimonios los aportaron vecinos y no han sido verificados de forma independiente. No da una hora exacta ni la zona horaria de la publicación, y no cita a la policía, a una red de bólidos ni a ningún astrónomo con nombre. Las coordenadas corresponden a Cranbrook de manera aproximada, ya que los reportes se reparten entre esa ciudad y Kimberley, a unos treinta kilómetros.",
+      "titulo": "Un destello cruza el cielo de Cranbrook, en la Columbia Británica, y queda en una cámara de seguridad",
+      "url": "https://1029rewindradio.ca/2026/11/20/did-you-see-it-mystery-flash-streaks-across-cranbrook-sky/",
+      "id": "ca-cranbrook-destello-20261120"
+    },
+    {
+      "agua": false,
+      "clase": "oficial",
+      "creado": "2026-11-20T18:49:32Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Cobertura con el detalle de los tres videos y del informe de la CIA de 1952 (LiveNOW from FOX)",
+          "https://www.livenowfox.com/news/pentagon-releases-eighth-batch-declassified-ufo-files"
+        ],
+        [
+          "The Independent: el video de 2020 junto a un buque y la reacción del exjefe de AARO Sean Kirkpatrick",
+          "https://www.yahoo.com/news/us/articles/trump-releases-ufo-video-showing-152539132.html"
+        ],
+        [
+          "Séptima entrega del programa PURSUE, del 23 de octubre (entrada previa del feed)",
+          "https://starlust.org/pentagon-just-released-the-7th-batch-of-declassified-ufo-files-get-the-direct-link-here/"
+        ]
+      ],
+      "estado": "material oficial publicado; los tres videos no tienen explicación propuesta y el Pentágono declara no ofrecer evaluación",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-20T13:18:00Z",
+      "fuente": "Department of War (PURSUE), comunicado reproducido por Mirage News · LiveNOW from FOX (Mark Richardson) · The Independent (Rhian Lubin) vía Yahoo",
+      "lat": null,
+      "lon": null,
+      "lugar": "Oriente Medio y ubicaciones no reveladas (plataformas militares de Estados Unidos)",
+      "por": "tarea",
+      "resumen": "El Departamento de Guerra de Estados Unidos publicó el viernes 20 de noviembre la octava entrega de archivos desclasificados sobre fenómenos anómalos no identificados (UAP), dentro del sistema PURSUE (Presidential Unsealing and Reporting System for UAP Encounters). El comunicado, firmado por el portavoz Sean Parnell, indica que la colección sigue alojada en WAR.GOV/UFO y que se publicarán más archivos de forma progresiva, sin dar cifras. Según LiveNOW from FOX, la entrega incluye tres videos y unos 40 documentos, en su mayoría de los años cincuenta. Los tres videos fueron remitidos por el Mando Central (CENTCOM) a la oficina AARO: uno de 2020, de 20 segundos, de un sensor infrarrojo a bordo de una plataforma militar estadounidense en Oriente Medio, donde un área de contraste entra por el borde derecho del cuadro y avanza hacia la izquierda; uno de 2023, de 13 segundos, de un sistema electroóptico e infrarrojo; y uno de 2026, de 54 segundos, en el que el sensor hace paneos y cambia el zoom para seguir dos áreas de contraste y pierde el contacto de forma intermitente. Entre los documentos destacan un briefing de la Oficina de Inteligencia Científica de la CIA del 14 de agosto de 1952, que evalúa la investigación de la Fuerza Aérea sobre «platillos voladores» y cifra en unos 1.500 los reportes en Estados Unidos, con cerca del 20 % clasificado como no explicado por el ATIC, y un informe de Lockheed del 20 de enero de 1954 sobre un avistamiento del 16 de diciembre de 1953 cerca de Agoura y Point Mugu, California, firmado por el ingeniero jefe Clarence «Kelly» Johnson, con dibujos de un objeto con llamas azul claro. Un funcionario del Pentágono dijo a The Independent que no hay información adicional sobre el avistamiento de 2020 y que el Departamento no ofrece comentarios ni evaluación sobre los archivos. Hay una discrepancia entre fuentes sobre el video de 2020: The Independent y el resumen de FOX hablan de un buque de la Armada, mientras el cuerpo de la nota de FOX habla de una plataforma militar, de modo que no queda establecido que ocurriera sobre el mar. Ninguna fuente propone una explicación para los tres videos. El sitio oficial war.gov no se pudo abrir desde esta ejecución y los datos provienen de la reproducción del comunicado en Mirage News y de la cobertura de FOX y The Independent.",
+      "titulo": "Octava entrega de archivos UAP: tres videos militares, uno de 2026 con dos objetos",
+      "url": "https://www.miragenews.com/war-department-publishes-eighth-uap-files-1781257/",
+      "id": "pursue-release-08"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -31,6 +95,46 @@
       "titulo": "Nubes con forma de platillo sobre los Altos del Golán, identificadas como lenticulares",
       "url": "https://segodnya.co.il/subjects/nlo-nad-golanami-v-nebe-zametili-neobychnye-oblaka/",
       "id": "il-golan-lenticulares-20261120"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T18:49:32Z",
+      "descarte": [
+        {
+          "detalle": "Las Leónidas seguían activas el 19 de noviembre de 2026 (27 de octubre al 7 de diciembre, máximo el 17 o 18 de noviembre), junto con las Táuridas del Norte y del Sur, las Oriónidas de noviembre y las alfa Monocerótidas. La coincidencia de calendario es real, pero Marcelo Zurita, de BRAMON y la APA, afirma expresamente que este meteoro no pertenecía a las Leónidas.",
+          "fuente": "https://www.imo.net/2026/11/meteor-activity-outlook-for-14-20-november-2026/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "Revisado el listado de lanzamientos el 20 de noviembre a las 15:08 UTC: no figura ninguna misión Starlink con fecha confirmada entre el 17 y el 20 de noviembre, por lo que se descarta un tren de satélites recién lanzado. El listado sí registra un Long March 2D con Shijian 24 el 18 de noviembre y un Long March 8A el 20 de noviembre, ambos desde China y sin hora declarada; ninguna fuente los vincula con el destello.",
+          "fuente": "https://www.rocketlaunch.live/",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "WSCOM: Zurita sitúa el avistamiento en cinco estados y la APA señala Pocinhos y Nazaré como zona de posible caída",
+          "https://wscom.com.br/destaque/destaque-em-alta/2026/11/20/meteoro-paraiba-fragmentos-pocinhos-nazare/"
+        ],
+        [
+          "ClickPB: la Associação Paraibana de Astronomia prevé un rastro con caída de meteoritos",
+          "https://www.clickpb.com.br/paraiba/meteoro-cruza-o-ceu-da-paraiba.html"
+        ]
+      ],
+      "estado": "atribuido a un bólido por la Associação Paraibana de Astronomia, que prevé posible caída de fragmentos en Pocinhos y Nazaré; sin informe oficial concluyente",
+      "fechaEvento": "2026-11-19",
+      "fechaPub": "2026-11-20T10:54:43Z",
+      "fuente": "Olhar Digital (Valdir Antonelli) · WSCOM (Anderson Costa) · ClickPB (Emmanuela Leite) · Marcelo Zurita, BRAMON y Associação Paraibana de Astronomia",
+      "lat": -7.12,
+      "lon": -34.86,
+      "lugar": "João Pessoa y el interior de Paraíba, Brasil (también Rio Grande do Norte, Pernambuco, Ceará y Alagoas)",
+      "por": "tarea",
+      "resumen": "La noche del jueves 19 de noviembre, hacia las 21:34 hora de Brasilia, un destello intenso cruzó rápidamente el cielo de Paraíba y fue registrado por una cámara de monitoreo en João Pessoa y por teléfonos de vecinos. Olhar Digital, que publicó la nota el 20 de noviembre a las 10:54 UTC, añade que se oyó un estruendo comparable a una explosión y que, según testigos y la emisora local TV Paraíba, provocó leves temblores en ventanas y techos de algunas localidades del interior, entre ellas el Agreste paraibano. El astrofotógrafo Marcelo Zurita, vinculado a BRAMON y a la Associação Paraibana de Astronomia (APA), difundió el registro y sostiene que el fenómeno se vio en toda Paraíba y también desde Rio Grande do Norte, Pernambuco, Ceará y Alagoas: cinco estados del Nordeste. Zurita precisa que, aunque la región está en el período de las Leónidas, este meteoro no formaba parte de esa lluvia. La APA trabaja con la posibilidad de que el objeto dejara fragmentos en tierra, en la región de los municipios de Pocinhos y Nazaré, y pide a los vecinos avisar si encuentran una roca con corteza oscura y características distintas; la caída no está confirmada y depende de identificación y evaluación especializada. Olhar Digital subraya que no hay todavía un informe oficial concluyente, que el estruendo puede producirse por la onda de choque sin que haya caído un meteorito, y que el análisis podría determinar si fue un meteoro natural o la reentrada de basura espacial; ninguna fuente aporta aún trayectoria ni altitud de desintegración. Las coordenadas corresponden a João Pessoa, donde se registró el video, de manera aproximada: el fenómeno abarcó varios estados y la zona de posible caída está unos 150 kilómetros al oeste.",
+      "titulo": "Un bólido con estruendo cruza el cielo de Paraíba y la asociación de astronomía prevé posible caída de meteoritos",
+      "url": "https://olhardigital.com.br/2026/11/20/ciencia-e-espaco/clarao-no-ceu-e-estrondo-intrigam-moradores-em-cidades-da-paraiba",
+      "id": "br-paraiba-bolido-20261119"
     },
     {
       "agua": false,
@@ -242,6 +346,26 @@
       "id": "ae-fujairah-bioluminiscencia-20261119"
     },
     {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T18:49:32Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin identificar; la policía del distrito declara que no se ha confirmado si era un dron, una aeronave u otro aparato, y la búsqueda no dio resultado",
+      "fechaEvento": "2026-11-17",
+      "fechaPub": "2026-11-19T01:56:00Z",
+      "fuente": "Dawn (corresponsal)",
+      "lat": 30.67,
+      "lon": 73.11,
+      "lugar": "Sahiwal, Punyab, Pakistán",
+      "por": "tarea",
+      "resumen": "El diario pakistaní Dawn publicó el 19 de noviembre que un objeto no identificado con una luz potente sobrevoló la Prisión de Alta Seguridad de Sahiwal, en el Punyab, hacia las 22:30 de las noches del 16 y del 17 de noviembre. Según la nota, el objeto cruzó el recinto penitenciario y la colonia de personal del bloque D y desapareció sobre una gasolinera situada frente a la prisión; el episodio del 17 se produjo un día después de otro avistamiento similar en el mismo lugar. Abdul Rehman, asistente del superintendente de la prisión, presentó una denuncia formal que la policía de Civil Lines registró como caso. Usman Tipu, jefe de policía del distrito, declaró a Dawn que todavía no se ha confirmado si se trataba de un dron, de una aeronave o de otro aparato, y que la policía y otras agencias de seguridad iniciaron una búsqueda en Farid Town y zonas cercanas sin encontrar pistas. El caso es débil en registro: no se publicó ningún video ni fotografía del objeto —la única imagen de la nota es de archivo y está marcada como ilustrativa— y la fuente no identifica a los testigos más allá del denunciante. No hay pronunciamiento de la fuerza aérea pakistaní, de la autoridad de aviación civil ni de ningún especialista. Se revisaron los calendarios de lanzamientos, reentradas y lluvias de meteoros para esas fechas y ninguna coincidencia explica una luz que sobrevuela un recinto a baja altura en dos noches consecutivas. Las coordenadas corresponden a Sahiwal de manera aproximada.",
+      "titulo": "Un objeto luminoso sobrevuela dos noches una prisión de alta seguridad en Sahiwal, Pakistán",
+      "url": "https://www.dawn.com/news/2045557",
+      "id": "pk-sahiwal-objeto-20261117"
+    },
+    {
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-19T00:55:00Z",
@@ -404,6 +528,32 @@
     {
       "agua": false,
       "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
+          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+        ]
+      ],
+      "estado": "desmentido por Full Fact",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Full Fact",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
+      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "id": "montaje-luces-rojas-lakenheath-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
       "descarte": [],
       "descarteRevisado": false,
@@ -441,32 +591,6 @@
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
       "url": "https://mymodernmet.com/capri-double-watersprout/",
       "id": "it-capri-trombas-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-19T13:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
-          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
-        ]
-      ],
-      "estado": "desmentido por Full Fact",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Full Fact",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
-      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
-      "id": "montaje-luces-rojas-lakenheath-20261118"
     },
     {
       "agua": false,
@@ -1326,26 +1450,6 @@
     {
       "agua": false,
       "clase": "prensa",
-      "creado": "2026-11-15T18:45:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-05T12:00:00Z",
-      "fuente": "SWNS",
-      "lat": 50.85,
-      "lon": 4.35,
-      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
-      "por": "tarea",
-      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
-      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
-      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/",
-      "id": "be-piloto-bruselas-oct2026"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
       "creado": "2026-11-17T00:50:16Z",
       "descarte": [],
       "descarteRevisado": true,
@@ -1367,6 +1471,26 @@
       "titulo": "MUFON sin explicación para tres luces rotatorias filmadas en Gillette, Wyoming",
       "url": "https://cowboystatedaily.com/2026/11/05/ufo-investigator-stumped-by-gillette-womans-new-footage-of-three-rotating-lights/",
       "id": "us-gillette-wy-20261105"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-15T18:45:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin verificar",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-05T12:00:00Z",
+      "fuente": "SWNS",
+      "lat": 50.85,
+      "lon": 4.35,
+      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
+      "por": "tarea",
+      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
+      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
+      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/",
+      "id": "be-piloto-bruselas-oct2026"
     },
     {
       "agua": false,
