@@ -130,6 +130,12 @@ input:focus,select:focus,textarea:focus{border-color:var(--cy)}
 .res button i{display:block;font-size:calc(8px * var(--k));color:var(--txt-faint);font-style:normal;margin-top:2px;letter-spacing:.14em}
 .res button em{font-style:normal;color:var(--am)}
 
+.diagbox{margin:8px 11px 4px;padding:8px 9px;border:1px solid var(--line-2);background:rgba(0,0,0,.25)}
+.kvd{display:flex;justify-content:space-between;gap:10px;padding:3px 0;font-size:calc(8.5px * var(--k));border-bottom:1px dotted rgba(120,190,210,.1)}
+.kvd:last-child{border-bottom:0}
+.kvd span{color:var(--txt-faint);flex:none}
+.kvd b{font-weight:500;color:var(--txt-dim);text-align:right;overflow-wrap:anywhere}
+.kvd b.ok{color:var(--gr)} .kvd b.bad{color:var(--am)}
 /* ─── barra única ─── */
 .qbar{position:relative;flex:1;min-width:0;max-width:480px}
 .qbar input{width:100%;background:rgba(0,0,0,.45);border:1px solid var(--line-2);color:var(--txt);
@@ -595,6 +601,7 @@ var MODE="grafo", world=null, estatico=false;
 /* tarea programada que investiga la cola (conector Claude Code Remote) */
 var TAREA_ID="trig_01Xhxgy7KzgJQYMqoQKZoKgA", TAREA_HORAS=[1,7,13,19], TAREA_MIN=23;
 var disparos={};
+var diag={db:"conectando",escritura:"sin confirmar",conector:"sin revisar",ultimoDisparo:null,ultimoError:null};
 var camG={x:0,y:0,z:1}, camM={x:0,y:8,z:1}, fly=null;
 var db=null, canEdit=false, knownUser=false;
 var personas=new Map(), orgs=new Map(), vincs=[], solics=[], acciones=[], notas=[];
@@ -1481,7 +1488,22 @@ function lanzarInvestigacion(solId,nombre){
     return m.callTool("Claude Code Remote","fire_trigger",
       {trigger_id:TAREA_ID, text:"Prioriza la solicitud "+solId+" ("+nombre+")."})
       .then(function(){ disparos[solId]=new Date().toISOString(); return "ok"; });
-  }).catch(function(e){ return (e&&e.code)||"error"; });
+  }).catch(function(e){ return (e&&e.code)||"error"; })
+   .then(function(r){ diag.ultimoDisparo={res:r,cuando:new Date().toISOString(),nombre:nombre}; return r; });
+}
+function revisarConector(){
+  if(!C){ diag.conector="no disponible fuera del visor"; return Promise.resolve(); }
+  return C.use("mcp").then(function(m){
+    if(!m){ diag.conector="no disponible en esta vista"; return; }
+    return m.listTools("Claude Code Remote").then(function(r){
+      var s=(r&&r.servers||[])[0];
+      if(!s){ diag.conector="no conectado: agrégalo en Configuración → Conectores"; return; }
+      var tiene=(s.tools||[]).some(function(t){ return t.name==="fire_trigger"; });
+      if(s.authStatus==="needs_reauth") diag.conector="hay que reconectarlo en Configuración → Conectores";
+      else if(!tiene && (s.tools||[]).length) diag.conector="conectado, pero sin permiso para lanzar tareas";
+      else diag.conector = s.authStatus==="connected" ? "listo" : "listo (te pedirá aprobación la primera vez)";
+    }).catch(function(e){ diag.conector="no se pudo revisar ("+((e&&e.code)||"error")+")"; });
+  }).catch(function(){ diag.conector="no disponible"; });
 }
 function avisoDisparo(r,nombre){
   var prox=proximaCorrida();
@@ -1536,7 +1558,23 @@ function buildAcciones(body){
       body.appendChild(box);
     });
 }
+function filaDiag(lbl,val,ok){
+  return el("div",{class:"kvd"},[el("span",{text:lbl}),el("b",{class:ok===true?"ok":ok===false?"bad":"",text:val})]);
+}
 function buildCola(body){
+  var dg=el("div",{class:"diagbox"});
+  dg.appendChild(el("div",{class:"grp",style:"padding:0 0 5px"},[el("span",{text:"ESTADO DEL SISTEMA"})]));
+  dg.appendChild(filaDiag("Base de datos",diag.db,diag.db==="conectada"?true:(diag.db==="conectando"?null:false)));
+  dg.appendChild(filaDiag("Permiso para encargar",diag.escritura,diag.escritura==="sí"?true:(/^no/.test(diag.escritura)?false:null)));
+  dg.appendChild(filaDiag("Lanzamiento inmediato",diag.conector,/^listo/.test(diag.conector)?true:(diag.conector==="sin revisar"?null:false)));
+  dg.appendChild(filaDiag("Corrida automática",proximaCorrida(),true));
+  if(diag.ultimoDisparo){
+    var u=diag.ultimoDisparo;
+    dg.appendChild(filaDiag("Último lanzamiento",u.nombre+": "+(u.res==="ok"?"en marcha":u.res),u.res==="ok"));
+  }
+  if(diag.ultimoError) dg.appendChild(filaDiag("Último error al guardar",diag.ultimoError,false));
+  body.appendChild(dg);
+  if(diag.conector==="sin revisar") revisarConector().then(function(){ if(panelMode==="cola") openPanel("cola","SOLICITUDES",buildCola); });
   body.appendChild(el("div",{class:"hint"},[
     el("b",{text:"Cómo funciona. "}),
     document.createTextNode("Escribes un nombre y Claude lo investiga en fuentes reales: registros oficiales, memorias, declaraciones y prensa. La ficha aparece sola cuando termina, con el enlace de cada línea. Además, la cola se revisa sola cuatro veces al día; la próxima, "+proximaCorrida()+".")
@@ -1590,14 +1628,13 @@ function formInvestigar(pref){
       lab("PAÍS",inp("ip","Chile"),"Sirve para ubicarla en el mapa."),
       lab("CIUDAD",inp("ic","opcional"))
     ]));
-    f.appendChild(lab("POR QUÉ ES FIGURA PÚBLICA",inp("ir","Cargo, directorio o rol que ocupa"),
-      "Es el requisito de admisión: sin rol público no se abre ficha."));
+    f.appendChild(lab("CARGO O ROL (OPCIONAL)",inp("ir","Si lo sabes: senador, gerente de…, dueño de…"),
+      "Ayuda a no confundirla con otra persona del mismo nombre. Si no lo sabes, Claude lo averigua; si no es figura pública, no se abre ficha."));
     var ta=el("textarea",{id:"iq",placeholder:"Qué quieres saber: sus directorios, sus aportes de campaña, con quién comparte sociedades…"});
     f.appendChild(lab("QUÉ BUSCAR",ta));
   },function(){
     var n=V("in"), r=V("ir");
     if(!n){ $("sheetErr").textContent="FALTA EL NOMBRE."; return false; }
-    if(!r){ $("sheetErr").textContent="FALTA EL ROL PÚBLICO: ES EL REQUISITO DE ADMISIÓN."; return false; }
     var id=slug(n); if(!id){ $("sheetErr").textContent="ESE NOMBRE NO PRODUCE UN IDENTIFICADOR VÁLIDO."; return false; }
     return db.doc("solicitudes/"+id).set({
       nombre:n, pais:V("ip"), ciudad:V("ic"), rolPublico:r, nota:V("iq"),
@@ -1898,10 +1935,12 @@ function norm(s){ return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").t
       .slice(0,8);
     items=hits.map(function(h){ return {kind:"node",n:h.n}; });
     var exacta=hits.some(function(h){ return h.n.kind==="p" && h.sc===0; });
-    if(canEdit && !estatico && q.length>=3 && !exacta) items.push({kind:"inv",q:q});
+    if(canEdit && !estatico && db && q.length>=3 && !exacta) items.push({kind:"inv",q:q});
     if(!items.length){
-      qres.appendChild(el("div",{class:"vacio",text: estatico||!canEdit
-        ? "Nada en el registro con ese nombre."
+      qres.appendChild(el("div",{class:"vacio",text:
+          estatico ? "Nada en el registro con ese nombre. Esta copia es de solo lectura."
+        : !db ? "El registro no está conectado: no se puede encargar ahora. Abre SOLICITUDES para ver qué falla."
+        : !canEdit ? "Nada en el registro con ese nombre, y tu acceso es de solo lectura: no puedes encargar."
         : "Escribe al menos tres letras para encargar una investigación."}));
       qres.hidden=false; return;
     }
@@ -2118,9 +2157,11 @@ $("sheetSave").onclick=function(){
     b.disabled=false; if(ok!==false){ closeSheet(); toast("Guardado en el registro."); }
   }).catch(function(e){
     b.disabled=false;
+    diag.ultimoError=(e&&e.code)||"error";
+    if(e&&e.code==="invalid_argument"){ canEdit=false; diag.escritura="no: el registro rechazó la escritura"; buildRails(); }
     $("sheetErr").textContent = (e&&e.code==="invalid_argument")
-      ? "EL REGISTRO RECHAZÓ LA ESCRITURA. ¿TIENES PERMISO DE EDICIÓN?"
-      : ((e&&e.message)||"NO SE PUDO GUARDAR.").toUpperCase();
+      ? "EL REGISTRO RECHAZÓ LA ESCRITURA: TU ACCESO ES DE SOLO LECTURA. PIDE ACCESO DE EDICIÓN AL DUEÑO."
+      : ("NO SE PUDO GUARDAR ("+((e&&e.code)||"error")+"). REVISA EL PANEL DE SOLICITUDES, ARRIBA DICE QUÉ ESTÁ FALLANDO.");
   });
 };
 function formPersona(key){
@@ -2336,13 +2377,22 @@ if(!C){
 }
 else {
   C.use("user").then(function(u){
-    if(!u) return; knownUser=true;
-    return Promise.resolve(u.canEdit()).then(function(c){ canEdit=!!c; buildRails(); renderMetrics(); renderDossier(); });
-  }).catch(function(){});
+    if(!u){ diag.escritura="sin confirmar (el visor no informó)"; canEdit=true; buildRails(); renderMetrics(); return; }
+    knownUser=true;
+    var pW = Promise.resolve().then(function(){ return u.can ? u.can("data.write") : null; }).catch(function(){ return null; });
+    var pE = Promise.resolve().then(function(){ return u.canEdit ? u.canEdit() : null; }).catch(function(){ return null; });
+    return Promise.all([pW,pE]).then(function(r){
+      var w=r[0], e=r[1];
+      if(w===true||e===true){ canEdit=true; diag.escritura="sí"; }
+      else if(w===false){ canEdit=false; diag.escritura="no: tu acceso es de solo lectura"; }
+      else { canEdit=true; diag.escritura="sin confirmar (se probará al guardar)"; }
+      buildRails(); renderMetrics(); renderDossier();
+    });
+  }).catch(function(){ canEdit=true; diag.escritura="sin confirmar"; buildRails(); });
 
   C.use("db").then(function(d){
-    if(!d){ failed="no disponible en esta vista"; ready.p=ready.o=ready.v=true; finishBoot(); refresh(); return; }
-    db=d;
+    if(!d){ failed="no disponible en esta vista"; diag.db="no disponible en esta vista"; ready.p=ready.o=ready.v=true; finishBoot(); refresh(); return; }
+    db=d; diag.db="conectada";
     deadT=setTimeout(function(){ slow=true; renderMetrics(); renderVoid(); },10000);
     function er(k){ return function(e){ failed=(e&&e.code)||"error"; ready[k]=true; settle(); }; }
     d.collection("personas").onSnapshot(function(s){
