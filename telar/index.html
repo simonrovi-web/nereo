@@ -529,6 +529,9 @@ function paisLL(p){
   return PAISES[k]||null;
 }
 var MODE="grafo", world=null, estatico=false;
+/* tarea programada que investiga la cola (conector Claude Code Remote) */
+var TAREA_ID="trig_01Xhxgy7KzgJQYMqoQKZoKgA", TAREA_HORAS=[1,7,13,19], TAREA_MIN=23;
+var disparos={};
 var camG={x:0,y:0,z:1}, camM={x:0,y:8,z:1}, fly=null;
 var db=null, canEdit=false, knownUser=false;
 var personas=new Map(), orgs=new Map(), vincs=[], solics=[], acciones=[];
@@ -1046,6 +1049,12 @@ function claimEl(v, fromPersona){
   if(S.length) S.forEach(function(s){ mt.appendChild(el("a",{class:"src",href:s[1],target:"_blank",rel:"noopener noreferrer nofollow",text:s[0]})); });
   else mt.appendChild(el("span",{class:"nosrc",text:"SIN FUENTE"}));
   box.appendChild(mt);
+  if(canEdit && v._id && !estatico){
+    var rt=el("div",{class:"mt",style:"margin-top:4px"});
+    rt.appendChild(el("button",{type:"button",style:"font-size:calc(7.5px * var(--k));letter-spacing:.18em;color:var(--txt-faint);padding:0",
+      text:"RETIRAR",onclick:function(){ retirarVinculo(v,rt); }}));
+    box.appendChild(rt);
+  }
   return box;
 }
 function renderDossier(){
@@ -1388,6 +1397,57 @@ function buildCapas(body){
       renderLegend(); renderDossier(); drawTl(); draw(); renderMetrics(); }})
   ]));
 }
+function proximaCorrida(){
+  try{
+    var p={}; new Intl.DateTimeFormat("en-GB",{timeZone:"America/Santiago",hour:"2-digit",minute:"2-digit",hourCycle:"h23"})
+      .formatToParts(new Date()).forEach(function(x){ p[x.type]=x.value; });
+    var ahora=(+p.hour)*60+(+p.minute);
+    for(var i=0;i<TAREA_HORAS.length;i++){
+      var t=TAREA_HORAS[i]*60+TAREA_MIN;
+      if(t>ahora) return "hoy a las "+String(TAREA_HORAS[i]).padStart(2,"0")+":"+String(TAREA_MIN).padStart(2,"0");
+    }
+    return "mañana a las "+String(TAREA_HORAS[0]).padStart(2,"0")+":"+String(TAREA_MIN).padStart(2,"0");
+  }catch(e){ return "en la próxima corrida automática"; }
+}
+/* Dispara la tarea al instante. Solo tras un gesto del usuario; nunca reintenta sola. */
+function lanzarInvestigacion(solId,nombre){
+  if(!C) return Promise.resolve("sin-visor");
+  return C.use("mcp").then(function(m){
+    if(!m) return "sin-mcp";
+    return m.callTool("Claude Code Remote","fire_trigger",
+      {trigger_id:TAREA_ID, text:"Prioriza la solicitud "+solId+" ("+nombre+")."})
+      .then(function(){ disparos[solId]=new Date().toISOString(); return "ok"; });
+  }).catch(function(e){ return (e&&e.code)||"error"; });
+}
+function avisoDisparo(r,nombre){
+  var prox=proximaCorrida();
+  var M={
+    "ok":"Investigación de "+nombre+" en marcha. La ficha aparecerá sola cuando termine.",
+    "approval_required":"Encargado. Para lanzarlo al instante hace falta tu aprobación del conector; si no, corre "+prox+".",
+    "not_in_manifest":"Encargado. El conector no está permitido para esta página; corre "+prox+".",
+    "server_not_connected":"Encargado. Agrega Claude Code Remote en Configuración → Conectores para lanzar al instante; si no, corre "+prox+".",
+    "needs_reauth":"Encargado. Reconecta Claude Code Remote en Configuración → Conectores; mientras, corre "+prox+".",
+    "blocked_by_policy":"Encargado. Tu organización no permite lanzarlo desde aquí; corre "+prox+".",
+    "tool_error":"Encargado, pero la tarea no se pudo lanzar ahora. Corre "+prox+".",
+    "server_unavailable":"Encargado. No se pudo confirmar el lanzamiento; si no arranca, corre "+prox+".",
+    "upstream_error":"Encargado. No se pudo confirmar el lanzamiento; si no arranca, corre "+prox+"."
+  };
+  toast(M[r] || ("Encargado. Corre "+prox+"."), r!=="ok" && r!=="sin-visor" && !M[r]);
+}
+function retirarVinculo(v,box){
+  if(!db||!v._id) return;
+  clr(box);
+  box.appendChild(el("span",{class:"yr",style:"color:var(--rd)",text:"¿RETIRAR ESTE VÍNCULO?"}));
+  box.appendChild(el("button",{class:"mini",type:"button",style:"border-color:var(--rd);color:var(--rd);padding:3px 8px",text:"SÍ, RETIRAR",
+    onclick:function(){
+      db.doc("vinculos/"+v._id).delete().then(function(){
+        logAccion("retirar vínculo",(personas.get(v.personaId)||{}).nombre||v.personaId,
+          (v.etiqueta||v.tipo)+" · "+nameOf(v.contraparte));
+        toast("Vínculo retirado. Queda anotado en el registro de acciones.");
+      }).catch(function(){ toast("No se pudo retirar.",1); });
+    }}));
+  box.appendChild(el("button",{class:"mini",type:"button",style:"padding:3px 8px",text:"NO",onclick:function(){ renderDossier(); }}));
+}
 function logAccion(tipo,objeto,detalle){
   if(!db) return;
   var id=new Date().toISOString().replace(/[^0-9]/g,"")+"-"+hashStr(tipo+objeto);
@@ -1415,7 +1475,7 @@ function buildAcciones(body){
 function buildCola(body){
   body.appendChild(el("div",{class:"hint"},[
     el("b",{text:"Cómo funciona. "}),
-    document.createTextNode("Esta página no busca en la web: el visor no puede salir a internet, y pedirle a un modelo que recite lo que recuerda de una persona produce afirmaciones sin fuente, justo lo que el registro prohíbe. Lo que haces aquí es encargar la investigación. Claude toma la solicitud, busca en fuentes reales y escribe la ficha con el enlace de cada línea.")
+    document.createTextNode("Escribes un nombre y Claude lo investiga en fuentes reales: registros oficiales, memorias, declaraciones y prensa. La ficha aparece sola cuando termina, con el enlace de cada línea. Además, la cola se revisa sola cuatro veces al día; la próxima, "+proximaCorrida()+".")
   ]));
   if(canEdit) body.appendChild(el("div",{class:"fld"},[
     el("button",{class:"mini",style:"width:100%",type:"button",text:"+ ENCARGAR UN NOMBRE",onclick:function(){ formInvestigar(); }})]));
@@ -1431,7 +1491,19 @@ function buildCola(body){
     meta.appendChild(el("em",{class:cls,text:String(s.estado||"en cola").toUpperCase()}));
     if(s.pais) meta.appendChild(document.createTextNode("  "+s.pais.toUpperCase()));
     box.appendChild(meta);
+    if(s.estado==="en curso"){
+      var desde=s.tomada||disparos[s._id];
+      box.appendChild(el("div",{class:"nota",style:"color:var(--cy)",
+        text:"Investigando"+(desde?" desde las "+new Date(desde).toLocaleTimeString("es-CL",{hour:"2-digit",minute:"2-digit"}):"")+". La ficha aparecerá sola."}));
+    } else if((s.estado||"en cola")==="en cola" && disparos[s._id]){
+      box.appendChild(el("div",{class:"nota",style:"color:var(--cy)",text:"Lanzada. Arrancando…"}));
+    }
     if(s.nota) box.appendChild(el("div",{class:"nota",text:String(s.nota)}));
+    if(canEdit && (s.estado||"en cola")==="en cola" && !estatico){
+      box.appendChild(el("button",{class:"mini go",style:"margin-top:6px",type:"button",text:"INVESTIGAR AHORA",
+        onclick:function(){ var b=this; b.disabled=true; b.textContent="LANZANDO…";
+          lanzarInvestigacion(s._id,s.nombre||s._id).then(function(res){ avisoDisparo(res,s.nombre||s._id); openPanel("cola","SOLICITUDES",buildCola); }); }}));
+    }
     var fichaId=slug(s.nombre||"");
     if(personas.has(fichaId)){
       box.appendChild(el("button",{class:"mini",style:"margin-top:6px",type:"button",text:"ABRIR FICHA",
@@ -1448,7 +1520,7 @@ function buildCola(body){
 function formInvestigar(){
   openSheet("ENCARGAR UNA INVESTIGACIÓN",function(f){
     f.appendChild(el("div",{class:"tip",style:"margin:8px 0 2px;line-height:1.6",
-      text:"El visor no sale a internet. Esto deja el nombre en cola para que Claude lo investigue en fuentes reales y escriba la ficha con el enlace de cada afirmación. No se inventa nada mientras tanto."}));
+      text:"Al guardar, Claude empieza a investigar de inmediato en fuentes reales y escribe la ficha con el enlace de cada afirmación. Suele tardar entre 5 y 15 minutos. Si el nombre no es de una figura pública, la solicitud se cierra sin abrir ficha."}));
     f.appendChild(lab("NOMBRE",inp("in","Nombre completo de la figura pública")));
     f.appendChild(el("div",{class:"frow"},[
       lab("PAÍS",inp("ip","Chile"),"Sirve para ubicarla en el mapa."),
@@ -1466,7 +1538,12 @@ function formInvestigar(){
     return db.doc("solicitudes/"+id).set({
       nombre:n, pais:V("ip"), ciudad:V("ic"), rolPublico:r, nota:V("iq"),
       estado:"en cola", pedido:new Date().toISOString(), por:"visor"
-    }).then(function(){ logAccion("encargar investigación",n,r); openPanel("cola","SOLICITUDES",buildCola); });
+    }).then(function(){
+      logAccion("encargar investigación",n,r);
+      openPanel("cola","SOLICITUDES",buildCola);
+      toast("Encargado. Lanzando la investigación…");
+      lanzarInvestigacion(id,n).then(function(res){ avisoDisparo(res,n); if(panelMode==="cola") openPanel("cola","SOLICITUDES",buildCola); });
+    });
   });
 }
 function buildOntologia(body){
@@ -1583,7 +1660,7 @@ function buildRails(){
     function(){ togglePanel("acciones","REGISTRO DE ACCIONES",buildAcciones); }));
 
   var R=$("railRight"); clr(R);
-  R.appendChild(railBtn("rInv","INVESTIGAR UN NOMBRE",["M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12z","M20 20l-5.6-5.6","M10 7v6M7 10h6"],
+  if(!estatico) R.appendChild(railBtn("rInv","INVESTIGAR UN NOMBRE",["M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12z","M20 20l-5.6-5.6","M10 7v6M7 10h6"],
     function(){ formInvestigar(); }));
   if(canEdit){
     R.appendChild(railBtn("rNewP","NUEVA FICHA",["M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z","M4 21c0-4 3.6-6 8-6","M18 14v6M15 17h6"],function(){ formPersona(); }));
