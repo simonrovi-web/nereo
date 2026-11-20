@@ -1,16 +1,37 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-20T06:58:00Z",
+  "generado": "2026-11-20T12:57:18Z",
   "zonas": [
     {
       "n": "Chile central y sur",
       "km": 700,
-      "lat": -36,
-      "lon": -72
+      "lat": -36.0,
+      "lon": -72.0
     }
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T12:57:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "explicado como nubes lenticulares (Altocumulus lenticularis) por Walla, citado por Segodnya; sin pronunciamiento de un servicio meteorológico",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-20T11:38:00Z",
+      "fuente": "Segodnya (segodnya.co.il, Tatiana Morozova) · Walla · fotografía de Flash90",
+      "lat": 33.25,
+      "lon": 35.75,
+      "lugar": "Neve Ativ, norte de los Altos del Golán, Israel",
+      "por": "tarea",
+      "rareza": "natural",
+      "resumen": "El diario israelí en ruso Segodnya publicó el 20 de noviembre fotografías de nubes redondeadas, de bordes nítidos y casi simétricas, apiladas en varias capas sobre las crestas del norte de los Altos del Golán, observadas desde el poblado de Neve Ativ, al pie del monte Hermón; el texto señala que recordaban enormes platillos volantes y que parecían quietas sobre las cumbres. La identificación no es propia: Segodnya la atribuye al medio israelí Walla, que habla de nubes lenticulares (Altocumulus lenticularis), formadas por ondas de montaña a entre 2 y 7 kilómetros de altura cuando un viento fuerte y estable con aire húmedo encuentra una cordillera; permanecen aparentemente inmóviles durante horas porque el aire las atraviesa mientras el agua se condensa y se evapora de forma continua. El registro es solo fotográfico, con crédito de la agencia Flash90, y no hay video. La nota tampoco cita a un servicio meteorológico, al ejército ni a un especialista con nombre, y la fecha es contradictoria: el texto habla del viernes 20 de noviembre mientras el pie de foto fecha la imagen al atardecer del 19, por lo que no se registra fecha de evento. Las coordenadas corresponden a Neve Ativ de manera aproximada.",
+      "titulo": "Nubes con forma de platillo sobre los Altos del Golán, identificadas como lenticulares",
+      "url": "https://segodnya.co.il/subjects/nlo-nad-golanami-v-nebe-zametili-neobychnye-oblaka/",
+      "id": "il-golan-lenticulares-20261120"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -39,6 +60,57 @@
       "titulo": "Dos drones no identificados obligan a cerrar el aeropuerto de Génova, Italia",
       "url": "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/",
       "id": "it-genova-drones-20261119"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T12:57:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Dos drones no identificados obligan a cerrar el aeropuerto de Génova esa misma noche (entrada relacionada del feed)",
+          "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/"
+        ]
+      ],
+      "estado": "sin verificar; avistamiento de dron no confirmado y sin declaración de las autoridades francesas",
+      "fechaEvento": "2026-11-19",
+      "fechaPub": "2026-11-19T20:12:00Z",
+      "fuente": "AIRLIVE · publicación de Flightradar24",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "lugar": "Aeropuerto Charles de Gaulle, Roissy, Isla de Francia, Francia",
+      "por": "tarea",
+      "resumen": "La noche del jueves 19 de noviembre, el aeropuerto de París-Charles de Gaulle suspendió temporalmente sus operaciones por reportes de un posible avistamiento de dron cerca del campo de vuelo. Los controladores pusieron en espera a varios aviones que llegaban y, según el medio especializado AIRLIVE, algunos dieron vueltas sobre la zona unos quince minutos antes de que se autorizaran de nuevo las aproximaciones a las pistas norte y sur; la nota indica que las operaciones normales se reanudaron a las 20:15 hora local. El caso es débil en evidencia: el avistamiento no está confirmado, no se precisa cuántos aparatos había ni cómo se detectaron, no hay video ni fotografía del objeto —la imagen de la nota es de archivo— y la única fuente citada es una publicación de Flightradar24 que habla de una pausa breve «posiblemente por un avistamiento de dron». AIRLIVE añade que las autoridades aeroportuarias no habían dado más detalles sobre la naturaleza del avistamiento ni sobre una posible investigación policial, y no recoge declaraciones de la DGAC, la policía ni la gendarmería. El episodio coincide con el cierre de dos horas del aeropuerto de Génova por drones no identificados esa misma noche, a unos 700 kilómetros, pero ninguna fuente vincula los dos casos. Las coordenadas corresponden al aeropuerto Charles de Gaulle.",
+      "titulo": "Un posible dron interrumpe las operaciones del aeropuerto Charles de Gaulle, en París",
+      "url": "https://airlive.net/incident/2026/11/19/possible-drone-in-the-vicinity-of-charles-de-gaulle-airport-disrupted-flight-operations/",
+      "id": "fr-cdg-dron-20261119"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T12:57:00Z",
+      "descarte": [
+        {
+          "detalle": "El oficial de circunscripción Akhilesh Kumar y el encargado de la comisaría Manish Khatri declararon a Amar Ujala que es posible que se estén realizando vuelos de aviones de entrenamiento desde Pantnagar, a unos 15 km de Rudrapur; ambos precisaron que no lo han confirmado oficialmente.",
+          "fuente": "https://www.amarujala.com/uttarakhand/udham-singh-nagar/flashing-red-lights-seen-in-the-sky-people-left-curious-rudrapur-news-c-235-1-ksp1007-151582-2026-11-20",
+          "tipo": "avion"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin identificar; la policía local plantea vuelos de entrenamiento desde Pantnagar y aclara que no hay confirmación oficial",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-19T19:51:00Z",
+      "fuente": "Amar Ujala · Sanvad News Agency (buró de Haldwani)",
+      "lat": 28.98,
+      "lon": 79.4,
+      "lugar": "Kelakhera y Rudrapur, distrito de Udham Singh Nagar, Uttarakhand, India",
+      "por": "tarea",
+      "resumen": "La agencia Sanvad publicó en el diario Amar Ujala, a la 01:21 del 20 de noviembre hora de la India, que vecinos de Kelakhera y de la ciudad de Rudrapur y sus alrededores, en el distrito de Udham Singh Nagar (Uttarakhand), vieron de noche luces rojas que se encendían y se apagaban en tres o cuatro puntos del cielo a la vez y que se mantuvieron un rato. Algunos testigos pensaron en aviones y otros en drones, precisamente porque aparecían en varios lugares simultáneamente. El registro es débil en datos: la nota no indica la fecha ni la hora del avistamiento, solo que fue de noche, no precisa el número exacto de luces ni la duración, no describe desplazamiento y no publica ningún video, aunque sí señala que circulan grabaciones virales en redes sociales; la única imagen es de archivo. El oficial de circunscripción Akhilesh Kumar y el encargado de la comisaría, Manish Khatri, dijeron que es posible que se trate de vuelos de entrenamiento desde Pantnagar, pero no lo confirmaron oficialmente y advirtieron que sería precipitado calificarlas de aviones o drones. No se cita a la fuerza aérea india, a la autoridad de aviación ni a ningún astrónomo. Al no haber fecha exacta del hecho no fue posible cruzarlo con calendarios de lanzamientos o de reentradas. Las coordenadas corresponden a Rudrapur de manera aproximada.",
+      "titulo": "Luces rojas intermitentes en varios puntos del cielo de Rudrapur, en Uttarakhand, India",
+      "url": "https://www.amarujala.com/uttarakhand/udham-singh-nagar/flashing-red-lights-seen-in-the-sky-people-left-curious-rudrapur-news-c-235-1-ksp1007-151582-2026-11-20",
+      "id": "in-rudrapur-luces-20261119"
     },
     {
       "agua": false,
@@ -111,6 +183,42 @@
       "titulo": "Un piloto afirma que tres avionetas provocaron la alarma de drones en la base de Lakenheath, Reino Unido",
       "url": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
       "id": "uk-lakenheath-avionetas-20261119"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-20T12:57:00Z",
+      "descarte": [
+        {
+          "detalle": "El grupo de aficionados «Staraya Bashnya», citado por URA.RU el mismo 19 de noviembre, atribuye la primera parte del video a un cohete de señales y concluye que lo más probable son lanzamientos de artefactos pirotécnicos; añade que el clip viral está montado con tres grabaciones sin relación entre sí.",
+          "fuente": "https://ura.news/news/1053145605",
+          "tipo": "fuegos"
+        },
+        {
+          "detalle": "Según el calendario de la IMO, la noche del 18 al 19 de noviembre de 2026 seguían activas las Leónidas (6 al 30 de noviembre, máximo el 16-17, ZHR 10) y las Táuridas del Norte (20 de octubre al 10 de diciembre). La coincidencia de calendario es real, pero un objeto que cae y estalla a nivel del suelo no corresponde al perfil de un meteoro.",
+          "fuente": "https://www.imo.net/resources/calendar/",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "URA.RU: los astrónomos de Tiumén atribuyen el OVNI incandescente a un cohete de señales",
+          "https://ura.news/news/1053145605"
+        ]
+      ],
+      "estado": "explicado como pirotecnia (un cohete de señales) por el grupo de aficionados «Staraya Bashnya»; sin pronunciamiento oficial",
+      "fechaEvento": "2026-11-19",
+      "fechaPub": "2026-11-19T08:15:00Z",
+      "fuente": "URA.RU (Serguéi Malyshev) · grupo de aficionados a la astronomía «Staraya Bashnya»",
+      "lat": 57.153,
+      "lon": 65.534,
+      "lugar": "Calle Novoselova, Tiumén, óblast de Tiumén, Rusia",
+      "por": "tarea",
+      "resumen": "Una cámara de calle del barrio de la calle Novoselova, en Tiumén, registró una bola de fuego que se acercaba rápido al suelo, caía sobre un montón de nieve y estallaba justo después; el estruendo activó las alarmas de los coches aparcados. URA.RU publicó el video, difundido por el canal local «ChS Tiumén», y recogió hipótesis de particulares que hablaban de un cohete casero o de una broma. Horas después, el mismo medio publicó la explicación del grupo de aficionados a la astronomía «Staraya Bashnya»: el material que circulaba etiquetado como «rayo globular» está montado con tres grabaciones distintas y sin relación entre sí; la primera corresponde a un cohete de señales, de los que se lanzan en Año Nuevo y que no estallan sino que se apagan al final del vuelo, en la segunda el objeto ya está en el suelo cuando explota, y la tercera se grabó en otro punto de la ciudad, el microdistrito Voinovka. El grupo concluye que lo más probable son lanzamientos de artefactos pirotécnicos no siempre exitosos y descarta el rayo globular; no es un organismo oficial y no hay pronunciamiento de autoridades. La nota sitúa el hecho «la noche del 19 de noviembre», aunque se publicó ese mismo día a primera hora de la tarde, de modo que lo más probable es la noche del 18 al 19; no da hora exacta. Las coordenadas corresponden a Tiumén de manera aproximada.",
+      "titulo": "Una bola de fuego cae y estalla en una calle de Tiumén, Rusia, y los astrónomos la atribuyen a pirotecnia",
+      "url": "https://ura.news/news/1053145593",
+      "id": "ru-tiumen-bola-20261119"
     },
     {
       "agua": true,
