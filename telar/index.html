@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#04070c">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Telar">
 <meta name="description" content="Telar — registro de influencia de figuras públicas: cargos, empresas, dinero político, afiliaciones y vínculos personales, cada uno con su fuente.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='none' stroke='%2334dfe8'/%3E%3Cpath d='M4 6q4 2 8 0M4 8q4 2 8 0M4 10q4 2 8 0' fill='none' stroke='%2334dfe8'/%3E%3C/svg%3E">
 <style>
@@ -1394,6 +1400,47 @@ function closePanel(){ if(panelMode==="analisis"){ pathNodes=null; pathEdges=nul
 $("panelClose").onclick=closePanel;
 function togglePanel(mode,title,build){ if(panelMode===mode) closePanel(); else openPanel(mode,title,build); }
 
+/* ═══════════ app instalable (PWA) ═══════════
+   Telar también vive como artefacto de Claude: ahí no hay service worker que
+   registrar ni nada que instalar, así que el panel y el registro se omiten. */
+var enClaude = typeof window!=="undefined" && !!window.claude;
+var promptInstalar = null;
+var URL_APP = "https://simonrovi-web.github.io/nereo/telar/";
+function enApp(){ return matchMedia("(display-mode: standalone)").matches || navigator.standalone===true; }
+if(!enClaude){
+  addEventListener("beforeinstallprompt",function(e){ e.preventDefault(); promptInstalar=e;
+    if(panelMode==="app") openPanel("app","INSTALAR EN EL TELÉFONO",buildApp); });
+  addEventListener("appinstalled",function(){ promptInstalar=null;
+    if(panelMode==="app") openPanel("app","INSTALAR EN EL TELÉFONO",buildApp); });
+  if("serviceWorker" in navigator && (location.protocol==="https:" || location.hostname==="localhost")){
+    addEventListener("load",function(){ navigator.serviceWorker.register("sw.js").catch(function(){}); });
+  }
+}
+function buildApp(body){
+  var d=el("div",{class:"doc"});
+  if(enApp()){
+    d.appendChild(el("p",{text:"Ya estás usando Telar instalado. Se actualiza solo cada vez que lo abres con conexión; sin señal muestra la última copia que guardó."}));
+    body.appendChild(d); return;
+  }
+  var aqui = location.protocol==="https:" && location.hostname.indexOf("github.io")>=0;
+  if(promptInstalar){
+    var b=el("button",{class:"mini go",type:"button",text:"INSTALAR TELAR",style:"margin:4px 0 2px",
+      onclick:function(){ var p=promptInstalar; if(!p) return; p.prompt();
+        Promise.resolve(p.userChoice).catch(function(){}).then(function(){ promptInstalar=null;
+          openPanel("app","INSTALAR EN EL TELÉFONO",buildApp); }); }});
+    d.appendChild(b);
+  }
+  d.appendChild(el("h5",{text:"ANDROID · CHROME"}));
+  d.appendChild(el("p",{style:"margin:2px 0 6px",text: aqui
+    ? (promptInstalar ? "Pulsa el botón de arriba." : "Abre el menú ⋮ de Chrome y elige «Instalar app» o «Agregar a la pantalla principal».")
+    : "Abre "+URL_APP+" en Chrome, luego el menú ⋮ y «Instalar app»."}));
+  d.appendChild(el("h5",{text:"IPHONE · SAFARI"}));
+  d.appendChild(el("p",{style:"margin:2px 0 6px",text: (aqui ? "" : "Abre "+URL_APP+" en Safari. ")
+    + "Pulsa el botón Compartir (el cuadrado con la flecha hacia arriba), baja y elige «Agregar a inicio». Safari no ofrece un botón automático: ese paso es manual."}));
+  d.appendChild(el("p",{style:"margin:10px 0 0",text:"Instalado, Telar abre a pantalla completa, sin barra del navegador, y guarda una copia para trabajar sin conexión. El registro en vivo y la escritura siguen necesitando señal."}));
+  body.appendChild(d);
+}
+
 function buildEntidades(body){
   var ip=el("input",{type:"search",placeholder:"BUSCAR…","aria-label":"Buscar entidad",value:query});
   var t=null;
@@ -1720,7 +1767,7 @@ function buildDoctrina(body){
   body.appendChild(d);
 }
 function syncRail(){
-  [["rBuscar","entidades"],["rCapas","capas"],["rDoc","ontologia"],["rCola","cola"],["rAnal","analisis"],["rAcc","acciones"],["rCrono","crono"]].forEach(function(p){
+  [["rBuscar","entidades"],["rCapas","capas"],["rDoc","ontologia"],["rCola","cola"],["rAnal","analisis"],["rAcc","acciones"],["rCrono","crono"],["rApp","app"]].forEach(function(p){
     var b=$(p[0]); if(b) b.classList.toggle("on", panelMode===p[1]);
   });
 }
@@ -1761,6 +1808,8 @@ function buildRails(){
     function(){ togglePanel("ontologia","ONTOLOGÍA",buildOntologia); }));
   L.appendChild(railBtn("rAcc","REGISTRO DE ACCIONES",["M12 7v5l3 2","M4 12a8 8 0 1 0 2.3-5.6","M4 4v3h3"],
     function(){ togglePanel("acciones","REGISTRO DE ACCIONES",buildAcciones); }));
+  if(!enClaude) L.appendChild(railBtn("rApp","INSTALAR EN EL TELÉFONO",["M7 3h10v18H7z","M11 18h2"],
+    function(){ togglePanel("app","INSTALAR EN EL TELÉFONO",buildApp); }));
 
   var R=$("railRight"); clr(R);
   if(!estatico) R.appendChild(railBtn("rInv","INVESTIGAR UN NOMBRE",["M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12z","M20 20l-5.6-5.6","M10 7v6M7 10h6"],
