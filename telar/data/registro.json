@@ -27,6 +27,20 @@
    "creado": "2026-11-21T10:50:03Z",
    "actualizado": "2026-11-21T10:50:03Z",
    "por": "flujo"
+  },
+  "peter-thiel": {
+   "nombre": "Peter thiel",
+   "rolPublico": "empresario e inversor",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "alias": [],
+   "resumen": "Peter Thiel, magnate tecnológico y cofundador de Palantir Technologies, visitó la Casa Rosada en Argentina y realizó una gira por el Cono Sur reuniéndose con autoridades de Argentina, Chile, Paraguay y Brasil. Llegó con su familia y 12 millones de dólares para comprar una mansión en el barrio Parque de Buenos Aires. Peter Thiel, la máxima figura de la empresa tecnológica Palantir, se instaló en Buenos Aires. Mantuvo numerosas reuniones y cerró acuerdos con funcionarios de alto rango de Ecuador, Argentina, Chile y Paraguay.",
+   "estado": "en curso",
+   "creado": "2026-11-21T10:59:25Z",
+   "actualizado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
   }
  },
  "organizaciones": {
@@ -600,6 +614,490 @@
    "lon": null,
    "resumen": "",
    "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "presidente-javier-milei": {
+   "nombre": "presidente Javier Milei",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "johannes-kaiser": {
+   "nombre": "Johannes Kaiser",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "jose-pinera": {
+   "nombre": "José Piñera",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "presidente-jose-antonio-kast": {
+   "nombre": "presidente José Antonio Kast",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "presidente-santiago-pena": {
+   "nombre": "presidente Santiago Peña",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "brasil": {
+   "nombre": "Brasil",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "barrio-parque-buenos-aires": {
+   "nombre": "Barrio Parque (Buenos Aires)",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "palantir-technologies": {
+   "nombre": "Palantir Technologies",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "palantir": {
+   "nombre": "Palantir",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "paypal": {
+   "nombre": "PayPal",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "javier-milei": {
+   "nombre": "Javier Milei",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "pablo-quirno": {
+   "nombre": "Pablo Quirno",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "santiago-caputo": {
+   "nombre": "Santiago Caputo",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "federico-sturzenegger": {
+   "nombre": "Federico Sturzenegger",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "ecuador": {
+   "nombre": "Ecuador",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "facebook": {
+   "nombre": "Facebook",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "spacex": {
+   "nombre": "SpaceX",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "linkedin": {
+   "nombre": "LinkedIn",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "airbnb": {
+   "nombre": "Airbnb",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel": {
+   "nombre": "Peter Thiel",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "jose-antonio-kast": {
+   "nombre": "José Antonio Kast",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "francfort-del-meno-alemania": {
+   "nombre": "Fráncfort del Meno, Alemania",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "alemana-estadounidense-y-neozelandesa": {
+   "nombre": "Alemana, estadounidense y neozelandesa",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "matt-danzeisen": {
+   "nombre": "Matt Danzeisen",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "klaus-friedrich-thiel": {
+   "nombre": "Klaus Friedrich Thiel",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "the-founders-fund": {
+   "nombre": "The Founders Fund",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "clarium-capital": {
+   "nombre": "Clarium Capital",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "frankfurt-republica-federal-de-alemania": {
+   "nombre": "Frankfurt, República Federal de Alemania",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "california": {
+   "nombre": "California",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "stanford": {
+   "nombre": "Stanford",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "j-l-edmondson": {
+   "nombre": "J.L. Edmondson",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "trader-de-instrumentos-derivados": {
+   "nombre": "trader de instrumentos derivados",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "fortune": {
+   "nombre": "Fortune",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "universidad-francisco-marroquin": {
+   "nombre": "Universidad Francisco Marroquín",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "donald-trump": {
+   "nombre": "Donald Trump",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "de-cero-a-uno": {
+   "nombre": "De cero a uno",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "thiel-fellowship": {
+   "nombre": "Thiel Fellowship",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "the-stanford-review": {
+   "nombre": "The Stanford Review",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "confinity": {
+   "nombre": "Confinity",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "facebook-meta": {
+   "nombre": "Facebook/Meta",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "founders-fund": {
+   "nombre": "Founders Fund",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "thiel-capital": {
+   "nombre": "Thiel Capital",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "zero-to-one": {
+   "nombre": "Zero to One",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "fundacion-thiel": {
+   "nombre": "Fundación Thiel",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:59:25Z",
    "por": "flujo"
   }
  },
@@ -1863,8 +2361,1288 @@
    ],
    "creado": "2026-11-21T10:50:03Z",
    "por": "flujo"
+  },
+  "peter-thiel-presidente-javier-milei-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:presidente-javier-milei",
+   "tipo": "personal",
+   "etiqueta": "reunión",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel se reunió con el presidente Javier Milei en la Casa Rosada.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-johannes-kaiser-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:johannes-kaiser",
+   "tipo": "personal",
+   "etiqueta": "reunión",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel se reunió con el excandidato presidencial Johannes Kaiser en Santiago de Chile.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-jose-pinera-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:jose-pinera",
+   "tipo": "personal",
+   "etiqueta": "reunión",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel se reunió con José Piñera en Santiago de Chile.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-presidente-jose-antonio-kast-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:presidente-jose-antonio-kast",
+   "tipo": "personal",
+   "etiqueta": "reunión (no confirmada)",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Según información no confirmada, Thiel también se reunió con el presidente José Antonio Kast.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-presidente-santiago-pena-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:presidente-santiago-pena",
+   "tipo": "personal",
+   "etiqueta": "recepción",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel fue recibido por el presidente Santiago Peña en la casa presidencial de Paraguay.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-brasil-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:brasil",
+   "tipo": "personal",
+   "etiqueta": "viaje",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel viajó a Brasil el 1 de mayo.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-barrio-parque-buenos-aires-dinero": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:barrio-parque-buenos-aires",
+   "tipo": "dinero",
+   "etiqueta": "compra de mansión",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel llegó con 12 millones de dólares listos para comprar una mansión en el barrio Parque de Buenos Aires.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-technologies-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir-technologies",
+   "tipo": "empresa",
+   "etiqueta": "cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel es cofundador de Palantir Technologies.",
+   "fuentes": [
+    [
+     "Qué busca Peter Thiel en Chile y Argentina: las ... - BioBioChile",
+     "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/05/23/la-gira-silenciosa-del-magnate-peter-thiel-en-sudamerica-datos-vigilancia-y-el-poder-tras-palantir.shtml"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir",
+   "tipo": "empresa",
+   "etiqueta": "máxima figura",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Peter Thiel, la máxima figura de la empresa tecnológica Palantir, se instaló en Buenos Aires y mantuvo reuniones y cerró acuerdos con funcionarios de alto rango de varios países.",
+   "fuentes": [
+    [
+     "Peter Thiel en Chile: Derechos Digitales en El Ciudadano",
+     "https://www.derechosdigitales.org/noticias/peter-thiel-en-chile-derechos-digitales-en-el-ciudadano/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "empresa",
+   "etiqueta": "cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Peter Thiel es cofundador de PayPal.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-empresa-2727": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir",
+   "tipo": "empresa",
+   "etiqueta": "cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Peter Thiel es cofundador de Palantir.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-javier-milei-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:javier-milei",
+   "tipo": "cargo",
+   "etiqueta": "reunión en Casa Rosada",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se reunió con el presidente Javier Milei en la Casa Rosada el 23 de abril.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-pablo-quirno-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:pablo-quirno",
+   "tipo": "cargo",
+   "etiqueta": "reunión en Casa Rosada",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se reunió con el ministro de Relaciones Exteriores Pablo Quirno en la Casa Rosada el 23 de abril.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-santiago-caputo-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:santiago-caputo",
+   "tipo": "cargo",
+   "etiqueta": "reunión",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se reunió con el asesor de Milei, Santiago Caputo.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-federico-sturzenegger-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:federico-sturzenegger",
+   "tipo": "cargo",
+   "etiqueta": "reunión",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se reunió con el ministro de Desregulación y Transformación del Estado, Federico Sturzenegger.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-ecuador-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:ecuador",
+   "tipo": "empresa",
+   "etiqueta": "negociación de software de análisis de datos",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Palantir está negociando con autoridades de Ecuador el uso de su software de análisis de datos para el control fronterizo.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-chile-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:chile",
+   "tipo": "empresa",
+   "etiqueta": "registro de empresa",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel ya había registrado su empresa Palantir en Chile hace años.",
+   "fuentes": [
+    [
+     "Peter Thiel en expedición de saqueo por Chile y Argentina",
+     "https://interferencia.cl/articulos/peter-thiel-en-expedicion-de-saqueo-por-chile-y-argentina"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-empresa-8589": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "empresa",
+   "etiqueta": "cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "cofundador de PayPal, plataforma de pagos digitales creada a fines de los años noventa",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-empresa-8022": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir",
+   "tipo": "empresa",
+   "etiqueta": "cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "cofundador de Palantir, una de las empresas más influyentes en inteligencia artificial y análisis de datos",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-facebook-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:facebook",
+   "tipo": "empresa",
+   "etiqueta": "primer inversionista externo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "fue el primer inversionista externo de Facebook",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-spacex-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:spacex",
+   "tipo": "empresa",
+   "etiqueta": "inversionista temprano",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "participó tempranamente en SpaceX",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-linkedin-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:linkedin",
+   "tipo": "empresa",
+   "etiqueta": "inversionista temprano",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "participó tempranamente en LinkedIn",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-airbnb-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:airbnb",
+   "tipo": "empresa",
+   "etiqueta": "inversionista temprano",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "participó tempranamente en Airbnb",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-peter-thiel-dinero": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:peter-thiel",
+   "tipo": "dinero",
+   "etiqueta": "fortuna estimada",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "con una fortuna estimada en más de US$20 mil millones",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-jose-antonio-kast-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:jose-antonio-kast",
+   "tipo": "personal",
+   "etiqueta": "reunión en La Moneda",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "se reunió con el presidente José Antonio Kast en La Moneda",
+   "fuentes": [
+    [
+     "¿Quién es Peter Thiel? El empresario que se reunió con José Antonio ...",
+     "https://www.pauta.cl/actualidad/2026/06/09/quien-es-peter-thiel-el-empresario-tecnologico-que-se-reunio-con-jose-antonio-kast-en-la-moneda.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-francfort-del-meno-alemania-personal-1967": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:francfort-del-meno-alemania",
+   "tipo": "personal",
+   "etiqueta": "Nacimiento · fuente terciaria",
+   "desde": "1967",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Nació el 11 de octubre de 1967 en Fráncfort del Meno, Alemania.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-alemana-estadounidense-y-neozelandesa-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:alemana-estadounidense-y-neozelandesa",
+   "tipo": "personal",
+   "etiqueta": "Nacionalidad · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Tiene nacionalidad alemana, estadounidense y neozelandesa (desde 2011).",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-matt-danzeisen-personal-2017": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:matt-danzeisen",
+   "tipo": "personal",
+   "etiqueta": "Cónyuge · fuente terciaria",
+   "desde": "2017",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se casó con Matt Danzeisen en octubre de 2017.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-klaus-friedrich-thiel-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:klaus-friedrich-thiel",
+   "tipo": "personal",
+   "etiqueta": "Padre · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Su padre es Klaus Friedrich Thiel.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-empresa-9265": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "empresa",
+   "etiqueta": "Cofundador · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Cofundó PayPal dos años después de fundar Thiel Capital Management.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-technologies-empresa-5800": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir-technologies",
+   "tipo": "empresa",
+   "etiqueta": "Cofundador · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Cofundó Palantir Technologies en 2003.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-the-founders-fund-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:the-founders-fund",
+   "tipo": "empresa",
+   "etiqueta": "Fundador · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fundó The Founders Fund un año después de su inversión en Facebook.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-clarium-capital-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:clarium-capital",
+   "tipo": "empresa",
+   "etiqueta": "Fundador · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fundó Clarium Capital después de la venta de PayPal en 2002.",
+   "fuentes": [
+    [
+     "Peter Thiel - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Peter_Thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-frankfurt-republica-federal-de-alemania-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:frankfurt-republica-federal-de-alemania",
+   "tipo": "personal",
+   "etiqueta": "lugar de nacimiento",
+   "desde": "1967",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Peter Andreas Thiel nació el 11 de octubre de 1967 en Frankfurt, República Federal de Alemania.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-california-personal-1977": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:california",
+   "tipo": "personal",
+   "etiqueta": "establecimiento",
+   "desde": "1977",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se estableció en California en 1977.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-stanford-personal-1992": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:stanford",
+   "tipo": "personal",
+   "etiqueta": "título de abogado",
+   "desde": "1992",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Obtuvo su título de abogado en Stanford en 1992.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-j-l-edmondson-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:j-l-edmondson",
+   "tipo": "cargo",
+   "etiqueta": "asistente",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Trabajó para J.L. Edmondson, juez de la Corte de Apelaciones del Circuito 11.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-trader-de-instrumentos-derivados-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:trader-de-instrumentos-derivados",
+   "tipo": "cargo",
+   "etiqueta": "trader",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Posteriormente, ejerció de trader de instrumentos derivados.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-fortune-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:fortune",
+   "tipo": "personal",
+   "etiqueta": "apodo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En los círculos de Silicon Valley, Thiel es conocido como el \"Don de la Mafia de PayPal\", según un artículo de la revista Fortune.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-universidad-francisco-marroquin-personal-2009": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:universidad-francisco-marroquin",
+   "tipo": "personal",
+   "etiqueta": "doctorado honoris causa",
+   "desde": "2009",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Obtuvo un doctorado honoris causa de la Universidad Francisco Marroquín en 2009.",
+   "fuentes": [
+    [
+     "Peter Thiel ¿Quién es? Biografía - Rankia",
+     "https://www.rankia.com/diccionario/biografias/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-cargo-1998": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "cargo",
+   "etiqueta": "co‑fundador",
+   "desde": "1998",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1998, junto a Max Levchin y Elon Musk, Thiel co‑fundó PayPal.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-technologies-cargo-2003": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir-technologies",
+   "tipo": "cargo",
+   "etiqueta": "co‑fundador",
+   "desde": "2003",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Después de PayPal, Thiel co‑fundó Palantir Technologies en 2003.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-facebook-dinero-2004": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:facebook",
+   "tipo": "dinero",
+   "etiqueta": "inversor ángel",
+   "desde": "2004",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel invirtió en Facebook en 2004.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-linkedin-dinero": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:linkedin",
+   "tipo": "dinero",
+   "etiqueta": "inversor",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel apoyó a empresas emergentes como LinkedIn.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-spacex-dinero": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:spacex",
+   "tipo": "dinero",
+   "etiqueta": "inversor",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Thiel apoyó a empresas emergentes como SpaceX.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-donald-trump-afiliacion": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:donald-trump",
+   "tipo": "afiliacion",
+   "etiqueta": "apoyo público",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Su apoyo a candidatos políticos como Donald Trump ha generado críticas.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-de-cero-a-uno-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:de-cero-a-uno",
+   "tipo": "personal",
+   "etiqueta": "autor",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Su libro \"De cero a uno\" expone su visión sobre la innovación.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-thiel-fellowship-empresa-2010": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:thiel-fellowship",
+   "tipo": "empresa",
+   "etiqueta": "fundador",
+   "desde": "2010",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 2010, lanzó el \"Thiel Fellowship\", un programa que otorga 100,000 dólares a jóvenes innovadores.",
+   "fuentes": [
+    [
+     "Quién es Peter Thiel: Biografía Completa y Legado",
+     "https://www.unpasodelexito.com/quien-es/peter-thiel"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-the-stanford-review-empresa-1987": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:the-stanford-review",
+   "tipo": "empresa",
+   "etiqueta": "cofundador",
+   "desde": "1987",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fundó The Stanford Review en 1987 junto a Norman Book.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-confinity-empresa-1998": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:confinity",
+   "tipo": "empresa",
+   "etiqueta": "fundador",
+   "desde": "1998",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Figuró entre los fundadores de Confinity en 1998.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "cargo",
+   "etiqueta": "consejero delegado",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Regresó a PayPal como consejero delegado en septiembre después de la fusión con X.com en 2000.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-cargo-6633": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "cargo",
+   "etiqueta": "presidente ejecutivo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue presidente ejecutivo de PayPal antes de su adquisición por eBay.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-cargo-8635": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "cargo",
+   "etiqueta": "presidente del consejo de administración",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue presidente del consejo de administración de PayPal.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-facebook-meta-cargo-2005": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:facebook-meta",
+   "tipo": "cargo",
+   "etiqueta": "miembro del consejo de administración",
+   "desde": "2005",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Formó parte del consejo de administración de Facebook/Meta de 2005 a 2022.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-founders-fund-empresa-2005": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:founders-fund",
+   "tipo": "empresa",
+   "etiqueta": "socio",
+   "desde": "2005",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se convirtió en socio de Founders Fund en 2005.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-thiel-capital-empresa-2011": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:thiel-capital",
+   "tipo": "empresa",
+   "etiqueta": "presidente",
+   "desde": "2011",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Es presidente de Thiel Capital desde 2011.",
+   "fuentes": [
+    [
+     "Peter Thiel — biografía — CNCReed",
+     "https://cncreed.com/es/zivotopis-peter-thiel.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-paypal-cargo-1998-9446": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:paypal",
+   "tipo": "cargo",
+   "etiqueta": "Cofundador y Consejero Delegado",
+   "desde": "1998",
+   "hasta": "2002",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Cofundó PayPal en 1998 y fue su Consejero Delegado hasta que la empresa fue vendida a eBay en 2002.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-clarium-capital-empresa-5008": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:clarium-capital",
+   "tipo": "empresa",
+   "etiqueta": "Fundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fundó Clarium Capital, un macrofondo de cobertura mundial.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-thiel-capital-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:thiel-capital",
+   "tipo": "empresa",
+   "etiqueta": "Fundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Creó Thiel Capital, una empresa de inversión centrada en capital riesgo e inversiones de capital privado.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-technologies-empresa-7884": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir-technologies",
+   "tipo": "empresa",
+   "etiqueta": "Cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Es cofundador de Palantir Technologies, una empresa de análisis de datos.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-palantir-technologies-cargo": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:palantir-technologies",
+   "tipo": "cargo",
+   "etiqueta": "Presidente",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Figura como Presidente de Palantir Technologies.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-founders-fund-empresa": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:founders-fund",
+   "tipo": "empresa",
+   "etiqueta": "Cofundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Co‑fundó Founders Fund, una sociedad de capital riesgo que apoya a nuevas empresas tecnológicas.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-zero-to-one-personal": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:zero-to-one",
+   "tipo": "personal",
+   "etiqueta": "Autor",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Es autor del libro Zero to One, un bestseller sobre innovación y emprendimiento.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
+  },
+  "peter-thiel-fundacion-thiel-afiliacion": {
+   "personaId": "peter-thiel",
+   "contraparte": "org:fundacion-thiel",
+   "tipo": "afiliacion",
+   "etiqueta": "Fundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fundó la Fundación Thiel, que apoya iniciativas científicas, tecnológicas y educativas, incluida la Thiel Fellowship.",
+   "fuentes": [
+    [
+     "Peter Andreas Thiel: Biografía, trayectoria profesional y visión ...",
+     "https://tradersunion.com/es/persons/peter-andreas-thiel/"
+    ]
+   ],
+   "creado": "2026-11-21T10:59:25Z",
+   "por": "flujo"
   }
  },
- "generado": "2026-11-21T10:50:03Z",
+ "generado": "2026-11-21T10:59:25Z",
  "nota": "Registro de Telar. Fichas extraídas de páginas realmente descargadas; cada vínculo lleva la URL de la página de la que salió."
 }
