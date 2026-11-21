@@ -13,6 +13,20 @@
    "creado": "2026-11-21T03:58:04Z",
    "actualizado": "2026-11-21T03:58:04Z",
    "por": "flujo"
+  },
+  "simon-rojas": {
+   "nombre": "Simon Rojas",
+   "rolPublico": "artista",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "alias": [],
+   "resumen": "Simón Rojas, nacido en Santiago de Chile en 1997, es un artista que presenta cuerpos masculinos erotizados para cuestionar la masculinidad tradicional desde una perspectiva queer. Ha realizado estudios de Magíster y Licenciatura en la Pontificia Universidad Católica de Chile y ha participado en residencias, ferias y exposiciones colectivas entre 2015 y 2022. Licenciado en Artes y Humanidades por la Universidad Católica de Chile, su trabajo se centra en presentar cuerpos masculinos erotizados para cuestionar la(s) masculinidad(es) tradicional(es) desde una perspectiva queer, próxima al Pop y al Camp. Reside en Santiago, Región Metropolitana, Chile.",
+   "estado": "en curso",
+   "creado": "2026-11-21T10:50:03Z",
+   "actualizado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
   }
  },
  "organizaciones": {
@@ -300,6 +314,292 @@
    "lon": null,
    "resumen": "",
    "creado": "2026-11-21T03:58:04Z",
+   "por": "flujo"
+  },
+  "pontificia-universidad-catolica-de-chile": {
+   "nombre": "Pontificia Universidad Católica de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "iii-residencia-movil-la-tirana": {
+   "nombre": "III Residencia Móvil La Tirana",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "feria-aparte": {
+   "nombre": "Feria Aparte",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "animus-corpus-la-voluntad-de-hacer-un-cuerpo-citylab-centro-": {
+   "nombre": "Animus Corpus : la voluntad de hacer un cuerpo. Citylab. Centro Cultural Gabriela Mistral",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "sinergia-manifiesto-gallery": {
+   "nombre": "Sinergia. Manifiesto Gallery",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "30-30-gallery-sala-de-arte-mackenna": {
+   "nombre": "30×30 Gallery. Sala de Arte Mackenna",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "30-30-gallery-casa-de-los-diez": {
+   "nombre": "30×30 Gallery. Casa de los Diez",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "universidad-catolica-de-chile": {
+   "nombre": "Universidad Católica de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "madmapper": {
+   "nombre": "MadMapper",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "darc": {
+   "nombre": "DARC",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "ukai-projects": {
+   "nombre": "UKAI Projects",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "interaccess": {
+   "nombre": "InterAccess",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "universidad-de-salamanca": {
+   "nombre": "Universidad de Salamanca",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "toledo": {
+   "nombre": "Toledo",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "varios-conventos": {
+   "nombre": "varios conventos",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "provincia-de-castilla": {
+   "nombre": "Provincia de Castilla",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "congregacion-de-los-esclavos-del-dulcisimo-nombre-de-maria": {
+   "nombre": "Congregación de los Esclavos del Dulcísimo Nombre de María",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "infantes-de-espana": {
+   "nombre": "Infantes de España",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "reina-isabel-de-borbon": {
+   "nombre": "Reina Isabel de Borbón",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "clemente-xiii": {
+   "nombre": "Clemente XIII",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "espana": {
+   "nombre": "España",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "real-academia-de-ciencias-y-artes-de-barcelona": {
+   "nombre": "Real Academia de Ciencias y Artes de Barcelona",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "catedra-de-arabe": {
+   "nombre": "cátedra de árabe",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "real-jardin-botanico-de-madrid": {
+   "nombre": "Real Jardín Botánico de Madrid",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "jardin-experimental-de-sanlucar": {
+   "nombre": "Jardín Experimental de Sanlúcar",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "manuel-godoy": {
+   "nombre": "Manuel Godoy",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T10:50:03Z",
    "por": "flujo"
   }
  },
@@ -1043,8 +1343,528 @@
    ],
    "creado": "2026-11-21T03:58:04Z",
    "por": "flujo"
+  },
+  "simon-rojas-pontificia-universidad-catolica-de-chile-afiliac": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:pontificia-universidad-catolica-de-chile",
+   "tipo": "afiliacion",
+   "etiqueta": "Licenciado en Artes y Humanidades",
+   "desde": "2011",
+   "hasta": "2015",
+   "monto": "",
+   "moneda": "",
+   "registro": "declaracion",
+   "detalle": "Obtuvo la Licenciatura en Artes y Humanidades entre 2011 y 2015.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-iii-residencia-movil-la-tirana-cargo-2015": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:iii-residencia-movil-la-tirana",
+   "tipo": "cargo",
+   "etiqueta": "Residente Artístico",
+   "desde": "2015",
+   "hasta": "2015",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó en la III Residencia Móvil La Tirana en julio de 2015.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-feria-aparte-cargo-2022": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:feria-aparte",
+   "tipo": "cargo",
+   "etiqueta": "Expositor",
+   "desde": "2022",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Exposició en la Feria Aparte en octubre de 2022.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-animus-corpus-la-voluntad-de-hacer-un-cuerpo-cit": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:animus-corpus-la-voluntad-de-hacer-un-cuerpo-citylab-centro-",
+   "tipo": "cargo",
+   "etiqueta": "Artista expositor",
+   "desde": "2022",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó en la exposición colectiva \"Animus Corpus : la voluntad de hacer un cuerpo\" en noviembre de 2022.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-sinergia-manifiesto-gallery-cargo-2022": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:sinergia-manifiesto-gallery",
+   "tipo": "cargo",
+   "etiqueta": "Artista expositor",
+   "desde": "2022",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó en la exposición colectiva \"Sinergia\" en noviembre de 2022.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-30-30-gallery-sala-de-arte-mackenna-cargo-2021": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:30-30-gallery-sala-de-arte-mackenna",
+   "tipo": "cargo",
+   "etiqueta": "Artista expositor",
+   "desde": "2021",
+   "hasta": "2021",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó en la exposición colectiva en la Sala de Arte Mackenna en noviembre de 2021.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-30-30-gallery-casa-de-los-diez-cargo-2021": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:30-30-gallery-casa-de-los-diez",
+   "tipo": "cargo",
+   "etiqueta": "Artista expositor",
+   "desde": "2021",
+   "hasta": "2021",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó en la exposición colectiva en la Casa de los Diez en septiembre de 2021.",
+   "fuentes": [
+    [
+     "Simón Rojas | Galería MA",
+     "https://galeriama.cl/ficha-simon-rojas/"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-universidad-catolica-de-chile-afiliacion": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:universidad-catolica-de-chile",
+   "tipo": "afiliacion",
+   "etiqueta": "Licenciado en Artes y Humanidades",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Licenciado en Artes y Humanidades por la Universidad Católica de Chile",
+   "fuentes": [
+    [
+     "Simón Rojas Riveros. Artista | ARTEINFORMADO",
+     "https://www.arteinformado.com/guia/f/simon-rojas-riveros-237664"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-madmapper-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:madmapper",
+   "tipo": "cargo",
+   "etiqueta": "Certified Trainer",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Simon Rojas is an Official MadMapper Certified Trainer.",
+   "fuentes": [
+    [
+     "Simón Rojas Gajardo El Ekeko - Official MadMapper Certified Trainer",
+     "https://madmapper.com/learning/certified-training/30/Sim%C3%B3nRojas%20GajardoEl%20Ekeko"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-darc-afiliacion": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:darc",
+   "tipo": "afiliacion",
+   "etiqueta": "collaborator",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "He has collaborated with the art institution DARC.",
+   "fuentes": [
+    [
+     "Simón Rojas Gajardo El Ekeko - Official MadMapper Certified Trainer",
+     "https://madmapper.com/learning/certified-training/30/Sim%C3%B3nRojas%20GajardoEl%20Ekeko"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-ukai-projects-afiliacion": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:ukai-projects",
+   "tipo": "afiliacion",
+   "etiqueta": "collaborator",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "He has collaborated with the art institution UKAI Projects.",
+   "fuentes": [
+    [
+     "Simón Rojas Gajardo El Ekeko - Official MadMapper Certified Trainer",
+     "https://madmapper.com/learning/certified-training/30/Sim%C3%B3nRojas%20GajardoEl%20Ekeko"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-interaccess-afiliacion": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:interaccess",
+   "tipo": "afiliacion",
+   "etiqueta": "collaborator",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "He has collaborated with the art institution InterAccess.",
+   "fuentes": [
+    [
+     "Simón Rojas Gajardo El Ekeko - Official MadMapper Certified Trainer",
+     "https://madmapper.com/learning/certified-training/30/Sim%C3%B3nRojas%20GajardoEl%20Ekeko"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-universidad-de-salamanca-afiliacion": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:universidad-de-salamanca",
+   "tipo": "afiliacion",
+   "etiqueta": "estudiante",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Cursó los estudios en la universidad de Salamanca entre 1573 y 1579.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-toledo-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:toledo",
+   "tipo": "cargo",
+   "etiqueta": "profesor de filosofía y teología",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Enseñó filosofía y teología en Toledo desde el año 1581 hasta el 1587.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-varios-conventos-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:varios-conventos",
+   "tipo": "cargo",
+   "etiqueta": "superior",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "A partir de 1588, hasta su muerte, ejerció con grande prudencia el oficio de superior en varios conventos.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-provincia-de-castilla-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:provincia-de-castilla",
+   "tipo": "cargo",
+   "etiqueta": "Visitador Apostólico",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue enviado como Visitador Apostólico a su Provincia de Castilla, en dos ocasiones, y a la de Andalucía, en una.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-congregacion-de-los-esclavos-del-dulcisimo-nombr": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:congregacion-de-los-esclavos-del-dulcisimo-nombre-de-maria",
+   "tipo": "cargo",
+   "etiqueta": "fundador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "El 14 de abril de 1612 fundó la Congregación de los Esclavos del Dulcísimo Nombre de María.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-infantes-de-espana-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:infantes-de-espana",
+   "tipo": "cargo",
+   "etiqueta": "Preceptor",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1619 fue nombrado Preceptor de los Infantes de España.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-reina-isabel-de-borbon-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:reina-isabel-de-borbon",
+   "tipo": "cargo",
+   "etiqueta": "confesor",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "El 12 de mayo de 1621 fue elegido como confesor de la Reina Isabel de Borbón.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-clemente-xiii-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:clemente-xiii",
+   "tipo": "cargo",
+   "etiqueta": "beatificado",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "El 25 de marzo de 1735, fue beatificado por Clemente XIII.",
+   "fuentes": [
+    [
+     "Simón de Rojas (1552-1624) - biografía - The Holy See",
+     "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_19880703_de-rojas_sp.html"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-espana-cargo": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:espana",
+   "tipo": "cargo",
+   "etiqueta": "Diputado · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue diputado de España.",
+   "fuentes": [
+    [
+     "Simón de Rojas Clemente y Rubio - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sim%C3%B3n_de_Rojas_Clemente_y_Rubio"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-real-academia-de-ciencias-y-artes-de-barcelona-a": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:real-academia-de-ciencias-y-artes-de-barcelona",
+   "tipo": "afiliacion",
+   "etiqueta": "Miembro · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue miembro de la Real Academia de Ciencias y Artes de Barcelona.",
+   "fuentes": [
+    [
+     "Simón de Rojas Clemente y Rubio - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sim%C3%B3n_de_Rojas_Clemente_y_Rubio"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-catedra-de-arabe-cargo-1802": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:catedra-de-arabe",
+   "tipo": "cargo",
+   "etiqueta": "Profesor · fuente terciaria",
+   "desde": "1802",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1802 fue nombrado profesor de la cátedra de árabe.",
+   "fuentes": [
+    [
+     "Simón de Rojas Clemente y Rubio - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sim%C3%B3n_de_Rojas_Clemente_y_Rubio"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-real-jardin-botanico-de-madrid-cargo-1805": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:real-jardin-botanico-de-madrid",
+   "tipo": "cargo",
+   "etiqueta": "Bibliotecario · fuente terciaria",
+   "desde": "1805",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1805 fue llamado para hacerse cargo de la Biblioteca del Real Jardín Botánico de Madrid.",
+   "fuentes": [
+    [
+     "Simón de Rojas Clemente y Rubio - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sim%C3%B3n_de_Rojas_Clemente_y_Rubio"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-jardin-experimental-de-sanlucar-cargo-1807": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:jardin-experimental-de-sanlucar",
+   "tipo": "cargo",
+   "etiqueta": "Director · fuente terciaria",
+   "desde": "1807",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1807 se hizo cargo de la dirección del Jardín Experimental de Sanlúcar.",
+   "fuentes": [
+    [
+     "Simón de Rojas Clemente y Rubio - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sim%C3%B3n_de_Rojas_Clemente_y_Rubio"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
+  },
+  "simon-rojas-manuel-godoy-dinero": {
+   "personaId": "simon-rojas",
+   "contraparte": "org:manuel-godoy",
+   "tipo": "dinero",
+   "etiqueta": "Asignación · fuente terciaria",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Godoy le pagó una asignación de 1500 reales mensuales durante cuatro años.",
+   "fuentes": [
+    [
+     "Simón de Rojas Clemente y Rubio - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sim%C3%B3n_de_Rojas_Clemente_y_Rubio"
+    ]
+   ],
+   "creado": "2026-11-21T10:50:03Z",
+   "por": "flujo"
   }
  },
- "generado": "2026-11-21T03:58:04Z",
+ "generado": "2026-11-21T10:50:03Z",
  "nota": "Registro de Telar. Fichas extraídas de páginas realmente descargadas; cada vínculo lleva la URL de la página de la que salió."
 }
