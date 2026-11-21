@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-21T01:01:57Z",
+  "generado": "2026-11-21T06:47:22Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -36,6 +36,35 @@
       "titulo": "Esfera gris filmada sobre Atlixco, Puebla, y difundida por Jaime Maussan",
       "url": "https://periodicorealidades.com/index.php/2026/11/20/jaime-maussan-difunde-video-de-un-presunto-ovni-captado-en-atlixco-puebla/",
       "id": "mx-atlixco-esfera-20261021"
+    },
+    {
+      "agua": false,
+      "clase": "oficial",
+      "creado": "2026-11-21T06:47:22Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Octava entrega de archivos UAP del 20 de noviembre (entrada previa del feed)",
+          "https://www.miragenews.com/war-department-publishes-eighth-uap-files-1781257/"
+        ],
+        [
+          "Portal oficial de la octava entrega, enlace citado por UnoTV",
+          "https://www.war.gov/ufo/?releaseDate=Release+08&release=08"
+        ]
+      ],
+      "estado": "material oficial publicado; documentos de 1957 sin explicación establecida y sin evaluación del Departamento de Guerra",
+      "fechaEvento": "1957-10-28",
+      "fechaPub": "2026-11-20T19:59:16Z",
+      "fuente": "UnoTV (Georgina Becerril) · Departamento de Guerra de EE. UU. (PURSUE), informe IR-350-57 del agregado aéreo en Lima",
+      "lat": null,
+      "lon": null,
+      "lugar": "Andahuaylas y Talavera (Apurímac) y región de Cajamarca, Perú",
+      "por": "tarea",
+      "resumen": "Entre los documentos de la octava entrega del programa PURSUE, publicada el 20 de noviembre por el Departamento de Guerra de Estados Unidos, UnoTV localizó el informe de inteligencia aérea IR-350-57, fechado el 14 de noviembre de 1957 y firmado por el capitán Harry W. Deffebach, asistente del agregado aéreo estadounidense en Lima; está redactado en español y se difunde escaneado con la etiqueta «D200». Recoge dos reportes peruanos: el del 28 de octubre de 1957, hacia las 18:05, cuando un inspector de asuntos indígenas en Andahuaylas (Apurímac) describió una esfera luminosa de color verde azulado, de unos 60 centímetros, que emitía chispas y habría caído en el distrito de Talavera —la búsqueda posterior no encontró nada y el documento no confirma que tocara el suelo—, y el del 11 y 12 de noviembre de 1957 en la región de Cajamarca, donde Homer Hungerford, estadounidense empleado de la minera Incandium S.A., reportó un objeto con apariencia de globo visible todo el día y brillante de noche, demasiado alto para identificarlo y observado durante unas dos semanas, también desde Hualgayoc y cerca de la hacienda Porcón. El oficial escribió que desde la llegada del Sputnik I y II se había producido una oleada de avistamientos en Perú, pero el documento no establece ningún vínculo con esos lanzamientos ni propone una explicación. No hay fotografías ni video: lo publicado es documentación histórica, no un avistamiento nuevo, y no se nombra ninguna unidad militar peruana, solo el Ministerio de Trabajo y Asuntos Indígenas de Lima como destinatario del telegrama original.",
+      "titulo": "Los archivos PURSUE incluyen dos casos peruanos de 1957: una esfera verde en Apurímac y un objeto fijo en Cajamarca",
+      "url": "https://www.unotv.com/ciencia-y-tecnologia/esfera-verde-luminosa-en-peru-pentagono-revela-reportes-de-ovnis/",
+      "id": "pe-pursue-1957-20261120"
     },
     {
       "agua": false,
@@ -161,6 +190,36 @@
       "titulo": "Un bólido con estruendo cruza el cielo de Paraíba y la asociación de astronomía prevé posible caída de meteoritos",
       "url": "https://olhardigital.com.br/2026/11/20/ciencia-e-espaco/clarao-no-ceu-e-estrondo-intrigam-moradores-em-cidades-da-paraiba",
       "id": "br-paraiba-bolido-20261119"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-21T06:47:22Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Yeni Şafak, con una docena de fotografías de İHA",
+          "https://www.yenisafak.com/gundem/bursada-ufo-gorunumlu-mercek-bulutlari-goruldu-4874688"
+        ],
+        [
+          "Nubes con forma de platillo sobre los Altos del Golán el día anterior (entrada previa del feed)",
+          "https://segodnya.co.il/subjects/nlo-nad-golanami-v-nebe-zametili-neobychnye-oblaka/"
+        ]
+      ],
+      "estado": "identificadas como nubes lenticulares (altocumulus lenticularis) por los propios medios; la MGM se cita solo para el mecanismo general, sin pronunciamiento sobre este episodio",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-20T06:04:00Z",
+      "fuente": "Sputnik Türkiye (anlatilaninotesi.com.tr) · Yeni Şafak (Zeynep Karçığa, fotografías de İHA) · fotografía de Anadolu Ajansı · Dirección General de Meteorología de Turquía (MGM), citada para la explicación general",
+      "lat": 40.1826,
+      "lon": 29.0665,
+      "lugar": "Bursa (distritos de Osmangazi, Nilüfer, Kestel, Gürsu y Yıldırım), Turquía",
+      "por": "tarea",
+      "rareza": "natural",
+      "resumen": "Los cielos de Bursa, en el noroeste de Turquía, amanecieron el 20 de noviembre con nubes redondeadas y apiladas que mantuvieron su forma durante largo rato y que vecinos de cinco distritos —Osmangazi, Nilüfer, Kestel, Gürsu y Yıldırım— fotografiaron con sus teléfonos; en algunas imágenes la formación aparece sobre el Timsah Arena y, según Yeni Şafak, el rojo del amanecer sumó al efecto. El registro es solo fotográfico, con créditos de las agencias İHA y Anadolu, y ninguna de las dos coberturas consultadas nombra a quien tomó las imágenes ni publica video. La identificación como nube lenticular (altocumulus lenticularis) es de los propios medios: la Dirección General de Meteorología de Turquía (MGM) se cita únicamente para el mecanismo general —ondas de viento sobre relieves accidentados, que pueden además indicar turbulencia descendente en el lado protegido del terreno—, y no hay pronunciamiento de un meteorólogo con nombre, de una universidad ni de ningún organismo sobre este episodio concreto; Sputnik atribuye a la altura y lo escarpado del Uludağ que Bursa sea propensa a estas formaciones. Ninguna fuente da fecha ni hora exacta del fenómeno —solo «las horas de la mañana»—, por lo que no se registra fecha de evento; las coordenadas corresponden a Bursa de manera aproximada.",
+      "titulo": "Nubes lenticulares con aspecto de platillo sobre Bursa, vistas desde cinco distritos",
+      "url": "https://anlatilaninotesi.com.tr/20261120/bursa-semalarinda-ufoyu-andiran-bulut-sirri-ortaya-cikti-1110481969.html",
+      "id": "tr-bursa-lenticulares-20261120"
     },
     {
       "agua": false,
@@ -610,32 +669,6 @@
     {
       "agua": false,
       "clase": "prensa",
-      "creado": "2026-11-19T13:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
-          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
-        ]
-      ],
-      "estado": "desmentido por Full Fact",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Full Fact",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
-      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
-      "id": "montaje-luces-rojas-lakenheath-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
       "descarte": [],
       "descarteRevisado": false,
@@ -673,6 +706,32 @@
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
       "url": "https://mymodernmet.com/capri-double-watersprout/",
       "id": "it-capri-trombas-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
+          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+        ]
+      ],
+      "estado": "desmentido por Full Fact",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Full Fact",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
+      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "id": "montaje-luces-rojas-lakenheath-20261118"
     },
     {
       "agua": false,
@@ -1553,44 +1612,6 @@
       "titulo": "MUFON sin explicación para tres luces rotatorias filmadas en Gillette, Wyoming",
       "url": "https://cowboystatedaily.com/2026/11/05/ufo-investigator-stumped-by-gillette-womans-new-footage-of-three-rotating-lights/",
       "id": "us-gillette-wy-20261105"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T18:45:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-05T12:00:00Z",
-      "fuente": "SWNS",
-      "lat": 50.85,
-      "lon": 4.35,
-      "lugar": "Cerca de Bruselas, Bélgica (grabado desde un vuelo comercial)",
-      "por": "tarea",
-      "resumen": "Steve Frazer, capitán de aerolínea comercial residente en Sandbach, Cheshire, grabó un time-lapse durante un vuelo de octubre de 2026 en el que aparecen luces intermitentes y pequeñas esferas que cruzan el cielo y desaparecen, sobre tierra en las cercanías de Bruselas; la nota no precisa el día. Frazer dice haberlas visto seis o siete veces desde 2022, que al principio pensó en un avión nodriza militar y que el movimiento y la velocidad no encajaban con esa explicación, y sostiene que no se parecen a satélites Starlink. SWNS publicó el 5 de noviembre capturas del material; no hay explicación establecida ni análisis independiente, y el propio testigo dice no haber encontrado respuesta en su búsqueda. Al no haber fecha exacta del vuelo no es posible cruzar el caso con calendarios de lanzamientos ni de lluvias de meteoros, y las coordenadas corresponden a Bruselas de manera aproximada.",
-      "titulo": "Capitán de aerolínea comercial filma luces cerca de Bruselas",
-      "url": "https://discover.swns.com/2026/11/commercial-pilot-films-mysterious-lights-after-repeated-ufo-sightings/",
-      "id": "be-piloto-bruselas-oct2026"
-    },
-    {
-      "agua": false,
-      "clase": "redes",
-      "creado": "2026-11-15T02:22:00Z",
-      "enlaces": [],
-      "estado": "sin verificar · hipótesis de satélites",
-      "fechaEvento": "2026-11-02",
-      "fechaPub": "2026-11-04T12:00:00Z",
-      "fuente": "Radio Imagina · Webcams de México",
-      "lat": 19.0225,
-      "lon": -98.6275,
-      "lugar": "Estación Tlamacas, volcán Popocatépetl, México",
-      "por": "siembra",
-      "resumen": "Una cámara de Webcams de México instalada en la estación Tlamacas registró varias siluetas luminosas que avanzan de forma ordenada y ascienden cerca del macizo, durante la noche del 2 de noviembre. Entre las hipótesis planteadas está el paso de satélites de órbita baja como los de Starlink.",
-      "titulo": "Luces sobre el Popocatépetl captadas por cámara de monitoreo",
-      "url": "https://www.radioimagina.cl/2026/11/camara-de-monitoreo-graba-gigantesco-ovni-sobrevolando-volcan-video-causa-inquietud",
-      "id": "mx-popocatepetl-20261102"
     },
     {
       "agua": false,
