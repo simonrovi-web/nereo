@@ -149,9 +149,16 @@ def candidatos(nombre: str, pais: str, rol: str, nota: str) -> list[dict]:
             salida.append(it)
 
     # Una sola página por dominio: evita que un medio cope la ficha entera.
+    # Las Wikipedias cuentan como un solo dominio: es y gl y en son la misma
+    # fuente traducida, y colarlas tres veces finge una corroboración que no hay.
     por_dominio, final = {}, []
     for it in salida:
-        d = re.sub(r"^www\.", "", it["url"].split("/")[2]) if "/" in it["url"][8:] else it["url"]
+        try:
+            d = re.sub(r"^www\.", "", it["url"].split("/")[2].lower())
+        except Exception:
+            continue
+        if d.endswith("wikipedia.org"):
+            d = "wikipedia.org"
         if por_dominio.get(d):
             continue
         por_dominio[d] = 1
@@ -245,6 +252,45 @@ def preguntar(texto_pagina: str, titulo: str, nombre: str) -> dict | None:
 
 # ─────────────────────────── validación ───────────────────────────
 
+def procedencia(valor, url: str) -> str:
+    """La procedencia la decide el DOMINIO, no el modelo.
+
+    De dónde viene un dato es un hecho sobre la fuente, no una opinión
+    sobre el contenido: el programa sabe qué servidor le entregó el texto,
+    así que no hay por qué dejárselo adivinar a un modelo pequeño, que en
+    la práctica contesta «prensa» para todo. Solo si el dominio no dice
+    nada se usa lo que propuso el modelo.
+    """
+    host = ""
+    try:
+        host = re.sub(r"^www\.", "", url.split("/")[2].lower())
+    except Exception:
+        pass
+
+    if host.endswith(".gob.cl") or host.endswith(".gov") or ".gov." in host:
+        return "registro"
+    if any(host.endswith(d) or host == d for d in (
+            "bcn.cl", "cmfchile.cl", "servel.cl", "diariooficial.interior.gob.cl",
+            "sii.cl", "mercadopublico.cl", "leychile.cl", "infoprobidad.cl")):
+        return "registro"
+    if "poderjudicial" in host or "pjud.cl" in host or host.endswith(".jus.cl"):
+        return "judicial"
+
+    # Normalizar lo que dijo el modelo: quitar tildes y quedarse con la raíz,
+    # porque «declaración» o «registro oficial» caían antes en «prensa».
+    v = unicodedata.normalize("NFD", str(valor or "").lower())
+    v = "".join(c for c in v if unicodedata.category(c) != "Mn").strip()
+    for clave in ("declaracion", "judicial", "registro", "prensa"):
+        if v.startswith(clave):
+            return clave
+    return "prensa"
+
+
+def es_terciaria(url: str) -> bool:
+    """Wikipedia y similares: útiles para orientarse, débiles como prueba."""
+    return "wikipedia.org" in url or "wikidata.org" in url
+
+
 def anio(valor) -> str:
     """Un año de cuatro cifras, o nada. Nunca una fecha a medio inventar."""
     m = re.search(r"\b(1[89]\d{2}|20\d{2})\b", str(valor or ""))
@@ -254,24 +300,25 @@ def anio(valor) -> str:
 def validar_vinculos(bruto, url: str, titulo: str) -> list[dict]:
     """Deja pasar solo lo que tiene forma válida. La URL la pone el sistema."""
     salida = []
-    for v in (bruto or [])[:12]:
+    # Tope por página: que una sola fuente no copie la ficha entera.
+    for v in (bruto or [])[:8]:
         if not isinstance(v, dict):
             continue
         tipo = str(v.get("tipo") or "").strip().lower()
         contraparte = str(v.get("contraparte") or "").strip()
         detalle = str(v.get("detalle") or "").strip()
-        registro = str(v.get("registro") or "prensa").strip().lower()
         if tipo not in TIPOS or len(contraparte) < 2 or len(detalle) < 10:
             continue
-        if registro not in PROCEDENCIAS:
-            registro = "prensa"
+        etiqueta = str(v.get("etiqueta") or "")[:120]
+        if es_terciaria(url):
+            etiqueta = (etiqueta + " · fuente terciaria").strip(" ·")[:120]
         salida.append({
             "tipo": tipo,
             "contraparte_nombre": contraparte[:120],
-            "etiqueta": str(v.get("etiqueta") or "")[:120],
+            "etiqueta": etiqueta,
             "desde": anio(v.get("desde")),
             "hasta": anio(v.get("hasta")),
-            "registro": registro,
+            "registro": procedencia(v.get("registro"), url),
             "detalle": detalle[:600],
             "fuentes": [[titulo[:140] or url, url]],
         })
