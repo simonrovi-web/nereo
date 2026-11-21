@@ -276,14 +276,14 @@ def procedencia(valor, url: str) -> str:
     if "poderjudicial" in host or "pjud.cl" in host or host.endswith(".jus.cl"):
         return "judicial"
 
-    # Normalizar lo que dijo el modelo: quitar tildes y quedarse con la raíz,
-    # porque «declaración» o «registro oficial» caían antes en «prensa».
+    # Llegados aquí el dominio no es ni oficial ni judicial, y eso lo sabe el
+    # programa con certeza. «registro» y «judicial» son afirmaciones sobre la
+    # naturaleza de la fuente, no sobre su contenido: se ganan estando en las
+    # listas de arriba, y un modelo no puede ascender a un sitio cualquiera.
+    # Lo único que se le acepta es «declaracion», que depende del texto.
     v = unicodedata.normalize("NFD", str(valor or "").lower())
     v = "".join(c for c in v if unicodedata.category(c) != "Mn").strip()
-    for clave in ("declaracion", "judicial", "registro", "prensa"):
-        if v.startswith(clave):
-            return clave
-    return "prensa"
+    return "declaracion" if v.startswith("declaracion") else "prensa"
 
 
 def es_terciaria(url: str) -> bool:
