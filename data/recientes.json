@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-20T18:49:32Z",
+  "generado": "2026-11-21T01:01:57Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,32 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-21T01:15:00Z",
+      "descarte": [
+        {
+          "detalle": "Según el Instituto Geográfico Nacional de España, las Oriónidas de 2026 alcanzaron su máximo precisamente el 21 de octubre, con actividad entre el 2 de octubre y el 7 de noviembre y una tasa de entre 15 y 70 meteoros por hora a 66 km/s. La coincidencia de fecha es real, pero una esfera que avanza a velocidad moderada en línea recta y se eleva no corresponde al perfil de un meteoro.",
+          "fuente": "https://astronomia.ign.es/orionidas",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; el propio medio dice que el material no permite determinar la naturaleza del objeto y no cita a ninguna institución ni especialista",
+      "fechaEvento": "2026-10-21",
+      "fechaPub": "2026-11-20T23:06:35Z",
+      "fuente": "Periódico Realidades · video de Jorge Cabrera difundido por Jaime Maussan",
+      "lat": 18.9108,
+      "lon": -98.4344,
+      "lugar": "Atlixco, Puebla, México",
+      "por": "tarea",
+      "resumen": "El Periódico Realidades publicó el 20 de noviembre un video grabado por el testigo Jorge Cabrera en el municipio de Atlixco, Puebla, cerca del volcán Popocatépetl, en el que se ve una esfera gris que avanza a velocidad moderada en aparente línea recta, sin detenerse, y que parece elevarse hasta perderse de vista. El material lo difundió el periodista Jaime Maussan en su cuenta de X el 19 de noviembre y la nota fecha la grabación el 21 de octubre de 2026, sin indicar hora. El caso es débil en verificación: el propio medio señala que el video no permite determinar la naturaleza del objeto ni confirmar un origen extraterrestre, y no cita a ningún especialista, astrónomo ni autoridad; las hipótesis que recoge —globo meteorológico, dron, efecto óptico de la cámara o tecnología desconocida vigilando la zona volcánica— provienen de comentarios en redes. Tampoco hay un segundo ángulo ni análisis del material. Las coordenadas corresponden a Atlixco de manera aproximada, ya que la fuente no precisa el punto de grabación.",
+      "titulo": "Esfera gris filmada sobre Atlixco, Puebla, y difundida por Jaime Maussan",
+      "url": "https://periodicorealidades.com/index.php/2026/11/20/jaime-maussan-difunde-video-de-un-presunto-ovni-captado-en-atlixco-puebla/",
+      "id": "mx-atlixco-esfera-20261021"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -139,6 +165,32 @@
     {
       "agua": false,
       "clase": "prensa",
+      "creado": "2026-11-21T01:15:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Halo solar sobre Pretoria y Johannesburgo tres días antes, identificado por el Servicio Meteorológico de Sudáfrica (entrada previa del feed)",
+          "https://www.xtrafrica.com/news/south-africa-sun-halo-november-16-2026-explained"
+        ]
+      ],
+      "estado": "explicado como halo solar de 22° por EarthSky, citado por el medio; sin pronunciamiento de un servicio meteorológico de Zimbabue ni de Namibia",
+      "fechaEvento": "2026-11-19",
+      "fechaPub": "2026-11-20T00:00:00Z",
+      "fuente": "Briefly (Sudáfrica) · fotografías de ZBC News Online y de The Namibian · EarthSky",
+      "lat": -20.15,
+      "lon": 28.58,
+      "lugar": "Bulawayo, Zimbabue, y zonas de Namibia",
+      "por": "tarea",
+      "rareza": "natural",
+      "resumen": "El jueves 19 de noviembre, hacia el mediodía, habitantes de Bulawayo (Zimbabue) y de varias zonas de Namibia fotografiaron un anillo luminoso alrededor del Sol, con tonos de arcoíris y el borde interior rojizo. El portal sudafricano Briefly recoge imágenes publicadas en Facebook por ZBC News Online, que muestra el anillo entre las ramas de un árbol, y por el diario The Namibian; el registro es solo fotográfico y la nota no atribuye las fotos a personas concretas ni da una hora exacta ni una localidad namibia precisa. La identificación es la misma que en el episodio sudafricano de días antes: un halo solar de 22 grados, producido por la refracción de la luz en cristales de hielo hexagonales de nubes cirros a gran altitud, explicación que el medio atribuye a EarthSky y no a un servicio meteorológico nacional. El texto añade que los meteorólogos suelen asociar estos halos a la llegada de frentes de lluvia, sin citar a ninguno por su nombre, y recoge comentarios de usuarios de redes que los vinculaban con granizo. La página no indica hora de publicación, solo que los medios documentaron el fenómeno el 19 de noviembre. Las coordenadas corresponden a Bulawayo de manera aproximada.",
+      "titulo": "El halo solar reaparece sobre Bulawayo y Namibia, tres días después del de Gauteng",
+      "url": "https://briefly.co.za/people/259642-s-causing-hailstorm-sas-neighbours-namibia-zimbabwe-hit-by-rare-solar-sun-halo/",
+      "id": "zw-bulawayo-halo-20261119"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
       "creado": "2026-11-20T00:53:43Z",
       "descarte": [],
       "descarteRevisado": true,
@@ -251,6 +303,36 @@
       "titulo": "Bólido sobre la región del lago Erie visto desde Michigan, Ohio y Ontario",
       "url": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
       "id": "us-lago-erie-bolido-20261118"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-21T01:15:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "NEWS WIRE: Laree Furniss (DOC Kaitaia) confirma 24 animales y el iwi Te Aupōuri cierra el acceso",
+          "https://newswire.co.nz/2026/11/sperm-whales-mass-stranding-ninety-mile-beach/"
+        ],
+        [
+          "The Star (Malasia), reproducción de la nota de agencia",
+          "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/19/19-sperm-whales-die-after-stranding-at-new-zealand-beach"
+        ]
+      ],
+      "estado": "19 cachalotes muertos y 5 vivos en mal estado según el Department of Conservation; sin causa establecida y sin registro audiovisual publicado del episodio",
+      "fechaEvento": "2026-11-19",
+      "fechaPub": "2026-11-19T14:35:45Z",
+      "fuente": "Xinhua (citando a Radio New Zealand) · NEWS WIRE · The Star (Malasia) · Department of Conservation",
+      "lat": -34.75,
+      "lon": 172.85,
+      "lugar": "Ninety Mile Beach, Far North, Nueva Zelanda",
+      "por": "tarea",
+      "rareza": "mar",
+      "resumen": "El jueves 19 de noviembre aparecieron varados veinticuatro cachalotes en el extremo norte de Ninety Mile Beach, en el Far North de Nueva Zelanda. Diecinueve murieron y cinco seguían vivos en mal estado de salud, según el Department of Conservation (DOC), que respondió junto con los iwi maoríes locales y con especialistas en mamíferos marinos. La agencia Xinhua, que cita a Radio New Zealand, publicó la nota ese mismo día a las 14:35 y no da nombres ni localidad precisa. El portal neozelandés NEWS WIRE —que declara en su propio aviso haber sido redactado con inteligencia artificial, por lo que sus datos se recogen aquí con esa reserva— sitúa el varamiento al norte de The Bluff, un promontorio a mitad de la playa, y atribuye la cifra a Laree Furniss, gerente de operaciones del DOC en Kaitaia, que describió la situación como dinámica y con evaluaciones en curso. El iwi Te Aupōuri anunció el hallazgo y cerró el acceso entre The Bluff y Scotts Point hasta completar los procesos consuetudinarios con los animales muertos; Penetaui Kleskovic, de Te Aupōuri, dijo a RNZ que el iwi dirige el trabajo en la playa con apoyo de Te Hiku y que los animales pesan entre siete y diez toneladas cada uno. Ninguna de las fuentes consultadas propone una causa para este varamiento ni publica video o fotografías del episodio: la única imagen que acompaña la cobertura internacional es de archivo, de un zifio de dientes de pala fotografiado en Otago en 2024. Xinhua añade que el episodio ocurre poco más de un mes después del varamiento de una quincena de orcas pigmeas cerca de Hukatere, más al sur de la misma playa. Las coordenadas corresponden al tramo norte de Ninety Mile Beach de manera aproximada.",
+      "titulo": "Veinticuatro cachalotes varan en Ninety Mile Beach, Nueva Zelanda, y mueren diecinueve",
+      "url": "https://english.news.cn/20261119/d91f82e869de4a87a0de7287a88e9902/c.html",
+      "id": "nz-ninety-mile-cachalotes-20261119"
     },
     {
       "agua": false,
@@ -1509,50 +1591,6 @@
       "titulo": "Luces sobre el Popocatépetl captadas por cámara de monitoreo",
       "url": "https://www.radioimagina.cl/2026/11/camara-de-monitoreo-graba-gigantesco-ovni-sobrevolando-volcan-video-causa-inquietud",
       "id": "mx-popocatepetl-20261102"
-    },
-    {
-      "agua": true,
-      "clase": "prensa",
-      "creado": "2026-11-17T00:50:16Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "MBARI scientists film rare deep-sea barreleye fish",
-          "https://divemagazine.com/marine-life/mbari-scientists-film-rare-deep-sea-barreleye-fish"
-        ]
-      ],
-      "estado": "especie identificada por MBARI: pez barreleye (Macropinna), material institucional publicado",
-      "fechaEvento": "",
-      "fechaPub": "2026-10-30T12:00:00Z",
-      "fuente": "Dive Magazine (material de MBARI)",
-      "lat": 35.75,
-      "lon": -122.73,
-      "lugar": "Monte submarino Davidson, frente a California, Estados Unidos",
-      "por": "tarea",
-      "rareza": "mar",
-      "resumen": "El Monterey Bay Aquarium Research Institute (MBARI) publicó imágenes del pez barreleye, de cabeza transparente y ojos rotatorios, grabadas con el ROV Doc Ricketts desde el buque RV David Packard a unos 600 metros de profundidad en el monte submarino Davidson, cerca de 90 km de la costa de California. Los pilotos lo encontraron al terminar la jornada durante la expedición «Diving Deep for Delicate Drifters» y lo observaron unos 20 minutos con cámara 4K. Es apenas la undécima observación de la especie por MBARI en casi 40 años y la primera filmada en 4K. Las coordenadas corresponden al monte submarino Davidson y son aproximadas.",
-      "titulo": "Filman en 4K al pez barreleye de cabeza transparente frente a California",
-      "url": "https://divemagazine.com/marine-life/mbari-scientists-film-rare-deep-sea-barreleye-fish",
-      "id": "mbari-barreleye-20261030"
-    },
-    {
-      "agua": false,
-      "clase": "redes",
-      "creado": "2026-11-15T02:22:00Z",
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "2026-10-24",
-      "fechaPub": "2026-10-28T12:00:00Z",
-      "fuente": "Radio Imagina",
-      "lat": -33.45,
-      "lon": -70.66,
-      "lugar": "Varias regiones, Chile",
-      "por": "siembra",
-      "resumen": "Durante la noche del 24 al 25 de octubre, testigos de distintas regiones grabaron una formación luminosa que duró unos minutos. Los registros fueron reunidos por la cuenta Tío OVNI Chile en una recopilación de unos diez minutos. El origen no está establecido: se mencionó la coincidencia con un lanzamiento espacial, sin confirmación.",
-      "titulo": "Formación luminosa vista en varias regiones de Chile",
-      "url": "https://www.radioimagina.cl/2026/10/avistamiento-masivo-de-ovni-en-chile-causa-terror-viralizan-videos-de-una-extrana-luz-captada-en-distintas-regiones/",
-      "id": "cl-masivo-oct2026"
     },
     {
       "agua": false,
