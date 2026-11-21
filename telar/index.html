@@ -606,6 +606,15 @@ function paisLL(p){
 var MODE="grafo", world=null, estatico=false;
 /* tarea programada que investiga la cola (conector Claude Code Remote) */
 var TAREA_ID="trig_01Xhxgy7KzgJQYMqoQKZoKgA", TAREA_HORAS=[1,7,13,19], TAREA_MIN=23;
+/* Servido como sitio estático no hay base ni tarea: el encargo se hace
+   abriendo un issue en el repositorio, que dispara el flujo de GitHub
+   Actions. Ese camino no necesita ninguna clave en el navegador. */
+var REPO_ISSUE="https://github.com/simonrovi-web/nereo/issues/new?template=telar-nombre.yml&title=";
+function encargarEnGitHub(nombre){
+  var u=REPO_ISSUE+encodeURIComponent("Telar: "+String(nombre||"").trim());
+  window.open(u,"_blank","noopener");
+  toast("Se abrió el formulario en GitHub. Al enviarlo, el flujo investiga y la ficha aparece aquí.");
+}
 var disparos={};
 var diag={db:"conectando",escritura:"sin confirmar",conector:"sin revisar",ultimoDisparo:null,ultimoError:null};
 var camG={x:0,y:0,z:1}, camM={x:0,y:8,z:1}, fly=null;
@@ -1814,6 +1823,8 @@ function buildRails(){
   var R=$("railRight"); clr(R);
   if(!estatico) R.appendChild(railBtn("rInv","INVESTIGAR UN NOMBRE",["M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12z","M20 20l-5.6-5.6","M10 7v6M7 10h6"],
     function(){ formInvestigar(); }));
+  else R.appendChild(railBtn("rInv","ENCARGAR UN NOMBRE (ABRE GITHUB)",["M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12z","M20 20l-5.6-5.6","M10 7v6M7 10h6"],
+    function(){ encargarEnGitHub($("qin") && $("qin").value); }));
   if(canEdit){
     R.appendChild(railBtn("rNewP","NUEVA FICHA",["M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z","M4 21c0-4 3.6-6 8-6","M18 14v6M15 17h6"],function(){ formPersona(); }));
     R.appendChild(railBtn("rNewO","NUEVA ORGANIZACIÓN",["M4 20V8l6-4 6 4v12","M8 20v-4h4v4","M16 12h4v8"],function(){ formOrg(); }));
@@ -1968,6 +1979,7 @@ function norm(s){ return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").t
     if(!it) return;
     close(); qin.blur();
     if(it.kind==="inv"){ qin.value=""; formInvestigar(it.q); return; }
+    if(it.kind==="inv-gh"){ qin.value=""; close(); encargarEnGitHub(it.q); return; }
     if(it.kind==="node"){ qin.value=""; select(it.n); centerOn(it.n); }
   }
   function paint(){
@@ -1985,6 +1997,7 @@ function norm(s){ return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").t
     items=hits.map(function(h){ return {kind:"node",n:h.n}; });
     var exacta=hits.some(function(h){ return h.n.kind==="p" && h.sc===0; });
     if(canEdit && !estatico && db && q.length>=3 && !exacta) items.push({kind:"inv",q:q});
+    else if(estatico && q.length>=3 && !exacta) items.push({kind:"inv-gh",q:q});
     if(!items.length){
       qres.appendChild(el("div",{class:"vacio",text:
           estatico ? "Nada en el registro con ese nombre. Esta copia es de solo lectura."
@@ -2007,7 +2020,9 @@ function norm(s){ return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").t
       } else {
         b=el("button",{type:"button",class:"inv"+(i===idx?" on":"")},[
           el("span",{class:"k",text:"INVESTIGAR"}),
-          el("span",{class:"t",text:"«"+it.q+"» · Claude busca y arma la ficha"})
+          el("span",{class:"t",text:it.kind==="inv-gh"
+            ? "«"+it.q+"» · encargar la ficha en GitHub"
+            : "«"+it.q+"» · Claude busca y arma la ficha"})
         ]);
       }
       b.addEventListener("mousedown",function(e){ e.preventDefault(); activate(it); });

@@ -81,7 +81,41 @@ incluye el registro**: publicar una base de datos sobre personas con nombre y
 apellido es una decisión distinta de publicar la herramienta, y se toma
 aparte.
 
+## El motor libre: GitHub Actions + modelo de pesos abiertos
+
+Además del artefacto, Telar corre con una cadena enteramente gratuita y de
+código abierto, que es la que hace funcionar al sitio estático:
+
+1. Desde el visor, escribir un nombre y elegir **ENCARGAR** abre un issue con
+   el formulario `Telar: <nombre>`. No hace falta ninguna clave en el
+   navegador.
+2. El flujo `.github/workflows/telar.yml` lo recoge, levanta **SearXNG**
+   (metabuscador de código abierto) en la propia máquina del runner, descarga
+   las páginas candidatas y extrae su texto.
+3. `telar/pipeline/investigar.py` le pasa **una página por vez** a un modelo de
+   pesos abiertos (`openai/gpt-oss-120b` por omisión, servido por Groq) y le
+   pide extraer afirmaciones **solo de ese texto**.
+4. Escribe `data/registro.json` y comenta el issue.
+
+**Por qué el modelo no puede inventar fuentes.** Nunca se le pregunta de dónde
+sale un dato: el programa procesa una página a la vez y estampa él mismo la URL
+de la página que le dio el texto. Un vínculo cuyo tipo, contraparte o
+procedencia no pase la validación se descarta antes de escribir. El resultado
+tiene menos vínculos que con un modelo grande, y ninguno sin respaldo.
+
+Qué hace falta para encenderlo:
+
+- El secreto `GROQ_API_KEY` en el repositorio (cuenta gratuita). La variable
+  `TELAR_MODELO` permite cambiar a `openai/gpt-oss-20b` o `qwen/qwen3.8-27b`.
+- Los minutos de Actions son gratuitos en repositorios públicos.
+
+El flujo solo atiende issues abiertos por el dueño o colaboradores del
+repositorio: el repositorio es público y, sin ese filtro, cualquiera podría
+encargar la ficha de una persona y publicarla aquí.
+
 ## Archivos
 
 - `index.html` — la aplicación completa, sin dependencias externas.
 - `data/world.json` — contornos de costa, fronteras y lagos, compartido con NEREO.
+- `pipeline/investigar.py` — la investigación con el modelo abierto.
+- `../.github/workflows/telar.yml` — el flujo que la ejecuta.
