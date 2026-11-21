@@ -1178,6 +1178,13 @@ function claimEl(v, fromPersona){
   }
   return box;
 }
+function buscarWeb(q,tipo){
+  q=String(q||"").trim(); if(!q) return;
+  var u = tipo==="noticias" ? "https://news.google.com/search?q="+encodeURIComponent(q)
+    : tipo==="registro" ? "https://duckduckgo.com/?q="+encodeURIComponent(q+" (registro OR directorio OR memoria OR declaración OR boletín oficial)")
+    : "https://duckduckgo.com/?q="+encodeURIComponent(q);
+  try{ window.open(u,"_blank","noopener,noreferrer"); }catch(e){ toast("No se pudo abrir la búsqueda.",1); }
+}
 function renderDossier(){
   var d=$("dossier"), b=$("dsBody");
   if(!sel){ d.hidden=true; return; }
@@ -1213,6 +1220,14 @@ function renderDossier(){
       el("button",{class:"mini",type:"button",text: MODE==="mapa"?"CENTRAR EN EL MAPA":"VER EN EL MAPA",
         onclick:function(){ if(MODE!=="mapa") setMode("mapa"); centerOn(sel); }})]));
   }
+
+  var _qb = sel.label + (rec.pais ? " "+rec.pais : "");
+  b.appendChild(el("div",{class:"ds-sec",style:"padding:8px 11px;display:flex;gap:6px;flex-wrap:wrap;align-items:center"},[
+    el("span",{style:"font-size:calc(7.5px * var(--k));letter-spacing:.22em;color:var(--txt-faint);width:100%;margin-bottom:3px",text:"BUSCAR EN LA WEB"}),
+    el("button",{class:"mini",type:"button",text:"WEB",onclick:function(){ buscarWeb(_qb,"web"); }}),
+    el("button",{class:"mini",type:"button",text:"NOTICIAS",onclick:function(){ buscarWeb(_qb,"noticias"); }}),
+    el("button",{class:"mini",type:"button",text:"REGISTROS",onclick:function(){ buscarWeb(_qb,"registro"); }})
+  ]));
 
   if(isP && Array.isArray(rec.alias) && rec.alias.length)
     b.appendChild(el("div",{class:"ds-note",text:"También: "+rec.alias.join(", ")}));
