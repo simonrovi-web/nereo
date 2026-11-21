@@ -1,0 +1,1915 @@
+{
+ "personas": {
+  "sebastian-pinera-echenique": {
+   "nombre": "Sebastián Piñera Echenique",
+   "rolPublico": "Presidente de la República de Chile",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "alias": [],
+   "resumen": "Sebastián Piñera fue presidente de Chile en los períodos 2010‑2014 y 2018‑2022. Además, fue senador (1990‑1998) y ocupó cargos internacionales como presidente pro tempore de la CELAC (2011‑2013) y de la Alianza del Pacífico (2019‑2020). Sebastián Piñera Echenique (1 de diciembre de 1949 – 6 de febrero de 2024) fue presidente de Chile entre 2010‑2014 y 2018‑2022 y senador por Santiago Oriente (1990‑1998). Además, es doctor en Economía, empresario y ha ocupado cargos en diversas empresas y organizaciones.",
+   "estado": "en curso",
+   "creado": "2026-11-21T03:39:59Z",
+   "actualizado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  }
+ },
+ "organizaciones": {
+  "republica-de-chile": {
+   "nombre": "República de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "comunidad-de-estados-latinoamericanos-y-caribenos": {
+   "nombre": "Comunidad de Estados Latinoamericanos y Caribeños",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "foro-para-el-progreso-de-america-del-sur": {
+   "nombre": "Foro para el Progreso de América del Sur",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "alianza-del-pacifico": {
+   "nombre": "Alianza del Pacífico",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "renovacion-nacional": {
+   "nombre": "Renovación Nacional",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "fortuna-personal": {
+   "nombre": "Fortuna personal",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "chile": {
+   "nombre": "Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "senado-de-chile": {
+   "nombre": "Senado de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "banco-de-talca": {
+   "nombre": "Banco de Talca",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "citicorp-chile": {
+   "nombre": "Citicorp Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "bancard-s-a": {
+   "nombre": "Bancard S.A.",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "lan-chile": {
+   "nombre": "Lan Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "entel-s-a": {
+   "nombre": "Entel S.A.",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "chilevision": {
+   "nombre": "ChileVisión",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "cecilia-morel-montes": {
+   "nombre": "Cecilia Morel Montes",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "magdalena-echenique-rozas": {
+   "nombre": "Magdalena Echenique Rozas",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "jose-pinera-carvallo": {
+   "nombre": "José Piñera Carvallo",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "pontificia-universidad-catolica-de-chile": {
+   "nombre": "Pontificia Universidad Católica de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "universidad-de-chile": {
+   "nombre": "Universidad de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "banco-interamericano-de-desarrollo-bid": {
+   "nombre": "Banco Interamericano de Desarrollo (BID)",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "banco-mundial": {
+   "nombre": "Banco Mundial",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "comision-economica-para-america-latina-y-el-caribe-cepal": {
+   "nombre": "Comisión Económica para América Latina y el Caribe (CEPAL)",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "blanco-y-negro": {
+   "nombre": "Blanco y Negro",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "clinica-las-condes": {
+   "nombre": "Clínica Las Condes",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "fundacion-futuro": {
+   "nombre": "Fundación Futuro",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "magdalena-cecilia-sebastian-cristobal-pinera": {
+   "nombre": "Magdalena, Cecilia, Sebastián, Cristóbal Piñera",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "universidad-de-harvard": {
+   "nombre": "Universidad de Harvard",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "prosur": {
+   "nombre": "PROSUR",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "national-renewal": {
+   "nombre": "National Renewal",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "senate-of-chile": {
+   "nombre": "Senate of Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "facultad-de-economia-pontificia-universidad-catolica-de-chil": {
+   "nombre": "Facultad de Economía, Pontificia Universidad Católica de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "fundacion-de-egresados-de-la-facultad-de-economia-y-administ": {
+   "nombre": "Fundación de Egresados de la Facultad de Economía y Administración",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "estado-de-chile": {
+   "nombre": "Estado de Chile",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "colo-colo": {
+   "nombre": "Colo‑Colo",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "forbes": {
+   "nombre": "Forbes",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "cecilia-morel": {
+   "nombre": "Cecilia Morel",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "universidades-chilenas": {
+   "nombre": "Universidades chilenas",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "constructora-tolten": {
+   "nombre": "Constructora Toltén",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "lan": {
+   "nombre": "LAN",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "bancard": {
+   "nombre": "Bancard",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "entel": {
+   "nombre": "Entel",
+   "tipo": "otra",
+   "pais": "Chile",
+   "ciudad": "",
+   "lat": null,
+   "lon": null,
+   "resumen": "",
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  }
+ },
+ "vinculos": {
+  "sebastian-pinera-echenique-republica-de-chile-cargo-2010": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:republica-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente",
+   "desde": "2010",
+   "hasta": "2014",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Ejerció como presidente de la República de Chile del 11 de marzo de 2010 al 11 de marzo de 2014.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-republica-de-chile-cargo-2018": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:republica-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente",
+   "desde": "2018",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Ejerció como presidente de la República de Chile del 11 de marzo de 2018 al 11 de marzo de 2022.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-comunidad-de-estados-latinoameric": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:comunidad-de-estados-latinoamericanos-y-caribenos",
+   "tipo": "cargo",
+   "etiqueta": "Presidente pro tempore",
+   "desde": "2011",
+   "hasta": "2013",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue presidente pro tempore de la CELAC del 3 de diciembre de 2011 al 28 de enero de 2013.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-foro-para-el-progreso-de-america-": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:foro-para-el-progreso-de-america-del-sur",
+   "tipo": "cargo",
+   "etiqueta": "Presidente pro tempore",
+   "desde": "2019",
+   "hasta": "2020",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue presidente pro tempore del PROSUR del 22 de marzo de 2019 al 12 de diciembre de 2020.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-alianza-del-pacifico-cargo-2019": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:alianza-del-pacifico",
+   "tipo": "cargo",
+   "etiqueta": "Presidente pro tempore",
+   "desde": "2019",
+   "hasta": "2020",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue presidente pro tempore de la Alianza del Pacífico del 6 de julio de 2019 al 11 de diciembre de 2020.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-republica-de-chile-cargo-1990": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:republica-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Senador",
+   "desde": "1990",
+   "hasta": "1998",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se desempeñó como senador por la circunscripción Santiago Oriente del 11 de marzo de 1990 al 11 de marzo de 1998.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-renovacion-nacional-afiliacion-19": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:renovacion-nacional",
+   "tipo": "afiliacion",
+   "etiqueta": "Miembro",
+   "desde": "1989",
+   "hasta": "2010",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Militó en el partido Renovación Nacional entre 1989 y 2010.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-renovacion-nacional-cargo-2001": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:renovacion-nacional",
+   "tipo": "cargo",
+   "etiqueta": "Presidente del partido",
+   "desde": "2001",
+   "hasta": "2004",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Presidió el partido Renovación Nacional entre 2001 y 2004.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-fortuna-personal-dinero-2017": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:fortuna-personal",
+   "tipo": "dinero",
+   "etiqueta": "Patrimonio",
+   "desde": "2017",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 2017 su capital estimado era de 2700 millones de dólares según la revista Forbes.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, la enciclopedia libre",
+     "https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chile-cargo-2010": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente de la República",
+   "desde": "2010",
+   "hasta": "2014",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Presidente de la República desde el 11 de marzo de 2010 al 11 de marzo de 2014.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chile-cargo-2018": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente de la República",
+   "desde": "2018",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Presidente de la República entre el 11 de marzo de 2018 al 11 de marzo de 2022.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-senado-de-chile-cargo-1990": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:senado-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Senador por la 8ª Circunscripción Santiago Oriente",
+   "desde": "1990",
+   "hasta": "1998",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Senador por la 8ª Circunscripción Santiago Oriente, periodo 1990‑1998.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-banco-de-talca-cargo-1978": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:banco-de-talca",
+   "tipo": "cargo",
+   "etiqueta": "Gerente general",
+   "desde": "1978",
+   "hasta": "1980",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Asumió la gerencia general del Banco de Talca en 1978 y la dejó en 1980.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-citicorp-chile-cargo-1980": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:citicorp-chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente y gerente general",
+   "desde": "1980",
+   "hasta": "1987",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue presidente y gerente general de Citicorp Chile entre 1980 y 1987.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-bancard-s-a-empresa-1979": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:bancard-s-a",
+   "tipo": "empresa",
+   "etiqueta": "Fundador",
+   "desde": "1979",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Creó Bancard S.A. en 1979, sociedad que introdujo las tarjetas Visa y MasterCard en Chile.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-lan-chile-empresa-1994": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:lan-chile",
+   "tipo": "empresa",
+   "etiqueta": "Accionista (16%)",
+   "desde": "1994",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1994 compró el 16 % de la aerolínea Lan Chile.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-entel-s-a-empresa-1999": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:entel-s-a",
+   "tipo": "empresa",
+   "etiqueta": "Accionista",
+   "desde": "1999",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Ingresó a la propiedad de la empresa de telecomunicaciones Entel S.A. en 1999.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chilevision-empresa-2005": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chilevision",
+   "tipo": "empresa",
+   "etiqueta": "Propietario",
+   "desde": "2005",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Compró el canal de televisión ChileVisión en 2005.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-cecilia-morel-montes-personal": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:cecilia-morel-montes",
+   "tipo": "personal",
+   "etiqueta": "Esposo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Casado con Cecilia Morel Montes.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-magdalena-echenique-rozas-persona": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:magdalena-echenique-rozas",
+   "tipo": "personal",
+   "etiqueta": "fillo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fillo de Magdalena Echenique Rozas.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-jose-pinera-carvallo-personal": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:jose-pinera-carvallo",
+   "tipo": "personal",
+   "etiqueta": "Hijo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Hijo de José Piñera Carvallo, ingeniero y exembajador.",
+   "fuentes": [
+    [
+     "Reseña Biográfica Sebastián Piñera Echenique - Reseñas biográficas ...",
+     "https://www.bcn.cl/historiapolitica/resenas_biograficas/wiki/Sebasti%C3%A1n_Pi%C3%B1era_Echenique"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-pontificia-universidad-catolica-d": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:pontificia-universidad-catolica-de-chile",
+   "tipo": "afiliacion",
+   "etiqueta": "Estudiante de Ingeniería Comercial",
+   "desde": "1968",
+   "hasta": "1972",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Ingresó a estudiar Ingeniería Comercial con mención en Economía en 1968 y egresó en 1972.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-universidad-de-chile-cargo-1971": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:universidad-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "profesor de economía",
+   "desde": "1971",
+   "hasta": "1973",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue profesor de economía en la Universidad de Chile entre 1971 y 1973.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-banco-interamericano-de-desarroll": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:banco-interamericano-de-desarrollo-bid",
+   "tipo": "cargo",
+   "etiqueta": "Consultor",
+   "desde": "1974",
+   "hasta": "1976",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue consultor del BID durante 1974 a 1976.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-banco-mundial-empresa-1975": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:banco-mundial",
+   "tipo": "empresa",
+   "etiqueta": "consultor",
+   "desde": "1975",
+   "hasta": "1978",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue consultor del Banco Mundial entre 1975 y 1978.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-comision-economica-para-america-l": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:comision-economica-para-america-latina-y-el-caribe-cepal",
+   "tipo": "cargo",
+   "etiqueta": "consultor",
+   "desde": "1976",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó en la Comisión Económica para América Latina y el Caribe en 1976.",
+   "fuentes": [
+    [
+     "Sebastián Piñera | Nueva Economía Fórum | Organizacíon ...",
+     "https://www.nuevaeconomiaforum.org/ponentes/sebastian-pinera"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-bancard-s-a-empresa-1978": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:bancard-s-a",
+   "tipo": "empresa",
+   "etiqueta": "fundador y representante de Visa y Mastercard",
+   "desde": "1978",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Creó Bancard S.A. en 1978 y obtuvo la representación para Chile de las tarjetas de crédito Visa y Mastercard.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-citicorp-chile-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:citicorp-chile",
+   "tipo": "empresa",
+   "etiqueta": "gerente general y presidente",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue gerente general y presidente de Citicorp-Chile.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-lan-chile-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:lan-chile",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó como accionista en Lan Chile.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chilevision-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chilevision",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó como accionista en Chilevisión.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-blanco-y-negro-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:blanco-y-negro",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó como accionista en Blanco y Negro.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-clinica-las-condes-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:clinica-las-condes",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó como accionista en Clínica Las Condes.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-fundacion-futuro-afiliacion-1993": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:fundacion-futuro",
+   "tipo": "afiliacion",
+   "etiqueta": "fundador",
+   "desde": "1993",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Creó la Fundación Futuro en 1993 para aportar educación y cultura a los sectores vulnerables.",
+   "fuentes": [
+    [
+     "Biografía Sebastián Piñera Echenique (1949-2024) - SP",
+     "https://www.sebastianpinera.cl/biografia-pinera/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-jose-pinera-carvallo-personal-459": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:jose-pinera-carvallo",
+   "tipo": "personal",
+   "etiqueta": "padre",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Hijo de José Piñera Carvallo (1917-1991).",
+   "fuentes": [
+    [
+     "Sebastián Piñera | Nueva Economía Fórum | Organizacíon ...",
+     "https://www.nuevaeconomiaforum.org/ponentes/sebastian-pinera"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-cecilia-morel-montes-personal-197": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:cecilia-morel-montes",
+   "tipo": "personal",
+   "etiqueta": "cónyuge",
+   "desde": "1973",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Se casó con Cecilia Morel Montes en 1973.",
+   "fuentes": [
+    [
+     "Sebastián Piñera | Nueva Economía Fórum | Organizacíon ...",
+     "https://www.nuevaeconomiaforum.org/ponentes/sebastian-pinera"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-magdalena-cecilia-sebastian-crist": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:magdalena-cecilia-sebastian-cristobal-pinera",
+   "tipo": "personal",
+   "etiqueta": "hijos",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Tiene cuatro hijos: Magdalena (1975), Cecilia (1978), Sebastián (1982) y Cristóbal (1984).",
+   "fuentes": [
+    [
+     "Sebastián Piñera | Nueva Economía Fórum | Organizacíon ...",
+     "https://www.nuevaeconomiaforum.org/ponentes/sebastian-pinera"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-universidad-de-harvard-afiliacion": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:universidad-de-harvard",
+   "tipo": "afiliacion",
+   "etiqueta": "Doctorado (PhD)",
+   "desde": "1973",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Viajó a Estados Unidos a realizar su doctorado en la Universidad de Harvard, donde obtuvo su grado de PhD.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-banco-mundial-cargo-1975": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:banco-mundial",
+   "tipo": "cargo",
+   "etiqueta": "consultor",
+   "desde": "1975",
+   "hasta": "1978",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue consultor del Banco Mundial entre 1975 y 1978.",
+   "fuentes": [
+    [
+     "Sebastián Piñera | Nueva Economía Fórum | Organizacíon ...",
+     "https://www.nuevaeconomiaforum.org/ponentes/sebastian-pinera"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-universidad-de-chile-cargo-1976": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:universidad-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "docente",
+   "desde": "1976",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Impartió clases en la Facultad de Economía de la Universidad de Chile a partir de 1976.",
+   "fuentes": [
+    [
+     "Sebastián Piñera | Nueva Economía Fórum | Organizacíon ...",
+     "https://www.nuevaeconomiaforum.org/ponentes/sebastian-pinera"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chile-cargo-2010-1682": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chile",
+   "tipo": "cargo",
+   "etiqueta": "President (35th)",
+   "desde": "2010",
+   "hasta": "2014",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Served as President of Chile from 11 March 2010 to 11 March 2014.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia",
+     "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chile-cargo-2018-1479": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chile",
+   "tipo": "cargo",
+   "etiqueta": "President (37th)",
+   "desde": "2018",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Served as President of Chile from 11 March 2018 to 11 March 2022.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia",
+     "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-prosur-cargo-2019": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:prosur",
+   "tipo": "cargo",
+   "etiqueta": "President pro tempore",
+   "desde": "2019",
+   "hasta": "2020",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Held the position of President pro tempore of PROSUR from 22 March 2019 to 12 December 2020.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia",
+     "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-national-renewal-cargo-2001": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:national-renewal",
+   "tipo": "cargo",
+   "etiqueta": "Leader",
+   "desde": "2001",
+   "hasta": "2004",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Served as Leader of the National Renewal party from 26 May 2001 to 10 March 2004.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia",
+     "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-senate-of-chile-cargo-1990": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:senate-of-chile",
+   "tipo": "cargo",
+   "etiqueta": "Senator (East Santiago district)",
+   "desde": "1990",
+   "hasta": "1998",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Served as a Senator for the East Santiago district from 11 March 1990 to 11 March 1998.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia",
+     "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-national-renewal-afiliacion-1989": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:national-renewal",
+   "tipo": "afiliacion",
+   "etiqueta": "Member",
+   "desde": "1989",
+   "hasta": "2010",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Member of the National Renewal party from 1989 to 2010.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia",
+     "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-facultad-de-economia-pontificia-u": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:facultad-de-economia-pontificia-universidad-catolica-de-chil",
+   "tipo": "cargo",
+   "etiqueta": "Académico",
+   "desde": "",
+   "hasta": "1990",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Volvió a la Facultad como académico hasta 1990.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-fundacion-de-egresados-de-la-facu": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:fundacion-de-egresados-de-la-facultad-de-economia-y-administ",
+   "tipo": "personal",
+   "etiqueta": "Premio a la Trayectoria de Ingeniería Comercial UC",
+   "desde": "2010",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 2010 recibió el Premio a la Trayectoria de Ingeniería Comercial UC.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-republica-de-chile-cargo-2010-598": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:republica-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente",
+   "desde": "2010",
+   "hasta": "2014",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Llegó a La Moneda en 2010; su primer periodo como Presidente duró hasta 2014.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-republica-de-chile-cargo-2018-969": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:republica-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente",
+   "desde": "2018",
+   "hasta": "2021",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 2018 retornó a La Moneda para ser Presidente por segunda vez hasta 2021.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-senado-de-chile-cargo-1990-2967": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:senado-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Senador por Santiago Oriente",
+   "desde": "1990",
+   "hasta": "1998",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue Senador por la circunscripción Santiago Oriente desde 1990 hasta 1998.",
+   "fuentes": [
+    [
+     "A los 74 años falleció el destacado Ingeniero Comercial UC Sebastián ...",
+     "https://economiayadministracion.uc.cl/noticia/a-los-74-anos-fallecio-el-destacado-ingeniero-comercial-uc-sebastian-pinera-echenique/"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-estado-de-chile-cargo-2010": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:estado-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "presidente de Chile",
+   "desde": "2010",
+   "hasta": "2014",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Foi presidente de Chile no período 2010‑2014.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-estado-de-chile-cargo-2018": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:estado-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "presidente de Chile",
+   "desde": "2018",
+   "hasta": "2022",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Foi presidente de Chile entre 2018 e 2022.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-renovacion-nacional-cargo-1990": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:renovacion-nacional",
+   "tipo": "cargo",
+   "etiqueta": "senador",
+   "desde": "1990",
+   "hasta": "1998",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Exerceu o cargo de senador de Renovación Nacional entre 1990 e 1998 representando o distrito Santiago Oriente.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-renovacion-nacional-afiliacion": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:renovacion-nacional",
+   "tipo": "afiliacion",
+   "etiqueta": "miembro del partido",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Foi escollido senador de Renovación Nacional.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-lan-chile-empresa-1994-192": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:lan-chile",
+   "tipo": "empresa",
+   "etiqueta": "accionista mayoritario",
+   "desde": "1994",
+   "hasta": "2010",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1994 mercó el 16 % del capital de LAN Chile a SAS y acabó siendo accionista mayoritario, vendiendo su participación durante los primeros meses de su presidencia en 2010.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-entel-s-a-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:entel-s-a",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Tamén foi accionista da empresa de telecomunicacións Entel S.A.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-colo-colo-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:colo-colo",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Mercó o club deportivo Colo‑Colo.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chilevision-empresa-5343": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chilevision",
+   "tipo": "empresa",
+   "etiqueta": "accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Foi accionista da cadea de televisión Chilevisión.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-forbes-dinero": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:forbes",
+   "tipo": "dinero",
+   "etiqueta": "fortuna estimada",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Forbes estima a súa fortuna en arredor dos 2 700 millóns de dólares.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-jose-pinera-carvallo-personal-515": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:jose-pinera-carvallo",
+   "tipo": "personal",
+   "etiqueta": "fillo",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fillo de José Piñera Carvallo.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-cecilia-morel-personal-1973": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:cecilia-morel",
+   "tipo": "personal",
+   "etiqueta": "cónyuge",
+   "desde": "1973",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Casou con Cecilia Morel en decembro de 1973.",
+   "fuentes": [
+    [
+     "Sebastián Piñera - Wikipedia, a enciclopedia libre",
+     "https://gl.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chile-cargo": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chile",
+   "tipo": "cargo",
+   "etiqueta": "Presidente de la República",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Sebastián Piñera es el actual presidente chileno y el primer presidente derechista en gobernar el país tras el retorno a la democracia, ocupando el puesto dos veces.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-senado-de-chile-cargo": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:senado-de-chile",
+   "tipo": "cargo",
+   "etiqueta": "Senador",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Al ganar como candidato independiente como senador, se hizo militante de Renovación Nacional.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-banco-mundial-cargo-1975-8840": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:banco-mundial",
+   "tipo": "cargo",
+   "etiqueta": "Consultor",
+   "desde": "1975",
+   "hasta": "1978",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fue consultor del Banco Mundial entre 1975 y 1978.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-universidades-chilenas-cargo-1971": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:universidades-chilenas",
+   "tipo": "cargo",
+   "etiqueta": "Profesor universitario",
+   "desde": "1971",
+   "hasta": "1990",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Entre 1971 y 1990, Piñera fue profesor en la educación superior, impartiendo clases en al menos tres universidades chilenas.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-constructora-tolten-empresa-1978": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:constructora-tolten",
+   "tipo": "empresa",
+   "etiqueta": "Fundador",
+   "desde": "1978",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Fundó la empresa inmobiliaria Constructora Toltén en 1978.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-banco-de-talca-empresa-1978": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:banco-de-talca",
+   "tipo": "empresa",
+   "etiqueta": "Gerente general y accionista",
+   "desde": "1978",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "En 1978 asumió como gerente general del Banco de Talca, pasando luego a ser accionista.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-lan-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:lan",
+   "tipo": "empresa",
+   "etiqueta": "Accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Participó como accionista en la aerolínea LAN.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-chilevision-empresa-4195": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:chilevision",
+   "tipo": "empresa",
+   "etiqueta": "Propietario",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Poseedor del canal nacional Chilevisión.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-blanco-y-negro-empresa-772": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:blanco-y-negro",
+   "tipo": "empresa",
+   "etiqueta": "Accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Accionista de la sociedad anónima Blanco y Negro, que dirige al club de fútbol Colo‑Colo.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-bancard-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:bancard",
+   "tipo": "empresa",
+   "etiqueta": "Accionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Accionista de Bancard, la sociedad que introdujo las tarjetas Visa y Mastercard en Chile.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  },
+  "sebastian-pinera-echenique-entel-empresa": {
+   "personaId": "sebastian-pinera-echenique",
+   "contraparte": "org:entel",
+   "tipo": "empresa",
+   "etiqueta": "Inversionista",
+   "desde": "",
+   "hasta": "",
+   "monto": "",
+   "moneda": "",
+   "registro": "prensa",
+   "detalle": "Inversionista en la firma de telecomunicaciones Entel.",
+   "fuentes": [
+    [
+     "Sebastián Piñera quién es, empresas, polémicas y su ... - MILENIO",
+     "https://www.milenio.com/internacional/sebastian-pinera-quien-es-empresas-polemicas-gobierno-en-chile"
+    ]
+   ],
+   "creado": "2026-11-21T03:39:59Z",
+   "por": "flujo"
+  }
+ },
+ "generado": "2026-11-21T03:39:59Z",
+ "nota": "Registro de Telar. Fichas extraídas de páginas realmente descargadas; cada vínculo lleva la URL de la página de la que salió."
+}
