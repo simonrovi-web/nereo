@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import re
 from datetime import datetime, timedelta, timezone
 
@@ -41,6 +42,30 @@ def _texto(d, *camino, defecto=""):
     return d if isinstance(d, str) and d else defecto
 
 
+def _coord(d, *camino):
+    """Número desde un camino de claves; LL2 devuelve lat/lon como texto o número."""
+    for k in camino:
+        if not isinstance(d, dict):
+            return None
+        d = d.get(k)
+    try:
+        v = float(d)
+    except (TypeError, ValueError):
+        return None
+    return v if -90.1 <= v <= 90.1 or abs(v) <= 180.1 else None
+
+
+def distancia_km(lat1, lon1, lat2, lon2) -> float | None:
+    """Distancia sobre el globo, en kilómetros. None si falta alguna coordenada."""
+    if None in (lat1, lon1, lat2, lon2):
+        return None
+    r = 6371.0
+    f1, f2 = math.radians(lat1), math.radians(lat2)
+    df, dl = math.radians(lat2 - lat1), math.radians(lon2 - lon1)
+    a = math.sin(df / 2) ** 2 + math.cos(f1) * math.cos(f2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
+
+
 def normalizar(crudo: dict) -> dict | None:
     """Reduce un lanzamiento de LL2 a los campos que usa el descarte.
 
@@ -60,6 +85,8 @@ def normalizar(crudo: dict) -> dict | None:
         "sitio": _texto(crudo, "pad", "location", "name") or _texto(crudo, "pad", "name"),
         "pais": _texto(crudo, "pad", "country", "alpha_3_code") or _texto(crudo, "pad", "country_code"),
         "url": _texto(crudo, "url"),
+        "lat": _coord(crudo, "pad", "latitude"),
+        "lon": _coord(crudo, "pad", "longitude"),
         "starlink": bool(_STARLINK.search(nombre)),
     }
 
@@ -76,14 +103,18 @@ def _fecha(iso: str) -> datetime | None:
 
 
 # ─────────────────────────────────────────────────────────── coincidencias
-def coincidencias(lanzamientos: list[dict], cuando: datetime) -> list[dict]:
-    """Lanzamientos que podrían explicar algo visto en `cuando`.
+def coincidencias(lanzamientos: list[dict], cuando: datetime,
+                  lat: float | None = None, lon: float | None = None) -> list[dict]:
+    """Lanzamientos que podrían explicar algo visto en `cuando` desde (lat, lon).
 
     Dos ventanas distintas, por razones físicas distintas:
-    - cualquier lanzamiento, ±1 día: el ascenso y la pluma se ven esa noche;
-    - Starlink, hasta 72 h antes: el tren de satélites se ve los días siguientes.
+    - cualquier lanzamiento, ±1 día: el ascenso y la pluma se ven esa noche, y
+      solo desde relativamente cerca, así que además se filtra por distancia;
+    - Starlink, hasta 72 h antes y sin filtro de distancia: el tren de satélites
+      da la vuelta al mundo y se ve lejísimos del sitio de lanzamiento.
 
-    Función pura: no toca la red. `cuando` debe llevar zona horaria.
+    Si falta la coordenada del caso o la del pad, no se filtra por distancia y se
+    dice en el detalle que no se pudo comprobar. Función pura: no toca la red.
     """
     if cuando.tzinfo is None:
         cuando = cuando.replace(tzinfo=timezone.utc)
@@ -95,30 +126,44 @@ def coincidencias(lanzamientos: list[dict], cuando: datetime) -> list[dict]:
         if t is None:
             continue
         delta = cuando - t
-        es_starlink = bool(l.get("starlink"))
-        if es_starlink and timedelta(0) <= delta <= tren:
+        fuente = l.get("url") or CFG.ll2_base + "/launches/"
+        desde = f" desde {l['sitio']}" if l.get("sitio") else ""
+
+        if l.get("starlink") and timedelta(0) <= delta <= tren:
             horas = round(delta.total_seconds() / 3600)
             out.append({
                 "tipo": "starlink",
-                "detalle": f"{l['nombre']} despegó {horas} h antes del avistamiento"
-                           + (f" desde {l['sitio']}" if l.get("sitio") else "")
-                           + ". Los trenes de satélites se ven como una fila de puntos durante "
-                             "las noches siguientes al lanzamiento.",
-                "fuente": l.get("url") or CFG.ll2_base + "/launches/",
+                "detalle": f"{l['nombre']} despegó {horas} h antes del avistamiento{desde}. "
+                           "Los trenes de satélites se ven como una fila de puntos durante las "
+                           "noches siguientes al lanzamiento, y a gran distancia del sitio de "
+                           "despegue, así que la lejanía no lo descarta.",
+                "fuente": fuente,
             })
-        elif abs(delta) <= general:
-            cuando_txt = "el mismo día" if abs(delta) < timedelta(hours=12) else (
-                "el día anterior" if delta > timedelta(0) else "el día siguiente")
-            out.append({
-                "tipo": "lanzamiento",
-                "detalle": f"{l['nombre']}"
-                           + (f" ({l['cohete']})" if l.get("cohete") else "")
-                           + f" despegó {cuando_txt}"
-                           + (f" desde {l['sitio']}" if l.get("sitio") else "")
-                           + f", el {t.strftime('%d-%m-%Y a las %H:%M UTC')}."
-                             " Ninguna fuente lo vincula con el avistamiento.",
-                "fuente": l.get("url") or CFG.ll2_base + "/launches/",
-            })
+            continue
+
+        if abs(delta) > general:
+            continue
+
+        km = distancia_km(lat, lon, l.get("lat"), l.get("lon"))
+        if km is not None and km > CFG.visibilidad_km:
+            continue                                   # imposible de ver desde ahí
+        if km is None:
+            nota_dist = (" No se pudo comprobar si era visible desde el lugar del avistamiento, "
+                         "porque falta la coordenada del caso o la del sitio de lanzamiento.")
+        else:
+            nota_dist = f" El sitio de lanzamiento está a unos {round(km):,} km del avistamiento.".replace(",", ".")
+
+        cuando_txt = ("el mismo día" if abs(delta) < timedelta(hours=12)
+                      else "el día anterior" if delta > timedelta(0) else "el día siguiente")
+        out.append({
+            "tipo": "lanzamiento",
+            "detalle": f"{l['nombre']}"
+                       + (f" ({l['cohete']})" if l.get("cohete") else "")
+                       + f" despegó {cuando_txt}{desde}, el {t.strftime('%d-%m-%Y a las %H:%M UTC')}."
+                       + nota_dist
+                       + " Ninguna fuente lo vincula con el avistamiento.",
+            "fuente": fuente,
+        })
     return out
 
 
@@ -153,8 +198,10 @@ def obtener(sesion=None) -> dict:
     import requests
 
     s = sesion or requests
+    # sin mode=list: ese modo no devuelve el pad, y sin las coordenadas del sitio
+    # de lanzamiento no se puede juzgar si algo pudo verse desde donde se reportó.
     url = (f"{CFG.ll2_base}/launches/previous/"
-           f"?ordering=-net&limit={CFG.ll2_limite}&mode=list&include_suborbital=false")
+           f"?ordering=-net&limit={CFG.ll2_limite}&include_suborbital=false")
     try:
         r = s.get(url, timeout=CFG.ll2_timeout, headers={"User-Agent": CFG.agente})
         if r.status_code == 429:

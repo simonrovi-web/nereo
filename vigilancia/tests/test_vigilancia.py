@@ -194,3 +194,105 @@ def test_revisar_usa_la_hora_cuando_se_da():
     """A las 02:00 del 23 el tren sigue dentro de las 72 h; a las 23:00 ya no."""
     assert any(c["tipo"] == "starlink" for c in descarte.revisar(_cal(), "2026-11-23", "02:00")["descarte"])
     assert not any(c["tipo"] == "starlink" for c in descarte.revisar(_cal(), "2026-11-23", "23:00")["descarte"])
+
+
+# ─────────────────────────────────────────────── pertinencia: distancia
+VANDENBERG = dict(CRUDO, name="Falcon 9 | NROL-136",
+                  pad={"location": {"name": "Vandenberg SFB"}, "latitude": "34.632",
+                       "longitude": "-120.611", "country": {"alpha_3_code": "USA"}})
+JIUQUAN = dict(CRUDO, name="Long March 2D | Shijian 24",
+               pad={"location": {"name": "Jiuquan"}, "latitude": 40.958,
+                    "longitude": 100.291, "country": {"alpha_3_code": "CHN"}})
+
+CUANDO = datetime(2026, 11, 20, 4, 0, tzinfo=timezone.utc)
+
+
+def test_normalizar_extrae_las_coordenadas_del_pad():
+    n = lanzamientos.normalizar(VANDENBERG)
+    assert round(n["lat"], 3) == 34.632 and round(n["lon"], 3) == -120.611
+
+
+def test_distancia_km_conocida():
+    """Vandenberg a Jiuquan, por el arco mayor del globo: unos 10.600 km."""
+    d = lanzamientos.distancia_km(34.632, -120.611, 40.958, 100.291)
+    assert 10400 < d < 10800
+
+
+def test_distancia_km_sin_coordenada_es_none():
+    assert lanzamientos.distancia_km(None, -120.6, 40.9, 100.2) is None
+
+
+def test_lanzamiento_lejano_se_descarta():
+    """Un Long March desde Jiuquan no explica nada visto en Nueva Zelanda."""
+    l = [lanzamientos.normalizar(JIUQUAN)]
+    assert lanzamientos.coincidencias(l, CUANDO, -34.75, 172.85) == []
+
+
+def test_lanzamiento_cercano_se_conserva_y_dice_la_distancia():
+    l = [lanzamientos.normalizar(VANDENBERG)]
+    c = lanzamientos.coincidencias(l, CUANDO, 32.83, -117.27)      # San Diego
+    assert len(c) == 1 and c[0]["tipo"] == "lanzamiento"
+    assert "km del avistamiento" in c[0]["detalle"]
+
+
+def test_sin_coordenadas_se_conserva_pero_se_advierte():
+    l = [lanzamientos.normalizar(JIUQUAN)]
+    c = lanzamientos.coincidencias(l, CUANDO)
+    assert len(c) == 1 and "No se pudo comprobar si era visible" in c[0]["detalle"]
+
+
+def test_starlink_no_se_filtra_por_distancia():
+    """Un tren se ve a miles de km del pad, así que la lejanía no lo descarta."""
+    l = [lanzamientos.normalizar(dict(CRUDO, pad=VANDENBERG["pad"]))]
+    c = lanzamientos.coincidencias(l, datetime(2026, 11, 22, 4, 0, tzinfo=timezone.utc),
+                                   -34.75, 172.85)
+    assert len(c) == 1 and c[0]["tipo"] == "starlink"
+    assert "la lejanía no lo descarta" in c[0]["detalle"]
+
+
+# ─────────────────────────────────────────────── pertinencia: rareza
+@pytest.mark.parametrize("rareza", ["mar", "montaje", "natural"])
+def test_rareza_sin_descarte_no_recibe_coincidencias(rareza):
+    """Un cohete no explica cachalotes varados, un video con IA ni un halo solar."""
+    r = descarte.revisar(_cal(), "2026-11-22", rareza=rareza)
+    assert r["descarte"] == [] and r["descarteRevisado"] is False
+    assert any("no aplica" in n for n in r["notas"])
+
+
+@pytest.mark.parametrize("rareza", ["cielo", None])
+def test_rareza_cielo_y_avistamiento_clasico_si_se_cruzan(rareza):
+    r = descarte.revisar(_cal(), "2026-11-22", rareza=rareza)
+    assert r["descarte"] and r["descarteRevisado"] is True
+
+
+# ─────────────────────────────────────────────── descubrimiento del panorama
+def test_meteoros_cae_al_indice_si_falla_wp(monkeypatch, tmp_path):
+    panorama = "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-21-27-2026/"
+
+    class Sesion:
+        def get(self, url, **k):
+            class R:
+                status_code = 200
+                def raise_for_status(self): pass
+            r = R()
+            if "wp-json" in url:
+                raise OSError("wp-json caído")
+            if "articles" in url:
+                r.text = f'<a href="{panorama}">x</a>'
+            else:
+                r.text = HTML
+            return r
+
+    monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
+    r = meteoros.obtener(date(2026, 11, 24), sesion=Sesion())
+    assert r["origen"] == "api" and r["via"] == "índice" and len(r["lluvias"]) == 2
+
+
+def test_meteoros_informa_por_que_falla(monkeypatch, tmp_path):
+    class Sesion:
+        def get(self, *a, **k):
+            raise OSError("sin red")
+
+    monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
+    r = meteoros.obtener(date(2026, 11, 24), sesion=Sesion())
+    assert r["origen"] == "cache" and "wp-json" in r["nota"] and "índice" in r["nota"]

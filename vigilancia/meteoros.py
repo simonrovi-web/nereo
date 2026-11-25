@@ -218,23 +218,59 @@ def _guardar(datos: dict) -> None:
     p.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def _urls_desde_wp(s, cab) -> list[str]:
+    """Panoramas vía la API REST de WordPress del sitio de la AMS.
+
+    Es mucho más robusto que raspar el índice: devuelve JSON con el enlace de
+    cada entrada y no depende de cómo esté maquetada la portada.
+    """
+    r = s.get(CFG.ams_wp, timeout=CFG.ams_timeout, headers=cab,
+              params={"search": "meteor activity outlook", "per_page": 20,
+                      "orderby": "date", "order": "desc", "_fields": "link"})
+    r.raise_for_status()
+    datos = r.json()
+    if not isinstance(datos, list):
+        raise RuntimeError("la API de WordPress no devolvió una lista")
+    return [d["link"] for d in datos if isinstance(d, dict) and isinstance(d.get("link"), str)]
+
+
+def _urls_desde_indice(s, cab) -> list[str]:
+    """Respaldo: los enlaces de panorama que aparezcan en el índice de artículos."""
+    r = s.get(CFG.ams_indice, timeout=CFG.ams_timeout, headers=cab)
+    r.raise_for_status()
+    return list(dict.fromkeys(_ENLACE.findall(r.text)))
+
+
 def obtener(dia: date, sesion=None) -> dict:
     """Busca el panorama de la AMS que cubre `dia`, lo parsea y lo cachea.
 
     Devuelve {"lluvias": [...], "url": str|None, "obtenido": iso,
-              "origen": "api"|"cache", "nota": str|None}. No lanza por red.
+              "origen": "api"|"cache", "via": str|None, "nota": str|None}.
+    No lanza por red: degrada a la caché del repositorio.
     """
     import requests
 
     s = sesion or requests
     cab = {"User-Agent": CFG.agente}
+    intentos, urls, via = [], [], None
+    for nombre, fn in (("wp-json", _urls_desde_wp), ("índice", _urls_desde_indice)):
+        try:
+            encontradas = fn(s, cab)
+        except Exception as e:
+            intentos.append(f"{nombre}: {e}")
+            continue
+        if encontradas:
+            urls, via = encontradas, nombre
+            break
+        intentos.append(f"{nombre}: 0 enlaces de panorama")
+
     try:
-        r = s.get(CFG.ams_indice, timeout=CFG.ams_timeout, headers=cab)
-        r.raise_for_status()
-        urls = list(dict.fromkeys(_ENLACE.findall(r.text)))
+        if not urls:
+            raise RuntimeError("no se obtuvo ningún panorama (" + "; ".join(intentos) + ")")
         elegida = elegir_panorama(urls, dia)
         if not elegida:
-            raise RuntimeError("el índice de la AMS no ofrece un panorama que cubra la fecha")
+            raise RuntimeError(f"ninguno de los {len(urls)} panoramas de {via} cubre la fecha; "
+                               f"el primero es {urls[0]}")
         a = s.get(elegida, timeout=CFG.ams_timeout, headers=cab)
         a.raise_for_status()
         lluvias = parsear_lluvias(a.text)
@@ -244,12 +280,13 @@ def obtener(dia: date, sesion=None) -> dict:
         cache = leer_cache()
         nota = f"No se pudo leer el panorama de la AMS ({e}); se usa la caché del repositorio."
         log.warning(nota)
-        cache.update({"origen": "cache", "nota": nota})
+        cache.update({"origen": "cache", "via": via, "nota": nota})
         return cache
 
     datos = {
         "obtenido": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "url": elegida,
+        "via": via,
         "lluvias": lluvias,
     }
     _guardar(datos)

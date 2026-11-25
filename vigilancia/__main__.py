@@ -58,7 +58,8 @@ def main(argv: list[str]) -> int:
         print()
         con, sin = 0, 0
         for it in feed.get("items", []):
-            r = descarte.revisar(cal, it.get("fechaEvento", ""))
+            r = descarte.revisar(cal, it.get("fechaEvento", ""), None,
+                                 it.get("lat"), it.get("lon"), it.get("rareza"))
             if r["descarteRevisado"]:
                 con += 1
                 if r["descarte"]:

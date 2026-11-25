@@ -23,7 +23,8 @@ existen**, cada una con la URL que la respalda:
   72 h para Starlink, porque el tren de satélites se ve las noches siguientes.
 - **Lluvias de meteoros** · el panorama semanal de la
   [American Meteor Society](https://www.amsmeteors.org/articles/), que es la
-  misma página que se consultaba a mano.
+  misma página que se consultaba a mano. Los panoramas se descubren por la API
+  REST de WordPress del sitio, con el índice HTML como respaldo.
 
 Devuelve el campo `descarte` en el formato que ya usa el feed, más
 `descarteRevisado`, que solo es `true` si el caso tenía fecha de evento y algún
@@ -42,6 +43,18 @@ calendario respondió.
   agota la cuota, se usa la caché y se dice que es caché.
 - **Sin fecha de evento no hay descarte.** Se devuelve lista vacía y
   `descarteRevisado: false`, que es lo que la regla pide.
+- **Pertinencia antes que exhaustividad.** Una coincidencia que no puede
+  explicar el caso es ruido, no rigor. Por eso:
+  - a una entrada con `rareza` de mar, montaje o natural no se le aplica
+    descarte por calendario — un cohete no explica un varamiento de cachalotes,
+    un video hecho con IA ni un halo solar;
+  - un lanzamiento solo se adjunta si pudo verse desde donde se reportó el caso.
+    El techo son 2.500 km, deliberadamente generoso: sirve para descartar lo
+    imposible, no para afirmar que algo sí se vio, y la distancia real va escrita
+    en el detalle. Starlink queda fuera de ese filtro, porque un tren se ve a
+    miles de kilómetros del sitio de lanzamiento.
+  - Sobre el feed actual esto baja las coincidencias de 57 a 42 y deja limpios
+    ocho casos que recibían cohetes sin sentido.
 
 ## Uso
 
@@ -50,7 +63,7 @@ pip install -r vigilancia/requirements.txt
 python -m vigilancia calendarios              # descarga y cachea los calendarios
 python -m vigilancia descarte 2026-11-20      # revisa una fecha (hora opcional: 21:27)
 python -m vigilancia feed                     # revisa todo data/recientes.json sin escribirlo
-python -m pytest -q vigilancia/tests          # 24 pruebas, todas sin red
+python -m pytest -q vigilancia/tests          # 38 pruebas, todas sin red
 ```
 
 El workflow `vigilancia-descarte.yml` corre lo mismo a diario y refresca la

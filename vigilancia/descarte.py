@@ -18,6 +18,7 @@ from datetime import date, datetime, timezone
 
 from . import lanzamientos as _lanz
 from . import meteoros as _met
+from .config import CFG
 
 log = logging.getLogger(__name__)
 
@@ -54,7 +55,9 @@ def calendarios(dia: date | None = None, sesion=None) -> dict:
     }
 
 
-def revisar(cal: dict, fecha_evento, hora_utc: str | None = None) -> dict:
+def revisar(cal: dict, fecha_evento, hora_utc: str | None = None,
+            lat: float | None = None, lon: float | None = None,
+            rareza: str | None = None) -> dict:
     """Coincidencias reales para un caso, en el formato del campo `descarte`.
 
     Devuelve {"descarte": [{tipo, detalle, fuente}, ...], "descarteRevisado": bool,
@@ -63,8 +66,18 @@ def revisar(cal: dict, fecha_evento, hora_utc: str | None = None) -> dict:
     `descarteRevisado` es True solo si había fecha de evento y al menos un
     calendario respondió con datos. Sin fecha no se puede cruzar nada: se
     devuelve lista vacía y False, que es exactamente lo que la regla pide.
+
+    A una entrada con `rareza` de mar, montaje o natural no se le aplica nada:
+    un cohete no explica un varamiento de cachalotes, un video hecho con IA ni
+    un halo solar, y adjuntarle coincidencias solo ensucia el campo.
     """
     notas = list(cal.get("notas", []))
+
+    if rareza in CFG.rarezas_sin_descarte:
+        return {"descarte": [], "descarteRevisado": False,
+                "notas": notas + [f"El descarte por calendario no aplica a una entrada de "
+                                  f"rareza «{rareza}»."]}
+
     d = _dia(fecha_evento)
     if d is None:
         return {"descarte": [], "descarteRevisado": False,
@@ -87,7 +100,7 @@ def revisar(cal: dict, fecha_evento, hora_utc: str | None = None) -> dict:
 
     hubo_datos = bool(lista_lanz) or bool(lluvias)
     if lista_lanz:
-        fuera += _lanz.coincidencias(lista_lanz, momento)
+        fuera += _lanz.coincidencias(lista_lanz, momento, lat, lon)
     if lluvias and url_met:
         fuera += _met.coincidencias(lluvias, url_met, d)
 

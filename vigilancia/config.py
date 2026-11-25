@@ -32,12 +32,25 @@ class Config:
     ll2_timeout: int = _env("LL2_TIMEOUT", 40)
 
     # American Meteor Society · panorama semanal de actividad
+    ams_wp: str = _env("AMS_WP", "https://www.amsmeteors.org/wp-json/wp/v2/posts")
     ams_indice: str = _env("AMS_INDICE", "https://www.amsmeteors.org/articles/")
     ams_timeout: int = _env("AMS_TIMEOUT", 40)
 
     # ventanas de coincidencia
     dias_lanzamiento: float = _env("DIAS_LANZAMIENTO", 1.0)   # ±1 día para un lanzamiento cualquiera
     horas_starlink: float = _env("HORAS_STARLINK", 72.0)      # los trenes se ven los días siguientes
+
+    # Hasta dónde puede verse el ascenso de un cohete. Es un techo deliberadamente
+    # generoso, no una cifra de manual: sirve para descartar lo imposible (un
+    # Long March desde Jiuquan no explica una luz en Brasil), no para afirmar que
+    # algo sí se vio. Cuando hay coordenadas, la distancia real se escribe en el
+    # detalle para que el lector juzgue. No se aplica a Starlink: un tren de
+    # satélites se ve a miles de kilómetros del sitio de lanzamiento.
+    visibilidad_km: float = _env("VISIBILIDAD_KM", 2500.0)
+
+    # Categorías de rareza a las que el descarte por calendario no aplica: un
+    # cohete no explica un varamiento de cachalotes ni un video hecho con IA.
+    rarezas_sin_descarte: tuple = ("mar", "montaje", "natural")
 
     agente: str = _env("AGENTE", "NEREO-vigilancia/1.0 (+https://github.com/simonrovi-web/nereo)")
 
