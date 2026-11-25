@@ -61,3 +61,20 @@ def test_verificacion_detecta_cifra_inventada():
 
 def test_limpieza_de_lugares():
     assert hotspots.limpio("Spokane (About 30 Miles Sw Of,I-90), WA") == "Spokane, WA"
+
+
+def test_verificar_admite_el_dia_de_una_fecha_iso():
+    """«2023-05-18» reescrito como «18 de mayo de 2023» no es una cifra inventada."""
+    entrada = {"archivo": {"hasta": "2023-05-18"}, "anomalias": {"mes": "2015-11"}}
+    salida = {"titular": "t", "resumen": "Datos hasta el 18 de mayo de 2023.",
+              "hallazgos": [], "recomendaciones": []}
+    v = llm.verificar(salida, entrada)
+    assert v["no_verificadas"] == []
+
+
+def test_verificar_sigue_marcando_una_cifra_inventada():
+    entrada = {"archivo": {"hasta": "2023-05-18"}}
+    salida = {"titular": "t", "resumen": "Se registraron 7431 reportes.",
+              "hallazgos": [], "recomendaciones": []}
+    v = llm.verificar(salida, entrada)
+    assert v["no_verificadas"] == ["7431"]

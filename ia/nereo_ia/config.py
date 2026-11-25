@@ -1,7 +1,7 @@
 """Parámetros del módulo de inteligencia de NEREO.
 
 Todo valor ajustable vive aquí. Se puede sobreescribir con variables de
-entorno con el prefijo NEREO_ (por ejemplo NEREO_OLLAMA_MODELO=llama3.2:3b).
+entorno con el prefijo NEREO_ (por ejemplo NEREO_OLLAMA_MODELO=qwen2.5:3b).
 """
 from __future__ import annotations
 
@@ -58,7 +58,7 @@ class Config:
 
     # capa interpretativa
     ollama_url: str = _env("OLLAMA_URL", "http://127.0.0.1:11434")
-    ollama_modelo: str = _env("OLLAMA_MODELO", "qwen2.5:3b")
+    ollama_modelo: str = _env("OLLAMA_MODELO", "gemma4:e4b")
     ollama_timeout: int = _env("OLLAMA_TIMEOUT", 900)
 
     semilla: int = 42
