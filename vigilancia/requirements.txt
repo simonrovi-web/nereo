@@ -1,0 +1,3 @@
+# NEREO · vigilancia (100 % open source, sin dependencias pesadas)
+# Python 3.11+
+requests>=2.32
