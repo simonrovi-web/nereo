@@ -56,19 +56,24 @@ def main(argv: list[str]) -> int:
         feed = json.loads(p.read_text(encoding="utf-8"))
         cal = _calendarios()
         print()
-        con, sin = 0, 0
+        con = sin_fecha = no_aplica = coincidencias = 0
         for it in feed.get("items", []):
             r = descarte.revisar(cal, it.get("fechaEvento", ""), None,
                                  it.get("lat"), it.get("lon"), it.get("rareza"))
             if r["descarteRevisado"]:
                 con += 1
+                coincidencias += len(r["descarte"])
                 if r["descarte"]:
                     print(f"· {it['id']}  ({it.get('fechaEvento')})")
                     for c in r["descarte"]:
                         print(f"    [{c['tipo']}] {c['detalle'][:120]}…")
+            elif it.get("rareza") in CFG.rarezas_sin_descarte:
+                no_aplica += 1
             else:
-                sin += 1
-        print(f"\n{con} casos con fecha revisados, {sin} sin fecha de evento.")
+                sin_fecha += 1
+        print(f"\n{con} casos revisados con {coincidencias} coincidencias · "
+              f"{sin_fecha} sin fecha de evento · "
+              f"{no_aplica} de rareza a la que no aplica.")
         return 0
 
     print(f"orden desconocida: {orden}", file=sys.stderr)

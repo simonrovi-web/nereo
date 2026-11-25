@@ -44,10 +44,11 @@ jobs:
       - name: Pruebas
         run: python -m pytest -q vigilancia/tests
 
-      - name: Calendarios en vivo
-        run: python -m vigilancia calendarios
-
-      - name: Revisar el feed
+      # Una sola orden: «feed» ya descarga los calendarios e imprime su estado.
+      # Llamar antes a «calendarios» gastaba una segunda petición a Launch
+      # Library, que solo admite 15 por hora y por IP, compartida con el resto
+      # de usuarios de Actions.
+      - name: Calendarios y revisión del feed
         run: python -m vigilancia feed | tee /tmp/feed.txt
 
       - name: Resumen de la ejecución

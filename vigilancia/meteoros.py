@@ -68,6 +68,29 @@ def periodo_de_url(url: str) -> tuple[date, date] | None:
     return ini, fin
 
 
+def semana_de(dia: date) -> tuple[date, date]:
+    """Sábado anterior o igual a `dia`, y el viernes siguiente.
+
+    Los panoramas de la AMS cubren de sábado a viernes: «november-14-20-2026»
+    y «15-21-november-2025» lo son. date.weekday() da 5 para el sábado.
+    """
+    from datetime import timedelta
+    ini = dia - timedelta(days=(dia.weekday() - 5) % 7)
+    return ini, ini + timedelta(days=6)
+
+
+def url_probable(dia: date) -> str:
+    """URL que debería tener el panorama de la semana de `dia`.
+
+    Se construye, pero no se da por buena: quien la use tiene que pedirla y
+    comprobar que responde y que su tabla se parsea.
+    """
+    ini, fin = semana_de(dia)
+    mes = [m for m, i in MESES.items() if i == ini.month][0]
+    return (f"https://www.amsmeteors.org/{ini.year}/{ini.month:02d}/"
+            f"meteor-activity-outlook-for-{mes}-{ini.day}-{fin.day}-{ini.year}/")
+
+
 def elegir_panorama(urls: list[str], dia: date) -> str | None:
     """De una lista de panoramas, el que cubre `dia`; si ninguno, el más cercano anterior."""
     candidatos = []
@@ -218,24 +241,39 @@ def _guardar(datos: dict) -> None:
     p.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _urls_desde_wp(s, cab) -> list[str]:
-    """Panoramas vía la API REST de WordPress del sitio de la AMS.
+def _urls_desde_archivo(s, cab, dia: date) -> list[str]:
+    """Panoramas desde el archivo mensual de la AMS: /AAAA/MM/.
 
-    Es mucho más robusto que raspar el índice: devuelve JSON con el enlace de
-    cada entrada y no depende de cómo esté maquetada la portada.
+    Es la vía más fiable que hemos encontrado: una página de archivo de
+    WordPress con los enlaces en el HTML, sin JavaScript de por medio. Se mira
+    el mes del día buscado y también el anterior, porque la semana que cubre un
+    día de principios de mes se publicó el mes pasado.
     """
-    r = s.get(CFG.ams_wp, timeout=CFG.ams_timeout, headers=cab,
-              params={"search": "meteor activity outlook", "per_page": 20,
-                      "orderby": "date", "order": "desc", "_fields": "link"})
-    r.raise_for_status()
-    datos = r.json()
-    if not isinstance(datos, list):
-        raise RuntimeError("la API de WordPress no devolvió una lista")
-    return [d["link"] for d in datos if isinstance(d, dict) and isinstance(d.get("link"), str)]
+    vistos = []
+    meses = {(dia.year, dia.month)}
+    previo = date(dia.year - 1, 12, 1) if dia.month == 1 else date(dia.year, dia.month - 1, 1)
+    meses.add((previo.year, previo.month))
+    for anio, mes in sorted(meses, reverse=True):
+        r = s.get(f"https://www.amsmeteors.org/{anio}/{mes:02d}/",
+                  timeout=CFG.ams_timeout, headers=cab)
+        if r.status_code != 200:
+            continue
+        vistos += _ENLACE.findall(r.text)
+    return list(dict.fromkeys(vistos))
 
 
-def _urls_desde_indice(s, cab) -> list[str]:
-    """Respaldo: los enlaces de panorama que aparezcan en el índice de artículos."""
+def _urls_construidas(s, cab, dia: date) -> list[str]:
+    """La URL que le tocaría a esa semana, comprobada pidiéndola.
+
+    No se devuelve una URL inventada: solo se devuelve si el servidor la sirve.
+    """
+    u = url_probable(dia)
+    r = s.get(u, timeout=CFG.ams_timeout, headers=cab)
+    return [u] if r.status_code == 200 else []
+
+
+def _urls_desde_indice(s, cab, dia: date) -> list[str]:
+    """Último recurso: los enlaces que aparezcan en el índice de artículos."""
     r = s.get(CFG.ams_indice, timeout=CFG.ams_timeout, headers=cab)
     r.raise_for_status()
     return list(dict.fromkeys(_ENLACE.findall(r.text)))
@@ -253,9 +291,11 @@ def obtener(dia: date, sesion=None) -> dict:
     s = sesion or requests
     cab = {"User-Agent": CFG.agente}
     intentos, urls, via = [], [], None
-    for nombre, fn in (("wp-json", _urls_desde_wp), ("índice", _urls_desde_indice)):
+    for nombre, fn in (("archivo mensual", _urls_desde_archivo),
+                       ("url construida", _urls_construidas),
+                       ("índice", _urls_desde_indice)):
         try:
-            encontradas = fn(s, cab)
+            encontradas = fn(s, cab, dia)
         except Exception as e:
             intentos.append(f"{nombre}: {e}")
             continue
