@@ -6,8 +6,8 @@ Módulo de análisis 100 % open source para el archivo de NEREO. Corre en GitHub
                  ┌─────────────────────── GitHub Actions (semanal) ───────────────────────┐
 data/points.json │  CAPA ANALÍTICA                                  CAPA INTERPRETATIVA    │
 114.034 reportes ─▶  DBSCAN ponderado ─────▶ hotspots.json          ┌──────────────────┐  │
-                 │  HDBSCAN espacio-tiempo ─▶ (oleadas)         ┌──▶│ Ollama · qwen2.5 │  │
-ia/fuentes/      │  H3 res 4 ─────────────▶ hexagonos.json      │   │ 3B en CPU        │  │
+                 │  HDBSCAN espacio-tiempo ─▶ (oleadas)         ┌──▶│ Ollama · gemma4  │  │
+ia/fuentes/      │  H3 res 4 ─────────────▶ hexagonos.json      │   │ E4B en CPU       │  │
 población,       │  Isolation Forest ─────▶ anomalias.json      │   └────────┬─────────┘  │
 relatos ─────────▶  Prophet ──────────────▶ temporal.json        │            ▼            │
 (uso interno)    │  sentence-transformers ▶ temas.json         ─┤   verificación de cifras│
@@ -46,7 +46,7 @@ cd ia
 pip install -r requirements.txt
 pip install torch --index-url https://download.pytorch.org/whl/cpu   # opcional, para temas de texto
 pip install -r requirements-texto.txt                                  # opcional
-ollama pull qwen2.5:3b                                                 # opcional, para el resumen
+ollama pull gemma4:e4b                                                 # opcional, para el resumen
 
 python -m nereo_ia todo           # descarga fuentes, analiza y redacta
 python -m nereo_ia analizar       # solo la capa analítica
@@ -85,4 +85,4 @@ ia/
 - El archivo está sesgado hacia Estados Unidos, que es donde se reporta a NUFORC. Los hotspots describen dónde se reporta, no dónde ocurren más fenómenos.
 - El tramo posterior a 2018 está incompleto. El propio contraste del pronóstico lo muestra: el modelo esperaba 675 reportes para el primer semestre de 2025 y se publicaron 2.174.
 - Se pronostican **reportes**, no fenómenos.
-- qwen2.5:3b en CPU redacta bien, pero es un modelo pequeño. Por eso cada cifra se verifica y el texto se presenta como borrador automático.
+- gemma4:e4b en CPU redacta bien, pero sigue siendo un modelo pequeño. Por eso cada cifra se verifica y el texto se presenta como borrador automático.
