@@ -266,33 +266,85 @@ def test_rareza_cielo_y_avistamiento_clasico_si_se_cruzan(rareza):
 
 
 # ─────────────────────────────────────────────── descubrimiento del panorama
-def test_meteoros_cae_al_indice_si_falla_wp(monkeypatch, tmp_path):
-    panorama = "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-21-27-2026/"
+# ──────────────────────────────────── descubrimiento del panorama de la AMS
+@pytest.mark.parametrize("dia,ini,fin", [
+    (date(2026, 11, 24), date(2026, 11, 21), date(2026, 11, 27)),   # martes
+    (date(2026, 11, 21), date(2026, 11, 21), date(2026, 11, 27)),   # el propio sábado
+    (date(2026, 11, 20), date(2026, 11, 14), date(2026, 11, 20)),   # viernes, cierra semana
+])
+def test_semana_de_va_de_sabado_a_viernes(dia, ini, fin):
+    assert meteoros.semana_de(dia) == (ini, fin)
 
-    class Sesion:
-        def get(self, url, **k):
-            class R:
-                status_code = 200
-                def raise_for_status(self): pass
-            r = R()
-            if "wp-json" in url:
-                raise OSError("wp-json caído")
-            if "articles" in url:
-                r.text = f'<a href="{panorama}">x</a>'
-            else:
-                r.text = HTML
-            return r
 
+def test_url_probable_reproduce_una_url_real():
+    """Esta URL existe: es el panorama que se consultó a mano el 24 de noviembre."""
+    assert meteoros.url_probable(date(2026, 11, 20)) == (
+        "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-14-20-2026/")
+
+
+def test_url_probable_y_periodo_de_url_son_coherentes():
+    """Lo que se construye tiene que poder volver a leerse."""
+    for d in (date(2026, 1, 3), date(2026, 6, 30), date(2026, 11, 24)):
+        assert meteoros.periodo_de_url(meteoros.url_probable(d)) is not None
+
+
+class _SesionAMS:
+    """Sirve el archivo mensual, la URL construida o el índice, según se pida."""
+
+    def __init__(self, sirve):
+        self.sirve, self.pedidas = sirve, []
+
+    def get(self, url, **k):
+        self.pedidas.append(url)
+        panorama = ("https://www.amsmeteors.org/2026/11/"
+                    "meteor-activity-outlook-for-november-21-27-2026/")
+        class R:
+            def __init__(self, status, text=""):
+                self.status_code, self.text = status, text
+            def raise_for_status(self):
+                if self.status_code >= 400:
+                    raise OSError(f"{self.status_code}")
+        if url == panorama:
+            return R(200, HTML) if self.sirve != "nada" else R(404)
+        if "/2026/11/" in url or "/2026/10/" in url:
+            return R(200, f'<a href="{panorama}">x</a>') if self.sirve == "archivo" else R(404)
+        if "articles" in url:
+            return R(200, f'<a href="{panorama}">x</a>') if self.sirve == "índice" else R(200, "")
+        return R(404)
+
+
+def test_panorama_por_archivo_mensual(monkeypatch, tmp_path):
     monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
-    r = meteoros.obtener(date(2026, 11, 24), sesion=Sesion())
-    assert r["origen"] == "api" and r["via"] == "índice" and len(r["lluvias"]) == 2
+    r = meteoros.obtener(date(2026, 11, 24), sesion=_SesionAMS("archivo"))
+    assert r["origen"] == "api" and r["via"] == "archivo mensual" and len(r["lluvias"]) == 2
 
 
-def test_meteoros_informa_por_que_falla(monkeypatch, tmp_path):
-    class Sesion:
+def test_panorama_por_url_construida_si_el_archivo_no_sirve(monkeypatch, tmp_path):
+    monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
+    r = meteoros.obtener(date(2026, 11, 24), sesion=_SesionAMS("construida"))
+    assert r["origen"] == "api" and r["via"] == "url construida" and len(r["lluvias"]) == 2
+
+
+def test_url_construida_que_no_existe_no_se_usa(monkeypatch, tmp_path):
+    """Una URL inventada que el servidor no sirve no entra en el resultado."""
+    monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
+    r = meteoros.obtener(date(2026, 11, 24), sesion=_SesionAMS("nada"))
+    assert r["origen"] == "cache" and r["lluvias"] == []
+
+
+def test_cuando_fallan_todas_las_vias_la_nota_las_nombra(monkeypatch, tmp_path):
+    monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
+    r = meteoros.obtener(date(2026, 11, 24), sesion=_SesionAMS("nada"))
+    assert r["origen"] == "cache"
+    for via in ("archivo mensual", "url construida", "índice"):
+        assert via in r["nota"], f"la nota no menciona «{via}»: {r['nota']}"
+
+
+def test_obtener_degrada_a_cache_sin_lanzar_meteoros(monkeypatch, tmp_path):
+    class SesionRota:
         def get(self, *a, **k):
             raise OSError("sin red")
 
     monkeypatch.setattr(meteoros, "CFG", replace(meteoros.CFG, cache=tmp_path))
-    r = meteoros.obtener(date(2026, 11, 24), sesion=Sesion())
-    assert r["origen"] == "cache" and "wp-json" in r["nota"] and "índice" in r["nota"]
+    r = meteoros.obtener(date(2026, 11, 24), sesion=SesionRota())
+    assert r["origen"] == "cache" and r["lluvias"] == [] and "sin red" in r["nota"]

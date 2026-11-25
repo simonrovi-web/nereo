@@ -23,8 +23,11 @@ existen**, cada una con la URL que la respalda:
   72 h para Starlink, porque el tren de satélites se ve las noches siguientes.
 - **Lluvias de meteoros** · el panorama semanal de la
   [American Meteor Society](https://www.amsmeteors.org/articles/), que es la
-  misma página que se consultaba a mano. Los panoramas se descubren por la API
-  REST de WordPress del sitio, con el índice HTML como respaldo.
+  misma página que se consultaba a mano. Los panoramas se descubren por el
+  archivo mensual del sitio (`/AAAA/MM/`); si eso falla se construye la URL de
+  la semana —van de sábado a viernes— y **se comprueba pidiéndola**, y como
+  último recurso se raspa el índice de artículos. La API REST de WordPress se
+  probó y no existe en ese sitio: devuelve 404.
 
 Devuelve el campo `descarte` en el formato que ya usa el feed, más
 `descarteRevisado`, que solo es `true` si el caso tenía fecha de evento y algún
@@ -63,7 +66,7 @@ pip install -r vigilancia/requirements.txt
 python -m vigilancia calendarios              # descarga y cachea los calendarios
 python -m vigilancia descarte 2026-11-20      # revisa una fecha (hora opcional: 21:27)
 python -m vigilancia feed                     # revisa todo data/recientes.json sin escribirlo
-python -m pytest -q vigilancia/tests          # 38 pruebas, todas sin red
+python -m pytest -q vigilancia/tests          # 46 pruebas, todas sin red
 ```
 
 El workflow `vigilancia-descarte.yml` corre lo mismo a diario y refresca la
