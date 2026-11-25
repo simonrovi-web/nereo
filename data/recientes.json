@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-25T12:50:53Z",
+  "generado": "2026-11-25T19:02:39Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,66 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-25T19:05:00Z",
+      "descarte": [
+        {
+          "detalle": "Según el boletín de actividad de meteoros del 21 al 27 de noviembre de 2026, firmado por Robert Lunsford, las alfa Monocerótidas tenían su máximo precisamente el 22 de noviembre (clase III, velocidad de entrada 62 km/s, tasa menor de un meteoro por hora) y las Leónidas seguían activas esa semana (clase I, 70 km/s, unos 2 por hora desde 45°N, máximo el 18 de noviembre). La coincidencia de calendario con las alfa Monocerótidas es real, pero la NASA descarta expresamente las Leónidas y la velocidad medida, unos 37,6 km/s, no corresponde a ninguno de los dos flujos.",
+          "fuente": "https://www.emeteornews.net/2026/11/20/meteor-activity-outlook-for-21-27-november-2026/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "Revisado el listado de lanzamientos de SpaceX de noviembre de 2026: no figura ninguna misión Starlink con día confirmado entre el 19 y el 25 de noviembre, por lo que se descarta un tren de satélites recién lanzado. El único lanzamiento de la ventana con fecha y hora declaradas es USSF-266, el 24 de noviembre a las 16:08 UTC desde Vandenberg, dos días posterior al bólido.",
+          "fuente": "https://spacenexus.us/launches/spacex/2026-11",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "La NASA sitúa en un fragmento de asteroide el bólido del lago Erie del 20 de noviembre, evento distinto (entrada previa del feed)",
+          "https://cp24.com/local/niagara/2026/11/24/fireball-over-lake-erie-may-have-dropped-meteorites-in-us-western-university-researcher-says"
+        ],
+        [
+          "Boletín de actividad de meteoros del 21 al 27 de noviembre de 2026 (eMetN, Robert Lunsford)",
+          "https://www.emeteornews.net/2026/11/20/meteor-activity-outlook-for-21-27-november-2026/"
+        ]
+      ],
+      "estado": "explicado como meteoro por la NASA, que descarta expresamente las Leónidas; sin masa ni tamaño estimados y sin registro audiovisual publicado",
+      "fechaEvento": "2026-11-22",
+      "fechaPub": "2026-11-25T17:33:41Z",
+      "fuente": "WLOS / cadena Sinclair (Hannah Everman), nota sindicada con enlace canónico en CBS2 Iowa · NASA · American Meteor Society",
+      "lat": null,
+      "lon": null,
+      "lugar": "De Traer a Lockridge, Iowa, Estados Unidos (visto desde Illinois, Iowa, Wisconsin, Minnesota, Nebraska, Kansas, Misuri e Indiana)",
+      "por": "tarea",
+      "resumen": "La noche del domingo 22 de noviembre, a las 21:50 hora central (03:50 UTC del 23), más de cien testigos vieron un bólido brillante en el Medio Oeste de Estados Unidos. Según el análisis de la NASA con datos de cámaras públicas de la región, citado por la cadena Sinclair, el meteoro se hizo visible a unos 96 kilómetros de altura (60 millas) sobre Traer, en Iowa, avanzó hacia el sureste a unos 135.000 km/h (84.000 millas por hora) y recorrió unos 151 kilómetros (94 millas) de atmósfera antes de desintegrarse a unos 69 kilómetros de altura (43 millas) sobre Lockridge, justo al este de la ciudad de Fairfield; la American Meteor Society aportó datos complementarios. La NASA descarta expresamente que perteneciera a las Leónidas y ninguna fuente menciona un fragmento de asteroide. El caso es sólido en datos y débil en registro: la nota no publica ningún video ni fotografía del bólido —la única imagen es de archivo, un cielo estrellado sobre el lago Míchigan— no da la masa ni el tamaño estimado del objeto, no cita el número exacto de reportes recibidos por la AMS ni nombra a ningún especialista. Hay una discrepancia interna en la cobertura: el cuerpo del texto nombra ocho estados (Illinois, Iowa, Wisconsin, Minnesota, Nebraska, Kansas, Misuri e Indiana) mientras la descripción de la página habla de nueve. No se asignan coordenadas porque la trayectoria abarcó dos localidades de Iowa y los avistamientos se reparten por varios estados. La nota, firmada por Hannah Everman, se publicó el 25 de noviembre a las 17:33 UTC y es una pieza sindicada de la cadena Sinclair, con enlace canónico en cbs2iowa.com.",
+      "titulo": "La NASA reconstruye el bólido del Medio Oeste de Estados Unidos: 151 kilómetros de vuelo a 135.000 km/h",
+      "url": "https://wlos.com/news/nation-world/fireball-meteor-seen-midwest-iowa-illinois-wisconsin-minnesota-nebraska-kansas-missouri-indiana-nasa-american-meteor-society-report-sightings-stars-sky-celestial-events",
+      "id": "us-midwest-bolido-20261122"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-25T19:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin verificar; el medio no propone explicación y no hay pronunciamiento de ninguna autoridad aeronáutica, observatorio ni especialista",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-25T17:16:31Z",
+      "fuente": "Radio Imagina (Javiera Aguilar), PRISA Media Chile · video de la cuenta de TikTok @gera_arevalo",
+      "lat": -33.4969,
+      "lon": -70.6514,
+      "lugar": "Comuna de San Miguel, Santiago, Región Metropolitana, Chile (reportes también en Pudahuel y la Plaza de Armas)",
+      "por": "tarea",
+      "resumen": "Radio Imagina publicó el 25 de noviembre, a las 14:16 hora de Chile, un video difundido por la cuenta de TikTok @gera_arevalo que muestra luces en el cielo de la comuna de San Miguel, en Santiago. La nota, firmada por Javiera Aguilar, recoge comentarios de usuarios que dicen haber visto el fenómeno también desde Pudahuel —uno relata que «primero uno, luego, de la nada, se multiplicó» y que las observó largo rato hasta que desaparecieron— y desde la Plaza de Armas, en el centro de Santiago, donde una testigo afirma que duraron cerca de cinco minutos. El caso es muy débil en registro y en verificación: el medio no propone ninguna explicación, no cita a la Dirección General de Aeronáutica Civil, a la Fuerza Aérea de Chile, a ningún observatorio ni a ningún astrónomo, y no verifica la autenticidad del material; la imagen de portada es de archivo, de Getty Images, y los avistamientos en otras comunas son comentarios de redes sin contrastar. No se indica el número de objetos, su forma ni su movimiento. Hay además una ambigüedad de fecha que conviene anotar: el propio texto dice que la grabación corresponde «al pasado 19 de julio», sin precisar el año ni la hora, mientras los comentarios se escriben como si el fenómeno fuera reciente; por eso no se registra fecha de evento y no fue posible cruzar el caso con calendarios de lanzamientos, reentradas ni lluvias de meteoros. Las coordenadas corresponden a la comuna de San Miguel de manera aproximada.",
+      "titulo": "Luces filmadas sobre San Miguel, en Santiago de Chile, difundidas sin explicación",
+      "url": "https://www.radioimagina.cl/2026/11/graban-ovnis-en-comuna-de-san-miguel-fenomeno-se-vio-en-varios-sectores-de-la-region-metropolitana/",
+      "id": "cl-san-miguel-luces-20261125"
+    },
     {
       "agua": true,
       "clase": "prensa",
@@ -31,6 +91,66 @@
       "titulo": "Desmienten el pez de piel roja del río Prachin Buri, en Tailandia: el material está hecho con IA",
       "url": "https://www.thaipbs.or.th/verify/en/content/18802",
       "id": "montaje-prachinburi-pez-20261125"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-25T19:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Filman una tromba marina doble junto a los Faraglioni de Capri, caso comparable del feed",
+          "https://mymodernmet.com/capri-double-watersprout/"
+        ],
+        [
+          "Dos trombas marinas sobre la bahía de San Francisco, sin registro previo en 28 años (entrada previa del feed)",
+          "https://abc7news.com/post/bay-area-residents-witness-stunned-rare-waterspouts-san-francisco/20046828/"
+        ]
+      ],
+      "estado": "sin verificar; el propio medio reconoce que la fecha, la duración y la intensidad no están confirmadas de forma independiente y no cita a ningún servicio meteorológico",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-25T05:47:42Z",
+      "fuente": "The Sunday Guardian (Shubhi Kumar) · video difundido en X por la cuenta @Rainmaker1973",
+      "lat": null,
+      "lon": null,
+      "lugar": "Río Kama, región de Perm, Rusia (punto no precisado por la fuente)",
+      "por": "tarea",
+      "rareza": "natural",
+      "resumen": "Un video difundido en redes sociales muestra un embudo estrecho y muy alto que baja desde nubes de tormenta oscuras hasta la superficie del agua del río Kama, en la región de Perm, en Rusia, con el sol filtrándose cerca del horizonte. El material lo recogió el 25 de noviembre The Sunday Guardian, en una nota firmada por Shubhi Kumar publicada a las 05:47 UTC, que incrusta una publicación de la cuenta de X @Rainmaker1973 fechada el 24 de noviembre con el pie «Waterspout spotted on the Kama River, Perm region, Russia»; esa publicación es la única atribución visible del video y no se identifica a quien lo grabó. El propio medio reconoce que la fecha, la duración y la intensidad del fenómeno no han sido confirmadas de forma independiente, y la nota no cita a ningún servicio meteorológico ruso, universidad ni meteorólogo con nombre: solo ofrece una explicación genérica de qué es una tromba —aire en rotación con humedad y condiciones atmosféricas inestables—, sin clasificar este caso como tromba tornádica o de buen tiempo. No se reportan daños ni víctimas. Tampoco se precisa un punto del río más exacto que «región de Perm», por lo que no se asignan coordenadas. Por tratarse de un fenómeno meteorológico identificado como tromba, y no de una luz sin identificar, no se cruzó con calendarios de lanzamientos ni de lluvias de meteoros.",
+      "titulo": "Filman una tromba sobre el río Kama, en la región de Perm, Rusia",
+      "url": "https://sundayguardianlive.com/world/watch-viral-video-massive-waterspout-spotted-over-russias-kama-river-as-towering-tornado-like-funnel-emerges-from-dark-storm-clouds-327434/",
+      "id": "natural-kama-tromba-20261125"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-25T19:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Un pulpo persigue los láseres de un robot submarino en Papahānaumokuākea (entrada previa del feed)",
+          "https://www.discoverwildlife.com/animal-facts/marine-animals/octopus-chases-laser"
+        ],
+        [
+          "Un campo de lavadoras y refrigeradores a 1.500 metros en el golfo de México, grabado por la NOAA (entrada previa del feed)",
+          "https://www.yahoo.com/news/science/articles/deep-sea-scientists-hunting-shipwreck-110000548.html"
+        ]
+      ],
+      "estado": "material institucional del Schmidt Ocean Institute; el atolón fósil está descrito por la propia expedición, pero no se identifica a quién hizo las identificaciones de especies ni si alguna es nueva para la ciencia",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-25T02:05:00Z",
+      "fuente": "Discover Wildlife / BBC Wildlife (Daniel Graham) · Schmidt Ocean Institute, buque Falkor (too), ROV SuBastian · José Ángel Pérez, científico jefe · Paulo Sumida, Universidad de São Paulo · Jyotika Virmani, Schmidt Ocean Institute",
+      "lat": null,
+      "lon": null,
+      "lugar": "Zona de Fractura de Romanche, Atlántico ecuatorial (aguas internacionales; punto no precisado)",
+      "por": "tarea",
+      "rareza": "mar",
+      "resumen": "Una expedición de 35 días dirigida por Brasil a la Zona de Fractura de Romanche, la falla geológica más larga del Atlántico, filmó un atolón de coral fósil ahora hundido, de unos cinco millones de años, cuya cima está a unos 900 metros de profundidad; el relieve mide cerca de 300 metros de alto y se asienta sobre una cresta que se eleva 4.100 metros desde el fondo, y sobre él crece un jardín de coral de aguas profundas. El trabajo lo realizó el Schmidt Ocean Institute con el buque de investigación Falkor (too), el vehículo operado a distancia SuBastian y el vehículo autónomo The Childlike Empress, y el video está acreditado al propio instituto. El científico jefe, José Ángel Pérez, afirma que el equipo produjo «la primera evidencia científica» de la singularidad ecológica y biológica de la región y sostiene que los datos refuerzan que debería considerarse para protección bajo el recién ratificado Tratado de Alta Mar. El reportaje de Discover Wildlife, firmado por Daniel Graham y publicado el 25 de noviembre a las 02:05, describe además un jardín de esponjas y corales a 4.300 metros y miles de zoantídeos rosados hacia los 1.200 metros, y recoge comentarios de Paulo Sumida, profesor de la Universidad de São Paulo, y de Jyotika Virmani, directora ejecutiva del Schmidt Ocean Institute. Quedan varios datos sin establecer: la fecha de las inmersiones, qué institución brasileña encabeza el proyecto, si alguna de las especies filmadas es nueva para la ciencia y quién hizo las identificaciones, que el texto no atribuye a nadie; la nota también se contradice en la profundidad de los zoantídeos, 1.200 metros en el cuerpo y 1.235 en el pie de foto, y sus metadatos registran una fecha de modificación anterior a la de publicación. No se asignan coordenadas porque la fuente no precisa el punto de las inmersiones dentro de la fractura.",
+      "titulo": "Un robot submarino filma un atolón de coral fósil a 900 metros en la fractura de Romanche, en el Atlántico ecuatorial",
+      "url": "https://www.discoverwildlife.com/animal-facts/marine-animals/romanche-fracture-zone-atlantic-ocean",
+      "id": "mar-romanche-atolon-20261125"
     },
     {
       "agua": false,
@@ -1257,6 +1377,32 @@
     {
       "agua": false,
       "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
+          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+        ]
+      ],
+      "estado": "desmentido por Full Fact",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Full Fact",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
+      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "id": "montaje-luces-rojas-lakenheath-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
       "descarte": [],
       "descarteRevisado": false,
@@ -1294,32 +1440,6 @@
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
       "url": "https://mymodernmet.com/capri-double-watersprout/",
       "id": "it-capri-trombas-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-19T13:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
-          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
-        ]
-      ],
-      "estado": "desmentido por Full Fact",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Full Fact",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
-      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
-      "id": "montaje-luces-rojas-lakenheath-20261118"
     },
     {
       "agua": false,
@@ -1527,130 +1647,6 @@
       "titulo": "Desmienten el video de pasajeros durmiendo en un aeropuerto tras el cierre aéreo en EE. UU.: fue hecho con IA",
       "url": "https://www.yahoo.com/news/us/articles/fabricated-airport-video-circulates-us-220058325.html",
       "id": "montaje-aeropuerto-faa-20261117"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-17T12:47:16Z",
-      "descarte": [
-        {
-          "detalle": "El vuelo 15 de Starship despegó el 13 de noviembre de 2026, un día antes de la publicación del video en X; ese vuelo ya había provocado avistamientos de «efecto medusa» en México y Centroamérica. El mismo listado no registra ningún lanzamiento Starlink entre el 12 y el 17 de noviembre, por lo que se descarta un tren de satélites.",
-          "fuente": "https://rocketlaunch.live/",
-          "tipo": "lanzamiento"
-        },
-        {
-          "detalle": "Las Leónidas alcanzaron su máximo la noche del 16 al 17 de noviembre de 2026, con actividad apreciable en los días previos y posteriores; no explica un objeto de forma sostenida, pero queda registrado por fecha.",
-          "fuente": "https://weather.com/2026/11/15/science/space/leonid-meteor-shower-peaks-how-to-watch-fireballs",
-          "tipo": "meteoros"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "sin verificar; sin autor, fecha de grabación ni pronunciamiento oficial sobre el video mexicano",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-16T19:31:00Z",
-      "fuente": "TV Azteca (Ama TV)",
-      "lat": 31.74,
-      "lon": -106.49,
-      "lugar": "Ciudad Juárez, Chihuahua, México",
-      "por": "tarea",
-      "resumen": "TV Azteca publicó el 16 de noviembre una nota sobre un video difundido en X el 14 de noviembre que muestra un objeto con apéndices colgantes, descrito como «ovni medusa», atribuido al cielo de Ciudad Juárez, Chihuahua. La nota presenta el caso como una secuela del objeto filmado en Anchorage, Alaska, el 15 de junio, sobre el que el exdirector de la oficina del Pentágono que investiga fenómenos anómalos, Sean Kirkpatrick, planteó una cometa con serpentinas, un globo de gran altitud u otro artefacto aéreo. La procedencia del material mexicano es débil: la fuente no identifica quién lo grabó, no precisa fecha ni hora de grabación y no recoge pronunciamiento de ninguna autoridad mexicana; el propio medio señala que no hay evidencia de que ambos objetos estén relacionados ni de que sean de origen extraterrestre. Conviene añadir que Ciudad Juárez es la misma localidad del video del supuesto pterodáctilo difundido días antes y desmentido como material generado con inteligencia artificial.",
-      "titulo": "Objeto tipo «medusa» atribuido a Ciudad Juárez, México",
-      "url": "https://www.tvazteca.com/amastv/paranormal/captan-supuesto-ovni-medusa-en-mexico-tras-avistamiento-en-alaska-esto-se-sabe/",
-      "id": "mx-juarez-medusa-20261114"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-16T18:49:00Z",
-      "descarte": [
-        {
-          "detalle": "Leónidas activas del 6 al 30 de noviembre de 2026, con máximo el 16 y 17 de noviembre; Táuridas del Norte activas del 20 de octubre al 10 de diciembre",
-          "fuente": "https://www.imo.net/resources/calendar/",
-          "tipo": "meteoros"
-        },
-        {
-          "detalle": "El cohete Vulcan de ULA falló el 15 de noviembre de 2026 tras despegar de Cabo Cañaveral a las 12:40 ET y no colocó en órbita sus 40 satélites",
-          "fuente": "https://www.infobae.com/tecno/2026/11/16/el-cohete-vulcan-fallo-y-destruyo-40-satelites-de-internet-de-amazon-rival-de-starlink/",
-          "tipo": "lanzamiento"
-        },
-        {
-          "detalle": "Vuelo 15 de Starship: despegue el 13 de noviembre de 2026 a las 22:47 UTC desde Starbase y captura de la nave el 14 de noviembre a las 21:20 UTC, dentro de las 72 horas previas",
-          "fuente": "https://en.wikipedia.org/wiki/Starship_flight_15",
-          "tipo": "lanzamiento"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "sin verificar; la Protección Civil estatal no se había pronunciado",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-16T16:48:00Z",
-      "fuente": "Azteca Guerrero",
-      "lat": 19.05,
-      "lon": -97.75,
-      "lugar": "San Salvador el Seco, Tepeaca y San Nicolás Buenos Aires, Puebla, México",
-      "por": "tarea",
-      "resumen": "Vecinos de San Salvador el Seco, Tepeaca y San Nicolás Buenos Aires grabaron con sus teléfonos una luz brillante que cruzaba el cielo nocturno y que, según los testigos, parecía arrastrar una estela o un cuerpo secundario detrás de sí. La nota no precisa la fecha ni la hora del avistamiento y la Protección Civil estatal no había emitido ningún pronunciamiento al publicarse. En redes se mencionaron basura espacial, fragmentos de meteorito, satélites de órbita baja y drones de gran altura, sin que la fuente verifique ninguna de esas hipótesis. La coordenada registrada es aproximada: corresponde a un punto central entre las tres localidades mencionadas.",
-      "titulo": "Luz con estela sobre varios municipios de Puebla, México",
-      "url": "https://www.aztecaguerrero.com/noticias/no-estamos-solos-captan-extrano-ovni-arrastrando-un-objeto-desconocido-sobre-puebla/",
-      "id": "mx-puebla-estela-20261116"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-18T00:55:00Z",
-      "descarte": [
-        {
-          "detalle": "Desde el 13 de noviembre de 2026, fecha del avistamiento, hay videomapping e iluminaciones de las ATP Finals en la plaza San Carlo y en la fachada del Palazzo Reale de Turín; la coincidencia temporal es real, aunque la fuente no confirma que explique todas las luces.",
-          "fuente": "https://www.libero.it/magazine/news/strane-luci-cielo-torino-decine-cittadini-filmano-fenomeno-cosa-succede-ufo-atp-finals-231536",
-          "tipo": "otro"
-        },
-        {
-          "detalle": "Las Leónidas estaban activas (6 al 30 de noviembre de 2026) y las Táuridas del Norte habían alcanzado su máximo la noche del 11 al 12 de noviembre; ninguna explica haces fijos proyectados sobre las nubes, pero la coincidencia de calendario queda registrada.",
-          "fuente": "https://www.imo.net/resources/calendar/",
-          "tipo": "meteoros"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "sin verificar; la prensa local propone focos móviles de espectáculos o el videomapping de las ATP Finals, sin confirmación",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-16T12:00:00Z",
-      "fuente": "Libero Magazine",
-      "lat": 45.07,
-      "lon": 7.69,
-      "lugar": "Turín y municipios del cinturón norte, Piamonte, Italia",
-      "por": "tarea",
-      "resumen": "La noche del viernes 13 de noviembre, vecinos de Caselle Torinese, Mappano, Volpiano, Settimo Torinese, Robassomero y los barrios turineses de Barriera di Milano y Falchera filmaron varios haces o destellos de luz que atravesaban nubes espesas y parecían desplazarse con regularidad sobre las casas; los primeros registros los compartieron residentes de Caselle Torinese y el fenómeno se difundió por redes. La prensa local plantea dos explicaciones no confirmadas: focos móviles del tipo que se usa en locales y espectáculos al aire libre, cuyos haces se vuelven visibles a distancia al proyectarse contra las nubes, y las iluminaciones de las ATP Finals, que desde el 13 de noviembre incluyen videomapping en la plaza San Carlo y en la fachada del Palazzo Reale. No hay pronunciamiento de autoridades ni análisis de especialistas, y la propia nota concluye que no existe confirmación definitiva. Las coordenadas corresponden a Turín de manera aproximada, ya que los reportes se reparten por varios municipios del cinturón norte.",
-      "titulo": "Haces de luz sobre Turín y su cinturón norte, filmados por vecinos",
-      "url": "https://www.libero.it/magazine/news/strane-luci-cielo-torino-decine-cittadini-filmano-fenomeno-cosa-succede-ufo-atp-finals-231536",
-      "id": "it-torino-luces-20261113"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-16T18:49:00Z",
-      "descarte": [],
-      "descarteRevisado": true,
-      "enlaces": [
-        [
-          "Sun halo spotted over Gauteng: what causes the bright ring? (IOL, 16 nov)",
-          "https://iol.co.za/the-star/lifestyle/2026-11-16-sun-halo-spotted-over-gauteng-what-causes-the-bright-ring/"
-        ]
-      ],
-      "estado": "explicado como halo solar de 22° por el Servicio Meteorológico de Sudáfrica y una atmosferóloga de la Universidad de Witwatersrand",
-      "fechaEvento": "2026-11-16",
-      "fechaPub": "2026-11-16T10:07:00Z",
-      "fuente": "XtrAfrica · IOL · Rekord · Servicio Meteorológico de Sudáfrica",
-      "lat": -25.75,
-      "lon": 28.19,
-      "lugar": "Pretoria y Johannesburgo, Gauteng, Sudáfrica",
-      "por": "tarea",
-      "rareza": "natural",
-      "resumen": "Poco antes del mediodía del 16 de noviembre, habitantes de Pretoria y Johannesburgo fotografiaron un anillo brillante en torno al Sol, con un resplandor pálido y algo de color en el borde, y las imágenes circularon en hilos de Reddit y en medios locales. El Servicio Meteorológico de Sudáfrica y la profesora Jennifer Fitchett, de la Universidad de Witwatersrand, lo identificaron como un halo solar de 22 grados: la luz se refracta en diminutos cristales de hielo hexagonales de nubes cirros a unos 8 a 10 kilómetros de altura. Ambas fuentes aclaran que el halo no sirve como pronóstico fiable de lluvia y advierten que no se debe mirar directamente al Sol. La cobertura reproduce fotografías de prensa y del público; no se menciona registro en video.",
-      "titulo": "Un anillo de luz alrededor del Sol inquieta a Gauteng, Sudáfrica",
-      "url": "https://www.xtrafrica.com/news/south-africa-sun-halo-november-16-2026-explained",
-      "id": "za-halo-gauteng-20261116"
     },
     {
       "agua": false,
