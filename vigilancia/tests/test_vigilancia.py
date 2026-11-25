@@ -142,12 +142,38 @@ def test_parsear_lluvias_devuelve_vacio_si_no_reconoce_la_tabla():
     assert meteoros.parsear_lluvias("<p>sin tablas</p>") == []
 
 
+URL_21_27 = "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-21-27-2026/"
+
+
 def test_coincidencia_de_meteoros_cita_la_url_y_nombra_las_lluvias():
     f = meteoros.parsear_lluvias(HTML)
-    url = "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-21-27-2026/"
-    c = meteoros.coincidencias(f, url, date(2026, 11, 24))
-    assert len(c) == 1 and c[0]["tipo"] == "meteoros" and c[0]["fuente"] == url
-    assert "Leonids" in c[0]["detalle"] and "24 de noviembre" in c[0]["detalle"]
+    c = meteoros.coincidencias(f, URL_21_27, date(2026, 11, 24))
+    assert len(c) == 1 and c[0]["tipo"] == "meteoros" and c[0]["fuente"] == URL_21_27
+    assert "Leonids" in c[0]["detalle"]
+    assert "del 21 al 27 de noviembre de 2026" in c[0]["detalle"]
+
+
+@pytest.mark.parametrize("fuera", [date(2026, 11, 20), date(2026, 11, 28), date(2026, 1, 5)])
+def test_el_panorama_no_se_atribuye_a_una_semana_que_no_cubre(fuera):
+    """Un panorama vale para su semana. Usarlo en otra sería afirmar que una
+    fuente dice algo que no dice."""
+    f = meteoros.parsear_lluvias(HTML)
+    assert meteoros.coincidencias(f, URL_21_27, fuera) == []
+
+
+def test_el_detalle_nunca_afirma_cubrir_la_fecha_del_caso():
+    f = meteoros.parsear_lluvias(HTML)
+    d = meteoros.coincidencias(f, URL_21_27, date(2026, 11, 24))[0]["detalle"]
+    assert "que cubre el 24" not in d          # la redacción falsa de antes
+    assert "para la semana" in d
+
+
+def test_descarte_anota_cuando_el_panorama_no_cubre_el_caso():
+    cal = dict(_cal())
+    cal["meteoros"] = {"lluvias": meteoros.parsear_lluvias(HTML), "url": URL_21_27}
+    r = descarte.revisar(cal, "2026-11-20")                 # fuera de la semana 21-27
+    assert not any(c["tipo"] == "meteoros" for c in r["descarte"])
+    assert any("no cubre la semana" in n for n in r["notas"])
 
 
 def test_sin_lluvias_no_hay_coincidencia():

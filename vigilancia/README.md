@@ -66,7 +66,7 @@ pip install -r vigilancia/requirements.txt
 python -m vigilancia calendarios              # descarga y cachea los calendarios
 python -m vigilancia descarte 2026-11-20      # revisa una fecha (hora opcional: 21:27)
 python -m vigilancia feed                     # revisa todo data/recientes.json sin escribirlo
-python -m pytest -q vigilancia/tests          # 46 pruebas, todas sin red
+python -m pytest -q vigilancia/tests          # 51 pruebas, todas sin red
 ```
 
 El workflow `vigilancia-descarte.yml` corre lo mismo a diario y refresca la
