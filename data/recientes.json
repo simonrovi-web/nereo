@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-25T00:52:39Z",
+  "generado": "2026-11-25T07:03:43Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,27 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-25T12:40:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "desmentido por el Verificador de La República: video creado con inteligencia artificial",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-24T20:04:00Z",
+      "fuente": "Verificador de La República (Ricardo Colos), Perú",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a Perú)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "El Verificador de La República, la unidad de verificación del diario peruano, concluyó el 24 de noviembre que es falso un video que circulaba en redes sociales mostrando a personas que huyen mientras varios edificios se derrumban, presentado como el registro de uno de los sismos recientes en Perú. La publicación con más alcance, en Facebook, acumulaba más de 398.000 visualizaciones, 4.700 reacciones, 168 comentarios y más de 650 veces compartido. La verificación, firmada por Ricardo Colos, se apoya en dos herramientas: SynthID identificó el material como contenido generado artificialmente y Hive Moderation dio un 67,8 % de probabilidad de creación con inteligencia artificial. Entre las señales visuales el equipo cita personas y símbolos que se repiten en la misma escena, deformaciones en algunos elementos y movimientos poco naturales. Conviene anotar dos límites del material consultado: la nota no identifica a qué sismo concreto se atribuía el video —no da fecha, magnitud ni epicentro, y no cita al Instituto Geofísico del Perú ni a ninguna otra fuente oficial— y la página solo indica la fecha de publicación, con una hora de actualización a las 15:04 del 24 de noviembre, de modo que la hora registrada aquí es la de esa actualización.",
+      "titulo": "Desmienten el video de edificios derrumbándose durante un sismo en Perú: está hecho con inteligencia artificial",
+      "url": "https://larepublica.pe/verificador/2026/11/24/es-falso-el-video-que-muestra-a-personas-huyendo-mientras-edificios-se-derrumban-durante-el-sismo-en-peru-fue-creado-con-ia-1776480",
+      "id": "montaje-peru-sismo-ia-20261124"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -144,6 +165,42 @@
     {
       "agua": false,
       "clase": "prensa",
+      "creado": "2026-11-25T12:40:00Z",
+      "descarte": [
+        {
+          "detalle": "El propio medio sitúa el origen en el espectáculo de luces navideñas de una casa de Silver Spur Drive, en Springettsbury Township, activo de octubre a enero con música sincronizada por radio, y publica una fotografía de esa vivienda proyectando haces al cielo el 23 de noviembre de 2026. Una vecina relata en Facebook que confirmó la existencia de un espectáculo de láser en una casa.",
+          "fuente": "https://yahoo.com/news/articles/those-ufos-over-york-county-090455982.html",
+          "tipo": "otro"
+        },
+        {
+          "detalle": "Revisados los partes diarios de lanzamientos del 23 y 24 de noviembre: no figura ninguna misión Starlink entre el 20 y el 25 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado como origen de las luces.",
+          "fuente": "https://orbitalradar.com/blog/orbital-briefing-2026-11-24",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Nota original del York Daily Record",
+          "https://www.ydr.com/story/news/local/2026/11/24/york-county-pa-residents-speculate-about-mysterious-lights-in-the-sky/92929273007/"
+        ]
+      ],
+      "estado": "explicado como el espectáculo de luces de una casa particular según la mayoría de los vecinos citados por el York Daily Record; sin confirmación del propietario ni de ninguna autoridad",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-24T09:04:00Z",
+      "fuente": "York Daily Record (Meredith Willse), publicado también en Yahoo News",
+      "lat": 39.9626,
+      "lon": -76.7277,
+      "lugar": "Condado de York, Pensilvania, Estados Unidos (casa en Silver Spur Drive, Springettsbury Township; reportes también en Red Lion y la ruta 30)",
+      "por": "tarea",
+      "resumen": "El York Daily Record publicó el 24 de noviembre una nota sobre haces de luz que apuntan a las nubes y rebotan en el cielo del condado de York, en Pensilvania, y que los vecinos comentaban en redes sociales preguntándose si eran ovnis. Se mencionan reportes en el este del condado, en Red Lion y desde la ruta 30. La explicación que recoge el medio es doméstica: la mayoría de la gente cree que proceden de una casa de Silver Spur Drive, en Springettsbury Township, que monta un espectáculo de luces de octubre a enero con música sincronizada por radio; una vecina cuenta en Facebook que llegó a pensar en ovnis hasta que confirmó que había un espectáculo de láser en una casa, y otra comenta que la vivienda tiene luces muy potentes. El caso es débil en registro y en verificación: la nota no da fecha ni hora de ningún avistamiento, no publica video, y la única imagen del fenómeno es una fotografía de esa casa emitiendo haces de luz hacia el cielo el 23 de noviembre, sin crédito indicado. Los testigos son comentarios de Facebook sin apellido y el medio no contrasta sus relatos. Tampoco hay declaración del propietario de la casa, ni de la policía, ni de un aeropuerto, ni de ningún astrónomo, y el propio texto se limita a decir que «la mayoría de la gente cree» en esa explicación; como hipótesis alternativa solo recoge, sin atribuirla a nadie, que podrían ser luces de aeropuerto. Las coordenadas corresponden a la ciudad de York de manera aproximada, ya que los reportes se reparten por varios puntos del condado.",
+      "titulo": "Las luces que inquietan al condado de York, en Pensilvania, se atribuyen a un espectáculo de luces de una casa",
+      "url": "https://yahoo.com/news/articles/those-ufos-over-york-county-090455982.html",
+      "id": "us-york-luces-20261124"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
       "descarte": [],
       "descarteRevisado": true,
@@ -165,6 +222,86 @@
       "titulo": "Luces que se desvanecen en un mismo punto del cielo de Shanghái, difundidas sin verificar",
       "url": "https://mimorelia.com/mundo/graban-supuesta-puerta-otra-dimension-china-asi-se-ve-n5598048",
       "id": "cn-shanghai-luces-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-25T12:40:00Z",
+      "descarte": [
+        {
+          "detalle": "Revisados los partes diarios de lanzamientos del 23 y 24 de noviembre: no figura ninguna misión Starlink entre el 20 y el 25 de noviembre de 2026, de modo que se descarta un tren de satélites recién lanzado; además el objeto se ve de día y a baja altura.",
+          "fuente": "https://orbitalradar.com/blog/orbital-briefing-2026-11-24",
+          "tipo": "starlink"
+        },
+        {
+          "detalle": "Según el panorama de actividad de la American Meteor Society para el 21 al 27 de noviembre de 2026, las alfa Monocerótidas tenían su máximo el 22 de noviembre, el mismo día en que el video se hizo viral, con una tasa menor de un meteoro por hora a 62 km/s, y las Leónidas seguían activas con unas 2 por hora a 70 km/s. La coincidencia de calendario es real, pero un objeto que ondula en el viento durante todo el clip no corresponde al perfil de un meteoro.",
+          "fuente": "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-21-27-2026/",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Versión en chino simplificado de la misma nota (HK01 global)",
+          "https://global.hk01.com/%E7%83%AD%E7%88%86%E8%AF%9D%E9%A2%98/60413614/%E6%9C%89%E7%89%87-%E5%A4%A7%E5%9F%94%E5%AE%8F%E7%A6%8F%E8%8B%91%E4%B8%8A%E7%A9%BA%E7%8E%B0%E7%A5%9E%E7%A7%98%E5%B7%A8%E7%89%A9-%E5%A4%96%E5%BD%A2%E5%A5%87%E7%89%B9%E4%BC%BCufo-%E7%BD%91%E6%B0%91%E6%8F%AD%E5%A5%87%E5%BC%82%E7%9C%9F%E8%BA%AB"
+        ],
+        [
+          "Snopes revisa la oleada de videos de «ovni medusa»: cometas, globos y clips hechos con IA (entrada previa del feed)",
+          "https://www.yahoo.com/news/science/articles/jellyfish-ufo-sightings-invaded-internet-205100016.html"
+        ]
+      ],
+      "estado": "sin verificar; la atribución a una cometa con forma de pulpo es de internautas y no hay pronunciamiento de ninguna autoridad ni especialista de Hong Kong",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-24T02:35:00Z",
+      "fuente": "HK01 (Brian) · video de la cuenta de Threads @nngaiwing",
+      "lat": 22.45,
+      "lon": 114.17,
+      "lugar": "Tai Po, Nuevos Territorios, Hong Kong (grabado desde Tai Po Road, junto al complejo Wang Fuk Court)",
+      "por": "tarea",
+      "resumen": "Un video difundido en Threads por la cuenta @nngaiwing se hizo viral en Hong Kong el 22 de noviembre: muestra un objeto grande y negro, con una parte que parece una cabeza y varios apéndices largos y finos por debajo, que ondula y gira en el aire con mucho viento junto al complejo Wang Fuk Court, en Tai Po. Según HK01, que publicó la nota el 24 de noviembre a las 10:35 hora local, la autora grabó desde Tai Po Road y dice que había pensado en una cometa pero que «no parece»; el medio no da la fecha ni la hora de la grabación ni la duración del clip. La explicación dominante es de los propios internautas, no de ninguna institución: varios sostienen que es una cometa con forma de pulpo a la que se le rompió el hilo, y señalan que en el paseo marítimo de Tai Po se vuelan cometas grandes, sobre todo en días festivos y con viento; uno de ellos afirma haber visto muchas cometas de ese tipo allí. HK01 relaciona el caso con la oleada de videos de «ovni medusa» de noviembre y atribuye a Sean Kirkpatrick, exprimer director de la oficina AARO del Pentágono, la idea de que esos registros encajan con una cometa de ala paracaídas con colas largas cuyo hilo es casi invisible a distancia, pero no fecha ni enlaza esa declaración. No hay pronunciamiento de la policía, del Observatorio de Hong Kong ni de la autoridad de aviación civil, ni análisis del material. El complejo Wang Fuk Court aparece en la nota solo en el pie de una foto de archivo sobre el incendio mortal que sufrió, sin que el medio establezca ninguna relación con el avistamiento. Las coordenadas corresponden a Tai Po de manera aproximada.",
+      "titulo": "Un objeto negro con tentáculos filmado sobre Tai Po, en Hong Kong, que los internautas atribuyen a una cometa",
+      "url": "https://www.hk01.com/%E7%86%B1%E7%88%86%E8%A9%B1%E9%A1%8C/60413614/%E6%9C%89%E7%89%87-%E5%A4%A7%E5%9F%94%E5%AE%8F%E7%A6%8F%E8%8B%91%E4%B8%8A%E7%A9%BA%E7%8F%BE%E7%A5%9E%E7%A7%98%E5%B7%A8%E7%89%A9-%E5%A4%96%E5%BD%A2%E5%A5%87%E7%89%B9%E5%8B%95%E4%BD%9C%E8%A9%AD%E7%95%B0-%E7%A5%9E%E7%A7%98%E7%9C%9F%E8%BA%AB%E6%9B%9D%E5%85%89",
+      "id": "hk-taipo-tentaculos-20261124"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-25T12:40:00Z",
+      "descarte": [
+        {
+          "detalle": "Las propias autoridades atribuyen el episodio a una aeronave: el mensaje del Ministerio del Interior y Seguridad habla de una aeronave rusa y la provincia de Gyeongsang del Norte, tras un primer aviso que decía «objeto volador presuntamente norcoreano», lo corrigió a «aeronave rusa». El Kyongbuk Ilbo advierte que la nacionalidad y la violación del espacio aéreo aún no estaban confirmadas por los militares.",
+          "fuente": "https://www.khan.co.kr/article/202611242133005/",
+          "tipo": "avion"
+        },
+        {
+          "detalle": "Revisados los partes diarios de lanzamientos del 23 y 24 de noviembre: no figura ninguna misión Starlink entre el 20 y el 25 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado. Los lanzamientos del periodo son USSF-317 (21 nov), NROL-136 (22 nov), un Long March 8A con SatNet (21 nov), Progress MS-36 y USSF-266 (24 nov, posteriores a la alerta) y Shenzhou 24 (25 nov); ninguno coincide con las 7:52 hora de Corea.",
+          "fuente": "https://orbitalradar.com/blog/orbital-briefing-2026-11-24",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Alerta de seguridad en Ulleungdo: objeto volador no identificado se aleja tras 5 minutos (JKN, edición en español)",
+          "https://news.jkn.co.kr/editions/spanish/post/1117886"
+        ],
+        [
+          "Vecinos alarmados por las sirenas y nueva confusión con el mensaje de «aeronave norcoreana presunta» (Kyunghyang Shinmun)",
+          "https://www.khan.co.kr/article/202611242133005/"
+        ]
+      ],
+      "estado": "alerta levantada a los seis minutos; la nacionalidad del objeto y si hubo violación del espacio aéreo seguían sin confirmar según el Kyongbuk Ilbo, y la provincia reconoció haber enviado por error el texto de un simulacro",
+      "fechaEvento": "2026-11-24",
+      "fechaPub": "2026-11-24T00:00:35Z",
+      "fuente": "Kyongbuk Ilbo (Hwang Yeong-u) · Kyunghyang Shinmun (Baek Gyeong-yeol) · JKN, edición en español (Jang Sun-hee) · Ministerio del Interior y Seguridad y provincia de Gyeongsang del Norte",
+      "lat": 37.5,
+      "lon": 130.87,
+      "lugar": "Condado de Ulleung, isla de Ulleungdo, provincia de Gyeongsang del Norte, Corea del Sur",
+      "por": "tarea",
+      "resumen": "La mañana del martes 24 de noviembre, a las 7:52 hora de Corea, el Ministerio del Interior y Seguridad de Corea del Sur emitió una alerta de vigilancia de defensa civil para el condado de Ulleung, en la isla de Ulleungdo, y envió un mensaje de emergencia a la 7:53 pidiendo a los vecinos refugiarse en instalaciones subterráneas o dentro de edificios; según el Kyunghyang Shinmun sonaron sirenas y hubo aviso de evacuación por altavoz. El mensaje inicial hablaba de la invasión del espacio aéreo por una aeronave rusa. A las 7:58 se levantó la alerta, pero el aviso de la provincia de Gyeongsang del Norte, enviado hacia las 8:00, describía el objeto como un «objeto volador presuntamente norcoreano»; unos 39 minutos más tarde la provincia reenvió el mensaje cambiando esa frase por «aeronave rusa». Un funcionario provincial citado por el Kyunghyang Shinmun atribuyó el error a haber reutilizado el texto de un simulacro cambiando solo la hora y pidió disculpas por aumentar la confusión. El Kyongbuk Ilbo precisa que la nacionalidad exacta del objeto y si hubo violación real del espacio aéreo requerían verificación adicional de las autoridades militares, y que se investigaba a qué país pertenecía, su trayectoria y cómo se emitió la alerta; la entradilla del Kyunghyang Shinmun afirma que después se identificó como aviones militares rusos, pero no cita fuente para ese dato, de modo que la identificación no queda establecida. Ninguna de las tres coberturas consultadas publica video ni fotografías del objeto: las imágenes son de archivo de la isla. Tampoco se menciona despliegue de cazas para este episodio y no hubo evacuaciones efectivas, aunque un vecino y un pescador citados por el Kyunghyang Shinmun describen el susto en el pueblo. Como contexto, el Estado Mayor Conjunto había informado de que el 17 de noviembre varias aeronaves militares rusas entraron y salieron de la zona de identificación de defensa aérea del mar del Este sin invadir el espacio aéreo. Las coordenadas corresponden a la isla de Ulleungdo de manera aproximada.",
+      "titulo": "Sirenas y orden de refugio en Ulleungdo, Corea del Sur, por un objeto volador no identificado sobre la isla",
+      "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4091859",
+      "id": "kr-ulleungdo-alerta-20261124"
     },
     {
       "agua": false,
@@ -281,6 +418,39 @@
       "titulo": "Desmienten un video de daños por las lluvias en Florida: estaba hecho con inteligencia artificial",
       "url": "https://factchequeado.com/verificaciones/20261123/lluvias-broward-florida-ia-desinformacion/",
       "id": "montaje-florida-lluvias-ia-20261123"
+    },
+    {
+      "agua": false,
+      "clase": "oficial",
+      "creado": "2026-11-25T12:40:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Octava entrega de archivos UAP: tres videos militares, uno de 2026 con dos objetos (entrada previa del feed)",
+          "https://www.miragenews.com/war-department-publishes-eighth-uap-files-1781257/"
+        ],
+        [
+          "Portal oficial del programa PURSUE",
+          "https://www.war.gov/ufo/"
+        ],
+        [
+          "Strange triangular craft reported in new U.S. government UFO release (Scientific American)",
+          "https://www.scientificamerican.com/article/strange-triangular-craft-reported-in-new-u-s-government-ufo-release/"
+        ]
+      ],
+      "estado": "material oficial publicado; el propio análisis advierte que los datos de radar no permiten una determinación final ni establecer que las ocho detecciones sean de un mismo objeto",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-22T12:34:00Z",
+      "fuente": "EarthSky (Paul Scott Anderson) · Department of War (PURSUE)",
+      "lat": null,
+      "lon": null,
+      "lugar": "Oeste de Estados Unidos (ubicación no revelada)",
+      "por": "tarea",
+      "resumen": "EarthSky publicó el 22 de noviembre un repaso detallado de la octava entrega de archivos desclasificados sobre fenómenos anómalos no identificados que el Departamento de Guerra de Estados Unidos difundió el 20 de noviembre en war.gov/UFO: 43 archivos, 40 documentos en PDF y tres videos, sin audio ni imágenes sueltas. El elemento nuevo frente a la cobertura inicial es el análisis de una traza de radar de un caso de 2023 en el oeste del país: un radar civil de vigilancia aérea registró ocho detecciones en 84 segundos, a entre 55.000 y 70.000 pies de altitud (unos 16.760 a 21.300 metros), separadas por 62 kilómetros; si correspondieran a un solo objeto, su velocidad sobre el suelo sería de unos 2.700 km/h, del orden de Mach 2,5 a esa altitud, con un cambio aparente de rumbo de 39 grados en sentido antihorario a los 48 segundos. El propio análisis advierte que un barrido de radar de 12 segundos no basta para establecer que las ocho detecciones provengan del mismo objeto ni que formen una traza continua, y que los datos no permiten una determinación final. Entre los documentos EarthSky destaca además un memorando de 1952 de S. Q. Reber, asistente del director de coordinación de inteligencia, sobre los «platillos volantes» y la guerra psicológica, el informe de Lockheed de 1953 firmado por Kelly Johnson sobre un objeto oscuro y elíptico visto el 16 de diciembre de 1953 cerca de Agoura y Point Mugu, en California, y un informe de BAASS de julio de 2009, de 538 páginas, dentro del programa AAWSAP de la DIA, que proponía una bóveda subterránea en North Las Vegas para material «exótico» y que, según el artículo, nunca se construyó. El texto no nombra a los analistas del radar, cita declaraciones del portavoz Sean Parnell y del secretario de Defensa Pete Hegseth, y no propone ninguna explicación para los casos. Al no publicarse la fecha exacta del episodio de radar de 2023 no fue posible cruzarlo con calendarios de lanzamientos, reentradas o lluvias de meteoros.",
+      "titulo": "La octava entrega UAP incluye una traza de radar civil: ocho detecciones en 84 segundos a unos Mach 2,5",
+      "url": "https://earthsky.org/human-world/pentagon-uap-files-part-8-radar-track-analysis/",
+      "id": "pursue-08-radar-20261122"
     },
     {
       "agua": false,
@@ -1016,32 +1186,6 @@
     {
       "agua": false,
       "clase": "prensa",
-      "creado": "2026-11-19T13:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
-          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
-        ]
-      ],
-      "estado": "desmentido por Full Fact",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Full Fact",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
-      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
-      "id": "montaje-luces-rojas-lakenheath-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
       "descarte": [],
       "descarteRevisado": false,
@@ -1079,6 +1223,32 @@
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
       "url": "https://mymodernmet.com/capri-double-watersprout/",
       "id": "it-capri-trombas-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
+          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+        ]
+      ],
+      "estado": "desmentido por Full Fact",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Full Fact",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
+      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "id": "montaje-luces-rojas-lakenheath-20261118"
     },
     {
       "agua": false,
@@ -1485,153 +1655,6 @@
       "titulo": "Compilación de registros recientes: Japón, México y otros",
       "url": "https://www.youtube.com/watch?v=Atn0kp16cdc",
       "id": "compilacion-20261114"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T18:45:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin verificar; NUFORC lo clasifica como avistamiento anómalo, sin material audiovisual publicado",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-14T12:21:00Z",
-      "fuente": "IBTimes UK · NUFORC",
-      "lat": 45.3,
-      "lon": -122.77,
-      "lugar": "Wilsonville, Oregón, Estados Unidos",
-      "por": "tarea",
-      "resumen": "Una testigo identificada solo como «S» reportó que cerca de las 20:00 del 25 de agosto vio caer desde el cielo un objeto que pasó de una forma rectangular a una bola grande y luego a una más pequeña, con una estela detrás. Alrededor de una hora después, a las 21:14, su hija avisó de luces que recorrían las paredes de su dormitorio y la familia vio por la ventana un objeto grande, plateado y silencioso, que se mantuvo suspendido casi un minuto antes de desaparecer; la testigo reportó náuseas y problemas de equilibrio esa noche y dijo que se recuperaron a la mañana siguiente. El investigador de NUFORC Keith Bickford consultó a dos agricultores de la zona que operan drones y reportó que la oficina del sheriff del condado de Clackamas y la policía de Wilsonville no tenían reportes esa noche y que FlightRadar24 no mostraba tráfico coincidente; lo clasificó textualmente como un avistamiento anómalo. La nota señala que la hija tomó una fotografía, pero no la publica ni menciona video, y da la fecha como 25 de agosto sin precisar el año, por lo que no se registra fechaEvento.",
-      "titulo": "NUFORC clasifica como anómalo un caso en Wilsonville, Oregón",
-      "url": "https://ibtimes.co.uk/oregon-woman-reports-alleged-ufo-encounter-wilsonville-1832192",
-      "id": "us-oregon-wilsonville"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T02:22:00Z",
-      "descarte": [
-        {
-          "detalle": "Según el calendario de la IMO, la noche del 13 de noviembre había actividad de Táuridas del Norte (máximo 11-12 nov), Táuridas del Sur (activas hasta el 20 nov) y Leónidas (activas del 6 al 30 nov, máximo 16-17 nov)",
-          "fuente": "https://www.imo.net/resources/calendar/",
-          "tipo": "meteoros"
-        },
-        {
-          "detalle": "El vuelo 15 de Starship se lanzó ese mismo 13 de noviembre desde Texas y provocó avistamientos en Centroamérica; la astronomía chilena descartó relación con el destello sobre Chile, y rocketlaunch.live no lista ningún lanzamiento Starlink entre el 11 y el 15 de noviembre",
-          "fuente": "https://rocketlaunch.live/",
-          "tipo": "lanzamiento"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [
-        [
-          "Qué se sabe del destello (T13)",
-          "https://www.t13.cl/noticia/nacional/fue-meteorito-se-sabe-destello-ilumino-cielo-genero-reportes-varias-regiones-14-11-2026"
-        ],
-        [
-          "Videos del paso sobre Biobío y Ñuble",
-          "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/13/video-paso-de-meteorito-ilumino-cielo-de-regiones-del-bio-bio-y-nuble.shtml"
-        ]
-      ],
-      "estado": "explicado como bólido",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-14T12:00:00Z",
-      "fuente": "BioBioChile · T13 · Red Geocientífica de Chile",
-      "lat": -36,
-      "lon": -72.2,
-      "lugar": "De Coquimbo a Los Ríos, Chile",
-      "por": "siembra",
-      "resumen": "Un intenso destello cruzó el cielo cerca de las 21:32 del viernes 13 y quedó registrado por cámaras de seguridad y teléfonos. Testigos en Ñuble y Biobío reportaron un fuerte estruendo segundos después. La Red Geocientífica de Chile recopiló reportes desde Coquimbo hasta Los Ríos; la astrónoma Francisca Contreras señaló que se trataría de un objeto quemándose al ingresar a la atmósfera, de origen natural o artificial, y descartó relación con un lanzamiento de SpaceX.",
-      "titulo": "Bólido sobre Chile central y sur",
-      "url": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/astronomia/2026/11/14/cientificos-explican-bola-de-fuego-que-cruzo-cielos-de-chile-y-el-fuerte-estruendo-que-se-escucho.shtml",
-      "id": "cl-bolido-20261113"
-    },
-    {
-      "agua": true,
-      "clase": "prensa",
-      "creado": "2026-11-16T00:53:36Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "Artículo «Dolphin self-talk: unusual acoustic behaviour of a solitary bottlenose dolphin» (DOI)",
-          "https://doi.org/10.1080/09524622.2024.2422092"
-        ]
-      ],
-      "estado": "sonidos documentados y publicados por la Universidad del Sur de Dinamarca; la causa del comportamiento sigue sin explicación",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-14T12:00:00Z",
-      "fuente": "Discover Wildlife (BBC Wildlife) · Universidad del Sur de Dinamarca",
-      "lat": 55.06,
-      "lon": 10.61,
-      "lugar": "Canal de Svendborgsund, aguas danesas, mar Báltico, Dinamarca",
-      "por": "tarea",
-      "rareza": "mar",
-      "resumen": "Investigadores de la Universidad del Sur de Dinamarca, con la doctora Olga Filatova como autora principal, dejaron equipos de grabación submarina durante más de dos meses y registraron cerca de 10.000 sonidos atribuidos a un único animal: Delle, un delfín nariz de botella macho que vive solo en aguas danesas, cerca del canal de Svendborgsund, y que desde entonces se desplazó hacia la costa alemana. Lo llamativo es que se trata de sonidos considerados comunicativos, que normalmente implican la presencia de al menos dos delfines, y que varios se produjeron de noche, sin personas cerca. El equipo plantea como posibles explicaciones un «habla para sí mismo» o vocalizaciones involuntarias de origen emocional, pero reconoce que la causa sigue sin establecerse. La nota, publicada el 14 de noviembre de 2026, difunde el audio y cita el artículo «Dolphin self-talk: unusual acoustic behaviour of a solitary bottlenose dolphin»; las grabaciones son de 2024 y el estudio ya había sido publicado, por lo que no se registra fecha de evento. Las coordenadas corresponden de manera aproximada al canal de Svendborgsund, ya que la fuente no precisa el punto exacto de grabación.",
-      "titulo": "Graban 10.000 sonidos de un delfín solitario en el Báltico y no saben por qué los emite",
-      "url": "https://discoverwildlife.com/animal-facts/marine-animals/chatty-delle-dolphin-baltic-sea",
-      "id": "dk-delle-sonidos-baltico"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-16T00:53:36Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "Protección Civil descarta los videos y Maussan la reta (860 Líder Informativo, 13 nov)",
-          "https://860liderinformativo.mx/2026/11/13/jaime-maussan-reta-a-proteccion-civil-de-juarez-tras-descartar-videos-del-supuesto-pterodactilo/"
-        ],
-        [
-          "Maussan reacciona al video viral (Infobae, 12 nov)",
-          "https://www.infobae.com/mexico/2026/11/12/captan-supuesto-pterodactilo-volando-en-ciudad-juarez-jaime-maussan-reacciona-al-video-viral/"
-        ],
-        [
-          "Cobertura del caso (El Informador, 15 nov)",
-          "https://www.informador.mx/mexico/captan-presunto-pterodactilo-en-ciudad-juarez-20261115-0038.html"
-        ],
-        [
-          "Un paleontólogo analiza el aleteo y lo considera falso (IBTimes UK, 18 nov)",
-          "https://www.ibtimes.co.uk/mexico-pterodactyl-videos-bird-ai-footage-1833046"
-        ]
-      ],
-      "estado": "desmentido por Protección Civil de Ciudad Juárez; una verificación del 14 de noviembre lo califica de falso y la silueta fue identificada como una garza azulada",
-      "fechaEvento": "2026-10-29",
-      "fechaPub": "2026-11-14T12:00:00Z",
-      "fuente": "What the Fact · Protección Civil de Ciudad Juárez · Infobae · 860 Líder Informativo",
-      "lat": 31.74,
-      "lon": -106.49,
-      "lugar": "Ciudad Juárez, Chihuahua, México",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Una compilación difundida por el periodista Jaime Maussan desde su cuenta de X el 13 de noviembre presenta una silueta voladora sobre la zona de Anapra, en Ciudad Juárez, Chihuahua, como un pteranodonte vivo, y añade imágenes de cámara trampa atribuidas a un sinápsido; el video sostiene que las criaturas llegarían por portales dimensionales. Sergio Rodríguez, director de Protección Civil Municipal de Ciudad Juárez, calificó el material de «contenido de entretenimiento digital» sin base real y señaló que, si existiera un animal prehistórico en la región, el INAH y otras instituciones ya lo estarían investigando; Maussan respondió en su programa preguntando si la dependencia visitó los lugares. Una verificación publicada el 14 de noviembre califica el caso de falso: especialistas identificaron la silueta voladora como una garza azulada (Ardea herodias), un detector de contenido sintético puntuó la compilación en 0,96 y uno de los cuadros muestra un rótulo de «inteligencia artificial»; según esa verificación, Maussan reconoció haber presentado una recreación mejorada con IA. Protección Civil de Chihuahua y la policía de Texas no registraron avistamientos ni ataques a ganado.",
-      "titulo": "Desmienten el video del «pterodáctilo» de Ciudad Juárez difundido por Maussan",
-      "url": "https://whatthefact.app/fact-checks/2026-11-14-ciudad-juarez-pterodactyl-flying-creature-video-maussan",
-      "id": "mx-juarez-pterodactilo-montaje"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T10:50:00Z",
-      "enlaces": [
-        [
-          "Detalle de la conclusión de Cridovni (Aire de Santa Fe)",
-          "https://www.airedesantafe.com.ar/actualidad/en-menos-diez-dias-aparecieron-luces-extranas-los-cielos-la-patagonia-y-uruguay-que-dicen-los-expertos-n676720"
-        ]
-      ],
-      "estado": "explicado como satélites Starlink por Cridovni, de la Fuerza Aérea Uruguaya",
-      "fechaEvento": "2026-11-05",
-      "fechaPub": "2026-11-14T08:47:00Z",
-      "fuente": "El Norte Hoy · Cridovni (Fuerza Aérea Uruguaya)",
-      "lat": -34.95,
-      "lon": -54.95,
-      "lugar": "Punta del Este, Maldonado, Uruguay (también Montevideo y Colonia del Sacramento)",
-      "por": "tarea",
-      "resumen": "Durante varios días de noviembre, vecinos de Maldonado, Montevideo y Colonia del Sacramento filmaron filas de puntos luminosos que cruzaban el cielo nocturno; en uno de los videos aparecen dos luces y luego una tercera. La comisión Cridovni, de la Fuerza Aérea Uruguaya, concluyó oficialmente que corresponden a satélites Starlink de SpaceX, y su titular, el coronel Víctor Molina, señaló que los videos no mostraban nada fuera de lo ordinario. La comisión aclaró que la conclusión aplica solo a los videos analizados y que siguen llegando reportes. Las coordenadas corresponden a Punta del Este.",
-      "titulo": "La Fuerza Aérea Uruguaya concluye que las luces de Punta del Este eran satélites Starlink",
-      "url": "https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites",
-      "id": "uy-cridovni-starlink-20261105"
     },
     {
       "agua": false,
