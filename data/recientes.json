@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-25T07:03:43Z",
+  "generado": "2026-11-25T12:50:53Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,27 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-25T12:50:53Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "desmentido por Thai PBS Verify: material generado con inteligencia artificial; los análisis oficiales de 18 muestras no hallaron metales pesados por encima de los límites",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-25T08:13:00Z",
+      "fuente": "Thai PBS Verify (Nuttapoln Toomma) · Sahaphop Dokkaew, Universidad Kasetsart · Departamento de Pesca de Tailandia",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido al río Prachin Buri, provincia de Prachin Buri, Tailandia)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Una publicación difundida el 23 de noviembre por la cuenta de TikTok «vip Shop», con más de 88.000 visualizaciones y 1.170 veces compartida, presentaba un pez —una tilapia del Nilo— con la piel roja e hinchada como prueba de que los peces del río Prachin Buri, al este de Bangkok, están contaminados con metales pesados. El equipo Thai PBS Verify, con la verificación firmada por Nuttapoln Toomma y publicada el 25 de noviembre a las 15:13 hora local, concluyó que el material es una fabricación hecha con inteligencia artificial y no un pez real de ese río: la propia publicación llevaba la etiqueta de TikTok «contenido generado con IA» y el análisis con la herramienta SynthID de Google confirmó que la imagen se creó con IA de Google. El profesor asistente Sahaphop Dokkaew, subjefe del Departamento de Acuicultura de la Facultad de Pesca de la Universidad Kasetsart, añadió que las lesiones cutáneas que se ven no se han documentado nunca en ninguna enfermedad de peces. El hecho de fondo que la publicación citaba sí es real y apunta en sentido contrario: entre el 4 y el 7 de noviembre se tomaron 18 muestras de peces —nueve en mercados locales y nueve en hábitats naturales, entre los distritos de Kabin Buri y Ban Sang y en la provincia vecina de Chachoengsao— y, según el informe de la Oficina Provincial de Relaciones Públicas de Prachin Buri con datos del Departamento de Pesca, los niveles de mercurio, cadmio y plomo quedaron muy por debajo de los límites del Ministerio de Salud Pública. Conviene anotar una ambigüedad del material consultado: la propia página alterna entre llamarlo «imagen falsa» y «clip» o video, y el enlace de TikTok que cita apunta a una fotografía, de modo que no queda establecido si el material es un video o una imagen fija; tampoco se indica dónde se habría tomado.",
+      "titulo": "Desmienten el pez de piel roja del río Prachin Buri, en Tailandia: el material está hecho con IA",
+      "url": "https://www.thaipbs.or.th/verify/en/content/18802",
+      "id": "montaje-prachinburi-pez-20261125"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -31,6 +52,26 @@
       "titulo": "Desmienten el video de edificios derrumbándose durante un sismo en Perú: está hecho con inteligencia artificial",
       "url": "https://larepublica.pe/verificador/2026/11/24/es-falso-el-video-que-muestra-a-personas-huyendo-mientras-edificios-se-derrumban-durante-el-sismo-en-peru-fue-creado-con-ia-1776480",
       "id": "montaje-peru-sismo-ia-20261124"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-25T12:50:53Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; la fuente no identifica el objeto, no publica imágenes y no hay pronunciamiento de ninguna autoridad",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-24T17:02:14Z",
+      "fuente": "ProKazan.ru (Viktoria Kuznetsova), con datos de Flightradar24 y citando a ProGorodChelny.ru",
+      "lat": 55.79,
+      "lon": 49.12,
+      "lugar": "Arakchino, distrito Kirovski, Kazán, Tatarstán, Rusia",
+      "por": "tarea",
+      "resumen": "El portal ProKazan publicó el 24 de noviembre, a las 20:02 hora de Moscú, que el servicio de seguimiento de vuelos Flightradar24 registró en el cielo de Kazán, en la zona de Arakchino (distrito Kirovski), junto a la orilla del Volga, un objeto no identificado con el indicativo 26036RA. Según la nota, el servicio no determina tipo, matrícula, número de serie, antigüedad ni categoría del aparato —todos esos campos aparecen como «N/A»— y tampoco hay ruta ni aeropuertos de origen o destino; los únicos datos son una altitud barométrica de 525 pies (unos 160 metros), una velocidad sobre el suelo de 1 nudo (menos de 2 km/h) y un rumbo de 315 grados, de modo que, en palabras del medio, «el vehículo prácticamente no se movía». El caso es muy débil en registro y en verificación: no hay video ni fotografías del objeto —la única imagen es una ilustración de cabecera—, no se cita a ningún testigo, el medio no propone ninguna explicación y no recoge pronunciamiento de autoridades aeronáuticas, militares, meteorólogos ni astrónomos; las únicas fuentes nombradas son los datos de Flightradar24 y el portal ProGorodChelny.ru. La nota tampoco indica la fecha ni la hora del avistamiento, solo la de publicación. Las coordenadas corresponden a Kazán de manera aproximada, ya que la fuente sitúa el registro en la zona de Arakchino sin dar un punto preciso.",
+      "titulo": "Flightradar24 registra sobre el Volga, en Kazán, un objeto no identificado casi inmóvil",
+      "url": "https://prokazan.ru/news/view/tainstvennyj-obekt-zavis-nad-volgoj-u-kazani",
+      "id": "ru-kazan-flightradar-20261124"
     },
     {
       "agua": false,
@@ -224,6 +265,32 @@
       "id": "cn-shanghai-luces-20261118"
     },
     {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-25T12:50:53Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Versión original de la verificación en Lead Stories (enlace canónico citado por la página de Yahoo)",
+          "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-showing-giant-sea-worm-attacking-cruise-ship-ai-generated.html"
+        ]
+      ],
+      "estado": "desmentido por Lead Stories: video generado con inteligencia artificial, con 99,9 % en Hive Moderation y 78 % en Sightengine",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-24T03:02:00Z",
+      "fuente": "Lead Stories (Alexis Tereszcuk), publicado también en Yahoo News",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Un video que parecía mostrar un gusano marino colosal emergiendo del océano por detrás de un crucero circuló desde el 3 de noviembre en una publicación de X de la cuenta @GauriLifestyle, que preguntaba al asistente Grok qué estaba saliendo del agua; el propio Grok respondió describiendo «un colosal gusano de aguas profundas (o leviatán)». Lead Stories lo verificó y concluyó que es falso y generado con inteligencia artificial: el detector Hive Moderation dio un 99,9 % de probabilidad de contenido generado con IA o deepfake y Sightengine un 78 %, y una búsqueda en Google News con los términos «giant sea worm» y «cruise ship» no encontró ningún reporte de medios establecidos sobre un incidente así. Los verificadores señalan además que la criatura se parece al gusano de arena ficticio de la película «Dune» de 2021, con una comparación de fotogramas. Conviene anotar dos límites del material consultado: la verificación no describe señales visuales concretas del montaje más allá de ese parecido y de los resultados de los detectores, y no indica si el video original en X llevaba etiqueta de contenido generado con IA. La página de Yahoo que reproduce la nota solo muestra fecha de actualización —24 de noviembre a las 03:02 UTC—, de modo que la hora registrada aquí es la de esa actualización; las capturas del texto están fechadas el 23 de noviembre.",
+      "titulo": "Desmienten el video viral de un gusano marino gigante emergiendo tras un crucero: está hecho con IA",
+      "url": "https://www.yahoo.com/news/articles/fact-check-fake-video-giant-030207068.html",
+      "id": "montaje-gusano-crucero-20261124"
+    },
+    {
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-25T12:40:00Z",
@@ -244,6 +311,10 @@
         [
           "Versión en chino simplificado de la misma nota (HK01 global)",
           "https://global.hk01.com/%E7%83%AD%E7%88%86%E8%AF%9D%E9%A2%98/60413614/%E6%9C%89%E7%89%87-%E5%A4%A7%E5%9F%94%E5%AE%8F%E7%A6%8F%E8%8B%91%E4%B8%8A%E7%A9%BA%E7%8E%B0%E7%A5%9E%E7%A7%98%E5%B7%A8%E7%89%A9-%E5%A4%96%E5%BD%A2%E5%A5%87%E7%89%B9%E4%BC%BCufo-%E7%BD%91%E6%B0%91%E6%8F%AD%E5%A5%87%E5%BC%82%E7%9C%9F%E8%BA%AB"
+        ],
+        [
+          "Cobertura del 25 de noviembre en Dim Sum Daily: la identificación como cometa pulpo sigue siendo de vecinos e internautas, sin autoridad ni dueño que la confirme",
+          "https://www.dimsumdaily.hk/giant-octopus-kite-mistaken-for-ufo-over-wang-fuk-court-in-tai-po/"
         ],
         [
           "Snopes revisa la oleada de videos de «ovni medusa»: cometas, globos y clips hechos con IA (entrada previa del feed)",
@@ -1580,81 +1651,6 @@
       "titulo": "Un anillo de luz alrededor del Sol inquieta a Gauteng, Sudáfrica",
       "url": "https://www.xtrafrica.com/news/south-africa-sun-halo-november-16-2026-explained",
       "id": "za-halo-gauteng-20261116"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-17T00:50:16Z",
-      "descarte": [],
-      "descarteRevisado": true,
-      "enlaces": [
-        [
-          "The sky over Florida surprises with a strange phenomenon: what is happening?",
-          "https://en.cibercuba.com/noticias/2026-11-15-u1-e135253-s27061-nid345803-cielo-florida-sorprende-extrano-fenomeno-esta"
-        ]
-      ],
-      "estado": "explicado como nubes cavum (fallstreak holes) de origen atmosférico, según la NOAA y la NASA citadas por la fuente",
-      "fechaEvento": "2026-11-15",
-      "fechaPub": "2026-11-15T12:00:00Z",
-      "fuente": "CiberCuba",
-      "lat": null,
-      "lon": null,
-      "lugar": "Florida, Estados Unidos",
-      "por": "tarea",
-      "rareza": "natural",
-      "resumen": "Durante el fin de semana del 14 y 15 de noviembre aparecieron grandes agujeros circulares y alargados en capas de nubes sobre Florida. El meteorólogo Matt Devitt difundió las imágenes el domingo y pidió a vecinos enviar las suyas. Se trata de agujeros de caída (fallstreak holes o nubes cavum): cuando un avión atraviesa una capa con gotas de agua subenfriada, algunas se congelan en cristales que crecen absorbiendo humedad y dejan un hueco que se expande, con estelas blanquecinas cayendo debajo. La NOAA atribuye la formación de cristales al enfriamiento del aire alrededor de las alas, y la NASA recuerda que el origen es atmosférico y no extraterrestre. La ubicación es estatal, sin localidad precisa en la fuente.",
-      "titulo": "Agujeros circulares en las nubes sobre Florida: nubes cavum filmadas el fin de semana",
-      "url": "https://en.cibercuba.com/noticias/2026-11-15-u1-e135253-s27061-nid345803-cielo-florida-sorprende-extrano-fenomeno-esta",
-      "id": "us-florida-cavum-20261115"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T10:50:00Z",
-      "enlaces": [
-        [
-          "Protección Civil de Chiapas atribuye las luces a Starship (TV Azteca)",
-          "https://www.tvazteca.com/aztecanoticias/es-un-ovni-proteccion-civil-rompe-el-silencio-tras-avistamiento-de-extranas-luces-en-mexico-todo-quedo-grabado/"
-        ],
-        [
-          "Luces en CDMX, Puebla y Oaxaca (Diario Puntual)",
-          "https://diariopuntual.com/cooltura/2026/11/14/12940/luces-en-el-cielo-de-cdmx-puebla-y-chiapas-que-eran"
-        ],
-        [
-          "Tren de satélites Starlink V3 (SDP Noticias)",
-          "https://www.sdpnoticias.com/sorprendente/viste-luces-extranas-en-el-cielo-no-eran-ovnis-sino-restos-de-starlink/"
-        ]
-      ],
-      "estado": "explicado como el vuelo 15 de Starship; atribución oficial de Protección Civil de Chiapas y de la presidencia de El Salvador",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-15T01:08:00Z",
-      "fuente": "RT · TV Azteca · Diario Puntual · Protección Civil de Chiapas",
-      "lat": null,
-      "lon": null,
-      "lugar": "México, Guatemala, El Salvador, Puerto Rico y sur de Texas",
-      "por": "tarea",
-      "resumen": "La noche del viernes 13 de noviembre se difundieron grabaciones desde Ciudad de México, Puebla, Oaxaca, la costa de Chiapas, Guatemala, El Salvador, Puerto Rico y el sur de Texas que muestran un punto brillante con un abanico de luz detrás. La Secretaría de Protección Civil de Chiapas y la presidencia de El Salvador atribuyeron el fenómeno al vuelo de prueba 15 de Starship, lanzado ese día desde Starbase, Texas, que puso en órbita 26 satélites Starlink V3. El abanico luminoso se explica como gas de los motores iluminado por el sol a gran altura, el llamado «efecto medusa». Al abarcar varios países no se asigna una coordenada única.",
-      "titulo": "Luces del vuelo 15 de Starship vistas en México y Centroamérica",
-      "url": "https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises",
-      "id": "latam-starship-20261113"
-    },
-    {
-      "agua": false,
-      "clase": "redes",
-      "creado": "2026-11-15T02:22:00Z",
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-14T13:30:00Z",
-      "fuente": "YouTube",
-      "lat": null,
-      "lon": null,
-      "lugar": "Varios países",
-      "por": "siembra",
-      "resumen": "Recopilación publicada el 14 de noviembre que reúne registros atribuidos a un objeto discoidal sobre la isla de Sado (Japón), un objeto negro filmado por un piloto comercial sobre Michoacán y otros casos. Sin verificación independiente de ninguno de ellos.",
-      "titulo": "Compilación de registros recientes: Japón, México y otros",
-      "url": "https://www.youtube.com/watch?v=Atn0kp16cdc",
-      "id": "compilacion-20261114"
     },
     {
       "agua": false,
