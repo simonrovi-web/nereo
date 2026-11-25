@@ -1,0 +1,73 @@
+{
+  "obtenido": "2026-11-25T02:14:13Z",
+  "url": "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-21-27-2026/",
+  "via": "url construida",
+  "lluvias": [
+    {
+      "nombre": "Andromedids (AND)",
+      "maximo": "Nov 07",
+      "velocidad": "15",
+      "clase": "IV"
+    },
+    {
+      "nombre": "Southern Taurids (STA)",
+      "maximo": "Nov 04",
+      "velocidad": "25",
+      "clase": "II"
+    },
+    {
+      "nombre": "omicron Eridanids (OER)",
+      "maximo": "Nov 05",
+      "velocidad": "27",
+      "clase": "IV"
+    },
+    {
+      "nombre": "Northern Taurids (NTA)",
+      "maximo": "Nov 09",
+      "velocidad": "26",
+      "clase": "II"
+    },
+    {
+      "nombre": "Southern chi Orionids (ORS)",
+      "maximo": "Nov 28",
+      "velocidad": "28",
+      "clase": "IV"
+    },
+    {
+      "nombre": "November Orionids (NOO)",
+      "maximo": "Nov 28",
+      "velocidad": "44",
+      "clase": "II"
+    },
+    {
+      "nombre": "Monocerotids (MON)",
+      "maximo": "Dec 10",
+      "velocidad": "45",
+      "clase": "II"
+    },
+    {
+      "nombre": "sigma Hydrids (HYD)",
+      "maximo": "Dec 07",
+      "velocidad": "60",
+      "clase": "III"
+    },
+    {
+      "nombre": "alpha Monocerotids (AMO)",
+      "maximo": "Nov 22",
+      "velocidad": "62",
+      "clase": "III"
+    },
+    {
+      "nombre": "Puppid-Velids (PUP)",
+      "maximo": "Dec 08",
+      "velocidad": "42",
+      "clase": "II"
+    },
+    {
+      "nombre": "Leonids (LEO)",
+      "maximo": "Nov 18",
+      "velocidad": "70",
+      "clase": "I"
+    }
+  ]
+}
