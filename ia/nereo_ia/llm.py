@@ -90,6 +90,10 @@ def preparar_entrada(r: dict) -> dict:
 
 # ─────────────────────────────────────────────────────────────── verificación
 _NUM = re.compile(r"(?<![\w-])(\d{1,3}(?:\.\d{3})+|\d+(?:[.,]\d+)?)(?![\w])")
+# Fechas ISO de la entrada (2023-05-18, 2015-11). El modelo las reescribe en
+# español —«18 de mayo de 2023»— y el día y el mes son cifras legítimas que el
+# patrón de arriba no ve, porque van precedidas de un guion.
+_FECHA = re.compile(r"\b(\d{4})-(\d{2})(?:-(\d{2}))?\b")
 
 
 def _numeros(obj) -> set[float]:
@@ -105,6 +109,10 @@ def _numeros(obj) -> set[float]:
     elif isinstance(obj, (int, float)):
         out.add(float(obj))
     elif isinstance(obj, str):
+        for anio, mes, dia in _FECHA.findall(obj):
+            out |= {float(anio), float(mes)}
+            if dia:
+                out.add(float(dia))
         for m in _NUM.findall(obj):
             out |= _interpretar(m)
     return out
