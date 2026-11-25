@@ -102,7 +102,12 @@ def revisar(cal: dict, fecha_evento, hora_utc: str | None = None,
     if lista_lanz:
         fuera += _lanz.coincidencias(lista_lanz, momento, lat, lon)
     if lluvias and url_met:
-        fuera += _met.coincidencias(lluvias, url_met, d)
+        met = _met.coincidencias(lluvias, url_met, d)
+        fuera += met
+        if not met:
+            notas.append(f"El panorama de meteoros descargado ({url_met}) no cubre la semana "
+                         f"del {d.isoformat()}, así que no se consultó actividad meteórica "
+                         f"para este caso.")
 
     for c in fuera:
         if c["tipo"] not in TIPOS:                     # red de seguridad del esquema

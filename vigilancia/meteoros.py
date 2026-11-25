@@ -186,16 +186,26 @@ def parsear_lluvias(html: str) -> list[dict]:
 
 # ─────────────────────────────────────────────────────────── coincidencias
 def coincidencias(lluvias: list[dict], url: str, dia: date) -> list[dict]:
-    """Una sola entrada de descarte que resume las lluvias activas esa semana.
+    """Las lluvias activas la semana del caso, si el panorama la cubre.
 
-    Función pura. Se emite una entrada agregada y no una por lluvia, porque lo
-    que importa para el descarte es si había actividad meteórica, no el catálogo.
+    Un panorama de la AMS vale para su semana y solo para ella. Se descarga uno
+    por ejecución —el de hoy—, así que a un caso de otra semana NO se le puede
+    atribuir: devolver algo sería afirmar que una fuente dice lo que no dice.
+    En ese caso se devuelve lista vacía y el llamador lo anota.
+
+    Se emite una entrada agregada y no una por lluvia, porque para el descarte
+    importa si había actividad meteórica, no el catálogo. Función pura.
     """
-    if not lluvias:
+    if not lluvias or not url:
         return []
+    periodo = periodo_de_url(url)
+    if periodo is None or not (periodo[0] <= dia <= periodo[1]):
+        return []
+    ini, fin = periodo
+
     partes = []
     for l in lluvias:
-        t = l.get("nombre", "").strip()
+        t = (l.get("nombre") or "").strip()
         if not t:
             continue
         extra = []
@@ -208,13 +218,16 @@ def coincidencias(lluvias: list[dict], url: str, dia: date) -> list[dict]:
         partes.append(f"{t} ({', '.join(extra)})" if extra else t)
     if not partes:
         return []
+
+    rango = (f"del {ini.day} al {fin.day} de {MESES_ES[fin.month]} de {fin.year}"
+             if ini.month == fin.month else
+             f"del {ini.day} de {MESES_ES[ini.month]} al {fin.day} de {MESES_ES[fin.month]} de {fin.year}")
     return [{
         "tipo": "meteoros",
-        "detalle": f"Según el panorama de actividad de la American Meteor Society que cubre el "
-                   f"{dia.day} de {MESES_ES[dia.month]} de {dia.year}, estaban activas: "
-                   + "; ".join(partes)
-                   + ". La coincidencia de calendario es real; que explique el caso depende de si "
-                     "el objeto se comportó como un meteoro.",
+        "detalle": f"El panorama de actividad de la American Meteor Society para la semana "
+                   f"{rango} lista como activas: " + "; ".join(partes)
+                   + ". La coincidencia de calendario es real; que explique el caso depende de "
+                     "si el objeto se comportó como un meteoro.",
         "fuente": url,
     }]
 
