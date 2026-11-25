@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-24T18:57:32Z",
+  "generado": "2026-11-25T00:52:39Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -12,7 +12,55 @@
   "alertas": [],
   "items": [
     {
-      "id": "br-itaborai-vega-20261117",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-24T19:40:00Z",
+      "descarte": [
+        {
+          "detalle": "Según el panorama de actividad de la American Meteor Society para el 14 al 20 de noviembre de 2026, las Leónidas tenían su máximo el 18 de noviembre (activas del 27 de octubre al 7 de diciembre, clase I, 70 km/s) y las alfa Monocerótidas el 22 de noviembre (activas del 13 al 27 de noviembre, clase III, tasas menores de 1 por hora). La coincidencia de calendario con las Leónidas es real, pero la NASA y Peter Brown descartan expresamente esa lluvia y atribuyen el bólido a un fragmento de asteroide.",
+          "fuente": "https://www.amsmeteors.org/2026/11/meteor-activity-outlook-for-november-14-20-2026/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "Revisado el listado de lanzamientos el 24 de noviembre: no figura ninguna misión Starlink con día confirmado entre el 17 y el 24 de noviembre de 2026; el último Starlink con fecha es el 427 (grupo 15-18) del 31 de octubre. Queda una entrada «Starlink (15-21)» fechada solo como noviembre de 2026, sin día, que no puede confirmarse ni descartarse.",
+          "fuente": "https://www.rocketlaunch.live/",
+          "tipo": "starlink"
+        },
+        {
+          "detalle": "El mismo listado registra para el 20 de noviembre de 2026 un Long March 8A con SatNet LEO Group 30, y el 18 de noviembre un Long March 2D con Shijian 24, ambos desde China y sin hora declarada. Ninguna fuente los vincula con el bólido, y la NASA atribuye el objeto a un fragmento de asteroide.",
+          "fuente": "https://www.rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Hundreds spot fireball as asteroid piece streaks over Western New York (WGRZ vía Yahoo News)",
+          "https://yahoo.com/news/science/articles/hundreds-spot-fireball-asteroid-piece-004445110.html"
+        ],
+        [
+          "Meteor seen streaking across southern Ontario skies (CTV News Kitchener)",
+          "https://www.ctvnews.ca/kitchener/article/meteor-seen-streaking-across-southern-ontario-skies/"
+        ],
+        [
+          "Bólido sobre la región del lago Erie del 18 de noviembre, evento distinto (entrada previa del feed)",
+          "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/"
+        ]
+      ],
+      "estado": "explicado como fragmento de asteroide por la NASA; Western University prevé posible caída de meteoritos y ambas descartan las Leónidas",
+      "fechaEvento": "2026-11-20",
+      "fechaPub": "2026-11-24T15:15:51Z",
+      "fuente": "CTV News / CP24 (Hannah Schmidt y Jennifer K. Baker) · WGRZ vía Yahoo News (Tommy Gallagher) · NASA · Peter Brown, Western University y Southern Ontario Meteor Network",
+      "lat": null,
+      "lon": null,
+      "lugar": "Lago Erie, oeste del estado de Nueva York y Eldred, Pensilvania, Estados Unidos (visto también desde el sur de Ontario, Canadá)",
+      "por": "tarea",
+      "resumen": "La noche del viernes 20 de noviembre, a las 19:27 hora del este, cientos de personas vieron un bólido brillante sobre el oeste del estado de Nueva York. Según la NASA, citada por CTV y CP24, el objeto se detectó por primera vez a 84 kilómetros de altura sobre el lago Erie, viajaba a unos 61.960 km/h y se desintegró a 32 kilómetros sobre Eldred, en Pensilvania, justo al sur de la frontera con Nueva York; se trataría de un fragmento de asteroide de unos 30 centímetros de diámetro y unos 30 kilos. Lo registraron tres cámaras all-sky de la NASA y cuatro de la Southern Ontario Meteor Network, que opera la Western University. Peter Brown, profesor del departamento de física y astronomía de esa universidad, calcula que el ángulo de entrada fue poco profundo, por lo que el destello fue visible más de cinco segundos, y estima que probablemente sobrevivieron fragmentos de entre el tamaño de un guijarro y el de una pelota de golf, caídos en una zona rural de Estados Unidos; no hay indicios de que cayera nada en Canadá. Tanto la NASA como Brown descartan expresamente que perteneciera a las Leónidas. El registro disponible son imágenes de cámaras de seguridad domésticas en South Bruce, Ontario, y fotogramas de las cámaras de la NASA y de la red de Western; ninguna de las coberturas consultadas publica video del evento. No se asignan coordenadas porque la trayectoria abarcó el lago Erie, el oeste de Nueva York y Pensilvania, con avistamientos también desde el sur de Ontario. Hay una discrepancia en la fecha de publicación: el byline de CTV y CP24 indica el 23 de noviembre a las 14:49 hora del este y los metadatos de la página el 24 de noviembre a las 15:15 UTC.",
+      "titulo": "La NASA sitúa en un fragmento de asteroide el bólido del lago Erie y Western University prevé caída de meteoritos en Pensilvania",
+      "url": "https://cp24.com/local/niagara/2026/11/24/fireball-over-lake-erie-may-have-dropped-meteorites-in-us-western-university-researcher-says",
+      "id": "us-ny-bolido-nasa-20261120"
+    },
+    {
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
@@ -40,10 +88,60 @@
       "por": "tarea",
       "resumen": "Una cámara fija de vigilancia del cielo del Observatório Vega, la estación «Vênus 2», registró hacia las 3:32 de la madrugada del martes 17 un objeto luminoso que permaneció sin desplazamiento aparente en el cielo de Itaboraí, en la región metropolitana de Río de Janeiro. El observatorio describe un aumento gradual de brillo y una estructura en forma de arco con núcleo oscuro, y dice que a partir de las 3:33 lo fue cubriendo una capa de nubes bajas, por lo que la fuente estaría por encima de ellas. Tras cruzar los datos astronómicos, meteorológicos y aeronáuticos afirma que no corresponde a meteoro, avión, dron, satélite ni astro conocido, y descarta un defecto de lente o sensor; lo clasifica como fenómeno anómalo no identificado y aclara que eso no implica origen extraterrestre. Las coordenadas son del centro del municipio de Itaboraí, porque la fuente no precisa el barrio.",
       "titulo": "Una luz inmóvil sobre Itaboraí, Río de Janeiro, queda sin identificar para el Observatório Vega",
-      "url": "https://www.cnnbrasil.com.br/ciencia/luz-misteriosa-aparece-imovel-no-ceu-do-rio-de-janeiro-desaparece-atras-das-nuvens-apos-deixar-rastro-e-intriga-observatorio-veja-video/"
+      "url": "https://www.cnnbrasil.com.br/ciencia/luz-misteriosa-aparece-imovel-no-ceu-do-rio-de-janeiro-desaparece-atras-das-nuvens-apos-deixar-rastro-e-intriga-observatorio-veja-video/",
+      "id": "br-itaborai-vega-20261117"
     },
     {
-      "id": "cn-shanghai-luces-20261118",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-24T19:40:00Z",
+      "descarte": [],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "American Airlines Pilot Receives 'Alien Sightings' Response From ATC After Reporting Strange Lights Over Baltimore (TheTravel, 23 nov)",
+          "https://www.thetravel.com/american-airlines-pilot-receives-alien-sightings-response-from-atc-after-reporting-strange-lights-over-baltimore/"
+        ],
+        [
+          "Octava entrega de archivos UAP del 20 de noviembre, sin vínculo establecido con este caso (entrada previa del feed)",
+          "https://www.miragenews.com/war-department-publishes-eighth-uap-files-1781257/"
+        ]
+      ],
+      "estado": "sin verificar; el origen del aviso de tráfico sigue sin conocerse y la autenticidad del audio no ha sido confirmada",
+      "fechaEvento": "2026-11-21",
+      "fechaPub": "2026-11-24T11:17:00Z",
+      "fuente": "IBTimes UK (Briane Nebria) · TheTravel (Jasmine Gillett) · audio difundido en X por la cuenta Flightdrama",
+      "lat": 39.3256,
+      "lon": -76.4138,
+      "lugar": "Zona del aeropuerto Martin State, Baltimore, Maryland, Estados Unidos",
+      "por": "tarea",
+      "resumen": "Un audio de control aéreo atribuido al sábado 21 de noviembre recoge un intercambio entre el vuelo 5432 de American Airlines —operado por PSA Airlines como American Eagle, con un CRJ-900 e indicativo «Blue Streak 5432», en ruta de Washington Reagan National a Filadelfia— y un controlador, en la zona del aeropuerto Martin State, a las afueras de Baltimore, Maryland. El piloto avisa de que recibe un aviso de tráfico sin etiqueta de identificación («Getting a TA but no tag on it»). El controlador contesta que ya ha pasado el único otro tránsito cercano y que no hay más tráfico, y añade: «I mean, we have had alien sightings out there, so...»; según su relato, otro piloto había reportado antes un objeto que zigzagueaba delante de su avión cerca de Martin State y que no aparecía en radar. El piloto responde con humor que es una buena historia para contarle a su familia. El caso es débil en verificación: solo hay audio, no video ni imágenes del objeto, la grabación circula en X difundida por la cuenta de aviación Flightdrama y ninguna de las dos coberturas consultadas identifica su origen técnico ni verifica su autenticidad. Un portavoz de la FAA explicó a TheTravel el procedimiento general —la agencia documenta avistamientos de fenómenos anómalos cuando un piloto los reporta a un controlador y, si el radar lo corrobora, los comparte con el grupo de trabajo correspondiente—, pero no se pronunció sobre este vuelo; American Airlines no hizo declaraciones y no está confirmado si se presentó un reporte formal. IBTimes precisa que no se ha establecido ningún vínculo con la octava entrega de archivos del Pentágono del 20 de noviembre. Las coordenadas corresponden al aeropuerto Martin State de manera aproximada; ninguna fuente da la hora del episodio.",
+      "titulo": "Un controlador aéreo responde a un piloto cerca de Baltimore que «hemos tenido avistamientos de extraterrestres por allí»",
+      "url": "https://www.ibtimes.co.uk/audio-captures-baltimore-atc-telling-american-airlines-flight-5432-we-have-had-alien-sightings-out-1834383",
+      "id": "us-baltimore-atc-20261121"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-24T19:40:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "desmentido por Thai PBS Verify: video generado con inteligencia artificial",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-24T10:48:00Z",
+      "fuente": "Thai PBS Verify (Krittima Khlangmontree)",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a Nong Bon, distrito de Muang, provincia de Sa Kaeo, Tailandia)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Un video subido a Facebook el 21 de noviembre, con un texto que lo fechaba el 20 y lo presentaba como burbujas de gas o agua brotando del subsuelo en Nong Bon, distrito de Muang, provincia de Sa Kaeo (Tailandia), acumuló unas 190.000 visualizaciones. El equipo Thai PBS Verify, con la verificación firmada por Krittima Khlangmontree, lo calificó de material falso creado con inteligencia artificial y presentado como grabación local real. Compararon fotogramas con un reportaje propio de Thai PBS del 19 de noviembre y con imágenes aéreas emitidas ese mismo día por el programa Khao 3 Miti del Canal 3, y pasaron el material por los detectores Hive Moderation y SynthID de Google, que apuntaron a generación con IA. El hecho de fondo sí es real: las autoridades localizaron gas subterráneo en una antigua fosa laterítica de Nong Bon, que se encendió al probarlo con fuego. La verificación se publicó el 24 de noviembre a las 17:48 hora local.",
+      "titulo": "Desmienten el video de burbujas gigantes de gas en Sa Kaeo, Tailandia: está hecho con inteligencia artificial",
+      "url": "https://www.thaipbs.or.th/verify/en/content/18754",
+      "id": "montaje-sakaeo-burbujas-20261124"
+    },
+    {
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
@@ -65,10 +163,10 @@
       "por": "tarea",
       "resumen": "Un video atribuido al 18 de noviembre en Shanghái muestra un conjunto de luces que parecen dirigirse hacia una misma zona del cielo hasta dejar de verse. Lo difundió el periodista y ufólogo Jaime Maussan en un segmento de su programa, que circuló en redes el 23 de noviembre, y él plantea que podría tratarse de una «puerta dimensional»; el propio medio advierte que esa interpretación no se apoya en ninguna evidencia presentada en el material. No se sabe quién grabó el video y la fuente no da hora ni un punto más preciso que la ciudad, por lo que las coordenadas son aproximadas, del centro de Shanghái.",
       "titulo": "Luces que se desvanecen en un mismo punto del cielo de Shanghái, difundidas sin verificar",
-      "url": "https://mimorelia.com/mundo/graban-supuesta-puerta-otra-dimension-china-asi-se-ve-n5598048"
+      "url": "https://mimorelia.com/mundo/graban-supuesta-puerta-otra-dimension-china-asi-se-ve-n5598048",
+      "id": "cn-shanghai-luces-20261118"
     },
     {
-      "id": "montaje-medusas-snopes-20261123",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
@@ -95,10 +193,10 @@
       "rareza": "montaje",
       "resumen": "Snopes publicó el 23 de noviembre una revisión de los videos de supuestos «ovni medusa» que se difundieron durante noviembre y no les dio calificación de verificación, porque sus criterios exigen pruebas concluyentes. Su conclusión es que no hay prueba de origen extraterrestre: varios clips corresponden a cometas o globos inflables con forma de medusa o pulpo, y otros muestran señales de generación con inteligencia artificial. El caso más visto, grabado en Anchorage (Alaska) el 15 de junio, lo considera auténtico, y una aficionada a las cometas del grupo Alaskiters sostiene que era un pulpo inflable de unos 50 metros; los clips con ubicación identificable caen en parques y playas. Snopes añade que no encontró pruebas de que el fenómeno tuviera relación con la suspensión de vuelos ordenada por la FAA.",
       "titulo": "Snopes revisa la oleada de videos de «ovni medusa»: cometas, globos y clips hechos con IA",
-      "url": "https://www.yahoo.com/news/science/articles/jellyfish-ufo-sightings-invaded-internet-205100016.html"
+      "url": "https://www.yahoo.com/news/science/articles/jellyfish-ufo-sightings-invaded-internet-205100016.html",
+      "id": "montaje-medusas-snopes-20261123"
     },
     {
-      "id": "it-sigonella-drones-20261120",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
@@ -134,10 +232,31 @@
       "por": "tarea",
       "resumen": "La Marina de Estados Unidos informó el lunes 23 que la noche del viernes 20 de noviembre se detectaron tres drones cerca de la base aeronaval de Sigonella, en Sicilia. Según la portavoz Laura Stegherr fueron «monitorizados activamente» y no afectaron a los residentes ni a infraestructura crítica, y el caso está bajo investigación; la Marina no dio tipo, origen ni duración. Las fuentes italianas no coinciden: ANSA, citando a la Fuerza Aérea, habla de un solo cuadricóptero pequeño captado a las 17:57 local que sobrevoló las viviendas del personal estadounidense sin llegar a la pista, que habría quedado cerrada hasta cerca de las 20:30. Los Carabineros investigan un vuelo no autorizado y ninguna de las fuentes aporta video o fotografía del aparato.",
       "titulo": "Drones no identificados obligan a responder a la base aeronaval de Sigonella, en Sicilia",
-      "url": "https://www.stripes.com/branches/navy/2026-11-23/drones-sigonella-iran-sicily-navy-23552110.html"
+      "url": "https://www.stripes.com/branches/navy/2026-11-23/drones-sigonella-iran-sicily-navy-23552110.html",
+      "id": "it-sigonella-drones-20261120"
     },
     {
-      "id": "montaje-florida-lluvias-ia-20261123",
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-24T19:40:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "desmentido por Lead Stories, que lo señala como generado con IA; SynthID no detectó marca de agua y la conclusión se apoya en la etiqueta de TikTok y en indicios visuales",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-23T12:00:00Z",
+      "fuente": "Lead Stories",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a Gordon's Bay, provincia Occidental del Cabo, Sudáfrica)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Una publicación en Threads de la cuenta @thebnsmedia, del 23 de noviembre, presentaba un video de olas potentes rebasando el paseo costero de Gordon's Bay, en la provincia Occidental del Cabo de Sudáfrica, como un temporal real. Lead Stories lo verificó el mismo día y respondió que no es cierto. Una versión sin marca de agua se había publicado en TikTok el 20 de noviembre desde la cuenta @._._._._940 con la etiqueta «contiene material generado con IA». Los verificadores no encontraron cobertura del supuesto temporal en Google News ni en Yahoo News, la búsqueda inversa solo devolvió publicaciones en redes, y la comparación con un temporal real de septiembre de 2023 en Gordon's Bay no coincide. Entre los indicios visuales citan vehículos sobre lo que parecen edificios residenciales, coches en la playa sin personas a la vista y agua que se acumula de forma antinatural en torno a los edificios sin daños visibles. Conviene anotar un matiz que el propio texto reconoce: la herramienta SynthID de Google no detectó marca de agua en el video, de modo que la conclusión de generación con IA se apoya en la etiqueta de TikTok y en esos indicios, no en una detección técnica.",
+      "titulo": "Desmienten el video de olas gigantes inundando Gordon's Bay, en Sudáfrica: lo señalan como hecho con IA",
+      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-gordons-bay-being-flooded-by-powerful-waves-ai.html",
+      "id": "montaje-gordons-bay-olas-20261123"
+    },
+    {
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
@@ -160,10 +279,60 @@
       "rareza": "montaje",
       "resumen": "Factchequeado desmintió un video de TikTok con más de 40.000 visualizaciones que se presentaba como registro de los daños causados por las lluvias en el condado de Broward, en Florida, y que señalaba el Temple Beth El, el Temple Sinai y el Memorial Regional Hospital de Hollywood. Los verificadores pasaron capturas del video por cuatro detectores de imágenes sintéticas (WasItAI, PHRASLY.AI, Hive Moderation y Truth Scan), que dieron entre 81 % y 99,9 % de probabilidad de generación con IA, y compararon las estructuras con Google Maps y con fotos de prensa: no coinciden con los edificios reales. El propio video lleva la etiqueta de contenido generado con IA. Las lluvias reales ocurrieron el 17 y 18 de noviembre en el centro y sur de Florida.",
       "titulo": "Desmienten un video de daños por las lluvias en Florida: estaba hecho con inteligencia artificial",
-      "url": "https://factchequeado.com/verificaciones/20261123/lluvias-broward-florida-ia-desinformacion/"
+      "url": "https://factchequeado.com/verificaciones/20261123/lluvias-broward-florida-ia-desinformacion/",
+      "id": "montaje-florida-lluvias-ia-20261123"
     },
     {
-      "id": "us-san-diego-carabela-20261120",
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-24T19:40:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [],
+      "estado": "sin verificar; sin pronunciamiento de autoridades ni de especialistas, y sin fecha de grabación declarada",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-22T12:00:00Z",
+      "fuente": "NoticiasNet (Viedma, Río Negro) · grupo FASE · piloto comercial Walter Barión",
+      "lat": -40.8,
+      "lon": -62.98,
+      "lugar": "Carmen de Patagones, provincia de Buenos Aires, Argentina",
+      "por": "tarea",
+      "resumen": "El diario NoticiasNet, de Viedma, publicó el 22 de noviembre un video de luces en el cielo grabado en la zona conocida como «los altos», a unos 200 metros del puente Basilio Villarino, en dirección a Guardia Mitre y del lado de Carmen de Patagones, en la provincia de Buenos Aires. El material lo difunde el grupo FASE («Fenómenos Aeroespaciales Sin Explicación»), formado por vecinos y aficionados a la observación, y lo grabó el piloto comercial Walter Barión, mientras otra persona que viajaba a un campo le enviaba audios diciendo que había visto una nave. Barión sostiene que el grupo reúne cerca de cincuenta videos de los últimos tres años, tomados también en la desembocadura del río Colorado, Península Valdés, la meseta de Somuncurá, la ruta nacional 23, El Espigón, Playas Doradas y Bahía San Blas, y afirma que los registros no corresponderían a aviones, helicópteros, drones, estrellas fugaces ni satélites. El caso es débil en verificación: la nota no indica la fecha ni la hora de la grabación, no describe la forma ni el movimiento de las luces, y no cita a ninguna autoridad aeronáutica, a la Fuerza Aérea Argentina ni a ningún astrónomo; la única valoración es la del propio grupo. Al no haber fecha del hecho no fue posible cruzarlo con calendarios de lanzamientos, reentradas o lluvias de meteoros. Las coordenadas corresponden a Carmen de Patagones de manera aproximada.",
+      "titulo": "Un grupo de observadores difunde nuevas luces filmadas en Carmen de Patagones, Argentina",
+      "url": "https://www.noticiasnet.com.ar/noticias/2026/11/22/236067-misterio-en-el-cielo-grabaron-nuevas-luces-sin-explicacion-cientifica",
+      "id": "ar-patagones-fase-20261122"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-24T19:40:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "'Untouched' Deep Sea Reveals Field of Washing Machines and Household Appliances During US Exploration (IBTimes UK, 23 nov)",
+          "https://www.ibtimes.co.uk/noaa-shipping-container-appliances-gulf-mexico-1834135"
+        ],
+        [
+          "El «bosque de lo raro»: esponjas de vidrio alineadas en el Pacífico, otro material de archivo de la NOAA (entrada previa del feed)",
+          "https://www.discoverwildlife.com/animal-facts/marine-animals/forest-of-weird"
+        ]
+      ],
+      "estado": "material institucional de la NOAA; el origen del contenedor no está establecido y el registro de la inmersión no identifica el barco ni la causa de la pérdida",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-22T11:00:00Z",
+      "fuente": "ScienceAlert (Jess Cockerill) vía Yahoo News · IBTimes UK (Isaiah Rosvel Diaz) · NOAA Ocean Exploration",
+      "lat": null,
+      "lon": null,
+      "lugar": "Golfo de México, Estados Unidos (punto no precisado por la fuente)",
+      "por": "tarea",
+      "rareza": "mar",
+      "resumen": "Un reportaje de ScienceAlert difundido el 22 de noviembre, y recogido al día siguiente por IBTimes UK, volvió a poner en circulación las imágenes de un fondo marino cubierto de electrodomésticos oxidados —lavadoras, secadoras, lavavajillas, congeladores y refrigeradores— junto a un contenedor de carga rojo de 40 pies, aplastado y con una esquina rasgada, a más de 1.500 metros de profundidad en el golfo de México. El material lo grabó el vehículo operado a distancia Deep Discoverer durante una inmersión del buque Okeanos Explorer de la NOAA, en una expedición de 2017 dirigida por la bióloga marina Diva Amon con el equipo del equinodermólogo Charles Messing; el equipo bajó siguiendo una señal de sonar que parecía un naufragio y encontró esto. Según el registro oficial de la inmersión, el contenedor lleva el identificador ITLU733016, transportaba carga de marcas como RCA y GE, y un adhesivo apunta al GE Appliance Park de Louisville, Kentucky; la hipótesis de la NOAA es que cayó de un barco con mal tiempo, posiblemente camino de reciclaje. Corales, hidroides y coral de bambú crecen ya sobre la carga y un pez se refugia bajo el contenedor. El registro de la inmersión no identifica el barco ni confirma la causa de la pérdida ni cuándo entró el contenedor al agua; un espectador identificó números de serie de lavadoras con fecha de fabricación más antigua de febrero de 1993, dato que el propio artículo advierte que no establece la fecha del hundimiento. Por tratarse de material de archivo no se registra fecha de evento, y no se asignan coordenadas porque ninguna de las fuentes precisa el punto de la inmersión dentro del golfo.",
+      "titulo": "Un campo de lavadoras y refrigeradores a 1.500 metros en el golfo de México, grabado por la NOAA",
+      "url": "https://www.yahoo.com/news/science/articles/deep-sea-scientists-hunting-shipwreck-110000548.html",
+      "id": "mar-noaa-contenedor-golfo-20261122"
+    },
+    {
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-24T18:57:32Z",
@@ -186,10 +355,10 @@
       "rareza": "mar",
       "resumen": "Naturalistas reportaron la aparición de carabelas portuguesas, el sifonóforo Physalia, en las charcas de marea del Cabrillo National Monument y en las playas de Del Mar y La Jolla, en San Diego, California. La Scripps Institution of Oceanography de la Universidad de California en San Diego confirmó la identificación, y Linsey Sala, responsable de su colección de invertebrados pelágicos, explicó de qué animal se trata: un pariente cercano de las medusas cuya picadura es dolorosa. El registro disponible son fotografías difundidas por el propio instituto, no video, y la nota no precisa la fecha de los hallazgos. Las coordenadas son aproximadas, del sector de La Jolla.",
       "titulo": "Carabelas portuguesas aparecen en la costa de San Diego y Scripps las identifica",
-      "url": "https://www.yahoo.com/news/science/articles/rare-alien-sea-creature-packs-025700545.html"
+      "url": "https://www.yahoo.com/news/science/articles/rare-alien-sea-creature-packs-025700545.html",
+      "id": "us-san-diego-carabela-20261120"
     },
     {
-      "id": "mx-atlixco-esfera-20261021",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-21T01:15:00Z",
@@ -212,10 +381,10 @@
       "por": "tarea",
       "resumen": "El Periódico Realidades publicó el 20 de noviembre un video grabado por el testigo Jorge Cabrera en el municipio de Atlixco, Puebla, cerca del volcán Popocatépetl, en el que se ve una esfera gris que avanza a velocidad moderada en aparente línea recta, sin detenerse, y que parece elevarse hasta perderse de vista. El material lo difundió el periodista Jaime Maussan en su cuenta de X el 19 de noviembre y la nota fecha la grabación el 21 de octubre de 2026, sin indicar hora. El caso es débil en verificación: el propio medio señala que el video no permite determinar la naturaleza del objeto ni confirmar un origen extraterrestre, y no cita a ningún especialista, astrónomo ni autoridad; las hipótesis que recoge —globo meteorológico, dron, efecto óptico de la cámara o tecnología desconocida vigilando la zona volcánica— provienen de comentarios en redes. Tampoco hay un segundo ángulo ni análisis del material. Las coordenadas corresponden a Atlixco de manera aproximada, ya que la fuente no precisa el punto de grabación.",
       "titulo": "Esfera gris filmada sobre Atlixco, Puebla, y difundida por Jaime Maussan",
-      "url": "https://periodicorealidades.com/index.php/2026/11/20/jaime-maussan-difunde-video-de-un-presunto-ovni-captado-en-atlixco-puebla/"
+      "url": "https://periodicorealidades.com/index.php/2026/11/20/jaime-maussan-difunde-video-de-un-presunto-ovni-captado-en-atlixco-puebla/",
+      "id": "mx-atlixco-esfera-20261021"
     },
     {
-      "id": "pe-pursue-1957-20261120",
       "agua": false,
       "clase": "oficial",
       "creado": "2026-11-21T06:47:22Z",
@@ -241,10 +410,10 @@
       "por": "tarea",
       "resumen": "Entre los documentos de la octava entrega del programa PURSUE, publicada el 20 de noviembre por el Departamento de Guerra de Estados Unidos, UnoTV localizó el informe de inteligencia aérea IR-350-57, fechado el 14 de noviembre de 1957 y firmado por el capitán Harry W. Deffebach, asistente del agregado aéreo estadounidense en Lima; está redactado en español y se difunde escaneado con la etiqueta «D200». Recoge dos reportes peruanos: el del 28 de octubre de 1957, hacia las 18:05, cuando un inspector de asuntos indígenas en Andahuaylas (Apurímac) describió una esfera luminosa de color verde azulado, de unos 60 centímetros, que emitía chispas y habría caído en el distrito de Talavera —la búsqueda posterior no encontró nada y el documento no confirma que tocara el suelo—, y el del 11 y 12 de noviembre de 1957 en la región de Cajamarca, donde Homer Hungerford, estadounidense empleado de la minera Incandium S.A., reportó un objeto con apariencia de globo visible todo el día y brillante de noche, demasiado alto para identificarlo y observado durante unas dos semanas, también desde Hualgayoc y cerca de la hacienda Porcón. El oficial escribió que desde la llegada del Sputnik I y II se había producido una oleada de avistamientos en Perú, pero el documento no establece ningún vínculo con esos lanzamientos ni propone una explicación. No hay fotografías ni video: lo publicado es documentación histórica, no un avistamiento nuevo, y no se nombra ninguna unidad militar peruana, solo el Ministerio de Trabajo y Asuntos Indígenas de Lima como destinatario del telegrama original.",
       "titulo": "Los archivos PURSUE incluyen dos casos peruanos de 1957: una esfera verde en Apurímac y un objeto fijo en Cajamarca",
-      "url": "https://www.unotv.com/ciencia-y-tecnologia/esfera-verde-luminosa-en-peru-pentagono-revela-reportes-de-ovnis/"
+      "url": "https://www.unotv.com/ciencia-y-tecnologia/esfera-verde-luminosa-en-peru-pentagono-revela-reportes-de-ovnis/",
+      "id": "pe-pursue-1957-20261120"
     },
     {
-      "id": "ca-cranbrook-destello-20261120",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T18:49:32Z",
@@ -272,10 +441,10 @@
       "por": "tarea",
       "resumen": "Un destello brillante iluminó el cielo sobre Cranbrook, en la Columbia Británica (Canadá), en la madrugada del viernes 20 de noviembre. La emisora local 102.9 Rewind Radio, que publicó la nota a las 9:55 de la mañana, informa que la American Meteor Society recibió siete reportes de una presunta bola de fuego en los cielos cercanos a Cranbrook y Kimberley, y que decenas de vecinos dijeron haber visto una estela brillante cruzar el cielo. Una oyente, Kim Johnston, envió a la redacción la grabación de su cámara de seguridad doméstica, y el medio menciona además numerosos videos y testimonios circulando en grupos locales de redes sociales. El propio medio es prudente: dice que se sospecha que fue un meteoro, pero advierte que ni las autoridades ni los especialistas en astronomía han confirmado si se trató de un meteoro, de basura espacial o de otro fenómeno atmosférico, y aclara que el material y los testimonios los aportaron vecinos y no han sido verificados de forma independiente. No da una hora exacta ni la zona horaria de la publicación, y no cita a la policía, a una red de bólidos ni a ningún astrónomo con nombre. Las coordenadas corresponden a Cranbrook de manera aproximada, ya que los reportes se reparten entre esa ciudad y Kimberley, a unos treinta kilómetros.",
       "titulo": "Un destello cruza el cielo de Cranbrook, en la Columbia Británica, y queda en una cámara de seguridad",
-      "url": "https://1029rewindradio.ca/2026/11/20/did-you-see-it-mystery-flash-streaks-across-cranbrook-sky/"
+      "url": "https://1029rewindradio.ca/2026/11/20/did-you-see-it-mystery-flash-streaks-across-cranbrook-sky/",
+      "id": "ca-cranbrook-destello-20261120"
     },
     {
-      "id": "pursue-release-08",
       "agua": false,
       "clase": "oficial",
       "creado": "2026-11-20T18:49:32Z",
@@ -305,10 +474,10 @@
       "por": "tarea",
       "resumen": "El Departamento de Guerra de Estados Unidos publicó el viernes 20 de noviembre la octava entrega de archivos desclasificados sobre fenómenos anómalos no identificados (UAP), dentro del sistema PURSUE (Presidential Unsealing and Reporting System for UAP Encounters). El comunicado, firmado por el portavoz Sean Parnell, indica que la colección sigue alojada en WAR.GOV/UFO y que se publicarán más archivos de forma progresiva, sin dar cifras. Según LiveNOW from FOX, la entrega incluye tres videos y unos 40 documentos, en su mayoría de los años cincuenta. Los tres videos fueron remitidos por el Mando Central (CENTCOM) a la oficina AARO: uno de 2020, de 20 segundos, de un sensor infrarrojo a bordo de una plataforma militar estadounidense en Oriente Medio, donde un área de contraste entra por el borde derecho del cuadro y avanza hacia la izquierda; uno de 2023, de 13 segundos, de un sistema electroóptico e infrarrojo; y uno de 2026, de 54 segundos, en el que el sensor hace paneos y cambia el zoom para seguir dos áreas de contraste y pierde el contacto de forma intermitente. Entre los documentos destacan un briefing de la Oficina de Inteligencia Científica de la CIA del 14 de agosto de 1952, que evalúa la investigación de la Fuerza Aérea sobre «platillos voladores» y cifra en unos 1.500 los reportes en Estados Unidos, con cerca del 20 % clasificado como no explicado por el ATIC, y un informe de Lockheed del 20 de enero de 1954 sobre un avistamiento del 16 de diciembre de 1953 cerca de Agoura y Point Mugu, California, firmado por el ingeniero jefe Clarence «Kelly» Johnson, con dibujos de un objeto con llamas azul claro. Un funcionario del Pentágono dijo a The Independent que no hay información adicional sobre el avistamiento de 2020 y que el Departamento no ofrece comentarios ni evaluación sobre los archivos. Hay una discrepancia entre fuentes sobre el video de 2020: The Independent y el resumen de FOX hablan de un buque de la Armada, mientras el cuerpo de la nota de FOX habla de una plataforma militar, de modo que no queda establecido que ocurriera sobre el mar. Ninguna fuente propone una explicación para los tres videos. El sitio oficial war.gov no se pudo abrir desde esta ejecución y los datos provienen de la reproducción del comunicado en Mirage News y de la cobertura de FOX y The Independent.",
       "titulo": "Octava entrega de archivos UAP: tres videos militares, uno de 2026 con dos objetos",
-      "url": "https://www.miragenews.com/war-department-publishes-eighth-uap-files-1781257/"
+      "url": "https://www.miragenews.com/war-department-publishes-eighth-uap-files-1781257/",
+      "id": "pursue-release-08"
     },
     {
-      "id": "il-golan-lenticulares-20261120",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T12:57:00Z",
@@ -326,10 +495,10 @@
       "rareza": "natural",
       "resumen": "El diario israelí en ruso Segodnya publicó el 20 de noviembre fotografías de nubes redondeadas, de bordes nítidos y casi simétricas, apiladas en varias capas sobre las crestas del norte de los Altos del Golán, observadas desde el poblado de Neve Ativ, al pie del monte Hermón; el texto señala que recordaban enormes platillos volantes y que parecían quietas sobre las cumbres. La identificación no es propia: Segodnya la atribuye al medio israelí Walla, que habla de nubes lenticulares (Altocumulus lenticularis), formadas por ondas de montaña a entre 2 y 7 kilómetros de altura cuando un viento fuerte y estable con aire húmedo encuentra una cordillera; permanecen aparentemente inmóviles durante horas porque el aire las atraviesa mientras el agua se condensa y se evapora de forma continua. El registro es solo fotográfico, con crédito de la agencia Flash90, y no hay video. La nota tampoco cita a un servicio meteorológico, al ejército ni a un especialista con nombre, y la fecha es contradictoria: el texto habla del viernes 20 de noviembre mientras el pie de foto fecha la imagen al atardecer del 19, por lo que no se registra fecha de evento. Las coordenadas corresponden a Neve Ativ de manera aproximada.",
       "titulo": "Nubes con forma de platillo sobre los Altos del Golán, identificadas como lenticulares",
-      "url": "https://segodnya.co.il/subjects/nlo-nad-golanami-v-nebe-zametili-neobychnye-oblaka/"
+      "url": "https://segodnya.co.il/subjects/nlo-nad-golanami-v-nebe-zametili-neobychnye-oblaka/",
+      "id": "il-golan-lenticulares-20261120"
     },
     {
-      "id": "br-paraiba-bolido-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T18:49:32Z",
@@ -366,10 +535,10 @@
       "por": "tarea",
       "resumen": "La noche del jueves 19 de noviembre, hacia las 21:34 hora de Brasilia, un destello intenso cruzó rápidamente el cielo de Paraíba y fue registrado por una cámara de monitoreo en João Pessoa y por teléfonos de vecinos. Olhar Digital, que publicó la nota el 20 de noviembre a las 10:54 UTC, añade que se oyó un estruendo comparable a una explosión y que, según testigos y la emisora local TV Paraíba, provocó leves temblores en ventanas y techos de algunas localidades del interior, entre ellas el Agreste paraibano. El astrofotógrafo Marcelo Zurita, vinculado a BRAMON y a la Associação Paraibana de Astronomia (APA), difundió el registro y sostiene que el fenómeno se vio en toda Paraíba y también desde Rio Grande do Norte, Pernambuco, Ceará y Alagoas: cinco estados del Nordeste. Zurita precisa que, aunque la región está en el período de las Leónidas, este meteoro no formaba parte de esa lluvia. La APA trabaja con la posibilidad de que el objeto dejara fragmentos en tierra, en la región de los municipios de Pocinhos y Nazaré, y pide a los vecinos avisar si encuentran una roca con corteza oscura y características distintas; la caída no está confirmada y depende de identificación y evaluación especializada. Olhar Digital subraya que no hay todavía un informe oficial concluyente, que el estruendo puede producirse por la onda de choque sin que haya caído un meteorito, y que el análisis podría determinar si fue un meteoro natural o la reentrada de basura espacial; ninguna fuente aporta aún trayectoria ni altitud de desintegración. Las coordenadas corresponden a João Pessoa, donde se registró el video, de manera aproximada: el fenómeno abarcó varios estados y la zona de posible caída está unos 150 kilómetros al oeste.",
       "titulo": "Un bólido con estruendo cruza el cielo de Paraíba y la asociación de astronomía prevé posible caída de meteoritos",
-      "url": "https://olhardigital.com.br/2026/11/20/ciencia-e-espaco/clarao-no-ceu-e-estrondo-intrigam-moradores-em-cidades-da-paraiba"
+      "url": "https://olhardigital.com.br/2026/11/20/ciencia-e-espaco/clarao-no-ceu-e-estrondo-intrigam-moradores-em-cidades-da-paraiba",
+      "id": "br-paraiba-bolido-20261119"
     },
     {
-      "id": "tr-bursa-lenticulares-20261120",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-21T06:47:22Z",
@@ -396,10 +565,10 @@
       "rareza": "natural",
       "resumen": "Los cielos de Bursa, en el noroeste de Turquía, amanecieron el 20 de noviembre con nubes redondeadas y apiladas que mantuvieron su forma durante largo rato y que vecinos de cinco distritos —Osmangazi, Nilüfer, Kestel, Gürsu y Yıldırım— fotografiaron con sus teléfonos; en algunas imágenes la formación aparece sobre el Timsah Arena y, según Yeni Şafak, el rojo del amanecer sumó al efecto. El registro es solo fotográfico, con créditos de las agencias İHA y Anadolu, y ninguna de las dos coberturas consultadas nombra a quien tomó las imágenes ni publica video. La identificación como nube lenticular (altocumulus lenticularis) es de los propios medios: la Dirección General de Meteorología de Turquía (MGM) se cita únicamente para el mecanismo general —ondas de viento sobre relieves accidentados, que pueden además indicar turbulencia descendente en el lado protegido del terreno—, y no hay pronunciamiento de un meteorólogo con nombre, de una universidad ni de ningún organismo sobre este episodio concreto; Sputnik atribuye a la altura y lo escarpado del Uludağ que Bursa sea propensa a estas formaciones. Ninguna fuente da fecha ni hora exacta del fenómeno —solo «las horas de la mañana»—, por lo que no se registra fecha de evento; las coordenadas corresponden a Bursa de manera aproximada.",
       "titulo": "Nubes lenticulares con aspecto de platillo sobre Bursa, vistas desde cinco distritos",
-      "url": "https://anlatilaninotesi.com.tr/20261120/bursa-semalarinda-ufoyu-andiran-bulut-sirri-ortaya-cikti-1110481969.html"
+      "url": "https://anlatilaninotesi.com.tr/20261120/bursa-semalarinda-ufoyu-andiran-bulut-sirri-ortaya-cikti-1110481969.html",
+      "id": "tr-bursa-lenticulares-20261120"
     },
     {
-      "id": "zw-bulawayo-halo-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-21T01:15:00Z",
@@ -422,10 +591,10 @@
       "rareza": "natural",
       "resumen": "El jueves 19 de noviembre, hacia el mediodía, habitantes de Bulawayo (Zimbabue) y de varias zonas de Namibia fotografiaron un anillo luminoso alrededor del Sol, con tonos de arcoíris y el borde interior rojizo. El portal sudafricano Briefly recoge imágenes publicadas en Facebook por ZBC News Online, que muestra el anillo entre las ramas de un árbol, y por el diario The Namibian; el registro es solo fotográfico y la nota no atribuye las fotos a personas concretas ni da una hora exacta ni una localidad namibia precisa. La identificación es la misma que en el episodio sudafricano de días antes: un halo solar de 22 grados, producido por la refracción de la luz en cristales de hielo hexagonales de nubes cirros a gran altitud, explicación que el medio atribuye a EarthSky y no a un servicio meteorológico nacional. El texto añade que los meteorólogos suelen asociar estos halos a la llegada de frentes de lluvia, sin citar a ninguno por su nombre, y recoge comentarios de usuarios de redes que los vinculaban con granizo. La página no indica hora de publicación, solo que los medios documentaron el fenómeno el 19 de noviembre. Las coordenadas corresponden a Bulawayo de manera aproximada.",
       "titulo": "El halo solar reaparece sobre Bulawayo y Namibia, tres días después del de Gauteng",
-      "url": "https://briefly.co.za/people/259642-s-causing-hailstorm-sas-neighbours-namibia-zimbabwe-hit-by-rare-solar-sun-halo/"
+      "url": "https://briefly.co.za/people/259642-s-causing-hailstorm-sas-neighbours-namibia-zimbabwe-hit-by-rare-solar-sun-halo/",
+      "id": "zw-bulawayo-halo-20261119"
     },
     {
-      "id": "it-genova-drones-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T00:53:43Z",
@@ -451,10 +620,10 @@
       "por": "tarea",
       "resumen": "La torre de control del aeropuerto Cristóbal Colón de Génova reportó la noche del jueves 19 de noviembre la presencia de drones no identificados junto a la pista, al este y al oeste, y se emitió una interdicción del espacio aéreo que detuvo arribos y despegues. El vuelo AZ1392 de ITA Airways a Roma Fiumicino ya estaba en la pista: fue detenido y sus pasajeros desembarcados, y partió después de que la ENAV autorizara reabrir el espacio aéreo tras los controles de seguridad. Liguria Notizie sitúa la alarma hacia las 20:00 y la interdicción hasta las 22:00, con reapertura unas dos horas después; TASS, citando Il Messaggero, habla de dos drones vistos por la torre y de un cierre entre las 19:00 y las 23:00 locales, y añade que los aparatos desaparecieron del radar y que la policía y la autoridad de aviación civil (ENAC) investigan su origen. Intervino la policía de fronteras y se notificó a la autoridad judicial de Génova; no se ha publicado ningún video ni fotografía de los objetos y la prensa local lo describe como el primer cierre de este tipo en Italia. Las coordenadas corresponden al aeropuerto de Génova de manera aproximada.",
       "titulo": "Dos drones no identificados obligan a cerrar el aeropuerto de Génova, Italia",
-      "url": "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/"
+      "url": "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/",
+      "id": "it-genova-drones-20261119"
     },
     {
-      "id": "fr-cdg-dron-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T12:57:00Z",
@@ -476,10 +645,10 @@
       "por": "tarea",
       "resumen": "La noche del jueves 19 de noviembre, el aeropuerto de París-Charles de Gaulle suspendió temporalmente sus operaciones por reportes de un posible avistamiento de dron cerca del campo de vuelo. Los controladores pusieron en espera a varios aviones que llegaban y, según el medio especializado AIRLIVE, algunos dieron vueltas sobre la zona unos quince minutos antes de que se autorizaran de nuevo las aproximaciones a las pistas norte y sur; la nota indica que las operaciones normales se reanudaron a las 20:15 hora local. El caso es débil en evidencia: el avistamiento no está confirmado, no se precisa cuántos aparatos había ni cómo se detectaron, no hay video ni fotografía del objeto —la imagen de la nota es de archivo— y la única fuente citada es una publicación de Flightradar24 que habla de una pausa breve «posiblemente por un avistamiento de dron». AIRLIVE añade que las autoridades aeroportuarias no habían dado más detalles sobre la naturaleza del avistamiento ni sobre una posible investigación policial, y no recoge declaraciones de la DGAC, la policía ni la gendarmería. El episodio coincide con el cierre de dos horas del aeropuerto de Génova por drones no identificados esa misma noche, a unos 700 kilómetros, pero ninguna fuente vincula los dos casos. Las coordenadas corresponden al aeropuerto Charles de Gaulle.",
       "titulo": "Un posible dron interrumpe las operaciones del aeropuerto Charles de Gaulle, en París",
-      "url": "https://airlive.net/incident/2026/11/19/possible-drone-in-the-vicinity-of-charles-de-gaulle-airport-disrupted-flight-operations/"
+      "url": "https://airlive.net/incident/2026/11/19/possible-drone-in-the-vicinity-of-charles-de-gaulle-airport-disrupted-flight-operations/",
+      "id": "fr-cdg-dron-20261119"
     },
     {
-      "id": "in-rudrapur-luces-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T12:57:00Z",
@@ -502,10 +671,10 @@
       "por": "tarea",
       "resumen": "La agencia Sanvad publicó en el diario Amar Ujala, a la 01:21 del 20 de noviembre hora de la India, que vecinos de Kelakhera y de la ciudad de Rudrapur y sus alrededores, en el distrito de Udham Singh Nagar (Uttarakhand), vieron de noche luces rojas que se encendían y se apagaban en tres o cuatro puntos del cielo a la vez y que se mantuvieron un rato. Algunos testigos pensaron en aviones y otros en drones, precisamente porque aparecían en varios lugares simultáneamente. El registro es débil en datos: la nota no indica la fecha ni la hora del avistamiento, solo que fue de noche, no precisa el número exacto de luces ni la duración, no describe desplazamiento y no publica ningún video, aunque sí señala que circulan grabaciones virales en redes sociales; la única imagen es de archivo. El oficial de circunscripción Akhilesh Kumar y el encargado de la comisaría, Manish Khatri, dijeron que es posible que se trate de vuelos de entrenamiento desde Pantnagar, pero no lo confirmaron oficialmente y advirtieron que sería precipitado calificarlas de aviones o drones. No se cita a la fuerza aérea india, a la autoridad de aviación ni a ningún astrónomo. Al no haber fecha exacta del hecho no fue posible cruzarlo con calendarios de lanzamientos o de reentradas. Las coordenadas corresponden a Rudrapur de manera aproximada.",
       "titulo": "Luces rojas intermitentes en varios puntos del cielo de Rudrapur, en Uttarakhand, India",
-      "url": "https://www.amarujala.com/uttarakhand/udham-singh-nagar/flashing-red-lights-seen-in-the-sky-people-left-curious-rudrapur-news-c-235-1-ksp1007-151582-2026-11-20"
+      "url": "https://www.amarujala.com/uttarakhand/udham-singh-nagar/flashing-red-lights-seen-in-the-sky-people-left-curious-rudrapur-news-c-235-1-ksp1007-151582-2026-11-20",
+      "id": "in-rudrapur-luces-20261119"
     },
     {
-      "id": "us-lago-erie-bolido-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
@@ -538,10 +707,10 @@
       "por": "tarea",
       "resumen": "La American Meteor Society recibió una serie de reportes de una bola de fuego vista la noche del miércoles desde comunidades de la costa del lago Erie, en Michigan, Ohio y la provincia canadiense de Ontario. CBS News Detroit publicó la nota el 19 de noviembre a las 13:02 hora del este y precisa que la mayoría de los avistamientos en Michigan se concentraron entre las 19:00 y las 20:00, con otro grupo entre las 21:00 y las 22:00; se nombran Luna Pier, Monroe, Royal Oak y St. Clair Shores, y los testigos describieron tonos azules, verdes y blancos. La AMS atribuye el fenómeno a las Leónidas, activas hasta el 30 de noviembre, y aclara que lo que se ve no es material fresco del cometa sino restos de pasos anteriores que en este momento están más concentrados. El registro es débil en un punto: la nota no publica video ni fotografías, no da un número total de reportes y no indica la fecha exacta del avistamiento, solo «miércoles por la noche»; la fecha del 18 de noviembre se deduce del día de publicación. No se asignan coordenadas porque los reportes se reparten entre dos países.",
       "titulo": "Bólido sobre la región del lago Erie visto desde Michigan, Ohio y Ontario",
-      "url": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/"
+      "url": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
+      "id": "us-lago-erie-bolido-20261118"
     },
     {
-      "id": "nz-ninety-mile-cachalotes-20261119",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-21T01:15:00Z",
@@ -568,10 +737,10 @@
       "rareza": "mar",
       "resumen": "El jueves 19 de noviembre aparecieron varados veinticuatro cachalotes en el extremo norte de Ninety Mile Beach, en el Far North de Nueva Zelanda. Diecinueve murieron y cinco seguían vivos en mal estado de salud, según el Department of Conservation (DOC), que respondió junto con los iwi maoríes locales y con especialistas en mamíferos marinos. La agencia Xinhua, que cita a Radio New Zealand, publicó la nota ese mismo día a las 14:35 y no da nombres ni localidad precisa. El portal neozelandés NEWS WIRE —que declara en su propio aviso haber sido redactado con inteligencia artificial, por lo que sus datos se recogen aquí con esa reserva— sitúa el varamiento al norte de The Bluff, un promontorio a mitad de la playa, y atribuye la cifra a Laree Furniss, gerente de operaciones del DOC en Kaitaia, que describió la situación como dinámica y con evaluaciones en curso. El iwi Te Aupōuri anunció el hallazgo y cerró el acceso entre The Bluff y Scotts Point hasta completar los procesos consuetudinarios con los animales muertos; Penetaui Kleskovic, de Te Aupōuri, dijo a RNZ que el iwi dirige el trabajo en la playa con apoyo de Te Hiku y que los animales pesan entre siete y diez toneladas cada uno. Ninguna de las fuentes consultadas propone una causa para este varamiento ni publica video o fotografías del episodio: la única imagen que acompaña la cobertura internacional es de archivo, de un zifio de dientes de pala fotografiado en Otago en 2024. Xinhua añade que el episodio ocurre poco más de un mes después del varamiento de una quincena de orcas pigmeas cerca de Hukatere, más al sur de la misma playa. Las coordenadas corresponden al tramo norte de Ninety Mile Beach de manera aproximada.",
       "titulo": "Veinticuatro cachalotes varan en Ninety Mile Beach, Nueva Zelanda, y mueren diecinueve",
-      "url": "https://english.news.cn/20261119/d91f82e869de4a87a0de7287a88e9902/c.html"
+      "url": "https://english.news.cn/20261119/d91f82e869de4a87a0de7287a88e9902/c.html",
+      "id": "nz-ninety-mile-cachalotes-20261119"
     },
     {
-      "id": "uk-lakenheath-avionetas-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-19T13:05:00Z",
@@ -604,10 +773,10 @@
       "por": "tarea",
       "resumen": "El 13 de noviembre de 2026 la base aérea estadounidense de RAF Lakenheath, en Suffolk, activó sirenas y pidió refugiarse al personal por una supuesta actividad de drones no autorizada. Seis días después, el piloto británico Sam Rutherford declaró a la BBC que la alarma la causó su formación de tres avionetas Cirrus SR20 que cruzaba Norfolk a unos 1.800 metros en un vuelo de entrega, y de las que solo una llevaba el transpondedor encendido. Circula además un video grabado en Gayton, Norfolk, a unos 37 kilómetros al norte de la base, con tres luces intermitentes en triángulo que se desplazan hacia el sur; la BBC validó la ubicación pero no la fecha ni la hora de grabación. La Fuerza Aérea de Estados Unidos confirmó que respondió a una sospecha de drones y que no hubo daños, pero no ha dicho qué detectó ni ha comentado la versión del piloto.",
       "titulo": "Un piloto afirma que tres avionetas provocaron la alarma de drones en la base de Lakenheath, Reino Unido",
-      "url": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+      "url": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
+      "id": "uk-lakenheath-avionetas-20261119"
     },
     {
-      "id": "ru-tiumen-bola-20261119",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T12:57:00Z",
@@ -640,10 +809,10 @@
       "por": "tarea",
       "resumen": "Una cámara de calle del barrio de la calle Novoselova, en Tiumén, registró una bola de fuego que se acercaba rápido al suelo, caía sobre un montón de nieve y estallaba justo después; el estruendo activó las alarmas de los coches aparcados. URA.RU publicó el video, difundido por el canal local «ChS Tiumén», y recogió hipótesis de particulares que hablaban de un cohete casero o de una broma. Horas después, el mismo medio publicó la explicación del grupo de aficionados a la astronomía «Staraya Bashnya»: el material que circulaba etiquetado como «rayo globular» está montado con tres grabaciones distintas y sin relación entre sí; la primera corresponde a un cohete de señales, de los que se lanzan en Año Nuevo y que no estallan sino que se apagan al final del vuelo, en la segunda el objeto ya está en el suelo cuando explota, y la tercera se grabó en otro punto de la ciudad, el microdistrito Voinovka. El grupo concluye que lo más probable son lanzamientos de artefactos pirotécnicos no siempre exitosos y descarta el rayo globular; no es un organismo oficial y no hay pronunciamiento de autoridades. La nota sitúa el hecho «la noche del 19 de noviembre», aunque se publicó ese mismo día a primera hora de la tarde, de modo que lo más probable es la noche del 18 al 19; no da hora exacta. Las coordenadas corresponden a Tiumén de manera aproximada.",
       "titulo": "Una bola de fuego cae y estalla en una calle de Tiumén, Rusia, y los astrónomos la atribuyen a pirotecnia",
-      "url": "https://ura.news/news/1053145593"
+      "url": "https://ura.news/news/1053145593",
+      "id": "ru-tiumen-bola-20261119"
     },
     {
-      "id": "ae-fujairah-bioluminiscencia-20261119",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-19T19:05:00Z",
@@ -661,10 +830,10 @@
       "rareza": "natural",
       "resumen": "Khaleej Times publicó el 19 de noviembre, a las 6:00 de la mañana local, un reportaje con video sobre la bioluminiscencia que está iluminando el agua en la playa de Al Aqah, en el emirato de Fujairah, con avistamientos parecidos en la playa de Khorfakkan. El fotógrafo Rami Dibo viajó desde Dubái tras ver publicaciones en redes y grabó un reel en el que camina por la orilla dejando un rastro azulado en pies y manos. La doctora Silvana Birchenough, profesora asociada de la Universidad de Khorfakkan, explicó que se trata de Noctiluca scintillans, un organismo microscópico que aparece de vez en cuando en aguas costeras de los Emiratos y del golfo Arábigo y que, en gran número, puede cambiar el color del agua y producir destellos azules de noche; el Centro de Investigación de Ciencias Marinas de Sharjah (SMSRC), de esa universidad, aportó una imagen al microscopio de las células. Muhammed Sajjad, divulgador meteorológico conocido en redes como «UAE weatherman» y que no representa a ningún organismo oficial, lo describió como el despliegue más espectacular que ha visto en la costa emiratí y estima que podría durar tres semanas o más según las condiciones locales. La nota no precisa cuándo empezó el fenómeno, por lo que no se registra fecha de evento; las coordenadas corresponden a la playa de Al Aqah de manera aproximada.",
       "titulo": "El mar se ilumina de azul en la playa de Al Aqah, en Fujairah, Emiratos Árabes Unidos",
-      "url": "https://www.khaleejtimes.com/uae/watch-uae-beaches-glow-bioluminescence-lights-up-the-seas-fujairah"
+      "url": "https://www.khaleejtimes.com/uae/watch-uae-beaches-glow-bioluminescence-lights-up-the-seas-fujairah",
+      "id": "ae-fujairah-bioluminiscencia-20261119"
     },
     {
-      "id": "pk-sahiwal-objeto-20261117",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T18:49:32Z",
@@ -681,10 +850,10 @@
       "por": "tarea",
       "resumen": "El diario pakistaní Dawn publicó el 19 de noviembre que un objeto no identificado con una luz potente sobrevoló la Prisión de Alta Seguridad de Sahiwal, en el Punyab, hacia las 22:30 de las noches del 16 y del 17 de noviembre. Según la nota, el objeto cruzó el recinto penitenciario y la colonia de personal del bloque D y desapareció sobre una gasolinera situada frente a la prisión; el episodio del 17 se produjo un día después de otro avistamiento similar en el mismo lugar. Abdul Rehman, asistente del superintendente de la prisión, presentó una denuncia formal que la policía de Civil Lines registró como caso. Usman Tipu, jefe de policía del distrito, declaró a Dawn que todavía no se ha confirmado si se trataba de un dron, de una aeronave o de otro aparato, y que la policía y otras agencias de seguridad iniciaron una búsqueda en Farid Town y zonas cercanas sin encontrar pistas. El caso es débil en registro: no se publicó ningún video ni fotografía del objeto —la única imagen de la nota es de archivo y está marcada como ilustrativa— y la fuente no identifica a los testigos más allá del denunciante. No hay pronunciamiento de la fuerza aérea pakistaní, de la autoridad de aviación civil ni de ningún especialista. Se revisaron los calendarios de lanzamientos, reentradas y lluvias de meteoros para esas fechas y ninguna coincidencia explica una luz que sobrevuela un recinto a baja altura en dos noches consecutivas. Las coordenadas corresponden a Sahiwal de manera aproximada.",
       "titulo": "Un objeto luminoso sobrevuela dos noches una prisión de alta seguridad en Sahiwal, Pakistán",
-      "url": "https://www.dawn.com/news/2045557"
+      "url": "https://www.dawn.com/news/2045557",
+      "id": "pk-sahiwal-objeto-20261117"
     },
     {
-      "id": "us-aquinnah-defensa-20261118",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-19T00:55:00Z",
@@ -702,10 +871,10 @@
       "rareza": "mar",
       "resumen": "El capitán de puerto de Aquinnah, Isaac Taylor, detectó el 29 de octubre un objeto cilíndrico varado en la playa, a unos diez minutos a pie de la entrada de Moshup Beach, cerca de los acantilados de Martha's Vineyard. Mide cerca de 2,1 metros de alto por 4,3 de largo, está relleno de espuma, cubierto de plástico o caucho negro duro y conserva restos de una cadena por el centro: corresponde a una defensa marina flotante del tipo Yokohama, usada entre buques y en puertos y terminales para evitar colisiones. Lo que no se ha podido establecer es de dónde salió. Taylor consultó a Vineyard Wind, que no la reconoció como suya, y un representante de Ørsted, operador del parque eólico Revolution Wind a unas 19 millas de Aquinnah, declaró que no procede de sus parques ni de sus buques; ambos proyectos terminaron su construcción este año. El objeto desapareció el 6 de noviembre y reapareció el 7 más al oeste de la misma playa. El medio publica fotografías de Ella Munnelly y un video del propio capitán de puerto. Taylor sostiene que no es contaminante y que no está filtrando nada; si nadie la reclama, podría retirarse con una manipuladora telescópica o llevarse a un vertedero. Las coordenadas corresponden a Aquinnah de manera aproximada.",
       "titulo": "Una gran defensa marina de origen desconocido aparece en una playa de Aquinnah, Massachusetts",
-      "url": "https://www.mvtimes.com/2026/11/18/large-fender-of-unknown-origins-washes-up-in-aquinnah/"
+      "url": "https://www.mvtimes.com/2026/11/18/large-fender-of-unknown-origins-washes-up-in-aquinnah/",
+      "id": "us-aquinnah-defensa-20261118"
     },
     {
-      "id": "us-springfield-bolido-20261113",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-19T06:55:48Z",
@@ -733,10 +902,10 @@
       "por": "tarea",
       "resumen": "Dos cámaras de seguridad del Departamento de Carreteras del condado de Greene registraron una estela brillante cruzando el cielo de Springfield, Misuri, el viernes 13 de noviembre hacia las 20:40. El condado publicó las grabaciones el martes 17 de noviembre y la nota de KTVI FOX 2 apareció el 18. Según funcionarios del condado de Greene, el destello correspondería probablemente a la lluvia de meteoros de las Táuridas; no interviene ninguna institución astronómica en la atribución. Las coordenadas corresponden a Springfield.",
       "titulo": "Dos cámaras de seguridad graban un bólido sobre Springfield, Misuri",
-      "url": "https://www.yahoo.com/news/science/articles/security-cameras-captured-bright-fireball-175247972.html"
+      "url": "https://www.yahoo.com/news/science/articles/security-cameras-captured-bright-fireball-175247972.html",
+      "id": "us-springfield-bolido-20261113"
     },
     {
-      "id": "ie-conna-cork-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-18T18:53:28Z",
@@ -759,10 +928,10 @@
       "por": "tarea",
       "resumen": "El semanario local The Avondhu publicó el 18 de noviembre que Ger Harris, vecino de la zona de Tallow Road, cerca de Conna (condado de Cork), observó «numerosas luces brillantes extendidas por el cielo nocturno» durante un domingo por la tarde, entre las 20:00 y las 20:40 aproximadamente, mirando en dirección a Fermoy; el propio testigo advierte que la referencia a Fermoy es orientativa porque las luces estaban muy altas. El caso es débil en evidencia: la nota no publica video ni fotografía del fenómeno, solo una imagen diurna aportada por el testigo con puntos blancos que señalan las posiciones aproximadas donde las vio, y precisa que la observación ocurrió en completa oscuridad. No se recoge pronunciamiento de la Autoridad de Aviación de Irlanda, del Cuerpo Aéreo, de la Garda ni de ningún especialista, y la versión web es un adelanto de la edición impresa. La nota no da la fecha del domingo, por lo que no se registra fechaEvento; las coordenadas corresponden a Conna de manera aproximada.",
       "titulo": "Un vecino de Conna, condado de Cork, pide explicaciones por numerosas luces en el cielo",
-      "url": "https://avondhupress.ie/mystery-airborne-lights-prompt-appeal-for-answers/"
+      "url": "https://avondhupress.ie/mystery-airborne-lights-prompt-appeal-for-answers/",
+      "id": "ie-conna-cork-20261118"
     },
     {
-      "id": "es-lanzarote-leonida-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-18T18:53:28Z",
@@ -785,10 +954,10 @@
       "por": "tarea",
       "resumen": "La madrugada del miércoles 18 de noviembre, a las 05:54, la estación del astrónomo aficionado Ramón López, en Playa Blanca (Lanzarote), registró en video una leónida de tamaño considerable que produjo un gran destello perfectamente visible. El astrofísico y profesor del CSIC Josep Trigo comentó en redes que «quizás es la más luminosa captada sobre Canarias en la historia», una valoración que publicó sin acompañarla de datos técnicos: la nota no aporta magnitud, velocidad, altura ni código de bólido. Según el medio, el destello se vio también desde el resto de Canarias, Marruecos, Mauritania y el Sáhara Occidental. Las Leónidas proceden del cometa 55P/Tempel-Tuttle; las coordenadas corresponden a Playa Blanca de manera aproximada, ya que la fuente no precisa la posición del meteoro.",
       "titulo": "Una estación de Lanzarote capta una gran leónida, «quizás la más luminosa» registrada sobre Canarias",
-      "url": "https://www.lavozdelanzarote.com/actualidad/mas-noticias/video-estacion-lanzarote-capta-enorme-leonida-cruzando-cielo_247425_102.html"
+      "url": "https://www.lavozdelanzarote.com/actualidad/mas-noticias/video-estacion-lanzarote-capta-enorme-leonida-cruzando-cielo_247425_102.html",
+      "id": "es-lanzarote-leonida-20261118"
     },
     {
-      "id": "pl-varsovia-mithras-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-19T06:55:48Z",
@@ -816,10 +985,10 @@
       "por": "tarea",
       "resumen": "El Ministerio de Defensa de Polonia (MON) anunció por redes sociales que el miércoles 18 de noviembre, entre las 16:00 y las 18:30, realizaría pruebas de cohetes iluminantes MITHRAS 1000 en el Instituto Técnico Militar de Armamento (WITU) de Zielonka, en las afueras de Varsovia. Según el aviso recogido por Wirtualna Polska, se verían puntos brillantes descendiendo lentamente, posiblemente con paracaídas, desde Varsovia, Marki, Kobyłka, Wołomin y Legionowo, y el propio comunicado advirtió de que podrían confundirse con un avión, un dron grande o un objeto no identificado. El MON indicó que no había riesgo para la población. Las coordenadas corresponden a Zielonka, donde se hicieron las pruebas.",
       "titulo": "Defensa de Polonia avisa de luces sobre Varsovia: eran pruebas de bengalas",
-      "url": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a"
+      "url": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a",
+      "id": "pl-varsovia-mithras-20261118"
     },
     {
-      "id": "au-barwon-heads-ce5-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-19T06:55:48Z",
@@ -841,10 +1010,10 @@
       "por": "tarea",
       "resumen": "El programa «Reality Check with Ross Coulthart», de NewsNation, emitió el 17 de noviembre un experimento del grupo Whitehawk Psionics en Barwon Heads, estado de Victoria, Australia, cerca del estrecho de Bass donde desapareció el piloto Frederick Valentich en 1978. Los participantes intentaron «hacer de faro» mediante una práctica que llaman señalización neuromeditativa, descrita en el medio como un contacto de quinto tipo (CE5). Según el International Business Times, la emisión no produjo ningún avistamiento confirmado de orbes y no aportó una demostración científica; el parapsicólogo Jack Westacott señaló que las expectativas podrían explicar las reacciones corporales de los participantes. Los Archivos Nacionales de Australia recogen para el caso Valentich una posible explicación convencional con objetos celestes brillantes, que el propio medio indica que no está establecida de forma concluyente. Las coordenadas corresponden a Barwon Heads, lugar de la filmación y no un sitio confirmado de la desaparición.",
       "titulo": "Un experimento televisado para «llamar» orbes en Victoria, Australia, no registra nada",
-      "url": "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156"
+      "url": "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156",
+      "id": "au-barwon-heads-ce5-20261118"
     },
     {
-      "id": "montaje-luces-rojas-lakenheath-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-19T13:05:00Z",
@@ -867,10 +1036,10 @@
       "rareza": "montaje",
       "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
       "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/"
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "id": "montaje-luces-rojas-lakenheath-20261118"
     },
     {
-      "id": "ca-bases-drones-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
@@ -887,10 +1056,10 @@
       "por": "tarea",
       "resumen": "Informes de la Real Fuerza Aérea Canadiense obtenidos mediante una solicitud de acceso a la información registran siete sobrevuelos de drones no identificados en dos bases: tres en CFB Trenton (Ontario) y cuatro en CFB Cold Lake (Alberta), la base que concentra buena parte de la flota de CF-18. El caso mejor fechado es el del 17 de septiembre de 2025, cuando un dron con cámara sobrevoló la pista de Trenton mientras el sistema de detección estaba apagado por un corte de energía planificado; cinco días después otro aparato cruzó la misma base y el sistema, operativo desde marzo de 2025, no lo registró. En Cold Lake se describe un dron pequeño y blanco con un tubo negro visto dos veces en cuatro días, y otro con forma de caja de unos 60 centímetros que se desplazaba entre 60 y 100 km/h con una luz amarillenta y sin ruido; según los registros, la base no disponía entonces del equipo para rastrear aparatos pequeños. El Departamento de Defensa Nacional declinó dar detalles alegando razones operativas y de seguridad, no hubo intentos de interceptación y no se identificó a ningún operador; la nota añade que no hay pruebas confirmadas de vínculos con gobiernos extranjeros. No se publican video ni fotografías de los aparatos y los incidentes carecen de fecha precisa en la mayoría de los casos, por lo que no fue posible cruzarlos con calendarios de lanzamientos o de lluvias de meteoros. No se asignan coordenadas porque las dos bases están a miles de kilómetros entre sí.",
       "titulo": "Registros militares canadienses documentan siete sobrevuelos de drones no identificados en dos bases",
-      "url": "https://canadianinquirer.net/2026/11/18/unidentified-drones-spotted-over-canadian-military-bases-exposing-security-gaps/"
+      "url": "https://canadianinquirer.net/2026/11/18/unidentified-drones-spotted-over-canadian-military-bases-exposing-security-gaps/",
+      "id": "ca-bases-drones-20261118"
     },
     {
-      "id": "it-capri-trombas-20261118",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
@@ -908,10 +1077,10 @@
       "rareza": "natural",
       "resumen": "Un video difundido el 18 de noviembre muestra dos trombas marinas girando casi entrelazadas sobre el mar junto a los Faraglioni, las formaciones rocosas emblemáticas de Capri, bajo un cielo de tormenta. La grabación se atribuye a Massimo Aprea y el medio la describe como un fenómeno de tipo tornádico, con dos columnas de agua y bruma que descienden de la nube hasta tocar la superficie. El registro es débil en datos: la nota no indica la fecha ni la hora del fenómeno, no cita a ningún servicio meteorológico italiano ni a un especialista sobre este caso concreto, y la única fuente institucional que incorpora es la página general de la NOAA sobre trombas marinas, con recomendaciones de seguridad —alejarse en ángulo recto respecto a su desplazamiento aparente y no acercarse nunca a observarlas—. No se reportan daños, víctimas ni alertas oficiales. Las coordenadas corresponden a los Faraglioni de Capri de manera aproximada.",
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
-      "url": "https://mymodernmet.com/capri-double-watersprout/"
+      "url": "https://mymodernmet.com/capri-double-watersprout/",
+      "id": "it-capri-trombas-20261118"
     },
     {
-      "id": "ru-altai-barnaul-20261118",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-18T12:50:30Z",
@@ -939,10 +1108,10 @@
       "por": "tarea",
       "resumen": "El diario regional Tolk publicó el 18 de noviembre, a las 14:43 de Barnaul, videos y una fotografía de un objeto luminoso en el cielo del krai de Altái. El material fue difundido por la comunidad de VK «Barnaul 22» y corresponde a dos ángulos distintos: uno tomado desde la carretera que une Barnaul con Biysk y otro desde la propia ciudad de Barnaul. El registro es pobre en datos: el medio solo señala que el objeto se vio «por la mañana», sin precisar fecha, hora, tamaño ni movimiento, y no identifica a quienes grabaron. No hay pronunciamiento de autoridades ni de astrónomos; el propio diario se limita a recoger las hipótesis de los comentaristas, que apuntan sobre todo a Venus como «estrella de la mañana» y, en segundo lugar, a un satélite entrando o saliendo de órbita. Como la nota no da fecha del avistamiento, no se registra fechaEvento. Las coordenadas corresponden a Barnaul de manera aproximada.",
       "titulo": "Objeto luminoso filmado desde Barnaul y la carretera a Biysk, Altái, Rusia",
-      "url": "https://tolknews.ru/obsestvo/229791-zhiteli-altayskogo-kraya-zasnyali-neobichniy-svetyashchiysya-objekt-v-nebe"
+      "url": "https://tolknews.ru/obsestvo/229791-zhiteli-altayskogo-kraya-zasnyali-neobichniy-svetyashchiysya-objekt-v-nebe",
+      "id": "ru-altai-barnaul-20261118"
     },
     {
-      "id": "us-sf-trombas-20261116",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-17T18:58:00Z",
@@ -960,10 +1129,10 @@
       "rareza": "natural",
       "resumen": "La tarde del lunes 16 de noviembre se formaron dos trombas marinas sobre la bahía de San Francisco, cerca del aeropuerto internacional y de Candlestick Point, durante un temporal que llevaba cuatro días golpeando la costa. Los testigos dijeron que ambas se disiparon en pocos minutos; Erin Wikle grabó el episodio en video. ABC7 revisó la base de datos de eventos meteorológicos de NOAA, que cubre 28 años, y no encontró ninguna tromba registrada antes dentro de la bahía: las pocas documentadas en el área ocurrieron mar adentro. El mismo temporal dejó olas de hasta 15 metros en Mavericks, cerca de Half Moon Bay, y NOAA advierte que las trombas pueden desplazarse rápido y resultar peligrosas. Las coordenadas son aproximadas, en el sector de la bahía frente al aeropuerto.",
       "titulo": "Dos trombas marinas sobre la bahía de San Francisco, sin registro previo en 28 años",
-      "url": "https://abc7news.com/post/bay-area-residents-witness-stunned-rare-waterspouts-san-francisco/20046828/"
+      "url": "https://abc7news.com/post/bay-area-residents-witness-stunned-rare-waterspouts-san-francisco/20046828/",
+      "id": "us-sf-trombas-20261116"
     },
     {
-      "id": "montaje-ola-portacontenedores-20261117",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-17T18:58:00Z",
@@ -981,10 +1150,10 @@
       "rareza": "montaje",
       "resumen": "Un YouTube Short publicado en noviembre por el canal «UNIQUE SARANG» muestra una ola enorme que pasa por encima de un portacontenedores cargado y golpea la ventana del puente de mando; acumuló cerca de 32 millones de reproducciones en su primera semana y se replicó en X y Reddit presentado como una ola gigante real. Snopes lo calificó de falso y concluyó que fue generado con inteligencia artificial. Entre las señales que cita: una taza que cae y se endereza sola, contenedores que parecen colgar del costado del buque, una nave que no reacciona al oleaje y un estado final que no coincide con las grabaciones reales de olas gigantes, donde los objetos quedan desordenados. La verificación, firmada por Emery Winter, se publicó el 17 de noviembre y fue reproducida por Yahoo News.",
       "titulo": "Desmienten el video viral de una ola gigante barriendo un portacontenedores: es material hecho con IA",
-      "url": "https://www.yahoo.com/news/science/articles/fact-check-alleged-video-massive-140000769.html"
+      "url": "https://www.yahoo.com/news/science/articles/fact-check-alleged-video-massive-140000769.html",
+      "id": "montaje-ola-portacontenedores-20261117"
     },
     {
-      "id": "es-bolido-spmn-20261116",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-17T18:58:00Z",
@@ -1007,10 +1176,10 @@
       "por": "tarea",
       "resumen": "La madrugada del lunes 16 de noviembre, a las 06:05:33 UTC (07:05:33 en la península), un bólido cruzó el cielo del este de España. La Red de Investigación sobre Bólidos y Meteoritos (SPMN), vinculada al CSIC, lo documentó con el código SPMN161126M a partir del registro de cuatro estaciones: Esparreguera y Gavà (Barcelona), Morata de Jalón (Zaragoza) y Sant Mateu (Castellón). La red lo atribuye a las Leónidas, originadas en el cometa 55P/Tempel-Tuttle, y le estima una magnitud absoluta de -8 con una incertidumbre de una magnitud. El rango de observación comunicado abarca Aragón, Castilla-La Mancha, la Comunidad Valenciana, Baleares y la Región de Murcia; la fuente destaca una grabación de Carles Pineda desde Gavà y no registra observaciones confirmadas desde Cádiz. No se asigna coordenada porque la fuente no precisa la posición del bólido, solo las estaciones que lo detectaron.",
       "titulo": "Bólido de las Leónidas sobre el este de España, registrado por la red SPMN",
-      "url": "https://www.cadizdirecto.com/cadiz/una-brillante-bola-de-fuego-cruza-el-cielo-de-espana-en-plena-lluvia-de-las-leonidas-se-pudo-ver-desde-cadiz"
+      "url": "https://www.cadizdirecto.com/cadiz/una-brillante-bola-de-fuego-cruza-el-cielo-de-espana-en-plena-lluvia-de-las-leonidas-se-pudo-ver-desde-cadiz",
+      "id": "es-bolido-spmn-20261116"
     },
     {
-      "id": "es-toledo-semilla-20261116",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-18T00:55:00Z",
@@ -1028,10 +1197,10 @@
       "rareza": "cielo",
       "resumen": "A las 23:40 del lunes 16 de noviembre, nueve haces de luz proyectados desde uno de los puntos más altos de Toledo dibujaron la forma de una semilla sobre la ciudad. No se trata de un avistamiento anómalo: es la segunda y última fase de «Hay Luz Dentro», un proyecto sin ánimo de lucro del creativo Samuel García, de 34 años y natural de Mora, vinculado a la Escuela de Arte de Toledo. La primera fase había sido la aparición, el 28 de octubre, de 500 macetas blancas y vacías en el Casco Histórico, con un código QR y el mensaje «Tú eres la semilla más importante del mundo». La fecha se eligió para marcar los 40 años de Toledo como Ciudad Patrimonio de la Humanidad. El autor es la única fuente del origen: la nota no recoge confirmación de ninguna autoridad municipal ni verificación independiente.",
       "titulo": "Nueve focos dibujan una semilla en el cielo de Toledo",
-      "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/toledo/20261117/misteriosa-luz-dibuja-semilla-cielo-toledo-curioso-mensaje-detras/1003744459588_0.html"
+      "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/toledo/20261117/misteriosa-luz-dibuja-semilla-cielo-toledo-curioso-mensaje-detras/1003744459588_0.html",
+      "id": "es-toledo-semilla-20261116"
     },
     {
-      "id": "br-belem-jurunas-20261116",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-18T00:55:00Z",
@@ -1064,10 +1233,10 @@
       "por": "tarea",
       "resumen": "La noche del lunes 16 de noviembre, un vecino del barrio del Jurunas, en Belém (Pará), grabó con su teléfono un punto de luz redondeado en el cielo; el video se difundió en redes y el diario local lo publicó en la madrugada del 17. El registro es pobre en datos: la nota no informa posición, tamaño, movimiento ni duración de la luz, y el testigo no está identificado. El propio medio advierte que un punto luminoso puede corresponder a aeronaves, satélites, drones o fenómenos astronómicos y que, sin más información, no es posible determinar qué aparece en las imágenes; no hay declaración de especialistas ni de autoridades. Las coordenadas corresponden al barrio del Jurunas de manera aproximada.",
       "titulo": "Punto de luz filmado por un vecino del Jurunas, en Belém, Brasil",
-      "url": "https://dol.com.br/tuedoide/bizarro/968604/ovni-no-jurunas--luz-misteriosa-no-ceu-intriga-morador-veja"
+      "url": "https://dol.com.br/tuedoide/bizarro/968604/ovni-no-jurunas--luz-misteriosa-no-ceu-intriga-morador-veja",
+      "id": "br-belem-jurunas-20261116"
     },
     {
-      "id": "us-papahanaumokuakea-pulpo-20261117",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-19T00:55:00Z",
@@ -1085,10 +1254,10 @@
       "rareza": "mar",
       "resumen": "Un pequeño pulpo se dedicó a perseguir los puntos verdes de láser que el vehículo operado a distancia Hercules proyecta sobre el fondo marino para medir a los animales que encuentra, a 323 metros de profundidad en el Monumento Nacional Marino Papahānaumokuākea, cerca de Hawái. La escena quedó grabada durante una inmersión del buque E/V Nautilus y el material está acreditado a Ocean Exploration Trust y NOAA; en el audio se oye a los científicos reaccionando en directo con un «¡Es un gato! ¡Es un gato!». La nota, publicada el 17 de noviembre de 2026, no identifica la especie ni aporta análisis científico del comportamiento: el equipo solo comenta que recuerda lo inteligentes que probablemente son los cefalópodos. No se asignan coordenadas porque la fuente no precisa el punto de la inmersión dentro del monumento, que abarca una superficie muy extensa del Pacífico.",
       "titulo": "Un pulpo persigue los láseres de un robot submarino en Papahānaumokuākea",
-      "url": "https://www.discoverwildlife.com/animal-facts/marine-animals/octopus-chases-laser"
+      "url": "https://www.discoverwildlife.com/animal-facts/marine-animals/octopus-chases-laser",
+      "id": "us-papahanaumokuakea-pulpo-20261117"
     },
     {
-      "id": "montaje-aeropuerto-faa-20261117",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-19T19:05:00Z",
@@ -1115,10 +1284,10 @@
       "rareza": "montaje",
       "resumen": "Tras el cierre temporal de despegues que la FAA ordenó en Estados Unidos el 13 de noviembre de 2026 por una falla en las comunicaciones del control aéreo, circuló en X, Facebook, Instagram y TikTok, y en varios idiomas, un video que parecía mostrar a una multitud de viajeros durmiendo en el suelo de un aeropuerto mientras otros se agolpaban en los mostradores de embarque; algunas publicaciones lo situaban en Atlanta, Georgia. AFP concluyó el 16 de noviembre que se trata de una fabricación generada con inteligencia artificial: las herramientas de detección dieron resultados mayormente no concluyentes, pero Pangram arrojó evidencia de que el clip se creó con esa tecnología, y el equipo enumeró caras borradas o deformadas, cuerpos fusionados, textos ilegibles, ropa casi idéntica y cuatro o cinco puertas rotuladas todas como «Gate 32», además de anuncios impresos de Coca-Cola con la frase «flight cancelled». Factchequeado publicó el 17 de noviembre su propia verificación en español: con WasItAIGenerated, SightEngine y Winston AI calculó entre un 75 % y un 100 % de probabilidad de creación con IA, y señaló cuerpos unidos, carteles electrónicos ilegibles y filas de asientos con divisores metálicos solo en algunos tramos. Ambas verificaciones apuntan además que la cobertura de CBS News y CNN sobre pasajeros varados no publicó imágenes de una multitud comparable.",
       "titulo": "Desmienten el video de pasajeros durmiendo en un aeropuerto tras el cierre aéreo en EE. UU.: fue hecho con IA",
-      "url": "https://www.yahoo.com/news/us/articles/fabricated-airport-video-circulates-us-220058325.html"
+      "url": "https://www.yahoo.com/news/us/articles/fabricated-airport-video-circulates-us-220058325.html",
+      "id": "montaje-aeropuerto-faa-20261117"
     },
     {
-      "id": "mx-juarez-medusa-20261114",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-17T12:47:16Z",
@@ -1146,10 +1315,10 @@
       "por": "tarea",
       "resumen": "TV Azteca publicó el 16 de noviembre una nota sobre un video difundido en X el 14 de noviembre que muestra un objeto con apéndices colgantes, descrito como «ovni medusa», atribuido al cielo de Ciudad Juárez, Chihuahua. La nota presenta el caso como una secuela del objeto filmado en Anchorage, Alaska, el 15 de junio, sobre el que el exdirector de la oficina del Pentágono que investiga fenómenos anómalos, Sean Kirkpatrick, planteó una cometa con serpentinas, un globo de gran altitud u otro artefacto aéreo. La procedencia del material mexicano es débil: la fuente no identifica quién lo grabó, no precisa fecha ni hora de grabación y no recoge pronunciamiento de ninguna autoridad mexicana; el propio medio señala que no hay evidencia de que ambos objetos estén relacionados ni de que sean de origen extraterrestre. Conviene añadir que Ciudad Juárez es la misma localidad del video del supuesto pterodáctilo difundido días antes y desmentido como material generado con inteligencia artificial.",
       "titulo": "Objeto tipo «medusa» atribuido a Ciudad Juárez, México",
-      "url": "https://www.tvazteca.com/amastv/paranormal/captan-supuesto-ovni-medusa-en-mexico-tras-avistamiento-en-alaska-esto-se-sabe/"
+      "url": "https://www.tvazteca.com/amastv/paranormal/captan-supuesto-ovni-medusa-en-mexico-tras-avistamiento-en-alaska-esto-se-sabe/",
+      "id": "mx-juarez-medusa-20261114"
     },
     {
-      "id": "mx-puebla-estela-20261116",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-16T18:49:00Z",
@@ -1182,10 +1351,10 @@
       "por": "tarea",
       "resumen": "Vecinos de San Salvador el Seco, Tepeaca y San Nicolás Buenos Aires grabaron con sus teléfonos una luz brillante que cruzaba el cielo nocturno y que, según los testigos, parecía arrastrar una estela o un cuerpo secundario detrás de sí. La nota no precisa la fecha ni la hora del avistamiento y la Protección Civil estatal no había emitido ningún pronunciamiento al publicarse. En redes se mencionaron basura espacial, fragmentos de meteorito, satélites de órbita baja y drones de gran altura, sin que la fuente verifique ninguna de esas hipótesis. La coordenada registrada es aproximada: corresponde a un punto central entre las tres localidades mencionadas.",
       "titulo": "Luz con estela sobre varios municipios de Puebla, México",
-      "url": "https://www.aztecaguerrero.com/noticias/no-estamos-solos-captan-extrano-ovni-arrastrando-un-objeto-desconocido-sobre-puebla/"
+      "url": "https://www.aztecaguerrero.com/noticias/no-estamos-solos-captan-extrano-ovni-arrastrando-un-objeto-desconocido-sobre-puebla/",
+      "id": "mx-puebla-estela-20261116"
     },
     {
-      "id": "it-torino-luces-20261113",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-18T00:55:00Z",
@@ -1213,10 +1382,10 @@
       "por": "tarea",
       "resumen": "La noche del viernes 13 de noviembre, vecinos de Caselle Torinese, Mappano, Volpiano, Settimo Torinese, Robassomero y los barrios turineses de Barriera di Milano y Falchera filmaron varios haces o destellos de luz que atravesaban nubes espesas y parecían desplazarse con regularidad sobre las casas; los primeros registros los compartieron residentes de Caselle Torinese y el fenómeno se difundió por redes. La prensa local plantea dos explicaciones no confirmadas: focos móviles del tipo que se usa en locales y espectáculos al aire libre, cuyos haces se vuelven visibles a distancia al proyectarse contra las nubes, y las iluminaciones de las ATP Finals, que desde el 13 de noviembre incluyen videomapping en la plaza San Carlo y en la fachada del Palazzo Reale. No hay pronunciamiento de autoridades ni análisis de especialistas, y la propia nota concluye que no existe confirmación definitiva. Las coordenadas corresponden a Turín de manera aproximada, ya que los reportes se reparten por varios municipios del cinturón norte.",
       "titulo": "Haces de luz sobre Turín y su cinturón norte, filmados por vecinos",
-      "url": "https://www.libero.it/magazine/news/strane-luci-cielo-torino-decine-cittadini-filmano-fenomeno-cosa-succede-ufo-atp-finals-231536"
+      "url": "https://www.libero.it/magazine/news/strane-luci-cielo-torino-decine-cittadini-filmano-fenomeno-cosa-succede-ufo-atp-finals-231536",
+      "id": "it-torino-luces-20261113"
     },
     {
-      "id": "za-halo-gauteng-20261116",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-16T18:49:00Z",
@@ -1239,10 +1408,10 @@
       "rareza": "natural",
       "resumen": "Poco antes del mediodía del 16 de noviembre, habitantes de Pretoria y Johannesburgo fotografiaron un anillo brillante en torno al Sol, con un resplandor pálido y algo de color en el borde, y las imágenes circularon en hilos de Reddit y en medios locales. El Servicio Meteorológico de Sudáfrica y la profesora Jennifer Fitchett, de la Universidad de Witwatersrand, lo identificaron como un halo solar de 22 grados: la luz se refracta en diminutos cristales de hielo hexagonales de nubes cirros a unos 8 a 10 kilómetros de altura. Ambas fuentes aclaran que el halo no sirve como pronóstico fiable de lluvia y advierten que no se debe mirar directamente al Sol. La cobertura reproduce fotografías de prensa y del público; no se menciona registro en video.",
       "titulo": "Un anillo de luz alrededor del Sol inquieta a Gauteng, Sudáfrica",
-      "url": "https://www.xtrafrica.com/news/south-africa-sun-halo-november-16-2026-explained"
+      "url": "https://www.xtrafrica.com/news/south-africa-sun-halo-november-16-2026-explained",
+      "id": "za-halo-gauteng-20261116"
     },
     {
-      "id": "us-florida-cavum-20261115",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-17T00:50:16Z",
@@ -1265,10 +1434,10 @@
       "rareza": "natural",
       "resumen": "Durante el fin de semana del 14 y 15 de noviembre aparecieron grandes agujeros circulares y alargados en capas de nubes sobre Florida. El meteorólogo Matt Devitt difundió las imágenes el domingo y pidió a vecinos enviar las suyas. Se trata de agujeros de caída (fallstreak holes o nubes cavum): cuando un avión atraviesa una capa con gotas de agua subenfriada, algunas se congelan en cristales que crecen absorbiendo humedad y dejan un hueco que se expande, con estelas blanquecinas cayendo debajo. La NOAA atribuye la formación de cristales al enfriamiento del aire alrededor de las alas, y la NASA recuerda que el origen es atmosférico y no extraterrestre. La ubicación es estatal, sin localidad precisa en la fuente.",
       "titulo": "Agujeros circulares en las nubes sobre Florida: nubes cavum filmadas el fin de semana",
-      "url": "https://en.cibercuba.com/noticias/2026-11-15-u1-e135253-s27061-nid345803-cielo-florida-sorprende-extrano-fenomeno-esta"
+      "url": "https://en.cibercuba.com/noticias/2026-11-15-u1-e135253-s27061-nid345803-cielo-florida-sorprende-extrano-fenomeno-esta",
+      "id": "us-florida-cavum-20261115"
     },
     {
-      "id": "latam-starship-20261113",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-15T10:50:00Z",
@@ -1296,10 +1465,10 @@
       "por": "tarea",
       "resumen": "La noche del viernes 13 de noviembre se difundieron grabaciones desde Ciudad de México, Puebla, Oaxaca, la costa de Chiapas, Guatemala, El Salvador, Puerto Rico y el sur de Texas que muestran un punto brillante con un abanico de luz detrás. La Secretaría de Protección Civil de Chiapas y la presidencia de El Salvador atribuyeron el fenómeno al vuelo de prueba 15 de Starship, lanzado ese día desde Starbase, Texas, que puso en órbita 26 satélites Starlink V3. El abanico luminoso se explica como gas de los motores iluminado por el sol a gran altura, el llamado «efecto medusa». Al abarcar varios países no se asigna una coordenada única.",
       "titulo": "Luces del vuelo 15 de Starship vistas en México y Centroamérica",
-      "url": "https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises"
+      "url": "https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises",
+      "id": "latam-starship-20261113"
     },
     {
-      "id": "compilacion-20261114",
       "agua": false,
       "clase": "redes",
       "creado": "2026-11-15T02:22:00Z",
@@ -1314,10 +1483,10 @@
       "por": "siembra",
       "resumen": "Recopilación publicada el 14 de noviembre que reúne registros atribuidos a un objeto discoidal sobre la isla de Sado (Japón), un objeto negro filmado por un piloto comercial sobre Michoacán y otros casos. Sin verificación independiente de ninguno de ellos.",
       "titulo": "Compilación de registros recientes: Japón, México y otros",
-      "url": "https://www.youtube.com/watch?v=Atn0kp16cdc"
+      "url": "https://www.youtube.com/watch?v=Atn0kp16cdc",
+      "id": "compilacion-20261114"
     },
     {
-      "id": "us-oregon-wilsonville",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-15T18:45:00Z",
@@ -1334,10 +1503,10 @@
       "por": "tarea",
       "resumen": "Una testigo identificada solo como «S» reportó que cerca de las 20:00 del 25 de agosto vio caer desde el cielo un objeto que pasó de una forma rectangular a una bola grande y luego a una más pequeña, con una estela detrás. Alrededor de una hora después, a las 21:14, su hija avisó de luces que recorrían las paredes de su dormitorio y la familia vio por la ventana un objeto grande, plateado y silencioso, que se mantuvo suspendido casi un minuto antes de desaparecer; la testigo reportó náuseas y problemas de equilibrio esa noche y dijo que se recuperaron a la mañana siguiente. El investigador de NUFORC Keith Bickford consultó a dos agricultores de la zona que operan drones y reportó que la oficina del sheriff del condado de Clackamas y la policía de Wilsonville no tenían reportes esa noche y que FlightRadar24 no mostraba tráfico coincidente; lo clasificó textualmente como un avistamiento anómalo. La nota señala que la hija tomó una fotografía, pero no la publica ni menciona video, y da la fecha como 25 de agosto sin precisar el año, por lo que no se registra fechaEvento.",
       "titulo": "NUFORC clasifica como anómalo un caso en Wilsonville, Oregón",
-      "url": "https://ibtimes.co.uk/oregon-woman-reports-alleged-ufo-encounter-wilsonville-1832192"
+      "url": "https://ibtimes.co.uk/oregon-woman-reports-alleged-ufo-encounter-wilsonville-1832192",
+      "id": "us-oregon-wilsonville"
     },
     {
-      "id": "cl-bolido-20261113",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-15T02:22:00Z",
@@ -1374,10 +1543,10 @@
       "por": "siembra",
       "resumen": "Un intenso destello cruzó el cielo cerca de las 21:32 del viernes 13 y quedó registrado por cámaras de seguridad y teléfonos. Testigos en Ñuble y Biobío reportaron un fuerte estruendo segundos después. La Red Geocientífica de Chile recopiló reportes desde Coquimbo hasta Los Ríos; la astrónoma Francisca Contreras señaló que se trataría de un objeto quemándose al ingresar a la atmósfera, de origen natural o artificial, y descartó relación con un lanzamiento de SpaceX.",
       "titulo": "Bólido sobre Chile central y sur",
-      "url": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/astronomia/2026/11/14/cientificos-explican-bola-de-fuego-que-cruzo-cielos-de-chile-y-el-fuerte-estruendo-que-se-escucho.shtml"
+      "url": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/astronomia/2026/11/14/cientificos-explican-bola-de-fuego-que-cruzo-cielos-de-chile-y-el-fuerte-estruendo-que-se-escucho.shtml",
+      "id": "cl-bolido-20261113"
     },
     {
-      "id": "dk-delle-sonidos-baltico",
       "agua": true,
       "clase": "prensa",
       "creado": "2026-11-16T00:53:36Z",
@@ -1400,10 +1569,10 @@
       "rareza": "mar",
       "resumen": "Investigadores de la Universidad del Sur de Dinamarca, con la doctora Olga Filatova como autora principal, dejaron equipos de grabación submarina durante más de dos meses y registraron cerca de 10.000 sonidos atribuidos a un único animal: Delle, un delfín nariz de botella macho que vive solo en aguas danesas, cerca del canal de Svendborgsund, y que desde entonces se desplazó hacia la costa alemana. Lo llamativo es que se trata de sonidos considerados comunicativos, que normalmente implican la presencia de al menos dos delfines, y que varios se produjeron de noche, sin personas cerca. El equipo plantea como posibles explicaciones un «habla para sí mismo» o vocalizaciones involuntarias de origen emocional, pero reconoce que la causa sigue sin establecerse. La nota, publicada el 14 de noviembre de 2026, difunde el audio y cita el artículo «Dolphin self-talk: unusual acoustic behaviour of a solitary bottlenose dolphin»; las grabaciones son de 2024 y el estudio ya había sido publicado, por lo que no se registra fecha de evento. Las coordenadas corresponden de manera aproximada al canal de Svendborgsund, ya que la fuente no precisa el punto exacto de grabación.",
       "titulo": "Graban 10.000 sonidos de un delfín solitario en el Báltico y no saben por qué los emite",
-      "url": "https://discoverwildlife.com/animal-facts/marine-animals/chatty-delle-dolphin-baltic-sea"
+      "url": "https://discoverwildlife.com/animal-facts/marine-animals/chatty-delle-dolphin-baltic-sea",
+      "id": "dk-delle-sonidos-baltico"
     },
     {
-      "id": "mx-juarez-pterodactilo-montaje",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-16T00:53:36Z",
@@ -1438,10 +1607,10 @@
       "rareza": "montaje",
       "resumen": "Una compilación difundida por el periodista Jaime Maussan desde su cuenta de X el 13 de noviembre presenta una silueta voladora sobre la zona de Anapra, en Ciudad Juárez, Chihuahua, como un pteranodonte vivo, y añade imágenes de cámara trampa atribuidas a un sinápsido; el video sostiene que las criaturas llegarían por portales dimensionales. Sergio Rodríguez, director de Protección Civil Municipal de Ciudad Juárez, calificó el material de «contenido de entretenimiento digital» sin base real y señaló que, si existiera un animal prehistórico en la región, el INAH y otras instituciones ya lo estarían investigando; Maussan respondió en su programa preguntando si la dependencia visitó los lugares. Una verificación publicada el 14 de noviembre califica el caso de falso: especialistas identificaron la silueta voladora como una garza azulada (Ardea herodias), un detector de contenido sintético puntuó la compilación en 0,96 y uno de los cuadros muestra un rótulo de «inteligencia artificial»; según esa verificación, Maussan reconoció haber presentado una recreación mejorada con IA. Protección Civil de Chihuahua y la policía de Texas no registraron avistamientos ni ataques a ganado.",
       "titulo": "Desmienten el video del «pterodáctilo» de Ciudad Juárez difundido por Maussan",
-      "url": "https://whatthefact.app/fact-checks/2026-11-14-ciudad-juarez-pterodactyl-flying-creature-video-maussan"
+      "url": "https://whatthefact.app/fact-checks/2026-11-14-ciudad-juarez-pterodactyl-flying-creature-video-maussan",
+      "id": "mx-juarez-pterodactilo-montaje"
     },
     {
-      "id": "uy-cridovni-starlink-20261105",
       "agua": false,
       "clase": "prensa",
       "creado": "2026-11-15T10:50:00Z",
@@ -1461,159 +1630,10 @@
       "por": "tarea",
       "resumen": "Durante varios días de noviembre, vecinos de Maldonado, Montevideo y Colonia del Sacramento filmaron filas de puntos luminosos que cruzaban el cielo nocturno; en uno de los videos aparecen dos luces y luego una tercera. La comisión Cridovni, de la Fuerza Aérea Uruguaya, concluyó oficialmente que corresponden a satélites Starlink de SpaceX, y su titular, el coronel Víctor Molina, señaló que los videos no mostraban nada fuera de lo ordinario. La comisión aclaró que la conclusión aplica solo a los videos analizados y que siguen llegando reportes. Las coordenadas corresponden a Punta del Este.",
       "titulo": "La Fuerza Aérea Uruguaya concluye que las luces de Punta del Este eran satélites Starlink",
-      "url": "https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites"
+      "url": "https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites",
+      "id": "uy-cridovni-starlink-20261105"
     },
     {
-      "id": "us-florida-cierre-20261113",
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T10:50:00Z",
-      "descarte": [
-        {
-          "detalle": "El vuelo 15 de Starship se lanzó el 13 de noviembre desde Texas y usuarios atribuyeron el video de Tampa a un lanzamiento de SpaceX, sin confirmación; rocketlaunch.live no lista ningún lanzamiento desde Cabo Cañaveral ese día (el siguiente previsto era Vulcan con Amazon Leo, el 15 de noviembre)",
-          "fuente": "https://rocketlaunch.live/",
-          "tipo": "lanzamiento"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [
-        [
-          "Starship provocó avistamientos ese mismo día (RT)",
-          "https://actualidad-rt.com/viral/637848-nave-starship-provoca-avistamientos-ovnis-paises"
-        ],
-        [
-          "Video del testigo en Tampa y explicación oficial del cierre (ViveUSA, 14 nov)",
-          "https://www.viveusa.mx/en/noticias/misterio-en-estados-unidos-mientras-cerraron-el-espacio-aereo-ciudadanos-reportaron-avistamientos-de-ovnis/"
-        ]
-      ],
-      "estado": "sin verificar; la FAA atribuyó el cierre a una falla técnica y descartó un ataque",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-14T02:35:00Z",
-      "fuente": "TV Azteca",
-      "lat": 27.95,
-      "lon": -82.46,
-      "lugar": "Tampa y Miami, Florida, Estados Unidos",
-      "por": "tarea",
-      "resumen": "La tarde del viernes 13 de noviembre la FAA ordenó detener temporalmente los despegues en Estados Unidos por una falla en las comunicaciones del sistema de control aéreo, y horas después levantó la medida. En paralelo circularon videos de luces no explicadas, sobre todo cerca de Tampa y con una publicación referida a Miami. Las autoridades atribuyeron el cierre a una falla técnica de telecomunicaciones y descartaron un ataque deliberado, y no vincularon el episodio con los avistamientos. Entre las explicaciones que circulan para las luces está el lanzamiento de Starship ese mismo día, sin confirmación. Las coordenadas corresponden a Tampa, donde se concentraron los reportes.",
-      "titulo": "Luces sobre Florida durante el cierre del tráfico aéreo en EE. UU.",
-      "url": "https://tvazteca.com/amastv/paranormal/fueron-los-ovnis-la-razon-por-la-que-ordenaron-cierre-trafico-aereo-estados-unidos"
-    },
-    {
-      "id": "ak-medusa-jber",
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T02:22:00Z",
-      "enlaces": [
-        [
-          "Kirkpatrick plantea una cometa con serpentinas (Fox News, 14 nov)",
-          "https://www.foxnews.com/us/pentagons-former-ufo-investigator-offers-simple-theory-mysterious-jellyfish-shaped-object-video"
-        ],
-        [
-          "El objeto atraviesa un arcoíris y los expertos hablan de cometa o globo (Weather.com, 15 nov)",
-          "https://weather.com/2026/11/15/news/trending/video/anchorage-alaska-ufo-like-object-rainbow-kite"
-        ],
-        [
-          "Ben Hansen y la exanalista Sarah Gamm se inclinan por un globo de gran altitud; Hansen menciona ejercicios militares con lanzamiento de globos en la región (East Idaho News, 16 nov)",
-          "https://www.eastidahonews.com/2026/11/you-have-to-see-this-high-altitude-balloon-or-tentacled-ufo-viral-video-shows-strange-floating-object-in-sky/"
-        ]
-      ],
-      "estado": "en discusión; Sarah Gamm, exanalista del UAP Task Force, lo da «oficialmente como no identificado» pero lo atribuye con mayor probabilidad a un globo de gran altitud, y Ben Hansen considera legítimas las imágenes y apunta a una cometa o globo, en línea con la hipótesis del exdirector de AARO",
-      "fechaEvento": "2026-06-15",
-      "fechaPub": "2026-11-13T19:41:00Z",
-      "fuente": "Fox News Digital vía Yahoo News",
-      "lat": 61.25,
-      "lon": -149.8,
-      "lugar": "Joint Base Elmendorf-Richardson, Anchorage, Alaska",
-      "por": "siembra",
-      "resumen": "Sara Jane Osborn grabó el objeto la noche del 15 de junio, cerca de las 22:15, y lo publicó en Facebook al día siguiente; la grabación volvió a circular en noviembre. La oficina de asuntos públicos del 673d Air Base Wing dijo estar al tanto del material sin aportar más información, y no precisó si el objeto fue detectado por personal o equipos militares ni si entró en espacio aéreo restringido. El exdirector de AARO, Sean Kirkpatrick, sostiene que el movimiento ondulante se parece al de una cometa con serpentinas y pide revisar celebraciones locales, patrones de viento y grabaciones desde otro ángulo; añade que el video comprimido no permite determinar tamaño, altitud, distancia ni movimiento real, y advierte lo fácil que resulta hoy fabricar imágenes. AARO no se ha pronunciado sobre este caso.",
-      "titulo": "Objeto «medusa» cerca de la base Elmendorf-Richardson",
-      "url": "https://www.yahoo.com/news/science/articles/pentagons-former-ufo-investigator-offers-140038063.html"
-    },
-    {
-      "id": "ar-patagonia-reentrada-20261102",
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-15T10:50:00Z",
-      "enlaces": [
-        [
-          "Luces en el cielo: un festival, un cohete y satélites (El Norte Hoy)",
-          "https://elnortehoy.com/noticias/luces-en-el-cielo-no-eran-ovnis-un-festival-un-cohete-y-satelites"
-        ]
-      ],
-      "estado": "hipótesis de reentrada de restos del cohete chino CZ-2C, sin confirmación oficial",
-      "fechaEvento": "2026-11-02",
-      "fechaPub": "2026-11-13T17:45:00Z",
-      "fuente": "Aire de Santa Fe · MDZ · ADN Sur",
-      "lat": null,
-      "lon": null,
-      "lugar": "Santa Cruz y Chubut, Argentina",
-      "por": "tarea",
-      "resumen": "La noche del 2 de noviembre se vio una intensa luz naranja con una larga estela, de desplazamiento aparentemente lento, desde El Calafate, Pico Truncado, Fitz Roy y Las Heras, en Santa Cruz, y desde Río Mayo y Esquel, en Chubut. Medios regionales publicaron testimonios e imágenes del rastro luminoso. RS Astroturismo planteó ante ADN Sur que se trataría de la reentrada de restos de un cohete chino CZ-2C, hipótesis que no ha sido confirmada oficialmente. Al abarcar localidades muy distantes entre sí no se asigna una coordenada única.",
-      "titulo": "Luz naranja con estela sobre la Patagonia argentina",
-      "url": "https://www.airedesantafe.com.ar/actualidad/en-menos-diez-dias-aparecieron-luces-extranas-los-cielos-la-patagonia-y-uruguay-que-dicen-los-expertos-n676720"
-    },
-    {
-      "id": "noaa-bosque-raro-johnston",
-      "agua": true,
-      "clase": "prensa",
-      "creado": "2026-11-16T12:55:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "material de archivo filmado y publicado por NOAA Ocean Exploration; la alineación de las esponjas tiene explicación biológica establecida",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-13T14:45:00Z",
-      "fuente": "Discover Wildlife (BBC Wildlife) · NOAA Ocean Exploration",
-      "lat": 16.75,
-      "lon": -169.52,
-      "lugar": "Monte submarino «Ridge», aguas del atolón Johnston, océano Pacífico (Estados Unidos)",
-      "por": "tarea",
-      "rareza": "mar",
-      "resumen": "Un reportaje publicado el 13 de noviembre de 2026 volvió a difundir las imágenes de un paisaje submarino que los propios científicos apodaron «Forest of the Weird»: un fondo cubierto de esponjas de vidrio, todas orientadas en la misma dirección, a unos 2.442 metros de profundidad en un monte submarino llamado «Ridge», en aguas del atolón Johnston, en el Pacífico. La orientación uniforme no es anómala: al ser filtradoras, las esponjas se alinean de cara a la corriente para capturar bacterias y plancton. El material fue grabado por el vehículo operado a distancia Deep Discoverer, de NOAA Ocean Exploration, durante la expedición Laulima O Ka Moana de 2017, y el apodo nació de un comentario del científico del Smithsonian Chris Mah durante la inmersión; por tratarse de material de archivo no se registra fecha de evento. Las coordenadas corresponden al atolón Johnston de manera aproximada, ya que la fuente no precisa la posición del monte submarino.",
-      "titulo": "El «bosque de lo raro»: esponjas de vidrio alineadas a 2.442 metros en el Pacífico",
-      "url": "https://www.discoverwildlife.com/animal-facts/marine-animals/forest-of-weird"
-    },
-    {
-      "id": "gaza-serpientes-ia-20261112",
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-16T06:50:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "desmentido por Lead Stories: video generado con inteligencia artificial",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-12T00:00:00Z",
-      "fuente": "Lead Stories",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a Gaza)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Una publicación difundida en X el 11 de noviembre mostraba serpientes cayendo del cielo y aseguraba que palestinos denunciaban que Israel las estaba lanzando sobre Gaza. El verificador Lead Stories lo clasificó como falso y generado con inteligencia artificial. Los detectores Sightengine y Hive Moderation dieron lecturas altas de contenido sintético, con un 98,2 % de probabilidad en el audio, y el equipo localizó copias anteriores publicadas en TikTok en abril y en Instagram en septiembre de 2026, una de ellas desde una cuenta que la propia plataforma marca como generada por IA.",
-      "titulo": "Desmienten el video de «serpientes cayendo del cielo» atribuido a Gaza",
-      "url": "https://leadstories.com/hoax-alert/2026/11/fact-check-fake-video-shows-snakes-raining-from-sky-it-is-ai-generated.html"
-    },
-    {
-      "id": "iss-20261108",
-      "agua": false,
-      "clase": "redes",
-      "creado": "2026-11-15T02:22:00Z",
-      "enlaces": [],
-      "estado": "sin verificar",
-      "fechaEvento": "2026-11-08",
-      "fechaPub": "2026-11-11T12:00:00Z",
-      "fuente": "YouTube",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado",
-      "por": "siembra",
-      "resumen": "Video difundido en YouTube atribuido a la transmisión de la Estación Espacial Internacional del 8 de noviembre. El propio canal indica que la ubicación de filmación no está verificada. Se incluye como ejemplo de lo que circula en redes, no como evidencia.",
-      "titulo": "Supuesto objeto registrado desde la Estación Espacial",
-      "url": "https://www.youtube.com/watch?v=hsoNKuvWL5A"
-    },
-    {
-      "id": "pursue-release-07",
       "agua": false,
       "clase": "oficial",
       "creado": "2026-11-15T14:30:00Z",
@@ -1647,10 +1667,10 @@
       "por": "tarea",
       "resumen": "El Departamento de Guerra publicó el 23 de octubre la séptima entrega de archivos desclasificados del programa PURSUE: 28 registros nuevos que elevan el archivo a 478 documentos en siete entregas. El caso más citado es el expediente FBI-UAP-D043, una entrevista de 2026 con dos agentes federales que describen un objeto triangular negro de unos 2,7 a 4,6 metros de ancho, sin luces de aeronave ni sonido, a unas tres millas de un sitio de seguridad nacional en el oeste de Estados Unidos; según el documento ascendió unos 60 metros, se desplazó de lado y volvió a bajar, y el equipo térmico no detectó firma de calor. La entrega incluye además registros de los años cuarenta y cincuenta, reportes de Skinwalker Ranch y un informe mensual de BAASS de 2009. No contiene video ni fotografías de los avistamientos: lo difundido es documentación, más una representación gráfica del triángulo.",
       "titulo": "Séptima entrega de archivos UAP: triángulo negro ante agentes federales",
-      "url": "https://starlust.org/pentagon-just-released-the-7th-batch-of-declassified-ufo-files-get-the-direct-link-here/"
+      "url": "https://starlust.org/pentagon-just-released-the-7th-batch-of-declassified-ufo-files-get-the-direct-link-here/",
+      "id": "pursue-release-07"
     },
     {
-      "id": "pursue-fbi-2026",
       "agua": false,
       "clase": "oficial",
       "creado": "2026-11-15T02:22:00Z",
@@ -1665,7 +1685,8 @@
       "por": "siembra",
       "resumen": "Quinta entrega de archivos desclasificados del programa PURSUE. Incluye imágenes térmicas con dos zonas de contraste «black-hot» de movimiento lento y registros del FBI sobre un incidente de 2026 en el oeste de Estados Unidos, donde testigos describieron luces rojas que parecían sincronizarse y desplazarse juntas.",
       "titulo": "Nuevo lote PURSUE con video térmico del FBI",
-      "url": "https://www.newsweek.com/new-ufo-files-details-fbi-records-of-2026-sightings-12296595"
+      "url": "https://www.newsweek.com/new-ufo-files-details-fbi-records-of-2026-sightings-12296595",
+      "id": "pursue-fbi-2026"
     }
   ]
 }
