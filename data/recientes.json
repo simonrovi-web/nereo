@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-25T19:02:39Z",
+  "generado": "2026-11-26T00:52:11Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -70,6 +70,37 @@
       "titulo": "Luces filmadas sobre San Miguel, en Santiago de Chile, difundidas sin explicación",
       "url": "https://www.radioimagina.cl/2026/11/graban-ovnis-en-comuna-de-san-miguel-fenomeno-se-vio-en-varios-sectores-de-la-region-metropolitana/",
       "id": "cl-san-miguel-luces-20261125"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-26T01:05:00Z",
+      "descarte": [
+        {
+          "detalle": "Según el boletín de actividad de meteoros del 23 al 29 de mayo de 2026 de la IMO, firmado por Robert Lunsford, en esas fechas solo estaban activas la fuente Anthelion (clase II, 30 km/s, cerca de 2 meteoros por hora al sur del ecuador) y las eta Acuáridas (activas del 15 de abril al 27 de mayo, máximo el 6 de mayo, clase I, 66 a 67 km/s, menos de 1 por hora). La actividad era mínima y, en todo caso, un objeto fijo en una fotografía no corresponde al perfil de un meteoro.",
+          "fuente": "https://www.imo.net/meteor-activity-outlook-for-23-29-may-2026/",
+          "tipo": "meteoros"
+        },
+        {
+          "detalle": "El 26 de mayo de 2026 sí hubo un lanzamiento Starlink, el grupo 17-37 con 24 satélites en un Falcon 9 desde la base Vandenberg, en California. La coincidencia de fecha es real, pero el despegue fue desde el Pacífico nororiental y no puede dar un tren de satélites visible sobre Java a la hora que indica el pie de la publicación; ninguna fuente vincula el lanzamiento con esta foto.",
+          "fuente": "https://spaceflightnow.com/2026/05/26/live-coverage-spacex-to-launch-24-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-8/",
+          "tipo": "starlink"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [],
+      "estado": "sin verificar; la investigadora del Observatorio Bosscha pide cautela y enumera causas posibles sin analizar la imagen, y no hay pronunciamiento de ninguna autoridad aeronáutica indonesia",
+      "fechaEvento": "2026-05-26",
+      "fechaPub": "2026-11-25T08:16:22Z",
+      "fuente": "detikJabar (Whisnu Pradana) · Yatny Yulianty, investigadora del Observatorio Bosscha · foto atribuida a Robby Suherman, difundida por la cuenta de Threads @kabarufo",
+      "lat": -6.8722,
+      "lon": 107.5425,
+      "lugar": "Kota Cimahi, Java Occidental, Indonesia",
+      "por": "tarea",
+      "resumen": "El portal detikJabar publicó el 25 de noviembre, a las 15:16 hora de Yakarta, una nota sobre una fotografía de un objeto en el cielo de la ciudad de Cimahi, en Java Occidental (Indonesia), difundida en Threads por la cuenta @kabarufo. El material es una imagen fija, no un video: el pie de la publicación original dice «UFO di Cimahi, Jawa Barat. Selasa, 26 Mei 2026, Pukul 12:34 malam. Foto oleh Robby Suherman via RedMagic», es decir, la atribuye al martes 26 de mayo de 2026 —fecha que efectivamente cayó en martes— y a un teléfono de la marca RedMagic. El autor cuenta que la foto salió por casualidad, que fotografió el cielo porque estaba despejado y que se dio cuenta del objeto recién ahora, lo que explica el desfase de seis meses entre el hecho y la difusión. Consultada ese mismo 25 de noviembre, la investigadora del Observatorio Bosscha Yatny Yulianty pidió cautela con las publicaciones de ovnis en foto o video y enumeró las posibilidades que habría que descartar primero —fenómeno astronómico, satélite, avión, dron, fenómeno atmosférico, efecto óptico o artefacto de la cámara—, y atribuyó la conclusión rápida de «ovni» a que el público no reconoce muchos fenómenos del cielo y a la influencia de redes sociales y noticias; no analizó la imagen ni descartó ni confirmó ninguna de esas causas. El caso es débil en registro: la nota no describe la forma, el color, el tamaño ni el movimiento del objeto, no publica metadatos del archivo original, no da alcance en redes y no aclara la relación entre la cuenta @kabarufo y el fotógrafo; además hay una contradicción de autoría, porque el pie de la imagen de la propia nota acredita la foto al periodista Whisnu Pradana mientras la publicación original la atribuye a Robby Suherman. La hora «12:34 malam» tampoco queda clara en formato de 24 horas. Otros medios indonesios publicaron el caso el mismo día. Las coordenadas corresponden al centro de la ciudad de Cimahi de manera aproximada, porque la fuente no precisa el barrio.",
+      "titulo": "Una foto de un supuesto ovni sobre Cimahi, en Java Occidental, y la cautela del Observatorio Bosscha",
+      "url": "https://www.detik.com/jabar/berita/d-8769375/heboh-penampakan-ufo-tertangkap-kamera-di-cimahi-begini-penjelasan-ahli",
+      "id": "id-cimahi-foto-20261125"
     },
     {
       "agua": true,
@@ -1377,32 +1408,6 @@
     {
       "agua": false,
       "clase": "prensa",
-      "creado": "2026-11-19T13:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
-          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
-        ]
-      ],
-      "estado": "desmentido por Full Fact",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Full Fact",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
-      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
-      "id": "montaje-luces-rojas-lakenheath-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
       "creado": "2026-11-20T06:55:43Z",
       "descarte": [],
       "descarteRevisado": false,
@@ -1440,6 +1445,32 @@
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
       "url": "https://mymodernmet.com/capri-double-watersprout/",
       "id": "it-capri-trombas-20261118"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-19T13:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
+          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
+        ]
+      ],
+      "estado": "desmentido por Full Fact",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-18T12:00:00Z",
+      "fuente": "Full Fact",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
+      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
+      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
+      "id": "montaje-luces-rojas-lakenheath-20261118"
     },
     {
       "agua": false,
@@ -1596,57 +1627,6 @@
       "titulo": "Punto de luz filmado por un vecino del Jurunas, en Belém, Brasil",
       "url": "https://dol.com.br/tuedoide/bizarro/968604/ovni-no-jurunas--luz-misteriosa-no-ceu-intriga-morador-veja",
       "id": "br-belem-jurunas-20261116"
-    },
-    {
-      "agua": true,
-      "clase": "prensa",
-      "creado": "2026-11-19T00:55:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "material institucional publicado por Ocean Exploration Trust y NOAA; sin análisis científico del comportamiento ni identificación de especie",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-17T02:24:00Z",
-      "fuente": "Discover Wildlife (BBC Wildlife) · Ocean Exploration Trust · NOAA",
-      "lat": null,
-      "lon": null,
-      "lugar": "Monumento Nacional Marino Papahānaumokuākea, cerca de Hawái, Estados Unidos",
-      "por": "tarea",
-      "rareza": "mar",
-      "resumen": "Un pequeño pulpo se dedicó a perseguir los puntos verdes de láser que el vehículo operado a distancia Hercules proyecta sobre el fondo marino para medir a los animales que encuentra, a 323 metros de profundidad en el Monumento Nacional Marino Papahānaumokuākea, cerca de Hawái. La escena quedó grabada durante una inmersión del buque E/V Nautilus y el material está acreditado a Ocean Exploration Trust y NOAA; en el audio se oye a los científicos reaccionando en directo con un «¡Es un gato! ¡Es un gato!». La nota, publicada el 17 de noviembre de 2026, no identifica la especie ni aporta análisis científico del comportamiento: el equipo solo comenta que recuerda lo inteligentes que probablemente son los cefalópodos. No se asignan coordenadas porque la fuente no precisa el punto de la inmersión dentro del monumento, que abarca una superficie muy extensa del Pacífico.",
-      "titulo": "Un pulpo persigue los láseres de un robot submarino en Papahānaumokuākea",
-      "url": "https://www.discoverwildlife.com/animal-facts/marine-animals/octopus-chases-laser",
-      "id": "us-papahanaumokuakea-pulpo-20261117"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-19T19:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "Verificación en español de Factchequeado (17 nov)",
-          "https://factchequeado.com/verificaciones/20261117/pasajeros-durmiendo-aeropuerto-faa/"
-        ],
-        [
-          "Luces sobre Florida durante el cierre del tráfico aéreo (entrada relacionada del feed)",
-          "https://www.viveusa.mx/en/noticias/misterio-en-estados-unidos-mientras-cerraron-el-espacio-aereo-ciudadanos-reportaron-avistamientos-de-ovnis/"
-        ]
-      ],
-      "estado": "desmentido por AFP y Factchequeado: video generado con inteligencia artificial",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-16T22:00:00Z",
-      "fuente": "AFP (Bill McCarthy) · Factchequeado (Jonnathan Pulla)",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a aeropuertos de Estados Unidos, y en algunas publicaciones a Atlanta, Georgia)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Tras el cierre temporal de despegues que la FAA ordenó en Estados Unidos el 13 de noviembre de 2026 por una falla en las comunicaciones del control aéreo, circuló en X, Facebook, Instagram y TikTok, y en varios idiomas, un video que parecía mostrar a una multitud de viajeros durmiendo en el suelo de un aeropuerto mientras otros se agolpaban en los mostradores de embarque; algunas publicaciones lo situaban en Atlanta, Georgia. AFP concluyó el 16 de noviembre que se trata de una fabricación generada con inteligencia artificial: las herramientas de detección dieron resultados mayormente no concluyentes, pero Pangram arrojó evidencia de que el clip se creó con esa tecnología, y el equipo enumeró caras borradas o deformadas, cuerpos fusionados, textos ilegibles, ropa casi idéntica y cuatro o cinco puertas rotuladas todas como «Gate 32», además de anuncios impresos de Coca-Cola con la frase «flight cancelled». Factchequeado publicó el 17 de noviembre su propia verificación en español: con WasItAIGenerated, SightEngine y Winston AI calculó entre un 75 % y un 100 % de probabilidad de creación con IA, y señaló cuerpos unidos, carteles electrónicos ilegibles y filas de asientos con divisores metálicos solo en algunos tramos. Ambas verificaciones apuntan además que la cobertura de CBS News y CNN sobre pasajeros varados no publicó imágenes de una multitud comparable.",
-      "titulo": "Desmienten el video de pasajeros durmiendo en un aeropuerto tras el cierre aéreo en EE. UU.: fue hecho con IA",
-      "url": "https://www.yahoo.com/news/us/articles/fabricated-airport-video-circulates-us-220058325.html",
-      "id": "montaje-aeropuerto-faa-20261117"
     },
     {
       "agua": false,
