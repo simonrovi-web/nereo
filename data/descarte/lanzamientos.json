@@ -1,7 +1,20 @@
 {
-  "obtenido": "2026-11-25T15:59:50Z",
+  "obtenido": "2026-11-26T15:42:30Z",
   "fuente": "https://ll.thespacedevs.com/2.3.0/launches/previous/?ordering=-net&limit=100&include_suborbital=false",
   "lanzamientos": [
+    {
+      "id": "b00f0e9a-48d6-4f26-9cb5-7d19169ff7c4",
+      "nombre": "Long March 2D | Yaogan 49 Group 01",
+      "net": "2026-11-26T09:38:00Z",
+      "proveedor": "China Aerospace Science and Technology Corporation",
+      "cohete": "Long March 2D",
+      "sitio": "Xichang Satellite Launch Center, People's Republic of China",
+      "pais": "CHN",
+      "url": "https://ll.thespacedevs.com/2.3.0/launches/b00f0e9a-48d6-4f26-9cb5-7d19169ff7c4/",
+      "lat": 28.247059,
+      "lon": 102.029008,
+      "starlink": false
+    },
     {
       "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
       "nombre": "Long March 2F/G | Shenzhou 24",
@@ -1288,19 +1301,6 @@
       "lat": 34.632,
       "lon": -120.611,
       "starlink": true
-    },
-    {
-      "id": "fa42624c-1e30-4b4b-a06b-59b6153bc4e5",
-      "nombre": "Kinetica 1 | 5 satellites",
-      "net": "2026-07-23T23:33:00Z",
-      "proveedor": "CAS Space",
-      "cohete": "Kinetica 1",
-      "sitio": "Jiuquan Satellite Launch Center, People's Republic of China",
-      "pais": "CHN",
-      "url": "https://ll.thespacedevs.com/2.3.0/launches/fa42624c-1e30-4b4b-a06b-59b6153bc4e5/",
-      "lat": 40.8182,
-      "lon": 100.22514,
-      "starlink": false
     }
   ]
 }
