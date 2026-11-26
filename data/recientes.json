@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-26T13:01:59Z",
+  "generado": "2026-11-26T18:48:11Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -105,6 +105,10 @@
         [
           "Green Fireball Lights Up Michigan and Ohio Skies at 7:40 PM (Swikblog)",
           "https://swikblog.com/green-fireball-michigan-ohio-2026/"
+        ],
+        [
+          "Reportes de un posible meteoro sobre Cincinnati, en el suroeste de Ohio, la misma noche del miércoles 25, con video de cámara de tablero sobre la Interestatal 75; WLWT precisa que los especialistas no lo han confirmado y ninguna fuente lo vincula con este bólido (WLWT, Matthew Dietz, 26 nov 02:16 UTC)",
+          "https://www.wlwt.com/article/cincinnati-possible-meteor-sighting-ohio/74536580"
         ]
       ],
       "estado": "explicado como bólido",
