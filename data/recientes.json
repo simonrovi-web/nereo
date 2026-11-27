@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-27T07:00:55Z",
+  "generado": "2026-11-27T13:02:07Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,82 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-27T13:05:00Z",
+      "descarte": [
+        {
+          "detalle": "El INMET había emitido una alerta meteorológica de nivel rojo para Ponta Grossa a las 18:22, doce minutos antes de la hora que la fuente da para la grabación, y la prensa local reportó rachas fuertes que derribaron un árbol en la zona central; los vecinos citados dicen que el destello precedió al inicio de la lluvia. El propio medio recoge además la sospecha de un insecto cerca del lente. Ninguna autoridad ha identificado el fenómeno.",
+          "fuente": "https://newsable.asianetnews.com/world/mysterious-blinding-light-streak-captured-on-cctv-in-brazil-ufo-the-flash-video-articleshow-28sc3om",
+          "tipo": "otro"
+        }
+      ],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Versión en maratí de la misma nota (Asianet)",
+          "https://marathi.asianetnews.com/world/viral-cctv-video-shows-mysterious-blinding-light-streak-in-brazil-resembling-the-flash/articleshow-5kf02vl"
+        ],
+        [
+          "Flash misterioso em Ponta Grossa (PR) repercute nas redes sociais (OVNI Hoje; no se pudo abrir desde esta ejecución)",
+          "https://www.ovnihoje.com/2026/11/27/flash-misterioso-em-ponta-grossa-pr-repercute-nas-redes-sociais"
+        ],
+        [
+          "Una luz inmóvil sobre Itaboraí, Río de Janeiro, queda sin identificar para el Observatório Vega (entrada previa del feed)",
+          "https://www.cnnbrasil.com.br/ciencia/luz-misteriosa-aparece-imovel-no-ceu-do-rio-de-janeiro-desaparece-atras-das-nuvens-apos-deixar-rastro-e-intriga-observatorio-veja-video/"
+        ]
+      ],
+      "estado": "sin verificar; el propio medio declara que no puede verificar la autenticidad del video ni descartar manipulación, y no hay explicación confirmada ni pronunciamiento de ninguna autoridad sobre el destello",
+      "fechaEvento": "2026-11-24",
+      "fechaPub": "2026-11-27T08:33:00Z",
+      "fuente": "Asianet Newsable (Shweta Kumari), con los datos atribuidos al portal brasileño Mediatiko · alerta roja del INMET · video de cámara de seguridad de autor no identificado",
+      "lat": -25.0945,
+      "lon": -50.1633,
+      "lugar": "Ponta Grossa, Paraná, Brasil (punto de la calle no precisado por la fuente)",
+      "por": "tarea",
+      "rareza": "cielo",
+      "resumen": "Una grabación de cámara de seguridad que muestra un destello luminoso cruzando una calle en una fracción de segundo circula desde el 24 de noviembre en Brasil y la recogió el 27 de noviembre el portal indio Asianet Newsable, en una nota firmada por Shweta Kumari y publicada a las 14:03 hora de la India. Según ese texto, que atribuye los datos a un reporte del portal brasileño Mediatiko y no a reportería propia, las imágenes se grabaron «alrededor de las 18:34 hora local» del 24 de noviembre en la ciudad de Ponta Grossa, en el estado de Paraná, y vecinos citados por Mediatiko dijeron que el resplandor iluminó brevemente toda la calle justo antes de que empezara a llover. El contexto meteorológico es concreto: el Instituto Nacional de Meteorología de Brasil (INMET) había emitido una alerta de nivel rojo para Ponta Grossa a las 18:22, doce minutos antes del momento en que se habría captado el video, y la prensa local reportó rachas fuertes de viento que derribaron un árbol en la zona central. El caso es muy débil en verificación. No hay pronunciamiento de ninguna autoridad ni de ningún especialista sobre el destello mismo: el medio solo enumera especulaciones —un insecto cerca del lente, un fenómeno atmosférico o eléctrico asociado a la tormenta, un fenómeno celeste inusual o un ovni— y afirma expresamente que no puede verificar de forma independiente la autenticidad del video ni descartar que haya sido alterado digitalmente. Tampoco se identifica a quien grabó el material, al dueño de la cámara ni a la cuenta que lo publicó primero: la publicación incrustada no cargó, el crédito de la imagen es simplemente «X» y los vecinos citados por Mediatiko son anónimos. No se da la duración del clip, la resolución ni el punto exacto de la calle, la nota no etiqueta la zona horaria de esa hora local y la cobertura original de Mediatiko no pudo abrirse desde esta ejecución, igual que la nota del portal OVNI Hoje sobre el mismo caso. El descarte con calendarios no pudo completarse: las fuentes de lanzamientos, reentradas y lluvias de meteoros consultadas no pudieron abrirse en esta ejecución, de modo que el caso no se cruzó con ellas; en todo caso la coincidencia que sí está documentada es la tormenta. Las coordenadas corresponden al centro de Ponta Grossa de manera aproximada.",
+      "titulo": "Un destello recorre una calle de Ponta Grossa, en Brasil, doce minutos después de una alerta roja de tormenta",
+      "url": "https://newsable.asianetnews.com/world/mysterious-blinding-light-streak-captured-on-cctv-in-brazil-ufo-the-flash-video-articleshow-28sc3om",
+      "id": "cielo-ponta-grossa-destello-20261124"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-27T13:05:00Z",
+      "descarte": [
+        {
+          "detalle": "La propia nota recoge que los escépticos atribuyen el registro a un ave nocturna de gran envergadura distorsionada por la baja resolución de las cámaras de seguridad, y el dueño de la cámara reconoce que las imágenes son de baja calidad. No es una identificación: nadie con nombre ni institución la respalda.",
+          "fuente": "https://reduno.com.bo/tendencias/jaime-maussan-revela-un-segundo-video-del-presunto-pterodactilo-grabado-en-ciudad-juarez-2026112763746",
+          "tipo": "otro"
+        }
+      ],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Vuelve a circular un objeto oscuro con apéndices ondulantes filmado sobre Ciudad Juárez, caso distinto del mismo entorno (entrada previa del feed)",
+          "https://shazoo.ru/2026/11/25/194607/v-nebe-nad-meksikanskim-gorodom-sniali-letaiushhego-makaronnogo-monstra-skoree-vsego-eto-vozdusnyi-zmei"
+        ],
+        [
+          "Esfera gris filmada sobre Atlixco, Puebla, otro material difundido por Maussan (entrada previa del feed)",
+          "https://periodicorealidades.com/index.php/2026/11/20/jaime-maussan-difunde-video-de-un-presunto-ovni-captado-en-atlixco-puebla/"
+        ]
+      ],
+      "estado": "sin verificar; la única valoración es la de Jaime Maussan, que afirma que la silueta coincide con el video anterior, mientras los escépticos citados sin nombre apuntan a un ave nocturna de gran envergadura; sin pronunciamiento de autoridades ni análisis independiente",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-27T07:52:00Z",
+      "fuente": "Red Uno de Bolivia (Greyss Nery Pinaya Acarapi), con información atribuida a El Heraldo de México · video de cámara de seguridad aportado por un mecánico que pidió reserva de identidad · difusión de Jaime Maussan",
+      "lat": 31.6904,
+      "lon": -106.4245,
+      "lugar": "Ciudad Juárez, Chihuahua, México (punto no precisado por la fuente)",
+      "por": "tarea",
+      "rareza": "cielo",
+      "resumen": "Red Uno de Bolivia publicó el 27 de noviembre, en una nota firmada por Greyss Nery Pinaya Acarapi y con la información atribuida a El Heraldo de México, que el periodista e investigador Jaime Maussan dio a conocer un segundo video del supuesto «pterodáctilo» de Ciudad Juárez. El material es una grabación de circuito cerrado que, según la nota, muestra «el desplazamiento de una criatura alada cruzando el cuadro de derecha a izquierda», a muy baja altura sobre la mancha urbana y con las luces nocturnas de la ciudad al fondo. Quien lo aportó es un mecánico que pidió mantener su identidad bajo reserva: dice haber encontrado las imágenes por casualidad al revisar las cámaras de su taller y reconoce que «las imágenes de circuito cerrado son de baja calidad»; el reloj de la cámara marcaba las 20:45, dos horas antes del video que grabó Isaac Arteaga y que, según el texto, «dio la vuelta al mundo». El caso es muy débil en verificación. La única valoración es la de Maussan, que sostiene que la silueta es «exactamente la misma» que la del registro anterior y que por tanto se trataría del mismo animal, sin que la nota describa el método de esa comparación; los escépticos, a quienes el medio no nombra, apuntan a «un ave nocturna de gran envergadura distorsionada por la baja resolución de las cámaras de seguridad». No se cita a ningún biólogo, astrónomo, autoridad aeronáutica ni policía, no se identifica al mecánico ni su taller, no se da dirección ni punto de grabación, no se explica cómo llegó el material a Maussan y no se indica dónde ni cuándo lo presentó; tampoco se enlaza el video original ni el de Arteaga. Ninguna de las dos grabaciones tiene fecha declarada —solo la hora del reloj de la cámara, sin fecha— por lo que no se registra fecha de evento y no fue posible cruzar el caso con calendarios de lanzamientos, reentradas ni lluvias de meteoros; en esta ejecución, además, las fuentes de esos calendarios no pudieron abrirse. La hora de publicación aparece en la página como 7:52 del 27 de noviembre sin indicar zona horaria. Las coordenadas corresponden a Ciudad Juárez de manera aproximada.",
+      "titulo": "Un segundo video de cámara de seguridad del presunto «pterodáctilo» de Ciudad Juárez, difundido por Jaime Maussan",
+      "url": "https://reduno.com.bo/tendencias/jaime-maussan-revela-un-segundo-video-del-presunto-pterodactilo-grabado-en-ciudad-juarez-2026112763746",
+      "id": "mx-juarez-pterodactilo-20261127"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -311,6 +387,11 @@
           "detalle": "Cleveland 19 indica que hay dos lluvias de meteoros activas en estas fechas: las Táuridas del Norte y las Leónidas",
           "fuente": "https://www.cleveland19.com/2026/11/26/did-you-see-it-fireball-meteor-spotted-across-northeast-ohio/",
           "tipo": "meteoros"
+        },
+        {
+          "detalle": "La evaluación inicial de la NASA, recogida por CTC News el 27 de noviembre, califica el objeto de meteoroide tau Táurido, un fragmento de roca asociado al complejo de las Táuridas. El propio texto advierte que el episodio ocurrió después de los máximos principales de las Táuridas y que la clasificación depende de la trayectoria y la órbita medidas, de modo que la coincidencia de calendario es real pero la asignación al flujo no es definitiva. El artículo atribuye los datos de la NASA a un agregador de terceros y no cita a ningún científico con nombre.",
+          "fuente": "https://ctcnews.ca/2026/11/27/green-fireball-meteor-ontario-great-lakes-november-2026/",
+          "tipo": "meteoros"
         }
       ],
       "descarteRevisado": true,
@@ -322,6 +403,14 @@
         [
           "Did you see it? Fireball meteor spotted across Northeast Ohio (Cleveland 19)",
           "https://www.cleveland19.com/2026/11/26/did-you-see-it-fireball-meteor-spotted-across-northeast-ohio/"
+        ],
+        [
+          "Green Fireball Lights Up Ontario And Great Lakes Sky (CTC News, 27 nov 03:03 EST): la evaluación inicial de la NASA, la trayectoria sobre Imlay City y Bath y los más de 1.300 reportes",
+          "https://ctcnews.ca/2026/11/27/green-fireball-meteor-ontario-great-lakes-november-2026/"
+        ],
+        [
+          "Fireball lights up the night sky in Simcoe County (CTV Barrie, Jocelyn Martin, 26 nov): fotografía del meteoro en Mountain Road, Collingwood, acreditada a Jason Primeau",
+          "https://www.ctvnews.ca/barrie/article/simcoe-county-residents-treated-to-meteor-sighting/"
         ],
         [
           "Green Fireball Lights Up Michigan and Ohio Skies at 7:40 PM (Swikblog)",
@@ -336,7 +425,7 @@
           "https://www.wlwt.com/article/cincinnati-possible-meteor-sighting-ohio/74536580"
         ]
       ],
-      "estado": "explicado como bólido; la American Meteor Society cifra en más de 1.300 las personas que lo vieron y el producto de detección de rayos del satélite GOES-19 registró el destello cerca de la bahía de Saginaw",
+      "estado": "explicado como bólido; NASA, en una evaluación inicial recogida por CTC News, lo atribuye a un meteoroide tau Táurido, fragmento del complejo de las Táuridas, con unos 35 cm de diámetro y más de 54 kg, y reconstruye la trayectoria sobre Michigan; la American Meteor Society cifra en más de 1.300 los reportes y el producto de detección de rayos del satélite GOES-19 registró el destello cerca de la bahía de Saginaw",
       "fechaEvento": "2026-11-25",
       "fechaPub": "2026-11-26T05:14:27Z",
       "fuente": "RT en Español · Geo.tv (Web Desk, con datos de la American Meteor Society y del meteorólogo jefe de WTOL-TV) · Cleveland 19 / WOIO · Michigan Storm Chasers",
@@ -344,7 +433,7 @@
       "lon": -83.1763,
       "lugar": "Sureste de Michigan, noreste de Ohio y sur de Ontario (destello registrado por satélite cerca de la bahía de Saginaw, Michigan; cámaras en Dearborn y Hudson, Michigan, y video en Norwalk, Ohio)",
       "por": "tarea",
-      "resumen": "Hacia las 19:40 del miércoles 25 de noviembre, hora del este, un objeto muy brillante con estela verde cruzó el cielo del sureste de Michigan y el noreste de Ohio. Michigan Storm Chasers difundió la grabación de su cámara meteorológica de Dearborn, con marca de tiempo 19:40:23, y circularon imágenes de otra cámara en Hudson (Michigan) y de una vecina de Norwalk (Ohio). El equipo meteorológico del canal WOIO lo describió como un bólido, y RT en Español recoge que algunos meteorólogos confirmaron que se trató de un meteoro, sin nombrarlos. La dimensión del episodio quedó clara al día siguiente: según la American Meteor Society, citada por Geo.tv en una nota sin firma personal publicada el 26 de noviembre, más de 1.300 personas lo vieron, en diez estados de Estados Unidos y en la provincia canadiense de Ontario, con avistamientos enviados a amsmeteors.org desde lugares tan separados como Fort Wayne y Cleveland. El dato instrumental que aporta esa cobertura es uno solo: el meteorólogo jefe del canal WTOL-TV señaló que el producto de detección de rayos del satélite GOES-19 observó el destello cerca de la bahía de Saginaw, en Michigan, visible a cientos de kilómetros. Geo.tv plantea que el bólido estaría «probablemente asociado» a las Leónidas, pero es una suposición del propio texto, no de una institución, y la nota no da hora ni fecha del fenómeno, no cita a la NASA, no menciona cámaras all-sky y no publica video ni aporta trayectoria, altitud o velocidad. Las coordenadas son las de Dearborn, donde está la cámara: el fenómeno se vio en una franja amplia de diez estados y del sur de Ontario.",
+      "resumen": "Hacia las 19:40 del miércoles 25 de noviembre, hora del este, un objeto muy brillante con estela verde cruzó el cielo del sureste de Michigan y el noreste de Ohio. Michigan Storm Chasers difundió la grabación de su cámara meteorológica de Dearborn, con marca de tiempo 19:40:23, y circularon imágenes de otra cámara en Hudson (Michigan) y de una vecina de Norwalk (Ohio). El equipo meteorológico del canal WOIO lo describió como un bólido, y RT en Español recoge que algunos meteorólogos confirmaron que se trató de un meteoro, sin nombrarlos. La dimensión del episodio quedó clara al día siguiente: según la American Meteor Society, citada por Geo.tv en una nota sin firma personal publicada el 26 de noviembre, más de 1.300 personas lo vieron, en diez estados de Estados Unidos y en la provincia canadiense de Ontario, con avistamientos enviados a amsmeteors.org desde lugares tan separados como Fort Wayne y Cleveland. El dato instrumental que aporta esa cobertura es uno solo: el meteorólogo jefe del canal WTOL-TV señaló que el producto de detección de rayos del satélite GOES-19 observó el destello cerca de la bahía de Saginaw, en Michigan, visible a cientos de kilómetros. Geo.tv plantea que el bólido estaría «probablemente asociado» a las Leónidas, pero es una suposición del propio texto, no de una institución, y la nota no da hora ni fecha del fenómeno, no cita a la NASA, no menciona cámaras all-sky y no publica video ni aporta trayectoria, altitud o velocidad. Las coordenadas son las de Dearborn, donde está la cámara: el fenómeno se vio en una franja amplia de diez estados y del sur de Ontario. El 27 de noviembre, a las 03:03 hora del este, el portal canadiense CTC News añadió la reconstrucción de la NASA: en una evaluación inicial la agencia califica el objeto de meteoroide tau Táurido, un fragmento asociado al complejo de las Táuridas, de unos 35 centímetros de diámetro (14 pulgadas) y más de 54 kilos (120 libras), que se hizo visible a unos 108 kilómetros de altura sobre Imlay City, en Michigan, avanzó al sur del oeste a unos 98.000 km/h (61.000 millas por hora) y se desintegró a unos 51 kilómetros sobre Bath, también en Michigan, con un brillo comparable al de la Luna llena. Esa misma cobertura precisa que el fenómeno se reportó desde Barrie, Kingston, London, Springwater, Elmvale, Collingwood, Port Perry y Niagara, en el sur de Ontario, y que quedó registrado por varias cámaras all-sky y por el Geostationary Lightning Mapper del GOES-19; hasta el jueves 26 no se había confirmado la recuperación de ningún meteorito. Conviene anotar los límites de esa nota: no firma a ningún periodista, no cita a ningún científico por su nombre, atribuye los datos de la NASA a un agregador de terceros y no acredita los videos que menciona. Del lado canadiense, CTV Barrie publicó el 26 de noviembre una nota firmada por Jocelyn Martin con una fotografía del meteoro tomada en Mountain Road, en Collingwood, acreditada a Jason Primeau, aunque el cuerpo de ese texto no pudo leerse desde esta ejecución.",
       "titulo": "Un bólido verde cruza el cielo de Michigan y Ohio y queda grabado por cámaras meteorológicas",
       "url": "https://actualidad-rt.com/viral/639795-impactante-meteoro-ilumina-cielo-verde-asombro",
       "id": "us-michigan-ohio-bolido-20261125"
@@ -1758,63 +1847,6 @@
       "titulo": "Un vecino de Conna, condado de Cork, pide explicaciones por numerosas luces en el cielo",
       "url": "https://avondhupress.ie/mystery-airborne-lights-prompt-appeal-for-answers/",
       "id": "ie-conna-cork-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-18T18:53:28Z",
-      "descarte": [
-        {
-          "detalle": "EarthSky, citando a la American Meteor Society, sitúa el máximo de las Leónidas de 2026 a las 0:00 UTC del 18 de noviembre, con una tasa esperada de 10 a 15 meteoros por hora y la Tierra atravesando el flujo del cometa 55P/Tempel-Tuttle entre el 28 de octubre y el 7 de diciembre. El destello se registró a las 05:54 del 18 de noviembre, pocas horas después de ese máximo, de modo que la coincidencia de calendario es real y concuerda con la atribución del propio medio.",
-          "fuente": "https://earthsky.org/astronomy-essentials/everything-you-need-to-know-leonid-meteor-shower",
-          "tipo": "meteoros"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "explicado como leónida; el astrofísico del CSIC Josep Trigo la describe como «quizás la más luminosa captada sobre Canarias en la historia», sin datos técnicos publicados",
-      "fechaEvento": "2026-11-18",
-      "fechaPub": "2026-11-18T14:27:37Z",
-      "fuente": "La Voz de Lanzarote · Ramón López (@stargazerLzt) · Josep Trigo (CSIC)",
-      "lat": 28.86,
-      "lon": -13.83,
-      "lugar": "Playa Blanca, Lanzarote, Islas Canarias, España",
-      "por": "tarea",
-      "resumen": "La madrugada del miércoles 18 de noviembre, a las 05:54, la estación del astrónomo aficionado Ramón López, en Playa Blanca (Lanzarote), registró en video una leónida de tamaño considerable que produjo un gran destello perfectamente visible. El astrofísico y profesor del CSIC Josep Trigo comentó en redes que «quizás es la más luminosa captada sobre Canarias en la historia», una valoración que publicó sin acompañarla de datos técnicos: la nota no aporta magnitud, velocidad, altura ni código de bólido. Según el medio, el destello se vio también desde el resto de Canarias, Marruecos, Mauritania y el Sáhara Occidental. Las Leónidas proceden del cometa 55P/Tempel-Tuttle; las coordenadas corresponden a Playa Blanca de manera aproximada, ya que la fuente no precisa la posición del meteoro.",
-      "titulo": "Una estación de Lanzarote capta una gran leónida, «quizás la más luminosa» registrada sobre Canarias",
-      "url": "https://www.lavozdelanzarote.com/actualidad/mas-noticias/video-estacion-lanzarote-capta-enorme-leonida-cruzando-cielo_247425_102.html",
-      "id": "es-lanzarote-leonida-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-19T06:55:48Z",
-      "descarte": [
-        {
-          "detalle": "Pruebas anunciadas de cohetes iluminantes MITHRAS 1000 en el WITU de Zielonka, 16:00-18:30 del 18 de noviembre de 2026, comunicadas por el Ministerio de Defensa polaco",
-          "fuente": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a",
-          "tipo": "otro"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [
-        [
-          "Tajemnicze światła nad Warszawą. MON wydało komunikat (WP, 18 nov)",
-          "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a"
-        ]
-      ],
-      "estado": "explicado de antemano por el Ministerio de Defensa de Polonia: pruebas de cohetes iluminantes MITHRAS 1000",
-      "fechaEvento": "2026-11-18",
-      "fechaPub": "2026-11-18T13:31:32Z",
-      "fuente": "Wirtualna Polska (wiadomosci.wp.pl)",
-      "lat": 52.3042,
-      "lon": 21.1556,
-      "lugar": "Zielonka y área metropolitana de Varsovia, Polonia",
-      "por": "tarea",
-      "resumen": "El Ministerio de Defensa de Polonia (MON) anunció por redes sociales que el miércoles 18 de noviembre, entre las 16:00 y las 18:30, realizaría pruebas de cohetes iluminantes MITHRAS 1000 en el Instituto Técnico Militar de Armamento (WITU) de Zielonka, en las afueras de Varsovia. Según el aviso recogido por Wirtualna Polska, se verían puntos brillantes descendiendo lentamente, posiblemente con paracaídas, desde Varsovia, Marki, Kobyłka, Wołomin y Legionowo, y el propio comunicado advirtió de que podrían confundirse con un avión, un dron grande o un objeto no identificado. El MON indicó que no había riesgo para la población. Las coordenadas corresponden a Zielonka, donde se hicieron las pruebas.",
-      "titulo": "Defensa de Polonia avisa de luces sobre Varsovia: eran pruebas de bengalas",
-      "url": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a",
-      "id": "pl-varsovia-mithras-20261118"
     },
     {
       "agua": false,
