@@ -1,12 +1,14 @@
 """Carga del archivo de avistamientos de NEREO.
 
-El visor guarda los 114.034 reportes en data/points.json como columnas
-binarias codificadas en base64. Este módulo las decodifica a un DataFrame
-con nombres explícitos, sin depender del pipeline que las generó.
+El visor guarda los 114.034 reportes como columnas binarias en
+data/points.bin.gz, con su índice en data/points-meta.json (ver
+pipeline/empaquetar.py). Este módulo las decodifica a un DataFrame con nombres
+explícitos, sin depender del pipeline que las generó.
 """
 from __future__ import annotations
 
 import base64
+import gzip
 import json
 from functools import lru_cache
 from pathlib import Path
@@ -28,22 +30,34 @@ _COLUMNAS = {
 CATEGORIAS_MAR = ["aéreo", "costero", "desde embarcación", "sobre el agua", "entró al agua", "emergió del agua"]
 
 
-def _dec(b64: str, tipo) -> np.ndarray:
-    return np.frombuffer(base64.b64decode(b64), dtype=tipo)
+_TIPOS = {"i32": "<i4", "u16": "<u2", "u8": "u1"}
+
+
+def _leer_columnas(ruta: Path) -> tuple[dict, dict]:
+    """Devuelve (raw, columnas crudas). Acepta points-meta.json + points.bin.gz
+    (formato actual) o el points.json antiguo con columnas en base64."""
+    raw = json.loads(Path(ruta).read_text(encoding="utf-8"))
+    if "cols" in raw:
+        binp = Path(ruta).with_name("points.bin.gz")
+        buf = gzip.decompress(binp.read_bytes())
+        crudas = {k: np.frombuffer(buf, dtype=_TIPOS[t], count=raw["n"], offset=off) for k, t, off in raw["cols"]}
+    else:
+        crudas = {c: np.frombuffer(base64.b64decode(raw[c]), dtype=t) for c, (t, _) in _COLUMNAS.items()}
+    return raw, crudas
 
 
 @lru_cache(maxsize=2)
 def cargar(ruta: Path | None = None) -> tuple[pd.DataFrame, dict]:
     """Devuelve (df, meta). meta trae las listas de formas y lugares."""
-    ruta = ruta or (CFG.datos / "points.json")
-    raw = json.loads(Path(ruta).read_text(encoding="utf-8"))
+    ruta = ruta or (CFG.datos / "points-meta.json")
+    raw, crudas = _leer_columnas(ruta)
     cols = {}
     for c, (t, f) in _COLUMNAS.items():
-        v = _dec(raw[c], t)
+        v = crudas[c].astype(t)
         cols[c] = v * f if f != 1 else v.astype(np.int64)
     df = pd.DataFrame(cols)
     if len(df) != raw["n"]:
-        raise ValueError(f"points.json inconsistente: {len(df)} filas, se esperaban {raw['n']}")
+        raise ValueError(f"{Path(ruta).name} inconsistente: {len(df)} filas, se esperaban {raw['n']}")
 
     df["forma"] = np.array(raw["shapes"])[df["shape"].to_numpy()]
     df["lugar"] = np.array(raw["places"], dtype=object)[df["place"].to_numpy()]

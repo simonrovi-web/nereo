@@ -43,7 +43,8 @@ python3 -m http.server 8000
 index.html          interfaz
 css/app.css         sistema visual
 js/app.js           mapa, capas, paneles y lógica
-data/points.json    reportes empaquetados en binario (base64)
+data/points.bin.gz  reportes en columnas binarias (gzip)
+data/points-meta.json índice de columnas, lugares y formas
 data/stats.json     estadísticas agregadas
 data/world.json     costas, lagos y fronteras
 data/mar.json       batimetría, rutas navieras, zonas navales y puertos espaciales
