@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-27T00:56:13Z",
+  "generado": "2026-11-27T07:00:55Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,59 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-27T07:10:00Z",
+      "descarte": [
+        {
+          "detalle": "Las propias Fuerzas Armadas de Letonia califican el objeto de dron no identificado y la respuesta fue militar: cazas de la OTAN y un dron interceptor. Es decir, la naturaleza del objeto no está en discusión, solo su origen, que Reuters no establece.",
+          "fuente": "https://kfgo.com/2026/11/26/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/",
+          "tipo": "dron"
+        },
+        {
+          "detalle": "Revisado el calendario de lanzamientos el 27 de noviembre de 2026: no figura ningún lanzamiento Starlink con fecha entre el 24 y el 27 de noviembre de 2026. El último Starlink listado como realizado es el grupo 15-18 desde Vandenberg, en torno al 15 de noviembre según el tiempo relativo del listado, y el siguiente, el grupo 15-21, aparece con fecha marcador sin confirmar.",
+          "fuente": "https://orbitalradar.com/launch-schedule",
+          "tipo": "starlink"
+        },
+        {
+          "detalle": "En la ventana inmediata el listado registra Yaogan 49 Group 01 en un Long March 2D el 26 de noviembre a las 09:38 UTC desde Xichang, un Electron de Rocket Lab el 27 a las 00:05-00:15 UTC desde Mahia (Nueva Zelanda) y un Long March 6A previsto para el 27 a las 13:00 UTC desde Taiyuan, horas después del episodio. Ninguna fuente los vincula con este caso y no explican una alerta de defensa aérea en la frontera oriental de Letonia; el listado no recoge avisos de reentrada en esas fechas.",
+          "fuente": "https://orbitalradar.com/launch-schedule",
+          "tipo": "lanzamiento"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Drone briefly violates Latvian airspace, Latvian armed forces say (Reuters vía Yahoo News, 27 nov 05:00 UTC)",
+          "https://www.yahoo.com/news/world/articles/drone-briefly-violates-latvian-airspace-050040650.html"
+        ],
+        [
+          "Drone Briefly Violates Latvian Airspace, Latvian Armed Forces Say (U.S. News; no se pudo abrir desde esta ejecución)",
+          "https://www.usnews.com/news/world/articles/2026-11-26/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say"
+        ],
+        [
+          "Drones no identificados obligan a responder a la base aeronaval de Sigonella, en Sicilia (entrada previa del feed)",
+          "https://www.stripes.com/branches/navy/2026-11-23/drones-sigonella-iran-sicily-navy-23552110.html"
+        ],
+        [
+          "Dos drones no identificados obligan a cerrar el aeropuerto de Génova (entrada previa del feed)",
+          "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/"
+        ]
+      ],
+      "estado": "alerta de violación del espacio aéreo levantada poco después; el dron siguió sin identificar y Reuters no establece su origen, su tipo ni su destino final",
+      "fechaEvento": "2026-11-27",
+      "fechaPub": "2026-11-27T05:00:00Z",
+      "fuente": "Reuters (Jekaterina Golubkova en Tokio y Janis Laizans en Riga; edición de Christopher Cushing y Saad Sayeed), publicado por KFGO y Yahoo News · comunicado de las Fuerzas Armadas de Letonia",
+      "lat": 56.5447,
+      "lon": 27.7186,
+      "lugar": "Municipios de Ludza y Balvi, este de Letonia",
+      "por": "tarea",
+      "resumen": "Las Fuerzas Armadas de Letonia informaron, en un comunicado recogido por Reuters, de que un dron no identificado violó brevemente el espacio aéreo del país en la madrugada del viernes 27 de noviembre. Según el despacho —reportería de Jekaterina Golubkova en Tokio y Janis Laizans en Riga, edición de Christopher Cushing y Saad Sayeed, con dateline del 27 de noviembre y publicado a las 05:00 UTC— se emitió primero una alerta por violación del espacio aéreo para el municipio de Ludza, en el este del país, que se levantó poco después, y a continuación una alerta de menor amenaza para el municipio de Balvi, al norte de Ludza, que también se revirtió. En respuesta se desplegaron cazas de la OTAN y un dron interceptor. El caso es escueto en datos verificables: Reuters no da hora exacta del episodio, no precisa el punto de entrada ni la distancia a la frontera, no atribuye el aparato a ningún país, no indica su tipo, tamaño ni modelo, y no dice si fue derribado, si se perdió el rastro o si cayó; tampoco se nombra a ningún portavoz de las Fuerzas Armadas ni se reproduce una cita textual del comunicado, y no se publica video ni fotografía del aparato. No se indica de qué países eran los cazas ni se menciona la misión de policía aérea báltica. El despacho sitúa el episodio en el contexto de la preocupación por la extensión de la guerra en Ucrania más allá de sus fronteras y añade dos hechos del entorno: ese mismo día la región rusa de Leningrado repelía un ataque con drones, y su gobernador, Alexander Drozdenko, afirmó que se derribaron más de cuarenta aparatos, sin que Reuters establezca relación alguna entre ambos hechos; y Polonia había acusado el martes a Moscú de violar deliberadamente su espacio aéreo tras decir que un dron de vigilancia ruso cruzó brevemente la frontera. Las coordenadas corresponden al municipio de Ludza de manera aproximada, porque la fuente no da un punto concreto y la segunda alerta afectó a Balvi.",
+      "titulo": "Un dron no identificado viola el espacio aéreo de Letonia y la OTAN responde con cazas y un dron interceptor",
+      "url": "https://kfgo.com/2026/11/26/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/",
+      "id": "lv-ludza-dron-20261127"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -38,6 +91,90 @@
       "resumen": "El portal Expreso de Tamaulipas publicó el 26 de noviembre, a las 18:26 hora del centro de México, un video de una esfera de apariencia metálica y color plateado suspendida a plena luz del día sobre el cielo de Monterrey, Nuevo León. Según la nota, la grabación la atribuye a un usuario identificado como Gabriel Contreras y corresponde al 4 de noviembre de 2026; el material lo difundió el periodista y ufólogo Jaime Maussan en su cuenta de X el 24 de noviembre con el texto «¡Un nuevo avistamiento en Monterrey!». El texto describe un objeto de silueta definida, sin hélices, cables ni estructuras visibles, que avanza a ritmo constante y de pronto se detiene en el aire, estático, sin que el viento parezca empujarlo. El caso es muy débil en verificación: la nota no está firmada, declara basarse en información de El Heraldo de México, no da hora del avistamiento ni un punto más preciso que la ciudad, y no aporta tamaño, altitud, distancia, duración, dirección ni datos del equipo con que se grabó; tampoco publica metadatos del archivo original ni un enlace verificable al video. No hay análisis de ningún especialista: el propio portal afirma que ninguna autoridad aeronáutica o meteorológica local emitió reporte oficial sobre objetos no identificados en Monterrey en esa fecha, sin citar la fuente de esa afirmación, y las únicas hipótesis que recoge —efectos ópticos o globos de helio que reflejan la luz solar— son comentarios de usuarios en redes. El descarte con calendarios no pudo completarse: los listados de lanzamientos y de lluvias de meteoros consultados en esta ejecución cubren la segunda mitad de noviembre y no la fecha del avistamiento, el 4 de noviembre, de modo que no se cruzó el caso con lanzamientos, reentradas ni flujos de meteoros de esa fecha; en todo caso, una esfera que se detiene en el aire de día no corresponde al perfil de ninguno de esos fenómenos. Las coordenadas corresponden al centro de Monterrey de manera aproximada.",
       "titulo": "Una esfera plateada filmada de día sobre Monterrey, difundida por Jaime Maussan",
       "id": "mx-monterrey-esfera-20261104"
+    },
+    {
+      "agua": false,
+      "clase": "redes",
+      "creado": "2026-11-27T07:10:00Z",
+      "descarte": [
+        {
+          "detalle": "El propio autor del video apunta a una base cercana y supone un entrenamiento o una broma, y varios comentarios recogidos por ENCOUNT mencionan la base aérea de Iruma de la Fuerza Aérea de Autodefensa en vuelos nocturnos, aviones militares estadounidenses operando desde Yokota y un avión de transporte despegado de allí. Ninguna autoridad lo ha confirmado y la nota no verifica ninguna de esas lecturas.",
+          "fuente": "https://encount.press/archives/1105485/",
+          "tipo": "avion"
+        },
+        {
+          "detalle": "Revisado el calendario de lanzamientos el 27 de noviembre de 2026: no figura ningún lanzamiento Starlink con fecha entre el 24 y el 27 de noviembre de 2026, de modo que se descarta un tren de satélites recién lanzado. El último Starlink listado como realizado es el grupo 15-18 desde Vandenberg, fechado por el listado como de hace una semana y cinco días (en torno al 15 de noviembre), y el siguiente, el grupo 15-21, aparece con fecha marcador sin confirmar.",
+          "fuente": "https://orbitalradar.com/launch-schedule",
+          "tipo": "starlink"
+        },
+        {
+          "detalle": "En la ventana del 22 al 27 de noviembre de 2026 el listado registra NROL-136 en un Falcon 9 el 22 a las 12:23 UTC desde Vandenberg, Progress MS-36 en un Soyuz 2.1b el 24 a las 10:17 UTC desde Baikonur, Amazon Leo LE-04 en un Ariane 64 el 24 a las 11:14 UTC desde Kourou, USSF-266 en un Falcon 9 el 24 a las 16:08 UTC desde Vandenberg, Shenzhou 24 en un Long March 2F/G el 25 a las 00:18 UTC desde Jiuquan, Yaogan 49 Group 01 en un Long March 2D el 26 a las 09:38 UTC desde Xichang y un Electron de Rocket Lab el 27 a las 00:05-00:15 UTC desde Mahia, Nueva Zelanda. Ninguna fuente los vincula con este video y un objeto que permanece quieto en el aire y luego se aleja hacia el este no corresponde al perfil de una etapa de cohete; el listado no recoge avisos de reentrada en esas fechas.",
+          "fuente": "https://orbitalradar.com/launch-schedule",
+          "tipo": "lanzamiento"
+        },
+        {
+          "detalle": "Según el calendario de la American Meteor Society y el de Star Walk, en la ventana del 24 al 28 de noviembre de 2026 siguen activas las Leónidas (6 al 30 de noviembre, máximo el 16-17 según la AMS y el 17-18 según Star Walk, ZHR de unos 15 a 71 km/s) y las Táuridas del Norte (20 de octubre al 10 de diciembre, máximo el 11-12 de noviembre, ZHR de unos 5), y las Oriónidas de noviembre (13 de noviembre al 6 de diciembre) alcanzan su máximo el 27 y 28 con unos 3 meteoros por hora, con la Luna en fase gibosa decreciente tras la Luna llena. La coincidencia de calendario es real, pero un objeto luminoso que se detiene en el aire y después se desplaza hacia el este no corresponde al perfil de un meteoro.",
+          "fuente": "https://amsmeteors.org/calendar/",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Segunda página de la misma nota de ENCOUNT, con el video y la publicación incrustada de X",
+          "https://encount.press/archives/1105485/2/"
+        ],
+        [
+          "Versión del caso en Livedoor News, atribuida a Nikkan Sports (no se pudo abrir desde esta ejecución)",
+          "https://news.livedoor.com/article/detail/32903965/"
+        ],
+        [
+          "Versión en Yahoo! Japón de la nota de Nikkan Sports (bloqueada por robots.txt en esta ejecución)",
+          "https://news.yahoo.co.jp/articles/15ce06f8862ebedf04a016ff7834ffb0515d5e3b"
+        ]
+      ],
+      "estado": "sin verificar; la única hipótesis es la del propio autor, que menciona una base aérea cercana y supone un entrenamiento o una broma, sin pronunciamiento de ninguna autoridad, observatorio ni especialista",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-27T00:00:00Z",
+      "fuente": "ENCOUNT (ENCOUNT編集部, sin firma personal) · video de Tooru Seino (清野とおる) publicado en su cuenta de X @seeeeeeeeeeeeno",
+      "lat": 35.8558,
+      "lon": 139.3278,
+      "lugar": "Hanno, prefectura de Saitama, Japón (punto no precisado por la fuente)",
+      "por": "tarea",
+      "resumen": "El portal japonés de entretenimiento ENCOUNT publicó el 27 de noviembre, en una nota firmada solo por su redacción (ENCOUNT編集部), que el dibujante de manga Tooru Seino (清野とおる), autor de «Tokio-to Kita-ku Akabane» y marido de la actriz Danmitsu, difundió en su cuenta de X (@seeeeeeeeeeeeno) un video de 36 segundos, grabado con zoom, de un objeto que emitía luz en el cielo nocturno de Hanno, en la prefectura de Saitama. En la publicación del 25 de noviembre, Seino contaba que había pasado el fin de semana en Hanno por trabajo y añadía, según el texto que cita ENCOUNT, que «además, volaba algo que parecía un OVNI, y pensándolo bien, Hanno es lo mejor». La difusión fue considerable: la nota habla de más de 1.930.000 reproducciones y 24.000 «me gusta» —la cifra de 2,4万 del titular corresponde a los «me gusta», no a las visualizaciones—, mientras que las cifras de repost y de comentarios no se publican. En una segunda publicación, acompañada de una imagen fija, el propio Seino describe el movimiento: el objeto apareció por el suroeste (南西方面), se mantuvo unos momentos quieto en el aire y después desapareció hacia el este (東方面). El caso es muy débil en verificación. La única hipótesis es la del propio autor, que dice no esperar tanta reacción, señala que hay una base cercana y supone que podría tratarse de un entrenamiento relacionado o de una broma; no hay pronunciamiento de la Agencia Meteorológica de Japón, de la Fuerza Aérea de Autodefensa, de la autoridad de aviación civil, ni de ningún astrónomo o especialista. ENCOUNT tampoco describe la forma, el color ni el número de objetos —solo los llama «飛行物体», objeto volador, en singular— no publica metadatos del archivo original y no da la hora de la grabación, solo que era de noche. La fecha del hecho no queda establecida: la publicación es del 25 de noviembre y se refiere a un fin de semana anterior, por lo que no se registra fecha de evento. Las explicaciones que recoge la nota son comentarios de usuarios, no de instituciones: varios mencionan la base aérea de Iruma de la Fuerza Aérea de Autodefensa en vuelos nocturnos, aviones militares estadounidenses operando desde Yokota y un avión de transporte despegado de esa base, y uno dice haber pensado en una cometa con luces (電飾カイト). La nota no da hora de publicación, solo la fecha, y la versión del mismo caso en Livedoor y en Yahoo! Japón —atribuida a Nikkan Sports— no pudo abrirse desde esta ejecución, de modo que no fue posible contrastar datos entre coberturas. Las coordenadas corresponden al centro de la ciudad de Hanno de manera aproximada, porque la fuente no precisa barrio ni punto de grabación.",
+      "titulo": "Un dibujante de manga filma 36 segundos de un objeto luminoso sobre Hanno, en Saitama, y el video se vuelve viral en Japón",
+      "url": "https://encount.press/archives/1105485/",
+      "id": "jp-hanno-ovni-20261127"
+    },
+    {
+      "agua": true,
+      "clase": "prensa",
+      "creado": "2026-11-27T07:10:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Rare venomous sea snake reaches Southern California coast (KTLA; no se pudo abrir desde esta ejecución)",
+          "https://ktla.com/news/california/rare-venomous-sea-snake-reaches-southern-california-coast/"
+        ],
+        [
+          "Carabelas portuguesas aparecen en la costa de San Diego y Scripps las identifica (entrada previa del feed)",
+          "https://www.yahoo.com/news/science/articles/rare-alien-sea-creature-packs-025700545.html"
+        ]
+      ],
+      "estado": "especie identificada como serpiente marina de vientre amarillo, sin que la nota atribuya la identificación a una institución o a un especialista con nombre; el ejemplar lo recogió el Departamento de Herpetología del San Diego Natural History Museum, que investiga las circunstancias",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-26T17:15:00Z",
+      "fuente": "California Post / New York Post (Marina Peña), publicado también en Yahoo News · California State Parks, distrito Orange Coast · Departamento de Herpetología del San Diego Natural History Museum",
+      "lat": 33.6903,
+      "lon": -118.0353,
+      "lugar": "Bolsa Chica State Beach, Huntington Beach, condado de Orange, California, Estados Unidos",
+      "por": "tarea",
+      "rareza": "mar",
+      "resumen": "Personal del sistema de parques estatales de California encontró el domingo una serpiente marina de vientre amarillo (yellow-bellied sea snake) en Bolsa Chica State Beach, en el condado de Orange, California, según una nota firmada por Marina Peña y publicada el 26 de noviembre con marca de actualización a las 17:15 UTC, cuyo enlace canónico apunta al New York Post en su edición de California. El animal estaba vivo pero con poca energía y, de acuerdo con el relato de California State Parks, no se esperaba que sobreviviera: estos ejemplares suelen llegar a la orilla en mal estado y morir en el día siguiente. Lo recogió el Departamento de Herpetología del San Diego Natural History Museum, donde los investigadores estudian las circunstancias del hallazgo. El distrito Orange Coast de los parques estatales pidió no acercarse al animal, esté vivo o muerto, avisar al personal del parque indicando el punto exacto —incluido el número de la torre de salvavidas más cercana— y reportar los avistamientos en iNaturalist. La nota sitúa el caso en un contexto de aguas más cálidas por el episodio de El Niño en curso, que según los responsables puede traer otras especies inusuales, y precisa que el distrito ha registrado ocho serpientes de este tipo en la costa californiana, siete de ellas coincidiendo con El Niño; esa lectura se atribuye a «funcionarios» y no a un científico con nombre. El registro disponible es fotográfico y no hay video: la imagen de la serpiente está acreditada a California State Parks Orange Coast District y la de la playa a Los Angeles Times vía Getty Images; la nota incluye además un enlace a Instagram que no se consultó. Quedan varios datos sin establecer: la fecha exacta del hallazgo, que la nota sitúa solo en «el domingo», sin precisar el día; el nombre científico de la especie; quién hizo la identificación y con qué criterio; el tamaño del ejemplar; y qué ocurrió finalmente con el animal. La nota original de KTLA sobre el mismo caso no pudo abrirse desde esta ejecución. No se registra fecha de evento porque la fuente no la da.",
+      "titulo": "Una serpiente marina de vientre amarillo aparece viva en una playa del sur de California y se la lleva el museo de San Diego",
+      "url": "https://yahoo.com/news/science/articles/highly-venomous-predator-washes-california-171526455.html",
+      "id": "mar-bolsa-chica-serpiente-20261126"
     },
     {
       "agua": false,
@@ -1678,72 +1815,6 @@
       "titulo": "Defensa de Polonia avisa de luces sobre Varsovia: eran pruebas de bengalas",
       "url": "https://wiadomosci.wp.pl/warszawa/tajemnicze-swiatla-nad-warszawa-mon-wydalo-komunikat-7352339640543264a",
       "id": "pl-varsovia-mithras-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-19T06:55:48Z",
-      "descarte": [],
-      "descarteRevisado": true,
-      "enlaces": [
-        [
-          "UAP Experts Attempt To 'Make a Beacon' and Summon Orbs Near Site of Infamous Bass Strait Mystery (IBTimes UK, 18 nov)",
-          "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156"
-        ]
-      ],
-      "estado": "sin resultado: la emisión no registró ningún orbe",
-      "fechaEvento": "2026-11-17",
-      "fechaPub": "2026-11-18T12:41:37Z",
-      "fuente": "International Business Times UK",
-      "lat": -38.2747,
-      "lon": 144.4875,
-      "lugar": "Barwon Heads, Victoria, Australia",
-      "por": "tarea",
-      "resumen": "El programa «Reality Check with Ross Coulthart», de NewsNation, emitió el 17 de noviembre un experimento del grupo Whitehawk Psionics en Barwon Heads, estado de Victoria, Australia, cerca del estrecho de Bass donde desapareció el piloto Frederick Valentich en 1978. Los participantes intentaron «hacer de faro» mediante una práctica que llaman señalización neuromeditativa, descrita en el medio como un contacto de quinto tipo (CE5). Según el International Business Times, la emisión no produjo ningún avistamiento confirmado de orbes y no aportó una demostración científica; el parapsicólogo Jack Westacott señaló que las expectativas podrían explicar las reacciones corporales de los participantes. Los Archivos Nacionales de Australia recogen para el caso Valentich una posible explicación convencional con objetos celestes brillantes, que el propio medio indica que no está establecida de forma concluyente. Las coordenadas corresponden a Barwon Heads, lugar de la filmación y no un sitio confirmado de la desaparición.",
-      "titulo": "Un experimento televisado para «llamar» orbes en Victoria, Australia, no registra nada",
-      "url": "https://www.ibtimes.co.uk/uap-experts-attempt-make-beacon-summon-orbs-near-site-infamous-bass-strait-mystery-1833156",
-      "id": "au-barwon-heads-ce5-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-20T06:55:43Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin identificar; el Departamento de Defensa Nacional de Canadá declinó dar detalles y no se identificó a los operadores",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Philippine Canadian Inquirer (Abi Sarabia M.), sobre registros de la Real Fuerza Aérea Canadiense obtenidos por acceso a la información",
-      "lat": null,
-      "lon": null,
-      "lugar": "CFB Trenton (Ontario) y CFB Cold Lake (Alberta), Canadá",
-      "por": "tarea",
-      "resumen": "Informes de la Real Fuerza Aérea Canadiense obtenidos mediante una solicitud de acceso a la información registran siete sobrevuelos de drones no identificados en dos bases: tres en CFB Trenton (Ontario) y cuatro en CFB Cold Lake (Alberta), la base que concentra buena parte de la flota de CF-18. El caso mejor fechado es el del 17 de septiembre de 2025, cuando un dron con cámara sobrevoló la pista de Trenton mientras el sistema de detección estaba apagado por un corte de energía planificado; cinco días después otro aparato cruzó la misma base y el sistema, operativo desde marzo de 2025, no lo registró. En Cold Lake se describe un dron pequeño y blanco con un tubo negro visto dos veces en cuatro días, y otro con forma de caja de unos 60 centímetros que se desplazaba entre 60 y 100 km/h con una luz amarillenta y sin ruido; según los registros, la base no disponía entonces del equipo para rastrear aparatos pequeños. El Departamento de Defensa Nacional declinó dar detalles alegando razones operativas y de seguridad, no hubo intentos de interceptación y no se identificó a ningún operador; la nota añade que no hay pruebas confirmadas de vínculos con gobiernos extranjeros. No se publican video ni fotografías de los aparatos y los incidentes carecen de fecha precisa en la mayoría de los casos, por lo que no fue posible cruzarlos con calendarios de lanzamientos o de lluvias de meteoros. No se asignan coordenadas porque las dos bases están a miles de kilómetros entre sí.",
-      "titulo": "Registros militares canadienses documentan siete sobrevuelos de drones no identificados en dos bases",
-      "url": "https://canadianinquirer.net/2026/11/18/unidentified-drones-spotted-over-canadian-military-bases-exposing-security-gaps/",
-      "id": "ca-bases-drones-20261118"
-    },
-    {
-      "agua": true,
-      "clase": "prensa",
-      "creado": "2026-11-20T06:55:43Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [],
-      "estado": "sin verificar en su fecha y origen; ningún servicio meteorológico italiano se ha pronunciado sobre este episodio",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "My Modern Met (Regina Sienra) · video atribuido a Massimo Aprea",
-      "lat": 40.545,
-      "lon": 14.249,
-      "lugar": "Faraglioni de Capri, Campania, Italia",
-      "por": "tarea",
-      "rareza": "natural",
-      "resumen": "Un video difundido el 18 de noviembre muestra dos trombas marinas girando casi entrelazadas sobre el mar junto a los Faraglioni, las formaciones rocosas emblemáticas de Capri, bajo un cielo de tormenta. La grabación se atribuye a Massimo Aprea y el medio la describe como un fenómeno de tipo tornádico, con dos columnas de agua y bruma que descienden de la nube hasta tocar la superficie. El registro es débil en datos: la nota no indica la fecha ni la hora del fenómeno, no cita a ningún servicio meteorológico italiano ni a un especialista sobre este caso concreto, y la única fuente institucional que incorpora es la página general de la NOAA sobre trombas marinas, con recomendaciones de seguridad —alejarse en ángulo recto respecto a su desplazamiento aparente y no acercarse nunca a observarlas—. No se reportan daños, víctimas ni alertas oficiales. Las coordenadas corresponden a los Faraglioni de Capri de manera aproximada.",
-      "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
-      "url": "https://mymodernmet.com/capri-double-watersprout/",
-      "id": "it-capri-trombas-20261118"
     },
     {
       "agua": false,
