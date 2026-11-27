@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-26T18:48:11Z",
+  "generado": "2026-11-27T00:56:13Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,86 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-27T01:05:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Esfera gris filmada sobre Atlixco, Puebla, y difundida por Jaime Maussan, caso comparable del feed",
+          "https://periodicorealidades.com/index.php/2026/11/20/jaime-maussan-difunde-video-de-un-presunto-ovni-captado-en-atlixco-puebla/"
+        ],
+        [
+          "Vuelve a circular un objeto oscuro con apéndices ondulantes filmado sobre Ciudad Juárez, también difundido por Maussan (entrada previa del feed)",
+          "https://shazoo.ru/2026/11/25/194607/v-nebe-nad-meksikanskim-gorodom-sniali-letaiushhego-makaronnogo-monstra-skoree-vsego-eto-vozdusnyi-zmei"
+        ]
+      ],
+      "estado": "sin verificar; sin pronunciamiento de ninguna autoridad aeronáutica o meteorológica y sin análisis de especialistas",
+      "fechaEvento": "2026-11-04",
+      "fechaPub": "2026-11-27T00:26:33Z",
+      "fuente": "Expreso de Tamaulipas (sin firma, con información de El Heraldo de México) · video atribuido a Gabriel Contreras y difundido por Jaime Maussan en X el 24 de noviembre",
+      "lat": 25.6866,
+      "lon": -100.3161,
+      "lugar": "Monterrey, Nuevo León, México (punto no precisado por la fuente)",
+      "por": "tarea",
+      "resumen": "El portal Expreso de Tamaulipas publicó el 26 de noviembre, a las 18:26 hora del centro de México, un video de una esfera de apariencia metálica y color plateado suspendida a plena luz del día sobre el cielo de Monterrey, Nuevo León. Según la nota, la grabación la atribuye a un usuario identificado como Gabriel Contreras y corresponde al 4 de noviembre de 2026; el material lo difundió el periodista y ufólogo Jaime Maussan en su cuenta de X el 24 de noviembre con el texto «¡Un nuevo avistamiento en Monterrey!». El texto describe un objeto de silueta definida, sin hélices, cables ni estructuras visibles, que avanza a ritmo constante y de pronto se detiene en el aire, estático, sin que el viento parezca empujarlo. El caso es muy débil en verificación: la nota no está firmada, declara basarse en información de El Heraldo de México, no da hora del avistamiento ni un punto más preciso que la ciudad, y no aporta tamaño, altitud, distancia, duración, dirección ni datos del equipo con que se grabó; tampoco publica metadatos del archivo original ni un enlace verificable al video. No hay análisis de ningún especialista: el propio portal afirma que ninguna autoridad aeronáutica o meteorológica local emitió reporte oficial sobre objetos no identificados en Monterrey en esa fecha, sin citar la fuente de esa afirmación, y las únicas hipótesis que recoge —efectos ópticos o globos de helio que reflejan la luz solar— son comentarios de usuarios en redes. El descarte con calendarios no pudo completarse: los listados de lanzamientos y de lluvias de meteoros consultados en esta ejecución cubren la segunda mitad de noviembre y no la fecha del avistamiento, el 4 de noviembre, de modo que no se cruzó el caso con lanzamientos, reentradas ni flujos de meteoros de esa fecha; en todo caso, una esfera que se detiene en el aire de día no corresponde al perfil de ninguno de esos fenómenos. Las coordenadas corresponden al centro de Monterrey de manera aproximada.",
+      "titulo": "Una esfera plateada filmada de día sobre Monterrey, difundida por Jaime Maussan",
+      "id": "mx-monterrey-esfera-20261104"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-27T01:05:00Z",
+      "descarte": [
+        {
+          "detalle": "Revisado el listado de lanzamientos el 26 de noviembre de 2026 (caché refrescada a las 22:01 UTC): no figura ninguna misión Starlink con día confirmado entre el 20 y el 27 de noviembre de 2026, de modo que se descarta un tren de satélites recién lanzado. El único Starlink listado, el grupo 15-21, aparece fechado el 15 de noviembre, diez días antes.",
+          "fuente": "https://www.rocketlaunch.live/",
+          "tipo": "starlink"
+        },
+        {
+          "detalle": "El mismo listado registra en la ventana inmediata el Shenzhou 24 en un Long March 2F el 25 de noviembre y el Yaogan 49 Group 01 en un Long March 2D el 26, ambos desde China y sin hora declarada, además de USSF-266 en un Falcon 9, Amazon Leo-16 en un Ariane 6 y Progress MS-36 en un Soyuz-2 el 24 de noviembre. Ninguna fuente los vincula con el avistamiento y un objeto que permanece quieto tres horas en el mismo punto del cielo no corresponde al perfil de una etapa de cohete ni de una reentrada; el listado no registra avisos de reentrada en esas fechas.",
+          "fuente": "https://www.rocketlaunch.live/",
+          "tipo": "lanzamiento"
+        },
+        {
+          "detalle": "Según el calendario de Star Walk, entre el 23 y el 30 de noviembre de 2026 siguen activas las Leónidas (6 al 30 de noviembre, máximo el 17 y 18, ZHR de unos 15, a unos 71 km/s), las Táuridas del Norte (20 de octubre al 10 de diciembre, máximo el 11 y 12 de noviembre, unos 5 meteoros por hora), las Oriónidas de noviembre (13 de noviembre al 6 de diciembre, máximo el 27 y 28, unos 3 por hora) y, hasta el 25, las alfa Monocerótidas. La coincidencia de calendario es real, pero nueve luces fijas durante tres horas no corresponden al perfil de un meteoro.",
+          "fuente": "https://starwalk.space/en/news/november-meteor-showers",
+          "tipo": "meteoros"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "Avistaron presuntos OVNI suspendidos varias horas en la zona del aeropuerto de Trelew (El Chubut, 26 nov 19.02 hs)",
+          "https://www.elchubut.com.ar/trelew/2026-11-26-19-2-0-avistaron-presuntos-ovni-suspendidos-varias-horas-en-la-zona-del-aeropuerto-de-trelew"
+        ],
+        [
+          "Misterio en Trelew: detectaron extraños objetos luminosos cerca del aeropuerto (Diario Crónica)",
+          "https://www.diariocronica.com.ar/noticias/2026/11/26/180165-misterio-en-trelew-detectaron-extranos-objetos-luminosos-cerca-del-aeropuerto"
+        ],
+        [
+          "Misteriosas luces aparecieron en el cielo de Trelew: aseguran que parecían una nave (Vivo Trelew)",
+          "https://vivotrelew.com/misteriosas-luces-aparecieron-en-el-cielo-de-trelew-aseguran-que-parecian-una-nave/"
+        ],
+        [
+          "Un grupo de observadores difunde nuevas luces filmadas en Carmen de Patagones, a unos 500 km al noreste (entrada previa del feed)",
+          "https://www.noticiasnet.com.ar/noticias/2026/11/22/236067-misterio-en-el-cielo-grabaron-nuevas-luces-sin-explicacion-cientifica"
+        ]
+      ],
+      "estado": "sin verificar; sin identificación oficial del fenómeno — el testigo no obtuvo respuesta de la Base Aeronaval y el aeropuerto Almirante Zar no se pronunció",
+      "fechaEvento": "2026-11-25",
+      "fechaPub": "2026-11-26T12:28:51Z",
+      "fuente": "Radio 3 Cadena Patagonia (Ignacio Jara) · El Chubut (Redacción Chubut) · Diario Crónica, Comodoro Rivadavia · Vivo Trelew (Sol Díaz, reescritura de Diario Crónica) · testimonio del vigilador privado «Luis» y fotografías de su hijo",
+      "lat": -43.2105,
+      "lon": -65.2703,
+      "lugar": "Sector noreste de Trelew, en inmediaciones del aeropuerto Almirante Marcos A. Zar y la Base Aeronaval, provincia de Chubut, Argentina",
+      "por": "tarea",
+      "resumen": "Un vigilador privado identificado solo como Luis observó, entre la noche del miércoles 25 y la madrugada del jueves 26 de noviembre, nueve puntos luminosos que, según su relato, parecían formar parte de una figura triangular sobre el sector noreste de Trelew, en la provincia de Chubut, en dirección al aeropuerto Almirante Marcos A. Zar y la Base Aeronaval. Su esposa fue la primera en verlos, hacia las 23.15 según Radio 3 Cadena Patagonia y «alrededor de las once de la noche» según El Chubut y Diario Crónica, y Luis siguió observándolos hasta cerca de las 3 de la madrugada, cuando la llegada de nubes impidió seguir viéndolos; el objeto estuvo «por lo menos tres horas» en la misma posición. Describió que «era como una nave», que «estaba quieta, no se movía», pero que las luces bajaban y subían de intensidad y se apagaban y volvían a encenderse, y en Radio 3 añadió que «era como que se acercaba, se alejaba o algo así». El caso es débil en verificación y en registro: no hubo identificación oficial de ningún tipo, Luis intentó comunicarse con la Base Aeronaval y nadie lo atendió, y desde el aeropuerto Almirante Zar, en palabras de El Chubut, «no dijeron absolutamente nada, al menos de manera oficial»; ninguna de las cuatro coberturas consultadas cita a la ANAC, a la Fuerza Aérea Argentina, a la policía, a la torre de control ni a ningún astrónomo, y ninguna propone explicación alguna. El material disponible son fotografías tomadas con teléfono por un hijo del testigo, que las coberturas no acreditan ni publican con metadatos; El Chubut y Diario Crónica dicen además que «varios testigos lo filmaron con el celular», pero no publican ningún video y no identifican a esos testigos, de modo que el único relato en el que se apoyan las cuatro notas es el de Luis. Hay varias contradicciones internas que conviene anotar: la entradilla de El Chubut y de Diario Crónica habla de «al menos seis luces» mientras el cuerpo de las cuatro notas dice nueve; el pie de una de las fotos de Crónica afirma que las luces «permanecieron unos minutos en el mismo sitio», frente a las tres horas del texto; y El Chubut dice primero que el vigilador filmó el objeto y después que lo filmó un hijo suyo, mientras Radio 3 atribuye solo fotografías al hijo. Vivo Trelew declara que su nota es una reescritura de Diario Crónica, por lo que las cuatro publicaciones corresponden a un único reporte. Las coordenadas corresponden al aeropuerto Almirante Marcos A. Zar de manera aproximada, porque ninguna fuente da una dirección ni un punto exacto.",
+      "titulo": "Nueve luces en figura triangular, quietas tres horas sobre la zona del aeropuerto de Trelew, en la Patagonia argentina",
+      "id": "ar-trelew-luces-20261126"
+    },
     {
       "agua": false,
       "clase": "prensa",
@@ -99,6 +179,10 @@
       "descarteRevisado": true,
       "enlaces": [
         [
+          "Large green fireball meteor flares over Michigan, visible across 10 states and Canada (Geo.tv, 26 nov)",
+          "https://www.geo.tv/latest/692786-large-green-fireball-meteor-flares-over-michigan-visible-across-10-states-and-canada"
+        ],
+        [
           "Did you see it? Fireball meteor spotted across Northeast Ohio (Cleveland 19)",
           "https://www.cleveland19.com/2026/11/26/did-you-see-it-fireball-meteor-spotted-across-northeast-ohio/"
         ],
@@ -107,19 +191,23 @@
           "https://swikblog.com/green-fireball-michigan-ohio-2026/"
         ],
         [
-          "Reportes de un posible meteoro sobre Cincinnati, en el suroeste de Ohio, la misma noche del miércoles 25, con video de cámara de tablero sobre la Interestatal 75; WLWT precisa que los especialistas no lo han confirmado y ninguna fuente lo vincula con este bólido (WLWT, Matthew Dietz, 26 nov 02:16 UTC)",
+          "Un meteoro aparece sobre el espectáculo de drones de Fort Wayne la misma noche (entrada previa del feed)",
+          "https://wisevoter.com/world/us/in/fort-wayne/2026/11/26/meteor-fort-wayne-night-of-lights-drone-show"
+        ],
+        [
+          "Reportes de un posible meteoro sobre Cincinnati, en el suroeste de Ohio, la misma noche del miércoles 25, con video de cámara de tablero sobre la Interestatal 75; WLWT precisa que los especialistas no lo han confirmado (WLWT, Matthew Dietz, 26 nov 02:16 UTC)",
           "https://www.wlwt.com/article/cincinnati-possible-meteor-sighting-ohio/74536580"
         ]
       ],
-      "estado": "explicado como bólido",
+      "estado": "explicado como bólido; la American Meteor Society cifra en más de 1.300 las personas que lo vieron y el producto de detección de rayos del satélite GOES-19 registró el destello cerca de la bahía de Saginaw",
       "fechaEvento": "2026-11-25",
       "fechaPub": "2026-11-26T05:14:27Z",
-      "fuente": "RT en Español",
+      "fuente": "RT en Español · Geo.tv (Web Desk, con datos de la American Meteor Society y del meteorólogo jefe de WTOL-TV) · Cleveland 19 / WOIO · Michigan Storm Chasers",
       "lat": 42.3223,
       "lon": -83.1763,
-      "lugar": "Sureste de Michigan y noreste de Ohio, Estados Unidos (cámaras en Dearborn y Hudson, Michigan, y video en Norwalk, Ohio)",
+      "lugar": "Sureste de Michigan, noreste de Ohio y sur de Ontario (destello registrado por satélite cerca de la bahía de Saginaw, Michigan; cámaras en Dearborn y Hudson, Michigan, y video en Norwalk, Ohio)",
       "por": "tarea",
-      "resumen": "Hacia las 19:40 del miércoles 25 de noviembre, hora del este, un objeto muy brillante con estela verde cruzó el cielo del sureste de Michigan y el noreste de Ohio. Michigan Storm Chasers difundió la grabación de su cámara meteorológica de Dearborn, con marca de tiempo 19:40:23, y circularon imágenes de otra cámara en Hudson (Michigan) y de una vecina de Norwalk (Ohio). El equipo meteorológico del canal WOIO lo describió como un bólido, y RT en Español recoge que algunos meteorólogos confirmaron que se trató de un meteoro, sin nombrarlos. Las coordenadas son las de Dearborn, donde está la cámara: el fenómeno se vio en una franja amplia de dos estados y del sur de Ontario.",
+      "resumen": "Hacia las 19:40 del miércoles 25 de noviembre, hora del este, un objeto muy brillante con estela verde cruzó el cielo del sureste de Michigan y el noreste de Ohio. Michigan Storm Chasers difundió la grabación de su cámara meteorológica de Dearborn, con marca de tiempo 19:40:23, y circularon imágenes de otra cámara en Hudson (Michigan) y de una vecina de Norwalk (Ohio). El equipo meteorológico del canal WOIO lo describió como un bólido, y RT en Español recoge que algunos meteorólogos confirmaron que se trató de un meteoro, sin nombrarlos. La dimensión del episodio quedó clara al día siguiente: según la American Meteor Society, citada por Geo.tv en una nota sin firma personal publicada el 26 de noviembre, más de 1.300 personas lo vieron, en diez estados de Estados Unidos y en la provincia canadiense de Ontario, con avistamientos enviados a amsmeteors.org desde lugares tan separados como Fort Wayne y Cleveland. El dato instrumental que aporta esa cobertura es uno solo: el meteorólogo jefe del canal WTOL-TV señaló que el producto de detección de rayos del satélite GOES-19 observó el destello cerca de la bahía de Saginaw, en Michigan, visible a cientos de kilómetros. Geo.tv plantea que el bólido estaría «probablemente asociado» a las Leónidas, pero es una suposición del propio texto, no de una institución, y la nota no da hora ni fecha del fenómeno, no cita a la NASA, no menciona cámaras all-sky y no publica video ni aporta trayectoria, altitud o velocidad. Las coordenadas son las de Dearborn, donde está la cámara: el fenómeno se vio en una franja amplia de diez estados y del sur de Ontario.",
       "titulo": "Un bólido verde cruza el cielo de Michigan y Ohio y queda grabado por cámaras meteorológicas",
       "url": "https://actualidad-rt.com/viral/639795-impactante-meteoro-ilumina-cielo-verde-asombro",
       "id": "us-michigan-ohio-bolido-20261125"
@@ -152,6 +240,10 @@
           "https://ura.news/news/1053147576"
         ],
         [
+          "Яркой вспышке в небе над Карелией нашли объяснение (Argumenty i Fakty, Anastasía Afonina, 26 nov 13:59 UTC)",
+          "https://aif.ru/incidents/yarkoy-vspyshke-v-nebe-nad-kareliey-nashli-obyasnenie-novosti-rf-26-noyabrya"
+        ],
+        [
           "Появились новые кадры сгорания метеора над Карелией (karelia.news, con la lectura del club Asterion)",
           "https://karelia.news/news/10261386/poyavilis-novye-kadry-sgoraniya-meteora-nad-kareliey/"
         ],
@@ -165,14 +257,14 @@
         ]
       ],
       "estado": "sin verificar; atribuido a un bólido por el canal SHOT y por el club de aficionados Asterion, que lo relaciona con las Táuridas del Norte, sin pronunciamiento de ningún observatorio ni organismo oficial",
-      "fechaEvento": "2026-11-26",
+      "fechaEvento": "2026-11-25",
       "fechaPub": "2026-11-26T01:02:00Z",
-      "fuente": "Rossiyskaya Gazeta (Yulia Riabinina) · URA.RU (Serguéi Rassojin) · karelia.news · club de astronomía Asterion · canales SHOT y Mash",
+      "fuente": "Rossiyskaya Gazeta (Yulia Riabinina) · URA.RU (Serguéi Rassojin) · Argumenty i Fakty (Anastasía Afonina, citando a karelinform.ru) · karelia.news · club de astronomía Asterion · canales SHOT y Mash",
       "lat": 61.7849,
       "lon": 34.3469,
       "lugar": "Petrozavodsk, Vilga, Segezha, Kondopoga y Kostomuksha, República de Karelia, Rusia",
       "por": "tarea",
-      "resumen": "Un destello azul verdoso muy brillante y silencioso iluminó durante unos dos segundos el cielo de la República de Karelia, en el noroeste de Rusia, y se vio desde Petrozavodsk y la cercana aldea de Vilga y, según URA.RU y karelia.news, también desde Segezha, Kondopoga y Kostomuksha. La Rossiyskaya Gazeta publicó el caso el 26 de noviembre a las 04:02 hora de Moscú, en una nota firmada por Yulia Riabinina, con imágenes difundidas por el canal SHOT, y recoge que los testigos lo describieron como «un disparo de bláster de La guerra de las galaxias», muy brillante y con un apagado lento. La explicación de bólido no viene de ningún organismo: la Rossiyskaya Gazeta la atribuye a los autores del canal SHOT, y el club de aficionados a la astronomía Asterion, citado por karelia.news, sostiene que el objeto voló de este a oeste a la altura aproximada de Kondopoga y que por su dirección podría pertenecer a las Táuridas del Norte. Ninguna de las tres coberturas da la fecha ni la hora exacta del fenómeno: la Rossiyskaya Gazeta dice solo «hace unas horas» respecto a su publicación de las 04:02 y URA.RU lo sitúa «en la noche del 25 al 26 de noviembre», de modo que la madrugada del 26 es lo más probable pero no queda establecida. Tampoco se identifica a quien grabó las imágenes, no hay pronunciamiento de ningún observatorio, instituto ni de Roscosmos, y no se publican trayectoria, altura ni tamaño; el color varía entre fuentes, azul verdoso en la Rossiyskaya Gazeta y azul celeste en URA.RU. Conviene anotar una confusión de la cobertura rusa: URA.RU y karelia.news mezclan este destello con el bólido verde visto el 25 de noviembre en Michigan, Ohio y Ontario, que es un hecho distinto ya registrado en este feed, sin que ninguna fuente establezca relación entre los dos. Las coordenadas corresponden a Petrozavodsk de manera aproximada.",
+      "resumen": "Un destello azul verdoso muy brillante y silencioso iluminó durante unos dos segundos el cielo de la República de Karelia, en el noroeste de Rusia, y se vio desde Petrozavodsk y la cercana aldea de Vilga y, según URA.RU y karelia.news, también desde Segezha, Kondopoga y Kostomuksha; Argumenty i Fakty, que publicó el 26 de noviembre a las 13:59 UTC una nota firmada por Anastasía Afonina basada en karelinform.ru, añade Medvezhyegorsk y Nadvoitsy a la lista de localidades. La Rossiyskaya Gazeta publicó el caso el 26 de noviembre a las 04:02 hora de Moscú, en una nota firmada por Yulia Riabinina, con imágenes difundidas por el canal SHOT, y recoge que los testigos lo describieron como «un disparo de bláster de La guerra de las galaxias», muy brillante y con un apagado lento. La explicación de bólido no viene de ningún organismo: la Rossiyskaya Gazeta la atribuye a los autores del canal SHOT, y el club de aficionados a la astronomía Asterion, citado por karelia.news y también por Argumenty i Fakty, sostiene que el objeto voló de este a oeste a la altura aproximada de Kondopoga y que por su dirección podría pertenecer a las Táuridas del Norte. La fecha sigue sin quedar establecida y las fuentes se contradicen: la Rossiyskaya Gazeta dice solo «hace unas horas» respecto a su publicación de las 04:02 del 26, URA.RU lo sitúa «en la noche del 25 al 26 de noviembre» y Argumenty i Fakty lo fecha «la tarde del 25 de noviembre»; con esas tres lecturas, el final del 25 es lo más probable y así se registra, pero ninguna fuente da hora exacta. Tampoco se identifica a quien grabó las imágenes, no hay pronunciamiento de ningún observatorio, instituto ni de Roscosmos, y no se publican trayectoria precisa, altura ni tamaño; el color varía entre fuentes, azul verdoso en la Rossiyskaya Gazeta, azul celeste en URA.RU, y Argumenty i Fakty no menciona color alguno. Conviene anotar una confusión de la cobertura rusa: URA.RU y karelia.news mezclan este destello con el bólido verde visto el 25 de noviembre en Michigan, Ohio y Ontario, que es un hecho distinto ya registrado en este feed, sin que ninguna fuente establezca relación entre los dos. Las coordenadas corresponden a Petrozavodsk de manera aproximada.",
       "titulo": "Un destello azul verdoso ilumina el cielo de Karelia, en Rusia, y lo atribuyen a un bólido",
       "url": "https://rg.ru/2026/11/26/reg-szfo/ochevidcy-sniali-iarkuiu-sine-zelenuiu-vspyshku-v-nebe-nad-kareliej.html",
       "id": "ru-karelia-destello-20261126"
@@ -1652,63 +1744,6 @@
       "titulo": "Filman una tromba marina doble junto a los Faraglioni de Capri, Italia",
       "url": "https://mymodernmet.com/capri-double-watersprout/",
       "id": "it-capri-trombas-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-19T13:05:00Z",
-      "descarte": [],
-      "descarteRevisado": false,
-      "enlaces": [
-        [
-          "DroneXL: un piloto dice que tres avionetas causaron la alarma",
-          "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/"
-        ]
-      ],
-      "estado": "desmentido por Full Fact",
-      "fechaEvento": "2026-11-13",
-      "fechaPub": "2026-11-18T12:00:00Z",
-      "fuente": "Full Fact",
-      "lat": null,
-      "lon": null,
-      "lugar": "No declarado (atribuido falsamente a RAF Lakenheath, Suffolk, Reino Unido)",
-      "por": "tarea",
-      "rareza": "montaje",
-      "resumen": "Publicaciones en Instagram y otras redes presentaron un video de luces rojas moviendose rapido por el cielo como el registro de la alerta por drones del 13 de noviembre de 2026 en la base de RAF Lakenheath, Reino Unido. Full Fact califico la afirmacion de falsa: el material circula al menos desde el 31 de mayo de 2026 y es una version volteada horizontalmente y de menor resolucion de un video subido antes por una cuenta de TikTok dedicada a luces inexplicables. Full Fact aclara que no ha podido establecer si el video original es autentico ni donde se grabo; solo que es anterior al incidente.",
-      "titulo": "Desmienten el video de luces rojas difundido como prueba del incidente de Lakenheath",
-      "url": "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/",
-      "id": "montaje-luces-rojas-lakenheath-20261118"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-18T12:50:30Z",
-      "descarte": [
-        {
-          "detalle": "Las Leónidas estaban activas (6 al 30 de noviembre de 2026) y habían alcanzado su máximo la noche del 16 al 17, con una ZHR de 10; las Táuridas del Norte siguen activas hasta el 10 de diciembre y las del Sur hasta el 20 de noviembre. La coincidencia de calendario es real, aunque un punto de luz visto por la mañana no corresponde al perfil de un meteoro.",
-          "fuente": "https://www.imo.net/resources/calendar/",
-          "tipo": "meteoros"
-        },
-        {
-          "detalle": "Revisado el listado de lanzamientos: no hay misiones Starlink entre el 14 y el 18 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado. El único lanzamiento ruso en la ventana es un Soyuz-2 con KOEN/Kinosputnik el 14 de noviembre, cuatro días antes del avistamiento.",
-          "fuente": "https://rocketlaunch.live/",
-          "tipo": "starlink"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "sin verificar; sin explicación oficial ni de astrónomos, el medio solo recoge hipótesis de comentaristas (Venus o un satélite)",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-18T07:43:00Z",
-      "fuente": "Tolk News (tolknews.ru), Altái",
-      "lat": 53.35,
-      "lon": 83.78,
-      "lugar": "Barnaul y carretera Barnaul–Biysk, krai de Altái, Rusia",
-      "por": "tarea",
-      "resumen": "El diario regional Tolk publicó el 18 de noviembre, a las 14:43 de Barnaul, videos y una fotografía de un objeto luminoso en el cielo del krai de Altái. El material fue difundido por la comunidad de VK «Barnaul 22» y corresponde a dos ángulos distintos: uno tomado desde la carretera que une Barnaul con Biysk y otro desde la propia ciudad de Barnaul. El registro es pobre en datos: el medio solo señala que el objeto se vio «por la mañana», sin precisar fecha, hora, tamaño ni movimiento, y no identifica a quienes grabaron. No hay pronunciamiento de autoridades ni de astrónomos; el propio diario se limita a recoger las hipótesis de los comentaristas, que apuntan sobre todo a Venus como «estrella de la mañana» y, en segundo lugar, a un satélite entrando o saliendo de órbita. Como la nota no da fecha del avistamiento, no se registra fechaEvento. Las coordenadas corresponden a Barnaul de manera aproximada.",
-      "titulo": "Objeto luminoso filmado desde Barnaul y la carretera a Biysk, Altái, Rusia",
-      "url": "https://tolknews.ru/obsestvo/229791-zhiteli-altayskogo-kraya-zasnyali-neobichniy-svetyashchiysya-objekt-v-nebe",
-      "id": "ru-altai-barnaul-20261118"
     },
     {
       "agua": false,
