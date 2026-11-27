@@ -1,7 +1,33 @@
 {
-  "obtenido": "2026-11-26T15:42:30Z",
+  "obtenido": "2026-11-27T15:32:16Z",
   "fuente": "https://ll.thespacedevs.com/2.3.0/launches/previous/?ordering=-net&limit=100&include_suborbital=false",
   "lanzamientos": [
+    {
+      "id": "a6421db3-7c8a-4cf7-a659-cec195140f7f",
+      "nombre": "Long March 6A | Unknown Payload",
+      "net": "2026-11-27T13:00:00Z",
+      "proveedor": "China Aerospace Science and Technology Corporation",
+      "cohete": "Long March 6A",
+      "sitio": "Taiyuan Satellite Launch Center, People's Republic of China",
+      "pais": "CHN",
+      "url": "https://ll.thespacedevs.com/2.3.0/launches/a6421db3-7c8a-4cf7-a659-cec195140f7f/",
+      "lat": 38.8583,
+      "lon": 111.5802,
+      "starlink": false
+    },
+    {
+      "id": "2093e4fc-ac8c-4296-a1b5-deececee6a72",
+      "nombre": "Electron | Night Owls Never Sleep (StriX Launch 14)",
+      "net": "2026-11-27T00:15:00Z",
+      "proveedor": "Rocket Lab",
+      "cohete": "Electron",
+      "sitio": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+      "pais": "NZL",
+      "url": "https://ll.thespacedevs.com/2.3.0/launches/2093e4fc-ac8c-4296-a1b5-deececee6a72/",
+      "lat": -39.262833,
+      "lon": 177.864469,
+      "starlink": false
+    },
     {
       "id": "b00f0e9a-48d6-4f26-9cb5-7d19169ff7c4",
       "nombre": "Long March 2D | Yaogan 49 Group 01",
@@ -1275,32 +1301,6 @@
       "lat": 38.8583,
       "lon": 111.5802,
       "starlink": false
-    },
-    {
-      "id": "beac6ac1-97dd-4eb2-912c-8b4d4d15cd4e",
-      "nombre": "Long March 7A | Tianlian 3-01",
-      "net": "2026-07-29T11:50:00Z",
-      "proveedor": "China Aerospace Science and Technology Corporation",
-      "cohete": "Long March 7A",
-      "sitio": "Wenchang Space Launch Site, People's Republic of China",
-      "pais": "CHN",
-      "url": "https://ll.thespacedevs.com/2.3.0/launches/beac6ac1-97dd-4eb2-912c-8b4d4d15cd4e/",
-      "lat": 19.618452,
-      "lon": 110.955356,
-      "starlink": false
-    },
-    {
-      "id": "5b2f05d7-9052-49fb-9bd7-2a05d4910576",
-      "nombre": "Falcon 9 Block 5 | Starlink Group 17-51",
-      "net": "2026-07-25T15:51:55Z",
-      "proveedor": "SpaceX",
-      "cohete": "Falcon 9 Block 5",
-      "sitio": "Vandenberg SFB, CA, USA",
-      "pais": "USA",
-      "url": "https://ll.thespacedevs.com/2.3.0/launches/5b2f05d7-9052-49fb-9bd7-2a05d4910576/",
-      "lat": 34.632,
-      "lon": -120.611,
-      "starlink": true
     }
   ]
 }
