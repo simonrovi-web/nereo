@@ -1,6 +1,6 @@
 {
  "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
- "generado": "2026-11-27T18:57:37Z",
+ "generado": "2026-11-28T01:02:34Z",
  "zonas": [
   {
    "n": "Chile central y sur",
@@ -11,6 +11,62 @@
  ],
  "alertas": [],
  "items": [
+  {
+   "agua": false,
+   "clase": "prensa",
+   "creado": "2026-11-28T00:55:00Z",
+   "descarte": [],
+   "descarteRevisado": false,
+   "enlaces": [
+    [
+     "Desmienten el video de edificios derrumbándose durante un sismo en Perú: está hecho con inteligencia artificial (entrada previa del feed, caso distinto del mismo medio)",
+     "https://larepublica.pe/verificador/2026/11/24/es-falso-el-video-que-muestra-a-personas-huyendo-mientras-edificios-se-derrumban-durante-el-sismo-en-peru-fue-creado-con-ia-1776480"
+    ]
+   ],
+   "estado": "desmentido por el Verificador de La República: no es material generado con IA sino imágenes reales del terremoto de Colombia de agosto de 2026, reutilizadas fuera de contexto como si fueran de los sismos recientes en Perú",
+   "fechaEvento": "",
+   "fechaPub": "2026-11-27T20:01:00Z",
+   "fuente": "Verificador de La República (Ricardo Colos), Perú · signatario de la IFCN",
+   "lat": null,
+   "lon": null,
+   "lugar": "No declarado (atribuido falsamente a Perú; las imágenes corresponden al terremoto de Colombia de agosto de 2026)",
+   "por": "tarea",
+   "rareza": "montaje",
+   "resumen": "El Verificador de La República, la unidad de verificación de datos del diario peruano, concluyó el 27 de noviembre que es falso un video que circulaba en redes sociales presentado como el registro de los efectos de los sismos recientes en Perú. El material es un montaje de varios fragmentos con derrumbes y daños en estructuras, y la publicación con mayor alcance, en Facebook, acumulaba más de 103.000 visualizaciones, 2.200 reacciones y más de 270 veces compartido. La diferencia con otros casos recientes de este feed es que aquí no hay inteligencia artificial: son imágenes reales sacadas de contexto. La verificación, firmada por Ricardo Colos, se apoya en una búsqueda inversa de cada fragmento. En el primero, grabado de día cuando el sismo peruano que la publicación invocaba fue de noche, aparece al fondo el cartel de «Tuluámotos S. A.», una red colombiana de concesionarios de motocicletas con sede en el Valle del Cauca, y la búsqueda inversa localizó el mismo video publicado en agosto, después del terremoto de Colombia. El segundo fragmento, una calle con daños, y el tercero, un edificio de tres pisos, aparecen en notas y publicaciones previas atribuidas a ese mismo sismo colombiano; el tercero ya se había usado antes para situarlo en Ayacucho y el propio equipo lo había desmentido. El argumento cronológico es el que cierra el caso: los registros son de agosto de 2026 y no pueden corresponder al sismo peruano del 20 de noviembre que la publicación les atribuía. Conviene anotar los límites del material consultado: la nota no identifica la cuenta que difundió el video, no da su duración ni dice cuándo empezó a circular en Perú, no precisa el día, el lugar exacto ni la magnitud del terremoto colombiano —solo el mes y el año— y no cita al Instituto Geofísico del Perú ni a ninguna otra fuente oficial sobre el sismo peruano. La página indica fecha de publicación del 27 de noviembre sin hora y una actualización a las 15:01; la hora registrada aquí es esa actualización convertida desde la hora de Perú.",
+   "titulo": "Desmienten el video de los sismos en Perú: las imágenes son del terremoto de Colombia de agosto",
+   "url": "https://larepublica.pe/verificador/2026/11/27/es-falso-que-este-video-muestre-los-efectos-de-los-recientes-sismos-en-peru-las-imagenes-corresponden-al-terremoto-en-colombia-1634229",
+   "id": "montaje-peru-colombia-sismo-20261127"
+  },
+  {
+   "agua": false,
+   "clase": "prensa",
+   "creado": "2026-11-28T00:55:00Z",
+   "descarte": [],
+   "descarteRevisado": false,
+   "enlaces": [
+    [
+     "Análisis de What the Fact citado por TuNota, cuyo propio veredicto está generado con IA",
+     "https://whatthefact.app/fact-checks/2026-11-27-burj-khalifa-collapses-dubai-earthquake-video-ai"
+    ],
+    [
+     "Desmienten el video viral de un gusano marino gigante emergiendo tras un crucero: está hecho con IA (entrada previa del feed)",
+     "https://www.yahoo.com/news/articles/fact-check-fake-video-giant-030207068.html"
+    ]
+   ],
+   "estado": "señalado como video generado con inteligencia artificial; la verificación que cita TuNota es de la plataforma What the Fact, cuyo veredicto está generado con IA y se apoya en los desmentidos de Newschecker, Mashable Middle East y Serambinews, que no pudieron abrirse en esta ejecución; ninguna autoridad de los Emiratos ni centro sismológico se ha pronunciado",
+   "fechaEvento": "",
+   "fechaPub": "2026-11-27T16:19:00Z",
+   "fuente": "TuNota (Belmaris Sierra), Honduras, portal de Digital Media TVC · análisis de la plataforma What the Fact, generado con IA según su propia página, que a su vez cita a Newschecker, Mashable Middle East y Serambinews",
+   "lat": null,
+   "lon": null,
+   "lugar": "No declarado (atribuido falsamente a Dubái, Emiratos Árabes Unidos)",
+   "por": "tarea",
+   "rareza": "montaje",
+   "resumen": "El portal hondureño TuNota publicó el 27 de noviembre, a las 10:19 de la mañana en hora local, una nota firmada por Belmaris Sierra sobre un video viral en el que la torre Burj Khalifa de Dubái se inclina y se desploma tras un supuesto terremoto. La conclusión que recoge es que el clip está creado con inteligencia artificial y que el edificio sigue en pie. Conviene ser explícito con la cadena de atribución, porque es el punto débil del caso: TuNota no hace verificación propia, sino que cita un análisis de la plataforma What the Fact del mismo 27 de noviembre, cuyo veredicto la propia página declara generado con inteligencia artificial a partir de fragmentos de otros desmentidos que reconoce no haber leído completos. Las pruebas que llegan por esa vía son el detector Hive v3, con una puntuación de 0,997 de probabilidad de contenido generado con IA, y la coincidencia con los desmentidos de Newschecker (India), Mashable Middle East y Serambinews, tres coberturas que no pudieron abrirse desde esta ejecución. Las señales visuales que se citan son concretas: el edificio cae como una estructura rígida, sin deformación ni daños progresivos, los vehículos y las construcciones del entorno permanecen intactos y la silueta que se derrumba no corresponde al perfil escalonado real de la torre; se menciona además una transmisión en directo de YouTube del 26 de noviembre con el edificio iluminado y en pie, que la propia What the Fact dice no haber verificado de forma independiente. El video lleva una marca de agua «@SYFR.WAV» y la publicación original, en X, pedía a la inteligencia artificial de la plataforma que verificara las imágenes. Quedan varios datos sin establecer y una contradicción: TuNota dice primero que el video circula en redes «como Facebook» y después que la publicación original apareció en X; no da el nombre de la cuenta, ni visualizaciones, reacciones o veces compartido, ni la duración del clip, ni cuándo empezó a circular, ni quién lo creó. Sobre el sismo, la nota afirma que no hay registros de un terremoto significativo en la zona de Dubái en los últimos días de noviembre de 2026, pero no nombra la fuente de ese dato y no cita a ningún centro sismológico ni autoridad de los Emiratos. No se asignan coordenadas porque el video no documenta ningún hecho real.",
+   "titulo": "Circula un video del derrumbe del Burj Khalifa tras un supuesto sismo en Dubái y lo señalan como hecho con IA",
+   "url": "https://www.tunota.com/entretenimiento/que-paso-hoy-en-el-burj-khalifa-de-dubai-hubo-un-terremoto-circula-video-2026-11-27",
+   "id": "montaje-burj-khalifa-20261127"
+  },
   {
    "agua": false,
    "clase": "redes",
@@ -140,6 +196,14 @@
    "descarteRevisado": true,
    "enlaces": [
     [
+     "La OTAN moviliza sus cazas tras detectar un dron en el espacio aéreo de Letonia (Euronews en español, Simon Ormiston con AFP, 27 nov 13:03 CET): horarios de la alerta, la misión de policía aérea báltica y el refuerzo de defensa aérea",
+     "https://es.euronews.com/2026/11/27/la-otan-moviliza-sus-cazas-tras-detectar-un-dron-en-el-espacio-aereo-de-letonia"
+    ],
+    [
+     "Rusia también acusa a Letonia de querer provocar una «guerra abierta» en el Báltico (López-Dóriga con información de EFE, 27 nov 22:28 UTC): declaraciones de María Zajárova",
+     "https://lopezdoriga.com/internacional/rusia-tambien-acusa-a-letonia-de-querer-provocar-una-guerra-abierta-en-el-baltico"
+    ],
+    [
      "Drone briefly violates Latvian airspace, Latvian armed forces say (Reuters vía Yahoo News, 27 nov 05:00 UTC)",
      "https://www.yahoo.com/news/world/articles/drone-briefly-violates-latvian-airspace-050040650.html"
     ],
@@ -156,15 +220,15 @@
      "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/"
     ]
    ],
-   "estado": "alerta de violación del espacio aéreo levantada poco después; el dron siguió sin identificar y Reuters no establece su origen, su tipo ni su destino final",
+   "estado": "alerta de violación del espacio aéreo levantada a los 25 minutos; la NBS no indicó de dónde procedía el dron, no se menciona derribo y el aparato siguió sin identificar en tipo y origen; Rusia no se pronunció sobre el episodio concreto, aunque su cancillería acusó ese mismo día a Letonia de buscar una «guerra abierta» en el Báltico",
    "fechaEvento": "2026-11-27",
    "fechaPub": "2026-11-27T05:00:00Z",
-   "fuente": "Reuters (Jekaterina Golubkova en Tokio y Janis Laizans en Riga; edición de Christopher Cushing y Saad Sayeed), publicado por KFGO y Yahoo News · comunicado de las Fuerzas Armadas de Letonia",
+   "fuente": "Reuters (Jekaterina Golubkova y Janis Laizans; edición de Christopher Cushing y Saad Sayeed), publicado por KFGO y Yahoo News · Euronews en español (Simon Ormiston, con AFP), con el comunicado de las Fuerzas Armadas Nacionales de Letonia (NBS) y datos de la cadena LSM · López-Dóriga (JP, con información de EFE) para la reacción rusa",
    "lat": 56.5447,
    "lon": 27.7186,
    "lugar": "Municipios de Ludza y Balvi, este de Letonia",
    "por": "tarea",
-   "resumen": "Las Fuerzas Armadas de Letonia informaron, en un comunicado recogido por Reuters, de que un dron no identificado violó brevemente el espacio aéreo del país en la madrugada del viernes 27 de noviembre. Según el despacho —reportería de Jekaterina Golubkova en Tokio y Janis Laizans en Riga, edición de Christopher Cushing y Saad Sayeed, con dateline del 27 de noviembre y publicado a las 05:00 UTC— se emitió primero una alerta por violación del espacio aéreo para el municipio de Ludza, en el este del país, que se levantó poco después, y a continuación una alerta de menor amenaza para el municipio de Balvi, al norte de Ludza, que también se revirtió. En respuesta se desplegaron cazas de la OTAN y un dron interceptor. El caso es escueto en datos verificables: Reuters no da hora exacta del episodio, no precisa el punto de entrada ni la distancia a la frontera, no atribuye el aparato a ningún país, no indica su tipo, tamaño ni modelo, y no dice si fue derribado, si se perdió el rastro o si cayó; tampoco se nombra a ningún portavoz de las Fuerzas Armadas ni se reproduce una cita textual del comunicado, y no se publica video ni fotografía del aparato. No se indica de qué países eran los cazas ni se menciona la misión de policía aérea báltica. El despacho sitúa el episodio en el contexto de la preocupación por la extensión de la guerra en Ucrania más allá de sus fronteras y añade dos hechos del entorno: ese mismo día la región rusa de Leningrado repelía un ataque con drones, y su gobernador, Alexander Drozdenko, afirmó que se derribaron más de cuarenta aparatos, sin que Reuters establezca relación alguna entre ambos hechos; y Polonia había acusado el martes a Moscú de violar deliberadamente su espacio aéreo tras decir que un dron de vigilancia ruso cruzó brevemente la frontera. Las coordenadas corresponden al municipio de Ludza de manera aproximada, porque la fuente no da un punto concreto y la segunda alerta afectó a Balvi.",
+   "resumen": "Las Fuerzas Armadas de Letonia informaron, en un comunicado recogido por Reuters, de que un dron no identificado violó brevemente el espacio aéreo del país en la madrugada del viernes 27 de noviembre. Según el despacho —reportería de Jekaterina Golubkova y Janis Laizans, edición de Christopher Cushing y Saad Sayeed, publicado a las 05:00 UTC— se emitió primero una alerta por violación del espacio aéreo para el municipio de Ludza, en el este del país, que se levantó poco después, y a continuación una alerta de menor amenaza para el municipio de Balvi, al norte de Ludza, que también se revirtió. En respuesta se desplegaron cazas de la OTAN y un dron interceptor. La cobertura de Euronews en español, firmada por Simon Ormiston con material de AFP y publicada el 27 de noviembre a las 13:03 CET, añade los tiempos y varios datos que faltaban en el primer despacho: las Fuerzas Armadas Nacionales (NBS) declararon amenaza aérea en Ludza a las 2:30 de la madrugada en hora local (00:30 GMT), con alerta naranja a los vecinos del municipio, que la NBS describe como amenaza confirmada; la alerta se levantó a las 2:55 y pasó a aviso amarillo para Balvi, que terminó hacia las 3:30 según la cadena LSM citando a las fuerzas armadas. El dron se detectó cerca de la frontera con Rusia, en el municipio de Ludza, y los cazas que respondieron pertenecen a la misión de policía aérea de la OTAN en los Estados bálticos, sin que la nota precise de qué países eran; el dron interceptor letón regresó a su punto de lanzamiento tras el vuelo y no se menciona ningún derribo. La NBS envió unidades adicionales de defensa aérea a la frontera oriental y advirtió de que drones extranjeros podrían volver a entrar; como contexto, Euronews recuerda que este año se derribaron drones sobre Letonia dos veces, por cazas franceses en junio y por aviones aliados sobre Balvi en agosto. Lo que sigue sin establecerse es sustancial: la NBS no indicó de dónde procedía el aparato, no se da su tipo, modelo ni tamaño, no se precisa el punto exacto de entrada ni la distancia a la frontera, no se dice si se perdió el rastro o dónde acabó, no se nombra a ningún portavoz con cargo y no se ha publicado video ni fotografía del dron; las imágenes de las coberturas son de archivo. El despacho de Reuters sitúa el episodio en el contexto de la preocupación por la extensión de la guerra en Ucrania más allá de sus fronteras y añade dos hechos del entorno: ese mismo día la región rusa de Leningrado repelía un ataque con drones, y su gobernador, Alexander Drozdenko, afirmó que se derribaron más de cuarenta aparatos, sin que Reuters establezca relación alguna entre ambos hechos; y Polonia había acusado el martes a Moscú de violar deliberadamente su espacio aéreo. Del lado ruso, López-Dóriga publicó el 27 de noviembre a las 22:28 UTC, con información de EFE y firma «JP», que el Ministerio de Exteriores ruso, por boca de su portavoz María Zajárova, acusó a Letonia de querer provocar una «guerra abierta» por la escalada en el Báltico, sostuvo que los países bálticos ceden espacio aéreo a drones ucranianos y criticó los ejercicios de la OTAN en Letonia; esa nota no aporta ningún dato nuevo sobre el dron ni recoge un pronunciamiento ruso sobre este episodio en concreto. Las coordenadas corresponden al municipio de Ludza de manera aproximada, porque las fuentes no dan un punto concreto y la segunda alerta afectó a Balvi.",
    "titulo": "Un dron no identificado viola el espacio aéreo de Letonia y la OTAN responde con cazas y un dron interceptor",
    "url": "https://kfgo.com/2026/11/26/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/",
    "id": "lv-ludza-dron-20261127"
@@ -1812,47 +1876,6 @@
    "titulo": "El mar se ilumina de azul en la playa de Al Aqah, en Fujairah, Emiratos Árabes Unidos",
    "url": "https://www.khaleejtimes.com/uae/watch-uae-beaches-glow-bioluminescence-lights-up-the-seas-fujairah",
    "id": "ae-fujairah-bioluminiscencia-20261119"
-  },
-  {
-   "agua": false,
-   "clase": "prensa",
-   "creado": "2026-11-20T18:49:32Z",
-   "descarte": [],
-   "descarteRevisado": true,
-   "enlaces": [],
-   "estado": "sin identificar; la policía del distrito declara que no se ha confirmado si era un dron, una aeronave u otro aparato, y la búsqueda no dio resultado",
-   "fechaEvento": "2026-11-17",
-   "fechaPub": "2026-11-19T01:56:00Z",
-   "fuente": "Dawn (corresponsal)",
-   "lat": 30.67,
-   "lon": 73.11,
-   "lugar": "Sahiwal, Punyab, Pakistán",
-   "por": "tarea",
-   "resumen": "El diario pakistaní Dawn publicó el 19 de noviembre que un objeto no identificado con una luz potente sobrevoló la Prisión de Alta Seguridad de Sahiwal, en el Punyab, hacia las 22:30 de las noches del 16 y del 17 de noviembre. Según la nota, el objeto cruzó el recinto penitenciario y la colonia de personal del bloque D y desapareció sobre una gasolinera situada frente a la prisión; el episodio del 17 se produjo un día después de otro avistamiento similar en el mismo lugar. Abdul Rehman, asistente del superintendente de la prisión, presentó una denuncia formal que la policía de Civil Lines registró como caso. Usman Tipu, jefe de policía del distrito, declaró a Dawn que todavía no se ha confirmado si se trataba de un dron, de una aeronave o de otro aparato, y que la policía y otras agencias de seguridad iniciaron una búsqueda en Farid Town y zonas cercanas sin encontrar pistas. El caso es débil en registro: no se publicó ningún video ni fotografía del objeto —la única imagen de la nota es de archivo y está marcada como ilustrativa— y la fuente no identifica a los testigos más allá del denunciante. No hay pronunciamiento de la fuerza aérea pakistaní, de la autoridad de aviación civil ni de ningún especialista. Se revisaron los calendarios de lanzamientos, reentradas y lluvias de meteoros para esas fechas y ninguna coincidencia explica una luz que sobrevuela un recinto a baja altura en dos noches consecutivas. Las coordenadas corresponden a Sahiwal de manera aproximada.",
-   "titulo": "Un objeto luminoso sobrevuela dos noches una prisión de alta seguridad en Sahiwal, Pakistán",
-   "url": "https://www.dawn.com/news/2045557",
-   "id": "pk-sahiwal-objeto-20261117"
-  },
-  {
-   "agua": true,
-   "clase": "prensa",
-   "creado": "2026-11-19T00:55:00Z",
-   "descarte": [],
-   "descarteRevisado": false,
-   "enlaces": [],
-   "estado": "identificada como una defensa marina flotante tipo Yokohama; su procedencia sigue sin establecerse y Ørsted y Vineyard Wind descartan que sea suya",
-   "fechaEvento": "2026-10-29",
-   "fechaPub": "2026-11-18T18:51:35Z",
-   "fuente": "MV Times (Hayley Duffy)",
-   "lat": 41.35,
-   "lon": -70.84,
-   "lugar": "Aquinnah, Martha's Vineyard, Massachusetts, Estados Unidos",
-   "por": "tarea",
-   "rareza": "mar",
-   "resumen": "El capitán de puerto de Aquinnah, Isaac Taylor, detectó el 29 de octubre un objeto cilíndrico varado en la playa, a unos diez minutos a pie de la entrada de Moshup Beach, cerca de los acantilados de Martha's Vineyard. Mide cerca de 2,1 metros de alto por 4,3 de largo, está relleno de espuma, cubierto de plástico o caucho negro duro y conserva restos de una cadena por el centro: corresponde a una defensa marina flotante del tipo Yokohama, usada entre buques y en puertos y terminales para evitar colisiones. Lo que no se ha podido establecer es de dónde salió. Taylor consultó a Vineyard Wind, que no la reconoció como suya, y un representante de Ørsted, operador del parque eólico Revolution Wind a unas 19 millas de Aquinnah, declaró que no procede de sus parques ni de sus buques; ambos proyectos terminaron su construcción este año. El objeto desapareció el 6 de noviembre y reapareció el 7 más al oeste de la misma playa. El medio publica fotografías de Ella Munnelly y un video del propio capitán de puerto. Taylor sostiene que no es contaminante y que no está filtrando nada; si nadie la reclama, podría retirarse con una manipuladora telescópica o llevarse a un vertedero. Las coordenadas corresponden a Aquinnah de manera aproximada.",
-   "titulo": "Una gran defensa marina de origen desconocido aparece en una playa de Aquinnah, Massachusetts",
-   "url": "https://www.mvtimes.com/2026/11/18/large-fender-of-unknown-origins-washes-up-in-aquinnah/",
-   "id": "us-aquinnah-defensa-20261118"
   },
   {
    "agua": false,
