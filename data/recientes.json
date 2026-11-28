@@ -1,6 +1,6 @@
 {
  "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
- "generado": "2026-11-28T01:02:34Z",
+ "generado": "2026-11-28T06:57:04Z",
  "zonas": [
   {
    "n": "Chile central y sur",
@@ -11,6 +11,49 @@
  ],
  "alertas": [],
  "items": [
+  {
+   "agua": false,
+   "clase": "prensa",
+   "creado": "2026-11-28T07:20:00Z",
+   "descarte": [
+    {
+     "detalle": "El propio control aéreo alemán atribuye la suspensión a la detección de un vehículo aéreo no tripulado, de modo que la naturaleza del objeto no está en discusión: lo que la fuente declara desconocido es su origen y su propietario. No se menciona derribo ni incautación.",
+     "fuente": "https://en.apa.az/europe/drone-sighting-temporarily-halts-flights-at-germanys-cologne-bonn-airport-539038",
+     "tipo": "dron"
+    }
+   ],
+   "descarteRevisado": true,
+   "enlaces": [
+    [
+     "Drone sighting disrupts operations at Germany's Cologne-Bonn Airport (WAM, agencia de los Emiratos; la página devolvió solo la portada del sitio y no pudo leerse en esta ejecución)",
+     "https://www.wam.ae/en/article/17jqnr1-drone-sighting-disrupts-operations-germanys"
+    ],
+    [
+     "Un dron no identificado viola el espacio aéreo de Letonia y la OTAN responde con cazas y un dron interceptor (entrada previa del feed)",
+     "https://kfgo.com/2026/11/26/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/"
+    ],
+    [
+     "Dos drones no identificados obligan a cerrar el aeropuerto de Génova (entrada previa del feed)",
+     "https://www.ligurianotizie.it/guerra-ibrida-a-genova-allarme-droni-aeroporto-chiuso-2-ore-prima-volta-in-italia/2026/11/19/1289022/"
+    ],
+    [
+     "Un posible dron interrumpe las operaciones del aeropuerto Charles de Gaulle, en París (entrada previa del feed)",
+     "https://airlive.net/incident/2026/11/19/possible-drone-in-the-vicinity-of-charles-de-gaulle-airport-disrupted-flight-operations/"
+    ]
+   ],
+   "estado": "alerta levantada con un «todo despejado» del control aéreo alemán hacia las 00:30 del 28 de noviembre, tras unas dos horas y media de suspensión; el dron no fue identificado y la fuente declara expresamente que no se ha informado de las circunstancias ni de su propietario",
+   "fechaEvento": "2026-11-27",
+   "fechaPub": "2026-11-28T03:47:00Z",
+   "fuente": "APA (Azerbaiyán), con la información atribuida a la agencia alemana DPA, sin firma personal · control de tráfico aéreo alemán",
+   "lat": 50.8659,
+   "lon": 7.1427,
+   "lugar": "Aeropuerto de Colonia-Bonn, Renania del Norte-Westfalia, Alemania",
+   "por": "tarea",
+   "resumen": "El control aéreo alemán suspendió todos los despegues y aterrizajes en el aeropuerto de Colonia-Bonn después de detectar un vehículo aéreo no tripulado sobre las instalaciones «poco antes de las diez de la noche, hora local, del 27 de noviembre», y dio el «todo despejado» hacia las 00:30 del 28, de modo que la interrupción duró unas dos horas y media. Lo publicó la agencia azerbaiyana APA el 28 de noviembre a las 07:47 en hora local (03:47 UTC), con la información atribuida a la agencia alemana DPA y sin firma personal. El caso es escueto en datos y la propia nota lo reconoce: «No information has yet been released regarding the circumstances of the incident or the ownership of the drone», es decir, el aparato no fue identificado y no se ha informado de su procedencia ni de su propietario. Quedan sin establecer varios puntos sustanciales: quién detectó el dron y con qué medio, el minuto exacto de la detección, el número de aparatos, cuántos vuelos se vieron afectados, desviados o cancelados, y si hubo derribo o intervención policial; el único organismo citado es el control de tráfico aéreo alemán, que «investigated the incident», sin que aparezcan declaraciones de la policía federal (Bundespolizei) ni del propio aeropuerto. No hay video ni fotografía del objeto: la única imagen de la nota es genérica. La versión del mismo despacho en la agencia emiratí WAM no pudo abrirse desde esta ejecución, de modo que no fue posible contrastar datos entre coberturas. El descarte con calendarios de lanzamientos, reentradas y lluvias de meteoros no pudo completarse porque esas fuentes estuvieron inaccesibles en esta ejecución; en todo caso no aplican a un aparato que el propio control aéreo clasifica como dron detectado sobre un aeropuerto. Las coordenadas corresponden al aeropuerto de Colonia-Bonn.",
+   "titulo": "Un dron no identificado cierra dos horas y media el aeropuerto de Colonia-Bonn, en Alemania",
+   "url": "https://en.apa.az/europe/drone-sighting-temporarily-halts-flights-at-germanys-cologne-bonn-airport-539038",
+   "id": "de-colonia-bonn-dron-20261127"
+  },
   {
    "agua": false,
    "clase": "prensa",
@@ -36,6 +79,54 @@
    "titulo": "Desmienten el video de los sismos en Perú: las imágenes son del terremoto de Colombia de agosto",
    "url": "https://larepublica.pe/verificador/2026/11/27/es-falso-que-este-video-muestre-los-efectos-de-los-recientes-sismos-en-peru-las-imagenes-corresponden-al-terremoto-en-colombia-1634229",
    "id": "montaje-peru-colombia-sismo-20261127"
+  },
+  {
+   "agua": false,
+   "clase": "oficial",
+   "creado": "2026-11-28T07:20:00Z",
+   "descarte": [
+    {
+     "detalle": "El único registro audiovisual citado, un video de dieciséis segundos que las patrullas entregaron a los investigadores por el episodio del 16 de diciembre de 2024, muestra luces de punta de ala rojas y verdes y un destello rojo de baliza, propias de una aeronave; esa misma noche, a las 23:34, las patrullas reportaron un avión en aproximación baja a unos 150 metros sobre la pista. Un avistamiento del 13 de diciembre se descartó además como error del guardia tras las entrevistas.",
+     "fuente": "https://dronexl.co/2026/11/27/fbi-files-wright-patterson-drone-incursions-cases-closed-no-operator/",
+     "tipo": "avion"
+    },
+    {
+     "detalle": "Los propios informes de la AFOSI tratan los objetos como sistemas aéreos no tripulados pequeños (sUAS) y describen hélices protegidas, de modo que la naturaleza de los aparatos no está en discusión: lo que quedó sin establecer es el operador. La búsqueda llegó a revisar vehículos con cámaras Flock Safety y a entrevistar a un propietario registrado, sin vincular a nadie con los avistamientos.",
+     "fuente": "https://dronexl.co/2026/11/27/fbi-files-wright-patterson-drone-incursions-cases-closed-no-operator/",
+     "tipo": "dron"
+    }
+   ],
+   "descarteRevisado": true,
+   "enlaces": [
+    [
+     "PDF de la entrega del FBI 1708151-000, citada y enlazada por DroneXL (no consultado en esta ejecución)",
+     "https://documents2.theblackvault.com/documents/fbifiles/1708151-000.pdf"
+    ],
+    [
+     "Inside the Wright-Patterson drone mystery: radio disruptions, synchronized maneuvers and conflicting accounts (The Black Vault; no consultado en esta ejecución)",
+     "https://www.theblackvault.com/documentarchive/inside-the-wrightpatterson-drone-mystery-radio-disruptions-synchronized-maneuvers-and-conflicting-accounts/"
+    ],
+    [
+     "Un dron no identificado cierra dos horas y media el aeropuerto de Colonia-Bonn (entrada de esta misma ejecución)",
+     "https://en.apa.az/europe/drone-sighting-temporarily-halts-flights-at-germanys-cologne-bonn-airport-539038"
+    ],
+    [
+     "Drones no identificados obligan a responder a la base aeronaval de Sigonella, en Sicilia (entrada previa del feed)",
+     "https://www.stripes.com/branches/navy/2026-11-23/drones-sigonella-iran-sicily-navy-23552110.html"
+    ]
+   ],
+   "estado": "material oficial publicado; los tres casos figuran cerrados sin operador identificado y sin que la cobertura indique quién decidió el cierre ni con qué criterio; un avistamiento se descartó como error del propio guardia, el único video entregado muestra luces de aeronave y no hay análisis de radiofrecuencia de los fallos de radio",
+   "fechaEvento": "2024-12-16",
+   "fechaPub": "2026-11-27T16:36:00Z",
+   "fuente": "DroneXL (Haye Kesteloo) · informes de la Air Force Office of Special Investigations (AFOSI) publicados por el FBI en la entrega 1708151-000 y obtenidos por The Black Vault mediante la ley de libertad de información",
+   "lat": 39.8261,
+   "lon": -84.0484,
+   "lugar": "Base aérea de Wright-Patterson, Dayton, Ohio, Estados Unidos",
+   "por": "tarea",
+   "resumen": "El portal especializado DroneXL publicó el 27 de noviembre, a las 11:36 hora del este (16:36 UTC), en una nota firmada por su director Haye Kesteloo, el contenido de siete páginas de informes de la Oficina de Investigaciones Especiales de la Fuerza Aérea de Estados Unidos (AFOSI) sobre tres noches de incursiones de drones en la base aérea de Wright-Patterson, en Ohio, entre el 11 y el 17 de diciembre de 2024. El archivero The Black Vault obtuvo los documentos por la ley de libertad de información y el FBI los publicó el 13 de noviembre con el número de entrega 1708151-000; todos llevan fecha de transmisión del 8 de septiembre de 2025 y los informes del 11 y del 16 de diciembre están etiquetados como dirigidos por el FBI, cuya carta de portada aclara que las tachaduras las hizo la AFOSI. Según The Black Vault, la AFOSI respondió primero que no tenía registros y, tras una apelación de julio de 2025, en enero de 2026 indicó que se habían enviado al FBI. El detalle operativo es concreto: la noche del 13 de diciembre un guardia describió un solo aparato de 30 a 60 centímetros, con cuerpo gris oscuro en forma de trébol y cuatro hélices protegidas, que hizo un bucle vertical «as if the sUAS was “performing tricks”», y después una formación de cuatro drones en diamante, separados unos treinta centímetros, a altura de farola, que apagaron sus luces al recibir el haz de la linterna del guardia, viraron juntos a la derecha, subieron a unos sesenta metros y se alejaron hacia la autopista 4 en unos siete segundos; durante ambos avistamientos las radios del guardia y de su compañero transmitían de forma amortiguada y distorsionada, y volvieron a funcionar cuando los aparatos se fueron. El control de tráfico aéreo de la base cerró el espacio aéreo a las 22:30 de ese día. La noche del 16 de diciembre, la más activa, hubo reportes entre las 21:38 y las 00:11 de patrullas de la base, un civil, un bombero y agentes de la AFOSI: patrullas que vieron entre cuatro y seis aparatos sobre el Museo Nacional de la Fuerza Aérea, la AFOSI que cifró en al menos seis los que merodeaban sobre la base, y un bombero con cámara térmica que contó cuatro, uno de ellos cerca del Centro Nacional de Inteligencia Aérea y Espacial. El valor del documento está tanto en lo que registra como en lo que no resuelve. Los tres casos figuran cerrados sin operador identificado, y la nota no dice quién decidió el cierre, en qué fecha ni con qué criterio. Las siete páginas no contienen ninguna prueba de las radios ni análisis de radiofrecuencia que explique los fallos. Los tamaños son incoherentes entre noches: un objeto de metro y medio por metro ochenta el 11 de diciembre frente a otro de treinta a sesenta centímetros dos días después. Un avistamiento reportado hacia las 22:08 del 13 de diciembre se descartó tras las entrevistas, porque los investigadores concluyeron que el guardia se había equivocado y no había visto nada. El único registro audiovisual que mencionan es un video de dieciséis segundos que las patrullas entregaron a los investigadores del supuesto aparato del 16 de diciembre, y en él se ven luces de punta de ala rojas y verdes y un destello rojo de baliza, es decir, las de una aeronave; a las 23:34 las patrullas reportaron además un avión en aproximación baja a unos 150 metros sobre la pista. La nota no dice que ese video se haya publicado y no incluye ninguna imagen de los aparatos. Hay también relatos en conflicto que el archivo no concilia: la policía de Metro Parks de Dayton reportó un dron rumbo a la base a las 23:10 y después afirmó que ninguna de sus patrullas vio uno, y las policías de Fairborn y Riverside, el control de tráfico aéreo y la gestión del aeródromo dicen no haber visto nada. The Black Vault sostiene que registros de la autoridad de aviación civil mostraron entre siete y diecisiete blancos de radar la noche del 16, un dato que los informes no mencionan y que esta cobertura no verifica. La búsqueda del piloto llegó a revisar vehículos aparcados fuera de la base con imágenes de cámaras Flock Safety y a entrevistar al propietario registrado de uno, que dijo prestarlo y tener solo un dron de aficionado de quince a veinte centímetros; el archivo no vincula a esa persona ni a ninguna otra con los avistamientos. No se nombra a ninguno de los guardias ni agentes.",
+   "titulo": "Los informes del FBI y la AFOSI sobre los drones de Wright-Patterson se cierran sin identificar a ningún operador",
+   "url": "https://dronexl.co/2026/11/27/fbi-files-wright-patterson-drone-incursions-cases-closed-no-operator/",
+   "id": "us-wright-patterson-fbi-20261127"
   },
   {
    "agua": false,
@@ -66,6 +157,40 @@
    "titulo": "Circula un video del derrumbe del Burj Khalifa tras un supuesto sismo en Dubái y lo señalan como hecho con IA",
    "url": "https://www.tunota.com/entretenimiento/que-paso-hoy-en-el-burj-khalifa-de-dubai-hubo-un-terremoto-circula-video-2026-11-27",
    "id": "montaje-burj-khalifa-20261127"
+  },
+  {
+   "agua": false,
+   "clase": "prensa",
+   "creado": "2026-11-28T07:20:00Z",
+   "descarte": [],
+   "descarteRevisado": false,
+   "enlaces": [
+    [
+     "Fact check: Viral video of China's glass-roof examination surveillance system is AI-generated (The Express Tribune, cobertura original citada por Wisevoter; no pudo abrirse en esta ejecución)",
+     "https://tribune.com.pk/story/2642652/fact-check-viral-video-of-chinas-glass-roof-examination-surveillance-system-is-ai-generated"
+    ],
+    [
+     "Desmienten el pez de piel roja del río Prachin Buri, en Tailandia: el material está hecho con IA (entrada previa del feed)",
+     "https://www.thaipbs.or.th/verify/en/content/18802"
+    ],
+    [
+     "Circula un video del derrumbe del Burj Khalifa tras un supuesto sismo en Dubái y lo señalan como hecho con IA (entrada previa del feed)",
+     "https://www.tunota.com/entretenimiento/que-paso-hoy-en-el-burj-khalifa-de-dubai-hubo-un-terremoto-circula-video-2026-11-27"
+    ]
+   ],
+   "estado": "evaluado como video generado con inteligencia artificial por los verificadores que cita Wisevoter atribuyéndolo a The Express Tribune, con detectores que dan 92 % y 84,3 % de probabilidad y una versión en TikTok etiquetada como contenido generado con IA; la propia nota advierte que esas herramientas dan estimaciones de probabilidad y no prueba de origen, y el autor del video sigue sin identificarse",
+   "fechaEvento": "",
+   "fechaPub": "2026-11-27T14:22:36Z",
+   "fuente": "Wisevoter (sin firma), que declara apoyarse en información reportada por The Express Tribune de Pakistán · detectores Uncov AI y Deploy Detect",
+   "lat": null,
+   "lon": null,
+   "lugar": "No declarado (atribuido genéricamente a China, sin localidad ni centro educativo)",
+   "por": "tarea",
+   "rareza": "montaje",
+   "resumen": "Un video que circuló desde el jueves 26 de noviembre en cuentas de Facebook, Instagram, X y TikTok, presentado como prueba de que China había instalado techos de cristal para vigilar a los estudiantes y evitar copias en los exámenes, está evaluado como material generado con inteligencia artificial. Lo recoge el portal Wisevoter en una nota sin firma publicada el 27 de noviembre a las 14:22 UTC, que declara apoyarse en información reportada por The Express Tribune de Pakistán; la cobertura original de ese diario no pudo abrirse desde esta ejecución, de modo que la cadena de atribución es de segunda mano y conviene tomarla como tal. Las pruebas que llegan por esa vía son tres: dos detectores, Uncov AI con una puntuación de confianza del 92 % y Deploy Detect con una probabilidad del 84,3 %; una búsqueda inversa que localizó una versión en TikTok con la etiqueta «Contains AI-generated media»; y dos señales visuales concretas, varias sillas del salón de examen que parecen tener solo dos patas y los dedos del vigilante deformados y entrelazados de forma antinatural. La propia nota marca el límite de esa evidencia: «Detection tools provide probability estimates rather than proof of origin, and the original creator remains unidentified», es decir, los detectores dan estimaciones de probabilidad y no prueba del origen, y el autor del video sigue sin identificarse. El alcance se describe solo como «millions of views across major platforms», sin cifras de visualizaciones ni de veces compartido en ninguna plataforma concreta. Entre las cuentas que lo difundieron se mencionan dos vinculadas a Kaff Digital, en Karachi, e Intel Region, en Nigeria, sin más información sobre ellas. Quedan sin establecer la primera publicación, dónde y cuándo se grabó el material, qué verificadores en concreto hicieron el análisis más allá de la mención general al diario paquistaní, y si el video es falso por completo o solo en parte: la nota se limita a decir que evaluaron las imágenes como generadas con IA. El contexto de fondo que añade la página —reconocimiento facial e inhibidores de señal en el examen nacional gaokao desde 2017, y cámaras con inteligencia artificial en una escuela de Hangzhou en 2018— se refiere a hechos previos y no a este video. No se asignan coordenadas porque el material no documenta ningún hecho real.",
+   "titulo": "Señalan como hecho con IA el video viral del «techo de cristal» para vigilar exámenes en China",
+   "url": "https://wisevoter.com/world/2026/11/27/viral-china-exam-glass-roof-video-ai-generated",
+   "id": "montaje-china-examen-ia-20261127"
   },
   {
    "agua": false,
@@ -536,6 +661,10 @@
      "https://ca.news.yahoo.com/did-anyone-else-see-this-green-fireball-lights-up-ontario-sky-as-space-agency-explains-what-caused-the-spectacle-223929503.html"
     ],
     [
+     "Meteor fireball with green, yellow lights spotted over Miami Valley (WHIO, Noelle Horn, 27 nov 12:44 EST): los reportes desde el área de Dayton, Ohio, y la cámara de tablero de un agente de Fairborn",
+     "https://www.whio.com/news/local/meteor-fireball-with-green-yellow-lights-spotted-over-miami-valley/6SWAQ5YSDNBRZF5R6XJZGMUAKM/"
+    ],
+    [
      "Fireball lights up the night sky in Simcoe County (CTV Barrie, Jocelyn Martin, 26 nov): fotografía del meteoro en Mountain Road, Collingwood, acreditada a Jason Primeau",
      "https://www.ctvnews.ca/barrie/article/simcoe-county-residents-treated-to-meteor-sighting/"
     ],
@@ -560,7 +689,7 @@
    "lon": -83.1763,
    "lugar": "Sureste de Michigan, noreste de Ohio y sur de Ontario (destello registrado por satélite cerca de la bahía de Saginaw, Michigan; cámaras en Dearborn y Hudson, Michigan, y video en Norwalk, Ohio)",
    "por": "tarea",
-   "resumen": "Hacia las 19:40 del miércoles 25 de noviembre, hora del este, un objeto muy brillante con estela verde cruzó el cielo del sureste de Michigan y el noreste de Ohio. Michigan Storm Chasers difundió la grabación de su cámara meteorológica de Dearborn, con marca de tiempo 19:40:23, y circularon imágenes de otra cámara en Hudson (Michigan) y de una vecina de Norwalk (Ohio). El equipo meteorológico del canal WOIO lo describió como un bólido, y RT en Español recoge que algunos meteorólogos confirmaron que se trató de un meteoro, sin nombrarlos. La dimensión del episodio quedó clara al día siguiente: según la American Meteor Society, citada por Geo.tv en una nota sin firma personal publicada el 26 de noviembre, más de 1.300 personas lo vieron, en diez estados de Estados Unidos y en la provincia canadiense de Ontario, con avistamientos enviados a amsmeteors.org desde lugares tan separados como Fort Wayne y Cleveland. El dato instrumental que aporta esa cobertura es uno solo: el meteorólogo jefe del canal WTOL-TV señaló que el producto de detección de rayos del satélite GOES-19 observó el destello cerca de la bahía de Saginaw, en Michigan, visible a cientos de kilómetros. Geo.tv plantea que el bólido estaría «probablemente asociado» a las Leónidas, pero es una suposición del propio texto, no de una institución, y la nota no da hora ni fecha del fenómeno, no cita a la NASA, no menciona cámaras all-sky y no publica video ni aporta trayectoria, altitud o velocidad. Las coordenadas son las de Dearborn, donde está la cámara: el fenómeno se vio en una franja amplia de diez estados y del sur de Ontario. El 27 de noviembre, a las 03:03 hora del este, el portal canadiense CTC News añadió la reconstrucción de la NASA: en una evaluación inicial la agencia califica el objeto de meteoroide tau Táurido, un fragmento asociado al complejo de las Táuridas, de unos 35 centímetros de diámetro (14 pulgadas) y más de 54 kilos (120 libras), que se hizo visible a unos 108 kilómetros de altura sobre Imlay City, en Michigan, avanzó al sur del oeste a unos 98.000 km/h (61.000 millas por hora) y se desintegró a unos 51 kilómetros sobre Bath, también en Michigan, con un brillo comparable al de la Luna llena. Esa misma cobertura precisa que el fenómeno se reportó desde Barrie, Kingston, London, Springwater, Elmvale, Collingwood, Port Perry y Niagara, en el sur de Ontario, y que quedó registrado por varias cámaras all-sky y por el Geostationary Lightning Mapper del GOES-19; hasta el jueves 26 no se había confirmado la recuperación de ningún meteorito. Conviene anotar los límites de esa nota: no firma a ningún periodista, no cita a ningún científico por su nombre, atribuye los datos de la NASA a un agregador de terceros y no acredita los videos que menciona. Del lado canadiense, CTV Barrie publicó el 26 de noviembre una nota firmada por Jocelyn Martin con una fotografía del meteoro tomada en Mountain Road, en Collingwood, acreditada a Jason Primeau, aunque el cuerpo de ese texto no pudo leerse desde esta ejecución. El 27 de noviembre se sumó la voz de la Agencia Espacial Canadiense, en una nota de Yahoo News Canada firmada por Corné van Hoepen y con marca de actualización a las 14:46 UTC: Patrick Hill, científico de misión de la agencia, atribuyó el episodio a que «estamos en un periodo activo de lluvias de meteoros», apuntando a las Táuridas, y dijo que investigadores del Meteor Physics Group de la Universidad de Western estarían vinculando varios eventos recientes con ese flujo; añadió que la mayor frecuencia de registros se debe sobre todo al uso de cámaras de tablero y de timbre, y que estos fenómenos son «en su mayoría completamente seguros». Esa misma cobertura marca dos límites importantes: la Agencia Espacial Canadiense no había respondido a la petición de comentario sobre el avistamiento concreto del miércoles ni confirmado si lo registró, y la trayectoria y la eventual llegada de fragmentos al suelo siguen sin confirmarse. Del lado de Ontario, la nota sitúa reportes en el condado de Simcoe —Barrie, Springwater, Elmvale y cerca de Collingwood— recopilados por la cuenta WxOntario, que pidió a los vecinos compartir grabaciones de cámaras de tablero y de timbre; la única imagen es una captura de esa cuenta y la nota no cifra los reportes más allá de «decenas».",
+   "resumen": "Hacia las 19:40 del miércoles 25 de noviembre, hora del este, un objeto muy brillante con estela verde cruzó el cielo del sureste de Michigan y el noreste de Ohio. Michigan Storm Chasers difundió la grabación de su cámara meteorológica de Dearborn, con marca de tiempo 19:40:23, y circularon imágenes de otra cámara en Hudson (Michigan) y de una vecina de Norwalk (Ohio). El equipo meteorológico del canal WOIO lo describió como un bólido, y RT en Español recoge que algunos meteorólogos confirmaron que se trató de un meteoro, sin nombrarlos. La dimensión del episodio quedó clara al día siguiente: según la American Meteor Society, citada por Geo.tv en una nota sin firma personal publicada el 26 de noviembre, más de 1.300 personas lo vieron, en diez estados de Estados Unidos y en la provincia canadiense de Ontario, con avistamientos enviados a amsmeteors.org desde lugares tan separados como Fort Wayne y Cleveland. El dato instrumental que aporta esa cobertura es uno solo: el meteorólogo jefe del canal WTOL-TV señaló que el producto de detección de rayos del satélite GOES-19 observó el destello cerca de la bahía de Saginaw, en Michigan, visible a cientos de kilómetros. Geo.tv plantea que el bólido estaría «probablemente asociado» a las Leónidas, pero es una suposición del propio texto, no de una institución, y la nota no da hora ni fecha del fenómeno, no cita a la NASA, no menciona cámaras all-sky y no publica video ni aporta trayectoria, altitud o velocidad. Las coordenadas son las de Dearborn, donde está la cámara: el fenómeno se vio en una franja amplia de diez estados y del sur de Ontario. El 27 de noviembre, a las 03:03 hora del este, el portal canadiense CTC News añadió la reconstrucción de la NASA: en una evaluación inicial la agencia califica el objeto de meteoroide tau Táurido, un fragmento asociado al complejo de las Táuridas, de unos 35 centímetros de diámetro (14 pulgadas) y más de 54 kilos (120 libras), que se hizo visible a unos 108 kilómetros de altura sobre Imlay City, en Michigan, avanzó al sur del oeste a unos 98.000 km/h (61.000 millas por hora) y se desintegró a unos 51 kilómetros sobre Bath, también en Michigan, con un brillo comparable al de la Luna llena. Esa misma cobertura precisa que el fenómeno se reportó desde Barrie, Kingston, London, Springwater, Elmvale, Collingwood, Port Perry y Niagara, en el sur de Ontario, y que quedó registrado por varias cámaras all-sky y por el Geostationary Lightning Mapper del GOES-19; hasta el jueves 26 no se había confirmado la recuperación de ningún meteorito. Conviene anotar los límites de esa nota: no firma a ningún periodista, no cita a ningún científico por su nombre, atribuye los datos de la NASA a un agregador de terceros y no acredita los videos que menciona. Del lado canadiense, CTV Barrie publicó el 26 de noviembre una nota firmada por Jocelyn Martin con una fotografía del meteoro tomada en Mountain Road, en Collingwood, acreditada a Jason Primeau, aunque el cuerpo de ese texto no pudo leerse desde esta ejecución. El 27 de noviembre se sumó la voz de la Agencia Espacial Canadiense, en una nota de Yahoo News Canada firmada por Corné van Hoepen y con marca de actualización a las 14:46 UTC: Patrick Hill, científico de misión de la agencia, atribuyó el episodio a que «estamos en un periodo activo de lluvias de meteoros», apuntando a las Táuridas, y dijo que investigadores del Meteor Physics Group de la Universidad de Western estarían vinculando varios eventos recientes con ese flujo; añadió que la mayor frecuencia de registros se debe sobre todo al uso de cámaras de tablero y de timbre, y que estos fenómenos son «en su mayoría completamente seguros». Esa misma cobertura marca dos límites importantes: la Agencia Espacial Canadiense no había respondido a la petición de comentario sobre el avistamiento concreto del miércoles ni confirmado si lo registró, y la trayectoria y la eventual llegada de fragmentos al suelo siguen sin confirmarse. Del lado de Ontario, la nota sitúa reportes en el condado de Simcoe —Barrie, Springwater, Elmvale y cerca de Collingwood— recopilados por la cuenta WxOntario, que pidió a los vecinos compartir grabaciones de cámaras de tablero y de timbre; la única imagen es una captura de esa cuenta y la nota no cifra los reportes más allá de «decenas». Del lado de Ohio, la cadena WHIO publicó el 27 de noviembre a las 12:44 hora del este una nota firmada por Noelle Horn según la cual mucha gente del Miami Valley, el área de Dayton, vio el bólido «alrededor de las 19:30» de esa noche de miércoles, con llamadas y videos de espectadores que lo describían como una luz «verde» y «amarilla»; varios reportes se enviaron a la American Meteor Society y el fenómeno quedó registrado además en la cámara de tablero de un agente de policía de Fairborn. Esa cobertura no da cifra de reportes, no nombra al agente, no escribe la fecha del 25 de noviembre —solo «Wednesday night»— y no propone ninguna explicación ni la atribuye a nadie, de modo que la correspondencia con este evento es coherente pero no explícita en la propia nota.",
    "titulo": "Un bólido verde cruza el cielo de Michigan y Ohio y queda grabado por cámaras meteorológicas",
    "url": "https://actualidad-rt.com/viral/639795-impactante-meteoro-ilumina-cielo-verde-asombro",
    "id": "us-michigan-ohio-bolido-20261125"
@@ -1753,129 +1882,6 @@
    "titulo": "Bólido sobre la región del lago Erie visto desde Michigan, Ohio y Ontario",
    "url": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
    "id": "us-lago-erie-bolido-20261118"
-  },
-  {
-   "agua": true,
-   "clase": "prensa",
-   "creado": "2026-11-21T01:15:00Z",
-   "descarte": [],
-   "descarteRevisado": false,
-   "enlaces": [
-    [
-     "NEWS WIRE: Laree Furniss (DOC Kaitaia) confirma 24 animales y el iwi Te Aupōuri cierra el acceso",
-     "https://newswire.co.nz/2026/11/sperm-whales-mass-stranding-ninety-mile-beach/"
-    ],
-    [
-     "The Star (Malasia), reproducción de la nota de agencia",
-     "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/19/19-sperm-whales-die-after-stranding-at-new-zealand-beach"
-    ]
-   ],
-   "estado": "19 cachalotes muertos y 5 vivos en mal estado según el Department of Conservation; sin causa establecida y sin registro audiovisual publicado del episodio",
-   "fechaEvento": "2026-11-19",
-   "fechaPub": "2026-11-19T14:35:45Z",
-   "fuente": "Xinhua (citando a Radio New Zealand) · NEWS WIRE · The Star (Malasia) · Department of Conservation",
-   "lat": -34.75,
-   "lon": 172.85,
-   "lugar": "Ninety Mile Beach, Far North, Nueva Zelanda",
-   "por": "tarea",
-   "rareza": "mar",
-   "resumen": "El jueves 19 de noviembre aparecieron varados veinticuatro cachalotes en el extremo norte de Ninety Mile Beach, en el Far North de Nueva Zelanda. Diecinueve murieron y cinco seguían vivos en mal estado de salud, según el Department of Conservation (DOC), que respondió junto con los iwi maoríes locales y con especialistas en mamíferos marinos. La agencia Xinhua, que cita a Radio New Zealand, publicó la nota ese mismo día a las 14:35 y no da nombres ni localidad precisa. El portal neozelandés NEWS WIRE —que declara en su propio aviso haber sido redactado con inteligencia artificial, por lo que sus datos se recogen aquí con esa reserva— sitúa el varamiento al norte de The Bluff, un promontorio a mitad de la playa, y atribuye la cifra a Laree Furniss, gerente de operaciones del DOC en Kaitaia, que describió la situación como dinámica y con evaluaciones en curso. El iwi Te Aupōuri anunció el hallazgo y cerró el acceso entre The Bluff y Scotts Point hasta completar los procesos consuetudinarios con los animales muertos; Penetaui Kleskovic, de Te Aupōuri, dijo a RNZ que el iwi dirige el trabajo en la playa con apoyo de Te Hiku y que los animales pesan entre siete y diez toneladas cada uno. Ninguna de las fuentes consultadas propone una causa para este varamiento ni publica video o fotografías del episodio: la única imagen que acompaña la cobertura internacional es de archivo, de un zifio de dientes de pala fotografiado en Otago en 2024. Xinhua añade que el episodio ocurre poco más de un mes después del varamiento de una quincena de orcas pigmeas cerca de Hukatere, más al sur de la misma playa. Las coordenadas corresponden al tramo norte de Ninety Mile Beach de manera aproximada.",
-   "titulo": "Veinticuatro cachalotes varan en Ninety Mile Beach, Nueva Zelanda, y mueren diecinueve",
-   "url": "https://english.news.cn/20261119/d91f82e869de4a87a0de7287a88e9902/c.html",
-   "id": "nz-ninety-mile-cachalotes-20261119"
-  },
-  {
-   "agua": false,
-   "clase": "prensa",
-   "creado": "2026-11-19T13:05:00Z",
-   "descarte": [
-    {
-     "detalle": "El piloto Sam Rutherford declaro a la BBC que su formacion de tres Cirrus SR20 en vuelo de entrega cruzo Norfolk a unos 1.800 m el 13 de noviembre; solo uno de los tres aviones tenia el transpondedor encendido.",
-     "fuente": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
-     "tipo": "avion"
-    },
-    {
-     "detalle": "La Autoridad de Aviacion Civil de Moldavia confirmo que tres aviones SR20 procedentes de Brno, confundidos con drones sobre Chisinau el 15 de noviembre, aterrizaron sin incidentes; atribuyo la confusion a problemas de senal GPS.",
-     "fuente": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
-     "tipo": "avion"
-    }
-   ],
-   "descarteRevisado": true,
-   "enlaces": [
-    [
-     "Full Fact: el video de luces rojas es anterior al incidente de Lakenheath",
-     "https://fullfact.org/conflict/video-red-lights-predates-raf-lakenheath/"
-    ]
-   ],
-   "estado": "explicado como una formación de tres avionetas Cirrus SR20 según el piloto; la Fuerza Aérea de EE. UU. no lo confirma",
-   "fechaEvento": "2026-11-13",
-   "fechaPub": "2026-11-19T09:51:00Z",
-   "fuente": "DroneXL",
-   "lat": 52.409,
-   "lon": 0.561,
-   "lugar": "RAF Lakenheath, Suffolk, Inglaterra, Reino Unido (video grabado en Gayton, Norfolk)",
-   "por": "tarea",
-   "resumen": "El 13 de noviembre de 2026 la base aérea estadounidense de RAF Lakenheath, en Suffolk, activó sirenas y pidió refugiarse al personal por una supuesta actividad de drones no autorizada. Seis días después, el piloto británico Sam Rutherford declaró a la BBC que la alarma la causó su formación de tres avionetas Cirrus SR20 que cruzaba Norfolk a unos 1.800 metros en un vuelo de entrega, y de las que solo una llevaba el transpondedor encendido. Circula además un video grabado en Gayton, Norfolk, a unos 37 kilómetros al norte de la base, con tres luces intermitentes en triángulo que se desplazan hacia el sur; la BBC validó la ubicación pero no la fecha ni la hora de grabación. La Fuerza Aérea de Estados Unidos confirmó que respondió a una sospecha de drones y que no hubo daños, pero no ha dicho qué detectó ni ha comentado la versión del piloto.",
-   "titulo": "Un piloto afirma que tres avionetas provocaron la alarma de drones en la base de Lakenheath, Reino Unido",
-   "url": "https://dronexl.co/2026/11/19/lakenheath-drone-lockdown-pilot-three-cirrus-sr20-planes/",
-   "id": "uk-lakenheath-avionetas-20261119"
-  },
-  {
-   "agua": false,
-   "clase": "prensa",
-   "creado": "2026-11-20T12:57:00Z",
-   "descarte": [
-    {
-     "detalle": "El grupo de aficionados «Staraya Bashnya», citado por URA.RU el mismo 19 de noviembre, atribuye la primera parte del video a un cohete de señales y concluye que lo más probable son lanzamientos de artefactos pirotécnicos; añade que el clip viral está montado con tres grabaciones sin relación entre sí.",
-     "fuente": "https://ura.news/news/1053145605",
-     "tipo": "fuegos"
-    },
-    {
-     "detalle": "Según el calendario de la IMO, la noche del 18 al 19 de noviembre de 2026 seguían activas las Leónidas (6 al 30 de noviembre, máximo el 16-17, ZHR 10) y las Táuridas del Norte (20 de octubre al 10 de diciembre). La coincidencia de calendario es real, pero un objeto que cae y estalla a nivel del suelo no corresponde al perfil de un meteoro.",
-     "fuente": "https://www.imo.net/resources/calendar/",
-     "tipo": "meteoros"
-    }
-   ],
-   "descarteRevisado": true,
-   "enlaces": [
-    [
-     "URA.RU: los astrónomos de Tiumén atribuyen el OVNI incandescente a un cohete de señales",
-     "https://ura.news/news/1053145605"
-    ]
-   ],
-   "estado": "explicado como pirotecnia (un cohete de señales) por el grupo de aficionados «Staraya Bashnya»; sin pronunciamiento oficial",
-   "fechaEvento": "2026-11-19",
-   "fechaPub": "2026-11-19T08:15:00Z",
-   "fuente": "URA.RU (Serguéi Malyshev) · grupo de aficionados a la astronomía «Staraya Bashnya»",
-   "lat": 57.153,
-   "lon": 65.534,
-   "lugar": "Calle Novoselova, Tiumén, óblast de Tiumén, Rusia",
-   "por": "tarea",
-   "resumen": "Una cámara de calle del barrio de la calle Novoselova, en Tiumén, registró una bola de fuego que se acercaba rápido al suelo, caía sobre un montón de nieve y estallaba justo después; el estruendo activó las alarmas de los coches aparcados. URA.RU publicó el video, difundido por el canal local «ChS Tiumén», y recogió hipótesis de particulares que hablaban de un cohete casero o de una broma. Horas después, el mismo medio publicó la explicación del grupo de aficionados a la astronomía «Staraya Bashnya»: el material que circulaba etiquetado como «rayo globular» está montado con tres grabaciones distintas y sin relación entre sí; la primera corresponde a un cohete de señales, de los que se lanzan en Año Nuevo y que no estallan sino que se apagan al final del vuelo, en la segunda el objeto ya está en el suelo cuando explota, y la tercera se grabó en otro punto de la ciudad, el microdistrito Voinovka. El grupo concluye que lo más probable son lanzamientos de artefactos pirotécnicos no siempre exitosos y descarta el rayo globular; no es un organismo oficial y no hay pronunciamiento de autoridades. La nota sitúa el hecho «la noche del 19 de noviembre», aunque se publicó ese mismo día a primera hora de la tarde, de modo que lo más probable es la noche del 18 al 19; no da hora exacta. Las coordenadas corresponden a Tiumén de manera aproximada.",
-   "titulo": "Una bola de fuego cae y estalla en una calle de Tiumén, Rusia, y los astrónomos la atribuyen a pirotecnia",
-   "url": "https://ura.news/news/1053145593",
-   "id": "ru-tiumen-bola-20261119"
-  },
-  {
-   "agua": true,
-   "clase": "prensa",
-   "creado": "2026-11-19T19:05:00Z",
-   "descarte": [],
-   "descarteRevisado": false,
-   "enlaces": [],
-   "estado": "explicado como una floración de Noctiluca scintillans por la doctora Silvana Birchenough, de la Universidad de Khorfakkan, con imagen al microscopio del SMSRC",
-   "fechaEvento": "",
-   "fechaPub": "2026-11-19T02:00:00Z",
-   "fuente": "Khaleej Times (Nasreen Abdulla) · Universidad de Khorfakkan · Centro de Investigación de Ciencias Marinas de Sharjah",
-   "lat": 25.5,
-   "lon": 56.36,
-   "lugar": "Playa de Al Aqah, Fujairah, Emiratos Árabes Unidos (también Khorfakkan)",
-   "por": "tarea",
-   "rareza": "natural",
-   "resumen": "Khaleej Times publicó el 19 de noviembre, a las 6:00 de la mañana local, un reportaje con video sobre la bioluminiscencia que está iluminando el agua en la playa de Al Aqah, en el emirato de Fujairah, con avistamientos parecidos en la playa de Khorfakkan. El fotógrafo Rami Dibo viajó desde Dubái tras ver publicaciones en redes y grabó un reel en el que camina por la orilla dejando un rastro azulado en pies y manos. La doctora Silvana Birchenough, profesora asociada de la Universidad de Khorfakkan, explicó que se trata de Noctiluca scintillans, un organismo microscópico que aparece de vez en cuando en aguas costeras de los Emiratos y del golfo Arábigo y que, en gran número, puede cambiar el color del agua y producir destellos azules de noche; el Centro de Investigación de Ciencias Marinas de Sharjah (SMSRC), de esa universidad, aportó una imagen al microscopio de las células. Muhammed Sajjad, divulgador meteorológico conocido en redes como «UAE weatherman» y que no representa a ningún organismo oficial, lo describió como el despliegue más espectacular que ha visto en la costa emiratí y estima que podría durar tres semanas o más según las condiciones locales. La nota no precisa cuándo empezó el fenómeno, por lo que no se registra fecha de evento; las coordenadas corresponden a la playa de Al Aqah de manera aproximada.",
-   "titulo": "El mar se ilumina de azul en la playa de Al Aqah, en Fujairah, Emiratos Árabes Unidos",
-   "url": "https://www.khaleejtimes.com/uae/watch-uae-beaches-glow-bioluminescence-lights-up-the-seas-fujairah",
-   "id": "ae-fujairah-bioluminiscencia-20261119"
   },
   {
    "agua": false,
