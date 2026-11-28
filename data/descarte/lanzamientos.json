@@ -1,11 +1,11 @@
 {
-  "obtenido": "2026-11-27T15:32:16Z",
+  "obtenido": "2026-11-28T14:29:08Z",
   "fuente": "https://ll.thespacedevs.com/2.3.0/launches/previous/?ordering=-net&limit=100&include_suborbital=false",
   "lanzamientos": [
     {
       "id": "a6421db3-7c8a-4cf7-a659-cec195140f7f",
-      "nombre": "Long March 6A | Unknown Payload",
-      "net": "2026-11-27T13:00:00Z",
+      "nombre": "Long March 6A | Yaogan 50-04",
+      "net": "2026-11-27T13:05:00Z",
       "proveedor": "China Aerospace Science and Technology Corporation",
       "cohete": "Long March 6A",
       "sitio": "Taiyuan Satellite Launch Center, People's Republic of China",
