@@ -4,7 +4,7 @@ Módulo de análisis 100 % open source para el archivo de NEREO. Corre en GitHub
 
 ```
                  ┌─────────────────────── GitHub Actions (semanal) ───────────────────────┐
-data/points.json │  CAPA ANALÍTICA                                  CAPA INTERPRETATIVA    │
+data/points.bin  │  CAPA ANALÍTICA                                  CAPA INTERPRETATIVA    │
 114.034 reportes ─▶  DBSCAN ponderado ─────▶ hotspots.json          ┌──────────────────┐  │
                  │  HDBSCAN espacio-tiempo ─▶ (oleadas)         ┌──▶│ Ollama · gemma4  │  │
 ia/fuentes/      │  H3 res 4 ─────────────▶ hexagonos.json      │   │ E4B en CPU       │  │
@@ -64,7 +64,7 @@ Los parámetros están en `nereo_ia/config.py` y se pueden cambiar con variables
 ia/
 ├── nereo_ia/
 │   ├── config.py            parámetros (sobrescribibles con NEREO_*)
-│   ├── datos.py             decodifica data/points.json
+│   ├── datos.py             decodifica data/points.bin.gz
 │   ├── fuentes.py           población y relatos (descarga a ia/fuentes/, no versionado)
 │   ├── hotspots.py          DBSCAN, HDBSCAN espacio-temporal, H3
 │   ├── anomalias.py         Isolation Forest (celda-mes y reporte)

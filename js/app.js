@@ -40,40 +40,43 @@ const S = {
 const boot = $("#boot"), bootBar = $("#bootBar"), bootLog = $("#bootLog");
 const log = (t,p) => { bootLog.textContent = t; bootBar.style.width = p + "%"; };
 
-function dec(b64, T){
-  const bin = atob(b64), len = bin.length, u = new Uint8Array(len);
-  for (let i=0;i<len;i++) u[i] = bin.charCodeAt(i);
-  return new T(u.buffer);
+/* Los reportes viajan como columnas binarias en data/points.bin.gz y su índice
+   (tipos, desplazamientos, lugares y formas) en data/points-meta.json. GitHub Pages
+   no comprime los .bin, así que el archivo va en gzip y se abre aquí; si algún
+   servidor ya lo entrega descomprimido, se usa tal cual. */
+const TIPOS = {i32:Int32Array, u16:Uint16Array, u8:Uint8Array};
+async function binario(url){
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(url + " · " + res.status);
+  const buf = await res.arrayBuffer(), u = new Uint8Array(buf, 0, 2);
+  if (u[0] !== 0x1f || u[1] !== 0x8b) return buf;
+  if (typeof DecompressionStream === "undefined") throw new Error("Este navegador no puede abrir el archivo de reportes; actualízalo.");
+  return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream("gzip"))).arrayBuffer();
 }
+const json = url => fetch(url).then(r => { if (!r.ok) throw new Error(url + " · " + r.status); return r.json(); });
 
 async function load(){
   try{
-    log("ENLAZANDO CARTOGRAFÍA…", 12);
-    const world = await (await fetch("data/world.json")).json();
-    log("DESCIFRANDO REGISTROS…", 45);
-    const raw = await (await fetch("data/points.json")).json();
-    log("CALIBRANDO ESTADÍSTICA…", 72);
-    const st = await (await fetch("data/stats.json")).json();
-    log("ABRIENDO EXPEDIENTES AUDIOVISUALES…", 88);
-    const vids = await (await fetch("data/videos.json")).json();
-    const cams = await (await fetch("data/cams.json")).json();
+    // Todo se pide a la vez; la barra avanza a medida que llega cada pieza.
+    const pasos = ["CARTOGRAFÍA","REGISTROS","ÍNDICE DE REGISTROS","ESTADÍSTICA","EXPEDIENTES","CÁMARAS"];
+    let listos = 0;
+    const paso = (i, p) => p.then(v => { listos++; log(pasos[i] + " EN LÍNEA…", Math.round(8 + listos / pasos.length * 88)); return v; });
+    log("ENLAZANDO BANCO DE DATOS…", 6);
+    const opcional = url => json(url).catch(() => null);
+    const marP = opcional("data/mar.json"), geoP = opcional("data/geomag.json");
+    const [world, bin, meta, st, vids, cams] = await Promise.all([
+      paso(0, json("data/world.json")), paso(1, binario("data/points.bin.gz")),
+      paso(2, json("data/points-meta.json")), paso(3, json("data/stats.json")),
+      paso(4, json("data/videos.json")), paso(5, json("data/cams.json")),
+    ]);
     S.vids = vids.casos; S.vidNota = vids.nota;
     S.cams = cams.sitios; S.camNota = cams.nota;
-    try { S.marx = await (await fetch("data/mar.json")).json(); } catch(e){ S.marx = null; }
-    try { S.geo = await (await fetch("data/geomag.json")).json(); } catch(e){ S.geo = null; }
+    [S.marx, S.geo] = await Promise.all([marP, geoP]);
 
-    S.world = world; S.st = st; S.N = raw.n;
-    S.d = {
-      lat: dec(raw.lat, Int32Array), lon: dec(raw.lon, Int32Array),
-      year: dec(raw.year, Uint16Array), month: dec(raw.month, Uint8Array),
-      hour: dec(raw.hour, Uint8Array), shape: dec(raw.shape, Uint8Array),
-      mar: dec(raw.mar, Uint8Array), flags: dec(raw.flags, Uint8Array),
-      dur: dec(raw.dur, Uint16Array), dcoast: dec(raw.dcoast, Uint16Array),
-      place: dec(raw.place, Uint16Array), ev: dec(raw.ev, Uint8Array),
-      day: dec(raw.day, Uint8Array), exp: dec(raw.exp, Uint8Array), sol: dec(raw.sol, Uint8Array), y1: raw.y1,
-      places: raw.places, shapes: raw.shapes,
-    };
-    S.placesN = raw.places.map(sinTildes);
+    S.world = world; S.st = st; S.N = meta.n;
+    S.d = {y1: meta.y1, places: meta.places, shapes: meta.shapes};
+    for (const [k, t, off] of meta.cols) S.d[k] = new TIPOS[t](bin, off, meta.n);
+    S.placesN = meta.places.map(sinTildes);
     log("NÚCLEO EN LÍNEA", 100);
     setTimeout(start, 240);
   }catch(e){
@@ -417,13 +420,30 @@ function renderOverlay(t){
   }
 }
 
-let raf = 0;
+/* Mientras alguien interactúa se dibuja a la frecuencia de la pantalla; en reposo
+   solo quedan las animaciones lentas (pulsos, alertas), que se ven igual a ~15 fps.
+   Con la pestaña oculta el bucle se detiene del todo. */
+const REPOSO_MS = 1000 / 15, ACTIVO_MS = 800;
+let raf = 0, ultimoCuadro = 0, activoHasta = 0;
 function loop(t){
-  if (S.dirty) renderBase();
-  renderOverlay(t);
+  raf = 0;
+  if (document.hidden) return;
+  const activo = S.dirty || t < activoHasta;
+  if (activo || t - ultimoCuadro >= REPOSO_MS){
+    if (S.dirty) renderBase();
+    renderOverlay(t);
+    ultimoCuadro = t;
+  }
   raf = requestAnimationFrame(loop);
 }
-const mark = () => { S.dirty = 1; };
+const despertar = () => {
+  activoHasta = performance.now() + ACTIVO_MS;
+  if (!raf && S.d && !document.hidden) raf = requestAnimationFrame(loop);
+};
+const mark = () => { S.dirty = 1; despertar(); };
+["pointerdown","pointermove","pointerup","wheel","keydown","touchstart","touchmove"]
+  .forEach(ev => window.addEventListener(ev, despertar, {passive:true}));
+document.addEventListener("visibilitychange", () => { if (!document.hidden){ S.dirty = 1; despertar(); } });
 
 /* ───────────── interacción del mapa ───────────── */
 let drag = null;
@@ -1218,7 +1238,7 @@ function start(){
   boot.classList.add("off");
   setTimeout(() => boot.remove(), 600);
   if (!matchMedia("(max-width:700px)").matches) openPanel("mar");
-  raf = requestAnimationFrame(loop);
+  despertar();
   initCaps();
   cargarIA();
   cargarRarezas();

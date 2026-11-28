@@ -6,6 +6,7 @@ declarada, coincidencias con explicaciones convencionales y un índice de solide
 No exporta texto narrativo."""
 import base64, html, json, os, re
 import numpy as np, pandas as pd
+from empaquetar import escribir
 from shapely.geometry import shape as shp_shape, Point
 from shapely.ops import unary_union
 from shapely.prepared import prep
@@ -148,18 +149,15 @@ places = [place(a_, b_, c_) for a_, b_, c_ in zip(df.city.fillna(''), df.state.f
 uniq = sorted(set(places)); pm = {q:i for i,q in enumerate(uniq)}
 pidx = np.array([pm[q] for q in places], np.uint32); assert len(uniq) < 65535, len(uniq)
 
-b64 = lambda arr: base64.b64encode(np.ascontiguousarray(arr).tobytes()).decode()
-core = {"n": N, "shapes": SHAPES, "places": uniq, "y0": int(df.year.min()), "y1": int(df.year.max()),
-  "place": b64(pidx.astype(np.uint16)),
-  "lat": b64(np.round(df.lat.values*1e4).astype(np.int32)), "lon": b64(np.round(df.lon.values*1e4).astype(np.int32)),
-  "year": b64(df.year.values.astype(np.uint16)), "month": b64(df.month.values.astype(np.uint8)),
-  "day": b64(df.day.values.astype(np.uint8)), "hour": b64(df.hour.values.astype(np.uint8)),
-  "shape": b64(sidx), "mar": b64(mar), "flags": b64(flags), "ev": b64(ev), "exp": b64(exp), "sol": b64(sol),
-  "dur": b64(np.minimum(np.round(np.log1p(df.dur.values)*1000), 65535).astype(np.uint16)),
-  "dcoast": b64(np.minimum(np.round(dist_km), 65535).astype(np.uint16))}
-os.makedirs(OUT, exist_ok=True)
-json.dump(core, open(f"{OUT}/points.json","w"), separators=(",",":"), ensure_ascii=False)
-print("points.json:", os.path.getsize(f"{OUT}/points.json")//1024, "KB | lugares:", len(uniq))
+cols = {"place": pidx.astype(np.uint16),
+  "lat": np.round(df.lat.values*1e4).astype(np.int32), "lon": np.round(df.lon.values*1e4).astype(np.int32),
+  "year": df.year.values.astype(np.uint16), "month": df.month.values.astype(np.uint8),
+  "day": df.day.values.astype(np.uint8), "hour": df.hour.values.astype(np.uint8),
+  "shape": sidx, "mar": mar, "flags": flags, "ev": ev, "exp": exp, "sol": sol,
+  "dur": np.minimum(np.round(np.log1p(df.dur.values)*1000), 65535).astype(np.uint16),
+  "dcoast": np.minimum(np.round(dist_km), 65535).astype(np.uint16)}
+escribir(cols, N, SHAPES, uniq, int(df.year.min()), int(df.year.max()), OUT)
+print("lugares:", len(uniq))
 
 mdf = df[mar > 0]
 LATAM = ['MX','BR','AR','CL','CO','PE','VE','EC','UY','PY','BO','CR','PA','GT','DO','PR','CU','HN','SV','NI']

@@ -10,7 +10,8 @@ on:
     branches: [main]
     paths:
       - "ia/**"
-      - "data/points.json"
+      - "data/points.bin.gz"
+      - "data/points-meta.json"
       - ".github/workflows/ia.yml"
 
 permissions:
