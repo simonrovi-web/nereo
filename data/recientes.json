@@ -1,6 +1,6 @@
 {
   "nota": "Instantánea del feed de NEREO generada por la tarea de vigilancia.",
-  "generado": "2026-11-28T12:57:11Z",
+  "generado": "2026-11-28T18:49:25Z",
   "zonas": [
     {
       "n": "Chile central y sur",
@@ -11,6 +11,88 @@
   ],
   "alertas": [],
   "items": [
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-28T19:00:00Z",
+      "descarte": [],
+      "descarteRevisado": false,
+      "enlaces": [
+        [
+          "Desmienten el video de los sismos en Perú: las imágenes son del terremoto de Colombia de agosto (entrada previa del feed, caso distinto del mismo equipo, del 27 de noviembre)",
+          "https://larepublica.pe/verificador/2026/11/27/es-falso-que-este-video-muestre-los-efectos-de-los-recientes-sismos-en-peru-las-imagenes-corresponden-al-terremoto-en-colombia-1634229"
+        ],
+        [
+          "Desmienten el video de edificios derrumbándose durante un sismo en Perú: está hecho con inteligencia artificial (entrada previa del feed)",
+          "https://larepublica.pe/verificador/2026/11/24/es-falso-el-video-que-muestra-a-personas-huyendo-mientras-edificios-se-derrumban-durante-el-sismo-en-peru-fue-creado-con-ia-1776480"
+        ]
+      ],
+      "estado": "desmentido por el Verificador de La República: no es material generado con IA sino imágenes reales del terremoto de Colombia de agosto de 2026, reutilizadas fuera de contexto como si fueran del sismo del 20 de noviembre en Lima; el medio añade que tampoco hubo víctimas mortales en la capital",
+      "fechaEvento": "",
+      "fechaPub": "2026-11-28T18:33:00Z",
+      "fuente": "Verificador de La República (Ricardo Colos), Perú · signatario de la IFCN · reporte de daños del INDECI citado por el medio",
+      "lat": null,
+      "lon": null,
+      "lugar": "No declarado (atribuido falsamente a Lima, Perú; las imágenes corresponden al terremoto de Colombia de agosto de 2026)",
+      "por": "tarea",
+      "rareza": "montaje",
+      "resumen": "El Verificador de La República, la unidad de verificación de datos del diario peruano, concluyó el 28 de noviembre que es falso un video difundido en Facebook que mostraba el colapso de la fachada de un edificio de varios pisos y que se presentaba como registro del sismo reciente sentido en Lima, con afirmaciones de víctimas mortales en la capital. La publicación con mayor alcance acumulaba más de 139.000 visualizaciones, 2.000 reacciones, 289 comentarios y más de 300 veces compartido. Como en el caso desmentido el día anterior por el mismo equipo, aquí no hay inteligencia artificial: son imágenes reales sacadas de contexto. La verificación, firmada por Ricardo Colos, se apoya en una búsqueda inversa que localizó el mismo video en publicaciones de agosto de 2026 relacionadas con el terremoto de Colombia, con la misma secuencia de colapso; el equipo añade que ese material ya había circulado antes atribuido falsamente a un sismo en Ayacucho y que entonces también lo desmintió. Sobre las víctimas, la nota remite a reportes oficiales y a un reporte de daños del INDECI, según los cuales la única muerte confirmada fue la de un conductor alcanzado por rocas en Huánuco. Conviene anotar los límites del material consultado: la nota atribuye el video al sismo del 20 de noviembre pero no da magnitud, hora ni epicentro, no precisa el día, el lugar ni la magnitud del terremoto colombiano —solo el mes y el año—, no identifica la cuenta que difundió el video ni su primera aparición, no ubica el edificio de las imágenes, no enlaza las publicaciones ni su propia verificación anterior sobre Ayacucho, no detalla la herramienta de búsqueda inversa ni los fotogramas comparados, y no cita a ningún experto ni a autoridades colombianas. La página indica fecha de publicación del 28 de noviembre y una actualización a las 13:33 sin señalar zona horaria; la hora registrada aquí es esa actualización convertida desde la hora de Perú.",
+      "titulo": "Desmienten el video del derrumbe de un edificio en el sismo de Lima: las imágenes son del terremoto de Colombia de agosto",
+      "url": "https://larepublica.pe/verificador/2026/11/28/es-falso-que-el-video-muestre-el-colapso-de-un-edificio-durante-el-reciente-sismo-en-lima-las-imagenes-son-de-un-terremoto-en-colombia-1021748",
+      "id": "montaje-lima-colombia-edificio-20261128"
+    },
+    {
+      "agua": false,
+      "clase": "prensa",
+      "creado": "2026-11-28T19:00:00Z",
+      "descarte": [
+        {
+          "detalle": "La naturaleza de los objetos no está en discusión en la fuente: la propia Fuerza Aérea de Estados Unidos habló en su momento de «sospecha de actividad no autorizada de drones» y el Financial Times los describe como unos seis drones repelidos con tecnología antidrones. Lo que quedó sin establecer es el operador y el origen, y no se recuperó ningún aparato ni resto.",
+          "fuente": "https://dronexl.co/2026/11/28/lakenheath-six-drones-repelled-not-recovered-ft/",
+          "tipo": "dron"
+        },
+        {
+          "detalle": "El 19 de noviembre el piloto de traslado Sam Rutherford sostuvo que los «drones» avistados en la zona habían sido su formación de tres avionetas Cirrus SR20 cruzando Norfolk a unos 1.800 metros de altura. Es una explicación alternativa real y documentada por la propia nota, que la recoge sin verificarla y plantea que ambos hechos podrían haber coexistido; ninguna autoridad la ha confirmado ni la ha aplicado a este incidente.",
+          "fuente": "https://dronexl.co/2026/11/28/lakenheath-six-drones-repelled-not-recovered-ft/",
+          "tipo": "avion"
+        }
+      ],
+      "descarteRevisado": true,
+      "enlaces": [
+        [
+          "US claims it repelled six drones swarming RAF base, but none recovered (Press TV, 28 nov): versión del mismo caso en otro medio, no consultada en esta ejecución",
+          "https://www.presstv.co.uk/Detail/2026/11/28/781832/us-claims-it-repelled-six-drones-that-swarmed-raf-base-this-month"
+        ],
+        [
+          "US forces drove off drones at British air base, Financial Times reports (agencia Anadolu; la página no pudo leerse desde esta ejecución por un error de robots.txt)",
+          "https://aa.com.tr/en/americas/us-forces-drove-off-drones-at-british-air-base-financial-times-reports/4141174"
+        ],
+        [
+          "Un dron no identificado cierra dos horas y media el aeropuerto de Colonia-Bonn (entrada previa del feed)",
+          "https://en.apa.az/europe/drone-sighting-temporarily-halts-flights-at-germanys-cologne-bonn-airport-539038"
+        ],
+        [
+          "Drones no identificados obligan a responder a la base aeronaval de Sigonella, en Sicilia (entrada previa del feed)",
+          "https://www.stripes.com/branches/navy/2026-11-23/drones-sigonella-iran-sicily-navy-23552110.html"
+        ],
+        [
+          "Un dron no identificado viola el espacio aéreo de Letonia y la OTAN responde con cazas (entrada previa del feed)",
+          "https://kfgo.com/2026/11/26/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/"
+        ]
+      ],
+      "estado": "sin identificar; los aparatos fueron alejados pero ninguno recuperado, no hay atribución oficial de origen y la sospecha de un vínculo con Irán proviene de fuentes anónimas del Financial Times, sin que ningún funcionario estadounidense o británico la respalde con su nombre",
+      "fechaEvento": "2026-11-13",
+      "fechaPub": "2026-11-28T14:34:00Z",
+      "fuente": "DroneXL (Haye Kesteloo) · reportaje original del Financial Times, que el portal declara no haber leído y conoce por Reuters (vía CNBC), The Guardian, Jerusalem Post e Iran International · Fuerza Aérea de Estados Unidos en Europa (USAFE) y Ministerio de Defensa británico, sin portavoces nombrados",
+      "lat": 52.4093,
+      "lon": 0.561,
+      "lugar": "Base aérea de RAF Lakenheath, Suffolk, Inglaterra, Reino Unido",
+      "por": "tarea",
+      "resumen": "El portal especializado DroneXL publicó el 28 de noviembre, a las 09:34 hora del este (14:34 UTC), en una nota firmada por su director Haye Kesteloo, que fuerzas estadounidenses repelieron unos seis drones en torno a la base aérea de RAF Lakenheath, en el condado inglés de Suffolk, la mayor base de cazas de la Fuerza Aérea de Estados Unidos en Europa. El episodio ocurrió el 13 de noviembre y el dato nuevo lo publicó ese día el Financial Times, citando a «personas familiarizadas con el asunto»: se usó tecnología antidrones para alejarlos («drive off»), no se habla de inhibición, captura ni derribo, y ni el personal británico ni el estadounidense recuperó ningún aparato, de modo que oficiales de ambos países no pueden descartar que llevaran armas o equipo de espionaje. Esas mismas fuentes del FT apuntan a un posible vínculo con Irán. Conviene ser estricto con la cadena de atribución, porque es el punto débil del caso: el artículo del Financial Times es de pago y DroneXL reconoce no haberlo leído, de modo que todo lo que sabe del original le llega por Reuters (vía CNBC), The Guardian, Jerusalem Post e Iran International, y el propio portal señala que ninguna de esas coberturas cita a un funcionario estadounidense o británico que atribuya Lakenheath a Irán con su nombre. Lo que hay de oficial es escueto y anónimo: un portavoz no identificado de la USAFE dijo a The Guardian que por seguridad operativa no se discutirán las medidas de protección de ninguna ubicación y habló de un «enfoque proactivo, integrado y por capas»; el Ministerio de Defensa británico declaró a Reuters que su policía y la de Suffolk trabajaron con las fuerzas de seguridad de la Fuerza Aérea estadounidense y que «la situación se resolvió rápidamente». En su momento la Fuerza Aérea indicó que sus Security Forces respondieron a «sospecha de actividad no autorizada de drones» y que no hubo afectación a personal, aeronaves ni infraestructura, y el personal de la base recibió instrucción de refugiarse esa tarde. Quedan sin establecer varios datos sustanciales: la hora oficial del incidente —la nota recoge que las horas reportadas nunca coincidieron, con un cierre hacia las 16:30 GMT según la BBC y una alarma hacia las 18:30 locales según The Aviationist—, el número confirmado de aparatos más allá de ese «unos seis» de fuentes anónimas, qué sensores los detectaron, qué sistemas antidrones se emplearon, la identidad de los operadores y cualquier atribución oficial a Irán, que el propio país ha rechazado en casos anteriores. No hay registro audiovisual del episodio: las imágenes de la nota son de archivo, un F-35A despegando de Lakenheath en septiembre y un ejercicio antidrones de 2025. DroneXL añade por su cuenta un elemento que no está verificado y que conviene anotar como lo que es: el 19 de noviembre el piloto de traslado Sam Rutherford sostuvo que los «drones» de la zona habían sido su formación de tres avionetas Cirrus SR20 cruzando Norfolk a unos 1.800 metros, y el portal plantea que ambas cosas podrían haber coexistido. Como contexto, la nota recuerda que en octubre la Fuerza Aérea retiró sus bombarderos B-1B de RAF Fairford ante una posible amenaza de drones iraní, según el New York Times, y que el 27 de octubre la policía antiterrorista británica imputó a dos hombres por ese caso. Las coordenadas corresponden a la base de RAF Lakenheath.",
+      "titulo": "Estados Unidos dice haber repelido unos seis drones sobre la base aérea de Lakenheath, en Inglaterra, sin recuperar ninguno",
+      "url": "https://dronexl.co/2026/11/28/lakenheath-six-drones-repelled-not-recovered-ft/",
+      "id": "uk-lakenheath-drones-20261113"
+    },
     {
       "agua": true,
       "clase": "prensa",
@@ -1854,68 +1936,6 @@
       "titulo": "Un posible dron interrumpe las operaciones del aeropuerto Charles de Gaulle, en París",
       "url": "https://airlive.net/incident/2026/11/19/possible-drone-in-the-vicinity-of-charles-de-gaulle-airport-disrupted-flight-operations/",
       "id": "fr-cdg-dron-20261119"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-20T12:57:00Z",
-      "descarte": [
-        {
-          "detalle": "El oficial de circunscripción Akhilesh Kumar y el encargado de la comisaría Manish Khatri declararon a Amar Ujala que es posible que se estén realizando vuelos de aviones de entrenamiento desde Pantnagar, a unos 15 km de Rudrapur; ambos precisaron que no lo han confirmado oficialmente.",
-          "fuente": "https://www.amarujala.com/uttarakhand/udham-singh-nagar/flashing-red-lights-seen-in-the-sky-people-left-curious-rudrapur-news-c-235-1-ksp1007-151582-2026-11-20",
-          "tipo": "avion"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "sin identificar; la policía local plantea vuelos de entrenamiento desde Pantnagar y aclara que no hay confirmación oficial",
-      "fechaEvento": "",
-      "fechaPub": "2026-11-19T19:51:00Z",
-      "fuente": "Amar Ujala · Sanvad News Agency (buró de Haldwani)",
-      "lat": 28.98,
-      "lon": 79.4,
-      "lugar": "Kelakhera y Rudrapur, distrito de Udham Singh Nagar, Uttarakhand, India",
-      "por": "tarea",
-      "resumen": "La agencia Sanvad publicó en el diario Amar Ujala, a la 01:21 del 20 de noviembre hora de la India, que vecinos de Kelakhera y de la ciudad de Rudrapur y sus alrededores, en el distrito de Udham Singh Nagar (Uttarakhand), vieron de noche luces rojas que se encendían y se apagaban en tres o cuatro puntos del cielo a la vez y que se mantuvieron un rato. Algunos testigos pensaron en aviones y otros en drones, precisamente porque aparecían en varios lugares simultáneamente. El registro es débil en datos: la nota no indica la fecha ni la hora del avistamiento, solo que fue de noche, no precisa el número exacto de luces ni la duración, no describe desplazamiento y no publica ningún video, aunque sí señala que circulan grabaciones virales en redes sociales; la única imagen es de archivo. El oficial de circunscripción Akhilesh Kumar y el encargado de la comisaría, Manish Khatri, dijeron que es posible que se trate de vuelos de entrenamiento desde Pantnagar, pero no lo confirmaron oficialmente y advirtieron que sería precipitado calificarlas de aviones o drones. No se cita a la fuerza aérea india, a la autoridad de aviación ni a ningún astrónomo. Al no haber fecha exacta del hecho no fue posible cruzarlo con calendarios de lanzamientos o de reentradas. Las coordenadas corresponden a Rudrapur de manera aproximada.",
-      "titulo": "Luces rojas intermitentes en varios puntos del cielo de Rudrapur, en Uttarakhand, India",
-      "url": "https://www.amarujala.com/uttarakhand/udham-singh-nagar/flashing-red-lights-seen-in-the-sky-people-left-curious-rudrapur-news-c-235-1-ksp1007-151582-2026-11-20",
-      "id": "in-rudrapur-luces-20261119"
-    },
-    {
-      "agua": false,
-      "clase": "prensa",
-      "creado": "2026-11-20T06:55:43Z",
-      "descarte": [
-        {
-          "detalle": "La propia American Meteor Society, citada por CBS News Detroit, atribuye el bólido a las Leónidas, activas y visibles hasta el 30 de noviembre de 2026, con el máximo el 16 y 17 de noviembre. La coincidencia de calendario es real y concuerda con la atribución de la fuente.",
-          "fuente": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
-          "tipo": "meteoros"
-        },
-        {
-          "detalle": "Revisado el listado de lanzamientos: no figura ninguna misión Starlink entre el 15 y el 19 de noviembre de 2026, por lo que se descarta un tren de satélites recién lanzado.",
-          "fuente": "https://rocketlaunch.live/",
-          "tipo": "starlink"
-        },
-        {
-          "detalle": "El 18 de noviembre de 2026 figura un lanzamiento de Long March 2D con el satélite Shijian 24; el listado no indica hora ni sitio, y el 15 de noviembre despegó un Vulcan con Amazon Leo-15. Ninguno se vincula con el avistamiento en la fuente periodística.",
-          "fuente": "https://rocketlaunch.live/",
-          "tipo": "lanzamiento"
-        }
-      ],
-      "descarteRevisado": true,
-      "enlaces": [],
-      "estado": "explicado como meteoro de las Leónidas por la American Meteor Society",
-      "fechaEvento": "2026-11-18",
-      "fechaPub": "2026-11-19T18:02:00Z",
-      "fuente": "CBS News Detroit (Paula Wethington) · American Meteor Society",
-      "lat": null,
-      "lon": null,
-      "lugar": "Comunidades de la costa del lago Erie: Michigan y Ohio (Estados Unidos) y Ontario (Canadá)",
-      "por": "tarea",
-      "resumen": "La American Meteor Society recibió una serie de reportes de una bola de fuego vista la noche del miércoles desde comunidades de la costa del lago Erie, en Michigan, Ohio y la provincia canadiense de Ontario. CBS News Detroit publicó la nota el 19 de noviembre a las 13:02 hora del este y precisa que la mayoría de los avistamientos en Michigan se concentraron entre las 19:00 y las 20:00, con otro grupo entre las 21:00 y las 22:00; se nombran Luna Pier, Monroe, Royal Oak y St. Clair Shores, y los testigos describieron tonos azules, verdes y blancos. La AMS atribuye el fenómeno a las Leónidas, activas hasta el 30 de noviembre, y aclara que lo que se ve no es material fresco del cometa sino restos de pasos anteriores que en este momento están más concentrados. El registro es débil en un punto: la nota no publica video ni fotografías, no da un número total de reportes y no indica la fecha exacta del avistamiento, solo «miércoles por la noche»; la fecha del 18 de noviembre se deduce del día de publicación. No se asignan coordenadas porque los reportes se reparten entre dos países.",
-      "titulo": "Bólido sobre la región del lago Erie visto desde Michigan, Ohio y Ontario",
-      "url": "https://www.cbsnews.com/detroit/news/fireball-sightings-lake-erie-region-wednesday-night/",
-      "id": "us-lago-erie-bolido-20261118"
     },
     {
       "agua": false,
